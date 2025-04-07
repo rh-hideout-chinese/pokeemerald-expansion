@@ -494,22 +494,22 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_OVERGROW] =
     {
-        .name = _("Overgrow"),
-        .description = COMPOUND_STRING("Ups Grass moves in a pinch."),
+        .name = _("茂盛"),
+        .description = COMPOUND_STRING("HP低时强化草属性招式"),
         .aiRating = 5,
     },
 
     [ABILITY_BLAZE] =
     {
-        .name = _("Blaze"),
-        .description = COMPOUND_STRING("Ups Fire moves in a pinch."),
+        .name = _("猛火"),
+        .description = COMPOUND_STRING("HP低时强化火属性招式"),
         .aiRating = 5,
     },
 
     [ABILITY_TORRENT] =
     {
-        .name = _("Torrent"),
-        .description = COMPOUND_STRING("Ups Water moves in a pinch."),
+        .name = _("激流"),
+        .description = COMPOUND_STRING("HP低时强化水属性招式"),
         .aiRating = 5,
     },
 

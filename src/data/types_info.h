@@ -50,8 +50,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
 {
     [TYPE_NONE] =
     {
-        .name = _("None"),
-        .generic = _("a move"),
+        .name = _("无"),
+        .generic = _("招式"),
         .palette = 15, // Uses TYPE_MYSTERY's icon
         .teraTypeRGBValue = RGB_WHITE,
         .damageCategory = DAMAGE_CATEGORY_PHYSICAL,
@@ -62,8 +62,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_NORMAL] =
     {
-        .name = _("Normal"),
-        .generic = _("a NORMAL move"),
+        .name = _("一般"),
+        .generic = _("一般属性招式"),
         .palette = 13,
         .zMove = MOVE_BREAKNECK_BLITZ,
         .maxMove = MOVE_MAX_STRIKE,
@@ -82,8 +82,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_FIGHTING] =
     {
-        .name = _("Fighting"),
-        .generic = _("a FIGHTING move"),
+        .name = _("格斗"),
+        .generic = _("格斗属性招式"),
         .palette = 13,
         .zMove = MOVE_ALL_OUT_PUMMELING,
         .maxMove = MOVE_MAX_KNUCKLE,
@@ -104,8 +104,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_FLYING] =
     {
-        .name = _("Flying"),
-        .generic = _("a FLYING move"),
+        .name = _("飞行"),
+        .generic = _("飞行属性招式"),
         .palette = 14,
         .zMove = MOVE_SUPERSONIC_SKYSTRIKE,
         .maxMove = MOVE_MAX_AIRSTREAM,
@@ -126,8 +126,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_POISON] =
     {
-        .name = _("Poison"),
-        .generic = _("a POISON move"),
+        .name = _("毒"),
+        .generic = _("毒属性招式"),
         .palette = 14,
         .zMove = MOVE_ACID_DOWNPOUR,
         .maxMove = MOVE_MAX_OOZE,
@@ -148,8 +148,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_GROUND] =
     {
-        .name = _("Ground"),
-        .generic = _("a GROUND move"),
+        .name = _("地面"),
+        .generic = _("地面属性招式"),
         .palette = 13,
         .zMove = MOVE_TECTONIC_RAGE,
         .maxMove = MOVE_MAX_QUAKE,
@@ -170,8 +170,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_ROCK] =
     {
-        .name = _("Rock"),
-        .generic = _("a ROCK move"),
+        .name = _("岩石"),
+        .generic = _("岩石属性招式"),
         .palette = 13,
         .zMove = MOVE_CONTINENTAL_CRUSH,
         .maxMove = MOVE_MAX_ROCKFALL,
@@ -192,8 +192,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_BUG] =
     {
-        .name = _("Bug"),
-        .generic = _("a BUG move"),
+        .name = _("虫"),
+        .generic = _("虫属性招式"),
         .palette = 15,
         .zMove = MOVE_SAVAGE_SPIN_OUT,
         .maxMove = MOVE_MAX_FLUTTERBY,
@@ -214,8 +214,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_GHOST] =
     {
-        .name = _("Ghost"),
-        .generic = _("a GHOST move"),
+        .name = _("幽灵"),
+        .generic = _("幽灵属性招式"),
         .palette = 14,
         .zMove = MOVE_NEVER_ENDING_NIGHTMARE,
         .maxMove = MOVE_MAX_PHANTASM,
@@ -236,8 +236,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_STEEL] =
     {
-        .name = _("Steel"),
-        .generic = _("a STEEL move"),
+        .name = _("钢"),
+        .generic = _("钢属性招式"),
         .palette = 13,
         .zMove = MOVE_CORKSCREW_CRASH,
         .maxMove = MOVE_MAX_STEELSPIKE,
@@ -259,7 +259,7 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     [TYPE_MYSTERY] =
     {
         .name = _("???"),
-        .generic = _("a ??? move"),
+        .generic = _("???属性招式"),
         .palette = 15,
         .teraTypeRGBValue = RGB_WHITE,
         .damageCategory = DAMAGE_CATEGORY_SPECIAL,
@@ -269,8 +269,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_FIRE] =
     {
-        .name = _("Fire"),
-        .generic = _("a FIRE move"),
+        .name = _("火"),
+        .generic = _("火属性招式"),
         .palette = 13,
         .zMove = MOVE_INFERNO_OVERDRIVE,
         .maxMove = MOVE_MAX_FLARE,
@@ -291,8 +291,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_WATER] =
     {
-        .name = _("Water"),
-        .generic = _("a WATER move"),
+        .name = _("水"),
+        .generic = _("水属性招式"),
         .palette = 14,
         .zMove = MOVE_HYDRO_VORTEX,
         .maxMove = MOVE_MAX_GEYSER,
@@ -313,8 +313,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_GRASS] =
     {
-        .name = _("Grass"),
-        .generic = _("a GRASS move"),
+        .name = _("草"),
+        .generic = _("草属性招式"),
         .palette = 15,
         .zMove = MOVE_BLOOM_DOOM,
         .maxMove = MOVE_MAX_OVERGROWTH,
@@ -335,8 +335,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_ELECTRIC] =
     {
-        .name = _("Electric"),
-        .generic = _("an ELECTRIC move"),
+        .name = _("电"),
+        .generic = _("电属性招式"),
         .palette = 13,
         .zMove = MOVE_GIGAVOLT_HAVOC,
         .maxMove = MOVE_MAX_LIGHTNING,
@@ -357,8 +357,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_PSYCHIC] =
     {
-        .name = _("Psychic"),
-        .generic = _("a PSYCHIC move"),
+        .name = _("超能力"),
+        .generic = _("超能力属性招式"),
         .palette = 14,
         .zMove = MOVE_SHATTERED_PSYCHE,
         .maxMove = MOVE_MAX_MINDSTORM,
@@ -379,8 +379,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_ICE] =
     {
-        .name = _("Ice"),
-        .generic = _("an ICE move"),
+        .name = _("冰"),
+        .generic = _("冰属性招式"),
         .palette = 14,
         .zMove = MOVE_SUBZERO_SLAMMER,
         .maxMove = MOVE_MAX_HAILSTORM,
@@ -401,8 +401,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_DRAGON] =
     {
-        .name = _("Dragon"),
-        .generic = _("a DRAGON move"),
+        .name = _("龙"),
+        .generic = _("龙属性招式"),
         .palette = 15,
         .zMove = MOVE_DEVASTATING_DRAKE,
         .maxMove = MOVE_MAX_WYRMWIND,
@@ -423,8 +423,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_DARK] =
     {
-        .name = _("Dark"),
-        .generic = _("a DARK move"),
+        .name = _("恶"),
+        .generic = _("恶属性招式"),
         .palette = 13,
         .zMove = MOVE_BLACK_HOLE_ECLIPSE,
         .maxMove = MOVE_MAX_DARKNESS,
@@ -445,8 +445,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_FAIRY] =
     {
-        .name = _("Fairy"),
-        .generic = _("a FAIRY move"),
+        .name = _("妖精"),
+        .generic = _("妖精属性招式"),
         .palette = 14,
         .zMove = MOVE_TWINKLE_TACKLE,
         .maxMove = MOVE_MAX_STARFALL,
@@ -467,8 +467,8 @@ const struct TypeInfo gTypesInfo[NUMBER_OF_MON_TYPES] =
     },
     [TYPE_STELLAR] =
     {
-        .name = _("Stellar"),
-        .generic = _("a STELLAR move"),
+        .name = _("星晶"),
+        .generic = _("星晶属性招式"),
         .palette = 15,
         .zMove = MOVE_BREAKNECK_BLITZ,
         .maxMove = MOVE_MAX_STRIKE,
