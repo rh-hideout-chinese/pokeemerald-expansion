@@ -224,121 +224,41 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives:
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_IntroSpeech:
-	.string "WALLACE: Welcome, {PLAYER}{KUN}.\p"
-	.string "That incident in SOOTOPOLIS CITY…\n"
-	.string "That was superb work, putting an end\l"
-	.string "to that crisis all by yourself.\p"
-	.string "Oops!\p"
-	.string "It wouldn't be fair to say that you\n"
-	.string "alone ended the crisis.\p"
-	.string "You overcame that difficult situation\n"
-	.string "by working as one with your POKéMON.\p"
-	.string "We TRAINERS raise POKéMON by giving\n"
-	.string "them items and by teaching them new\l"
-	.string "techniques for battle.\p"
-	.string "But we ourselves also learn many\n"
-	.string "things from POKéMON.\p"
-	.string "And this is where your achievements\n"
-	.string "are put to the test against what\l"
-	.string "others like you have achieved.\p"
-	.string "Now!\p"
-	.string "Who can most elegantly dance with\n"
-	.string "their POKéMON in HOENN?\p"
-	.string "Show me right here and now!$"
+    .string "米可利：欢迎你，{PLAYER}{KUN}。\p在琉璃市发生的事…\n你做得很好，通过自己的努力\l战胜了罪恶。\p呵呵！\p让你独自去阻止罪恶\n可能有点不太公平。\p通过你和你的宝可梦之间的努力，\n你克服了重重困难。\p我们训练师通过给予宝可梦道具\n来培养它们。\l和教给它们战斗所需招式。\p其实我们自己本身\n也从宝可梦那里得到学习。\p这里就是与其他像你一样的对手战斗\n来检验自己努力成果的最好的地方。\p现在！\p谁能与自己的宝可梦\n在丰缘笑到最后？\p现在，就在这里展示给我看吧！$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat:
-	.string "I, the CHAMPION, fall in defeat…\p"
-	.string "That was wonderful work.\n"
-	.string "You were elegant, infuriatingly so.\l"
-	.string "And yet it was utterly glorious!\p"
-	.string "Kudos to you, {PLAYER}{KUN}!\p"
-	.string "You are a truly noble POKéMON\n"
-	.string "TRAINER!$"
+    .string "我，冠军，被打败了…\p真是精彩的比赛。\n你是那么的优秀，我也感到愤怒了。\l但是我输得心服口服！\p光荣属于你，{PLAYER}{KUN}！\p你是一名真正伟大的\n宝可梦训练师！$"
 
 EverGrandeCity_ChampionsRoom_Text_PostBattleSpeech:
-	.string "WALLACE: The POKéMON you sent into\n"
-	.string "battle…\p"
-	.string "At times they danced like a spring\n"
-	.string "breeze, and at times they struck\l"
-	.string "like lightning.\p"
-	.string "It was with light, yet surefooted,\n"
-	.string "elegance that you led your POKéMON.\p"
-	.string "Even I felt bedazzled by your\n"
-	.string "masterful performance!\p"
-	.string "You now stand at the glorious peak\n"
-	.string "of the POKéMON LEAGUE.\p"
-	.string "I now proclaim you to be the new\n"
-	.string "HOENN region…$"
+    .string "米可利：你所选择参加战斗的\n宝可梦…\p有时它们轻柔如风\n有时它们又\l迅猛如闪电。\p你指挥你的宝可梦\n是那么轻松，稳健，优雅。\p甚至我都被你\n出色的表演所迷惑！\p你现在已经到达了\n宝可梦联盟的顶峰。\p我现在宣布\n你是丰缘地区新的…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayAdvice:
-	.string "MAY: {PLAYER}{KUN}!\p"
-	.string "Here's some advice before you challenge\n"
-	.string "the CHAMPION…$"
+    .string "小遥：{PLAYER}{KUN}！\p给你几条挑战冠军前\n的建议…$"
 
 EverGrandeCity_ChampionsRoom_Text_MayItsAlreadyOver:
-	.string "MAY: Huh?\n"
-	.string "What, what, what?\p"
-	.string "{PLAYER}{KUN}…\n"
-	.string "Could it be that…\l"
-	.string "It's already over?$"
+    .string "小遥：呃？\n什么，那个，难道？\p{PLAYER}{KUN}…\n不会吧…\l已经结束了？$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanAdvice:
-	.string "BRENDAN: {PLAYER}!\p"
-	.string "How would you like some advice before\n"
-	.string "you challenge the CHAMPION?…$"
+    .string "佑树：{PLAYER}！\p需要挑战冠军前\n的建议吗？…$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanYouveWon:
-	.string "BRENDAN: {PLAYER}…\p"
-	.string "Are you trying to tell me…\n"
-	.string "You've beaten the CHAMPION?$"
+    .string "佑树：{PLAYER}…\p你不会是想告诉我…\n你已经打败了冠军？$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchArriveRatePokedex:
-	.string "PROF. BIRCH: See?\n"
-	.string "What did I tell you, {RIVAL}?\p"
-	.string "Didn't I tell you that you don't need\n"
-	.string "to worry about {PLAYER}{KUN}?\p"
-	.string "… … … … … … … …\n"
-	.string "{PLAYER}{KUN}, you've finally done it.\p"
-	.string "When I heard that you defeated your\n"
-	.string "own father at the PETALBURG GYM,\l"
-	.string "I thought perhaps you had a chance…\p"
-	.string "But to think you've actually become\n"
-	.string "the CHAMPION!\p"
-	.string "Ah, yes!\p"
-	.string "What became of your POKéDEX?\n"
-	.string "Here, let me see.$"
+    .string "小田卷博士：是吧？\n就像我之前说过的，{RIVAL}？\p我说过你不必担忧\n{PLAYER}{KUN}？\p… … … … … … … …\n{PLAYER}{KUN}，你最终成功了。\p当我听说你\n在橙华道馆打败了你的父亲，\l我当时认为你可能有机会…\p但是我没想到你现在确实\n成了冠军！\p啊，是的！\p你的图鉴完成得如何了？\n这里，来让我看下。$"
 
 EverGrandeCity_ChampionsRoom_Text_BirchCongratulations:
-	.string "PROF. BIRCH: Anyways,\n"
-	.string "congratulations!\p"
-	.string "Now, go proudly into the final room!$"
+    .string "小田卷博士：不管怎么说，\n恭喜你！\p现在，昂首挺进最终的房间吧！$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceComeWithMe:
-	.string "WALLACE: {PLAYER}{KUN}…\p"
-	.string "No, let me rephrase that properly.\p"
-	.string "The new CHAMPION!\p"
-	.string "Come with me.$"
+    .string "米可利：{PLAYER}{KUN}…\p不，我要改口了。\p新的冠军！\p跟我来。$"
 
 EverGrandeCity_ChampionsRoom_Text_WallaceWaitOutside:
-	.string "WALLACE: I'm sorry, but…\p"
-	.string "From here on, only those TRAINERS who\n"
-	.string "have become CHAMPIONS may enter.\p"
-	.string "You'll have to wait outside with\n"
-	.string "PROF. BIRCH.$"
+    .string "米可利：对不起，但是…\p从这里开始，只有那些成为冠军的训练师\n才可以进去。\p你只能在外面等候了\n小田卷博士。$"
 
 EverGrandeCity_ChampionsRoom_Text_MayCongratulations:
-	.string "MAY: Groan…\p"
-	.string "… … … … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "I'm just joking! That's okay!\n"
-	.string "That's the rule!\p"
-	.string "{PLAYER}{KUN}!\n"
-	.string "Honestly, congratulations!$"
+    .string "小遥：呃…\p… … … … … … … …\n… … … … … … … …\p开玩笑的吧？！没关系！\n这是规定嘛！\p{PLAYER}{KUN}！\n真诚的恭喜你！$"
 
 EverGrandeCity_ChampionsRoom_Text_BrendanCongratulations:
-	.string "BRENDAN: Whaaaat?! … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "It can't be helped if that's the rule.\p"
-	.string "{PLAYER}, way to go!\n"
-	.string "Congratulations!$"
+    .string "佑树：什什什么？！… … … … …\n… … … … … … … …\p如果规定了这样也没有办法。\p{PLAYER}，去吧！\n恭喜你！$"
 

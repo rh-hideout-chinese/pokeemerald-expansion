@@ -59,30 +59,8 @@ SeafloorCavern_Entrance_EventScript_GruntFacePlayerNorth::
 	return
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeep:
-	.string "Hey!\n"
-	.string "I remember your face!\p"
-	.string "If you're here, it must mean that\n"
-	.string "you're about to mess with us again!\p"
-	.string "A punk like you, do you really think\n"
-	.string "you can take on TEAM AQUA?\p"
-	.string "I'd say you're too early by about\n"
-	.string "a trillion years!\p"
-	.string "You're a perfect fit for the likes of\n"
-	.string "TEAM MAGMA!\p"
-	.string "Speaking of TEAM MAGMA, I hear they\n"
-	.string "were spotted near MOSSDEEP.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+    .string "嘿！\n我记得你！\p既然你来了，那也就是说\n你又想来给我们捣乱了！\p像你这样的废物，难道还以为\n能凭自己阻止我们水舰队？\p告诉你，你还早了\n一万亿年！\p你这样的人和火岩队\n那些家伙倒是挺般配！\p说起火岩队，听说\n有人在绿岭市看见过他们。\p那些成捆的呆子，他们\n没资格接近大海！$"
 
 SeafloorCavern_Entrance_Text_HearMagmaNearMossdeepShort:
-	.string "A punk like you, do you really think\n"
-	.string "you can take on TEAM AQUA?\p"
-	.string "I'd say you're too early by about\n"
-	.string "a trillion years!\p"
-	.string "You're a perfect fit for the likes of\n"
-	.string "TEAM MAGMA!\p"
-	.string "Speaking of TEAM MAGMA, I hear they\n"
-	.string "were spotted near MOSSDEEP.\p"
-	.string "That bunch of goons, they sure don't\n"
-	.string "look good near the sea!$"
+    .string "像你这样的废物，难道还以为\n能凭自己阻止我们水舰队？\p告诉你，你还早了\n一万亿年！\p你这样的人和火岩队\n那些家伙倒是挺般配！\p说起火岩队，听说\n有人在绿岭市看见过他们。\p那些成捆的呆子，他们\n没资格接近大海！$"
 

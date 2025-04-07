@@ -173,20 +173,14 @@ Route121_EventScript_RematchCristin::
 	end
 
 Route121_Text_OkayMoveOutToMtPyre:
-	.string "Okay!\n"
-	.string "We're to move out to MT. PYRE!$"
+    .string "好！\n向送神火山码头出发！$"
 
 Route121_Text_AheadLoomsMtPyre:
-	.string "Ahead looms MT. PYRE…\p"
-	.string "It is a natural monument to the spirits \n"
-	.string "of departed POKéMON…$"
+    .string "前方隐约可以看到送神火山码头…\p那是自然为故去宝可梦的\n灵魂建立的坟墓…$"
 
 Route121_Text_MtPyrePierSign:
-	.string "MT. PYRE PIER\p"
-	.string "…The sign is old and worn out.\n"
-	.string "The words are barely legible…$"
+    .string "送神火山码头\p…牌子老旧得快要坏掉了，\n上面的字迹几乎看不清楚…$"
 
 Route121_Text_SafariZoneSign:
-	.string "“Filled with rare POKéMON!”\n"
-	.string "SAFARI ZONE$"
+    .string "“稀有宝可梦的家园！”\n野生原野区$"
 

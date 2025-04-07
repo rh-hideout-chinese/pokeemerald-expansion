@@ -81,66 +81,32 @@ RustboroCity_DevonCorp_1F_EventScript_ProductsDisplay::
 	end
 
 RustboroCity_DevonCorp_1F_Text_WelcomeToDevonCorp:
-	.string "Hello and welcome to the DEVON\n"
-	.string "CORPORATION.\p"
-	.string "We're proud producers of items and\n"
-	.string "medicine that enhance your life.$"
+    .string "您好，欢迎来到\n得文公司。\p我们公司发明\n改变人们生活的药品和道具。$"
 
 RustboroCity_DevonCorp_1F_Text_StaffGotRobbed:
-	.string "One of our research staff stupidly\n"
-	.string "got robbed of an important parcel.$"
+    .string "我们的一个调查员被人\n把很重要的包裹抢走了。$"
 
 RustboroCity_DevonCorp_1F_Text_ThoseShoesAreOurProduct:
-	.string "Hey, those RUNNING SHOES!\n"
-	.string "They're one of our products!\p"
-	.string "It makes me happy when I see someone\n"
-	.string "using something we made.$"
+    .string "哎，那是风速鞋！\n那也是我们的产品！\p每次看到别人使用我们的发明，\n我都会很高兴。$"
 
 RustboroCity_DevonCorp_1F_Text_RobberWasntVeryBright:
-	.string "That stolen parcel…\p"
-	.string "Well, sure it's important, but it's not\n"
-	.string "anything that anyone can use.\p"
-	.string "In my estimation, that robber must not\n"
-	.string "have been very bright.$"
+    .string "被偷走的包裹…\p虽然确实很重要，\n但也不是所有人都会使用的东西。\p我看那个强盗\n没那么聪明。$"
 
 RustboroCity_DevonCorp_1F_Text_SoundsLikeStolenGoodsRecovered:
-	.string "It sounds like they've recovered\n"
-	.string "the ripped-off DEVON GOODS.$"
+    .string "听说被抢走的得文的包裹\n找回来了。$"
 
 RustboroCity_DevonCorp_1F_Text_OnlyAuthorizedPeopleEnter:
-	.string "I'm sorry, only authorized people\n"
-	.string "are allowed to enter here.$"
+    .string "对不起，\n无关人士请勿入内。$"
 
 RustboroCity_DevonCorp_1F_Text_HowCouldWeGetRobbed:
-	.string "It's beyond stupid.\n"
-	.string "How could we get robbed?$"
+    .string "说什么傻话，\n谁会抢我们的东西？$"
 
 RustboroCity_DevonCorp_1F_Text_YoureAlwaysWelcomeHere:
-	.string "Hi, there!\n"
-	.string "You're always welcome here!$"
+    .string "您好！\n随时欢迎您来参观！$"
 
 RustboroCity_DevonCorp_1F_Text_RocksMetalDisplay:
-	.string "Samples of rocks and metal are\n"
-	.string "displayed in the glass case.\p"
-	.string "There's a panel with some writing\n"
-	.string "on it…\p"
-	.string "“DEVON CORPORATION got its start as\n"
-	.string "a producer of stones from quarries.\p"
-	.string "“The company also produced iron from\n"
-	.string "filings in the sand.\p"
-	.string "“From that humble start as a producer\n"
-	.string "of raw materials, DEVON developed.\p"
-	.string "“DEVON is now a manufacturer of a wide\n"
-	.string "range of industrial products.”$"
+    .string "玻璃箱子里展示着\n岩石和金属的样品，\p上面有张卡片上\n写了些什么…\p“得文公司创立时\n仅仅是一家以采石为业的小公司，\p同时也利用沙子中的\n铁屑炼铁。\p得文从一个微小的\n原材料处理公司起家，\p现在已发展成为一个开发出的产品\n覆盖很多工业领域的大型制造商。”$"
 
 RustboroCity_DevonCorp_1F_Text_ProductDisplay:
-	.string "Prototypes and test products fill\n"
-	.string "the glass display case.\p"
-	.string "There's a panel with a description…\p"
-	.string "“In addition to industrial products,\n"
-	.string "DEVON now markets sundries and\l"
-	.string "pharmaceuticals for better lifestyles.\p"
-	.string "“Recently, DEVON has begun marketing\n"
-	.string "tools for POKéMON TRAINERS, including\l"
-	.string "POKé BALLS and POKéNAV systems.”$"
+    .string "玻璃展示柜里放了些\n产品的原型和试验品。\p有张卡片上写着说明…\p“除工业产品外，\n得文如今也开发\l日常用品与药品。\p近年来，得文致力于\n为宝可梦训练师开发包括\l精灵球和口袋领航员系统等一系列工具。”$"
 

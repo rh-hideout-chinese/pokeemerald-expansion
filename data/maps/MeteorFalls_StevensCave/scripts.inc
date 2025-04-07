@@ -29,31 +29,11 @@ MeteorFalls_StevensCave_EventScript_Defeated::
 	end
 
 MeteorFalls_StevensCave_Text_ShouldKnowHowGoodIAmExpectWorst:
-	.string "STEVEN: Oh, wow, {PLAYER}{KUN}.\n"
-	.string "I'm amazed you knew where to find me.\p"
-	.string "Do you, uh…maybe think of me as\n"
-	.string "just a rock maniac?\p"
-	.string "No, that can't be right.\p"
-	.string "We battled alongside each other at\n"
-	.string "the SOOTOPOLIS SPACE CENTER.\p"
-	.string "You should have a very good idea\n"
-	.string "about how good I am.\p"
-	.string "Okay, {PLAYER}{KUN}, if you're going to mount\n"
-	.string "a serious challenge, expect the worst!$"
+    .string "大吾：哦，哇，{PLAYER}{KUN}，\n你居然知道我在这里。\p你是不是，嗯…认为我是\n个化石狂人？\p不，不会吧。\p我们在绿岭市宇宙中心\n共同战斗过，\p你应该很清楚\n我的实力。\p好吧，{PLAYER}{KUN}，如果你真的\n想挑战我，做好最坏的打算吧！$"
 
 MeteorFalls_StevensCave_Text_StevenDefeat:
-	.string "You…\n"
-	.string "I had no idea you'd become so strong…$"
+    .string "你…\n我居然没发现你已经这么强了…$"
 
 MeteorFalls_StevensCave_Text_MyPredictionCameTrue:
-	.string "STEVEN: Come to think of it, ever since\n"
-	.string "our paths first crossed in GRANITE\l"
-	.string "CAVE in DEWFORD, I had this feeling.\p"
-	.string "I thought that you would eventually\n"
-	.string "become the CHAMPION.\p"
-	.string "My predictions usually come true.\p"
-	.string "And where will you go from here?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Fufufu, even I couldn't tell you that.$"
+    .string "大吾：这么想来，自从在\n武斗镇的石之洞窟\l碰到你，我就有了一种感觉，\p我感觉你最终能\n成为冠军。\p我的预感总是对的。\p你之后该去哪里？\p… … … … … …\n… … … … … …\p嘿嘿，我也无法告诉你。$"
 

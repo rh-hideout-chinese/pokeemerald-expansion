@@ -250,109 +250,53 @@ Route110_TrickHouseEnd_Movement_TrickMasterSurprise:
 	step_end
 
 Route110_TrickHouseEnd_Text_YouveMadeItToMe:
-	.string "Aak!\n"
-	.string "You've made it to me?\l"
-	.string "Hmmm… You're sharp!$"
+    .string "啊啊！\n你来了？\l嗯…了不起！$"
 
 Route110_TrickHouseEnd_Text_AllNightToPlantTrees:
-	.string "It took me all night to plant all those\n"
-	.string "trees…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four, five, six places!$"
+    .string "我用了整整一个晚上\n种起那些树…\p你几乎与我一样伟大，不过你还差\n一、二、三、四、五、六个档次！$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMaze:
-	.string "It took me all night to make the maze…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four, five places!$"
+    .string "我用了整整一个晚上造起迷宫…\p你几乎与我一样伟大，不过你还差\n一、二、三、四、五个档次！$"
 
 Route110_TrickHouseEnd_Text_AllNightToPreparePanels:
-	.string "It took me all night to prepare\n"
-	.string "the wall panels…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three, four places!$"
+    .string "我用了整整一个晚上准备好\n墙上的隔板…\p你几乎与我一样伟大，不过你还差\n一、二、三、四个档次！$"
 
 Route110_TrickHouseEnd_Text_AllNightToShoveBoulders:
-	.string "It took me all night to shove in those\n"
-	.string "boulders…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two, three places!$"
+    .string "我用了整整一个晚上把那些\n大石头推到合适的地方…\p你几乎与我一样伟大，不过你还差\n一、二、三个档次！$"
 
 Route110_TrickHouseEnd_Text_AllNightToMakeMechadolls:
-	.string "It took me all night to make MECHADOLLS\n"
-	.string "and another to think up the quiz…\p"
-	.string "You're almost my equal in greatness by\n"
-	.string "one, two places!$"
+    .string "我用了整整一个晚上制造\n机械娃娃，设计问题…\p你几乎与我一样伟大，不过你还差\n一、二个档次！$"
 
 Route110_TrickHouseEnd_Text_AllNightToInstallDoors:
-	.string "It took me all night to install\n"
-	.string "the doors…\p"
-	.string "You're almost my equal in greatness!$"
+    .string "我用了整整一个晚上\n装好那些门…\p你几乎与我一样伟大！$"
 
 Route110_TrickHouseEnd_Text_AllNightSettingUpArrows:
-	.string "It took me all night setting up arrows…\p"
-	.string "You're my equal in greatness!$"
+    .string "我用了整整一个晚上设置好箭…\p你与我一样伟大！$"
 
 Route110_TrickHouseEnd_Text_AllNightPolishingFloors:
-	.string "It took me all night polishing floors…\p"
-	.string "You're above me in greatness!\n"
-	.string "Possibly…$"
+    .string "我用了整整一个晚上磨光地板…\p你比我还要伟大！\n也许…$"
 
 Route110_TrickHouseEnd_Text_FountainOfIdeasRunDry:
-	.string "Wh-what should I do?\n"
-	.string "My fountain of ideas for tricks has\l"
-	.string "run dry…\p"
-	.string "Perhaps it is time I toured the country\n"
-	.string "on a quest to devise new tricks…$"
+    .string "我…我该怎么办？\n我对谜题的灵感\l已经枯竭了…\p也许我该去环游全国\n来寻找灵感…$"
 
 Route110_TrickHouseEnd_Text_DefeatedMePreferWhichTent:
-	.string "I hate to admit defeat, but you have\n"
-	.string "bested me!\p"
-	.string "Still, you must have been reeled in by\n"
-	.string "my charisma for you to visit me again\l"
-	.string "and again. Yes, you must have!\p"
-	.string "But that has nothing to do with my\n"
-	.string "losing!\p"
-	.string "In recognition of the friendship\n"
-	.string "between you, the driven, and the genius\l"
-	.string "that is myself, I demand that you take\l"
-	.string "this keepsake!\p"
-	.string "Actually there are two--\n"
-	.string "a RED TENT and a BLUE TENT.\l"
-	.string "Which do you prefer?$"
+    .string "我不喜欢认输，但你\n确实比我优秀！\p不过，你一定是被我的魅力\n所吸引，才会一次又一次地\l来到这儿。一定是的！\p然而，这与我的失败\n没有关系！\p作为拥有紧迫感的你和\n拥有天才的头脑的我两个人之间\l友谊的证明，希望你能\l收下这件纪念品！\p其实，这里有两个——\n红帐篷和蓝帐篷。\l你喜欢哪一个？$"
 
 Route110_TrickHouseEnd_Text_NoRoomInPC:
-	.string "What? No room in your PC?\n"
-	.string "What am I to make of that?\p"
-	.string "I wish I could say that, but I am much\n"
-	.string "too kind and caring, so come back later!$"
+    .string "什么？你的电脑里没有空间了？\n我该怎么办？\p我是一个心地非常善良的人，\n你以后再来拿吧！$"
 
 Route110_TrickHouseEnd_Text_LeavingOnJourney:
-	.string "… … … … … …\p"
-	.string "I am leaving on a journey of discovery.\n"
-	.string "A quest in search of new tricks.\p"
-	.string "I wish that you will one day visit and\n"
-	.string "entertain me again.\p"
-	.string "And now, farewell!$"
+    .string "… … … … … …\p我要进行我的发现之旅了，\n为探索新的谜题而进行的旅程。\p希望将来的某一天你还会再来\n解答我的谜题。\p现在，说再见了！$"
 
 Route110_TrickHouseEnd_Text_YouHaveEarnedThisReward:
-	.string "Fine!\n"
-	.string "You have earned this reward!$"
+    .string "好！\n这是给你的奖励！$"
 
 Route110_TrickHouseEnd_Text_NoRoomForThis:
-	.string "What? Have you no room for this?\n"
-	.string "What manner of items do you carry?\p"
-	.string "But fine, since you've reached me,\n"
-	.string "your reward will be with me till later.$"
+    .string "什么？你没有地方放了？\n你都带了些什么样的东西啊？\p不过没关系，既然你走到这儿来了，\n我会替你保管奖品的。$"
 
 Route110_TrickHouseEnd_Text_MakeNewTricksToStumpYou:
-	.string "Scrub that smug smirk from your face!\n"
-	.string "It's much too early to think you've won!\p"
-	.string "I'll make new tricks to stump you, I will.\n"
-	.string "You may mock me only when you're done.\p"
-	.string "Come back for the next exciting\n"
-	.string "installment!$"
+    .string "别把那种傻瓜似的笑挂在脸上！\n你要胜利还早呢！\p我还要设计新的谜题挑战你，我会的！\n想嘲笑我，等你通过了再说吧！\p下次再来进行\n新的挑战吧！$"
 
 Route110_TrickHouseEnd_Text_YoureIgnoringMe:
-	.string "Now, now! You're ignoring me now?\n"
-	.string "Now that, I consider heartbreaking!$"
+    .string "喂喂，你无视我？\n啊，我的心碎了！$"
 

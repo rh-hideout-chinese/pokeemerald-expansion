@@ -90,73 +90,40 @@ AquaHideout_B2F_EventScript_Grunt8::
 	end
 
 AquaHideout_B2F_Text_MattIntro:
-	.string "Hehehe…\p"
-	.string "Got here already, did you?\n"
-	.string "We underestimated you!\p"
-	.string "But this is it!\p"
-	.string "I'm a cut above the GRUNTS you've seen\n"
-	.string "so far.\p"
-	.string "I'm not stalling for time.\n"
-	.string "I'm going to pulverize you!$"
+    .string "嘿嘿嘿…\p居然能走到这儿来啊，\n看来我们低估了你！\p但是到此为止了！\p我可比前面那些家伙\n都要强得多。\p我可不是仅仅拖延时间的，\n我会将你捏成粉末的！$"
 
 AquaHideout_B2F_Text_MattDefeat:
-	.string "Hehehe…\n"
-	.string "So, I lost, too…$"
+    .string "嘿嘿嘿…\n看来我也输了…$"
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
-	.string "Hehehe!\p"
-	.string "While I was toying with you, our BOSS\n"
-	.string "got through his preparations!$"
+    .string "嘿嘿嘿！\p我陪你玩的时候，我们的老大\n就可以做好准备了！$"
 
 AquaHideout_B2F_Text_MattPostBattle:
-	.string "Hehehe!\p"
-	.string "Our BOSS has already gone on his way to\n"
-	.string "some cave under the sea!\p"
-	.string "If you're going to give chase, you'd\n"
-	.string "better search the big, wide sea beyond\l"
-	.string "LILYCOVE.\p"
-	.string "But will you find it then?\n"
-	.string "Hehehe!$"
+    .string "嘿嘿嘿！\p我们的老大已经在去\n海底洞窟的路上了！\p想追的话，就去\n水静市那边\l宽广的海域慢慢找吧。\p但是你能找到吗？\n嘿嘿嘿！$"
 
 AquaHideout_B2F_Text_Grunt4Intro:
-	.string "Wahahah, I grew weary of waiting!\n"
-	.string "You owe me a battle, too!$"
+    .string "哇哈哈，我已经等烦了！\n你也欠我一场战斗！$"
 
 AquaHideout_B2F_Text_Grunt4Defeat:
-	.string "Tired of waiting…\n"
-	.string "Lost and dazed…$"
+    .string "等烦了…\n也败得一塌糊涂…$"
 
 AquaHideout_B2F_Text_Grunt4PostBattle:
-	.string "BOSS…\n"
-	.string "Is this good enough?$"
+    .string "老大…\n这样可以了么？$"
 
 AquaHideout_B2F_Text_Grunt6Intro:
-	.string "Warp panels, the HIDEOUT's pride\n"
-	.string "and joy!\p"
-	.string "You're clueless about where you are,\n"
-	.string "aren't you?\p"
-	.string "Fluster and tire out the enemy, then\n"
-	.string "lower the boom! That's our plan!$"
+    .string "这里的传送地板可是\n基地的骄傲！\p你完全不知道你身在何处了吧，\n不是吗？\p等敌人变得慌乱又疲劳，突然给他\n致命一击！这就是我们的作战计划！$"
 
 AquaHideout_B2F_Text_Grunt6Defeat:
-	.string "What's wrong with you?\n"
-	.string "You're not tired at all!$"
+    .string "你怎么会这样？\n你一点也不显得累！$"
 
 AquaHideout_B2F_Text_Grunt6PostBattle:
-	.string "That reminds me… I can't remember\n"
-	.string "where I put the MASTER BALL.\p"
-	.string "If I fail to guard it, our BOSS will\n"
-	.string "chew me out…$"
+    .string "说起来…我忘了\n把掌门球放在哪里了。\p如果我没有保护好它，\n会被老大骂死的…$"
 
 AquaHideout_B2F_Text_Grunt8Intro:
-	.string "When I joined TEAM AQUA, the first\n"
-	.string "thing I had to learn was how these\l"
-	.string "warp panels connected.$"
+    .string "我加入水舰队的时候，第一件事\n就是记住这些传送地板\l都通向什么地方。$"
 
 AquaHideout_B2F_Text_Grunt8Defeat:
-	.string "I was too occupied thinking about\n"
-	.string "the warp panels…$"
+    .string "脑子里全都是\n传送地板的事情了…$"
 
 AquaHideout_B2F_Text_Grunt8PostBattle:
-	.string "I'll have to learn about how I can\n"
-	.string "battle more effectively…$"
+    .string "我想我必须学学\n战斗的要诀了…$"

@@ -14,32 +14,11 @@ BattleFrontier_Lounge8_EventScript_NinjaBoy::
 	end
 
 BattleFrontier_Lounge8_Text_WhatATrainerNeeds:
-	.string "What a TRAINER needs…\p"
-	.string "Knowledge…\n"
-	.string "Strategy…\l"
-	.string "Luck…\l"
-	.string "Guts…\l"
-	.string "Spirit…\l"
-	.string "Bravery…\l"
-	.string "And ability…\p"
-	.string "Well, I'm all set in every way!\n"
-	.string "I'll be unstoppable at every building!\p"
-	.string "Huh? POKéMON?\n"
-	.string "What's that?$"
+    .string "训练师所需要的一切…\p知识…\n战术…\l幸运…\l斗志…\l精神…\l勇气…\l还有才能…\p我可是拥有这一切！\n在这里我必定是战无不胜的！\p嗯？宝可梦？\n那是什么？$"
 
 BattleFrontier_Lounge8_Text_KnowAboutFrontierBrains:
-	.string "Do you know about the FRONTIER\n"
-	.string "BRAINS?\p"
-	.string "That's what SCOTT calls the seven\n"
-	.string "special TRAINERS that run the seven\l"
-	.string "facilities in the BATTLE FRONTIER.$"
+    .string "你知道\n开拓之脑吗？\p亚希达是这么称呼\n管理对战开拓区七大设施的\l那七位特别的训练师的。$"
 
 BattleFrontier_Lounge8_Text_ToldMeIHaveTalentForBattling:
-	.string "At the BATTLE TOWER, an older girl\n"
-	.string "told me that I have a lot of talent\l"
-	.string "for battling!\p"
-	.string "I like POKéMON CONTESTS more!\p"
-	.string "But I'm no good at CONTESTS!\p"
-	.string "I guess having talent and liking\n"
-	.string "something aren't the same.$"
+    .string "对战塔里有一位大姐姐\n告诉我我在战斗方面的才能\l非常出色！\p不过我更喜欢宝可梦华丽大赛！\p但我在华丽大赛上完全不行！\p我想也许喜欢和天赋\n是两码事吧。$"
 

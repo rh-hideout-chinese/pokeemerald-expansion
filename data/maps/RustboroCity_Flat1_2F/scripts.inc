@@ -79,100 +79,44 @@ RustboroCity_Flat1_2F_EventScript_PokeDoll::
 	end
 
 RustboroCity_Flat1_2F_Text_ComingUpWithMealsIsHard:
-	.string "Oh, it's so hard every day…\p"
-	.string "What's hard?\n"
-	.string "You need to ask?\p"
-	.string "It's trying to figure out what to\n"
-	.string "make for meals every day.\p"
-	.string "It really isn't easy coming up with\n"
-	.string "meals every day.$"
+    .string "唉，天天这样太难了…\p什么难？\n还用问吗？\p当然是考虑一天三餐\n该吃什么。\p每天都想着做什么饭\n也不容易。$"
 
 RustboroCity_Flat1_2F_Text_HelloDoYouKnowFunnyPhrase:
-	.string "Oh, hello!\n"
-	.string "Welcome to the PEPPER household.\p"
-	.string "I have a question for you.\n"
-	.string "Have you ever baby-sat?\p"
-	.string "You see, I'm a new father, so raising\n"
-	.string "a child is all new to me.\p"
-	.string "And I have a problem. My daughter\n"
-	.string "WALDA doesn't laugh enough.\p"
-	.string "I think she'd laugh for me if I told\n"
-	.string "her something funny.\p"
-	.string "Do you know of a funny word or\n"
-	.string "phrase you can tell me?$"
+    .string "哎，你好！\n欢迎来到胡椒叔叔家。\p问你一个问题，\n你带过小孩吗？\p你看，我刚当上爸爸，\n抚养孩子什么的都得从头学。\p我现在有点麻烦，\n女儿瓦达总是不爱笑。\p我想如果给她讲笑话\n她就会笑起来的。\p你知道什么有趣的故事\n或词语吗？$"
 
 RustboroCity_Flat1_2F_Text_BeenSayingXDoYouKnowBetterPhrase:
-	.string "I've been saying “{STR_VAR_1}”\n"
-	.string "to amuse her lately.\p"
-	.string "Do you know of a better word or\n"
-	.string "a phrase that might work?$"
+    .string "我最近试过说\n“{STR_VAR_1}”逗她笑，\p你还知道什么\n更好点的词吗？$"
 
 RustboroCity_Flat1_2F_Text_WonderfulLetsHearSuggestion:
-	.string "Oh, that's wonderful.\n"
-	.string "So, let's hear it, your suggestion.$"
+    .string "哎，不错，那就听你的，\n说给她听听吧。$"
 
 RustboroCity_Flat1_2F_Text_OhIsThatRight:
-	.string "Oh, is that right?\p"
-	.string "Well, if you come up with a good\n"
-	.string "suggestion, I'm all ears.$"
+    .string "唉，是吗？\p如果你想到什么好主意，\n我洗耳恭听。$"
 
 RustboroCity_Flat1_2F_Text_LetsGiveItATry2:
-	.string "Ah, I see.\n"
-	.string "Well, let's give it a try, shall we?$"
+    .string "啊，知道了。\n来试试吧？$"
 
 RustboroCity_Flat1_2F_Text_OhShesLaughing:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Oh, yes! She's laughing!\n"
-	.string "Oh, I am as delighted as she!$"
+    .string "{STR_VAR_1}。\n{STR_VAR_1}。\p啊，太好了，她笑了！\n啊，我也跟她一样开心！$"
 
 RustboroCity_Flat1_2F_Text_LetsGiveItATry:
-	.string "Ah, I see.\n"
-	.string "Well, let's give it a try, shall we?$"
+    .string "啊，知道了。\n来试试吧？$"
 
 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+    .string "{STR_VAR_1}。\n{STR_VAR_1}。\p唔…她根本不笑。\n也许瓦达生来就很严肃…$"
 
 RustboroCity_Flat1_2F_Text_ThinkOfMyOwnPhrase:
-	.string "Oh, so you don't know any good words.\n"
-	.string "I'd better think for myself, then.\p"
-	.string "Hmm…\n"
-	.string "How about “{STR_VAR_1}”?\l"
-	.string "Let's see if that will work.$"
+    .string "唉，你也不知道什么好词啊。\n那我只能自己想一个了。\p嗯…\n“{STR_VAR_1}”怎么样？\l我们试试看。$"
 
 RustboroCity_Flat1_2F_Text_ShesNotSmilingAtAll2:
-	.string "{STR_VAR_1}.\n"
-	.string "{STR_VAR_1}.\p"
-	.string "Hmmm… She's not smiling at all.\n"
-	.string "Maybe WALDA is one serious child…$"
+    .string "{STR_VAR_1}。\n{STR_VAR_1}。\p唔…她根本不笑。\n也许瓦达生来就很严肃…$"
 
 RustboroCity_Flat1_2F_Text_OhYouDontKnowAny:
-	.string "Oh, so you don't know any good words.\n"
-	.string "I guess I'll try to amuse her with\l"
-	.string "the saying I used before.\p"
-	.string "Anyways, if you have a good suggestion,\n"
-	.string "don't hesitate in telling me, okay?$"
+    .string "唉，你也不知道什么好词啊。\n看来我只能用上次的词\l逗她笑了。\p对了，如果你想到了什么，\n要赶快告诉我，好吗？$"
 
 RustboroCity_Flat1_2F_Text_ThankYouIllGiveYouWallpaper:
-	.string "Thank you!\p"
-	.string "Thanks to you, my darling WALDA\n"
-	.string "laughed for me!\p"
-	.string "Actually, I may not look all that\n"
-	.string "special, but I'm one of DEVON\l"
-	.string "CORPORATION's top researchers.\p"
-	.string "So, how about I do something in return\n"
-	.string "for you?\p"
-	.string "I know, I'll add some new wallpaper\n"
-	.string "patterns for the BOXES in the PC\l"
-	.string "POKéMON Storage System.\p"
-	.string "In the wallpaper pattern menu,\n"
-	.string "select “FRIENDS.”\p"
-	.string "That will give you access to the new\n"
-	.string "wallpaper patterns.$"
+    .string "谢谢！\p多亏了你，我亲爱的瓦达\n开始笑了！\p实际上，虽然我看起来\n很普通，但我是得文\l公司的主力研究员之一。\p我该做点什么\n报答你？\p对了，我给你的\n电脑宝可梦存储系统里的\l盒子加些新的背景图片吧。\p在选择背景图案的菜单中\n选择“朋友”，\p就能连接到\n新的背景图片。$"
 
 RustboroCity_Flat1_2F_Text_ItsAPokemonPlushDoll:
-	.string "It's a POKéMON plush DOLL!$"
+    .string "是宝可梦毛绒玩具！$"
 

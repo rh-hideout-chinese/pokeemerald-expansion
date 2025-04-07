@@ -28,27 +28,14 @@ PacifidlogTown_EventScript_TownSign::
 	end
 
 PacifidlogTown_Text_FastRunningCurrent:
-	.string "The sea between PACIFIDLOG and\n"
-	.string "SLATEPORT has a fast-running tide.\p"
-	.string "If you decide to SURF, you could end\n"
-	.string "up swept away somewhere else.$"
+    .string "暮水镇与凯那市\n之间的海流很急，\p如果你打算冲浪，最后恐怕\n会被冲到谁也不知道的地方。$"
 
 PacifidlogTown_Text_NeatHousesOnWater:
-	.string "See, isn't it neat?\n"
-	.string "These houses are on water!\p"
-	.string "I was born here!$"
+    .string "看，很简单的镇子吧？\n房子都建在水上！\p我就是在这儿出生的！$"
 
 PacifidlogTown_Text_SkyPillarTooScary:
-	.string "The SKY PILLAR?\p"
-	.string "…Oh, you must mean that tall, tall\n"
-	.string "tower a little further out.\p"
-	.string "If you asked me, I wouldn't climb it.\n"
-	.string "It's too scary to get up that high.\p"
-	.string "Life at sea level in PACIFIDLOG,\n"
-	.string "that suits me fine.$"
+    .string "天空之柱？\p…哦，你是说不远处\n那座高高的塔吧。\p别问我，我不会去爬的，\n登那么高太可怕了。\p对我来说，还是住在海平面上的\n暮水镇中更安心。$"
 
 PacifidlogTown_Text_TownSign:
-	.string "PACIFIDLOG TOWN\p"
-	.string "“Where the morning sun smiles upon\n"
-	.string "the waters.”$"
+    .string "暮水镇\p“早晨的太阳\n在海平面上微笑。”$"
 

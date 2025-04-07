@@ -10,17 +10,8 @@ SootopolisCity_House7_EventScript_PokefanF::
 	end
 
 SootopolisCity_House7_Text_CityFromEruptedVolcano:
-	.string "An underwater volcano erupted and\n"
-	.string "forced itself up from the depths.\p"
-	.string "Its crater emerged from the sea and\n"
-	.string "became filled with rainwater.\p"
-	.string "That's how SOOTOPOLIS CITY came into\n"
-	.string "being.$"
+    .string "海底火山爆发后，\n从深海中升起，\p火山口露出海面，\n被雨水填满。\p琉璃市的历史\n就由此开端。$"
 
 SootopolisCity_House7_Text_CaveMadeToKeepSomething:
-	.string "The cave that links SOOTOPOLIS and\n"
-	.string "the outside world…\p"
-	.string "It seems as if the cave was made to\n"
-	.string "keep something from getting out.\p"
-	.string "Or am I just imagining things?$"
+    .string "连接琉璃市和外界的\n洞窟…\p就好像那洞窟是为了\n防止什么离开而建造的。\p这只是我的想象吗？$"
 

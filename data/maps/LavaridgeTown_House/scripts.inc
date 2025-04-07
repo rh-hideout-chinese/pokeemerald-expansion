@@ -16,11 +16,8 @@ LavaridgeTown_House_EventScript_Zigzagoon::
 	end
 
 LavaridgeTown_House_Text_WifeWarmingEggInHotSprings:
-	.string "My wife's warming an EGG in the hot\n"
-	.string "springs. This is what she told me.\p"
-	.string "She left two POKéMON with the DAY CARE.\n"
-	.string "And they discovered that EGG!$"
+    .string "我妻子告诉我，她在温泉里\n养了一只蛋。\p她在抚养家寄存了两只宝可梦，\n然后就发现了那个蛋！$"
 
 LavaridgeTown_House_Text_Zigzagoon:
-	.string "ZIGZAGOON: Pshoo!$"
+    .string "蛇纹熊：噗休！$"
 

@@ -37,22 +37,11 @@ MossdeepCity_Mart_EventScript_Sailor::
 	end
 
 MossdeepCity_Mart_Text_ReviveIsFantastic:
-	.string "REVIVE is fantastic!\p"
-	.string "Give it to a fainted POKéMON,\n"
-	.string "and the POKéMON will arise.\p"
-	.string "But be careful, REVIVE doesn't restore\n"
-	.string "the used-up PP of moves.$"
+    .string "元气药片太神奇了！\p把它给濒死的宝可梦的话，\n宝可梦就会醒来。\p但要小心，元气药片并不能恢复\n招式被用掉的PP。$"
 
 MossdeepCity_Mart_Text_MaxRepelLastsLongest:
-	.string "MAX REPEL keeps all weak POKéMON away.\p"
-	.string "Out of all the REPEL sprays, it lasts\n"
-	.string "the longest.$"
+    .string "黄金喷雾器能赶走所有弱小的宝可梦。\p所有的喷雾器之中，\n它的持续时间最久。$"
 
 MossdeepCity_Mart_Text_NetAndDiveBallsRare:
-	.string "The NET and DIVE BALLS are rare POKé\n"
-	.string "BALLS that are only made in MOSSDEEP.\p"
-	.string "A NET BALL is effective against\n"
-	.string "BUG-type and WATER-type POKéMON.\p"
-	.string "A DIVE BALL works best on POKéMON\n"
-	.string "at the bottom of the sea.$"
+    .string "撒网球和潜水球是\n只有绿岭市才卖的稀有精灵球。\p撒网球捉虫系和\n水系宝可梦很有效，\p潜水球则容易捉\n海底的宝可梦。$"
 

@@ -54,33 +54,23 @@ AbandonedShip_Corridors_B1F_EventScript_Duncan::
 	end
 
 AbandonedShip_Corridors_B1F_Text_DuncanIntro:
-	.string "When we go out to sea, we SAILORS\n"
-	.string "always bring our POKéMON.\l"
-	.string "How about a quick battle?$"
+    .string "出航的时候，我们水手\n都带着自己的宝可梦。\l对战一场怎么样？$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanDefeat:
-	.string "Whoops, I'm sunk!$"
+    .string "哎呀，我被击沉了！$"
 
 AbandonedShip_Corridors_B1F_Text_DuncanPostBattle:
-	.string "The ship's bottom has sunk into the\n"
-	.string "depths.\p"
-	.string "If a POKéMON knew how to go underwater,\n"
-	.string "we might make some progress…$"
+    .string "我们的船现在\n搁浅了。\p如果有会潜水的宝可梦的话，\n或许能帮上什么忙…$"
 
 AbandonedShip_Corridors_B1F_Text_YayItsAShip:
-	.string "Yay!\n"
-	.string "It's a ship!$"
+    .string "耶！\n是船啊！$"
 
 AbandonedShip_Corridors_B1F_Text_DoorIsLocked:
-	.string "The door is locked.\p"
-	.string "“STORAGE” is painted on the door.$"
+    .string "门锁上了。\p门上写着“仓库”。$"
 
 AbandonedShip_Corridors_B1F_Text_InsertedStorageKey:
-	.string "{PLAYER} inserted and turned the\n"
-	.string "STORAGE KEY.\p"
-	.string "The inserted KEY stuck fast,\n"
-	.string "but the door opened.$"
+    .string "{PLAYER}插入了\n仓库的钥匙。\p插入的钥匙很快卡住了，\n不过门被打开了。$"
 
 AbandonedShip_Text_TheDoorIsOpen:
-	.string "The door is open.$"
+    .string "门开了。$"
 

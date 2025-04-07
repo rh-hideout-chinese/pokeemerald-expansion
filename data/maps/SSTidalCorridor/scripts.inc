@@ -254,87 +254,49 @@ SSTidalCorridor_Movement_SailorReturn:
 	step_end
 
 SSTidalCorridor_Text_ScottBattleFrontierInvite:
-	.string "SCOTT: Well, hi, hi!\n"
-	.string "{PLAYER}{KUN}, {PLAYER}{KUN}!\p"
-	.string "Something's come up, so I have to\n"
-	.string "disembark, but am I glad to see you!\p"
-	.string "Congratulations, LEAGUE CHAMPION!\p"
-	.string "There's a place I'd like to invite\n"
-	.string "someone like you.\p"
-	.string "It's the…\n"
-	.string "BATTLE FRONTIER!\p"
-	.string "What's the place like?\n"
-	.string "You'll understand when you see it!\p"
-	.string "I've spoken with the ship's CAPTAIN\n"
-	.string "about this.\p"
-	.string "The next time you take a ferry,\n"
-	.string "you should be able to sail to\l"
-	.string "the BATTLE FRONTIER.\p"
-	.string "Okay, {PLAYER}{KUN}, I'll be waiting for you\n"
-	.string "at the BATTLE FRONTIER!$"
+    .string "亚希达：哦，嘿！\n{PLAYER}{KUN}，{PLAYER}{KUN}！\p出了点事，我要下船\n一趟，但很高兴见到你！\p祝贺你成为联盟冠军！\p我想邀请像你这样的人\n去一个地方，\p那就是…\n对战开拓区！\p那是什么地方？\n你去了就知道了！\p我已经和船长\n说好了，\p你下次坐船的时候，\n就可以选择去\l对战开拓区了。\p就这样，{PLAYER}{KUN}，我会在\n对战开拓区等你的！$"
 
 SSTidal_Text_FastCurrentsHopeYouEnjoyVoyage:
-	.string "This ferry is built to plow through\n"
-	.string "fast-running currents.\p"
-	.string "We hope you enjoy your voyage with us.\n"
-	.string "Feel free to explore the ship.$"
+    .string "这艘船是为了驶过急流\n而专门建造的。\p我们希望能和你共度美好的旅程。\n请自由参观本渡轮。$"
 
 SSTidal_Text_HopeYouEnjoyVoyage:
-	.string "We hope you enjoy your voyage on\n"
-	.string "our ferry.$"
+    .string "希望您能在本渡轮上\n度过美好的旅程。$"
 
 SSTidal_Text_MadeLandInSlateport:
-	.string "We have made land in SLATEPORT CITY.\n"
-	.string "Thank you for sailing with us.$"
+    .string "我们已经到达凯那。\n谢谢您的惠顾。$"
 
 SSTidal_Text_MadeLandInLilycove:
-	.string "We have made land in LILYCOVE CITY.\n"
-	.string "Thank you for sailing with us.$"
+    .string "我们已经到达水静市。\n谢谢您的惠顾。$"
 
 SSTidalCorridor_Text_CanRestInCabin2:
-	.string "It'll be some time before we make land,\n"
-	.string "I reckon.\p"
-	.string "You can rest up in your cabin if you'd\n"
-	.string "like. Your cabin's No. 2.\p"
-	.string "The bed in there is soft and plushy.\n"
-	.string "I can attest to how comfy it is!$"
+    .string "船要过一会儿才能\n到达目的地，\p你可以在船舱里稍事休息。\n你的船舱号是2号，\p那里的床很柔软舒适，\n我保证你会感觉很舒服的！$"
 
 SSTidalCorridor_Text_WeveArrived:
-	.string "We've arrived!$"
+    .string "我们到了！$"
 
 SSTidalCorridor_Text_VisitOtherCabins:
-	.string "Go visit other cabins.\n"
-	.string "TRAINERS bored of the boat trip will\l"
-	.string "be itching to battle.$"
+    .string "去其它船舱转转吧，\n厌烦了漫长旅程的训练师\l一个个都跃跃欲试。$"
 
 SSTidalCorridor_Text_EnjoyYourCruise:
-	.string "Enjoy your cruise!$"
+    .string "旅途愉快！$"
 
 SSTidalCorridor_Text_HorizonSpreadsBeyondPorthole:
-	.string "The horizon spreads beyond\n"
-	.string "the porthole.$"
+    .string "舷窗外地平线\n愈加宽广。$"
 
 SSTidalCorridor_Text_BrineyWelcomeAboard:
-	.string "MR. BRINEY: Welcome aboard, {PLAYER}{KUN}!\p"
-	.string "They made me honorary captain of\n"
-	.string "the S.S. TIDAL!\p"
-	.string "You can call me CAPTAIN BRINEY now!\p"
-	.string "You know, I retired once before,\n"
-	.string "but when I saw this majestic ship…\p"
-	.string "Let me just say, it stirred my sleeping\n"
-	.string "soul as a sailor!$"
+    .string "哈奇：欢迎上船，{PLAYER}{KUN}！\p我被选作破浪号的\n荣誉船长了！\p现在你可以叫我船长哈奇了！\p其实我已经是退休的人了，\n但当我看见这艘豪华的渡轮时…\p可以说，它唤醒了我心中的\n水手之魂！$"
 
 SSTidalCorridor_Text_Peeko:
-	.string "PEEKO: Pihyo pihyohyo…$"
+    .string "小皮：皮卡皮卡…$"
 
 SSTidalCorridor_Text_Cabin1:
-	.string "Cabin 1$"
+    .string "1号船舱$"
 
 SSTidalCorridor_Text_Cabin2:
-	.string "Cabin 2$"
+    .string "2号船舱$"
 
 SSTidalCorridor_Text_Cabin3:
-	.string "Cabin 3$"
+    .string "3号船舱$"
 
 SSTidalCorridor_Text_Cabin4:
-	.string "Cabin 4$"
+    .string "4号船舱$"

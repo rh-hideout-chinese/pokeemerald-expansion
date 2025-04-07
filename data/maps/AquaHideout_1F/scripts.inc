@@ -51,69 +51,29 @@ AquaHideout_1F_EventScript_Grunt1Defeated::
 	end
 
 AquaHideout_1F_Text_OurBossIsSnatchingSomething:
-	.string "What? What? What do you want with \n"
-	.string "TEAM AQUA?\p"
-	.string "Our BOSS isn't here! He's gone off to\n"
-	.string "snatch something important!\p"
-	.string "… …\n"
-	.string "Where did he go?\p"
-	.string "Wahaha! Do you really think I'd tell\n"
-	.string "you something that crucial?$"
+    .string "什么？什么？你来找\n水舰队干什么？\p我们的老大不在这里！他去\n找一些很重要的东西了！\p… …\n他去哪了？\p哇哈哈！你以为我会告诉你\n这么重要的事吗？$"
 
 AquaHideout_1F_Text_WhereMightMagmaHideoutBe:
-	.string "What? What?\n"
-	.string "Are you a TEAM MAGMA grunt?\p"
-	.string "I hear that TEAM MAGMA is trying to\n"
-	.string "awaken an awesome POKéMON at their\l"
-	.string "HIDEOUT.\p"
-	.string "But where might their HIDEOUT be?$"
+    .string "什么？什么？\n你是火岩队的人么？\p我听说火岩队试图\n在他们的基地里唤醒\l一只可怕的宝可梦，\p但是他们的基地在哪里呢？$"
 
 AquaHideout_1F_Text_BossWentToJackASubmarine:
-	.string "What? What? What do you want with \n"
-	.string "TEAM AQUA?\p"
-	.string "Our BOSS isn't here!\n"
-	.string "He's gone off to jack a submarine!\p"
-	.string "… …\n"
-	.string "Where did he go?\p"
-	.string "Wahaha! Do you really think I'd tell\n"
-	.string "you something that crucial?$"
+    .string "什么？什么？你来找\n水舰队干什么？\p我们的老大不在这里！\n他去抢潜水艇了！\p… …\n他去哪了？\p哇哈哈！你以为我会告诉你\n这么重要的事吗？$"
 
 AquaHideout_1F_Text_BossIsOnRoute122:
-	.string "What? What? What do you want with \n"
-	.string "TEAM AQUA?\p"
-	.string "Our BOSS isn't here! He's on his way to\n"
-	.string "MT. PYRE on ROUTE 122!\p"
-	.string "… …\n"
-	.string "Why did he go?\p"
-	.string "Wahaha! Do you really think I'd tell\n"
-	.string "you something that crucial?$"
+    .string "什么？什么？你来找\n水舰队干什么？\p我们的老大不在这里！他到\n122号航道上的送神火山码头去了！\p… …\n他去哪了？\p哇哈哈！你以为我会告诉你\n这么重要的事吗？$"
 
 AquaHideout_1F_Text_TeamMagmaAtMtChimney:
-	.string "What? What?\n"
-	.string "Are you a TEAM MAGMA grunt?\p"
-	.string "I hear that TEAM MAGMA is after\n"
-	.string "an awesome POKéMON at MT. CHIMNEY.\p"
-	.string "But what is that POKéMON like?$"
+    .string "什么？什么？\n你是火岩队的人么？\p我听说火岩队正在烟囱山\n寻找一只极可怕的宝可梦。\p那宝可梦到底是什么样子啊？$"
 
 AquaHideout_1F_Text_BossIsInSlateportCity:
-	.string "What? What? What do you want with\n"
-	.string "TEAM AQUA?\p"
-	.string "Our BOSS isn't here!\n"
-	.string "He's on his way to SLATEPORT CITY!\p"
-	.string "… …\n"
-	.string "Why did he go?\p"
-	.string "Wahaha! Do you really think I'd tell\n"
-	.string "you something that crucial?$"
+    .string "什么？什么？你来找\n水舰队干什么？\p我们的老大不在这里！\n他到凯那去了！\p… …\n他去哪了？\p哇哈哈！你以为我会告诉你\n这么重要的事吗？$"
 
 AquaHideout_1F_Text_Grunt1Intro:
-	.string "Ayiyiyi!\n"
-	.string "Suspicious character spotted!$"
+    .string "哎咦咦咦！\n发现可疑人物！$"
 
 AquaHideout_1F_Text_Grunt1Defeat:
-	.string "Grrrrr…\n"
-	.string "I lost it!$"
+    .string "见鬼…\n我竟然输了！$"
 
 AquaHideout_1F_Text_Grunt1PostBattle:
-	.string "I took the loss for the TEAM,\n"
-	.string "but I did my job…$"
+    .string "虽说输了，不过\n我的任务已经完成了…$"
 

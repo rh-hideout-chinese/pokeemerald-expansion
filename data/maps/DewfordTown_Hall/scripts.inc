@@ -260,186 +260,80 @@ DewfordTown_Hall_EventScript_ReceivedSludgeBomb::
 	end
 
 DewfordTown_Hall_Text_CantImagineLifeWithoutTrend:
-	.string "What's in vogue? Why, it has to be\n"
-	.string "“{STR_VAR_1}”!\p"
-	.string "I can't imagine what life would be like\n"
-	.string "without “{STR_VAR_1}”!$"
+    .string "现在流行什么？哎，当然是\n“{STR_VAR_1}”！\p不敢相信生活中没有\n“{STR_VAR_1}”会怎么样！$"
 
 DewfordTown_Hall_Text_GettingBoredOfTrend:
-	.string "What's in vogue? Why, it has to be\n"
-	.string "“{STR_VAR_1}”!\p"
-	.string "But I'm getting kind of bored with it.\p"
-	.string "I should look for the next big thing.$"
+    .string "现在流行什么？哎，当然是\n“{STR_VAR_1}”！\p但我对它已经有些腻了，\p我该去找找下面会流行什么。$"
 
 DewfordTown_Hall_Text_TeachingMonAboutTrend:
-	.string "I'm teaching my POKéMON about\n"
-	.string "“{STR_VAR_1},”\l"
-	.string "but it's not going well.\p"
-	.string "It's a bit too much, I think.$"
+    .string "我想把“{STR_VAR_1}”\n这个词教给我的宝可梦，\l但好像不太顺利。\p我想这对它来说太困难了。$"
 
 DewfordTown_Hall_Text_DeepLinkBetweenXAndY:
-	.string "I'm studying up on the hip and trendy\n"
-	.string "“{STR_VAR_1}” now.\p"
-	.string "Is it true that there's a deep link\n"
-	.string "between “{STR_VAR_1}”\l"
-	.string "and “{STR_VAR_2}”?$"
+    .string "我正在研究现今十分流行的\n“{STR_VAR_1}”。\p“{STR_VAR_1}”和\n“{STR_VAR_2}”之间\l是不是有很深的联系呢？$"
 
 DewfordTown_Hall_Text_MyHunchWasRight:
-	.string "Oh!\n"
-	.string "So, my hunch was right!\p"
-	.string "I'm one step closer to being hip and\n"
-	.string "happening, yowza!$"
+    .string "啊！\n我的直觉是对的！\p我抢在了潮流的\n前面，万岁！$"
 
 DewfordTown_Hall_Text_NotEasyToKeepUp:
-	.string "What?!\n"
-	.string "Is that so?!\p"
-	.string "It's not easy for an older fellow like\n"
-	.string "me to keep up with trends!$"
+    .string "什么？！\n真的？！\p对我这样的老人来说，\n已经很难追上潮流了！$"
 
 DewfordTown_Hall_Text_TVShowAboutTrend:
-	.string "This whole business about\n"
-	.string "“{STR_VAR_1}”…\l"
-	.string "Isn't there a TV show on it?$"
+    .string "说到关于\n“{STR_VAR_1}”的事…\l不是有部关于它的电视剧吗？$"
 
 DewfordTown_Hall_Text_IsTrendMorePopularAcrossSea:
-	.string "Across the sea…\p"
-	.string "Is “{STR_VAR_1}”\n"
-	.string "even more popular?$"
+    .string "在海的另一侧…\p“{STR_VAR_1}”\n比这里更流行吗？$"
 
 DewfordTown_Hall_Text_CollectTrendMerchandise:
-	.string "I collect official\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "licensed merchandise.\p"
-	.string "I have official\n"
-	.string "“{STR_VAR_1}” DOLLS…\p"
-	.string "Official “{STR_VAR_1}”\n"
-	.string "brand clothing…\p"
-	.string "And officially licensed\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "picture books.\p"
-	.string "Heheh, I own!\n"
-	.string "I'm not sharing anything with you!$"
+    .string "我收集经过官方认证的\n“{STR_VAR_1}”\l商品。\p我有官方\n“{STR_VAR_1}”玩偶…\p“{STR_VAR_1}”牌\n服装的真品…\p还有官方认证的\n“{STR_VAR_1}”\l图画书。\p呵呵呵，全是我的！\n我什么也不会给你！$"
 
 DewfordTown_Hall_Text_BooksAboutTrend:
-	.string "IDENTIFYING GOOD\n"
-	.string "“{STR_VAR_1}” &\l"
-	.string "BAD “{STR_VAR_1}”…\p"
-	.string "THE LINK BETWEEN\n"
-	.string "“{STR_VAR_1}” AND\l"
-	.string "POKéMON…\p"
-	.string "USEFUL\n"
-	.string "“{STR_VAR_1}”…\p"
-	.string "It's neatly jammed with books about\n"
-	.string "“{STR_VAR_1}.”$"
+    .string "确认好的\n“{STR_VAR_1}”&\l坏的“{STR_VAR_1}”…\p这两者\n“{STR_VAR_1}”和\l宝可梦之间的关系…\p有用的\n“{STR_VAR_1}”…\p整整齐齐地排列着关于\n“{STR_VAR_1}”的书。$"
 
 DewfordTown_Hall_Text_TrendsScream:
-	.string "“{STR_VAR_1}'S\n"
-	.string "SCREAM” is the title.$"
+    .string "标题是“{STR_VAR_1}的\n尖叫”。$"
 
 DewfordTown_Hall_Text_TrendsSmile:
-	.string "“{STR_VAR_1}'S\n"
-	.string "SMILE” is the title.$"
+    .string "标题是“{STR_VAR_1}的\n微笑”。$"
 
 DewfordTown_Hall_Text_LastTrend:
-	.string "It's titled “THE LAST\n"
-	.string "{STR_VAR_1}”.$"
+    .string "标题是“最后\n{STR_VAR_1}”。$"
 
 DewfordTown_Hall_Text_BirthOfTrend:
-	.string "It's titled “THE BIRTH OF\n"
-	.string "{STR_VAR_1}”.$"
+    .string "标题是“{STR_VAR_1}\n的诞生”。$"
 
 DewfordTown_Hall_Text_SawTrendCoolestThing:
-	.string "I saw “{STR_VAR_1}”!\n"
-	.string "Cool, huh?\p"
-	.string "It's, like, the coolest thing going!\p"
-	.string "It was awesome!\n"
-	.string "It was the real thing, oh yeah!$"
+    .string "我看过“{STR_VAR_1}”！\n厉害吧？\p它就像，呃，最酷的东西！\p非常棒！\n都是真的！$"
 
 DewfordTown_Hall_Text_AllegedTrendNotAuthentic:
-	.string "Oh, no, no, no.\p"
-	.string "That alleged\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "you claim to have seen--it's not.\p"
-	.string "The authentic article is much…\n"
-	.string "How should I say it?\l"
-	.string "Sharper, yet more mellow!\p"
-	.string "Ah, no matter. It's astonishing!$"
+    .string "啊，不不不。\p你说你看到过的\n“{STR_VAR_1}”\l——那是不可能的。\p有凭有据的文章更…\n怎么说，\l更尖锐，更丰富！\p啊，没什么，太惊讶了！$"
 
 DewfordTown_Hall_Text_ComposedTrendThemeSong:
-	.string "Hey, listen, I composed a theme song\n"
-	.string "for “{STR_VAR_1}.”\p"
-	.string "“{STR_VAR_1}”\n"
-	.string "is really popular right now.\p"
-	.string "Okay, listen!\n"
-	.string "… …\p"
-	.string "Oh!\n"
-	.string "{STR_VAR_1}!\p"
-	.string "Wonderful\n"
-	.string "{STR_VAR_1}!$"
+    .string "嘿，听好，我为\n“{STR_VAR_1}”作了曲。\p“{STR_VAR_1}”\n现在真的非常流行。\p好了，听着！\n… …\p哦！\n{STR_VAR_1}！\p美丽的\n{STR_VAR_1}！$"
 
 DewfordTown_Hall_Text_WorkOnYourSinging:
-	.string "… …\p"
-	.string "I dare say, chap, it would pay for you\n"
-	.string "to work on your singing before you\l"
-	.string "trifle yourself with\l"
-	.string "“{STR_VAR_1}.”$"
+    .string "… …\p我说，小子，\n你沉迷进\l“{STR_VAR_1}”之前\l能不能先学会怎么唱歌？$"
 
 DewfordTown_Hall_Text_OrganizeTrendParty:
-	.string "Anyway, as I was saying earlier, we\n"
-	.string "should get together and organize a\l"
-	.string "“{STR_VAR_1}” party\l"
-	.string "on the island.$"
+    .string "无论如何，就像我\n之前说的，我们该在\l这个小岛上开个\l“{STR_VAR_1}”聚会。$"
 
 DewfordTown_Hall_Text_BrilliantIndeed:
-	.string "Oh, a smashing good idea!\p"
-	.string "It will settle once and for all\n"
-	.string "who is the best at\l"
-	.string "“{STR_VAR_1}.”\l"
-	.string "Brilliant, indeed!\p"
-	.string "Starting today, our lives will revolve\n"
-	.string "around “{STR_VAR_1}”!$"
+    .string "啊，真美妙的主意！\p我们可以邀请\n所有热爱\l“{STR_VAR_1}”的人。\l绝妙的主意，真的！\p今天就开始吧，我们生活的中心就是\n“{STR_VAR_1}”！$"
 
 DewfordTown_Hall_Text_TrendHasBecomePartOfLife:
-	.string "I was thinking, though…\p"
-	.string "Wouldn't you agree that\n"
-	.string "“{STR_VAR_1}” has\l"
-	.string "grown from being something trendy to\l"
-	.string "being a part of our daily lives?$"
+    .string "我想…\p你不认为\n“{STR_VAR_1}”已\l超越了潮流，成为\l我们日常生活的一部分了吗？$"
 
 DewfordTown_Hall_Text_TrendWeighsHeavilyOnMind:
-	.string "Beg pardon?\n"
-	.string "That much, what?\p"
-	.string "However, it's true that\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "weighs heavily on your mind, whether\l"
-	.string "you're awake or asleep.\p"
-	.string "Absolutely, you're the\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "PROFESSOR, old sport!$"
+    .string "什么？\n刚才你说的什么？\p但是，无论你醒着还是睡着，\n“{STR_VAR_1}”\l在你心中无疑都\l占有重大的地位。\p毫无疑问，你是\n“{STR_VAR_1}”\l博士！$"
 
 DewfordTown_Hall_Text_IfWeTeamUpWellBeInvincible:
-	.string "If you and me team up as a combo,\n"
-	.string "we'll be invincible when it comes to all\l"
-	.string "things “{STR_VAR_1}”!$"
+    .string "如果我们两人组合起来，任何\n“{STR_VAR_1}”的事\l都难不倒我们！$"
 
 DewfordTown_Hall_Text_WellBeTrendDuo:
-	.string "Spot on, my friend!\p"
-	.string "We shall be the\n"
-	.string "“{STR_VAR_1}” DUO!\p"
-	.string "Isn't that a ripe image?\n"
-	.string "Hahahah!$"
+    .string "完全正确，好朋友！\p我们就是\n“{STR_VAR_1}”铛！\p这不是最适合的形象吗？\n哈哈哈哈！$"
 
 DewfordTown_Hall_Text_GiveYouSludgeBomb:
-	.string "For me, SLUDGE BOMB is at the peak\n"
-	.string "of popularity. It's the one.\p"
-	.string "Hunh? You're telling me that you don't\n"
-	.string "know about SLUDGE BOMB?\p"
-	.string "That's outright pitiful.\n"
-	.string "I'll give you one.$"
+    .string "对我来说，泥爆弹才是\n最最流行的。\p嗯？你说你不知道\n泥爆弹？\p真可惜。\n我给你一个吧。$"
 
 DewfordTown_Hall_Text_LoveSludgeBombButTrendInToo:
-	.string "I love SLUDGE BOMB.\p"
-	.string "But POKéMON with the move\n"
-	.string "“{STR_VAR_1}”\l"
-	.string "are in, too.$"
+    .string "我喜欢泥爆弹。\p但会\n“{STR_VAR_1}”的\l宝可梦也很棒。$"
 

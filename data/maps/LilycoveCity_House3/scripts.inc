@@ -98,71 +98,26 @@ LilycoveCity_House3_EventScript_WereDoingContest::
 	end
 
 LilycoveCity_House3_Text_LearnFromMasterOfPokeblocks:
-	.string "Oh, my, my! Are you traveling alone?\n"
-	.string "But you're so young! Good for you!\p"
-	.string "I'm sure my kids could learn a thing\n"
-	.string "or two from you!\p"
-	.string "Me? I'm a master of {POKEBLOCK}S.\p"
-	.string "If I get serious just a little, why,\n"
-	.string "I can concoct great {POKEBLOCK}S.\p"
-	.string "Would you like to learn from me,\n"
-	.string "a master of {POKEBLOCK}S?$"
+    .string "啊，天哪，天哪，你是一个人旅行吗？\n但你真得很年轻！真不错！\p我的孩子也该\n好好向你学习！\p我？我是能量方块专家，\p假如我认真起来，\n我就能调和出极棒的能量方块。\p你想听我这个专家的\n指教吗？$"
 
 LilycoveCity_House3_Text_OhAreYouSure:
-	.string "Oh? Are you sure?\p"
-	.string "You shouldn't always try to do\n"
-	.string "everything by yourself, dear!$"
+    .string "哦？是吗？\p不要总是试图\n独自完成一切！$"
 
 LilycoveCity_House3_Text_ExplainPokeblocks:
-	.string "Oh, good! You're a smart soul!\n"
-	.string "This is a bit long, so listen up!\p"
-	.string "Are you ready?\p"
-	.string "If you look at {POKEBLOCK}S, you should see\n"
-	.string "that they are rated on how they feel.\p"
-	.string "The lower the feel rating,\n"
-	.string "the better it is. Don't forget this!\p"
-	.string "A good {POKEBLOCK} has a low feel\n"
-	.string "rating and a high level.\p"
-	.string "A POKéMON can eat more good\n"
-	.string "{POKEBLOCK}S than ordinary ones, too.\p"
-	.string "And this is important.\p"
-	.string "If you want to make smooth {POKEBLOCK}S,\n"
-	.string "use different kinds of BERRIES.\p"
-	.string "Don't be stingy--the kinds of BERRIES\n"
-	.string "affect the smoothness of {POKEBLOCK}S.\p"
-	.string "And another thing.\p"
-	.string "The more people blending BERRIES,\n"
-	.string "the smoother the {POKEBLOCK}S.\p"
-	.string "That's why you should talk to other\n"
-	.string "people and make {POKEBLOCK}S together.\p"
-	.string "That's about all you need to know to\n"
-	.string "make good {POKEBLOCK}S.\p"
-	.string "If everyone had POKéMON they love,\n"
-	.string "smooth {POKEBLOCK}S, and a loving family,\l"
-	.string "the world would be a happier place.\p"
-	.string "Don't give up, dear!$"
+    .string "啊，好！你很聪明！\n虽然有点长，但你得竖起耳朵听好了！\p准备好了吗？\p如果看看能量方块，\n你会发现它们都有一个口感值。\p值越小，说明\n质量越好，要牢牢记住！\p好的能量方块口感值低，\n等级却高。\p比起普通能量方块，一只宝可梦\n应该吃更多更好的能量方块。\p还有一点很重要，\p如果想制作光滑的树果，\n就得使用不同的树果。\p不要吝啬——树果的种类\n会影响到能量方块光滑度。\p另外，\p混合树果的人越多，\n能量方块就越光滑，\p因此你得叫上其他人\n一起来制作能量方块。\p关于怎么制作好的能量方块，\n这些就是你要知道的。\p如果每个人都有喜爱的宝可梦，\n光滑的能量方块，\l幸福的家庭，世界会变得更美好。\p别放弃，亲爱的！$"
 
 LilycoveCity_House3_Text_HappyToHaveQuadruplets:
-	.string "When my wife gave birth to quadruplets,\n"
-	.string "you bet I was shocked.\p"
-	.string "But, now, seeing them play together,\n"
-	.string "it makes me happy.$"
+    .string "妻子生下四胞胎的时候，\n我真的大吃一惊，\p但现在看着他们一起玩耍，\n我觉得很幸福。$"
 
 LilycoveCity_House3_Text_GoingToWinMultiBattles:
-	.string "We're having MULTI BATTLES, but I know\n"
-	.string "I'm going to win.$"
+    .string "我们在进行多人战斗，\n我肯定会赢的。$"
 
 LilycoveCity_House3_Text_LikeMixingAtRecordCorner:
-	.string "We like mixing stuff at\n"
-	.string "the RECORD CORNER.\p"
-	.string "But what gets mixed up?$"
+    .string "我们喜欢在联机中心\n混合物品，\p但究竟是什么混合起来了？$"
 
 LilycoveCity_House3_Text_MakePokeblocksWithBerryBlender:
-	.string "We're going to make super {POKEBLOCK}S\n"
-	.string "with a BERRY BLENDER!$"
+    .string "我们要用树果混合机\n制作出超级能量方块！$"
 
 LilycoveCity_House3_Text_GoingToEnterContest:
-	.string "I want to brag about how tough my\n"
-	.string "POKéMON is, so we're going to enter\l"
-	.string "a CONTEST together.$"
+    .string "我要让大家看看\n我强大的宝可梦，所以我们\l一起去参加华丽大赛。$"
 

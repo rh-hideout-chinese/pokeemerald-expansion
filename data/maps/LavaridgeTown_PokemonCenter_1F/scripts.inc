@@ -31,20 +31,11 @@ LavaridgeTown_PokemonCenter_1F_EventScript_Gentleman::
 	end
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersPokemonSpendTimeTogether:
-	.string "I think POKéMON get closer to their\n"
-	.string "TRAINERS if they spend time together.\p"
-	.string "The longer the better.\n"
-	.string "That's what I think.$"
+    .string "如果训练师和宝可梦经常\n在一起，他们会变得更加亲密的，\p而且越久越好。\n我是这么想的。$"
 
 LavaridgeTown_PokemonCenter_1F_Text_HotSpringCanInvigorate:
-	.string "It's sort of magical how just sitting\n"
-	.string "in a hot-spring pool can invigorate.\p"
-	.string "I wish I could let my POKéMON\n"
-	.string "soak, too.$"
+    .string "在温泉中坐一会儿就会再次\n充满活力，好像魔术一样。\p如果能让宝可梦也\n泡泡多好。$"
 
 LavaridgeTown_PokemonCenter_1F_Text_TrainersShouldRestToo:
-	.string "Hohoho! Hey, kid, you can reach\n"
-	.string "the hot springs from here.\p"
-	.string "If POKéMON are getting rest, so too\n"
-	.string "should their TRAINERS.$"
+    .string "呵呵呵！喂，孩子，从这里\n你可以进温泉里去。\p宝可梦休息的时候，它们的\n训练师也该放松一下。$"
 

@@ -238,78 +238,31 @@ MeteorFalls_1F_1R_EventScript_MetCozmo::
 	end
 
 MeteorFalls_1F_1R_Text_WithThisMeteorite:
-	.string "Hehehe!\p"
-	.string "With this METEORITE, that thing in\n"
-	.string "MT. CHIMNEY will…$"
+    .string "呵呵呵！\p有了这陨石，烟囱山\n的那个就会…$"
 
 MeteorFalls_1F_1R_Text_DontExpectMercyFromMagma:
-	.string "Heh?\p"
-	.string "I don't know who you are, but if you get\n"
-	.string "in the way of TEAM MAGMA, don't\l"
-	.string "expect any mercy!$"
+    .string "哎？\p我不晓得你是谁，\n但是若妨碍火岩队的话，\l别怪我不客气！$"
 
 MeteorFalls_1F_1R_Text_HoldItRightThereMagma:
-	.string "Hold it right there, TEAM MAGMA!\p"
-	.string "You're badly mistaken if you think you\n"
-	.string "can have your way with the world!$"
+    .string "待在那不许动，火岩队！\p如果你认为你会战胜一切\n那就大错特错了！$"
 
 MeteorFalls_1F_1R_Text_BeSeeingYouTeamAqua:
-	.string "Hehehe!\n"
-	.string "Even TEAM AQUA joins us!\p"
-	.string "But it's too much trouble to deal with\n"
-	.string "you all…\p"
-	.string "Heh, it doesn't matter!\p"
-	.string "We've got the METEORITE, so off to\n"
-	.string "MT. CHIMNEY we go!\p"
-	.string "Hehehe! Be seeing you, you TEAM\n"
-	.string "AQUA dingbats!$"
+    .string "呵呵呵！\n甚至水舰队都加入我们了！\p但是对付你们\n太麻烦了…\p嘿，没关系！\p我们得到了陨石，我们去\n烟囱山咯！\p嘿嘿！再见了\n水舰队的笨蛋！$"
 
 MeteorFalls_1F_1R_Text_ArchieSeenYouBefore:
-	.string "ARCHIE: Didn't I see you before?\n"
-	.string "At SLATEPORT's MUSEUM?\p"
-	.string "Ah, so your name is {PLAYER}.\p"
-	.string "At the time, I thought you were one\n"
-	.string "of TEAM MAGMA's goons.\p"
-	.string "Humph…\n"
-	.string "You're one odd kid.\p"
-	.string "TEAM MAGMA is a dangerous group of\n"
-	.string "total fanatics.\p"
-	.string "They engage in destruction, claiming\n"
-	.string "to expand the land mass.\p"
-	.string "They are the rivals to us,\n"
-	.string "the sea-loving TEAM AQUA!$"
+    .string "水梧桐：我以前见过你吗？\n在凯那的博物馆？\p啊，那么你是{PLAYER}。\p那时，我还以为你是\n火岩队的一员呢。\p哼…\n真是个奇怪的孩子。\p火岩队是一个聚集\n完全狂热者的组织。\p他们致力于破坏和\n扩张地盘。\p他们是我们的竞争对手\n我们是热爱海洋的水舰队！$"
 
 MeteorFalls_1F_1R_Text_BossWeShouldChaseMagma:
-	.string "BOSS, we should give chase to\n"
-	.string "TEAM MAGMA…$"
+    .string "老大，我们应该去追赶\n火岩队…$"
 
 MeteorFalls_1F_1R_Text_ArchieYesNoTellingWhatMagmaWillDo:
-	.string "ARCHIE: Yes, yes, we must!\n"
-	.string "We've got to hurry.\p"
-	.string "There's no telling what TEAM MAGMA\n"
-	.string "will do at MT. CHIMNEY!$"
+    .string "水梧桐：对，没错！\n我们得抓紧了。\p还不知道火岩队\n要对烟囱山做什么！$"
 
 MeteorFalls_1F_1R_Text_ArchieFarewell:
-	.string "ARCHIE: {PLAYER}, you should keep\n"
-	.string "an eye out for TEAM MAGMA, too.\p"
-	.string "Farewell!$"
+    .string "水梧桐：{PLAYER}，你也应该\n盯紧火岩队。\p后会有期！$"
 
 MeteorFalls_1F_1R_Text_MeetProfCozmo:
-	.string "I… I'm COZMO…\n"
-	.string "I'm a PROFESSOR…\p"
-	.string "TEAM MAGMA asked me to guide them\n"
-	.string "to METEOR FALLS…\p"
-	.string "But they tricked me.\n"
-	.string "They even took my METEORITE away…\p"
-	.string "And then another similar bunch,\n"
-	.string "TEAM AQUA showed up.\p"
-	.string "After that…\n"
-	.string "I don't understand any of it.\p"
-	.string "But that TEAM MAGMA…\p"
-	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+    .string "我…我是索蓝斯…\n是一名教授…\p火岩队要我带他们去\n流星瀑布…\p但是他们骗了我。\n甚至拿走了我的陨石…\p然后和他们相似的组织\n水舰队出现了。\p在那之后…\n我什么都不知道。\p但是那个火岩队…\p他们会用\n陨石对烟囱山做什么呢？$"
 
 MeteorFalls_1F_1R_Text_WhatsTeamMagmaDoingAtMtChimney:
-	.string "PROF. COZMO: But that TEAM MAGMA…\p"
-	.string "What are they going to do with that\n"
-	.string "METEORITE at MT. CHIMNEY?$"
+    .string "索蓝斯博士：但是那个火岩队…\p他们会用\n陨石对烟囱山做什么呢？$"

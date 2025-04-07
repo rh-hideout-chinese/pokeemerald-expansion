@@ -76,56 +76,23 @@ LilycoveCity_CoveLilyMotel_1F_Movement_OwnerReturn:
 	step_end
 
 LilycoveCity_CoveLilyMotel_1F_Text_GuestsDoubledByMascot:
-	.string "Hm, so they doubled the guests by\n"
-	.string "using POKéMON as attractions?\p"
-	.string "Hm, well, maybe I should make a cute\n"
-	.string "POKéMON our inn's mascot.\p"
-	.string "I wonder if that will attract more\n"
-	.string "guests to stay with us?$"
+    .string "唔，原来他们\n用宝可梦吸引顾客。\p嗯，也许我也该为我们的旅馆\n找一只可爱的宝可梦做吉祥物。\p这样就能吸引更多人\n来我们这里住宿了吧？$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_NoGuestsWithTeamAqua:
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "Since that TEAM AQUA came to town,\n"
-	.string "the tourists have been staying away.$"
+    .string "啊，抱歉，抱歉！\n我看电视看入迷了！\p自从水舰队来城里以后，\n都没什么游客来了。$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_CantSeeTheTV:
-	.string "Hey, down in front!\n"
-	.string "I can't see the TV!$"
+    .string "喂，别挡！\n我看不清电视了！$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_MonFoundLostItem:
-	.string "Amazing! You're telling me a POKéMON\n"
-	.string "found someone's lost item?\p"
-	.string "That's something. If we had some smart\n"
-	.string "POKéMON like that…\p"
-	.string "We could recover anything that our\n"
-	.string "guests mislaid…$"
+    .string "真吃惊！你说宝可梦\n可以找到别人掉下的东西？\p如果我们也有\n那么聪明的宝可梦…\p我们就能找出\n客人们遗落的东西了…$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_HeardAquaHideoutBusted:
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV!\p"
-	.string "I heard that someone busted\n"
-	.string "the TEAM AQUA HIDEOUT.\p"
-	.string "Thanks to that, we just booked\n"
-	.string "a reservation from a big group.\p"
-	.string "It was a company called… Uh…\n"
-	.string "GAME something…$"
+    .string "啊，抱歉，抱歉！\n我看电视看入迷了！\p我听说有人袭水舰队基地，\p多亏如此，我们刚刚\n接到了一个大团体订房的通知，\p是一个公司，叫做…呃…\n游戏什么的…$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_HouseSittingMonCaughtBurglar:
-	.string "Amazing! A house-sitting POKéMON\n"
-	.string "caught a burglar?\p"
-	.string "That's something. If we had a tough\n"
-	.string "POKéMON as a security guard…\p"
-	.string "We would be able to provide our guests\n"
-	.string "with greater safety.$"
+    .string "好惊讶！看门的宝可梦\n捉到了窃贼？\p如果我们也有\n强大的宝可梦看门…\p我们的客人\n会更有安全感。$"
 
 LilycoveCity_CoveLilyMotel_1F_Text_BetterGetWorkingOnGuestsDinner:
-	.string "Oh, sorry, sorry!\n"
-	.string "I was too involved in watching TV.\p"
-	.string "Oh, yes. A big group of guests arrived\n"
-	.string "a little while ago.\p"
-	.string "They booked in as GAME FREAK,\n"
-	.string "so I guess they must make games.\p"
-	.string "Uh-oh, I'd better get working on\n"
-	.string "their dinner!$"
+    .string "啊，抱歉，抱歉！\n我看电视看入迷了。\p嗯，没错，刚刚来了\n一个团队的客人，\p他们以游戏怪人之名订的房间，\n我想他们一定是制作游戏的人。\p啊—噢，我得赶紧\n去准备晚饭了！$"
 

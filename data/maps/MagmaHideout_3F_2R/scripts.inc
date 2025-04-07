@@ -7,20 +7,11 @@ MagmaHideout_3F_2R_EventScript_Grunt10::
 	end
 
 MagmaHideout_3F_2R_Text_Grunt10Intro:
-	.string "I understand everything our leader\n"
-	.string "says. But you know what?\p"
-	.string "Doing stuff like digging up a super-\n"
-	.string "ancient POKéMON and ripping off\l"
-	.string "someone's METEORITE…\p"
-	.string "I think we're going a little too far.\n"
-	.string "What do you think?$"
+    .string "我明白头儿所说的话。\n但你知道吗？\p挖掘太古时期的宝可梦\n以及抢夺别人的陨石\l这种事…\p我觉得有些过分。\n你怎么想？$"
 
 MagmaHideout_3F_2R_Text_Grunt10Defeat:
-	.string "Yeah, I think we are doing something\n"
-	.string "wrong somehow.$"
+    .string "嗯，我们确实做错了\n一些事情。$"
 
 MagmaHideout_3F_2R_Text_Grunt10PostBattle:
-	.string "You know, losing to you cleared my mind.\p"
-	.string "The next time I see our leader,\n"
-	.string "I'm going to ask him about what we do.$"
+    .string "说实话，输给你后我的大脑清醒了许多，\p下次见到老大的时候，\n我会找他谈谈的。$"
 

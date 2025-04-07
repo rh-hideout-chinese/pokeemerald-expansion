@@ -65,79 +65,29 @@ SlateportCity_SternsShipyard_1F_EventScript_Briney::
 	end
 
 SlateportCity_SternsShipyard_1F_Text_CantMakeHeadsOrTails:
-	.string "Umm… If this goes here, and that\n"
-	.string "goes over there…\p"
-	.string "Then where does this thing go?\n"
-	.string "And what about that doohickey?\p"
-	.string "Aaargh! I can't make heads or tails\n"
-	.string "of this!$"
+    .string "唔…如果这个向这边，\n那个去那边…\p那么这个怎么办？\n那个装置怎么办？\p啊啊啊！\n我都想糊涂了！$"
 
 SlateportCity_SternsShipyard_1F_Text_MeetDockDeliverToStern:
-	.string "Hm?\n"
-	.string "Hi, I'm DOCK.\p"
-	.string "CAPT. STERN commissioned me to\n"
-	.string "design a ferry.\p"
-	.string "Oh! That there…\n"
-	.string "Are they DEVON GOODS?\p"
-	.string "But, hmm…\n"
-	.string "This won't do…\p"
-	.string "CAPT. STERN went off somewhere.\n"
-	.string "He said he had some work to do.\p"
-	.string "Could I get you to go find CAPT.\n"
-	.string "STERN and deliver that to him?$"
+    .string "嗯？\n你好，我是多克。\p库斯诺吉馆长雇我来\n设计游船。\p啊！那个…\n那是得文的包裹吗？\p但是，唔…\n这不太…\p库斯诺吉馆长出去了，\n他说有些事要做。\p可以请你去找找库斯诺吉馆长，\n把东西交给他吗？$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldYouFindStern:
-	.string "DOCK: Where could CAPT. STERN have\n"
-	.string "gone off to?\p"
-	.string "Could you go find CAPT. STERN and\n"
-	.string "deliver that parcel to him?$"
+    .string "多克：库斯诺吉馆长\n去哪儿了？\p可以请你去找找库斯诺吉馆长，\n把包裹交给他吗？$"
 
 SlateportCity_SternsShipyard_1F_Text_CouldUseAdviceFromVeteran:
-	.string "DOCK: Shipbuilding is an art.\p"
-	.string "A lot of things can't be figured out\n"
-	.string "just by calculating.\p"
-	.string "I really could use advice from a veteran\n"
-	.string "who knows the seas…$"
+    .string "多克：造船是一门艺术，\p很多东西并不是\n只靠计算就能够知道的。\p我该去向了解大海的\n老水手们请教一下…$"
 
 SlateportCity_SternsShipyard_1F_Text_BrineyJoinedUs:
-	.string "DOCK: Hi! MR. BRINEY's joined us to\n"
-	.string "lend us his help.\p"
-	.string "Thanks to the veteran sailor, the\n"
-	.string "ferry is steadily coming together.$"
+    .string "多克：嗨！哈奇\n也来帮我们的忙了。\p多亏了这位老水手，\n游船的组装正在顺利进行中。$"
 
 SlateportCity_SternsShipyard_1F_Text_FerryIsReady:
-	.string "DOCK: The ferry is finally ready!\p"
-	.string "The new S.S. TIDAL is truly a marvel\n"
-	.string "of technology!\p"
-	.string "But, I get the feeling that we can\n"
-	.string "make something even better.\p"
-	.string "You know, there's never an end to\n"
-	.string "technology's march.$"
+    .string "多克：游船终于造好了！\p这崭新的破浪号是\n工业技术的奇迹！\p但我觉得我们\n能做得更好。\p要知道，技术的进步\n永远不会停止。$"
 
 SlateportCity_SternsShipyard_1F_Text_DecidedToHelpDock:
-	.string "MR. BRINEY: Ah, {PLAYER}{KUN}!\n"
-	.string "It's been too long!\p"
-	.string "Aye, since I met you, this old sea dog's\n"
-	.string "been feeling frisky!\p"
-	.string "So I've decided to help DOCK make\n"
-	.string "a ferry.\p"
-	.string "Aye, after all, a ferry would be able\n"
-	.string "to carry a lot of people.\p"
-	.string "But, you know, that DOCK is really\n"
-	.string "something special.\p"
-	.string "With his knack for technology and\n"
-	.string "my experience, I'm sure that we can\l"
-	.string "build one great ship, aye!$"
+    .string "哈奇：啊，{PLAYER}{KUN}！\n好久不见！\p哈，自从我见到你，你一直\n让我这老海员特别快乐！\p所以我决定来\n帮多克造游船。\p毕竟，游船上\n能载很多人。\p那个多克\n也不简单。\p有他的技术和我的经验，\n我敢肯定我们能造出\l世界最棒的船来！哈哈！$"
 
 SlateportCity_SternsShipyard_1F_Text_SeaIsLikeLivingThing:
-	.string "The seasons, the weather, where\n"
-	.string "the moon sits in the sky…\p"
-	.string "These and other conditions make\n"
-	.string "the sea change its expression.\p"
-	.string "That's right!\n"
-	.string "The sea is like a living thing!$"
+    .string "季节，天气，\n月亮在天空中的位置…\p这些，还有其他很多东西\n都会对大海产生影响。\p是的！\n大海就好像生物一样！$"
 
 SlateportCity_SternsShipyard_1F_Text_GetSeasickEasily:
-	.string "I get seasick real easily.\n"
-	.string "So I get to help out here instead.$"
+    .string "我很容易晕船，\n所以我只能到这儿来帮忙。$"
 

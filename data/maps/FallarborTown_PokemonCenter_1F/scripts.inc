@@ -85,30 +85,11 @@ FallarborTown_PokemonCenter_1F_Movement_LanetteExitWest:
 	step_end
 
 FallarborTown_PokemonCenter_1F_Text_LanetteGreeting:
-	.string "Oh, hello.\n"
-	.string "You are?\p"
-	.string "Okay, your name's {PLAYER}{KUN}.\n"
-	.string "I can see that you're a TRAINER.\p"
-	.string "So that means you use the POKéMON\n"
-	.string "Storage System I developed.\p"
-	.string "How I arrived at that conclusion is\n"
-	.string "a simple deductive process.\p"
-	.string "You spoke to me because you wanted\n"
-	.string "to access something on this PC.\p"
-	.string "Oh, I'm sorry. I'm LANETTE.\p"
-	.string "Honestly, I'm glad to meet you--it's\n"
-	.string "great you're using the Storage System.\p"
-	.string "If you could, please visit me at home.\n"
-	.string "My house is on ROUTE 114.$"
+    .string "啊，你好，\n请问你是？\p好的，{PLAYER}{KUN}，\n看来你是个训练师，\p那么你一定在使用我开发的\n宝可梦存储系统。\p只要简单推理一下\n就能猜出来了，\p你想使用这台电脑，\n所以才会跟我谈话。\p呀，抱歉，我叫真弓，\p很高兴见到你——也很高兴\n看到你在使用存储系统。\p如果可以的话，欢迎你来我家做客。\n我家就在114号公路上。$"
 
 FallarborTown_PokemonCenter_1F_Text_FossilManiacEdgeOfTown:
-	.string "I wonder what POKéMON looked like\n"
-	.string "long, long ago?\p"
-	.string "Maybe the FOSSIL MANIAC at the edge\n"
-	.string "of town will know.$"
+    .string "我想知道很久很久以前\n宝可梦是什么样子的？\p也许住在镇子边上的\n化石迷知道答案。$"
 
 FallarborTown_PokemonCenter_1F_Text_PlantHardyTrees:
-	.string "In the fields of FALLARBOR, we plant\n"
-	.string "seedlings of hardy trees that thrive\l"
-	.string "even in volcanic ash.$"
+    .string "我们在秋叶镇的土地里\n种下了在火山灰中也能长得\l欣欣向荣的大树的幼苗。$"
 

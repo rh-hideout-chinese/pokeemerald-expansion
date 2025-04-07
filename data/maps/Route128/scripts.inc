@@ -246,61 +246,26 @@ Route128_EventScript_Carlee::
 	end
 
 Route128_Text_ArchieWhatHappened:
-	.string "ARCHIE: What happened…\n"
-	.string "What is this wretched scene…\p"
-	.string "Did I…make a horrible mistake?$"
+    .string "水梧桐：发生了什么…\n这种不幸的场面…\p我…犯了大错了吗？$"
 
 Route128_Text_ArchieIOnlyWanted:
-	.string "I…\n"
-	.string "I only wanted…$"
+    .string "我…\n我只是想…$"
 
 Route128_Text_MaxieDoYouUnderstandNow:
-	.string "MAXIE: Do you understand now,\n"
-	.string "ARCHIE?\p"
-	.string "Do you finally see how disastrous\n"
-	.string "your dream turned out to be?\p"
-	.string "We have to hurry! We have to do\n"
-	.string "something before the situation goes\l"
-	.string "completely out of control!$"
+    .string "赤焰松：你现在明白了吗，\n水梧桐？\p你总算明白你的想法\n造成了多大的灾难了吗？\p我们得快点行动了！\n必须在一切完全失去控制前\l做些什么！$"
 
 Route128_Text_MaxieResposibilityFallsToArchieAndMe:
-	.string "MAXIE: {PLAYER}, don't say anything.\p"
-	.string "I know that I have no right to be\n"
-	.string "critical of ARCHIE…\p"
-	.string "But the way things are now, I doubt\n"
-	.string "that we humans will be capable of\l"
-	.string "doing anything about it.\p"
-	.string "But neither can we stand by and\n"
-	.string "just watch helplessly.\p"
-	.string "The responsibility for putting an end\n"
-	.string "to this falls to ARCHIE and me…$"
+    .string "赤焰松：{PLAYER}，什么都别说。\p我知道我没资格\n批评水梧桐…\p我想，到了现在，\n我们人类已经\l做不了什么了。\p但我们也不能站在这儿\n眼睁睁地看着这一切。\p我和水梧桐有责任\n去结束这一切…$"
 
 Route128_Text_MaxieThisDefiesBelief:
-	.string "MAXIE: This defies belief…\p"
-	.string "Those super-ancient POKéMON…\p"
-	.string "Their power is unbelievable.\n"
-	.string "They've upset the balance of nature…$"
+    .string "赤焰松：不可置信…\p那些超古代宝可梦…\p它们的力量简直让人不敢相信。\n它们打破了自然的平衡…$"
 
 Route128_Text_StevenWhatIsHappening:
-	.string "STEVEN: {PLAYER}{KUN}!\n"
-	.string "What is happening?$"
+    .string "大吾：{PLAYER}{KUN}！\n发生了什么？$"
 
 Route128_Text_StevenWholeWorldWillDrown:
-	.string "This is terrible…\p"
-	.string "After the scorching heat wave ended,\n"
-	.string "this deluge began.\p"
-	.string "If this doesn't stop, all of HOENN…\n"
-	.string "No, the whole world will drown.\p"
-	.string "This huge rain cloud is spreading\n"
-	.string "from above SOOTOPOLIS…\p"
-	.string "What in the world is taking place there?\p"
-	.string "There's no point arguing here…\n"
-	.string "SOOTOPOLIS might provide answers…$"
+    .string "太可怕了…\p足以烤干大地的热浪之后，\n又是淹没一切的洪水。\p这样下去的话，整个丰缘地区…\n不，是整个世界都会毁灭的。\p巨大的雨云不断\n从琉璃市上空飘来…\p究竟哪里发生了什么？\p没时间抱怨了…\n琉璃市会说明一切…$"
 
 Route128_Text_StevenImGoingToSootopolis:
-	.string "{PLAYER}{KUN}…\n"
-	.string "I don't know what you intend to do,\l"
-	.string "but don't do anything reckless.\p"
-	.string "Okay.\n"
-	.string "I'm going to SOOTOPOLIS.$"
+    .string "{PLAYER}{KUN}…\n我不知道你想做什么，\l但千万不要草率行事。\p好了，\n我先去琉璃市了。$"
 
