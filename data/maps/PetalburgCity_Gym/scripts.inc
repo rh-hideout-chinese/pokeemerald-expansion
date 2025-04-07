@@ -1202,7 +1202,7 @@ PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis:
     .string "爸爸：有了这个徽章，你所有\n宝可梦的防御都会提升，\p学会秘传学习器技冲浪\n的宝可梦也可以渡水。\p这是我的礼物，{PLAYER}，\n我想你知道该怎么使用它。$"
 
 PetalburgCity_Gym_Text_ExplainFacade:
-    .string "爸爸：招式学习器42里面是硬撐，\p如果宝可梦中毒，\n麻痹，或者烧伤，\l招式的威力会提升。\p用这可以在处于不利时\n逆转形势。$"
+    .string "爸爸：招式学习器42里面是硬撑，\p如果宝可梦中毒，\n麻痹，或者烧伤，\l招式的威力会提升。\p用这可以在处于不利时\n逆转形势。$"
 
 PetalburgCity_Gym_Text_DadHappyAndSad:
     .string "爸爸：作为道馆馆主，\n我觉得很沮丧…\p但作为父亲，我在失望的同时，\n又很高兴。这真的很奇怪…$"
