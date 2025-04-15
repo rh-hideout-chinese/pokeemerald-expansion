@@ -1,6 +1,8 @@
 #ifndef GUARD_BATTLE_AI_UTIL_H
 #define GUARD_BATTLE_AI_UTIL_H
 
+#include "battle_ai_main.h"
+
 #define FOE(battler) ((BATTLE_OPPOSITE(battler)) & BIT_SIDE)
 
 // Roll boundaries used by AI when scoring. Doesn't affect actual damage dealt.
@@ -177,11 +179,13 @@ bool32 AI_CanGetFrostbite(u32 battler, u32 ability);
 bool32 AI_CanBeConfused(u32 battlerAtk, u32 battlerDef, u32 move, u32 ability);
 bool32 IsBattlerIncapacitated(u32 battler, u32 ability);
 bool32 AI_CanPutToSleep(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 move, u32 partnerMove);
-bool32 ShouldPoisonSelf(u32 battler, u32 ability);
+bool32 ShouldPoison(u32 battlerAtk, u32 battlerDef);
 bool32 AI_CanPoison(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 move, u32 partnerMove);
 bool32 AI_CanParalyze(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 move, u32 partnerMove);
 bool32 AI_CanConfuse(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 battlerAtkPartner, u32 move, u32 partnerMove);
-bool32 ShouldBurnSelf(u32 battler, u32 ability);
+bool32 ShouldBurn(u32 battlerAtk, u32 battlerDef);
+bool32 ShouldFreezeOrFrostbite(u32 battlerAtk, u32 battlerDef);
+bool32 ShouldParalyze(u32 battlerAtk, u32 battlerDef);
 bool32 AI_CanBurn(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 battlerAtkPartner, u32 move, u32 partnerMove);
 bool32 AI_CanGiveFrostbite(u32 battlerAtk, u32 battlerDef, u32 defAbility, u32 battlerAtkPartner, u32 move, u32 partnerMove);
 bool32 AI_CanBeInfatuated(u32 battlerAtk, u32 battlerDef, u32 defAbility);
@@ -216,8 +220,8 @@ bool32 PartyHasMoveCategory(u32 battlerId, u32 category);
 bool32 SideHasMoveCategory(u32 battlerId, u32 category);
 
 // score increases
-u32 IncreaseStatUpScore(u32 battlerAtk, u32 battlerDef, u32 statId);
-u32 IncreaseStatUpScoreContrary(u32 battlerAtk, u32 battlerDef, u32 statId);
+u32 IncreaseStatUpScore(u32 battlerAtk, u32 battlerDef, enum StatChange statId);
+u32 IncreaseStatUpScoreContrary(u32 battlerAtk, u32 battlerDef, enum StatChange statId);
 void IncreasePoisonScore(u32 battlerAtk, u32 battlerDef, u32 move, s32 *score);
 void IncreaseBurnScore(u32 battlerAtk, u32 battlerDef, u32 move, s32 *score);
 void IncreaseParalyzeScore(u32 battlerAtk, u32 battlerDef, u32 move, s32 *score);

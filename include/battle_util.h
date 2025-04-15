@@ -2,6 +2,7 @@
 #define GUARD_BATTLE_UTIL_H
 
 #include "move.h"
+#include "constants/battle_string_ids.h"
 
 #define MOVE_LIMITATION_ZEROMOVE                (1 << 0)
 #define MOVE_LIMITATION_PP                      (1 << 1)
@@ -25,6 +26,7 @@
 enum AbilityEffectOptions
 {
     ABILITY_CHECK_TRIGGER,
+    ABILITY_CHECK_TRIGGER_AI,
     ABILITY_RUN_SCRIPT,
 };
 
@@ -39,10 +41,6 @@ enum MoveAbsorbed
 enum {
     ABILITYEFFECT_ON_SWITCHIN,
     ABILITYEFFECT_ENDTURN,
-    ABILITYEFFECT_MOVES_BLOCK,
-    ABILITYEFFECT_WOULD_BLOCK,         // Checks immunity without triggering a script
-    ABILITYEFFECT_ABSORBING,
-    ABILITYEFFECT_WOULD_ABSORB,        // Checks immunity without triggering a script
     ABILITYEFFECT_MOVE_END_ATTACKER,
     ABILITYEFFECT_MOVE_END,
     ABILITYEFFECT_IMMUNITY,
@@ -70,6 +68,7 @@ enum ItemCaseId
     ITEMEFFECT_ON_SWITCH_IN,
     ITEMEFFECT_ON_SWITCH_IN_FIRST_TURN,
     ITEMEFFECT_NORMAL,
+    ITEMEFFECT_TRY_HEALING,
     ITEMEFFECT_MOVE_END,
     ITEMEFFECT_KINGSROCK,
     ITEMEFFECT_TARGET,
@@ -174,6 +173,8 @@ enum SleepClauseBlock
 };
 
 void HandleAction_ThrowBall(void);
+u32 GetCurrentBattleWeather(void);
+bool32 EndOrContinueWeather(void);
 bool32 IsAffectedByFollowMe(u32 battlerAtk, u32 defSide, u32 move);
 bool32 HandleMoveTargetRedirection(void);
 void HandleAction_UseMove(void);
@@ -196,7 +197,7 @@ void MarkBattlerForControllerExec(u32 battler);
 void MarkBattlerReceivedLinkData(u32 battler);
 const u8* CancelMultiTurnMoves(u32 battler);
 bool32 WasUnableToUseMove(u32 battler);
-void PrepareStringBattle(u16 stringId, u32 battler);
+void PrepareStringBattle(enum StringID stringId, u32 battler);
 void ResetSentPokesToOpponentValue(void);
 void OpponentSwitchInResetSentPokesToOpponentValue(u32 battler);
 void UpdateSentPokesToOpponentValue(u32 battler);
@@ -207,18 +208,16 @@ u32 TrySetCantSelectMoveBattleScript(u32 battler);
 u8 CheckMoveLimitations(u32 battler, u8 unusableMoves, u16 check);
 bool32 AreAllMovesUnusable(u32 battler);
 u8 GetImprisonedMovesCount(u32 battler, u16 move);
-u8 DoFieldEndTurnEffects(void);
 s32 GetDrainedBigRootHp(u32 battler, s32 hp);
 bool32 IsMagicGuardProtected(u32 battler, u32 ability);
-u8 DoBattlerEndTurnEffects(void);
-bool32 HandleWishPerishSongOnTurnEnd(void);
+u32 DoEndTurnEffects(void);
 bool32 HandleFaintedMonActions(void);
 void TryClearRageAndFuryCutter(void);
 u32 AtkCanceller_MoveSuccessOrder(void);
 void SetAtkCancellerForCalledMove(void);
 bool32 HasNoMonsToSwitch(u32 battler, u8 r1, u8 r2);
 bool32 TryChangeBattleWeather(u32 battler, u32 battleWeatherId, bool32 viaAbility);
-bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 move, u32 abilityDef, enum AbilityEffectOptions option);
+bool32 CanAbilityBlockMove(u32 battlerAtk, u32 battlerDef, u32 abilityAtk, u32 abilityDef, u32 move, enum AbilityEffectOptions option);
 bool32 CanAbilityAbsorbMove(u32 battlerAtk, u32 battlerDef, u32 abilityDef, u32 move, u32 moveType, enum AbilityEffectOptions option);
 u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 moveArg);
 bool32 TryPrimalReversion(u32 battler);
@@ -299,7 +298,7 @@ bool32 IsBattlerAffectedByHazards(u32 battler, bool32 toxicSpikes);
 void SortBattlersBySpeed(u8 *battlers, bool32 slowToFast);
 bool32 CompareStat(u32 battler, u8 statId, u8 cmpTo, u8 cmpKind);
 bool32 TryRoomService(u32 battler);
-void BufferStatChange(u32 battler, u8 statId, u8 stringId);
+void BufferStatChange(u32 battler, u8 statId, enum StringID stringId);
 bool32 BlocksPrankster(u16 move, u32 battlerPrankster, u32 battlerDef, bool32 checkTarget);
 u16 GetUsedHeldItem(u32 battler);
 bool32 PickupHasValidTarget(u32 battler);
@@ -329,6 +328,7 @@ bool32 CanBeConfused(u32 battler);
 bool32 IsBattlerTerrainAffected(u32 battler, u32 terrainFlag);
 u32 GetBattlerAffectionHearts(u32 battler);
 void TryToRevertMimicryAndFlags(void);
+bool32 BattleArenaTurnEnd(void);
 u32 CountBattlerStatIncreases(u32 battler, bool32 countEvasionAcc);
 bool32 ChangeTypeBasedOnTerrain(u32 battler);
 void RemoveConfusionStatus(u32 battler);
