@@ -1,0 +1,190 @@
+//
+// (win)grit source code, v0.8.2
+// (20050313-20080512, cearn)
+
+// === TOC ===
+
+* Introduction / basic working
+* Change log
+* Future Work
+* Licences
+
+
+// --------------------------------------------------------------------
+// Introduction
+// --------------------------------------------------------------------
+
+  What you have here is the source code to grit, the GBA Raster
+Image Transmogrifier. Grit is actually two applications: there's
+grit and wingrit, which are command-line and a windows tool,
+respectively.
+  Grit uses three libraries: my own two cldib and libgrit for basic
+bitmap routines and the exporter part, and FreeImage for the bitmap 
+file reading.
+  The original versions had some Windows/Intel-specific work in here, 
+but thanks to Wintermute that should be taken care of, and it should 
+compile under Windows, Linux and Mac OSX now. If there are any 
+problems, please let me know.
+
+The exporter works in stages, as it should. This may waste a lot of
+cycles, but also keeps it maintainable. The basic process is:
+- read image
+- read and validate all the options
+- Prepare a 'work' bitmap
+  - crop image to requested size
+  - resample bitdepth (16bpp for 16bpp bitmaps, 8bpp for everything
+    else)
+  - NEW,20060803: set transparent palette entry/color
+- for bitmaps:
+  - prepare bitmap (which is in fact already complete)
+- for tiles:
+  - re-arrange to screenblock
+  - re-arrange to meta-tiles
+  - re-arrange to tiles
+  - prepare map
+    - tile-reduce
+    - add tile offset
+    - meta-map
+    - resample to affine format (bytes)
+    - compress
+- prepare image
+  - resample bit-depth
+  - compress
+- write header file
+- prepare palette (go to 16bpp colors)
+- write data file(s) in C, GAS, binary or GBFS
+
+NOTE: while grit supports the use of an external tileset now as well, 
+loading/saving it actually happens OUTSIDE of grit_run(). This 
+should/will probably be changed later, but just so you know.
+
+NOTE: wingrit is an MFC app. Since the Visual C Express versions 
+do not have the required MFC libraries, you won't be able to build 
+it with those.
+
+
+// --------------------------------------------------------------------
+// Future work
+// --------------------------------------------------------------------
+
+- Make tile reducing general purpose: i..e, not limited to 8x8@8 tiles.
+- Clean up. No, really: parsing, shared data and tile mapping is a 
+  fracking mess, and *needs* to be cleaned. More STL would be good too.
+- External meta-tileset. This would require some changes in the current 
+  ext-tile setup as well.
+- Grouped data. Right now the bitmap exists as one chunk of data, to 
+  be converted, compressed and exported. That's nice, but sometimes
+  it's more convenient to compress/export in smaller chunks, like
+  animation frames. Particularly compression becomes a problem, 
+  because the next frame would start an an indeterminate offset.
+  So: split into separate arrays. Do NOT store in a matrix, because
+  that'd ruin the compression. OTOH, it might work fine for 
+  non-compressed images. Also create a toc-array to the individual 
+  frames. This functionality should probably be controlled through 
+  the meta-tile settings, although possibly under a different name.
+- PONDER: ALIGN4 attribute to C arrays?
++ Separate GRIT_INCL into processing and export bits (DONE: v0.8)
+- Add pcx write support to FreeImage.
+/ Record array for the fields (gfx, map, etc) instead of separate
+  records. This will remove many near-duplicate pieces of code.
+- Apply compression only at the end, not at preparation.
+
+- Fix Huffman better :P
+- Batch-operations (and toc-array ? )
++ Merge palette with other files (DONE: v0.8)
+- Documentation (Mostly done)
+
+There are a few snippets of doxygen in cldib and libgrit, but not 
+enough to cover everything. I'd like to do the other stuff at some 
+time, but I really don't think I can find the time and it's not that
+high on my list of priorities.
+
+
+// --------------------------------------------------------------------
+// Change Log
+// --------------------------------------------------------------------
+
+* v0.8.2, 20081116
+  - Fixed GRF format. A group field (RIFF/LIST)'s data is 
+    'name'+sub-fields, not 'name'+sub-size+sib-fields.
+* v0.8.1, 20080512
+  - Added column-major tiling order.
+  - Fixed shared items without -O or -S options. Thanks again, Quirky.
+* v0.8, 20080329
+  - Renamed grit structs and members. Most of the bitfields have been 
+    replaced with normal members.
+  - Made a DataItem class for the exporters, allowing the actual exporting 
+    functions to be a little shorter.
+  - Code for new options. See grit.txt for list.
+  - Split runs into different types : shared vs separate data, and single vs 
+    multiple inputs.
+  - Exit codes for grit.exe
+  - Diverted compression routines to cprs_* so that they are stand-alone items.
+    I'll add accompanying decompressors in due time.
+  - The map-offset option ('-ma') is not an ERROR. Idjit.
+* v0.7, 20070403
+  - Rename due to clash with Linux kernel version control (also git :( ).
+    It's now grit. Everything's been changed from 'git' to 'grit'.
+  - Code for -We, -Ww, -Ws aliases for -W<n>; -ft!.
+  - Changed the way paths are handled. No directories conjured out of 
+    thin air anymore.
+* v0.7b, 20070317:
+  Batch runs, external tilesets, error logging and some extra transparency 
+  items.
+* v0.6, 20060803: 
+  platform independence *should* be complete, but I can't
+  test for it myself. If there are any undefined things, go to 
+  winglue.h and add something; if it's an endian problem 
+  (reversed bits/bytes), use BYTE_ORDER to switch between Big and Little 
+  systems. Oh, and notify me of course.
+* v0.6, 20060803: 
+  Added -pT and -gT flags for transparent palette entry
+  (is switched with pal[0]) and transparent 16bpp color, respectively.
+* v0.6, 20060803: 
+  Added -ff option, for getting the command line 
+  arguments from a file, which is easier on makefiles.
+
+
+// --------------------------------------------------------------------
+// Licences and other info
+// --------------------------------------------------------------------
+
+// === Grit licence ===
+
+Apart from FreeImage, the LZ77 compressor and GBFS, everything is 
+licenced under the MIT licence (see mit-licence.txt)
+
+
+// === FreeImage ===
+
+The code only includes the required .h, .exp and .lib to compile the 
+thing, but not the .dll. You'll have to get it from the binary 
+distribution of grit. Or from the FreeImage website 
+(http://freeimage.sourceforge.net). FreeImage is covered under the GPL
+license and its own licence (see fi-licence.txt).
+
+
+// === LZ77 compression and gbfs functionality ===
+
+Both the LZ77 compressor and GBFS were taken from the website of
+Damian Yerrick's (http://www.pineight.com) and modified to suit my own 
+need. Both are covered by GPL as well (see gpl-licence.txt).
+
+
+
+--- Misc --------------------------------------------------------------
+You know the drill:
+
+Use, distribute, and modify this code freely.
+
+"I do not accept responsibility for any effects, adverse or
+ otherwise, that this code may have on you, your computer, your
+ sanity, your dog, and anything else that you can think of. Use it
+ at your own risk."
+
+Have fun with the code, and don't laugh too loudly please.
+
+- J Vijn
+
+
+
