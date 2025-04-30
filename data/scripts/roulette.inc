@@ -24,44 +24,47 @@ Roulette_EventScript_Play::
 	end
 
 Roulette_Text_PlayMinimumWagerIsX::
-	.string "The minimum wager at this table\n"
-	.string "is {STR_VAR_1}. Do you want to play?$"
+	.string "这里是倍率为{STR_VAR_1}倍的轮盘台。\n"
+	.string "要在这里玩轮盘吗？$"
 
 Roulette_Text_NotEnoughCoins::
-	.string "You don't have enough COINS.$"
+	.string "代币不足……$"
 
 Roulette_Text_SpecialRateTable::
-	.string "Special rate table right now!$"
+	.string "现在是特别倍率期间！$"
 
 Roulette_Text_ControlsInstruction::
-	.string "Place your wager with the + Control\n"
-	.string "Pad, then press the A Button.$"
+	.string "用十字键选择要下注的网格，\n"
+	.string "按A键决定。$"
 
 Roulette_Text_ItsAHit::
-	.string "It's a hit!$"
+	.string "中了！$"
 
 Roulette_Text_Jackpot::
-	.string "Jackpot!$"
+	.string "中大奖了！$"
 
 Roulette_Text_NothingDoing::
-	.string "Nothing doing!$"
+	.string "没中——$"
 
 Roulette_Text_YouveWonXCoins::
-	.string "You've won {STR_VAR_1} COINS!$"
+	.string "恭喜中奖！\n"
+	.string "获得了{STR_VAR_1}枚硬币！$"
 
 Roulette_Text_NoCoinsLeft::
-	.string "No COINS left…$"
+	.string "代币用光了……$"
 
 Roulette_Text_KeepPlaying::
-	.string "Keep playing?$"
+	.string "要继续玩吗？$"
 
 Roulette_Text_BoardWillBeCleared::
-	.string "The ROULETTE board will be cleared.$"
+	.string "清除现在\n"
+	.string "台面上的钢珠。$"
 
 @ Unused
 Roulette_Text_YouDontHaveACoinCase::
-	.string "You don't have a COIN CASE.$"
+	.string "没有代币盒……$"
 
 Roulette_Text_CoinCaseIsFull::
-	.string "Your COIN CASE is full!\n"
-	.string "Coins can be exchanged for prizes.$"
+	.string "代币盒满了！\n"
+	.string "请去兑换奖品！$"
+//TODO 汉化

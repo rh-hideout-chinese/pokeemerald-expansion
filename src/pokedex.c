@@ -282,9 +282,9 @@ static u8* ReplaceDecimalSeparator(const u8* originalString);
 static void PrintOwnedMonMeasurements(u16 species);
 static void PrintOwnedMonHeight(u16 species);
 static void PrintOwnedMonWeight(u16 species);
-static u8* ConvertMonHeightToImperialString(u32 height);
+//static u8* ConvertMonHeightToImperialString(u32 height);
 static u8* ConvertMonHeightToMetricString(u32 height);
-static u8* ConvertMonWeightToImperialString(u32 weight);
+//static u8* ConvertMonWeightToImperialString(u32 weight);
 static u8* ConvertMonWeightToMetricString(u32 weight);
 static u8* ConvertMeasurementToMetricString(u32 num, u32* index);
 static void ResetOtherVideoRegisters(u16);
@@ -862,7 +862,7 @@ static const struct WindowTemplate sPokemonList_WindowTemplate[] =
 static const u8 sText_No0000[] = _("{NO}0000");
 static const u8 sText_No000[] = _("{NO}000");
 static const u8 sCaughtBall_Gfx[] = INCBIN_U8("graphics/pokedex/caught_ball.4bpp");
-static const u8 sText_TenDashes[] = _("----------");
+static const u8 sText_TenDashes[] = _("------------");
 
 ALIGNED(4) static const u8 sExpandedPlaceholder_PokedexDescription[] = _("");
 
@@ -1000,7 +1000,7 @@ static const struct WindowTemplate sNewEntryInfoScreen_WindowTemplates[] =
     DUMMY_WIN_TEMPLATE
 };
 
-static const u8 sText_TenDashes2[] = _("----------");
+static const u8 sText_TenDashes2[] = _("------------");
 
 // First character in range followed by number of characters in range for upper and lowercase
 static const u8 sLetterSearchRanges[][4] =
@@ -2347,7 +2347,8 @@ static void PrintMonName(u8 windowId, u8 fontId, const u8 *str, u8 left, u8 top)
 {
     static const u8 color[3] = { TEXT_COLOR_TRANSPARENT, TEXT_DYNAMIC_COLOR_6, TEXT_COLOR_LIGHT_GRAY };
     fontId = GetFontIdToFit(str, fontId, 0, 50);
-    AddTextPrinterParameterized4(windowId, fontId, left * 8, (top * 8) + 1, 0, 0, color, TEXT_SKIP_DRAW, str);
+    //修改，修改精灵名字显示
+    AddTextPrinterParameterized4(windowId, fontId, (left * 8) - 2, (top * 8) + 1, 0, 0, color, TEXT_SKIP_DRAW, str);
 }
 
 // u16 ignored is passed but never used
@@ -2407,6 +2408,7 @@ static void CreateMonListEntry(u8 position, u16 b, u16 ignored)
                 CreateMonDexNum(entryNum, 18, sPokedexView->listVOffset * 2, ignored);
                 CreateCaughtBall(FALSE, 17, sPokedexView->listVOffset * 2, ignored);
                 CreateMonName(0, 0x16, sPokedexView->listVOffset * 2);
+                
             }
         }
         break;
@@ -2458,7 +2460,12 @@ static void CreateMonDexNum(u16 entryNum, u8 left, u8 top, u16 unused)
     text[offset++] = CHAR_0 + ((dexNum % 1000) % 100) / 10;
     text[offset++] = CHAR_0 + ((dexNum % 1000) % 100) % 10;
     text[offset++] = EOS;
-    PrintMonDexNum(0, FONT_NARROW, text, left, top);
+    //PrintMonDexNum(0, FONT_NARROW, text, left, top);
+    //修改，修改精灵图鉴数字表示字体
+    if (sPokedexView->dexMode != DEX_MODE_HOENN)
+        PrintMonDexNum(0, FONT_SMALL, text, left, top);
+    else
+        PrintMonDexNum(0, FONT_NARROW, text, left, top);
 }
 
 static void CreateCaughtBall(bool16 owned, u8 x, u8 y, u16 unused)
@@ -2484,7 +2491,8 @@ static u8 CreateMonName(u16 num, u8 left, u8 top)
 
 static void ClearMonListEntry(u8 x, u8 y, u16 unused)
 {
-    FillWindowPixelRect(0, PIXEL_FILL(0), x * 8, y * 8, 0x60, 16);
+    //FillWindowPixelRect(0, PIXEL_FILL(0), x * 8, y * 8, 0x60, 16);
+    FillWindowPixelRect(0, PIXEL_FILL(0), x * 8, y * 8, 0x62, 16); //修改，修正清空函数，避免精灵列表右侧显示错误
 }
 
 // u16 ignored is passed but never used
@@ -2812,7 +2820,9 @@ static void CreateInterfaceSprites(u8 page)
     gSprites[spriteId].sIsDownArrow = TRUE;
     gSprites[spriteId].vFlip = TRUE;
 
-    CreateSprite(&sScrollBarSpriteTemplate, 230, 20, 0);
+    //CreateSprite(&sScrollBarSpriteTemplate, 230, 20, 0);
+    //修改，修改最右侧方块显示位置
+    CreateSprite(&sScrollBarSpriteTemplate, 235, 20, 0);
     // Start button
     CreateSprite(&sInterfaceTextSpriteTemplate, 16, 120, 0);
     // Menu text
@@ -3622,8 +3632,11 @@ static void Task_LoadCryScreen(u8 taskId)
         gMain.state++;
         break;
     case 4:
-        PrintInfoScreenText(gText_CryOf, 82, 33);
-        PrintCryScreenSpeciesName(0, sPokedexListItem->dexNum, 82, 49);
+        //PrintInfoScreenText(gText_CryOf, 82, 33);
+        //PrintCryScreenSpeciesName(0, sPokedexListItem->dexNum, 82, 49);
+        //修改，修改图鉴「○○的叫声」文本
+        PrintCryScreenSpeciesName(0, sPokedexListItem->dexNum, 82, 33);
+        PrintInfoScreenText(gText_CryOf, 82, 49);
         gMain.state++;
         break;
     case 5:
@@ -3811,11 +3824,17 @@ static void Task_LoadSizeScreen(u8 taskId)
         break;
     case 3:
         {
-            u8 string[64];
+            //u8 string[64];
 
-            StringCopy(string, gText_SizeComparedTo);
-            StringAppend(string, gSaveBlock2Ptr->playerName);
-            PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, DISPLAY_WIDTH), 121);
+            //StringCopy(string, gText_SizeComparedTo);
+            //StringAppend(string, gSaveBlock2Ptr->playerName);
+            //修改，修改名字大小比较文本与日版相同
+            StringCopy(gStringVar1, GetSpeciesName(NationalPokedexNumToSpecies(sPokedexListItem->dexNum))); //复制字符串到变量
+            StringCopy(gStringVar2, gSaveBlock2Ptr->playerName); //复制字符串到变量
+            StringExpandPlaceholders(gStringVar4, gText_SizeComparedTo); //写入变量到文本
+            //显示（打印），string由于多余就去除了。
+            //PrintInfoScreenText(string, GetStringCenterAlignXOffset(FONT_NORMAL, string, DISPLAY_WIDTH), 121);
+            PrintInfoScreenText(gStringVar4, GetStringCenterAlignXOffset(FONT_NORMAL, gStringVar4, DISPLAY_WIDTH), 121);
             gMain.state++;
         }
         break;
@@ -4250,17 +4269,17 @@ static void PrintUnknownMonMeasurements(void)
 
 static u8* GetUnknownMonHeightString(void)
 {
-    if (UNITS == UNITS_IMPERIAL)
-        return ReplaceDecimalSeparator(gText_UnkHeight);
-    else
+    //if (UNITS == UNITS_IMPERIAL)
+        //return ReplaceDecimalSeparator(gText_UnkHeight);
+    //else
         return ReplaceDecimalSeparator(gText_UnkHeightMetric);
 }
 
 static u8* GetUnknownMonWeightString(void)
 {
-    if (UNITS == UNITS_IMPERIAL)
-        return ReplaceDecimalSeparator(gText_UnkWeight);
-    else
+    //if (UNITS == UNITS_IMPERIAL)
+        //return ReplaceDecimalSeparator(gText_UnkWeight);
+    //else
         return ReplaceDecimalSeparator(gText_UnkWeightMetric);
 }
 
@@ -4307,9 +4326,9 @@ static void PrintOwnedMonHeight(u16 species)
 
 u8* ConvertMonHeightToString(u32 height)
 {
-    if (UNITS == UNITS_IMPERIAL)
-        return ConvertMonHeightToImperialString(height);
-    else
+    //if (UNITS == UNITS_IMPERIAL)
+        //return ConvertMonHeightToImperialString(height);
+    //else
         return ConvertMonHeightToMetricString(height);
 }
 
@@ -4328,13 +4347,13 @@ static void PrintOwnedMonWeight(u16 species)
 
 u8* ConvertMonWeightToString(u32 weight)
 {
-    if (UNITS == UNITS_IMPERIAL)
-        return ConvertMonWeightToImperialString(weight);
-    else
+    //if (UNITS == UNITS_IMPERIAL)
+        //return ConvertMonWeightToImperialString(weight);
+    //else
         return ConvertMonWeightToMetricString(weight);
 }
 
-static u8* ConvertMonHeightToImperialString(u32 height)
+/*static u8* ConvertMonHeightToImperialString(u32 height)
 {
     u8* heightString = Alloc(WEIGHT_HEIGHT_STR_MEM);
     u32 inches, feet, index = 0;
@@ -4365,7 +4384,7 @@ static u8* ConvertMonHeightToImperialString(u32 height)
     heightString[index++] = EOS;
 
     return heightString;
-}
+}*/
 
 static u8* ConvertMonHeightToMetricString(u32 height)
 {
@@ -4377,7 +4396,7 @@ static u8* ConvertMonHeightToMetricString(u32 height)
     return heightString;
 }
 
-static u8* ConvertMonWeightToImperialString(u32 weight)
+/*static u8* ConvertMonWeightToImperialString(u32 weight)
 {
     u8* weightString = Alloc(WEIGHT_HEIGHT_STR_MEM);
     bool32 output = FALSE;
@@ -4431,7 +4450,7 @@ static u8* ConvertMonWeightToImperialString(u32 weight)
     weightString[index++] = EOS;
 
     return weightString;
-}
+}*/
 
 static u8* ConvertMonWeightToMetricString(u32 weight)
 {

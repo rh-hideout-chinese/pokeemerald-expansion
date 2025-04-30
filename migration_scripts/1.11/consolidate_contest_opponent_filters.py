@@ -8,7 +8,7 @@ if not os.path.exists("Makefile"):
 
 # Read contest_opponents.h
 for file in glob.glob('./src/data/contest_opponents.h'):
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding="utf-8") as f:
         source_content = f.read()
 
 # Extract party info from contest_opponents.h
@@ -21,7 +21,7 @@ for match in source_pattern.findall(source_content):
 
 # Read contest_opponents.h content
 for file in glob.glob('./src/data/contest_opponents.h'):
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding="utf-8") as f:
         destination_content = f.read()
 
 # Modify contest_opponents.h content
@@ -40,6 +40,6 @@ modified_content = destination_pattern.sub(add_filter_data, destination_content)
 
 # Write the modified content back to contest_opponents.h
 for file in glob.glob('./src/data/contest_opponents.h'):
-    with open(file, 'w') as f:
+    with open(file, 'w', encoding="utf-8") as f:
         f.write(modified_content)
         print("contest_opponents.h has been updated")

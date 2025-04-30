@@ -36,7 +36,7 @@ static u32 CB2_HandleCallExitInput(struct Pokenav_MatchCallMenu *);
 static u32 LoopedTask_BuildMatchCallList(s32);
 static bool32 ShouldDoNearbyMessage(void);
 
-static const u8 gText_CallCantBeMadeHere[] = _("A call can't be made from here.");
+static const u8 gText_CallCantBeMadeHere[] = _("无法在此处进行呼叫。");
 
 #include "data/text/match_call_messages.h"
 
@@ -421,12 +421,12 @@ void BufferMatchCallNameAndDesc(struct PokenavMatchCallEntry *matchCallEntry, u8
 
     if (className && trainerName)
     {
-        u8 *str2 = GetStringClearToWidth(str, FONT_NARROW, className, 69);
-        GetStringClearToWidth(str2, FONT_NARROW, trainerName, 51);
+        u8 *str2 = GetStringClearToWidth(str, FONT_SMALL, className, 69);
+        GetStringClearToWidth(str2, FONT_SMALL, trainerName, 51);
     }
     else
     {
-        GetStringClearToWidth(str, FONT_NARROW, NULL, 120);
+        GetStringClearToWidth(str, FONT_SMALL, NULL, 120);
     }
 }
 

@@ -30,10 +30,17 @@ enum {
 };
 
 #define VERSION_BANNER_RIGHT_TILEOFFSET 64
-#define VERSION_BANNER_LEFT_X 98
+//修改，修改「绿宝石」版本号显示位置
+/*#define VERSION_BANNER_LEFT_X 98
 #define VERSION_BANNER_RIGHT_X 162
 #define VERSION_BANNER_Y 2
-#define VERSION_BANNER_Y_GOAL 66
+#define VERSION_BANNER_Y_GOAL 66*/
+
+#define VERSION_BANNER_LEFT_X 164
+#define VERSION_BANNER_RIGHT_X 228
+#define VERSION_BANNER_Y -16
+#define VERSION_BANNER_Y_GOAL 60
+
 #define START_BANNER_X 128
 
 #define CLEAR_SAVE_BUTTON_COMBO (B_BUTTON | SELECT_BUTTON | DPAD_UP)
@@ -613,7 +620,7 @@ void CB2_InitTitleScreen(void)
         LoadCompressedSpriteSheet(&sSpriteSheet_EmeraldVersion[0]);
         LoadCompressedSpriteSheet(&sSpriteSheet_PressStart[0]);
         LoadCompressedSpriteSheet(&sPokemonLogoShineSpriteSheet[0]);
-        LoadPalette(gTitleScreenEmeraldVersionPal, OBJ_PLTT_ID(0), PLTT_SIZE_4BPP);
+        LoadPalette(gTitleScreenEmeraldVersionPal, OBJ_PLTT_ID(0), PLTT_SIZE_8BPP);
         LoadSpritePalette(&sSpritePalette_PressStart[0]);
         gMain.state = 2;
         break;
@@ -731,7 +738,9 @@ static void Task_TitleScreenPhase1(u8 taskId)
 // Create "Press Start" and copyright banners, and slide Pokémon logo up
 static void Task_TitleScreenPhase2(u8 taskId)
 {
-    u32 yPos;
+    //u32 yPos;
+    //修改，新增「宠物小精灵」大标题向右偏移相关(不按按键跳过时)
+    u32 xPos, yPos;
 
     // Skip to next phase when A, B, Start, or Select is pressed
     if (JOY_NEW(A_B_START_SELECT) || gTasks[taskId].tSkipToNext)
@@ -768,6 +777,10 @@ static void Task_TitleScreenPhase2(u8 taskId)
         gTasks[taskId].tBg2Y++;
 
     // Slide Pokémon logo up
+    //修改，新增「宠物小精灵」大标题向右偏移相关(不按按键跳过时)
+    xPos = gTasks[taskId].data[3] * 256;
+    SetGpuReg(REG_OFFSET_BG2X_L, xPos);
+    SetGpuReg(REG_OFFSET_BG2X_H, xPos / 0x10000);
     yPos = gTasks[taskId].tBg2Y * 256;
     SetGpuReg(REG_OFFSET_BG2Y_L, yPos);
     SetGpuReg(REG_OFFSET_BG2Y_H, yPos / 0x10000);
@@ -804,6 +817,9 @@ static void Task_TitleScreenPhase3(u8 taskId)
     }
     else
     {
+        //修改，新增「宠物小精灵」大标题向右偏移相关(按按键跳过时)
+        SetGpuReg(REG_OFFSET_BG2X_L, 0);
+        SetGpuReg(REG_OFFSET_BG2X_H, 0);
         SetGpuReg(REG_OFFSET_BG2Y_L, 0);
         SetGpuReg(REG_OFFSET_BG2Y_H, 0);
         if (++gTasks[taskId].tCounter & 1)

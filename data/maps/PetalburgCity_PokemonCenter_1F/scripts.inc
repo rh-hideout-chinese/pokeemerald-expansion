@@ -55,42 +55,20 @@ PetalburgCity_PokemonCenter_1F_EventScript_SayMudkipType::
 	return
 
 PetalburgCity_PokemonCenter_1F_Text_PCStorageSystem:
-	.string "That PC-based POKéMON Storage\n"
-	.string "System…\p"
-	.string "Whoever made it must be some kind\n"
-	.string "of a scientific wizard!$"
+    .string "电脑上的\n宝可梦寄放系统……\p无论是谁发明的，\n那人一定是个科学狂人！$"
 
 PetalburgCity_PokemonCenter_1F_Text_OranBerryRegainedHP:
-	.string "When my POKéMON ate an\n"
-	.string "ORAN BERRY, it regained HP!$"
+    .string "我的宝可梦吃了蓝橘果后，\n它的体力就恢复了！$"
 
 PetalburgCity_PokemonCenter_1F_Text_ManyTypesOfPokemon:
-	.string "There are many types of POKéMON.\p"
-	.string "All types have their strengths and\n"
-	.string "weaknesses against other types.\p"
-	.string "Depending on the types of POKéMON,\n"
-	.string "a battle could be easy or hard.$"
+    .string "宝可梦分为很多属性，\p每种属性对其他属性\n都有不同的优势和弱点。\p由于宝可梦属性的不同，\n战斗可能会变得更加容易或棘手。$"
 
 PetalburgCity_PokemonCenter_1F_Text_TreeckoIsGrassType:
-	.string "For example, your TREECKO\n"
-	.string "is a GRASS type.\p"
-	.string "It's strong against the WATER and\n"
-	.string "GROUND types.\p"
-	.string "But, it's weak against FIRE-type\n"
-	.string "POKéMON.$"
+    .string "比如，你的木守宫\n是草属性。\p它对水属性和地面属性时\n占有优势，\p但对火属性宝可梦时\n则处于劣势。$"
 
 PetalburgCity_PokemonCenter_1F_Text_TorchicIsFireType:
-	.string "For example, your TORCHIC\n"
-	.string "is a FIRE type.\p"
-	.string "It's strong against the GRASS and\n"
-	.string "BUG types.\p"
-	.string "But, it's weak against WATER-type\n"
-	.string "POKéMON.$"
+    .string "比如，你的火稚鸡\n是火属性。\p它对草属性和虫属性时\n占有优势，\p但对水属性宝可梦时\n则处于劣势。$"
 
 PetalburgCity_PokemonCenter_1F_Text_MudkipIsWaterType:
-	.string "For example, your MUDKIP\n"
-	.string "is a WATER type.\p"
-	.string "It's strong against the FIRE type.\p"
-	.string "But, it's weak against GRASS-type\n"
-	.string "and ELECTRIC-type POKéMON.$"
+    .string "比如，你的水跃鱼\n是水属性。\p它对火属性时占有优势，\p但对草属性和电属性宝可梦时\n则处于劣势。$"
 

@@ -378,276 +378,112 @@ BattleFrontier_BattlePalaceLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForSingleBattle:
-	.string "Where the hearts of TRAINERS\n"
-	.string "are put to the test.\p"
-	.string "I welcome you to the BATTLE PALACE.\p"
-	.string "I accept challenges to the SINGLE\n"
-	.string "BATTLE HALLS.$"
+    .string "欢迎来到对战宫殿，\n这里是对训练家的\p心的测试，这里接受\p单人对战大厅\n的挑战。$"
 
 BattleFrontier_BattlePalaceLobby_Text_TakeSingleBattleChallenge:
-	.string "Do you wish to take\n"
-	.string "the SINGLE BATTLE HALL challenge?$"
+    .string "你想要挑战\n单人对战大厅吗？$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainSingleBattleChallenge:
-	.string "In the BATTLE PALACE, there are\n"
-	.string "several auditoriums for SINGLE BATTLES\l"
-	.string "that are named SINGLE BATTLE HALLS.\p"
-	.string "The SINGLE BATTLES are conducted in\n"
-	.string "the usual way, except with one crucial\l"
-	.string "rule that must be obeyed.\p"
-	.string "TRAINERS are permitted only to switch\n"
-	.string "their POKéMON in and out.\p"
-	.string "TRAINERS are otherwise forbidden to\n"
-	.string "command their POKéMON.\p"
-	.string "The POKéMON are to behave according\n"
-	.string "to their nature and battle on their own.\p"
-	.string "You must put your trust in your\n"
-	.string "POKéMON and watch over them.\p"
-	.string "If you achieve the honor of beating\n"
-	.string "seven TRAINERS in succession,\l"
-	.string "we will present you with Battle Points.\p"
-	.string "If you want to interrupt your\n"
-	.string "challenge, you must save the game.\p"
-	.string "If you don't save before interrupting,\n"
-	.string "you will be disqualified.$"
+    .string "对战宫殿里有几个\n专门为单人对战准备的礼堂，\l被称作单人对战大厅。\p单人对战与普通比赛的规则\n相同，但增加了一条\l非常重要的规则，\p训练家只能选择\n进行战斗的宝可梦，\p不可以对宝可梦\n下达任何战斗指令。\p宝可梦要\n依靠自己的本能战斗，\p你必须信赖你的宝可梦，\n仔细观看它们的比赛。\p如果你能成功地连续打败\n七个训练家，\l就可以得到对战点数。\p需要中断挑战的话\n必须进行存档，\p假如没有存档\n则视为放弃参赛权。$"
 
 BattleFrontier_BattlePalaceLobby_Text_ReturnWhenFortified:
-	.string "When you have fortified your heart\n"
-	.string "and POKéMON, you must return.$"
+    .string "当你的心与你的宝可梦都变得\n更强的时候，再回到这里来吧。$"
 
 BattleFrontier_BattlePalaceLobby_Text_WhichChallenge:
-	.string "There are two BATTLE HALLS,\n"
-	.string "Level 50 and Open Level.\l"
-	.string "Which is your choice of a challenge?$"
+    .string "有两种对战大厅，\n50级和自由级，\l你要挑战哪一种？$"
 
 BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLv50:
-	.string "Sigh…\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for the challenge.\p"
-	.string "To enter, you must provide three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "These POKéMON must all be of\n"
-	.string "Level 50 or lower.\p"
-	.string "They also must not be holding\n"
-	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Come back when you have made\n"
-	.string "your preparations.$"
+    .string "哎……\p你没带足三只能够\n参加挑战的宝可梦，\p要进行挑战，你必须\n带着三只不同种类的宝可梦，\p而且它们必须都在\n50级以下。\p而且，也不能让它们携带\n相同种类的物品。\p蛋{STR_VAR_1}也不能参加。\p准备好之后\n再回来吧。$"
 
 BattleFrontier_BattlePalaceLobby_Text_NotEnoughValidMonsLvOpen:
-	.string "Sigh…\p"
-	.string "You do not have the three POKéMON\n"
-	.string "required for the challenge.\p"
-	.string "To enter, you must provide three\n"
-	.string "different kinds of POKéMON.\p"
-	.string "They also must not be holding\n"
-	.string "the same kinds of items.\p"
-	.string "EGGS{STR_VAR_1} ineligible.\p"
-	.string "Come back when you have made\n"
-	.string "your preparations.$"
+    .string "哎……\p你没带足三只能够\n参加挑战的宝可梦，\p要进行挑战，你必须\n带着三只不同种类的宝可梦。\p而且，也不能让它们携带\n相同种类的物品。\p蛋{STR_VAR_1}也不能参加。\p准备好之后\n再回来吧。$"
 
 BattleFrontier_BattlePalaceLobby_Text_NowSelectThreeMons:
-	.string "Good. Now, you must select your\n"
-	.string "three POKéMON.$"
+    .string "好的。现在，请选择\n要参加的三只宝可梦。$"
 
 BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge2:
-	.string "I must save before I show you to\n"
-	.string "the BATTLE HALL. Is that okay?$"
+    .string "带你去对战大厅之前\n需要先存档，如何？$"
 
 BattleFrontier_BattlePalaceLobby_Text_FollowMe:
-	.string "Good.\n"
-	.string "Now, follow me.$"
+    .string "好的。\n跟我来。$"
 
 BattleFrontier_BattlePalaceLobby_Text_ResultsWillBeRecorded:
-	.string "I feel privileged for having seen\n"
-	.string "your POKéMON's exploits.\p"
-	.string "The results will be recorded.\n"
-	.string "I must ask you to briefly wait.$"
+    .string "很荣幸能观赏到\n你的宝可梦的英姿。\p正在记录你的结果中，\n请稍候。$"
 
 BattleFrontier_BattlePalaceLobby_Text_FirmTrueBondsFor7WinStreak:
-	.string "To achieve a 7-win streak…\p"
-	.string "The bonds that bind your heart with\n"
-	.string "your POKéMON seem firm and true.$"
+    .string "你达到了七连胜……\p看起来你的新与你的宝可梦的\n是紧紧地联系在一起的。$"
 
 BattleFrontier_BattlePalaceLobby_Text_FeatWillBeRecorded:
-	.string "Your feat will be recorded.\n"
-	.string "I must ask you to briefly wait.$"
+    .string "正在记录你的成绩，\n请稍候。$"
 
 @ Unused
 BattleFrontier_BattlePalaceLobby_Text_BattlePointsFor7WinStreak:
-	.string "For the feat of your 7-win streak,\n"
-	.string "we present you with Battle Point(s).$"
+	.string "作为7连胜的奖励，\n我们送你对战点数。$"
 
 BattleFrontier_BattlePalaceLobby_Text_NoSpaceForPrize:
-	.string "You seem to have no space for\n"
-	.string "our prize.\p"
-	.string "You should return when you have\n"
-	.string "organized your BAG.$"
+    .string "看起来你没有地方\n装我们的礼品了，\p整理好包包再\n回来这里吧。$"
 
 BattleFrontier_BattlePalaceLobby_Text_WeHaveBeenWaiting:
-	.string "We have been waiting for you…$"
+    .string "我们一直在等你……$"
 
 BattleFrontier_BattlePalaceLobby_Text_MustSaveBeforeChallenge:
-	.string "I must save before I show you to\n"
-	.string "the BATTLE HALL. Is that okay?$"
+    .string "带你去对战大厅之前\n需要先存档，如何？$"
 
 BattleFrontier_BattlePalaceLobby_Text_FailedToSaveBeforeEndingChallenge:
-	.string "Sigh…\p"
-	.string "You failed to save before you ended\n"
-	.string "your challenge the last time.\p"
-	.string "As a result, your challenge has been\n"
-	.string "disqualified. It is most unfortunate.$"
+    .string "哎……\p上回结束挑战时\n你没有进行存档，\p因此你的挑战资格\n被暂时取消了。真可惜。$"
 
 @ Unused
 BattleFrontier_BattlePalaceLobby_Text_ReceivedPrize:
-	.string "{PLAYER} received the prize\n"
-	.string "{STR_VAR_1}.$"
+    .string "{PLAYER}得到奖品\n{STR_VAR_1}。$"
 
 BattleFrontier_BattlePalaceLobby_Text_LadyCanTellWhatMonsThink:
-	.string "For a hardy fellow like me,\n"
-	.string "hardy POKéMON are the best.\p"
-	.string "Offense is the best defense!\n"
-	.string "A relentless attack is the ultimate!\p"
-	.string "But that's not what I wanted to chat\n"
-	.string "about.\p"
-	.string "Every so often a really cute lady\n"
-	.string "swings by here.\p"
-	.string "She says that she can tell what\n"
-	.string "POKéMON are thinking.\p"
-	.string "I don't know about that part,\n"
-	.string "but she is really cute.\p"
-	.string "Huh?\n"
-	.string "Why are you looking at me like that?$"
+    .string "对于我这样努力的人，\n还是努力的宝可梦更适合我。\p攻击就是最好的防御！\n不断的攻击最为重要！\p不过我想说的并不是\n这些。\p我经常能看到一个可爱的\n女孩在这附近玩，\p她说她能得知\n宝可梦们的想法，\p那一点我不是很清楚，\n不过她真的非常可爱啊。\p嗯？\n你干吗用那种眼神看着我？$"
 
 BattleFrontier_BattlePalaceLobby_Text_NatureAndMovesKeyHere:
-	.string "Hmm…\p"
-	.string "It appears that the nature of POKéMON\n"
-	.string "and the moves that they have been\l"
-	.string "taught are the keys to battle here.\p"
-	.string "To be more precise, it's how well\n"
-	.string "the moves match the nature of\l"
-	.string "the POKéMON.\p"
-	.string "If your POKéMON is in trouble and\n"
-	.string "unable to live up to its potential,\l"
-	.string "you may need to examine how well\l"
-	.string "its moves match its nature.$"
+    .string "唔……\p看起来宝可梦的性格\n和它们所学会的招式\l是在这里战斗的关键。\p准确地说，是取决于\n招式与宝可梦的性格的\l适合程度。\p如果你的宝可梦碰到麻烦，\n不能依靠它自己的潜能获胜，\l你就得检查一下\l它的招式是否符合它的性格。$"
 
 BattleFrontier_BattlePalaceLobby_Text_MonDocileButTransforms:
-	.string "My POKéMON is usually very docile.\p"
-	.string "But when it's in a BATTLE HALL,\n"
-	.string "it sometimes seems to become\l"
-	.string "transformed into something wicked!\p"
-	.string "It becomes totally intimidating.\n"
-	.string "It's shocking, even.$"
+    .string "我的宝可梦通常比较温顺，\p但进了对战大厅后，\n它有时会变得\l非常调皮！\p真是被它吓了一跳！\n非常让人吃惊啊！$"
 
 BattleFrontier_BattlePalaceLobby_Text_WhatNatureFavorsChippingAway:
-	.string "I wonder what sort of nature a POKéMON\n"
-	.string "would have if it favored enfeebling its\l"
-	.string "opponents and chipping away slowly.\p"
-	.string "I'd be surprised if it was a LAX nature.\p"
-	.string "But, nah, that can't be right.$"
+    .string "不知道一只喜欢吓唬对手，\n然后一点点打倒对方的宝可梦\l应该算作什么性格，\p它要是乐天的性格的话，\n我会大吃一惊的。\p但是，唉，不可能的。$"
 
 BattleFrontier_BattlePalaceLobby_Text_WelcomeForDoubleBattle:
-	.string "Where the hearts of TRAINERS\n"
-	.string "are put to the test.\p"
-	.string "I welcome you to the BATTLE PALACE.\p"
-	.string "I accept challenges to the DOUBLE\n"
-	.string "BATTLE HALLS.$"
+    .string "欢迎来到对战宫殿，\n这里是对训练家的心的测试，\p这里接受\p双打对战大厅\n的挑战。$"
 
 BattleFrontier_BattlePalaceLobby_Text_TakeDoubleBattleChallenge:
-	.string "Do you wish to take\n"
-	.string "the DOUBLE BATTLE HALL challenge?$"
+    .string "你想要挑战\n双打对战大厅吗？$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainDoubleBattleChallenge:
-	.string "In the BATTLE PALACE, there are\n"
-	.string "several auditoriums for DOUBLE BATTLES\l"
-	.string "that are named DOUBLE BATTLE HALLS.\p"
-	.string "The DOUBLE BATTLES are conducted in\n"
-	.string "the usual way, except with one crucial\l"
-	.string "rule that must be obeyed.\p"
-	.string "TRAINERS are permitted only to switch\n"
-	.string "their POKéMON in and out.\p"
-	.string "TRAINERS are otherwise forbidden to\n"
-	.string "command their POKéMON.\p"
-	.string "The POKéMON are to behave according\n"
-	.string "to their nature and battle on their own.\p"
-	.string "You must put your trust in your\n"
-	.string "POKéMON and watch over them.\p"
-	.string "If you achieve the honor of beating\n"
-	.string "seven TRAINERS in succession,\l"
-	.string "we will present you with Battle Points.\p"
-	.string "If you want to interrupt your\n"
-	.string "challenge, please save the game.\p"
-	.string "If you don't save before interrupting,\n"
-	.string "you will be disqualified.$"
+    .string "对战宫殿里有几个\n专门为双打对战准备的礼堂，\l被称作双打对战大厅。\p双打对战与普通比赛的规则\n相同，但增加了一条\l非常重要的规则，\p训练家只能选择\n进行战斗的宝可梦，\p不可以对宝可梦\n下达任何战斗指令。\p宝可梦要\n依靠自己的本能战斗，\p你必须信赖你的宝可梦，\n仔细观看它们的比赛。\p如果你能成功地连续打败\n七个训练家，\l就可以得到对战点数。\p需要中断挑战的话\n必须进行存档，\p假如没有存档\n则视为放弃参赛权。$"
 
 BattleFrontier_BattlePalaceLobby_Text_ToDefeatMavenAnd7Trainers:
-	.string "To defeat the PALACE MAVEN\n"
-	.string "and seven TRAINERS in a row…$"
+    .string "要连续打败宫殿守护者\n和七个训练家啊……$"
 
 BattleFrontier_BattlePalaceLobby_Text_PresentYouWithBattlePoints:
-	.string "In honor of the bond you share with\n"
-	.string "your POKéMON, we present you with\l"
-	.string "these Battle Point(s).$"
+    .string "为了表彰你和你的宝可梦\n之间密切的关系，我们把\l这些对战点数奖给你。$"
 
 BattleFrontier_BattlePalaceLobby_Text_LikeToRecordMatch:
-	.string "Would you like to record your latest\n"
-	.string "BATTLE PALACE match on your\l"
-	.string "FRONTIER PASS?$"
+    .string "你要在你的开拓通行证上\n记录下你在对战宫殿\l最近的比赛吗？$"
 
 BattleFrontier_BattlePalaceLobby_Text_RulesAreListed:
-	.string "The BATTLE HALL rules are listed.$"
+    .string "上面写着对战大厅的规则。$"
 
 BattleFrontier_BattlePalaceLobby_Text_ReadWhichHeading:
-	.string "Which heading do you want to read?$"
+    .string "想读哪一条？$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesBasics:
-	.string "Here, POKéMON are required to think\n"
-	.string "and battle by themselves.\p"
-	.string "Unlike in the wild, POKéMON that live\n"
-	.string "with people behave differently\l"
-	.string "depending on their nature.$"
+    .string "在这里，宝可梦需要\n凭借自己的思考来战斗。\p与野生宝可梦相比，和人们\n一同生活的宝可梦会依据\l它们的性格选择不同的战斗方式。$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesNature:
-	.string "Depending on its nature, a POKéMON\n"
-	.string "may prefer to attack no matter what.\p"
-	.string "Another POKéMON may prefer to protect\n"
-	.string "itself from any harm.\p"
-	.string "Yet another may enjoy vexing or\n"
-	.string "confounding its foes.\p"
-	.string "Due to its nature, a POKéMON\n"
-	.string "will have favorite moves that it is good\l"
-	.string "at using.\p"
-	.string "It may also dislike certain moves that\n"
-	.string "it has trouble using.$"
+    .string "由于性格的差别，有的宝可梦\n喜欢不计后果的攻击，\p有的喜欢尽量保护自己\n不受任何伤害，\p还有一些喜欢慢慢地\n挫败它的敌人。\p不同性格的宝可梦\n都会有各自喜欢的\l并且擅长的招式，\p当然也会有\n不喜欢的招式。$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesMoves:
-	.string "There are offensive moves that inflict\n"
-	.string "direct damage on the foe.\p"
-	.string "There are defensive moves that are\n"
-	.string "used to prepare for enemy attacks or\l"
-	.string "used to heal HP and so on.\p"
-	.string "There are also other somewhat-odd\n"
-	.string "moves that may enfeeble the foes with\l"
-	.string "stat problems including poison and \l"
-	.string "paralysis.\p"
-	.string "POKéMON will consider using moves in\n"
-	.string "these three categories.$"
+    .string "有直接给予对手伤害的\n攻击性招式，\p有抵抗敌人攻击或\n回复体力等等的\l防御性招式，\p还有能让对手陷入\n中毒或麻痹等\l种种异常状态的\l奇怪的招式。\p宝可梦会自己决定\n使用三种招式中的哪一种。$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesUnderpowered:
-	.string "When not under command by its TRAINER,\n"
-	.string "a POKéMON may be unable to effectively\l"
-	.string "use certain moves.\p"
-	.string "A POKéMON is not good at using any\n"
-	.string "move that it dislikes.\p"
-	.string "If a POKéMON only knows moves that\n"
-	.string "do not match its nature, it will often\l"
-	.string "be unable to live up to its potential.$"
+    .string "没有训练家的命令，\n宝可梦有可能并不会\l经常使用某些招式。\p宝可梦不擅长使用\n自己不喜欢的招式。\p如果宝可梦只会\n不太符合它的性格的招式，\l那么就很难凭自己的潜能获得胜利。$"
 
 BattleFrontier_BattlePalaceLobby_Text_ExplainRulesWhenInDanger:
-	.string "Depending on its nature, a POKéMON may\n"
-	.string "start using moves that don't match its\l"
-	.string "nature when it is in trouble.\p"
-	.string "If a POKéMON begins behaving oddly\n"
-	.string "in a pinch, watch it carefully.$"
+    .string "根据性格的不同，如果一只宝可梦\n遇上了麻烦，它也有可能\l会使用并不符合它性格的招式。\p如果紧要关头宝可梦的表现\n开始变得奇怪，就要多注意它一下了。$"
 

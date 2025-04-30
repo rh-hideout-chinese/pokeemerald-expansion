@@ -1955,7 +1955,7 @@ extern const u8 gText_TrainerCardName[];
 extern const u8 gText_TrainerCardIDNo[];
 extern const u8 gText_TrainerCardMoney[];
 extern const u8 gText_PokedollarVar1[];
-extern const u8 gText_EmptyString6[];
+extern const u8 gText_TrainerCardHiki[];
 extern const u8 gText_TrainerCardPokedex[];
 extern const u8 gText_TrainerCardTime[];
 extern const u8 gText_Colon2[];

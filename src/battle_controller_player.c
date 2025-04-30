@@ -1759,12 +1759,12 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     u16 acc = GetMoveAccuracy(move);
 
     u8 pwr_num[3], acc_num[3];
-    u8 cat_desc[7] = _("CAT: ");
-    u8 pwr_desc[7] = _("PWR: ");
-    u8 acc_desc[7] = _("ACC: ");
-    u8 cat_start[] = _("{CLEAR_TO 0x03}");
-    u8 pwr_start[] = _("{CLEAR_TO 0x38}");
-    u8 acc_start[] = _("{CLEAR_TO 0x6D}");
+    u8 cat_desc[] = _("分类: ");
+    u8 pwr_desc[] = _("威力: ");
+    u8 acc_desc[] = _("命中: ");
+    u8 cat_start[] = _("{CLEAR_TO 0x00}");
+    u8 pwr_start[] = _("{CLEAR_TO 0x30}");
+    u8 acc_start[] = _("{CLEAR_TO 0x62}");
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
     if (pwr < 2)
@@ -1788,7 +1788,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MOVE_DESCRIPTION);
 
     if (gCategoryIconSpriteId == 0xFF)
-        gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 38, 64, 1);
+        gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, 43, 64, 1);
 
     StartSpriteAnim(&gSprites[gCategoryIconSpriteId], GetBattleMoveCategory(move));
 

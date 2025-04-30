@@ -314,6 +314,6 @@ if __name__ == '__main__':
     except:
         print(f"usage: python3 {sys.argv[0]} <trainers.h> <trainer_parties.h> <out>")
     else:
-        with open(trainers_in_path, "r") as trainers_in_h, open(parties_in_path, "r") as parties_in_h, open(out_path, "w") as out_party:
+        with open(trainers_in_path, "r", encoding="utf-8") as trainers_in_h, open(parties_in_path, "r", encoding="utf-8") as parties_in_h, open(out_path, "w", encoding="utf-8") as out_party:
             parties = convert_parties(parties_in_path, parties_in_h)
             trainers = convert_trainers(trainers_in_path, trainers_in_h, parties, out_party)

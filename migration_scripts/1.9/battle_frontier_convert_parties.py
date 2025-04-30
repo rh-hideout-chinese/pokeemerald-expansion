@@ -51,12 +51,12 @@ def battle_frontier_mons(data):
 
     return data
 
-with open('src/data/battle_frontier/battle_frontier_mons.h', 'r') as file:
+with open('src/data/battle_frontier/battle_frontier_mons.h', 'r', encoding="utf-8") as file:
     data = file.read()
-with open('src/data/battle_frontier/battle_frontier_mons.h', 'w') as file:
+with open('src/data/battle_frontier/battle_frontier_mons.h', 'w', encoding="utf-8") as file:
     file.write(battle_frontier_mons(data))
 
-with open('src/data/battle_frontier/battle_tent.h', 'r') as file:
+with open('src/data/battle_frontier/battle_tent.h', 'r', encoding="utf-8") as file:
     data = file.read()
-with open('src/data/battle_frontier/battle_tent.h', 'w') as file:
+with open('src/data/battle_frontier/battle_tent.h', 'w', encoding="utf-8") as file:
     file.write(battle_frontier_mons(data))

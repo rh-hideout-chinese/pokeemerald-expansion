@@ -659,7 +659,7 @@ static const u8 *const sActionStringTable[] =
     [PARTY_MSG_ALREADY_HOLDING_ONE]    = gText_AlreadyHoldingOne,
     [PARTY_MSG_WHICH_APPLIANCE]        = gText_WhichAppliance,
     [PARTY_MSG_CHOOSE_SECOND_FUSION]   = gText_NextFusionMon,
-    [PARTY_MSG_NO_POKEMON]             = COMPOUND_STRING("You have no POKéMON."),
+    [PARTY_MSG_NO_POKEMON]             = COMPOUND_STRING("没有宝可梦哦！"),
     [PARTY_MSG_CHOOSE_MON_FOR_BOX]     = gText_SendWhichMonToPC,
 };
 
@@ -688,7 +688,7 @@ static const u16 sUnusedData[] =
     0x0121, 0x013b, 0x000f, 0x0013, 0x0039, 0x0046, 0x0094, 0x00f9, 0x007f, 0x0123,
 };
 
-static const u8 sText_Trade4[] = _("TRADE");
+static const u8 sText_Trade4[] = _("交换");
 
 struct
 {
@@ -696,33 +696,33 @@ struct
     TaskFunc func;
 } static const sCursorOptions[MENU_FIELD_MOVES] =
 {
-    [MENU_SUMMARY] = {COMPOUND_STRING("SUMMARY"), CursorCb_Summary},
-    [MENU_SWITCH] = {COMPOUND_STRING("SWITCH"), CursorCb_Switch},
+    [MENU_SUMMARY] = {COMPOUND_STRING("查看能力"), CursorCb_Summary},
+    [MENU_SWITCH] = {COMPOUND_STRING("替换排序"), CursorCb_Switch},
     [MENU_CANCEL1] = {gText_Cancel2, CursorCb_Cancel1},
-    [MENU_ITEM] = {COMPOUND_STRING("ITEM"), CursorCb_Item},
+    [MENU_ITEM] = {COMPOUND_STRING("持有物"), CursorCb_Item},
     [MENU_GIVE] = {gMenuText_Give, CursorCb_Give},
-    [MENU_TAKE_ITEM] = {COMPOUND_STRING("TAKE"), CursorCb_TakeItem},
-    [MENU_MAIL] = {COMPOUND_STRING("MAIL"), CursorCb_Mail},
-    [MENU_TAKE_MAIL] = {COMPOUND_STRING("TAKE"), CursorCb_TakeMail},
-    [MENU_READ] = {COMPOUND_STRING("READ"), CursorCb_Read},
+    [MENU_TAKE_ITEM] = {COMPOUND_STRING("收回"), CursorCb_TakeItem},
+    [MENU_MAIL] = {COMPOUND_STRING("邮件"), CursorCb_Mail},
+    [MENU_TAKE_MAIL] = {COMPOUND_STRING("收回"), CursorCb_TakeMail},
+    [MENU_READ] = {COMPOUND_STRING("阅读"), CursorCb_Read},
     [MENU_CANCEL2] = {gText_Cancel2, CursorCb_Cancel2},
-    [MENU_SHIFT] = {COMPOUND_STRING("SHIFT"), CursorCb_SendMon},
-    [MENU_SEND_OUT] = {COMPOUND_STRING("SEND OUT"), CursorCb_SendMon},
-    [MENU_ENTER] = {COMPOUND_STRING("ENTER"), CursorCb_Enter},
-    [MENU_NO_ENTRY] = {COMPOUND_STRING("NO ENTRY"), CursorCb_NoEntry},
-    [MENU_STORE] = {COMPOUND_STRING("STORE"), CursorCb_Store},
+    [MENU_SHIFT] = {COMPOUND_STRING("替换宝可梦"), CursorCb_SendMon},
+    [MENU_SEND_OUT] = {COMPOUND_STRING("派出"), CursorCb_SendMon},
+    [MENU_ENTER] = {COMPOUND_STRING("报名"), CursorCb_Enter},
+    [MENU_NO_ENTRY] = {COMPOUND_STRING("无法参加"), CursorCb_NoEntry},
+    [MENU_STORE] = {COMPOUND_STRING("存放"), CursorCb_Store},
     [MENU_REGISTER] = {gText_Register, CursorCb_Register},
     [MENU_TRADE1] = {sText_Trade4, CursorCb_Trade1},
     [MENU_TRADE2] = {sText_Trade4, CursorCb_Trade2},
     [MENU_TOSS] = {gMenuText_Toss, CursorCb_Toss},
-    [MENU_CATALOG_BULB] = {COMPOUND_STRING("Light bulb"), CursorCb_CatalogBulb},
-    [MENU_CATALOG_OVEN] = {COMPOUND_STRING("Microwave oven"), CursorCb_CatalogOven},
-    [MENU_CATALOG_WASHING] = {COMPOUND_STRING("Washing machine"), CursorCb_CatalogWashing},
-    [MENU_CATALOG_FRIDGE] = {COMPOUND_STRING("Refrigerator"), CursorCb_CatalogFridge},
-    [MENU_CATALOG_FAN] = {COMPOUND_STRING("Electric fan"), CursorCb_CatalogFan},
-    [MENU_CATALOG_MOWER] = {COMPOUND_STRING("Lawn mower"), CursorCb_CatalogMower},
-    [MENU_CHANGE_FORM] = {COMPOUND_STRING("Change form"), CursorCb_ChangeForm},
-    [MENU_CHANGE_ABILITY] = {COMPOUND_STRING("Change Ability"), CursorCb_ChangeAbility},
+    [MENU_CATALOG_BULB] = {COMPOUND_STRING("灯泡"), CursorCb_CatalogBulb},
+    [MENU_CATALOG_OVEN] = {COMPOUND_STRING("微波炉"), CursorCb_CatalogOven},
+    [MENU_CATALOG_WASHING] = {COMPOUND_STRING("洗衣机"), CursorCb_CatalogWashing},
+    [MENU_CATALOG_FRIDGE] = {COMPOUND_STRING("冰箱"), CursorCb_CatalogFridge},
+    [MENU_CATALOG_FAN] = {COMPOUND_STRING("电扇"), CursorCb_CatalogFan},
+    [MENU_CATALOG_MOWER] = {COMPOUND_STRING("割草机"), CursorCb_CatalogMower},
+    [MENU_CHANGE_FORM] = {COMPOUND_STRING("改变样子"), CursorCb_ChangeForm},
+    [MENU_CHANGE_ABILITY] = {COMPOUND_STRING("改变特性"), CursorCb_ChangeAbility},
 };
 
 static const u8 sPartyMenuAction_SummarySwitchCancel[] = {MENU_SUMMARY, MENU_SWITCH, MENU_CANCEL1};

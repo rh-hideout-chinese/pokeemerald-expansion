@@ -1,0 +1,637 @@
+//
+// (win)grit.txt
+// GBA Image transmogrifier
+//
+
+// sample cmds
+
+
+// --------------------------------------------------------------------
+// VERSION CHANGES (intended changes)
+// --------------------------------------------------------------------
+
+* 0.6 -> 0.7
+/ fix alphabits. Final time, mind you.
+  Remember, A=1 means the pixel is VISIBLE!
+  (should work now)
++ Remove null-define underscores
+/ Add logging
+- Add external tileset
++ Add alpha-mode(s) to WinExporter
++ BF_* to GET, SET, PREP
+- Upgrade grit_demo
+
+
++ FIX: cldib::dib_blit removed the top line.
++ NEW: cldib: str2rgb()
++ MOVE: grit.h is now grit_core.h, with grit.h a hub-header
++ FIX: alphabits and such.
++ CHANGE: GIT_REC and eGitFlags.
++ SWAP: min/max macros are now MIN/MAX
+
+Eventual plans:
+- cleaner cmd parser, maybe
+- scripted runs (lua?)
+- STL/exception use
+- My own grit GBA/NDS demos (libgba/nds based? Yeah, but with extras for 
+  memmap)
+- PONDER: split GIT_INCL into process and include. 
+  why again?  (To get the tile file only, for one. And internal 
+  conversions too. Separation of prep and export is good.)
+- PONDER: strings iso char* ? (If possible, yes plz)
+
+// --------------------------------------------------------------------
+// Demo
+// --------------------------------------------------------------------
+
+- 8bpp bitmap
+- 16bpp bitmap
+- 16bpp from 8bpp
+- 8bpp from 8bpp (with alpha)
+- Compression (LZ only)
+
+- 4bpp 8x8 objects
+- 8bpp 16x16 objects
+
+- 4bpp flat, 256x256 tilemap
+- 4bpp sbb 512x256 tilemap
+- 8bpp affine 256x256 tilemap
+
+Later:
+- 4bpp flat 2x2t metatiles
+- 4bpp flat bigmap, with scrolling engine (basically the bigmap demo?)
+
+
+
+// --------------------------------------------------------------------
+// LOG
+// --------------------------------------------------------------------
+
+// 20070331, sa
+On directories.
+
+  Currently the way dirs work in grit is ... actually, I have no idea >_>
+Anyway, the way I *think* it works is that it all depends on the dir 
+of the output (-o) or failing that, the dir of the input. If neither 
+exist, it's considered "./", whatever that may mean.
+  I think I wanted this scheme because "./" tends to differen depending on 
+use. If you go to a directory and run grit, the cwd is that dir. In a 
+makefile, it's whereever the makefile resides. On drag and drop, it'll be 
+... well I don't know exactly. On dragging onto a desktop shortcut, it'll 
+be either the shortcut's WD, or the user's directory, neither of which 
+is what the user intends, probably. I think this is why I used the source's 
+dir for the rest as well. However, it's not exactly useful.
+  The important thing is to make it work for makefiles, which means sticking 
+to cwd. So Imma change that.
+
+Here's how directories work now:
+
+main:
+  - gather src paths
+  - grit_parse
+    - grit_parse_file
+	  - parse "-o"
+	    - fix separator
+	  - set dst_dir to "." if necessary
+	  - set "-fx" dir to "." if necessary
+  - load ext_tiles
+  - grit_run
+    - grit_validate
+	  - if no dst_dir:
+	    - get from src, or set to "."
+	  - fix sep
+	- grit_xp
+	  - grit_xp_c
+	    - create full path from dst_dir and dir_title
+  - save ext_tiles
+
+And that's about it. dst_dir is really only used once. The reaons I'm 
+separating it is ... not sure, really. I'd think to be able to 
+use dst_title separately, but that's not used much either, is it? 
+The dumps, validation and exporters. 
+
+So: 
+Combine grit.dst_dir and grit.dst_title again into the full filename.
+The extension will follow from -ft. Use path_join() and path_split() 
+functions to build/split paths from components.
+
+See allegro again, maybe?
+
+Could probably use:
+path_repl_ext
+path_repl_title
+path_repl_name
+path_repl_dir
+
+path_join
+path_split
+
+
+
+// 20070307, we
+Maybe a 'grit_pre_parse function would be good to get things like -ff and 
+logging. Yeah, that might work.
+
+Need override rules for options too. Srsly.
+
+
+// 22070303, 01:19, sa
+Single-file run:
+
+	grit_clear();
+	grit_init();
+	FreeImage_Initialise();
+	dib_load();
+	dib_init_from_dib();
+
+	dib_get_opts();
+	grit_parse();
+	[free_opts]
+	[dump]
+	[init logging]
+	[load tileset]
+	grit_run();
+	[save tileset]
+	FreeImage_DeInitialise();
+	grit_free();
+
+Multi-run:
+
+	FreeImage_Initialise();
+	[init logging]
+
+	[get files]
+
+	dib_get_opts();
+	[load tileset]	// here, really? Yes
+
+	for each file
+	{
+		grit_clear();
+		grit_init();
+		[attach tile file]
+
+		[set srcpath]
+		dib_load();
+		dib_init_from_dib();
+
+		grit_parse();
+		[dump]
+
+		grit_run();
+	}
+	[save tileset]
+	[free_opts]
+	FreeImage_DeInitialise();
+	grit_free();
+
+Flag for ext tiles: -fx ? For now I guess. -W[n] for logging?
+
+Multi run works, as does -W. -fx has to wait. 
+Also, for multi-runs have a flags for 'use first/last palette only'
+Or a merged palette or something. Or use the external file for that
+ :P
+
+
+// 20070227, 21:52, tu
+Ok, external tileset works ... for suitably small definitions of 
+'works'. It's not exactly clean right now:
+* loading/saving of the tileset happens outside grit_run, skipping 
+  validation etc. In principle this is how I like it because it keeps 
+  libgrit clean of any file-read/writing involvement, but it'd 
+  be good to have validation on the tileset data.
+* There is no validation whatsoever inside grit_tile_reduce. 
+  It essentiall assumes 8xH@8 there. But that's alright because it 
+  assumes that for srcDib as well. 
+* cldib/grit should have function pointers for reading and writing: dib_load
+  grit_dib_save. 
+  typedef BOOL (*fnDibSave)(const CLDIB *dib, const char *fpath, void *extra);
+  typedef CLDIB *(*fnDibLoad)(const char *fpath, void *extra);
+  
+  Just not yet.
+
+// 20070225, 17:41, su
+Needed for tileset:
+* Read tilefile
+* Convert to 8bpp and tile to 8x8.
+  NOTE: technically this should not be necessary, but just in case
+  issue warning if it needs tiling
+* Reduce, just to be sure. But in reverse order. Again, should 
+  not really be necessary.
+* Pass to grit_tile_reduce as 4th parameter.
+  TODO: make grit_tile_reduce ready for it first.
+* After grit_prep_map, the work DIB should be the reduced tileset.
+
+Easy load/saving works.
+Now I need to make a filetype string maker:
+Input:
++ list of FIF's
++ FIF supporteds (write/read, bpp)
++ all
+
+
+On alpha workings and bpp: 
+src	| dst
+----+-----
+pal	| pal	| use -pT
+pal	| tru	| ?? use -gT, or -pT if not given
+tru	| pal	| if -gT but not -pT: use first, closest color
+tru	| tru	| use -gT
+
+pal -> tru:
+no -pT and no -gT	| GIT_IMG_BMP
+-gT!				| GIT_IMG_BMP_A
+-gT					| GIT_IMG_TRANS
+-pT and not -gT		| GIT_IMG_TRANS, with pal[T] as trans
+
+PONDER: take care of this stuff in validation?
+
+Using -pT, -gT and -gT! on a bpp basis
+
+*** tru -> tru ***
+Use -gT[!] to set trans color. -pT ignored
+
+*** pal -> pal ***
+If -pT
+	use -pT
+Elseif -gT
+	find first, closest color and swap with pal[0]
+
+*** tru -> pal ***
+As pal->pal
+
+** pal -> tru ***
+If -gT[!]
+	use -gT[!]
+Elseif -pT
+	mark -pT color and use that for -gT
+
+These things have to be done either in validation or 
+grit_prep_work_dib, because only there do we know the bitdepth of 
+the source.
+
+PONDER: need a rules-of-use in the help somehow. To indicate what 
+the state of the data should be when entering grit_run.
+
+
+// 20070224, 16:46, sa
+
+New items to the gui:
++ transparent palette index		IDC_PAL_TRANS
++ tile/bmp options -> combobox	IDC_IMG_MODES
+  - tile
+  - bmp (GBA)
+  - bmp (NDS)
+  - bmp (alpha)
++ transparent color				IDC_IMG_TRANS (3x?)
+* tilefile						IDC_TILESET_PATH / IDC_TILESET_BROWSE
+
+Items made, but not used yet.
+
+congrit:	console grit
+grit:	Graphics to Raw Image Transmogrifier
+dmit:	Digrital Map & Image T.
+gift:	GBA image file T..
+
+
+Also, what do I need for the tile-file stuff?
+* PONDER: export tiles in git_run, or just prepare data?
+  I'm opting for the latter right now because that wouldn't depend 
+  on knowing how to write files that much
+* Needed: tilefile path and tile_dib
+  getting git_prep_map know it should use it: extra flag.
+
+
+// 20070221 23:00, we
+GBA/NDS alpha-bits
+
+The GBA bitmaps don't require alphabits, but NDS's do for the 
+NON-transparent colors. So:
+- default:	no CLR_ALPHA
+- NDS:		all CLR_ALPHA (currently -gT!)
+- NDS spec:	all, except clr_alpha. ( -gT[clr] )
+plus tiles, of course. 
+GIT_IMG_TILE
+GIT_IMG_BMP
+GIT_IMG_BMP_A
+GIT_IMG_TRANS (might be used for non-bmp, I dunno)
+
+(GIT_IMG_MODE#)
+
+WM changes:
++ win_glue.h: some commented out; _WIN32 iso MSC_VER
+- git.h:
+  - GIT_IMG_ALPHA_NONE
++ git_core.cpp:
+  - (143): nclrs stuff
+- git_prep.cpp: 
+  - (116): alphabits
+  + (370): nclrs
+- git_main.cpp:
+  + (41-47): version #define
+  - (70): -gT! help
+  - (274): transparency issues
+
+j31.bmp -s j31 -ps0 -pe128 -gB4 -mR4 -fts
+gittest/j31.bmp -ps0 -pe128 -gB4 -mR4 -fts
+
+gittest/j31.bmp -pe128 -gB4 -mR4 -gzl
+gittest/j31.bmp -o ./
+
+{src} >{>} {dst-dir}/{dst-title}.{dst-ext} {+ .h}
+{ {sym}Pal : {cprs}, u{n}, [{ps}-{pe}>}
+{ {sym}{Tiles/Bitmap} : {cprs}, u{n}, {n} bpp, +{ofs} }
+Area : ({al},{at})-({ar},{ab}){ Meta : {w},{h} }
+{ {sym}Map : {cprs}, u{n}, -{tfp}, {layout}
+
+    src path j31.bmp
+     dst dir .
+   dst title j31
+    sym name j31
+    file opt 00000010
+--- pal ---
+     pal opt 00000003
+   pal range [0, 256>
+--- image ---
+     img opt 00000005
+     img bpp 8
+     img ofs 0
+   img range (0,0)-(256,144)
+--- map ---
+     map opt 00000002
+     map ofs 0
+   meta size [1, 1]
+
+// === CHECKLIST ===
+
+* pal
+  + pal
+  + pal range ( [s+n] )
+  + xp
+  ? cprs
+* img
+  + tiles, bm
+  + cprs, xp
+  + bitmap disables palette
+  + bpp (1,4,8,16)
+  ? ofs. Should be ok though
+  * oob area
+    + 256x144 -> 240x160
+	? area vs alignment?
+* map
+  + tpf rdx (but b?)
+  + flat sbb // affine
+  ? ofs
+  + cprs, xp
+* meta
+  + 2x2 /4x3 (i.e., rest are prolly fine too)
+  + map meta
+  . cprs
+* file
+  + c, s, h, bin, 
+  . o, gbfs
+  + append
+  + u8,u16,u32
+  . naming? (from filename seems ok, but should use path_ funs)
+* cprs
+  +lz77
+  / huff. Sometimes yes, sometimes no. Dunno why
+  + rle
+  . what about diff?
+
+// --- 
+Git sequence
+
+- init struct
+- parse flags
+- validate options
+- prep
+  - init work dib
+    - load src
+	- resize area
+	- resample to 8 or 16 bpp
+  - redim
+    - map redim
+	- meta redim
+	- tile redim
+  - prep map
+    - 
+  - prep pal
+  - prep img
+- export
+- cleanup
+
+files:
+git.cpp			// main file + parsing 
+git_huff.cpp	// huff cprs
+git_lz.cpp		// lzss cprs
+git_misc.cpp	// 
+git_prep.cpp	// data preparation routines
+git_rle.cpp		// rle cprs
+git_val.cpp		// validation
+git_xp.cpp		// actual exporting
+
+git.h			// main git decls
+
+// 20050908, th
+Just tried my first GBFS stuff. Man that was easy. So yeah, 
+adding that to the exporter is next on the list.
+
+Lessee, basic gbfs creation:
+
+- Collate entries.
+- Write the data to fout, allowing room for header and entries.
+  (is skipping past a even allowed? Yes, it is))
+  Update entries' offset along the way.
+- sort entries.
+- write header and entries.
+
+Appending gbfs:
+
+- collate entries
+{
+- read header & entries
+- remove doubles combine list
+- write data
+}
+- sort entries
+- write header and directory
+
+// 20050814, su
+Right now tile reduction is part of the mapping ... but should it be 
+separate from that? I mean, so that you can have the reduced tiles 
+without the map?
+
+// 2005-03-7, mo
+Meta-tiling. Involves
+- source map
+- metatile sizes: mw,mh
+- meta-pal flag
+- meta-tileset (-> source map)
+- meta-map (-> new meta-map)
+
+Size+array struct? Hmmm, may be useful. Otherwise, go for
+
+int foo(const BYTE* srcD, int srcS, BYTE **pdstD)
+
+and not what I have now. As for meta-mapping, I need two sizes: 
+one for tile-set and one for the map. And input sizes too. Sigh, 
+it might be better if I made this part of the xgi workset. 
+
+Holy crap, I forgot! The layout is already done in xgi_prep_tiles, 
+all I need to do then is match! Hmmm, this is going to be a lot 
+easier than I thought; perhaps I don't even need an extra function 
+for this.
+
+// 2005-02-15, tu
+Bwaaaahhhh.
+All work and no play makes cearn a dull boy %@
+For 256c+attr reduction, simply add a mask to tilecmp. Easy peasy.
+
+Omg, I have NO idea what I'm doing anymore. C'mon, almost there ...
+
+// 2005-02-13, su
+Note to self: quantising changes the colors in the palette as well, 
+so the correct order is quantise, then convert to 15bpp, not the 
+other way around. 
+
+// 2005-02-10, 21:20, th
+Crap on a stick, there are TWO gfx2gba's!
+And this one (by Markus) is by far the superior.
+
+ -pPalettename                    -m generate map (optimized)
+ -oOutputdir                      -M generate map (not optimized)
+ -fOutput format                  -mm generate metatiled map (optimized)
+ -sSection                        -MM generate metatiled map (not optimized)
+ -SpSuffix for palette            -bBank for map
+ -SmSuffix for map                -mc save map in column order *new*
+ -StSuffix for tiledata           -F turn off check for flipped tiles
+ -TMetatilesize                   -rs output a rotate/scale BG screen map
+ -tTilesize                       -P don't save palette data
+ -tc save tiles as columns *new*  -G don't save tile/image data
+ -cColordepth                     -D don't save map data
+ -CColor-Offset                   -X don't save anything
+ -A force color offset add        -Z compress everything
+ -aTransparent color              -zt compress tile/bitmap data
+ -vVRAM-Offset                    -zp compress palette data
+ -x don't merge palettes          -zm compress map data
+ -q quiet mode                    -ap use aPLib as compressor
+ -B only optimize blank tiles     -aps use aPLib (safe) as compressor
+                                  -align add alignment info for GCC *new*
+
+
+// 03-10-2004 22:43:57, su
+OK, first let's see what the others can do:
+
+--- gfx2gba ---
+    gfx2gba infile outfile [-15]|[-8] [-v] [-w n] [-s n] [-n]
+                           [-c] [-t type] [-r]|[-o] [-k] [-z n]
+						   [-q type] [-b] [-p file] [-m]
+
+The options have the following meaning:
+    -r       RGB cube, create standardized RGB cube 8 bit palette, default
+    -o       optimal, create optimal 8 bit palette
+    -z n     sprite, output in GBA sprite/tile format
+                 -z 256 => 256 colors x 1 palette, default
+    -q type  quantizer, specify quantizer to create optimal 8 bit palette
+                 -q wu  => Wu's quantizer, default
+                 -q nn  => neural net quantizer
+In other words
+
+- 8/15bit (-8|-15)
+- entries/line in output (-w n) (SCRAP)
+- type size:1/2/4 bytes (-s n)
+- variable name (-n [str]) (YES!)
+- type names for pure or typedefed types (-c|-t) (SCRAP)
+- palette rgbcube/optimal (-r|-o) (whatever this means)
+- no const data (-k) (SCRAP!, images should _always_ be const!)
+- tiles (-z n) Does this mean you _can_ do 16x16 tiles afterall?
+- quantize (-q [wu|nn]) yes, plz.
+- binary output (-b)
+- create separate (binary) palette (-p [str]) (KINDA)
+- merge palette data (MAYBE)
+
+--- cog ---
+Usage : CoG [options] /o<basename> <image file>
+
+Where : [options] are any of the following (defaults are in []'s) -
+
+        /aN           align data to N-byte boundaries (power of 2) [4]
+        /b<depth>     force bitdepth-specific data (where <depth> can be):
+                4       - 4-bit (16 color) data
+                8       - 8-bit (256 color) data [default]
+                16      - 16-bit (32768 color - 555) data
+        /d<mode>      create mode-specific data (where <mode> can be):
+                0       - BG Mode 0 [default]
+                1a      - BG Mode 1 (for BG0/BG1 - 'normal' tiling)
+                1b      - BG Mode 1 (for BG2 - rotation/scaling)
+                2       - BG Mode 2
+                3       - BG Mode 3
+                4       - BG Mode 4
+                5       - BG Mode 5
+        /eA<ext>      specify extension for asm source code [s]
+        /eB<ext>      specify extension for binary data files [dat]
+        /eC<ext>      specify extension for C source code [c]
+        /eH<ext>      specify extension for header files [h]
+        /eO<ext>      specify extension for object files [o]
+        /eR<ext>      specify extension for ROM image [bin]
+        /f<suite>     create dev. suite-specific data (where <suite> can be):
+                A       - ARM SDT
+                G       - GNU [default]
+        /F<format>    specify output file format (where <format> can be):
+                A       - assembly source code (/f-dependent)
+                B       - binary data (/g, /m, /p data stored separately)
+                C       - C source code [default]
+                O       - object file (/f-dependent)
+        /gU           output uncompressed graphic data (mut. excl. to /gC)
+        /gC<algo>     output compressed graphic data (mut. excl. to /gU)
+        /h            also create a header file
+        /iN           specify N as the starting tile ID [0]
+        /k<name>      specify section name for data [.rodata]
+        /lN           specify N tiles as the map width
+        /LN           specify N tiles as the map height
+        /mU           output uncompressed attribute map (mut. excl. to /mC)
+        /mC<algo>     output compressed attribute map (mut. excl. to /mU)
+        /n<name>      specify base name for data structures [/o<basename>]
+        /pU           output uncompressed palette data (mut. excl. to /pC)
+        /pC<algo>     output compressed palette data (mut. excl. to /pU)
+        /PN           palette offset (/b-dependent) [0]
+        /q            quiet mode (overrides /v)
+        /r            also create a ROM image
+        /sG           output sprite data as a group (mut. excl. to /sS)
+        /sS           output sprite data separately (mut. excl. to /sG)
+        /tN           specify N as the transparent color [0]
+        /u<method>    quantize image (where <method> can be):
+              D256      - Anthony Dekker (NeuQuant): to 256-colors only
+              ON        - Octree: to N colors (where N can be 2-256)
+              W256      - Xiaolin Wu: to 256-colors only
+       /v             verbose mode
+       /w             turn options warnings on [off]
+       /wCN           set warning size for compressed data [262144]
+       /xN            specify sprite width (in pixels, 8-64) [8]
+       /yN            specify sprite height (in pixels, 8-64) [8]
+       /z             optimize tiles (remove duplicates)
+       /?             display usage information (all other options ignored)
+
+/o<basename>  specify the base file name for output files (including path)
+
+<image file>  input file to process (including path)
+
+==========
+<algo> compress data (where <algo> can be):
+
+        C  - C64Pack
+        E  - RLE (BIOS Compatible - RLUnCompWram())
+        EV - RLE (BIOS Compatible - RLUnCompVram())
+        G  - GBComp
+        H  - Huffman (BIOS Compatible - HuffUnComp())
+        L  - LZ77 (BIOS Compatible - LZ77UnCompWram())
+        LV - LZ77 (BIOS Compatible - LZ77UnCompVram())
+        M  - MiniLZO
+        P  - PUCrunch
+     ** R  - RNC method 2 (ProPack)
+     ** RS - RNC method 2 (ProPack) - 18-byte header removed
+        W  - LZRW (custom LZ)
+        Z  - ZLib
+        
+

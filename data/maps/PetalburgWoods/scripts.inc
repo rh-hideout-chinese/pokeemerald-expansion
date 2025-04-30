@@ -319,158 +319,89 @@ PetalburgWoods_EventScript_JamesRematch::
 	end
 
 PetalburgWoods_Text_NotAOneToBeFound:
-	.string "Hmmm…\n"
-	.string "Not a one to be found…$"
+    .string "唔……\n什么也没有啊……$"
 
 PetalburgWoods_Text_HaveYouSeenShroomish:
-	.string "Hello, have you seen any POKéMON\n"
-	.string "called SHROOMISH around here?\p"
-	.string "I really love that POKéMON.$"
+    .string "嗨，你在附近见到过\n叫做蘑蘑菇的宝可梦吗？\p我真的很喜欢那种宝可梦。$"
 
 PetalburgWoods_Text_IWasGoingToAmbushYou:
-	.string "I was going to ambush you, but you\n"
-	.string "had to dawdle in PETALBURG WOODS\l"
-	.string "forever, didn't you?\p"
-	.string "I got sick of waiting, so here I am!$"
+    .string "本打算偷袭你的，但看你好像\n准备在橙华森林里\l呆一辈子，\p等不及你出去，我就进来了！$"
 
 PetalburgWoods_Text_HandOverThosePapers:
-	.string "You! DEVON RESEARCHER!\p"
-	.string "Hand over those papers!$"
+    .string "就是你！得文的研究员！\p把资料交出来！$"
 
 PetalburgWoods_Text_YouHaveToHelpMe:
-	.string "Aiyeeeh!\p"
-	.string "You're a POKéMON TRAINER, aren't you?\n"
-	.string "You've got to help me, please!$"
+    .string "啊耶！\p你是个宝可梦训练家，对吗？\n拜托你帮帮我吧！$"
 
 PetalburgWoods_Text_NoOneCrossesTeamAqua:
-	.string "Hunh? What do you think you're doing?\n"
-	.string "What, you're going to protect him?\p"
-	.string "No one who crosses TEAM AQUA\n"
-	.string "gets any mercy, not even a kid!\p"
-	.string "Come on and battle me!$"
+    .string "嗯？你知道自己在做什么吗？\n什么，你要保护他？\p就算你只是个孩子，\n和海洋队作对也没好下场！\p来战斗吧！$"
 
 PetalburgWoods_Text_YoureKiddingMe:
-	.string "You're kidding me! You're tough!$"
+    .string "你打败了我！你太强了！$"
 
 PetalburgWoods_Text_YouveGotSomeNerve:
-	.string "Grrr… You've got some nerve\n"
-	.string "meddling with TEAM AQUA!\l"
-	.string "Come on and battle me again!\p"
-	.string "I wish I could say that, but I'm out of\n"
-	.string "POKéMON…\p"
-	.string "And, hey, we of TEAM AQUA are also\n"
-	.string "after something in RUSTBORO.\p"
-	.string "I'll let you go today!$"
+    .string "呼呼……敢和\n海洋队作对，你胆子不小！\l再来战斗一次吧！\p虽然想这么说，可我已经\n没有宝可梦了……\p而且，哼，我们海洋队\n还得在卡那兹市找某些东西，\p今天先放过你！$"
 
 PetalburgWoods_Text_ThatWasAwfullyClose:
-	.string "Whew…\n"
-	.string "That was awfully close!\p"
-	.string "Thanks to you, he didn't rob me of\n"
-	.string "these important papers.\p"
-	.string "I know, I'll give you a GREAT BALL as\n"
-	.string "my thanks!$"
+    .string "呼……\n好险哪！\p多亏了你，重要的文件\n才没被抢走\p好吧，作为答谢，送你\n一个超级球！$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
-	.string "Didn't that TEAM AQUA thug say\n"
-	.string "they were after something in\l"
-	.string "RUSTBORO, too?$"
+    .string "这么说来刚才那个海洋队\n的混混说，他们也在寻找\l卡那兹市的什么东西，是吗？$"
 
 PetalburgWoods_Text_ICantBeWastingTime:
-	.string "Uh-oh! It's a crisis!\n"
-	.string "I can't be wasting time!$"
+    .string "唔喔！糟糕了！\n我可不能再浪费时间了！$"
 
 PetalburgWoods_Text_YoureLoadedWithItems:
-	.string "You're loaded with items.\n"
-	.string "I can't give you this GREAT BALL.$"
+    .string "你的道具已经满了，\n我没法把这个超级球给你。$"
 
 PetalburgWoods_Text_GoBugPokemonTeam:
-	.string "I caught a whole bunch of POKéMON!\p"
-	.string "Go, go, go!\n"
-	.string "My BUG POKéMON team!$"
+    .string "我捉了许多的宝可梦！\p上啊！\n我的虫宝可梦之队！$"
 
 PetalburgWoods_Text_ICouldntWin:
-	.string "I have all these POKéMON,\n"
-	.string "but I couldn't win…$"
+    .string "拥有这些宝可梦，\n我却无法获胜……$"
 
 PetalburgWoods_Text_ImOutOfPokeBalls:
-	.string "I caught a bunch of POKéMON.\n"
-	.string "Now I'm out of POKé BALLS.$"
+    .string "我捉了许多的宝可梦，\n现在已经没有精灵球了。$"
 
 PetalburgWoods_Text_InstantlyPopularWithBugPokemon:
-	.string "If you take BUG POKéMON to school,\n"
-	.string "you get to be instantly popular!$"
+    .string "如果把虫宝可梦带到学校里，\n马上就会变成明星的！$"
 
 PetalburgWoods_Text_CantBePopularIfILose:
-	.string "I can't be popular if I lose.$"
+    .string "输了的话就不会成为明星了。$"
 
 PetalburgWoods_Text_PeopleRespectYou:
-	.string "If you have a big BUG POKéMON,\n"
-	.string "people respect you for it.$"
+    .string "如果拥有一只好大的虫宝可梦，\n大家会很羡慕你的。$"
 
 PetalburgWoods_Text_IWantRematch1:
-	.string "I want a rematch when my BUG\n"
-	.string "POKéMON grow up!\p"
-	.string "I'm registering you in my POKéNAV!$"
+    .string "等我的虫宝可梦\n长大后，我们再比一次吧！\p我把你登记进宝可导航里了！$"
 
 PetalburgWoods_Text_IWantRematch2:
-	.string "I want a rematch when my BUG \n"
-	.string "POKéMON grow up!\p"
-	.string "I'm registering you in my POKéNAV!$"
+    .string "等我的虫宝可梦\n长大后，我们再比一次吧！\p我把你登记进宝可导航里了！$"
 
 PetalburgWoods_Text_MyPokemonHaveGrown:
-	.string "My BUG POKéMON have grown.\n"
-	.string "I'll be popular again.$"
+    .string "我的虫宝可梦长大了，\n我会再次变成明星的。$"
 
 PetalburgWoods_Text_CantBePopularIfLose:
-	.string "I can't be popular if I lose.$"
+    .string "输了的话就不会成为明星了。$"
 
 PetalburgWoods_Text_IveBeenTrainingHard:
-	.string "You get to be popular if you have\n"
-	.string "strong POKéMON, right?\l"
-	.string "So, I've been training hard.$"
+    .string "如果拥有强大的宝可梦\n就会被大家追捧的，对吧？\l所以我一直在刻苦训练。$"
 
 PetalburgWoods_Text_StayOutOfTallGrass:
-	.string "Yo, there!\n"
-	.string "Your POKéMON doing okay?\p"
-	.string "If your POKéMON are weak and you want\n"
-	.string "to avoid battles, you should stay out\l"
-	.string "of tall grass.$"
+    .string "哟，那边的！\n你的宝可梦没事吧？\p如果你的宝可梦很虚弱，\n想避免战斗，那就得避开草堆。$"
 
 PetalburgWoods_Text_HiddenItemsExplanation:
-	.string "Sometimes, there are things on the\n"
-	.string "ground even if you can't see them.\p"
-	.string "That's why I always check where I'm\n"
-	.string "walking.$"
+    .string "有时候，地上会有些\n你看不见的东西。\p所以我不管走到哪儿\n都会仔细搜索四周。$"
 
 PetalburgWoods_Text_TryUsingThisItem:
-	.string "Oh, neat!\n"
-	.string "That's the BADGE from RUSTBORO GYM!\p"
-	.string "You must be a TRAINER.\n"
-	.string "You should try using this item.$"
+    .string "哦，真漂亮！\n那是卡那兹市道馆的徽章！\p你一定是个训练家，\n试试这个东西吧。$"
 
 PetalburgWoods_Text_MiracleSeedExplanation:
-	.string "It's a MIRACLE SEED.\n"
-	.string "If a POKéMON holds that item, its\l"
-	.string "GRASS-type moves become stronger.\p"
-	.string "Besides MIRACLE SEED, I think there are\n"
-	.string "other convenient items for POKéMON\l"
-	.string "to hold.$"
+    .string "这是奇迹种子，\n让宝可梦携带上的话，它的\l草属性招式就会变强。\p我想除了奇迹种子，还有\n其它的可以让宝可梦携带的\l方便的物品。$"
 
 PetalburgWoods_Text_TrainerTipsExperience:
-	.string "TRAINER TIPS\p"
-	.string "Any POKéMON that appears even once\n"
-	.string "in a battle is awarded EXP Points.\p"
-	.string "To raise a weak POKéMON, put it at the\n"
-	.string "left of the team list.\p"
-	.string "As soon as a battle starts, switch it\n"
-	.string "out. It will earn EXP Points without\l"
-	.string "being exposed to any harm.$"
+    .string "训练家小技巧\p所有在战斗中出过场的宝可梦\n都会得到经验值。\p想培育弱小的宝可梦，\n就把它放到队伍列表的左侧。\p战斗开始时，先把它换下场。\n这样它不会受伤\l也能获得经验值了。$"
 
 PetalburgWoods_Text_TrainerTipsPP:
-	.string "TRAINER TIPS\p"
-	.string "In addition to Hit Points (HP), POKéMON\n"
-	.string "have Power Points (PP) that are used to\l"
-	.string "make moves during battle.\p"
-	.string "If a POKéMON runs out of PP, it must be\n"
-	.string "taken to a POKéMON CENTER.$"
+    .string "训练家小技巧\p除了被打击点数HP(体力)，\n宝可梦还拥有用来在战斗中发动招式的\l招式点数(PP)。\p如果宝可梦的PP值耗尽，必须把它\n带到宝可梦中心去。$"
 

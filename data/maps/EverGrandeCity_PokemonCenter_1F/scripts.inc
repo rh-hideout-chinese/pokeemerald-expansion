@@ -77,26 +77,11 @@ EverGrandeCity_PokemonCenter_1F_Movement_ScottExit:
 	step_end
 
 EverGrandeCity_PokemonCenter_1F_Text_LeagueAfterVictoryRoad:
-	.string "The POKéMON LEAGUE is only a short\n"
-	.string "distance after the VICTORY ROAD.\p"
-	.string "If you've come this far, what choice\n"
-	.string "do you have but to keep going?$"
+    .string "宝可梦联盟离\n冠军之路很近。\p已经走了这么远，到底\n是什么让你坚持到现在？$"
 
 EverGrandeCity_PokemonCenter_1F_Text_BelieveInYourPokemon:
-	.string "The long and harrowing VICTORY ROAD…\p"
-	.string "It's like reliving the path one has\n"
-	.string "traveled in life…\p"
-	.string "Believe in your POKéMON and give it\n"
-	.string "your very best!$"
+    .string "漫长而艰苦的冠军之路……\p它就像是你人生中\n所经历的小路……\p相信自己的宝可梦并且\n给予它你的信心！$"
 
 EverGrandeCity_PokemonCenter_1F_Text_ScottHappyForYou:
-	.string "SCOTT: {PLAYER}{KUN}, you've clawed your\n"
-	.string "way up to face the POKéMON LEAGUE!\p"
-	.string "I'm happy for you!\n"
-	.string "You made my cheering worthwhile!\p"
-	.string "{PLAYER}{KUN}, if you were to become\n"
-	.string "the POKéMON LEAGUE CHAMPION…\p"
-	.string "I'll get in touch with you then.\p"
-	.string "Okay, {PLAYER}{KUN}.\n"
-	.string "Go for greatness!$"
+    .string "亚希达：{PLAYER}{KUN}，你一路艰辛\n终于来到了宝可梦联盟！\p我为你感到高兴！\n你让我感到很骄傲！\p{PLAYER}{KUN}，如果你\n要去挑战联盟冠军……\p到时我会联系你的。\p好了，{PLAYER}{KUN}。\n为光荣而努力吧！$"
 

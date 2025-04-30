@@ -430,196 +430,74 @@ MtPyre_Summit_EventScript_Grunt4::
 	end
 
 MtPyre_Summit_Text_Grunt1Intro:
-	.string "No! Those TEAM MAGMA goons got\n"
-	.string "here ahead of us!\p"
-	.string "We can't fall behind!$"
+    .string "不！熔岩队的家伙们\n赶在我们前头了！\p我们不能落后！$"
 
 MtPyre_Summit_Text_Grunt1Defeat:
-	.string "I thought you were one of the MAGMAS\n"
-	.string "who happened to come back…$"
+    .string "我还以为是熔岩队的人\n偶然折返回来了……$"
 
 MtPyre_Summit_Text_Grunt1PostBattle:
-	.string "Yeah, so you are strong…\n"
-	.string "But there're a lot of us!$"
+    .string "是的，你很强……\n但是我们可不止一个人！$"
 
 MtPyre_Summit_Text_Grunt2Intro:
-	.string "Hah!\n"
-	.string "Too bad for you!\p"
-	.string "If you came earlier, you only would've\n"
-	.string "had to battle the wimpy TEAM MAGMA.\p"
-	.string "But since you arrived now, you have\n"
-	.string "to take on us toughies!$"
+    .string "哈！\n真遗憾！\p如果你早来一点，就只有\n熔岩队做你的对手。\p但现在，你必须\n要想想怎么对付我们了！$"
 
 MtPyre_Summit_Text_Grunt2Defeat:
-	.string "Urgh… I should've let you take on\n"
-	.string "TEAM MAGMA first…$"
+    .string "呃……我应该等你先对付\n熔岩队的……$"
 
 MtPyre_Summit_Text_Grunt2PostBattle:
-	.string "You don't know anything!\n"
-	.string "So why are you messing with us?$"
+    .string "你明明什么也不知道！\n那么你为什么总是要来阻挠我们？$"
 
 MtPyre_Summit_Text_Grunt3Intro:
-	.string "You…\n"
-	.string "We saw you at MT. CHIMNEY.\p"
-	.string "You don't belong to either TEAM,\n"
-	.string "so why would you be here?$"
+    .string "你……\n我们在烟囱山见过你。\p你不属于任何一个组织，\n那你为什么会在这里？$"
 
 MtPyre_Summit_Text_Grunt3Defeat:
-	.string "If you're going to mess with anyone,\n"
-	.string "let it be TEAM MAGMA…$"
+    .string "如果你想阻挠谁的话，\n去找熔岩队吧……$"
 
 MtPyre_Summit_Text_Grunt3PostBattle:
-	.string "Heh, it doesn't matter!\n"
-	.string "We bought ourselves some time!\p"
-	.string "The BOSS should have snatched what\n"
-	.string "he was after!$"
+    .string "嘿，没关系！\n至少我们争取到了时间！\p老大肯定能得到\n他想要的东西！$"
 
 MtPyre_Summit_Text_Grunt4Intro:
-	.string "Oh, I know!\n"
-	.string "You tried to join TEAM MAGMA,\l"
-	.string "but they wouldn't have you!\p"
-	.string "Well, don't think that we'll let you\n"
-	.string "join our TEAM AQUA!$"
+    .string "啊，我明白了！\n你想加入熔岩队，\l但是他们不要你！\p哼，也别以为我们会让你\n加入我们的海洋队！$"
 
 MtPyre_Summit_Text_Grunt4Defeat:
-	.string "If you want to join TEAM AQUA that\n"
-	.string "badly, we can consider it…$"
+    .string "如果你那么想加入海洋队，\n我会考虑一下的……$"
 
 MtPyre_Summit_Text_Grunt4PostBattle:
-	.string "We have a great combination going\n"
-	.string "with us members and our leader.$"
+    .string "头儿和我们成员之间\n是紧紧联合在一起的。$"
 
 MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo:
-	.string "ARCHIE: TEAM MAGMA's MAXIE got ahead\n"
-	.string "of us, but we also got what we wanted.\p"
-	.string "The RED ORB preserved at MT. PYRE…\n"
-	.string "I, ARCHIE, now have it in my possession!\p"
-	.string "Fufufu… Now we can bring our ultimate\n"
-	.string "objective to fruition!\p"
-	.string "Okay, TEAM!\n"
-	.string "We're pulling out!$"
+    .string "水梧桐：虽然熔岩队的赤焰松先我们\n一步，但我们也得到了想要的东西。\p在送神山上所供奉的朱红色宝珠……\n我，水梧桐，现在已经拥有它了！\p呼呼呼……现在我们可以实现\n我们的最终目标了！\p好了，伙计们！\n出发了！$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis:
-	.string "Oh, no…\n"
-	.string "This cannot happen…\p"
-	.string "Not only the BLUE ORB, but even\n"
-	.string "the RED ORB has been taken…\p"
-	.string "The BLUE ORB and RED ORB must never\n"
-	.string "be separated. They belong together.\p"
-	.string "What are those men trying to do with\n"
-	.string "the two ORBS?\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …\p"
-	.string "Oh, yes. Was it TEAM MAGMA who came\n"
-	.string "and took the BLUE ORB first?\p"
-	.string "Well, in their haste, they left this\n"
-	.string "behind.\p"
-	.string "I couldn't imagine what exactly it\n"
-	.string "could be.\p"
-	.string "I would like you to have it.\n"
-	.string "Perhaps it will be useful in some way.$"
+    .string "噢，不……\n不能这样……\p不光是靛蓝色宝珠，连\n朱红色宝珠都被抢走了……\p靛蓝色宝珠和朱红色宝珠绝不能\n分离。它们是一体的。\p那些人抢走两块宝玉\n想要干什么？\p…… …… ……\n…… …… ……\p啊，对了，先到这里拿走\n靛蓝色宝珠的是不是熔岩队？\p看来他们在匆忙之中\n把这个给弄丢了。\p我不知道这东西\n究竟是什么，\p给你吧，或许\n能派上些用场。$"
 
 MtPyre_Summit_Text_OrbsHaveBeenTaken:
-	.string "The BLUE ORB and RED ORB taken by\n"
-	.string "those sinister men…\p"
-	.string "They must never be apart…\n"
-	.string "I fear something terrible will happen…$"
+    .string "靛蓝色宝珠和朱红色宝珠\n被那些恶棍抢走了……\p它们是不能分开的……\n我有种不祥的预感……$"
 
 MtPyre_Summit_Text_GroudonKyogreAwakened:
-	.string "Oh, my goodness…\p"
-	.string "You say that both GROUDON and KYOGRE\n"
-	.string "have been awakened?\p"
-	.string "It is said that the BLUE ORB and\n"
-	.string "the RED ORB quelled the rage of\l"
-	.string "the two POKéMON…\p"
-	.string "It is also said that the true owner\n"
-	.string "of the ORBS still exists.\p"
-	.string "However, no one knows who, or what\n"
-	.string "exactly, the ORBS belong to.\p"
-	.string "It could be a human, or perhaps\n"
-	.string "a POKéMON, but no one knows.$"
+    .string "啊，女神啊……\p你说固拉多和盖欧卡\n都已经苏醒了？\p据说靛蓝色宝珠和\n朱红色宝珠能够平息\l那两只宝可梦的怒火……\p同时，传说中两块宝玉\n的真正拥有者还存在于世。\p不过，谁也不知道\n宝玉到底属于谁。\p可能是一个人，也可能是\n一只宝可梦，没人知道真相。$"
 
 MtPyre_Summit_Text_ThoseTwoMenReturnedOrbs:
-	.string "The two men who took the ORBS came\n"
-	.string "back to return them on their own.\p"
-	.string "Those men…\n"
-	.string "Perhaps they are not so evil after all…$"
+    .string "那两个抢走宝玉的人\n自己把它们还回来了。\p那两个人……\n也许并不是那么坏……$"
 
 MtPyre_Summit_Text_SuperAncientPokemonTaughtUs:
-	.string "The embodiments of the land, sea,\n"
-	.string "and the sky…\p"
-	.string "That is said to be the identities of\n"
-	.string "the super-ancient POKéMON…\p"
-	.string "In the same way that we humans and\n"
-	.string "POKéMON have life, our world, too,\l"
-	.string "is alive…\p"
-	.string "The super-ancient POKéMON have\n"
-	.string "taught us that…$"
+    .string "大地，海洋，\n还有天空的化身……\p据说这就是那些\n超古代宝可梦的身份……\p我们人类与宝可梦的生命\n都是一样的，而我们的世界\l也拥有者生命……\p超古代宝可梦是这么\n告诉过我们的……$"
 
 MtPyre_Summit_Text_WillYouHearOutMyTale:
-	.string "MT. PYRE is where we calm the spirits\n"
-	.string "of POKéMON that have passed on…\p"
-	.string "This is a high place where one can\n"
-	.string "see all of HOENN…\p"
-	.string "The disembodied spirits of POKéMON\n"
-	.string "must find solace here…\p"
-	.string "Is it coincidence that you are here…\p"
-	.string "Will you hear out my tale? A tale long\n"
-	.string "told in the HOENN region?$"
+    .string "送神山是逝去宝可梦们\n的灵魂安息的地方……\p在这里可以俯瞰\n整个丰缘地区……\p那些脱离了身躯的宝可梦的灵魂\n一定会在这里得到安慰……\p你来到这里也是缘分……\p想听故事吗？听一个关于\n丰缘地区的古老的故事？$"
 
 MtPyre_Summit_Text_GroudonKyogreTale:
-	.string "It happened long, long ago…\p"
-	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
-	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
-	.string "waves and carved out oceans…\p"
-	.string "Their fierce duel raged without end.\p"
-	.string "The world was engulfed in massive\n"
-	.string "infernos and vicious storms.\p"
-	.string "The BLUE ORB and the RED ORB brought\n"
-	.string "an end to the calamity.\p"
-	.string "Light poured from the two ORBS and\n"
-	.string "becalmed the enraged adversaries.\p"
-	.string "The pair, made docile, dove deep into\n"
-	.string "the sea where eventually they\l"
-	.string "disappeared…$"
+    .string "很久很久以前……\p由于大地之宝可梦和\n海洋之宝可梦的激烈冲突，\l世界陷入了混乱之中……\p大地之宝可梦召唤高山，\n创造大陆……\p海洋之宝可梦掀起巨浪，\n开辟海洋……\p它们激烈的决斗无休止的进行着。\p世界被无情的烈焰\n与残酷的风暴所吞没。\p直到最后靛蓝色宝珠和朱红色宝珠\n使灾难走向了终结。\p耀眼的光芒从宝珠里扩散开来，\n两只愤怒的宿敌也平静了下来。\p平静下来的它们\n深深地潜入了海底，从此，\l再没有谁见过它们……$"
 
 MtPyre_Summit_Text_WellThatTooIsFine:
-	.string "I see…\n"
-	.string "Well, that, too, is fine…$"
+    .string "是吗……\n啊，那么，这样，算了……$"
 
 MtPyre_Summit_Text_MaxieSilence:
-	.string "MAXIE: {PLAYER}…\p"
-	.string "… … … … … …\n"
-	.string "… … … … … …$"
+    .string "赤焰松：{PLAYER}……\p…… …… ……\n…… …… ……$"
 
 MtPyre_Summit_Text_HearTheNewLegendOfHoenn:
-	.string "It is my role to pass on the legends\n"
-	.string "of HOENN to future generations.\p"
-	.string "And the crisis that just ended in\n"
-	.string "SOOTOPOLIS rewrote a legend…\p"
-	.string "Have you the time to hear the new\n"
-	.string "legend of HOENN?$"
+    .string "我的任务就是把那关于\n丰缘的传说一代一代的传下去。\p而刚刚在那琉璃市所结束的危机\n成为了新的传说……\p那么，你现在有没有时间\n听听丰缘的新传说呢？$"
 
 MtPyre_Summit_Text_HoennTrioTale:
-	.string "It happened long, long ago…\p"
-	.string "The world was wracked by a ferocious\n"
-	.string "clash between the POKéMON of the land\l"
-	.string "and the POKéMON of the sea…\p"
-	.string "The POKéMON of the land raised\n"
-	.string "mountains and created continents…\p"
-	.string "The POKéMON of the sea raised huge\n"
-	.string "waves and carved out oceans…\p"
-	.string "Their fierce duel raged without end.\p"
-	.string "The world was engulfed in massive\n"
-	.string "fires and vicious storms.\p"
-	.string "It was then that the POKéMON of\n"
-	.string "the sky descended from a storm.\p"
-	.string "The POKéMON, shining a vivid green,\n"
-	.string "becalmed the two enraged POKéMON.\p"
-	.string "Then, its duty done, the green POKéMON\n"
-	.string "flew off into the wild blue yonder…$"
+    .string "很久很久以前……\p由于大地之宝可梦和\n海洋之宝可梦的激烈冲突，\l世界陷入了混乱之中……\p大地之宝可梦召唤高山，\n创造大陆……\p海洋之宝可梦掀起巨浪，\n开辟海洋……\p它们激烈的决斗无休止的进行着。\p世界被无情的烈焰\n与残酷的风暴所吞没。\p直到天空之宝可梦\n自风暴中降临。\p那只宝可梦放出了鲜艳的绿色光芒，\n平息了两只宝可梦的愤怒。\p在那之后，完成了这一切的绿色宝可梦\n飞回了广阔的蓝天，飞向那遥远的彼方……$"
 

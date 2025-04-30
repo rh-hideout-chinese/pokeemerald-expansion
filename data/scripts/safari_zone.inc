@@ -73,222 +73,218 @@ SafariZone_EventScript_PokeblockPresent::
 	end
 
 SafariZone_Text_WouldYouLikeToExit:
-	.string "Would you like to exit the SAFARI\n"
-	.string "ZONE right now?$"
+	.string "你现在就要退出\n"
+	.string "狩猎地带吗？$"
 
 SafariZone_Text_TimesUp:
-	.string "Ding-dong! Time's up!\n"
-	.string "Your SAFARI Game is over.$"
+	.string "叮——咚！时间到！\n"
+	.string "狩猎活动结束。$"
 
 SafariZone_Text_OutOfBalls:
-	.string "You've run out of SAFARI BALLS.\n"
-	.string "Your SAFARI Game is over.$"
+	.string "狩猎球用完了，\n"
+	.string "狩猎活动结束。$"
 
 SafariZone_Text_PlacePokeblockOnFeeder:
-	.string "Would you like to place a {POKEBLOCK}\n"
-	.string "on the {POKEBLOCK} FEEDER?$"
+	.string "要在宝可方块喂养器里面\n"
+	.string "放进宝可方块吗？$"
 
 SafariZone_Text_PokeblockStillHere:
-	.string "The {STR_VAR_1} you left\n"
-	.string "before is still here.$"
+	.string "你之前放进去的{STR_VAR_1}\n"
+	.string "还在里面。$"
 
 SafariZone_Text_PokeblockWasPlaced:
-	.string "The {STR_VAR_1} was placed\n"
-	.string "on the {POKEBLOCK} FEEDER.$"
+	.string "把{STR_VAR_1}放进了\n"
+	.string "宝可方块喂养器里。$"
 
 Route121_SafariZoneEntrance_Text_WelcomeToSafariZone:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "Here, you may witness many kinds of\n"
-	.string "POKéMON rarely seen in HOENN.\p"
-	.string "And, you'll see them in their wild,\n"
-	.string "untamed state in natural habitats.\p"
-	.string "What's more, we've thrown open the\n"
-	.string "gates to POKéMON TRAINERS.\p"
-	.string "You're encouraged to catch POKéMON\n"
-	.string "for keeps!\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "欢迎来到狩猎地带！\p"
+	.string "在这里有许多丰缘地区\n"
+	.string "难得一见的宝可梦，\p"
+	.string "你可以观察这些野生宝可梦\n"
+	.string "在自然栖息地的生活。\p"
+	.string "另外，我们也欢迎\n"
+	.string "宝可梦训练家的到来，\p"
+	.string "你可以在这里捕捉\n"
+	.string "你想要的宝可梦！\p"
+	.string "祝你在狩猎地带玩得愉快！$"
 
 Route121_SafariZoneEntrance_Text_WelcomeFirstTime:
-	.string "Welcome to the SAFARI ZONE!\n"
-	.string "Is it your first time here?$"
+	.string "欢迎来到狩猎地带！\n"
+	.string "请问是第一次来这里吗？$"
 
 Route121_SafariZoneEntrance_Text_ComeInAndEnjoy:
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "祝你在狩猎地带玩得愉快！$"
 
 Route121_SafariZoneEntrance_Text_FirstTimeInfo:
-	.string "When you enter the SAFARI ZONE, you\n"
-	.string "start with 30 SAFARI BALLS for\l"
-	.string "catching POKéMON.\p"
-	.string "The SAFARI Game is over when you run\n"
-	.string "out of SAFARI BALLS, or when you've\l"
-	.string "walked 500 steps.\p"
-	.string "Come in and enjoy the SAFARI ZONE!$"
+	.string "进入狩猎地带以后，\n"
+	.string "会给你30只狩猎球用来捕捉宝可梦，\p"
+	.string "狩猎球用完或者你走了500步以后，\n"
+	.string "狩猎活动就结束了。\p"
+	.string "祝你在狩猎地带玩得愉快！$"
 
 Route121_SafariZoneEntrance_Text_WouldYouLikeToPlay:
-	.string "Welcome to the SAFARI ZONE!\p"
-	.string "All you can catch for just ¥500!\n"
-	.string "Would you like to play a SAFARI Game?$"
+	.string "欢迎来到狩猎地带！\p"
+	.string "花¥500就可以尽情地捕捉宝可梦！\n"
+	.string "你要进行狩猎活动吗？$"
 
 Route121_SafariZoneEntrance_Text_PlayAnotherTime:
-	.string "Okay.\n"
-	.string "Please play another time!$"
+	.string "好的，\n"
+	.string "欢迎下次再来！$"
 
 Route121_SafariZoneEntrance_Text_NotEnoughMoney:
-	.string "You don't have enough money.\n"
-	.string "Sorry.$"
+	.string "抱歉，\n"
+	.string "你带的钱不够。$"
 
 Route121_SafariZoneEntrance_Text_ThatWillBe500Please:
-	.string "That will be ¥500, please.$"
+	.string "请先付¥500。$"
 
 Route121_SafariZoneEntrance_Text_HereAreYourSafariBalls:
-	.string "Here are your SAFARI BALLS.$"
+	.string "请收好你的狩猎球。$"
 
 Route121_SafariZoneEntrance_Text_Received30SafariBalls:
-	.string "{PLAYER} received 30 SAFARI BALLS.$"
+	.string "{PLAYER}得到30个狩猎球。$"
 
 Route121_SafariZoneEntrance_Text_PleaseEnjoyYourself:
-	.string "We'll let you know when your game\n"
-	.string "is over.\p"
-	.string "So, until then, enjoy yourself, please!\n"
-	.string "Off you go on your wild excursion!$"
+	.string "游戏结束的时候你会收到通知，\n"
+	.string "在那之前，请尽情地玩吧。\l"
+	.string "野生的宝可梦们在等着你去发现！$"
 
 Route121_SafariZoneEntrance_Text_PCIsFull:
-	.string "Excuse me!\n"
-	.string "Your PC BOX is full.$"
+	.string "很抱歉，\n"
+	.string "你的电脑盒子满了。$"
 
 Route121_SafariZoneEntrance_Text_YouNeedPokeblockCase:
-	.string "Excuse me!\n"
-	.string "You seem to be without a {POKEBLOCK} CASE.\p"
-	.string "Your SAFARI Game will be much more\n"
-	.string "fruitful if you use {POKEBLOCK}S.\p"
-	.string "Please come back with a {POKEBLOCK} CASE.\p"
-	.string "You may obtain a {POKEBLOCK} CASE from\n"
-	.string "the LILYCOVE CONTEST HALL.$"
+	.string "很抱歉，\n"
+	.string "似乎你还没有宝可方块盒。\p"
+	.string "使用宝可方块会使\n"
+	.string "狩猎活动变得更有趣的。\p"
+	.string "拿到宝可方块盒再来吧，\p"
+	.string "你可以在水静市选美大厅\n"
+	.string "索要到宝可方块盒。$"
 
 SafariZone_South_Text_StillHaveTimeExit:
-	.string "You still have time left. Would you like\n"
-	.string "to exit the SAFARI ZONE now?$"
+	.string "你的时间还没有用完，\n"
+	.string "现在就要离开狩猎地带吗？$"
 
 SafariZone_South_Text_EnjoyTheRestOfYourAdventure:
-	.string "Please enjoy the rest of your wild\n"
-	.string "adventure!$"
+	.string "在剩下的时间里\n"
+	.string "尽情享受野外冒险的乐趣吧！$"
 
 SafariZone_South_Text_ExitEarlyThankYouForPlaying:
-	.string "Okay.\p"
-	.string "I'll take back your remaining SAFARI\n"
-	.string "BALLS.\p"
-	.string "Thank you for playing.\n"
-	.string "We hope to see you again.$"
+	.string "好的，现在我要收回\n"
+	.string "你余下的狩猎球。\p"
+	.string "谢谢你的光临，\n"
+	.string "下次再见。$"
 
 SafariZone_South_Text_GoodLuck:
-	.string "Good luck!\p"
-	.string "If you need anything, don't hesitate\n"
-	.string "to tell me, please!$"
+	.string "祝你好运！\p"
+	.string "需要什么帮助的话，\n"
+	.string "就直接告诉我吧！$"
 
 SafariZone_South_Text_Boy:
-	.string "Did you know?\p"
-	.string "If you put a {POKEBLOCK} in that square box,\n"
-	.string "POKéMON gather around.$"
+	.string "知道吗？如果在那个\p"
+	.string "方方的箱子里放进宝可方块，\n"
+	.string "宝可梦就会聚集到那附近。$"
 
 SafariZone_South_Text_Man:
-	.string "I want to keep going deeper, but I\n"
-	.string "forgot to bring a BIKE.\p"
-	.string "Something tells me that rare POKéMON\n"
-	.string "live in the outlying areas.$"
+	.string "我本来想走得更深一点的，\n"
+	.string "但我忘记带自行车了。\p"
+	.string "据说一些稀有的宝可梦\n"
+	.string "生活在比较偏僻的地方。$"
 
 SafariZone_Southwest_Text_Woman:
-	.string "Sometimes, when I toss a {POKEBLOCK} at \n"
-	.string "POKéMON, it gets ignored.\p"
-	.string "Do POKéMON have likes and dislikes\n"
-	.string "about what they eat?$"
+	.string "有的时候，宝可梦会无视\n"
+	.string "我扔出去的宝可方块。\p"
+	.string "是不是宝可梦们对于食物\n"
+	.string "也有不同的喜好呢？$"
 
 SafariZone_Northwest_Text_Man:
-	.string "Gasp… Gasp…\n"
-	.string "I…made it out here…but…\p"
-	.string "I'm exhausted… I don't have the\n"
-	.string "energy to catch POKéMON…$"
+	.string "呼……呼……\n"
+	.string "我……终于到这儿了……不过……\p"
+	.string "我已经累了……没力气\n"
+	.string "去捕捉宝可梦了……$"
 
 SafariZone_North_Text_Fisherman:
-	.string "I'm on a mission to find WATER POKéMON\n"
-	.string "you don't see in HOENN.\p"
-	.string "Do you have any idea where the lake is?$"
+	.string "我需要找到一些丰缘地区\n"
+	.string "所没有的水属性宝可梦，\p"
+	.string "你知道湖在哪儿吗？$"
 
 SafariZone_North_Text_Man:
-	.string "I'm going to catch a lot of rare POKéMON\n"
-	.string "here and trade them with my friends!$"
+	.string "我要在这儿捕捉好多宝可梦，\n"
+	.string "然后跟我的朋友们交换！$"
 
 SafariZone_South_Text_Youngster:
-	.string "I put a {POKEBLOCK} on the {POKEBLOCK} FEEDER.\n"
-	.string "But it seems to have disappeared.\p"
-	.string "I guess POKéMON must have eaten it\n"
-	.string "without me noticing.$"
+	.string "我把宝可方块放到了宝可方块\n"
+	.string "喂养器里，但它很快就消失了。\p"
+	.string "一定是在我没注意的时候\n"
+	.string "被宝可梦吃掉了。$"
 
 Route121_SafariZoneEntrance_Text_TrainerTip:
-	.string "SAFARI ZONE TRAINER TIP!\p"
-	.string "Throw {POKEBLOCK}S at wild POKéMON to make\n"
-	.string "them less likely to flee.$"
+	.string "狩猎地带要领\p"
+	.string "向野生宝可梦投掷宝可方块，\n"
+	.string "能够减少它们逃跑的可能性。$"
 
 SafariZone_Southwest_Text_RestHouseSign:
-	.string "“Relieve your tired feet.”\n"
-	.string "REST HOUSE$"
+	.string "“放松一下你疲惫的双脚吧”\n"
+	.string "休息客栈$"
 
 SafariZone_RestHouse_Text_Youngster:
-	.string "I don't have any {POKEBLOCK}S, but I caught\n"
-	.string "a good number of POKéMON.\p"
-	.string "You can improve your chances of making\n"
-	.string "a catch by getting closer to them\l"
-	.string "before throwing a SAFARI BALL.$"
+	.string "我没有宝可方块，\n"
+	.string "但我还是捕捉了很多宝可梦。\p"
+	.string "先小心地接近，\n"
+	.string "然后再扔出狩猎球，\l"
+	.string "就有更大的可能性捕捉到它们。$"
 
 SafariZone_RestHouse_Text_PsychicM:
-	.string "If you use {POKEBLOCK}S, wild POKéMON won't\n"
-	.string "be so quick to run away.\p"
-	.string "It's not much use to give {POKEBLOCK}S to\n"
-	.string "POKéMON that don't flee easily.$"
+	.string "如果使用宝可方块，野生宝可梦\n"
+	.string "就不会很快逃跑。\p"
+	.string "而对那些本就不太容易逃跑的宝可梦，\n"
+	.string "使用宝可方块效果并不大。$"
 
 SafariZone_RestHouse_Text_FatMan:
-	.string "If you put a {POKEBLOCK} on the FEEDER,\n"
-	.string "POKéMON are attracted to it.\p"
-	.string "I think POKéMON with the same sort of\n"
-	.string "nature are drawn by a certain {POKEBLOCK}.$"
+	.string "放在喂养器里的宝可方块\n"
+	.string "能够把宝可梦吸引来，\p"
+	.string "我想有相似性格的宝可梦\n"
+	.string "会被同一种宝可方块吸引。$"
 
 SafariZone_South_Text_AreaOffLimits1:
-	.string "This area is still under construction.\n"
-	.string "It's off-limits, sorry!$"
+	.string "此处正在建设中，\n"
+	.string "禁止入内。$"
 
 SafariZone_Southeast_Text_ExpansionIsFinished:
-	.string "The SAFARI ZONE's expansion project\n"
-	.string "is finished now.\p"
-	.string "We hope you will enjoy the new area.$"
+	.string "狩猎地带的扩建\n"
+	.string "已经完工，\p"
+	.string "希望你能喜欢。$"
 
 SafariZone_South_Text_AreaOffLimits2:
-	.string "This area is still under construction.\n"
-	.string "It's off-limits, sorry!$"
+	.string "此处正在建设中，\n"
+	.string "禁止入内。$"
 
 SafariZone_Southeast_Text_LittleGirl:
-	.string "Wow! Whee! I haven't seen any of\n"
-	.string "these POKéMON before!$"
+	.string "呀～嗬！这些宝可梦\n"
+	.string "都是我从来没见过的！$"
 
 SafariZone_Southeast_Text_FatMan:
-	.string "The POKéMON in this area are all\n"
-	.string "new to me.\p"
-	.string "And I'm allowed to catch these rare\n"
-	.string "POKéMON! Too cool!$"
+	.string "这些宝可梦\n"
+	.string "我还是第一次见到，\p"
+	.string "而且我还能捕捉这些\n"
+	.string "稀有宝可梦！太棒了！$"
 
 SafariZone_Southeast_Text_RichBoy:
-	.string "The POKéMON around here seem to be\n"
-	.string "from somewhere other than HOENN.$"
+	.string "这里的宝可梦好像\n"
+	.string "是从丰缘外来的。$"
 
 SafariZone_Northeast_Text_Boy:
-	.string "I only have a couple SAFARI BALLS left.\p"
-	.string "I'm having a hard time trying to\n"
-	.string "decide what I should catch.$"
+	.string "我的狩猎球没剩几个了，\p"
+	.string "我得好好考虑一下\n"
+	.string "要捕捉什么样的宝可梦。$"
 
 SafariZone_Northeast_Text_Woman:
-	.string "I heard that you can see PIKACHU here.\n"
-	.string "Where might one be?$"
+	.string "据说有人在这附近发现过皮卡丘，\n"
+	.string "究竟在哪儿呢？$"
 
 SafariZone_Northeast_Text_Girl:
-	.string "Oh, boo!\n"
-	.string "I can't seem to catch anything!\p"
-	.string "I'll end up wasting the admission\n"
-	.string "price if I don't catch something!$"
+	.string "啊，真烦！\n"
+	.string "我什么都没捕捉到！\p"
+	.string "要是再不捕捉些什么的话\n"
+	.string "我就不在这儿浪费钱了！$"

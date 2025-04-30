@@ -12,7 +12,7 @@ def extract_palette(path):
     r.read()
     root, _ = os.path.splitext(path)
     out_path = root + '.pal'
-    with open(out_path, 'w', newline='\r\n') as f:
+    with open(out_path, 'w', newline='\r\n', encoding="utf-8") as f:
         f.write(PAL_PRELUDE)
         colors = r.palette()
         if len(colors) < 16:

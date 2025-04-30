@@ -56,38 +56,14 @@ Route114_FossilManiacsTunnel_EventScript_PlayerRevivedFossil::
 	end
 
 Route114_FossilManiacsTunnel_Text_LookInDesertForFossils:
-	.string "I'm the FOSSIL MANIAC…\n"
-	.string "I'm a nice guy who loves FOSSILS…\p"
-	.string "Do you want a FOSSIL?\p"
-	.string "But the FOSSILS around these parts all\n"
-	.string "belong to me… None for you…\p"
-	.string "If you can't bear to go without\n"
-	.string "a FOSSIL, look in a desert where there\l"
-	.string "are boulders and sand that may hide\l"
-	.string "FOSSILS…$"
+    .string "我是化石迷……\n我是喜欢化石的好人……\p你想要化石？\p但是这里所有的化石\n全部属于我……不能给你……\p如果你也需要化石\n去沙漠里找找吧\l那里到处是沙砾\l也许会藏着化石……$"
 
 Route114_FossilManiacsTunnel_Text_DevonCorpRevivingFossils:
-	.string "You found a FOSSIL, didn't you?\n"
-	.string "That's so nice… It's so dreamy…\p"
-	.string "What are you going to do with that\n"
-	.string "FOSSIL?\p"
-	.string "From what I've heard, DEVON is doing\n"
-	.string "research on reviving POKéMON from\l"
-	.string "FOSSILS…\p"
-	.string "I love my FOSSILS, so I would never\n"
-	.string "do anything like that…$"
+    .string "难道说你找到了化石？\n太好了……不会是做梦吧……\p你想对那个化石\n做什么？\p我听说，得文正在做研究\n把宝可梦从\l化石中复活……\p我喜欢我的化石，因此\n我不喜欢那样做……$"
 
 Route114_FossilManiacsTunnel_Text_FossilsAreWonderful:
-	.string "FOSSILS are so… Wonderful…\n"
-	.string "It's so dreamy…$"
+    .string "化石是那么的……迷人……\n它是那么完美……$"
 
 Route114_FossilManiacsTunnel_Text_NotSafeThatWay:
-	.string "Oh…\n"
-	.string "It's not safe that way…\p"
-	.string "I was digging away, you see…\n"
-	.string "When the whole wall collapsed…\p"
-	.string "I think there's a giant cavern\n"
-	.string "underneath now…\p"
-	.string "But I've left it alone because I don't\n"
-	.string "think there are any FOSSILS there…$"
+    .string "哦……\n那条路不安全……\p你看到了，当所有墙壁倒塌时……\n我正要挖洞离开……\p我认为现在下面\n有一个巨大的洞……\p但是我要走了\n因为我认为那里没有化石……$"
 

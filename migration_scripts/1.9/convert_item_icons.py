@@ -8,7 +8,7 @@ if not os.path.exists("Makefile"):
 
 # Read item_icon_table.h and extract the icon and palette information
 for file in glob.glob('./src/data/item_icon_table.h'):
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding="utf-8") as f:
         icon_table_content = f.read()
 
 # Extract item icon and palette data from item_icon_table.h
@@ -21,7 +21,7 @@ for match in icon_table_pattern.findall(icon_table_content):
 
 # Read items.h content
 for file in glob.glob('./src/data/items.h'):
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding="utf-8") as f:
         items_content = f.read()
 
 # Modify items.h content
@@ -40,6 +40,6 @@ modified_items_content = item_pattern.sub(add_icon_data, items_content)
 
 # Write the modified content back to items.h
 for file in glob.glob('./src/data/items.h'):
-    with open(file, 'w') as f:
+    with open(file, 'w', encoding="utf-8") as f:
         f.write(modified_items_content)
         print("items.h has been updated")

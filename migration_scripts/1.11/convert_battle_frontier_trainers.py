@@ -8,7 +8,7 @@ if not os.path.exists("Makefile"):
 
 # Read battle_frontier_trainer_mons.h and extract the party information
 for file in glob.glob('./src/data/battle_frontier/battle_frontier_trainer_mons.h'):
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding="utf-8") as f:
         source_content = f.read()
 
 # Extract party info from battle_frontier_trainer_mons.h
@@ -21,7 +21,7 @@ for match in source_pattern.findall(source_content):
 
 # Read battle_frontier_trainers.h content
 for file in glob.glob('./src/data/battle_frontier/battle_frontier_trainers.h'):
-    with open(file, 'r') as f:
+    with open(file, 'r', encoding="utf-8") as f:
         destination_content = f.read()
 
 # Modify battle_frontier_trainers.h content
@@ -39,6 +39,6 @@ modified_content = destination_pattern.sub(add_party_data, destination_content)
 
 # Write the modified content back to battle_frontier_trainers.h
 for file in glob.glob('./src/data/battle_frontier/battle_frontier_trainers.h'):
-    with open(file, 'w') as f:
+    with open(file, 'w', encoding="utf-8") as f:
         f.write(modified_content)
         print("battle_frontier_trainers.h has been updated")

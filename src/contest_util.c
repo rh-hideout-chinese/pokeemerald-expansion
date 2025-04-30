@@ -1444,7 +1444,9 @@ static void LoadContestResultsTitleBarTilemaps(void)
     }
 
     x += 5;
-    CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tilemap, x, y, 6, 2);
+    //CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tilemap, x, y, 6, 2);
+    //修改，修改华丽大赛Tilemap宽度
+    CopyToBgTilemapBufferRect(2, gContestResultsTitle_Tilemap, x, y, 8, 2);
     CopyToBgTilemapBufferRect_ChangePalette(2, sContestResults->tilemapBuffers[2], 0, 0, 32, 4, palette);
 }
 

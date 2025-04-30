@@ -18,22 +18,8 @@ GraniteCave_1F_EventScript_ReceivedFlash::
 	end
 
 GraniteCave_1F_Text_GetsDarkAheadHereYouGo:
-	.string "Hey, you.\n"
-	.string "It gets awfully dark ahead.\l"
-	.string "It'll be tough trying to explore.\p"
-	.string "That guy who came by earlier…\n"
-	.string "STEVEN, I think it was.\p"
-	.string "He knew how to use FLASH, so he ought\n"
-	.string "to be all right, but…\p"
-	.string "Well, for us HIKERS, helping out those\n"
-	.string "that we meet is our motto.\p"
-	.string "Here you go, I'll pass this on to you.$"
+    .string "喂，那边的。\n前面黑得可怕，\l继续探索下去会很危险。\p先前有个人来过……\n我想应该是大吾。\p那家伙会使用闪光，所以\n应该没事，可是……\p唔，对于我们登山者而言，帮助他人\n解决困难是我们的座右铭。\p给，这个送你了。$"
 
 GraniteCave_1F_Text_ExplainFlash:
-	.string "Teach that hidden move FLASH to\n"
-	.string "a POKéMON and use it.\p"
-	.string "It lights up even the inky darkness\n"
-	.string "of caves.\p"
-	.string "But, to use it, you need the GYM BADGE\n"
-	.string "from DEWFORD's POKéMON GYM.$"
+    .string "把闪光招式教给宝可梦，\n使用的时候，\p就能够照亮\n漆黑的山洞。\p但你必须先去武斗镇的宝可梦道馆\n取得道馆徽章。$"
 

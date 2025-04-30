@@ -1,61 +1,26 @@
 gText_Birch_Welcome::
-	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
-	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
-	.string "$"
+    .string "你好！让你久等了！\p欢迎来到宝可梦的世界！\p我是小田卷。\p人们都称我为\n宝可梦博士。\p$"
 
 gText_Birch_Pokemon::
-	.string "This is what we call a “POKéMON.”\p"
-	.string "\n"
-	.string "$"
+    .string "这就是叫做宝可梦的生物。$"
 
 gText_Birch_MainSpeech::
-	.string "This world is widely inhabited by\n"
-	.string "creatures known as POKéMON.\p"
-	.string "We humans live alongside POKéMON,\n"
-	.string "at times as friendly playmates, and\l"
-	.string "at times as cooperative workmates.\p"
-	.string "And sometimes, we band together\n"
-	.string "and battle others like us.\p"
-	.string "But despite our closeness, we don't\n"
-	.string "know everything about POKéMON.\p"
-	.string "In fact, there are many, many\n"
-	.string "secrets surrounding POKéMON.\p"
-	.string "To unravel POKéMON mysteries,\n"
-	.string "I've been undertaking research.\l"
-	.string "That's what I do.\p"
-	.string "$"
+    .string "这个世界广泛生存着宝可梦，\n人们也管它们叫宝可梦。\p人们和宝可梦一起玩耍，\n互相帮助，\l并且成为了好伙伴。\p有时候，我们与它们\n宝可梦一起战斗。\p遗憾的是，我们对它们\n不是很了解。\p事实上，宝可梦身上\n还有很多很多秘密。\p为了揭开宝可梦的秘密，\n我倾注了毕生心血研究它们。\l来实现我一生中最大的愿望。\p$"
 
 gText_Birch_AndYouAre::
-	.string "And you are?$"
+    .string "那么请问？$"
 
 gText_Birch_BoyOrGirl::
-	.string "Are you a boy?\n"
-	.string "Or are you a girl?$"
+    .string "你是男孩？\n还是女孩？$"
 
 gText_Birch_WhatsYourName::
-	.string "All right.\n"
-	.string "What's your name?$"
+    .string "那么。\n告诉我你的名字吧！$"
 
 gText_Birch_SoItsPlayer::
-	.string "So it's {PLAYER}{KUN}?$"
+    .string "是{PLAYER}{KUN}吗？$"
 
 gText_Birch_YourePlayer::
-	.string "Ah, okay!\p"
-	.string "You're {PLAYER}{KUN} who's moving to my\n"
-	.string "hometown of LITTLEROOT.\l"
-	.string "I get it now!\p"
-	.string "$"
+    .string "啊，没错！\p你就是刚搬到\n未白镇来的{PLAYER}{KUN}啊。\l我知道了！\p$"
 
 gText_Birch_AreYouReady::
-	.string "All right, are you ready?\p"
-	.string "Your very own adventure is about\n"
-	.string "to unfold.\p"
-	.string "Take courage, and leap into the\n"
-	.string "world of POKéMON where dreams,\l"
-	.string "adventure, and friendships await!\p"
-	.string "Well, I'll be expecting you later.\n"
-	.string "Come see me in my POKéMON LAB.\p"
-	.string "$"
+    .string "好的，准备好了吗？\p振奋人心的冒险\n即将展开。\p鼓起勇气，迈向宝可梦的世界吧！\n那里孕育着梦想，\l充满着刺激，还会遇到新的朋友！\p当然，我对你充满了期待。\n到我的宝可梦研究所来见我吧。\p$"

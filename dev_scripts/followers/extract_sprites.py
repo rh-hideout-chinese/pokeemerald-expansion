@@ -11,7 +11,7 @@ import png
 SPRITESHEETS = [('gen1.png', 15, 11, 1)]
 output_dir = 'sprites'
 index_to_name = {}
-with open('names.txt', 'r') as f:
+with open('names.txt', 'r', encoding="utf-8") as f:
     for line in f:
         index, name = line.split(' ')[:2]
         name = name.strip()
@@ -72,7 +72,7 @@ def apply_palette(palette_file, input_file, output_file):  # Apply one file's pa
     inp = png.Reader(input_file)
     w, h, rows, _ = inp.read()
     src_palette = tuple(c[:3] for c in inp.palette())
-    with open(output_file, 'wb') as f:
+    with open(output_file, 'wb', encoding="utf-8") as f:
         new_rows = []
         for row in rows:
             new_rows.append([closest_color(src_palette[c], target_palette) if c else 0 for c in row])

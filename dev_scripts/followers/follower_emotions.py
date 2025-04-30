@@ -8,7 +8,7 @@ blank_regex = re.compile(r'\(?_+\)?')
 
 # Converts a series of message lines to a better format
 def convert_messages(infile, outfile='emotions.txt'):
-    with open(infile, 'r') as f_in, open(outfile, 'w') as f_out:
+    with open(infile, 'r', encoding="utf-8") as f_in, open(outfile, 'w', encoding="utf-8") as f_out:
         for line in f_in:
             line = line.rstrip('\n')
             if line and line[0] == '-':
@@ -35,11 +35,11 @@ def prepare_string(s):
 
 # Exports up to n messages in C format to outfile
 def export_messages(infile, outfile, n=None, indent=0, start=0):
-    with open(infile, 'r') as f_in:
+    with open(infile, 'r', encoding="utf-8") as f_in:
         lines = f_in.readlines()
         if n is not None:
             lines = lines[:n]
-    with open(outfile, 'w') as f_out:
+    with open(outfile, 'w', encoding="utf-8") as f_out:
         codelines = [' '*indent + f'static const u8 sCondMsg{start+i:02d}[] = _("{prepare_string(s)}");' for i, s in enumerate(lines)]
         f_out.write('\n'.join(codelines))
     print(f'{len(lines)} lines written')

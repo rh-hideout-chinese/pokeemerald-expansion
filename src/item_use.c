@@ -80,20 +80,20 @@ static void CB2_OpenPokeblockFromBag(void);
 static void ItemUseOnFieldCB_Honey(u8 taskId);
 static bool32 IsValidLocationForVsSeeker(void);
 
-static const u8 sText_CantDismountBike[] = _("You can't dismount your BIKE here.{PAUSE_UNTIL_PRESS}");
-static const u8 sText_ItemFinderNearby[] = _("Huh?\nThe ITEMFINDER's responding!\pThere's an item buried around here!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_ItemFinderOnTop[] = _("Oh!\nThe ITEMFINDER's shaking wildly!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_ItemFinderNothing[] = _("… … … …Nope!\nThere's no response.{PAUSE_UNTIL_PRESS}");
-static const u8 sText_CoinCase[] = _("Your COINS:\n{STR_VAR_1}{PAUSE_UNTIL_PRESS}");
-static const u8 sText_PowderQty[] = _("POWDER QTY: {STR_VAR_1}{PAUSE_UNTIL_PRESS}");
-static const u8 sText_BootedUpTM[] = _("Booted up a TM.");
-static const u8 sText_BootedUpHM[] = _("Booted up an HM.");
-static const u8 sText_TMHMContainedVar1[] = _("It contained\n{STR_VAR_1}.\pTeach {STR_VAR_1}\nto a POKéMON?");
-static const u8 sText_UsedVar2WildLured[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild POKéMON will be lured.{PAUSE_UNTIL_PRESS}");
-static const u8 sText_UsedVar2WildRepelled[] = _("{PLAYER} used the\n{STR_VAR_2}.\pWild POKéMON will be repelled.{PAUSE_UNTIL_PRESS}");
-static const u8 sText_PlayedPokeFluteCatchy[] = _("Played the POKé FLUTE.\pNow, that's a catchy tune!{PAUSE_UNTIL_PRESS}");
-static const u8 sText_PlayedPokeFlute[] = _("Played the POKé FLUTE.");
-static const u8 sText_PokeFluteAwakenedMon[] = _("The POKé FLUTE awakened sleeping\nPOKéMON.{PAUSE_UNTIL_PRESS}");
+static const u8 sText_CantDismountBike[] = _("这里不能下车！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_ItemFinderNearby[] = _("哦！\n机器有反应了！\p附近有埋着道具！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_ItemFinderOnTop[] = _("机器在脚下\n反应得很剧烈了！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_ItemFinderNothing[] = _("…………呼！\n……什么反应都没有！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_CoinCase[] = _("你现在的代币\n{STR_VAR_1}枚{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PowderQty[] = _("粉末量 {STR_VAR_1}{PAUSE_UNTIL_PRESS}");
+static const u8 sText_BootedUpTM[] = _("启动了招式学习器！");
+static const u8 sText_BootedUpHM[] = _("启动了秘传招式学习器！");
+static const u8 sText_TMHMContainedVar1[] = _("里面有被记录着\n{STR_VAR_1}！\p要让宝可梦学会\n{STR_VAR_1}吗？");
+static const u8 sText_UsedVar2WildLured[] = _("{PLAYER}\n使用了{STR_VAR_2}！\p野生的宝可梦们\n会被引诱过来。{PAUSE_UNTIL_PRESS}");
+static const u8 sText_UsedVar2WildRepelled[] = _("{PLAYER}\n使用了{STR_VAR_2}！\p野生的宝可梦们\n会被驱赶不再出现。{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PlayedPokeFluteCatchy[] = _("吹响了宝可梦之笛！\p嗯……不错的音色！{PAUSE_UNTIL_PRESS}");
+static const u8 sText_PlayedPokeFlute[] = _("吹响了宝可梦之笛！");
+static const u8 sText_PokeFluteAwakenedMon[] = _("听到宝可梦之笛声音的\n宝可梦醒来了！{PAUSE_UNTIL_PRESS}");
 
 // EWRAM variables
 EWRAM_DATA static void(*sItemUseOnFieldCB)(u8 taskId) = NULL;
@@ -1118,9 +1118,9 @@ bool32 CanThrowBall(void)
     return (GetBallThrowableState() == BALL_THROW_ABLE);
 }
 
-static const u8 sText_CantThrowPokeBall_TwoMons[] = _("Cannot throw a ball!\nThere are two Pokémon out there!\p");
-static const u8 sText_CantThrowPokeBall_SemiInvulnerable[] = _("Cannot throw a ball!\nThere's no Pokémon in sight!\p");
-static const u8 sText_CantThrowPokeBall_Disabled[] = _("POKé BALLS cannot be used\nright now!\p");
+static const u8 sText_CantThrowPokeBall_TwoMons[] = _("有两只野生的宝可梦，\n这样没法使用精灵球！\p");
+static const u8 sText_CantThrowPokeBall_SemiInvulnerable[] = _("看不见宝可梦，\n这样没法使用精灵球！\p");
+static const u8 sText_CantThrowPokeBall_Disabled[] = _("现在无法使用精灵球！\p");
 void ItemUseInBattle_PokeBall(u8 taskId)
 {
     switch (GetBallThrowableState())

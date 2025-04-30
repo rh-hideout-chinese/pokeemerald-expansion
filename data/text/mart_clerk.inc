@@ -1,10 +1,8 @@
 gText_HowMayIServeYou::
-	.string "Welcome!\p"
-	.string "How may I serve you?$"
+    .string "欢迎！\p需要什么吗？$"
 
 gText_PleaseComeAgain::
-	.string "Please come again!$"
+    .string "欢迎再次光临！$"
 
 gText_PlayerWhatCanIDoForYou::
-	.string "{PLAYER}{STRING 5}, welcome!\p"
-	.string "What can I do for you?$"
+    .string "{PLAYER}{KUN}，欢迎！\p有什么需要我帮忙的？$"

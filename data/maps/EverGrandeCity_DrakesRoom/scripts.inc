@@ -62,31 +62,11 @@ EverGrandeCity_DrakesRoom_EventScript_Defeated::
 	end
 
 EverGrandeCity_DrakesRoom_Text_IntroSpeech:
-	.string "I am the last of the POKéMON LEAGUE\n"
-	.string "ELITE FOUR, DRAKE the DRAGON master!\p"
-	.string "In their natural state, POKéMON are\n"
-	.string "wild living things. They are free.\p"
-	.string "At times, they hinder us.\n"
-	.string "At times, they help us.\p"
-	.string "For us to battle with POKéMON as\n"
-	.string "partners, do you know what it takes?\p"
-	.string "Do you know what is needed?\p"
-	.string "If you don't, then you will never\n"
-	.string "prevail over me!$"
+    .string "我是联盟最后的四天王，\n龙属性大师——源治！\p在自然情况下，宝可梦是生来就具有\n野性的生物。它们自由，不受束缚。\p有时候，它们会妨碍人类。\n有时候，它们会帮助人类。\p当我们使用宝可梦作为伙伴战斗时，\n你知道如何才能获胜吗？\p你知道需要什么条件吗？\p如果你不知道，那么你永远\n不可能战胜我！$"
 
 EverGrandeCity_DrakesRoom_Text_Defeat:
-	.string "Superb, it should be said.$"
+    .string "漂亮，果然不是浪得虚名。$"
 
 EverGrandeCity_DrakesRoom_Text_PostBattleSpeech:
-	.string "You deserve every credit for coming\n"
-	.string "this far as a TRAINER of POKéMON.\p"
-	.string "You do seem to know what is needed.\p"
-	.string "Yes, what a TRAINER needs is a\n"
-	.string "virtuous heart.\p"
-	.string "POKéMON touch the good hearts of\n"
-	.string "TRAINERS and learn good from wrong.\p"
-	.string "They touch the good hearts of\n"
-	.string "TRAINERS and grow strong.\p"
-	.string "Go! Go onwards!\n"
-	.string "The CHAMPION is waiting!$"
+    .string "你能走这么远已经证明了你自己\n作为宝可梦训练家的实力！\p看起来你知道战斗胜利所需的条件。\p是的，训练家所需要的就是\n一颗善良的心。\p宝可梦感受到训练家的心\n并学会着分辨善恶。\p它们感受到训练家的心\n并成长得无可匹敌。\p走吧！继续前进！\n冠军正在等待你！$"
 

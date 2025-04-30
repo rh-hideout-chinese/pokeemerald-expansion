@@ -42,7 +42,5 @@ Route106_EventScript_Ned::
 	end
 
 Route106_Text_TrainerTips:
-	.string "TRAINER TIPS\p"
-	.string "Advice on catching POKéMON with a ROD:\n"
-	.string "Press the A Button if you get a bite.$"
+    .string "训练家小技巧\p关于钓鱼的建议：\n当鱼咬钩时，按下A键。$"
 

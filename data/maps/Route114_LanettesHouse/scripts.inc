@@ -46,59 +46,23 @@ Route114_LanettesHouse_EventScript_PC::
 	end
 
 Route114_LanettesHouse_Text_EverythingClutteredKeepThis:
-	.string "LANETTE: Oh! {PLAYER}{KUN}!\p"
-	.string "I'm sorry everything is so cluttered…\n"
-	.string "When I get engrossed in research,\l"
-	.string "things end up this way…\p"
-	.string "This is embarrassing… Please keep\n"
-	.string "this a secret in exchange for this.$"
+    .string "真由美：哦！{PLAYER}{KUN}！\p对不起这里太乱了……\n当我全神贯注于研究时\l东西就会这样了……\p这很难为情……请帮我保守秘密\n作为交换给你这个。$"
 
 Route114_LanettesHouse_Text_OrganizeYourBoxes:
-	.string "May I offer advice about my POKéMON\n"
-	.string "Storage System?\p"
-	.string "You should organize your BOXES so you\n"
-	.string "can tell which POKéMON are in them.$"
+    .string "关于宝可梦寄放系统\n给你一些建议吧\p你只需要整理下盒子\n就可以分辨出宝可梦存在哪。$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage1:
-	.string "It's LANETTE's research notes.\n"
-	.string "There's information about BOXES.\p"
-	.string "Design BOXES to hold 30 POKéMON each.\p"
-	.string "Each TRAINER should be able to store\n"
-	.string "420 POKéMON on the PC system.\p"
-	.string "Keep reading?$"
+    .string "真由美的研究注释。\n关于盒子的信息。\p每个盒子可以保管30只宝可梦。\p每个训练家可以在电脑\n系统里保管420只宝可梦。\p继续阅读吗？$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage2:
-	.string "A marking system should be added to\n"
-	.string "make POKéMON easier to organize.\p"
-	.string "The name and wallpaper design of each\n"
-	.string "BOX will be made changeable to please\l"
-	.string "the stored POKéMON.\p"
-	.string "Keep reading?$"
+    .string "标记系统是为了用来\n使宝可梦更容易被管理。\p每个盒子的壁纸和名字\n都是用来使被保管的\l宝可梦更开心。\p继续阅读吗？$"
 
 Route114_LanettesHouse_Text_ResearchNotesPage3:
-	.string "When storing a POKéMON, it should be\n"
-	.string "sent to the BOX inspected last.\p"
-	.string "If that BOX is full, the received\n"
-	.string "POKéMON is stored in the next BOX.\p"
-	.string "In other words, when a BOX is examined,\n"
-	.string "it is automatically selected as the BOX\l"
-	.string "to which POKéMON are sent.$"
+    .string "当存放宝可梦时，它会被送往\n你最后所使用的盒子里。\p如果那个盒子满了的话\n宝可梦就会被送到下一个盒子。\p也就是说，检查盒子后\n系统会自动选择存放\l宝可梦的盒子。$"
 
 Route114_LanettesHouse_Text_ClosedTheNotebook:
-	.string "{PLAYER} closed the notebook.$"
+    .string "{PLAYER}合上了笔记本。$"
 
 Route114_LanettesHouse_Text_EmailFromBill:
-	.string "There's an e-mail from someone on\n"
-	.string "the PC.\p"
-	.string "“… … … … … … …\p"
-	.string "“Your Storage System offers more\n"
-	.string "convenience than mine.\p"
-	.string "“It has a lot of user-friendly features\n"
-	.string "that make it fun and useful, too.\p"
-	.string "“It makes me proud that I played\n"
-	.string "a part in its development.\p"
-	.string "“Here's hoping that you'll continue\n"
-	.string "research in Storage Systems.\p"
-	.string "“From BILL\n"
-	.string "… … … … … … … …”$"
+    .string "通过电脑收到了\n某人发来的信件。\p“…… …… …… ……\p“你的寄放系统比我的\n更加方便。\p“而且它也有许多容易掌握的因素\n使得更有用有趣。\p“在它的发展中我起到了作用\n我感到很骄傲。\p“希望你会继续做出\n寄放系统方面的研究。\p“来自正辉\n…… …… …… ……”$"
 

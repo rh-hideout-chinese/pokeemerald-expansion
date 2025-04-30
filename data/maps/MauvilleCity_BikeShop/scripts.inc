@@ -177,146 +177,68 @@ MauvilleCity_BikeShop_EventScript_ExitAcroHandbook::
 	end
 
 MauvilleCity_BikeShop_Text_RydelGreeting:
-	.string "Well, well, what have we here?\n"
-	.string "A most energetic customer!\p"
-	.string "Me? You may call me RYDEL.\n"
-	.string "I'm the owner of this cycle shop.$"
+    .string "哎呀哎呀，看看是谁来了？\n一位充满活力的客人！\p我？你可以叫我风野，\n我是这家车店的店主。$"
 
 MauvilleCity_BikeShop_Text_DidYouComeFromFarAway:
-	.string "RYDEL: Your RUNNING SHOES…\n"
-	.string "They're awfully filthy.\p"
-	.string "Did you come from far away?$"
+    .string "风野：你的跑步鞋……\n看上去已经很脏了。\p你是从很远的地方来的吗？$"
 
 MauvilleCity_BikeShop_Text_GuessYouDontNeedBike:
-	.string "RYDEL: Is that right?\p"
-	.string "Then, I guess you have no need for\n"
-	.string "any of my BIKES.$"
+    .string "风野：是吗？\p那么我想你\n不需要我的自行车。$"
 
 MauvilleCity_BikeShop_Text_ExplainBikesChooseWhichOne:
-	.string "RYDEL: Hm, hm… … … … …\p"
-	.string "You're saying that you came all this\n"
-	.string "way from LITTLEROOT?\p"
-	.string "My goodness!\n"
-	.string "That's ridiculously far!\p"
-	.string "If you had one of my BIKES, you could\n"
-	.string "go anywhere easily while feeling the\l"
-	.string "gentle caress of the wind!\p"
-	.string "I'll tell you what!\n"
-	.string "I'll give you a BIKE!\p"
-	.string "Oh, wait a second!\p"
-	.string "I forgot to tell you that there are\n"
-	.string "two kinds of BIKES!\p"
-	.string "They are the MACH BIKE and\n"
-	.string "the ACRO BIKE!\p"
-	.string "The MACH BIKE is for cyclists who want\n"
-	.string "to feel the wind with their bodies!\p"
-	.string "And an ACRO BIKE is for those who\n"
-	.string "prefer technical rides!\p"
-	.string "I'm a real sweetheart, so you can\n"
-	.string "have whichever one you like!\p"
-	.string "Which one will you choose?$"
+    .string "风野：唔，唔…… ……\p你说你从未白镇\n一路来到这里？\p天啊！\n那么远的地方！\p如果你骑着我的自行车，\n你可以在感受轻风拂面的同时\l轻轻松松地到任何地方去！\p我跟你说！\n我给你辆自行车！\p啊，等等！\p忘了告诉你，我这儿\n有两种自行车！\p分别是音速自行车\n和越野自行车！\p音速自行车是为\n追风的单车一族而设计，\p而越野自行车则是给\n喜爱车技的人所准备！\p我是好心人，所以\n让你随便挑一种！\p你想要哪样？$"
 
 MauvilleCity_BikeShop_Text_ChoseMachBike:
-	.string "{PLAYER} chose the MACH BIKE.$"
+    .string "{PLAYER}选择了音速自行车。$"
 
 MauvilleCity_BikeShop_Text_ChoseAcroBike:
-	.string "{PLAYER} chose the ACRO BIKE.$"
+    .string "{PLAYER}选择了越野自行车。$"
 
 MauvilleCity_BikeShop_Text_ComeBackToSwitchBikes:
-	.string "RYDEL: If you get the urge to switch\n"
-	.string "BIKES, just come see me!$"
+    .string "风野：如果你想换一辆自行车，\n再回来找我！$"
 
 MauvilleCity_BikeShop_Text_WantToSwitchBikes:
-	.string "RYDEL: Oh? Were you thinking about\n"
-	.string "switching BIKES?$"
+    .string "风野：哦？你想\n换一辆车吗？$"
 
 MauvilleCity_BikeShop_Text_IllSwitchBikes:
-	.string "RYDEL: Okay, no problem!\n"
-	.string "I'll switch BIKES for you!$"
+    .string "风野：好，没问题！\n我给你换一辆车！$"
 
 MauvilleCity_BikeShop_Text_ExchangedMachForAcro:
-	.string "{PLAYER} got the MACH BIKE exchanged\n"
-	.string "for an ACRO BIKE.$"
+    .string "{PLAYER}把音速自行车\n换成了越野自行车。$"
 
 MauvilleCity_BikeShop_Text_ExchangedAcroForMach:
-	.string "{PLAYER} got the ACRO BIKE exchanged\n"
-	.string "for a MACH BIKE.$"
+    .string "{PLAYER}把越野自行车\n换成了音速自行车。$"
 
 MauvilleCity_BikeShop_Text_HappyYouLikeIt:
-	.string "RYDEL: Good, good!\n"
-	.string "I'm happy that you like it!$"
+    .string "风野：好，好！\n我很高兴你能喜欢它！$"
 
 MauvilleCity_BikeShop_Text_OhYourBikeIsInPC:
-	.string "Oh? What happened to that BIKE\n"
-	.string "I gave you?\p"
-	.string "Oh, I get it, you stored it using your PC.\p"
-	.string "Well, take it out of PC storage,\n"
-	.string "and I'll be happy to exchange it!\p"
-	.string "May the wind always be at your back\n"
-	.string "on your adventure!$"
+    .string "哎？我\n给你的自行车呢？\p啊，明白了，你把它存到电脑里面了。\p把它从电脑里拿出来吧，\n我很乐意为你换一辆！\p愿你在旅行中\n体会到追风的快乐！$"
 
 MauvilleCity_BikeShop_Text_HandbooksAreInBack:
-	.string "I'm learning about BIKES while\n"
-	.string "I work here.\p"
-	.string "If you need advice on how to ride your\n"
-	.string "BIKE, there're a couple handbooks in\l"
-	.string "the back.$"
+    .string "我在这儿工作的时候\n学到了很多关于自行车的知识。\p如果你想知道\n怎么骑车，那边\l有几本说明书。$"
 
 MauvilleCity_BikeShop_Text_MachHandbookWhichPage:
-	.string "It's a handbook on the MACH BIKE.\p"
-	.string "Which page do you want to read?$"
+    .string "是音速自行车的说明书。\p想读哪一页？$"
 
 MauvilleCity_BikeShop_Text_HowToRideMachBike:
-	.string "A BIKE moves in the direction that\n"
-	.string "the + Control Pad is pressed.\p"
-	.string "It will speed up once it gets rolling.\p"
-	.string "To stop, release the + Control Pad.\n"
-	.string "The BIKE will slow to a stop.\p"
-	.string "Want to read a different page?$"
+    .string "按方向键可以\n使自行车向相应的方向移动。\p持续移动的话车会加速。\p若要停止，则松开方向键，\n自行车会慢慢减速停下。\p还要翻到其他页吗？$"
 
 MauvilleCity_BikeShop_Text_HowToTurnMachBike:
-	.string "A MACH BIKE is speedy, but it can't\n"
-	.string "stop very quickly.\p"
-	.string "It gets a little tricky to get around\n"
-	.string "a corner.\p"
-	.string "Release the + Control Pad a little\n"
-	.string "before the corner and slow down.\p"
-	.string "Want to read a different page?$"
+    .string "音速自行车速度很快，\n但并不容易停下，\p转弯的时候\n也有些麻烦，\p需要提前松开\n方向键减速。\p还要翻到其他页吗？$"
 
 MauvilleCity_BikeShop_Text_SandySlopes:
-	.string "There are small sandy slopes\n"
-	.string "throughout the HOENN region.\p"
-	.string "The loose, crumbly sand makes it\n"
-	.string "impossible to climb normally.\p"
-	.string "But if you have a MACH BIKE, you can\n"
-	.string "zip up a sandy slope.\p"
-	.string "Want to read a different page?$"
+    .string "丰缘地区中某些地方\n有小沙坡，\p普通方法很难爬上\n这些松散细碎的斜坡，\p但如果骑着音速自行车\n就能冲上沙坡。\p还要翻到其他页吗？$"
 
 MauvilleCity_BikeShop_Text_AcroHandbookWhichPage:
-	.string "It's a handbook on the ACRO BIKE.\p"
-	.string "Which page do you want to read?$"
+    .string "是越野自行车的说明书。\p想读哪一页？$"
 
 MauvilleCity_BikeShop_Text_Wheelies:
-	.string "Press the B Button while riding,\n"
-	.string "and the front wheel lifts up.\p"
-	.string "You can zip around with the front\n"
-	.string "wheel up using the + Control Pad.\p"
-	.string "This technique is called a wheelie.\p"
-	.string "Want to read a different page?$"
+    .string "骑车时按住B键\n可以抬起前轮，\p此时按方向键\n能够抬着前轮移动。\p这叫做后轮特技。\p还要翻到其他页吗？$"
 
 MauvilleCity_BikeShop_Text_BunnyHops:
-	.string "Keeping the B Button pressed,\n"
-	.string "your BIKE can hop on the spot.\p"
-	.string "This technique is called a bunny hop.\p"
-	.string "You can ride while hopping, too.\p"
-	.string "Want to read a different page?$"
+    .string "一直按住B键，\n自行车会原地跳跃。\p这叫做小跳。\p跳起时也可以继续骑车。\p还要翻到其他页吗？$"
 
 MauvilleCity_BikeShop_Text_Jumps:
-	.string "Press the B Button and the + Control\n"
-	.string "Pad at the same time to jump.\p"
-	.string "Press the + Control Pad to the side\n"
-	.string "to jump sideways.\p"
-	.string "Press it backwards to make the BIKE\n"
-	.string "change directions while jumping.\p"
-	.string "Want to read a different page?$"
+    .string "同时按下方向键和\nB键能跳起来。\p按方向键\n可以向旁边跳。\p跳起时向后可以\n使自行车调头。\p还要翻到其他页吗？$"
 

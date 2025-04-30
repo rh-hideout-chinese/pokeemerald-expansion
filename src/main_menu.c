@@ -256,25 +256,27 @@ static const u32 sBirchSpeechShadowGfx[] = INCBIN_U32("graphics/birch_speech/sha
 static const u32 sBirchSpeechBgMap[] = INCBIN_U32("graphics/birch_speech/map.bin.lz");
 static const u16 sBirchSpeechBgGradientPal[] = INCBIN_U16("graphics/birch_speech/bg2.gbapal");
 
-static const u8 gText_SaveFileCorrupted[] = _("The save file is corrupted. The\nprevious save file will be loaded.");
-static const u8 gText_SaveFileErased[] = _("The save file has been erased\ndue to corruption or damage.");
-static const u8 gJPText_No1MSubCircuit[] = _("1Mサブきばんが ささっていません！");
-static const u8 gText_BatteryRunDry[] = _("The internal battery has run dry.\nThe game can be played.\pHowever, clock-based events will\nno longer occur.");
+static const u8 gText_SaveFileCorrupted[] = _("因为先前游戏中的记录没有正确保存，\n将读取在那之前保存的那一份记录！");
+static const u8 gText_SaveFileErased[] = _("记录的内容消失了！"); //レポートのないようが　きえてしまった。
+static const u8 gJPText_No1MSubCircuit[] = _("1M的存档用电子基板未安装！");
+static const u8 gText_BatteryRunDry[] = _("因电池已经没电，\n所以时钟不会走动。\p与时钟相关的所有事件不会发生，\n但游戏依然可以继续游玩。");
 
-static const u8 gText_MainMenuNewGame[] = _("NEW GAME");
-static const u8 gText_MainMenuContinue[] = _("CONTINUE");
-static const u8 gText_MainMenuOption[] = _("OPTION");
-static const u8 gText_MainMenuMysteryGift[] = _("MYSTERY GIFT");
-static const u8 gText_MainMenuMysteryGift2[] = _("MYSTERY GIFT");
-static const u8 gText_MainMenuMysteryEvents[] = _("MYSTERY EVENTS");
-static const u8 gText_WirelessNotConnected[] = _("The Wireless Adapter is not\nconnected.");
-static const u8 gText_MysteryGiftCantUse[] = _("MYSTERY GIFT can't be used while\nthe Wireless Adapter is attached.");
-static const u8 gText_MysteryEventsCantUse[] = _("MYSTERY EVENTS can't be used while\nthe Wireless Adapter is attached.");
+static const u8 gText_MainMenuNewGame[] = _("从头开始");
+static const u8 gText_MainMenuContinue[] = _("从记录继续");
+static const u8 gText_MainMenuOption[] = _("改变设定");
+static const u8 gText_MainMenuMysteryGift[] = _("神秘礼物");
+static const u8 gText_MainMenuMysteryGift2[] = _("神秘礼物");
+static const u8 gText_MainMenuMysteryEvents[] = _("神秘事件");
+static const u8 gText_WirelessNotConnected[] = _("没有连接\n无线接收器！");
+static const u8 gText_MysteryGiftCantUse[] = _("因为没有连接无线接收器\n不能使用神秘礼物功能！");
+static const u8 gText_MysteryEventsCantUse[] = _("因为没有连接无线接收器\n不能使用神秘事件功能！");
 
-static const u8 gText_ContinueMenuPlayer[] = _("PLAYER");
-static const u8 gText_ContinueMenuTime[] = _("TIME");
-static const u8 gText_ContinueMenuPokedex[] = _("POKéDEX");
-static const u8 gText_ContinueMenuBadges[] = _("BADGES");
+static const u8 gText_ContinueMenuPlayer[] = _("主人公");
+static const u8 gText_ContinueMenuTime[] = _("冒险时间");
+static const u8 gText_ContinueMenuPokedex[] = _("宝可梦图鉴");
+static const u8 gText_ContinueMenuBadges[] = _("获得徽章");
+static const u8 gText_ContinueMenuHiki[] = _("只"); //精灵图鉴单位
+static const u8 gText_ContinueMenuKo[] = _("个"); //徽章单位
 
 #define MENU_LEFT 2
 #define MENU_TOP_WIN0 1
@@ -473,54 +475,54 @@ static const union AffineAnimCmd *const sSpriteAffineAnimTable_PlayerShrink[] =
 };
 
 static const struct MenuAction sMenuActions_Gender[] = {
-    {COMPOUND_STRING("BOY"), {NULL}},
-    {COMPOUND_STRING("GIRL"), {NULL}}
+    {COMPOUND_STRING("男孩"), {NULL}},
+    {COMPOUND_STRING("女孩"), {NULL}}
 };
 
 static const u8 *const sMalePresetNames[] = {
-    COMPOUND_STRING("STU"),
-    COMPOUND_STRING("MILTON"),
-    COMPOUND_STRING("TOM"),
-    COMPOUND_STRING("KENNY"),
-    COMPOUND_STRING("REID"),
-    COMPOUND_STRING("JUDE"),
-    COMPOUND_STRING("JAXSON"),
-    COMPOUND_STRING("EASTON"),
-    COMPOUND_STRING("WALKER"),
-    COMPOUND_STRING("TERU"),
-    COMPOUND_STRING("JOHNNY"),
-    COMPOUND_STRING("BRETT"),
-    COMPOUND_STRING("SETH"),
-    COMPOUND_STRING("TERRY"),
-    COMPOUND_STRING("CASEY"),
-    COMPOUND_STRING("DARREN"),
-    COMPOUND_STRING("LANDON"),
-    COMPOUND_STRING("COLLIN"),
-    COMPOUND_STRING("STANLEY"),
-    COMPOUND_STRING("QUINCY")
+    COMPOUND_STRING("逸雄"), //イツオ　逸男　逸雄
+    COMPOUND_STRING("阿玉"),//ギョク　玉
+    COMPOUND_STRING("阿启"),//ケイ　敬　啓
+    COMPOUND_STRING("秀作"),//シュウサク　修作　秀作
+    COMPOUND_STRING("清吾"),//セイゴ　清吾　正剛　
+    COMPOUND_STRING("大策"),//ダイサク　大策　大作
+    COMPOUND_STRING("隆仁"),//タカヒト　隆仁　貴仁
+    COMPOUND_STRING("达也"),//タツヤ　達也　龍也　辰也
+    COMPOUND_STRING("丹尼尔"),//ダニエル Danniel(英)
+    COMPOUND_STRING("辉树"),//テルキ　輝樹　照紀
+    COMPOUND_STRING("汤姆"),//トム　Tom(英)
+    COMPOUND_STRING("智也"),//トモヤ　智也　智哉　
+    COMPOUND_STRING("仁志"),//ヒトシ　仁　仁志
+    COMPOUND_STRING("弘明"),//ヒロアキ　弘明(海賊版)　宏明
+    COMPOUND_STRING("幸彦"),//ユキヒコ　幸彦　征彦
+    COMPOUND_STRING("拉尔德"),//ラルド Rald(英)元：エメラルド(Emerald)
+    COMPOUND_STRING("陆也"),//リクヤ　陸也
+    COMPOUND_STRING("理查德"),//リチャード Richard(英)
+    COMPOUND_STRING("隆"),//リュウ　龍　隆
+    COMPOUND_STRING("龙太")//リュウタ　龍太　隆太
 };
 
 static const u8 *const sFemalePresetNames[] = {
-    COMPOUND_STRING("KIMMY"),
-    COMPOUND_STRING("TIARA"),
-    COMPOUND_STRING("BELLA"),
-    COMPOUND_STRING("JAYLA"),
-    COMPOUND_STRING("ALLIE"),
-    COMPOUND_STRING("LIANNA"),
-    COMPOUND_STRING("SARA"),
-    COMPOUND_STRING("MONICA"),
-    COMPOUND_STRING("CAMILA"),
-    COMPOUND_STRING("AUBREE"),
-    COMPOUND_STRING("RUTHIE"),
-    COMPOUND_STRING("HAZEL"),
-    COMPOUND_STRING("NADINE"),
-    COMPOUND_STRING("TANJA"),
-    COMPOUND_STRING("YASMIN"),
-    COMPOUND_STRING("NICOLA"),
-    COMPOUND_STRING("LILLIE"),
-    COMPOUND_STRING("TERRA"),
-    COMPOUND_STRING("LUCY"),
-    COMPOUND_STRING("HALIE")
+    COMPOUND_STRING("爱子"),//アイコ　愛子
+    COMPOUND_STRING("绫奈"),//アヤナ　綾波　綾奈
+    COMPOUND_STRING("小安"),//アン Ann(英)
+    COMPOUND_STRING("艾米"),//エミィ Emmy　(英)
+    COMPOUND_STRING("香织"),//カオリ　香里　香織　
+    COMPOUND_STRING("卡琳"),//カレン　(英)
+    COMPOUND_STRING("京子"),//キョウコ　京子
+    COMPOUND_STRING("沙枝"),//サエ　紗枝　三枝
+    COMPOUND_STRING("翠翠"),//スイ　翠　水
+    COMPOUND_STRING("珠莉"),//ジュリ　寿莉　樹莉　珠莉　ジュエリー Jewelry(英)
+    COMPOUND_STRING("千惠美"),//チエミ　千恵美　智恵美
+    COMPOUND_STRING("千代子"),//チヨコ　千代子
+    COMPOUND_STRING("辉子"),//テルコ　照子　輝子
+    COMPOUND_STRING("七惠"),//ナナエ　七恵　奈々恵　奈苗　菜々恵
+    COMPOUND_STRING("日向"),//ヒナ　日向　陽菜
+    COMPOUND_STRING("真纪子"),//マキコ　真紀子　牧子
+    COMPOUND_STRING("美佐子"),//ミサコ　美佐子　美沙子
+    COMPOUND_STRING("睦美"),//ムツミ　睦美(陸美？)　六実
+    COMPOUND_STRING("莫尼卡"),//モニカ　Monica(英)
+    COMPOUND_STRING("悠芽")//ユウメ　優芽　悠芽　
 };
 
 // The number of male vs. female names is assumed to be the same.
@@ -2190,6 +2192,8 @@ static void MainMenu_FormatSavegamePokedex(void)
         StringExpandPlaceholders(gStringVar4, gText_ContinueMenuPokedex);
         AddTextPrinterParameterized3(2, FONT_NORMAL, 0, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4);
         ConvertIntToDecimalStringN(str, dexCount, STR_CONV_MODE_LEFT_ALIGN, 4);
+        //修改，增加图鉴单位显示
+        StringAppend(str, gText_ContinueMenuHiki);
         AddTextPrinterParameterized3(2, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, str, 100), 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str);
     }
 }
@@ -2208,6 +2212,8 @@ static void MainMenu_FormatSavegameBadges(void)
     StringExpandPlaceholders(gStringVar4, gText_ContinueMenuBadges);
     AddTextPrinterParameterized3(2, FONT_NORMAL, 0x6C, 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, gStringVar4);
     ConvertIntToDecimalStringN(str, badgeCount, STR_CONV_MODE_LEADING_ZEROS, 1);
+    //修改，增加徽章单位显示
+    StringAppend(str, gText_ContinueMenuKo);
     AddTextPrinterParameterized3(2, FONT_NORMAL, GetStringRightAlignXOffset(FONT_NORMAL, str, 0xD0), 33, sTextColor_MenuInfo, TEXT_SKIP_DRAW, str);
 }
 

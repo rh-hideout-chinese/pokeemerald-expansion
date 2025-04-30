@@ -29,7 +29,7 @@
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_1] =
     {
 #line 85
-        .trainerName = _("SAWYER"),
+        .trainerName = _("雅彦"),
 #line 86
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 87
@@ -61,7 +61,7 @@
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_1] =
     {
 #line 98
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 99
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 100
@@ -93,7 +93,7 @@
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_2] =
     {
 #line 111
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 112
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 113
@@ -136,7 +136,7 @@
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_3] =
     {
 #line 128
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 129
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 130
@@ -168,7 +168,7 @@
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_4] =
     {
 #line 141
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 142
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 143
@@ -200,7 +200,7 @@
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_1] =
     {
 #line 154
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 155
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 156
@@ -232,7 +232,7 @@
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_2] =
     {
 #line 167
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 168
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 169
@@ -264,7 +264,7 @@
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_3] =
     {
 #line 180
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 181
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 182
@@ -296,7 +296,7 @@
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_1] =
     {
 #line 193
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("福美"),
 #line 194
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 195
@@ -385,7 +385,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_PETALBURG_WOODS] =
     {
 #line 226
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 227
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 228
@@ -417,7 +417,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARCEL] =
     {
 #line 239
-        .trainerName = _("MARCEL"),
+        .trainerName = _("节夫"),
 #line 240
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 241
@@ -462,7 +462,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALBERTO] =
     {
 #line 257
-        .trainerName = _("ALBERTO"),
+        .trainerName = _("洋介"),
 #line 258
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 259
@@ -505,7 +505,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ED] =
     {
 #line 274
-        .trainerName = _("ED"),
+        .trainerName = _("杰"),
 #line 275
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 276
@@ -548,7 +548,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_4] =
     {
 #line 291
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 292
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 293
@@ -582,7 +582,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DECLAN] =
     {
 #line 304
-        .trainerName = _("DECLAN"),
+        .trainerName = _("一平"),
 #line 305
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 306
@@ -614,7 +614,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_RUSTURF_TUNNEL] =
     {
 #line 317
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 318
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 319
@@ -646,7 +646,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_1] =
     {
 #line 330
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 331
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 332
@@ -689,7 +689,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_2] =
     {
 #line 347
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 348
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 349
@@ -732,7 +732,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_3] =
     {
 #line 364
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 365
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 366
@@ -786,7 +786,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_1] =
     {
 #line 385
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 386
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 387
@@ -818,7 +818,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MUSEUM_2] =
     {
 #line 398
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 399
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 400
@@ -861,7 +861,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_1] =
     {
 #line 415
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 416
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 417
@@ -893,7 +893,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_1] =
     {
 #line 428
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 429
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 430
@@ -925,7 +925,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_2] =
     {
 #line 441
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 442
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 443
@@ -957,7 +957,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_3] =
     {
 #line 454
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 455
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 456
@@ -1000,7 +1000,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_4] =
     {
 #line 471
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 472
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 473
@@ -1034,7 +1034,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_5] =
     {
 #line 484
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 485
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 486
@@ -1068,7 +1068,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_6] =
     {
 #line 497
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 498
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 499
@@ -1102,7 +1102,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FREDRICK] =
     {
 #line 510
-        .trainerName = _("FREDRICK"),
+        .trainerName = _("寿茂"),
 #line 511
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 512
@@ -1145,7 +1145,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MATT] =
     {
 #line 527
-        .trainerName = _("MATT"),
+        .trainerName = _("阿潮"),
 #line 528
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 529
@@ -1190,7 +1190,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ZANDER] =
     {
 #line 545
-        .trainerName = _("ZANDER"),
+        .trainerName = _("良治"),
 #line 546
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 547
@@ -1222,7 +1222,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHELLY_WEATHER_INSTITUTE] =
     {
 #line 558
-        .trainerName = _("SHELLY"),
+        .trainerName = _("阿泉"),
 #line 559
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 560
@@ -1267,7 +1267,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHELLY_SEAFLOOR_CAVERN] =
     {
 #line 575
-        .trainerName = _("SHELLY"),
+        .trainerName = _("阿泉"),
 #line 576
         .trainerClass = TRAINER_CLASS_AQUA_ADMIN,
 #line 577
@@ -1312,7 +1312,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ARCHIE] =
     {
 #line 592
-        .trainerName = _("ARCHIE"),
+        .trainerName = _("水梧桐"),
 #line 593
         .trainerClass = TRAINER_CLASS_AQUA_LEADER,
 #line 594
@@ -1368,7 +1368,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LEAH] =
     {
 #line 614
-        .trainerName = _("LEAH"),
+        .trainerName = _("绘美"),
 #line 615
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 616
@@ -1402,7 +1402,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DAISY] =
     {
 #line 627
-        .trainerName = _("DAISY"),
+        .trainerName = _("美鸟"),
 #line 628
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 629
@@ -1447,7 +1447,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROSE_1] =
     {
 #line 644
-        .trainerName = _("ROSE"),
+        .trainerName = _("弥生"),
 #line 645
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 646
@@ -1503,7 +1503,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FELIX] =
     {
 #line 665
-        .trainerName = _("FELIX"),
+        .trainerName = _("幸次郎"),
 #line 666
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 667
@@ -1557,7 +1557,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VIOLET] =
     {
 #line 686
-        .trainerName = _("VIOLET"),
+        .trainerName = _("千鹤"),
 #line 687
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 688
@@ -1602,7 +1602,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROSE_2] =
     {
 #line 703
-        .trainerName = _("ROSE"),
+        .trainerName = _("弥生"),
 #line 704
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 705
@@ -1647,7 +1647,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROSE_3] =
     {
 #line 720
-        .trainerName = _("ROSE"),
+        .trainerName = _("弥生"),
 #line 721
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 722
@@ -1703,7 +1703,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROSE_4] =
     {
 #line 741
-        .trainerName = _("ROSE"),
+        .trainerName = _("弥生"),
 #line 742
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 743
@@ -1759,7 +1759,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROSE_5] =
     {
 #line 762
-        .trainerName = _("ROSE"),
+        .trainerName = _("弥生"),
 #line 763
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 764
@@ -1815,7 +1815,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_1] =
     {
 #line 783
-        .trainerName = _("DUSTY"),
+        .trainerName = _("伸夫"),
 #line 784
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 785
@@ -1854,7 +1854,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHIP] =
     {
 #line 800
-        .trainerName = _("CHIP"),
+        .trainerName = _("圭一"),
 #line 801
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 802
@@ -1929,7 +1929,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FOSTER] =
     {
 #line 833
-        .trainerName = _("FOSTER"),
+        .trainerName = _("秋人"),
 #line 834
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 835
@@ -1986,7 +1986,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_2] =
     {
 #line 858
-        .trainerName = _("DUSTY"),
+        .trainerName = _("伸夫"),
 #line 859
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 860
@@ -2025,7 +2025,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_3] =
     {
 #line 875
-        .trainerName = _("DUSTY"),
+        .trainerName = _("伸夫"),
 #line 876
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 877
@@ -2064,7 +2064,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_4] =
     {
 #line 892
-        .trainerName = _("DUSTY"),
+        .trainerName = _("伸夫"),
 #line 893
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 894
@@ -2103,7 +2103,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DUSTY_5] =
     {
 #line 909
-        .trainerName = _("DUSTY"),
+        .trainerName = _("伸夫"),
 #line 910
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 911
@@ -2142,7 +2142,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_1] =
     {
 #line 926
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("玛莉和达伊"),
 #line 927
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 928
@@ -2185,7 +2185,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_2] =
     {
 #line 943
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("玛莉和达伊"),
 #line 944
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 945
@@ -2228,7 +2228,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_3] =
     {
 #line 960
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("玛莉和达伊"),
 #line 961
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 962
@@ -2271,7 +2271,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_4] =
     {
 #line 977
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("玛莉和达伊"),
 #line 978
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 979
@@ -2314,7 +2314,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_5] =
     {
 #line 994
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("玛莉和达伊"),
 #line 995
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 996
@@ -2357,7 +2357,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABBY_AND_TY_6] =
     {
 #line 1011
-        .trainerName = _("GABBY & TY"),
+        .trainerName = _("玛莉和达伊"),
 #line 1012
         .trainerClass = TRAINER_CLASS_INTERVIEWER,
 #line 1013
@@ -2414,7 +2414,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LOLA_1] =
     {
 #line 1036
-        .trainerName = _("LOLA"),
+        .trainerName = _("亚由美"),
 #line 1037
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1038
@@ -2459,7 +2459,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AUSTINA] =
     {
 #line 1053
-        .trainerName = _("AUSTINA"),
+        .trainerName = _("博美"),
 #line 1054
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1055
@@ -2493,7 +2493,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GWEN] =
     {
 #line 1066
-        .trainerName = _("GWEN"),
+        .trainerName = _("小望"),
 #line 1067
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1068
@@ -2527,7 +2527,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LOLA_2] =
     {
 #line 1079
-        .trainerName = _("LOLA"),
+        .trainerName = _("亚由美"),
 #line 1080
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1081
@@ -2572,7 +2572,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LOLA_3] =
     {
 #line 1096
-        .trainerName = _("LOLA"),
+        .trainerName = _("亚由美"),
 #line 1097
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1098
@@ -2617,7 +2617,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LOLA_4] =
     {
 #line 1113
-        .trainerName = _("LOLA"),
+        .trainerName = _("亚由美"),
 #line 1114
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1115
@@ -2662,7 +2662,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LOLA_5] =
     {
 #line 1130
-        .trainerName = _("LOLA"),
+        .trainerName = _("亚由美"),
 #line 1131
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 1132
@@ -2707,7 +2707,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RICKY_1] =
     {
 #line 1147
-        .trainerName = _("RICKY"),
+        .trainerName = _("裕太"),
 #line 1148
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1149
@@ -2746,7 +2746,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SIMON] =
     {
 #line 1164
-        .trainerName = _("SIMON"),
+        .trainerName = _("安信"),
 #line 1165
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1166
@@ -2789,7 +2789,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHARLIE] =
     {
 #line 1181
-        .trainerName = _("CHARLIE"),
+        .trainerName = _("学武"),
 #line 1182
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1183
@@ -2821,7 +2821,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RICKY_2] =
     {
 #line 1194
-        .trainerName = _("RICKY"),
+        .trainerName = _("裕太"),
 #line 1195
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1196
@@ -2860,7 +2860,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RICKY_3] =
     {
 #line 1211
-        .trainerName = _("RICKY"),
+        .trainerName = _("裕太"),
 #line 1212
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1213
@@ -2899,7 +2899,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RICKY_4] =
     {
 #line 1228
-        .trainerName = _("RICKY"),
+        .trainerName = _("裕太"),
 #line 1229
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1230
@@ -2938,7 +2938,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RICKY_5] =
     {
 #line 1245
-        .trainerName = _("RICKY"),
+        .trainerName = _("裕太"),
 #line 1246
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 1247
@@ -2977,7 +2977,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RANDALL] =
     {
 #line 1262
-        .trainerName = _("RANDALL"),
+        .trainerName = _("俊树"),
 #line 1263
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1264
@@ -3017,7 +3017,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PARKER] =
     {
 #line 1279
-        .trainerName = _("PARKER"),
+        .trainerName = _("秀树"),
 #line 1280
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1281
@@ -3057,7 +3057,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GEORGE] =
     {
 #line 1296
-        .trainerName = _("GEORGE"),
+        .trainerName = _("数马"),
 #line 1297
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1298
@@ -3099,7 +3099,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BERKE] =
     {
 #line 1313
-        .trainerName = _("BERKE"),
+        .trainerName = _("直树"),
 #line 1314
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1315
@@ -3138,7 +3138,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRAXTON] =
     {
 #line 1329
-        .trainerName = _("BRAXTON"),
+        .trainerName = _("义雄"),
 #line 1330
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1331
@@ -3251,7 +3251,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VINCENT] =
     {
 #line 1379
-        .trainerName = _("VINCENT"),
+        .trainerName = _("祐翔"),
 #line 1380
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1381
@@ -3307,7 +3307,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LEROY] =
     {
 #line 1401
-        .trainerName = _("LEROY"),
+        .trainerName = _("诚"),
 #line 1402
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1403
@@ -3352,7 +3352,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WILTON_1] =
     {
 #line 1419
-        .trainerName = _("WILTON"),
+        .trainerName = _("裕介"),
 #line 1420
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1421
@@ -3408,7 +3408,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDGAR] =
     {
 #line 1441
-        .trainerName = _("EDGAR"),
+        .trainerName = _("光辉"),
 #line 1442
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1443
@@ -3453,7 +3453,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALBERT] =
     {
 #line 1459
-        .trainerName = _("ALBERT"),
+        .trainerName = _("胜"),
 #line 1460
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1461
@@ -3498,7 +3498,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SAMUEL] =
     {
 #line 1477
-        .trainerName = _("SAMUEL"),
+        .trainerName = _("拓也"),
 #line 1478
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1479
@@ -3554,7 +3554,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VITO] =
     {
 #line 1499
-        .trainerName = _("VITO"),
+        .trainerName = _("良平"),
 #line 1500
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1501
@@ -3621,7 +3621,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_OWEN] =
     {
 #line 1525
-        .trainerName = _("OWEN"),
+        .trainerName = _("翔"),
 #line 1526
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1527
@@ -3677,7 +3677,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WILTON_2] =
     {
 #line 1547
-        .trainerName = _("WILTON"),
+        .trainerName = _("裕介"),
 #line 1548
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1549
@@ -3733,7 +3733,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WILTON_3] =
     {
 #line 1569
-        .trainerName = _("WILTON"),
+        .trainerName = _("裕介"),
 #line 1570
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1571
@@ -3789,7 +3789,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WILTON_4] =
     {
 #line 1591
-        .trainerName = _("WILTON"),
+        .trainerName = _("裕介"),
 #line 1592
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1593
@@ -3845,7 +3845,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WILTON_5] =
     {
 #line 1613
-        .trainerName = _("WILTON"),
+        .trainerName = _("裕介"),
 #line 1614
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1615
@@ -3901,7 +3901,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WARREN] =
     {
 #line 1635
-        .trainerName = _("WARREN"),
+        .trainerName = _("礼司"),
 #line 1636
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1637
@@ -3946,7 +3946,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARY] =
     {
 #line 1653
-        .trainerName = _("MARY"),
+        .trainerName = _("绫香"),
 #line 1654
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1655
@@ -3987,7 +3987,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALEXIA] =
     {
 #line 1669
-        .trainerName = _("ALEXIA"),
+        .trainerName = _("海晴"),
 #line 1670
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1671
@@ -4029,7 +4029,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JODY] =
     {
 #line 1686
-        .trainerName = _("JODY"),
+        .trainerName = _("沙织"),
 #line 1687
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1688
@@ -4070,7 +4070,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WENDY] =
     {
 #line 1702
-        .trainerName = _("WENDY"),
+        .trainerName = _("刹那"),
 #line 1703
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1704
@@ -4149,7 +4149,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KEIRA] =
     {
 #line 1736
-        .trainerName = _("KEIRA"),
+        .trainerName = _("安娜"),
 #line 1737
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1738
@@ -4196,7 +4196,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_1] =
     {
 #line 1754
-        .trainerName = _("BROOKE"),
+        .trainerName = _("真理亚"),
 #line 1755
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1756
@@ -4254,7 +4254,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JENNIFER] =
     {
 #line 1776
-        .trainerName = _("JENNIFER"),
+        .trainerName = _("弥生子"),
 #line 1777
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1778
@@ -4290,7 +4290,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HOPE] =
     {
 #line 1790
-        .trainerName = _("HOPE"),
+        .trainerName = _("爱理"),
 #line 1791
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1792
@@ -4326,7 +4326,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHANNON] =
     {
 #line 1804
-        .trainerName = _("SHANNON"),
+        .trainerName = _("绘理子"),
 #line 1805
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1806
@@ -4362,7 +4362,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MICHELLE] =
     {
 #line 1818
-        .trainerName = _("MICHELLE"),
+        .trainerName = _("和美"),
 #line 1819
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1820
@@ -4420,7 +4420,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAROLINE] =
     {
 #line 1840
-        .trainerName = _("CAROLINE"),
+        .trainerName = _("绯月"),
 #line 1841
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1842
@@ -4467,7 +4467,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JULIE] =
     {
 #line 1858
-        .trainerName = _("JULIE"),
+        .trainerName = _("琴美"),
 #line 1859
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1860
@@ -4525,7 +4525,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_2] =
     {
 #line 1880
-        .trainerName = _("BROOKE"),
+        .trainerName = _("真理亚"),
 #line 1881
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1882
@@ -4583,7 +4583,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_3] =
     {
 #line 1902
-        .trainerName = _("BROOKE"),
+        .trainerName = _("真理亚"),
 #line 1903
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1904
@@ -4641,7 +4641,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_4] =
     {
 #line 1924
-        .trainerName = _("BROOKE"),
+        .trainerName = _("真理亚"),
 #line 1925
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1926
@@ -4699,7 +4699,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BROOKE_5] =
     {
 #line 1946
-        .trainerName = _("BROOKE"),
+        .trainerName = _("真理亚"),
 #line 1947
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 1948
@@ -4757,7 +4757,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PATRICIA] =
     {
 #line 1968
-        .trainerName = _("PATRICIA"),
+        .trainerName = _("采音"),
 #line 1969
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 1970
@@ -4802,7 +4802,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KINDRA] =
     {
 #line 1985
-        .trainerName = _("KINDRA"),
+        .trainerName = _("祥子"),
 #line 1986
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 1987
@@ -4847,7 +4847,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TAMMY] =
     {
 #line 2002
-        .trainerName = _("TAMMY"),
+        .trainerName = _("命"),
 #line 2003
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2004
@@ -4892,7 +4892,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_1] =
     {
 #line 2019
-        .trainerName = _("VALERIE"),
+        .trainerName = _("穗乃佳"),
 #line 2020
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2021
@@ -4926,7 +4926,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TASHA] =
     {
 #line 2032
-        .trainerName = _("TASHA"),
+        .trainerName = _("穗多琉"),
 #line 2033
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2034
@@ -4960,7 +4960,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_2] =
     {
 #line 2045
-        .trainerName = _("VALERIE"),
+        .trainerName = _("穗乃佳"),
 #line 2046
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2047
@@ -5005,7 +5005,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_3] =
     {
 #line 2062
-        .trainerName = _("VALERIE"),
+        .trainerName = _("穗乃佳"),
 #line 2063
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2064
@@ -5050,7 +5050,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_4] =
     {
 #line 2079
-        .trainerName = _("VALERIE"),
+        .trainerName = _("穗乃佳"),
 #line 2080
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2081
@@ -5095,7 +5095,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VALERIE_5] =
     {
 #line 2096
-        .trainerName = _("VALERIE"),
+        .trainerName = _("穗乃佳"),
 #line 2097
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 2098
@@ -5151,7 +5151,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CINDY_1] =
     {
 #line 2117
-        .trainerName = _("CINDY"),
+        .trainerName = _("丽华"),
 #line 2118
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2119
@@ -5189,7 +5189,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DAPHNE] =
     {
 #line 2131
-        .trainerName = _("DAPHNE"),
+        .trainerName = _("咏歌"),
 #line 2132
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2133
@@ -5254,7 +5254,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_2] =
     {
 #line 2157
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 2158
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 2159
@@ -5308,7 +5308,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CINDY_2] =
     {
 #line 2178
-        .trainerName = _("CINDY"),
+        .trainerName = _("丽华"),
 #line 2179
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2180
@@ -5351,7 +5351,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRIANNA] =
     {
 #line 2194
-        .trainerName = _("BRIANNA"),
+        .trainerName = _("诗织"),
 #line 2195
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2196
@@ -5389,7 +5389,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NAOMI] =
     {
 #line 2208
-        .trainerName = _("NAOMI"),
+        .trainerName = _("小百合"),
 #line 2209
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2210
@@ -5427,7 +5427,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CINDY_3] =
     {
 #line 2222
-        .trainerName = _("CINDY"),
+        .trainerName = _("丽华"),
 #line 2223
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2224
@@ -5465,7 +5465,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CINDY_4] =
     {
 #line 2236
-        .trainerName = _("CINDY"),
+        .trainerName = _("丽华"),
 #line 2237
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2238
@@ -5503,7 +5503,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CINDY_5] =
     {
 #line 2250
-        .trainerName = _("CINDY"),
+        .trainerName = _("丽华"),
 #line 2251
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2252
@@ -5541,7 +5541,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CINDY_6] =
     {
 #line 2264
-        .trainerName = _("CINDY"),
+        .trainerName = _("丽华"),
 #line 2265
         .trainerClass = TRAINER_CLASS_LADY,
 #line 2266
@@ -5586,7 +5586,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MELISSA] =
     {
 #line 2282
-        .trainerName = _("MELISSA"),
+        .trainerName = _("惠美"),
 #line 2283
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2284
@@ -5620,7 +5620,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHEILA] =
     {
 #line 2295
-        .trainerName = _("SHEILA"),
+        .trainerName = _("国美"),
 #line 2296
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2297
@@ -5654,7 +5654,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHIRLEY] =
     {
 #line 2308
-        .trainerName = _("SHIRLEY"),
+        .trainerName = _("朝美"),
 #line 2309
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2310
@@ -5688,7 +5688,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_1] =
     {
 #line 2321
-        .trainerName = _("JESSICA"),
+        .trainerName = _("依子"),
 #line 2322
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2323
@@ -5747,7 +5747,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CONNIE] =
     {
 #line 2346
-        .trainerName = _("CONNIE"),
+        .trainerName = _("眉子"),
 #line 2347
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2348
@@ -5781,7 +5781,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRIDGET] =
     {
 #line 2359
-        .trainerName = _("BRIDGET"),
+        .trainerName = _("清子"),
 #line 2360
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2361
@@ -5815,7 +5815,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_OLIVIA] =
     {
 #line 2372
-        .trainerName = _("OLIVIA"),
+        .trainerName = _("直子"),
 #line 2373
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2374
@@ -5891,7 +5891,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TIFFANY] =
     {
 #line 2404
-        .trainerName = _("TIFFANY"),
+        .trainerName = _("春子"),
 #line 2405
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2406
@@ -5936,7 +5936,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_2] =
     {
 #line 2421
-        .trainerName = _("JESSICA"),
+        .trainerName = _("依子"),
 #line 2422
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2423
@@ -5995,7 +5995,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_3] =
     {
 #line 2446
-        .trainerName = _("JESSICA"),
+        .trainerName = _("依子"),
 #line 2447
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2448
@@ -6054,7 +6054,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_4] =
     {
 #line 2471
-        .trainerName = _("JESSICA"),
+        .trainerName = _("依子"),
 #line 2472
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2473
@@ -6113,7 +6113,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JESSICA_5] =
     {
 #line 2496
-        .trainerName = _("JESSICA"),
+        .trainerName = _("依子"),
 #line 2497
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2498
@@ -6172,7 +6172,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_1] =
     {
 #line 2521
-        .trainerName = _("WINSTON"),
+        .trainerName = _("小贡"),
 #line 2522
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 2523
@@ -6208,7 +6208,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MOLLIE] =
     {
 #line 2535
-        .trainerName = _("MOLLIE"),
+        .trainerName = _("奈江"),
 #line 2536
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 2537
@@ -6253,7 +6253,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GARRET] =
     {
 #line 2552
-        .trainerName = _("GARRET"),
+        .trainerName = _("祥一"),
 #line 2553
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 2554
@@ -6289,7 +6289,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_2] =
     {
 #line 2566
-        .trainerName = _("WINSTON"),
+        .trainerName = _("小贡"),
 #line 2567
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 2568
@@ -6325,7 +6325,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_3] =
     {
 #line 2580
-        .trainerName = _("WINSTON"),
+        .trainerName = _("小贡"),
 #line 2581
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 2582
@@ -6361,7 +6361,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_4] =
     {
 #line 2594
-        .trainerName = _("WINSTON"),
+        .trainerName = _("小贡"),
 #line 2595
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 2596
@@ -6397,7 +6397,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINSTON_5] =
     {
 #line 2608
-        .trainerName = _("WINSTON"),
+        .trainerName = _("小贡"),
 #line 2609
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 2610
@@ -6440,7 +6440,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_STEVE_1] =
     {
 #line 2626
-        .trainerName = _("STEVE"),
+        .trainerName = _("俊夫"),
 #line 2627
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 2628
@@ -6472,7 +6472,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_THALIA_1] =
     {
 #line 2639
-        .trainerName = _("THALIA"),
+        .trainerName = _("睫"),
 #line 2640
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 2641
@@ -6517,7 +6517,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARK] =
     {
 #line 2656
-        .trainerName = _("MARK"),
+        .trainerName = _("基文"),
 #line 2657
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 2658
@@ -6549,7 +6549,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_CHIMNEY_1] =
     {
 #line 2669
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 2670
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 2671
@@ -6583,7 +6583,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_STEVE_2] =
     {
 #line 2682
-        .trainerName = _("STEVE"),
+        .trainerName = _("俊夫"),
 #line 2683
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 2684
@@ -6615,7 +6615,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_STEVE_3] =
     {
 #line 2695
-        .trainerName = _("STEVE"),
+        .trainerName = _("俊夫"),
 #line 2696
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 2697
@@ -6658,7 +6658,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_STEVE_4] =
     {
 #line 2712
-        .trainerName = _("STEVE"),
+        .trainerName = _("俊夫"),
 #line 2713
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 2714
@@ -6701,7 +6701,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_STEVE_5] =
     {
 #line 2729
-        .trainerName = _("STEVE"),
+        .trainerName = _("俊夫"),
 #line 2730
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 2731
@@ -6744,7 +6744,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LUIS] =
     {
 #line 2746
-        .trainerName = _("LUIS"),
+        .trainerName = _("洋平"),
 #line 2747
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2748
@@ -6776,7 +6776,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DOMINIK] =
     {
 #line 2759
-        .trainerName = _("DOMINIK"),
+        .trainerName = _("弘道"),
 #line 2760
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2761
@@ -6808,7 +6808,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DOUGLAS] =
     {
 #line 2772
-        .trainerName = _("DOUGLAS"),
+        .trainerName = _("辰夫"),
 #line 2773
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2774
@@ -6851,7 +6851,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DARRIN] =
     {
 #line 2789
-        .trainerName = _("DARRIN"),
+        .trainerName = _("照幸"),
 #line 2790
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2791
@@ -6905,7 +6905,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TONY_1] =
     {
 #line 2810
-        .trainerName = _("TONY"),
+        .trainerName = _("英一"),
 #line 2811
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2812
@@ -6937,7 +6937,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JEROME] =
     {
 #line 2823
-        .trainerName = _("JEROME"),
+        .trainerName = _("森男"),
 #line 2824
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2825
@@ -6969,7 +6969,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MATTHEW] =
     {
 #line 2836
-        .trainerName = _("MATTHEW"),
+        .trainerName = _("国彦"),
 #line 2837
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2838
@@ -7001,7 +7001,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DAVID] =
     {
 #line 2849
-        .trainerName = _("DAVID"),
+        .trainerName = _("健一"),
 #line 2850
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2851
@@ -7044,7 +7044,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SPENCER] =
     {
 #line 2866
-        .trainerName = _("SPENCER"),
+        .trainerName = _("稔洋"),
 #line 2867
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2868
@@ -7087,7 +7087,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROLAND] =
     {
 #line 2883
-        .trainerName = _("ROLAND"),
+        .trainerName = _("正稔"),
 #line 2884
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2885
@@ -7119,7 +7119,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NOLEN] =
     {
 #line 2896
-        .trainerName = _("NOLEN"),
+        .trainerName = _("信夫"),
 #line 2897
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2898
@@ -7151,7 +7151,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_STAN] =
     {
 #line 2909
-        .trainerName = _("STAN"),
+        .trainerName = _("圭史"),
 #line 2910
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2911
@@ -7183,7 +7183,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BARRY] =
     {
 #line 2922
-        .trainerName = _("BARRY"),
+        .trainerName = _("学人"),
 #line 2923
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2924
@@ -7215,7 +7215,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DEAN] =
     {
 #line 2935
-        .trainerName = _("DEAN"),
+        .trainerName = _("烈日"),
 #line 2936
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2937
@@ -7269,7 +7269,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RODNEY] =
     {
 #line 2956
-        .trainerName = _("RODNEY"),
+        .trainerName = _("正洋"),
 #line 2957
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2958
@@ -7301,7 +7301,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RICHARD] =
     {
 #line 2969
-        .trainerName = _("RICHARD"),
+        .trainerName = _("春树"),
 #line 2970
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2971
@@ -7333,7 +7333,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HERMAN] =
     {
 #line 2982
-        .trainerName = _("HERMAN"),
+        .trainerName = _("大辅"),
 #line 2983
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 2984
@@ -7376,7 +7376,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SANTIAGO] =
     {
 #line 2999
-        .trainerName = _("SANTIAGO"),
+        .trainerName = _("慎二"),
 #line 3000
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3001
@@ -7419,7 +7419,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GILBERT] =
     {
 #line 3016
-        .trainerName = _("GILBERT"),
+        .trainerName = _("豪"),
 #line 3017
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3018
@@ -7451,7 +7451,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FRANKLIN] =
     {
 #line 3029
-        .trainerName = _("FRANKLIN"),
+        .trainerName = _("茂雄"),
 #line 3030
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3031
@@ -7483,7 +7483,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KEVIN] =
     {
 #line 3042
-        .trainerName = _("KEVIN"),
+        .trainerName = _("勉"),
 #line 3043
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3044
@@ -7515,7 +7515,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACK] =
     {
 #line 3055
-        .trainerName = _("JACK"),
+        .trainerName = _("秀典"),
 #line 3056
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3057
@@ -7547,7 +7547,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DUDLEY] =
     {
 #line 3068
-        .trainerName = _("DUDLEY"),
+        .trainerName = _("德雄"),
 #line 3069
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3070
@@ -7601,7 +7601,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHAD] =
     {
 #line 3089
-        .trainerName = _("CHAD"),
+        .trainerName = _("克之"),
 #line 3090
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3091
@@ -7644,7 +7644,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TONY_2] =
     {
 #line 3106
-        .trainerName = _("TONY"),
+        .trainerName = _("英一"),
 #line 3107
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3108
@@ -7676,7 +7676,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TONY_3] =
     {
 #line 3119
-        .trainerName = _("TONY"),
+        .trainerName = _("英一"),
 #line 3120
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3121
@@ -7708,7 +7708,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TONY_4] =
     {
 #line 3132
-        .trainerName = _("TONY"),
+        .trainerName = _("英一"),
 #line 3133
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3134
@@ -7751,7 +7751,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TONY_5] =
     {
 #line 3149
-        .trainerName = _("TONY"),
+        .trainerName = _("英一"),
 #line 3150
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 3151
@@ -7794,7 +7794,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TAKAO] =
     {
 #line 3166
-        .trainerName = _("TAKAO"),
+        .trainerName = _("大庆"),
 #line 3167
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3168
@@ -7826,7 +7826,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HITOSHI] =
     {
 #line 3179
-        .trainerName = _("HITOSHI"),
+        .trainerName = _("岩冈"),
 #line 3180
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3181
@@ -7869,7 +7869,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KIYO] =
     {
 #line 3196
-        .trainerName = _("KIYO"),
+        .trainerName = _("拓马"),
 #line 3197
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3198
@@ -7901,7 +7901,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KOICHI] =
     {
 #line 3209
-        .trainerName = _("KOICHI"),
+        .trainerName = _("武德"),
 #line 3210
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3211
@@ -7944,7 +7944,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NOB_1] =
     {
 #line 3226
-        .trainerName = _("NOB"),
+        .trainerName = _("吾郎"),
 #line 3227
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3228
@@ -7976,7 +7976,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NOB_2] =
     {
 #line 3239
-        .trainerName = _("NOB"),
+        .trainerName = _("吾郎"),
 #line 3240
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3241
@@ -8008,7 +8008,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NOB_3] =
     {
 #line 3252
-        .trainerName = _("NOB"),
+        .trainerName = _("吾郎"),
 #line 3253
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3254
@@ -8051,7 +8051,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NOB_4] =
     {
 #line 3269
-        .trainerName = _("NOB"),
+        .trainerName = _("吾郎"),
 #line 3270
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3271
@@ -8105,7 +8105,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NOB_5] =
     {
 #line 3290
-        .trainerName = _("NOB"),
+        .trainerName = _("吾郎"),
 #line 3291
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3292
@@ -8172,7 +8172,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_YUJI] =
     {
 #line 3315
-        .trainerName = _("YUJI"),
+        .trainerName = _("和嗣"),
 #line 3316
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3317
@@ -8215,7 +8215,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DAISUKE] =
     {
 #line 3332
-        .trainerName = _("DAISUKE"),
+        .trainerName = _("正"),
 #line 3333
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3334
@@ -8247,7 +8247,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ATSUSHI] =
     {
 #line 3345
-        .trainerName = _("ATSUSHI"),
+        .trainerName = _("哲久"),
 #line 3346
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 3347
@@ -8279,7 +8279,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KIRK] =
     {
 #line 3358
-        .trainerName = _("KIRK"),
+        .trainerName = _("乔治"),
 #line 3359
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3360
@@ -8335,7 +8335,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_7] =
     {
 #line 3382
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 3383
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 3384
@@ -8380,7 +8380,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_AQUA_HIDEOUT_8] =
     {
 #line 3399
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 3400
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 3401
@@ -8412,7 +8412,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHAWN] =
     {
 #line 3412
-        .trainerName = _("SHAWN"),
+        .trainerName = _("麦克"),
 #line 3413
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3414
@@ -8455,7 +8455,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_1] =
     {
 #line 3429
-        .trainerName = _("FERNANDO"),
+        .trainerName = _("乔"),
 #line 3430
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3431
@@ -8498,7 +8498,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DALTON_1] =
     {
 #line 3446
-        .trainerName = _("DALTON"),
+        .trainerName = _("泰瑞"),
 #line 3447
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3448
@@ -8541,7 +8541,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DALTON_2] =
     {
 #line 3463
-        .trainerName = _("DALTON"),
+        .trainerName = _("泰瑞"),
 #line 3464
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3465
@@ -8595,7 +8595,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DALTON_3] =
     {
 #line 3484
-        .trainerName = _("DALTON"),
+        .trainerName = _("泰瑞"),
 #line 3485
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3486
@@ -8649,7 +8649,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DALTON_4] =
     {
 #line 3505
-        .trainerName = _("DALTON"),
+        .trainerName = _("泰瑞"),
 #line 3506
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3507
@@ -8703,7 +8703,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DALTON_5] =
     {
 #line 3526
-        .trainerName = _("DALTON"),
+        .trainerName = _("泰瑞"),
 #line 3527
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 3528
@@ -8757,7 +8757,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_COLE] =
     {
 #line 3547
-        .trainerName = _("COLE"),
+        .trainerName = _("小明"),
 #line 3548
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3549
@@ -8789,7 +8789,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JEFF] =
     {
 #line 3560
-        .trainerName = _("JEFF"),
+        .trainerName = _("光太"),
 #line 3561
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3562
@@ -8832,7 +8832,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AXLE] =
     {
 #line 3577
-        .trainerName = _("AXLE"),
+        .trainerName = _("阿保"),
 #line 3578
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3579
@@ -8864,7 +8864,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACE] =
     {
 #line 3590
-        .trainerName = _("JACE"),
+        .trainerName = _("顺次"),
 #line 3591
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3592
@@ -8896,7 +8896,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KEEGAN] =
     {
 #line 3603
-        .trainerName = _("KEEGAN"),
+        .trainerName = _("晴隆"),
 #line 3604
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3605
@@ -8928,7 +8928,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_1] =
     {
 #line 3616
-        .trainerName = _("BERNIE"),
+        .trainerName = _("信彦"),
 #line 3617
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3618
@@ -8971,7 +8971,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_2] =
     {
 #line 3633
-        .trainerName = _("BERNIE"),
+        .trainerName = _("信彦"),
 #line 3634
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3635
@@ -9014,7 +9014,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_3] =
     {
 #line 3650
-        .trainerName = _("BERNIE"),
+        .trainerName = _("信彦"),
 #line 3651
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3652
@@ -9057,7 +9057,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_4] =
     {
 #line 3667
-        .trainerName = _("BERNIE"),
+        .trainerName = _("信彦"),
 #line 3668
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3669
@@ -9100,7 +9100,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BERNIE_5] =
     {
 #line 3684
-        .trainerName = _("BERNIE"),
+        .trainerName = _("信彦"),
 #line 3685
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 3686
@@ -9143,7 +9143,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DREW] =
     {
 #line 3701
-        .trainerName = _("DREW"),
+        .trainerName = _("典弘"),
 #line 3702
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3703
@@ -9182,7 +9182,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BEAU] =
     {
 #line 3718
-        .trainerName = _("BEAU"),
+        .trainerName = _("和之"),
 #line 3719
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3720
@@ -9257,7 +9257,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LARRY] =
     {
 #line 3751
-        .trainerName = _("LARRY"),
+        .trainerName = _("清文"),
 #line 3752
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3753
@@ -9289,7 +9289,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHANE] =
     {
 #line 3764
-        .trainerName = _("SHANE"),
+        .trainerName = _("智弘"),
 #line 3765
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3766
@@ -9332,7 +9332,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JUSTIN] =
     {
 #line 3781
-        .trainerName = _("JUSTIN"),
+        .trainerName = _("正道"),
 #line 3782
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3783
@@ -9364,7 +9364,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_1] =
     {
 #line 3794
-        .trainerName = _("ETHAN"),
+        .trainerName = _("义晴"),
 #line 3795
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3796
@@ -9407,7 +9407,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AUTUMN] =
     {
 #line 3811
-        .trainerName = _("AUTUMN"),
+        .trainerName = _("奈津子"),
 #line 3812
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 3813
@@ -9441,7 +9441,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TRAVIS] =
     {
 #line 3824
-        .trainerName = _("TRAVIS"),
+        .trainerName = _("良也"),
 #line 3825
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3826
@@ -9473,7 +9473,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_2] =
     {
 #line 3837
-        .trainerName = _("ETHAN"),
+        .trainerName = _("义晴"),
 #line 3838
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3839
@@ -9516,7 +9516,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_3] =
     {
 #line 3854
-        .trainerName = _("ETHAN"),
+        .trainerName = _("义晴"),
 #line 3855
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3856
@@ -9559,7 +9559,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_4] =
     {
 #line 3871
-        .trainerName = _("ETHAN"),
+        .trainerName = _("义晴"),
 #line 3872
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3873
@@ -9613,7 +9613,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ETHAN_5] =
     {
 #line 3892
-        .trainerName = _("ETHAN"),
+        .trainerName = _("义晴"),
 #line 3893
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 3894
@@ -9667,7 +9667,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENT] =
     {
 #line 3913
-        .trainerName = _("BRENT"),
+        .trainerName = _("洋一"),
 #line 3914
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 3915
@@ -9699,7 +9699,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DONALD] =
     {
 #line 3926
-        .trainerName = _("DONALD"),
+        .trainerName = _("苍介"),
 #line 3927
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 3928
@@ -9753,7 +9753,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TAYLOR] =
     {
 #line 3947
-        .trainerName = _("TAYLOR"),
+        .trainerName = _("生海"),
 #line 3948
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 3949
@@ -9807,7 +9807,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_1] =
     {
 #line 3968
-        .trainerName = _("JEFFREY"),
+        .trainerName = _("干雄"),
 #line 3969
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 3970
@@ -9861,7 +9861,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DEREK] =
     {
 #line 3989
-        .trainerName = _("DEREK"),
+        .trainerName = _("良明"),
 #line 3990
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 3991
@@ -9904,7 +9904,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_2] =
     {
 #line 4006
-        .trainerName = _("JEFFREY"),
+        .trainerName = _("干雄"),
 #line 4007
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4008
@@ -9958,7 +9958,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_3] =
     {
 #line 4027
-        .trainerName = _("JEFFREY"),
+        .trainerName = _("干雄"),
 #line 4028
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4029
@@ -10012,7 +10012,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_4] =
     {
 #line 4048
-        .trainerName = _("JEFFREY"),
+        .trainerName = _("干雄"),
 #line 4049
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4050
@@ -10077,7 +10077,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JEFFREY_5] =
     {
 #line 4073
-        .trainerName = _("JEFFREY"),
+        .trainerName = _("干雄"),
 #line 4074
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 4075
@@ -10155,7 +10155,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDWARD] =
     {
 #line 4102
-        .trainerName = _("EDWARD"),
+        .trainerName = _("明人"),
 #line 4103
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4104
@@ -10191,7 +10191,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PRESTON] =
     {
 #line 4116
-        .trainerName = _("PRESTON"),
+        .trainerName = _("宏"),
 #line 4117
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4118
@@ -10223,7 +10223,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VIRGIL] =
     {
 #line 4129
-        .trainerName = _("VIRGIL"),
+        .trainerName = _("祐也"),
 #line 4130
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4131
@@ -10255,7 +10255,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BLAKE] =
     {
 #line 4142
-        .trainerName = _("BLAKE"),
+        .trainerName = _("聪"),
 #line 4143
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4144
@@ -10287,7 +10287,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WILLIAM] =
     {
 #line 4155
-        .trainerName = _("WILLIAM"),
+        .trainerName = _("彻也"),
 #line 4156
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4157
@@ -10341,7 +10341,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOSHUA] =
     {
 #line 4176
-        .trainerName = _("JOSHUA"),
+        .trainerName = _("修一"),
 #line 4177
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4178
@@ -10384,7 +10384,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_1] =
     {
 #line 4193
-        .trainerName = _("CAMERON"),
+        .trainerName = _("薰"),
 #line 4194
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4195
@@ -10416,7 +10416,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_2] =
     {
 #line 4206
-        .trainerName = _("CAMERON"),
+        .trainerName = _("薰"),
 #line 4207
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4208
@@ -10459,7 +10459,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_3] =
     {
 #line 4223
-        .trainerName = _("CAMERON"),
+        .trainerName = _("薰"),
 #line 4224
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4225
@@ -10502,7 +10502,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_4] =
     {
 #line 4240
-        .trainerName = _("CAMERON"),
+        .trainerName = _("薰"),
 #line 4241
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4242
@@ -10545,7 +10545,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAMERON_5] =
     {
 #line 4257
-        .trainerName = _("CAMERON"),
+        .trainerName = _("薰"),
 #line 4258
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4259
@@ -10588,7 +10588,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACLYN] =
     {
 #line 4274
-        .trainerName = _("JACLYN"),
+        .trainerName = _("玛俐可"),
 #line 4275
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4276
@@ -10626,7 +10626,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HANNAH] =
     {
 #line 4288
-        .trainerName = _("HANNAH"),
+        .trainerName = _("飞鸟"),
 #line 4289
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4290
@@ -10660,7 +10660,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SAMANTHA] =
     {
 #line 4301
-        .trainerName = _("SAMANTHA"),
+        .trainerName = _("未来"),
 #line 4302
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4303
@@ -10694,7 +10694,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAURA] =
     {
 #line 4314
-        .trainerName = _("MAURA"),
+        .trainerName = _("光"),
 #line 4315
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4316
@@ -10728,7 +10728,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAYLA] =
     {
 #line 4327
-        .trainerName = _("KAYLA"),
+        .trainerName = _("织江"),
 #line 4328
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4329
@@ -10784,7 +10784,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALEXIS] =
     {
 #line 4348
-        .trainerName = _("ALEXIS"),
+        .trainerName = _("奈奈子"),
 #line 4349
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4350
@@ -10829,7 +10829,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKI_1] =
     {
 #line 4365
-        .trainerName = _("JACKI"),
+        .trainerName = _("志保美"),
 #line 4366
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4367
@@ -10874,7 +10874,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKI_2] =
     {
 #line 4382
-        .trainerName = _("JACKI"),
+        .trainerName = _("志保美"),
 #line 4383
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4384
@@ -10919,7 +10919,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKI_3] =
     {
 #line 4399
-        .trainerName = _("JACKI"),
+        .trainerName = _("志保美"),
 #line 4400
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4401
@@ -10964,7 +10964,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKI_4] =
     {
 #line 4416
-        .trainerName = _("JACKI"),
+        .trainerName = _("志保美"),
 #line 4417
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4418
@@ -11009,7 +11009,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKI_5] =
     {
 #line 4433
-        .trainerName = _("JACKI"),
+        .trainerName = _("志保美"),
 #line 4434
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 4435
@@ -11054,7 +11054,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALTER_1] =
     {
 #line 4450
-        .trainerName = _("WALTER"),
+        .trainerName = _("罗伯特"),
 #line 4451
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 4452
@@ -11086,7 +11086,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MICAH] =
     {
 #line 4463
-        .trainerName = _("MICAH"),
+        .trainerName = _("奥尔森"),
 #line 4464
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 4465
@@ -11129,7 +11129,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_THOMAS] =
     {
 #line 4480
-        .trainerName = _("THOMAS"),
+        .trainerName = _("史考特"),
 #line 4481
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 4482
@@ -11161,7 +11161,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALTER_2] =
     {
 #line 4493
-        .trainerName = _("WALTER"),
+        .trainerName = _("罗伯特"),
 #line 4494
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 4495
@@ -11193,7 +11193,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALTER_3] =
     {
 #line 4506
-        .trainerName = _("WALTER"),
+        .trainerName = _("罗伯特"),
 #line 4507
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 4508
@@ -11250,7 +11250,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALTER_4] =
     {
 #line 4531
-        .trainerName = _("WALTER"),
+        .trainerName = _("罗伯特"),
 #line 4532
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 4533
@@ -11306,7 +11306,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALTER_5] =
     {
 #line 4555
-        .trainerName = _("WALTER"),
+        .trainerName = _("罗伯特"),
 #line 4556
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 4557
@@ -11381,7 +11381,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SIDNEY] =
     {
 #line 4588
-        .trainerName = _("SIDNEY"),
+        .trainerName = _("花月"),
 #line 4589
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 4590
@@ -11498,7 +11498,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PHOEBE] =
     {
 #line 4639
-        .trainerName = _("PHOEBE"),
+        .trainerName = _("芙蓉"),
 #line 4640
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 4641
@@ -11617,7 +11617,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GLACIA] =
     {
 #line 4690
-        .trainerName = _("GLACIA"),
+        .trainerName = _("波妮"),
 #line 4691
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 4692
@@ -11736,7 +11736,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DRAKE] =
     {
 #line 4741
-        .trainerName = _("DRAKE"),
+        .trainerName = _("源治"),
 #line 4742
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 4743
@@ -11853,7 +11853,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_1] =
     {
 #line 4792
-        .trainerName = _("ROXANNE"),
+        .trainerName = _("杜娟"),
 #line 4793
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 4794
@@ -11934,7 +11934,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_1] =
     {
 #line 4826
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("藤树"),
 #line 4827
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 4828
@@ -12013,7 +12013,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_1] =
     {
 #line 4860
-        .trainerName = _("WATTSON"),
+        .trainerName = _("铁旋"),
 #line 4861
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 4862
@@ -12110,7 +12110,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_1] =
     {
 #line 4902
-        .trainerName = _("FLANNERY"),
+        .trainerName = _("亚莎"),
 #line 4903
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 4904
@@ -12209,7 +12209,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_1] =
     {
 #line 4944
-        .trainerName = _("NORMAN"),
+        .trainerName = _("千里"),
 #line 4945
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 4946
@@ -12306,7 +12306,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINONA_1] =
     {
 #line 4986
-        .trainerName = _("WINONA"),
+        .trainerName = _("娜琪"),
 #line 4987
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 4988
@@ -12423,7 +12423,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_1] =
     {
 #line 5036
-        .trainerName = _("TATE&LIZA"),
+        .trainerName = _("小枫和小南"),
 #line 5037
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5038
@@ -12522,7 +12522,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JUAN_1] =
     {
 #line 5078
-        .trainerName = _("JUAN"),
+        .trainerName = _("亚当"),
 #line 5079
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 5080
@@ -12637,7 +12637,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JERRY_1] =
     {
 #line 5128
-        .trainerName = _("JERRY"),
+        .trainerName = _("秀夫"),
 #line 5129
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5130
@@ -12669,7 +12669,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TED] =
     {
 #line 5141
-        .trainerName = _("TED"),
+        .trainerName = _("信久"),
 #line 5142
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5143
@@ -12701,7 +12701,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PAUL] =
     {
 #line 5154
-        .trainerName = _("PAUL"),
+        .trainerName = _("胜俊"),
 #line 5155
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5156
@@ -12755,7 +12755,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JERRY_2] =
     {
 #line 5175
-        .trainerName = _("JERRY"),
+        .trainerName = _("秀夫"),
 #line 5176
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5177
@@ -12798,7 +12798,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JERRY_3] =
     {
 #line 5192
-        .trainerName = _("JERRY"),
+        .trainerName = _("秀夫"),
 #line 5193
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5194
@@ -12841,7 +12841,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JERRY_4] =
     {
 #line 5209
-        .trainerName = _("JERRY"),
+        .trainerName = _("秀夫"),
 #line 5210
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5211
@@ -12884,7 +12884,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JERRY_5] =
     {
 #line 5226
-        .trainerName = _("JERRY"),
+        .trainerName = _("秀夫"),
 #line 5227
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5228
@@ -12938,7 +12938,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAREN_1] =
     {
 #line 5247
-        .trainerName = _("KAREN"),
+        .trainerName = _("初音"),
 #line 5248
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5249
@@ -12972,7 +12972,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GEORGIA] =
     {
 #line 5260
-        .trainerName = _("GEORGIA"),
+        .trainerName = _("美贵江"),
 #line 5261
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5262
@@ -13017,7 +13017,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAREN_2] =
     {
 #line 5277
-        .trainerName = _("KAREN"),
+        .trainerName = _("初音"),
 #line 5278
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5279
@@ -13062,7 +13062,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAREN_3] =
     {
 #line 5294
-        .trainerName = _("KAREN"),
+        .trainerName = _("初音"),
 #line 5295
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5296
@@ -13107,7 +13107,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAREN_4] =
     {
 #line 5311
-        .trainerName = _("KAREN"),
+        .trainerName = _("初音"),
 #line 5312
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5313
@@ -13152,7 +13152,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAREN_5] =
     {
 #line 5328
-        .trainerName = _("KAREN"),
+        .trainerName = _("初音"),
 #line 5329
         .trainerClass = TRAINER_CLASS_SCHOOL_KID,
 #line 5330
@@ -13197,7 +13197,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATE_AND_JOY] =
     {
 #line 5345
-        .trainerName = _("KATE & JOY"),
+        .trainerName = _("真奈和由依"),
 #line 5346
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 5347
@@ -13254,7 +13254,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_1] =
     {
 #line 5370
-        .trainerName = _("ANNA & MEG"),
+        .trainerName = _("美穗和里子"),
 #line 5371
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 5372
@@ -13310,7 +13310,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_2] =
     {
 #line 5394
-        .trainerName = _("ANNA & MEG"),
+        .trainerName = _("美穗和里子"),
 #line 5395
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 5396
@@ -13366,7 +13366,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_3] =
     {
 #line 5418
-        .trainerName = _("ANNA & MEG"),
+        .trainerName = _("美穗和里子"),
 #line 5419
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 5420
@@ -13422,7 +13422,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_4] =
     {
 #line 5442
-        .trainerName = _("ANNA & MEG"),
+        .trainerName = _("美穗和里子"),
 #line 5443
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 5444
@@ -13478,7 +13478,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANNA_AND_MEG_5] =
     {
 #line 5466
-        .trainerName = _("ANNA & MEG"),
+        .trainerName = _("美穗和里子"),
 #line 5467
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 5468
@@ -13534,7 +13534,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VICTOR] =
     {
 #line 5490
-        .trainerName = _("VICTOR"),
+        .trainerName = _("晴彦"),
 #line 5491
         .trainerClass = TRAINER_CLASS_WINSTRATE,
 #line 5492
@@ -13581,7 +13581,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_1] =
     {
 #line 5507
-        .trainerName = _("MIGUEL"),
+        .trainerName = _("光晴"),
 #line 5508
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5509
@@ -13615,7 +13615,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_COLTON] =
     {
 #line 5520
-        .trainerName = _("COLTON"),
+        .trainerName = _("尚志"),
 #line 5521
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5522
@@ -13756,7 +13756,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_2] =
     {
 #line 5577
-        .trainerName = _("MIGUEL"),
+        .trainerName = _("光晴"),
 #line 5578
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5579
@@ -13790,7 +13790,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_3] =
     {
 #line 5590
-        .trainerName = _("MIGUEL"),
+        .trainerName = _("光晴"),
 #line 5591
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5592
@@ -13824,7 +13824,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_4] =
     {
 #line 5603
-        .trainerName = _("MIGUEL"),
+        .trainerName = _("光晴"),
 #line 5604
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5605
@@ -13858,7 +13858,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIGUEL_5] =
     {
 #line 5616
-        .trainerName = _("MIGUEL"),
+        .trainerName = _("光晴"),
 #line 5617
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5618
@@ -13892,7 +13892,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VICTORIA] =
     {
 #line 5629
-        .trainerName = _("VICTORIA"),
+        .trainerName = _("安江"),
 #line 5630
         .trainerClass = TRAINER_CLASS_WINSTRATE,
 #line 5631
@@ -13928,7 +13928,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VANESSA] =
     {
 #line 5642
-        .trainerName = _("VANESSA"),
+        .trainerName = _("今朝子"),
 #line 5643
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5644
@@ -13964,7 +13964,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BETHANY] =
     {
 #line 5655
-        .trainerName = _("BETHANY"),
+        .trainerName = _("汀子"),
 #line 5656
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5657
@@ -14026,7 +14026,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_1] =
     {
 #line 5676
-        .trainerName = _("ISABEL"),
+        .trainerName = _("雅子"),
 #line 5677
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5678
@@ -14075,7 +14075,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_2] =
     {
 #line 5693
-        .trainerName = _("ISABEL"),
+        .trainerName = _("雅子"),
 #line 5694
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5695
@@ -14124,7 +14124,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_3] =
     {
 #line 5710
-        .trainerName = _("ISABEL"),
+        .trainerName = _("雅子"),
 #line 5711
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5712
@@ -14173,7 +14173,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_4] =
     {
 #line 5727
-        .trainerName = _("ISABEL"),
+        .trainerName = _("雅子"),
 #line 5728
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5729
@@ -14222,7 +14222,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISABEL_5] =
     {
 #line 5744
-        .trainerName = _("ISABEL"),
+        .trainerName = _("雅子"),
 #line 5745
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 5746
@@ -14271,7 +14271,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_1] =
     {
 #line 5761
-        .trainerName = _("TIMOTHY"),
+        .trainerName = _("文翔"),
 #line 5762
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5763
@@ -14303,7 +14303,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_2] =
     {
 #line 5774
-        .trainerName = _("TIMOTHY"),
+        .trainerName = _("文翔"),
 #line 5775
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5776
@@ -14342,7 +14342,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_3] =
     {
 #line 5791
-        .trainerName = _("TIMOTHY"),
+        .trainerName = _("文翔"),
 #line 5792
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5793
@@ -14381,7 +14381,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_4] =
     {
 #line 5808
-        .trainerName = _("TIMOTHY"),
+        .trainerName = _("文翔"),
 #line 5809
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5810
@@ -14420,7 +14420,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TIMOTHY_5] =
     {
 #line 5825
-        .trainerName = _("TIMOTHY"),
+        .trainerName = _("文翔"),
 #line 5826
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5827
@@ -14459,7 +14459,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VICKY] =
     {
 #line 5842
-        .trainerName = _("VICKY"),
+        .trainerName = _("光代"),
 #line 5843
         .trainerClass = TRAINER_CLASS_WINSTRATE,
 #line 5844
@@ -14500,7 +14500,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_1] =
     {
 #line 5859
-        .trainerName = _("SHELBY"),
+        .trainerName = _("宫子"),
 #line 5860
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5861
@@ -14545,7 +14545,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_2] =
     {
 #line 5876
-        .trainerName = _("SHELBY"),
+        .trainerName = _("宫子"),
 #line 5877
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5878
@@ -14590,7 +14590,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_3] =
     {
 #line 5893
-        .trainerName = _("SHELBY"),
+        .trainerName = _("宫子"),
 #line 5894
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5895
@@ -14635,7 +14635,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_4] =
     {
 #line 5910
-        .trainerName = _("SHELBY"),
+        .trainerName = _("宫子"),
 #line 5911
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5912
@@ -14680,7 +14680,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHELBY_5] =
     {
 #line 5927
-        .trainerName = _("SHELBY"),
+        .trainerName = _("宫子"),
 #line 5928
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 5929
@@ -14725,7 +14725,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_1] =
     {
 #line 5944
-        .trainerName = _("CALVIN"),
+        .trainerName = _("和树"),
 #line 5945
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 5946
@@ -14757,7 +14757,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BILLY] =
     {
 #line 5957
-        .trainerName = _("BILLY"),
+        .trainerName = _("庆太"),
 #line 5958
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 5959
@@ -14800,7 +14800,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOSH] =
     {
 #line 5974
-        .trainerName = _("JOSH"),
+        .trainerName = _("太郎"),
 #line 5975
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 5976
@@ -14836,7 +14836,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TOMMY] =
     {
 #line 5988
-        .trainerName = _("TOMMY"),
+        .trainerName = _("克雄"),
 #line 5989
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 5990
@@ -14879,7 +14879,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOEY] =
     {
 #line 6005
-        .trainerName = _("JOEY"),
+        .trainerName = _("武雄"),
 #line 6006
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6007
@@ -14911,7 +14911,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BEN] =
     {
 #line 6018
-        .trainerName = _("BEN"),
+        .trainerName = _("弘人"),
 #line 6019
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6020
@@ -14968,7 +14968,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_QUINCY] =
     {
 #line 6043
-        .trainerName = _("QUINCY"),
+        .trainerName = _("忠俊"),
 #line 6044
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 6045
@@ -15027,7 +15027,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATELYNN] =
     {
 #line 6069
-        .trainerName = _("KATELYNN"),
+        .trainerName = _("铃香"),
 #line 6070
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 6071
@@ -15088,7 +15088,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JAYLEN] =
     {
 #line 6095
-        .trainerName = _("JAYLEN"),
+        .trainerName = _("雅之"),
 #line 6096
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6097
@@ -15120,7 +15120,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DILLON] =
     {
 #line 6108
-        .trainerName = _("DILLON"),
+        .trainerName = _("义人"),
 #line 6109
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6110
@@ -15152,7 +15152,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_2] =
     {
 #line 6121
-        .trainerName = _("CALVIN"),
+        .trainerName = _("和树"),
 #line 6122
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6123
@@ -15184,7 +15184,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_3] =
     {
 #line 6134
-        .trainerName = _("CALVIN"),
+        .trainerName = _("和树"),
 #line 6135
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6136
@@ -15227,7 +15227,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_4] =
     {
 #line 6151
-        .trainerName = _("CALVIN"),
+        .trainerName = _("和树"),
 #line 6152
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6153
@@ -15281,7 +15281,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CALVIN_5] =
     {
 #line 6172
-        .trainerName = _("CALVIN"),
+        .trainerName = _("和树"),
 #line 6173
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6174
@@ -15335,7 +15335,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDDIE] =
     {
 #line 6193
-        .trainerName = _("EDDIE"),
+        .trainerName = _("康幸"),
 #line 6194
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6195
@@ -15378,7 +15378,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALLEN] =
     {
 #line 6210
-        .trainerName = _("ALLEN"),
+        .trainerName = _("勇"),
 #line 6211
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6212
@@ -15421,7 +15421,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TIMMY] =
     {
 #line 6227
-        .trainerName = _("TIMMY"),
+        .trainerName = _("真悟"),
 #line 6228
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6229
@@ -15464,7 +15464,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALLACE] =
     {
 #line 6244
-        .trainerName = _("WALLACE"),
+        .trainerName = _("米可利"),
 #line 6245
         .trainerClass = TRAINER_CLASS_CHAMPION,
 #line 6246
@@ -15599,7 +15599,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANDREW] =
     {
 #line 6303
-        .trainerName = _("ANDREW"),
+        .trainerName = _("胜典"),
 #line 6304
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6305
@@ -15653,7 +15653,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_IVAN] =
     {
 #line 6324
-        .trainerName = _("IVAN"),
+        .trainerName = _("佳孝"),
 #line 6325
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6326
@@ -15707,7 +15707,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CLAUDE] =
     {
 #line 6345
-        .trainerName = _("CLAUDE"),
+        .trainerName = _("秀之"),
 #line 6346
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6347
@@ -15761,7 +15761,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_1] =
     {
 #line 6366
-        .trainerName = _("ELLIOT"),
+        .trainerName = _("明彦"),
 #line 6367
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6368
@@ -15815,7 +15815,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NED] =
     {
 #line 6387
-        .trainerName = _("NED"),
+        .trainerName = _("友和"),
 #line 6388
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6389
@@ -15847,7 +15847,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DALE] =
     {
 #line 6400
-        .trainerName = _("DALE"),
+        .trainerName = _("贵文"),
 #line 6401
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6402
@@ -15912,7 +15912,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NOLAN] =
     {
 #line 6425
-        .trainerName = _("NOLAN"),
+        .trainerName = _("孝则"),
 #line 6426
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6427
@@ -15944,7 +15944,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BARNY] =
     {
 #line 6438
-        .trainerName = _("BARNY"),
+        .trainerName = _("和彦"),
 #line 6439
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6440
@@ -15987,7 +15987,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WADE] =
     {
 #line 6455
-        .trainerName = _("WADE"),
+        .trainerName = _("绩"),
 #line 6456
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6457
@@ -16019,7 +16019,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CARTER] =
     {
 #line 6468
-        .trainerName = _("CARTER"),
+        .trainerName = _("高弘"),
 #line 6469
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6470
@@ -16062,7 +16062,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_2] =
     {
 #line 6485
-        .trainerName = _("ELLIOT"),
+        .trainerName = _("明彦"),
 #line 6486
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6487
@@ -16116,7 +16116,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_3] =
     {
 #line 6506
-        .trainerName = _("ELLIOT"),
+        .trainerName = _("明彦"),
 #line 6507
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6508
@@ -16181,7 +16181,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_4] =
     {
 #line 6531
-        .trainerName = _("ELLIOT"),
+        .trainerName = _("明彦"),
 #line 6532
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6533
@@ -16246,7 +16246,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ELLIOT_5] =
     {
 #line 6556
-        .trainerName = _("ELLIOT"),
+        .trainerName = _("明彦"),
 #line 6557
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6558
@@ -16311,7 +16311,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RONALD] =
     {
 #line 6581
-        .trainerName = _("RONALD"),
+        .trainerName = _("和雄"),
 #line 6582
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 6583
@@ -16398,7 +16398,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACOB] =
     {
 #line 6614
-        .trainerName = _("JACOB"),
+        .trainerName = _("进"),
 #line 6615
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6616
@@ -16452,7 +16452,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANTHONY] =
     {
 #line 6635
-        .trainerName = _("ANTHONY"),
+        .trainerName = _("俊介"),
 #line 6636
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6637
@@ -16495,7 +16495,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_1] =
     {
 #line 6652
-        .trainerName = _("BENJAMIN"),
+        .trainerName = _("英明"),
 #line 6653
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6654
@@ -16527,7 +16527,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_2] =
     {
 #line 6665
-        .trainerName = _("BENJAMIN"),
+        .trainerName = _("英明"),
 #line 6666
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6667
@@ -16559,7 +16559,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_3] =
     {
 #line 6678
-        .trainerName = _("BENJAMIN"),
+        .trainerName = _("英明"),
 #line 6679
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6680
@@ -16591,7 +16591,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_4] =
     {
 #line 6691
-        .trainerName = _("BENJAMIN"),
+        .trainerName = _("英明"),
 #line 6692
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6693
@@ -16623,7 +16623,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BENJAMIN_5] =
     {
 #line 6704
-        .trainerName = _("BENJAMIN"),
+        .trainerName = _("英明"),
 #line 6705
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6706
@@ -16655,7 +16655,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_1] =
     {
 #line 6717
-        .trainerName = _("ABIGAIL"),
+        .trainerName = _("翔子"),
 #line 6718
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6719
@@ -16689,7 +16689,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JASMINE] =
     {
 #line 6730
-        .trainerName = _("JASMINE"),
+        .trainerName = _("秀美"),
 #line 6731
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6732
@@ -16745,7 +16745,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_2] =
     {
 #line 6751
-        .trainerName = _("ABIGAIL"),
+        .trainerName = _("翔子"),
 #line 6752
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6753
@@ -16779,7 +16779,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_3] =
     {
 #line 6764
-        .trainerName = _("ABIGAIL"),
+        .trainerName = _("翔子"),
 #line 6765
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6766
@@ -16813,7 +16813,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_4] =
     {
 #line 6777
-        .trainerName = _("ABIGAIL"),
+        .trainerName = _("翔子"),
 #line 6778
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6779
@@ -16847,7 +16847,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ABIGAIL_5] =
     {
 #line 6790
-        .trainerName = _("ABIGAIL"),
+        .trainerName = _("翔子"),
 #line 6791
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6792
@@ -16881,7 +16881,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_1] =
     {
 #line 6803
-        .trainerName = _("DYLAN"),
+        .trainerName = _("阿毅"),
 #line 6804
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6805
@@ -16913,7 +16913,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_2] =
     {
 #line 6816
-        .trainerName = _("DYLAN"),
+        .trainerName = _("阿毅"),
 #line 6817
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6818
@@ -16945,7 +16945,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_3] =
     {
 #line 6829
-        .trainerName = _("DYLAN"),
+        .trainerName = _("阿毅"),
 #line 6830
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6831
@@ -16977,7 +16977,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_4] =
     {
 #line 6842
-        .trainerName = _("DYLAN"),
+        .trainerName = _("阿毅"),
 #line 6843
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6844
@@ -17009,7 +17009,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DYLAN_5] =
     {
 #line 6855
-        .trainerName = _("DYLAN"),
+        .trainerName = _("阿毅"),
 #line 6856
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6857
@@ -17041,7 +17041,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARIA_1] =
     {
 #line 6868
-        .trainerName = _("MARIA"),
+        .trainerName = _("佐枝子"),
 #line 6869
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6870
@@ -17075,7 +17075,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARIA_2] =
     {
 #line 6881
-        .trainerName = _("MARIA"),
+        .trainerName = _("佐枝子"),
 #line 6882
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6883
@@ -17109,7 +17109,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARIA_3] =
     {
 #line 6894
-        .trainerName = _("MARIA"),
+        .trainerName = _("佐枝子"),
 #line 6895
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6896
@@ -17143,7 +17143,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARIA_4] =
     {
 #line 6907
-        .trainerName = _("MARIA"),
+        .trainerName = _("佐枝子"),
 #line 6908
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6909
@@ -17177,7 +17177,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARIA_5] =
     {
 #line 6920
-        .trainerName = _("MARIA"),
+        .trainerName = _("佐枝子"),
 #line 6921
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6922
@@ -17211,7 +17211,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAMDEN] =
     {
 #line 6933
-        .trainerName = _("CAMDEN"),
+        .trainerName = _("茂治"),
 #line 6934
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6935
@@ -17254,7 +17254,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DEMETRIUS] =
     {
 #line 6950
-        .trainerName = _("DEMETRIUS"),
+        .trainerName = _("文武"),
 #line 6951
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 6952
@@ -17297,7 +17297,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_1] =
     {
 #line 6967
-        .trainerName = _("ISAIAH"),
+        .trainerName = _("英辅"),
 #line 6968
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6969
@@ -17329,7 +17329,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PABLO_1] =
     {
 #line 6980
-        .trainerName = _("PABLO"),
+        .trainerName = _("靖宏"),
 #line 6981
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6982
@@ -17372,7 +17372,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHASE] =
     {
 #line 6997
-        .trainerName = _("CHASE"),
+        .trainerName = _("正吾"),
 #line 6998
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 6999
@@ -17415,7 +17415,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_2] =
     {
 #line 7014
-        .trainerName = _("ISAIAH"),
+        .trainerName = _("英辅"),
 #line 7015
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7016
@@ -17447,7 +17447,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_3] =
     {
 #line 7027
-        .trainerName = _("ISAIAH"),
+        .trainerName = _("英辅"),
 #line 7028
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7029
@@ -17479,7 +17479,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_4] =
     {
 #line 7040
-        .trainerName = _("ISAIAH"),
+        .trainerName = _("英辅"),
 #line 7041
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7042
@@ -17511,7 +17511,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAIAH_5] =
     {
 #line 7053
-        .trainerName = _("ISAIAH"),
+        .trainerName = _("英辅"),
 #line 7054
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7055
@@ -17543,7 +17543,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISOBEL] =
     {
 #line 7066
-        .trainerName = _("ISOBEL"),
+        .trainerName = _("绢江"),
 #line 7067
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7068
@@ -17577,7 +17577,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DONNY] =
     {
 #line 7079
-        .trainerName = _("DONNY"),
+        .trainerName = _("由鹤"),
 #line 7080
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7081
@@ -17622,7 +17622,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TALIA] =
     {
 #line 7096
-        .trainerName = _("TALIA"),
+        .trainerName = _("美佳子"),
 #line 7097
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7098
@@ -17656,7 +17656,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_1] =
     {
 #line 7109
-        .trainerName = _("KATELYN"),
+        .trainerName = _("夏美"),
 #line 7110
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7111
@@ -17690,7 +17690,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALLISON] =
     {
 #line 7122
-        .trainerName = _("ALLISON"),
+        .trainerName = _("千慧"),
 #line 7123
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7124
@@ -17735,7 +17735,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_2] =
     {
 #line 7139
-        .trainerName = _("KATELYN"),
+        .trainerName = _("夏美"),
 #line 7140
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7141
@@ -17769,7 +17769,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_3] =
     {
 #line 7152
-        .trainerName = _("KATELYN"),
+        .trainerName = _("夏美"),
 #line 7153
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7154
@@ -17803,7 +17803,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_4] =
     {
 #line 7165
-        .trainerName = _("KATELYN"),
+        .trainerName = _("夏美"),
 #line 7166
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7167
@@ -17837,7 +17837,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATELYN_5] =
     {
 #line 7178
-        .trainerName = _("KATELYN"),
+        .trainerName = _("夏美"),
 #line 7179
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 7180
@@ -17871,7 +17871,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_1] =
     {
 #line 7191
-        .trainerName = _("NICOLAS"),
+        .trainerName = _("武"),
 #line 7192
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 7193
@@ -17914,7 +17914,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_2] =
     {
 #line 7208
-        .trainerName = _("NICOLAS"),
+        .trainerName = _("武"),
 #line 7209
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 7210
@@ -17957,7 +17957,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_3] =
     {
 #line 7225
-        .trainerName = _("NICOLAS"),
+        .trainerName = _("武"),
 #line 7226
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 7227
@@ -18000,7 +18000,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_4] =
     {
 #line 7242
-        .trainerName = _("NICOLAS"),
+        .trainerName = _("武"),
 #line 7243
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 7244
@@ -18054,7 +18054,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NICOLAS_5] =
     {
 #line 7263
-        .trainerName = _("NICOLAS"),
+        .trainerName = _("武"),
 #line 7264
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 7265
@@ -18110,7 +18110,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AARON] =
     {
 #line 7284
-        .trainerName = _("AARON"),
+        .trainerName = _("龙马"),
 #line 7285
         .trainerClass = TRAINER_CLASS_DRAGON_TAMER,
 #line 7286
@@ -18149,7 +18149,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PERRY] =
     {
 #line 7301
-        .trainerName = _("PERRY"),
+        .trainerName = _("清彦"),
 #line 7302
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7303
@@ -18181,7 +18181,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HUGH] =
     {
 #line 7314
-        .trainerName = _("HUGH"),
+        .trainerName = _("拓海"),
 #line 7315
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7316
@@ -18224,7 +18224,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PHIL] =
     {
 #line 7331
-        .trainerName = _("PHIL"),
+        .trainerName = _("骏平"),
 #line 7332
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7333
@@ -18256,7 +18256,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JARED] =
     {
 #line 7344
-        .trainerName = _("JARED"),
+        .trainerName = _("英治"),
 #line 7345
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7346
@@ -18310,7 +18310,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HUMBERTO] =
     {
 #line 7365
-        .trainerName = _("HUMBERTO"),
+        .trainerName = _("光明"),
 #line 7366
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7367
@@ -18342,7 +18342,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PRESLEY] =
     {
 #line 7378
-        .trainerName = _("PRESLEY"),
+        .trainerName = _("直宏"),
 #line 7379
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7380
@@ -18385,7 +18385,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDWARDO] =
     {
 #line 7395
-        .trainerName = _("EDWARDO"),
+        .trainerName = _("上田"),
 #line 7396
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7397
@@ -18428,7 +18428,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_COLIN] =
     {
 #line 7412
-        .trainerName = _("COLIN"),
+        .trainerName = _("森一"),
 #line 7413
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7414
@@ -18471,7 +18471,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_1] =
     {
 #line 7429
-        .trainerName = _("ROBERT"),
+        .trainerName = _("阿翼"),
 #line 7430
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7431
@@ -18503,7 +18503,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BENNY] =
     {
 #line 7442
-        .trainerName = _("BENNY"),
+        .trainerName = _("彰正"),
 #line 7443
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7444
@@ -18557,7 +18557,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHESTER] =
     {
 #line 7463
-        .trainerName = _("CHESTER"),
+        .trainerName = _("大使"),
 #line 7464
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7465
@@ -18600,7 +18600,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_2] =
     {
 #line 7480
-        .trainerName = _("ROBERT"),
+        .trainerName = _("阿翼"),
 #line 7481
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7482
@@ -18643,7 +18643,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_3] =
     {
 #line 7497
-        .trainerName = _("ROBERT"),
+        .trainerName = _("阿翼"),
 #line 7498
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7499
@@ -18686,7 +18686,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_4] =
     {
 #line 7514
-        .trainerName = _("ROBERT"),
+        .trainerName = _("阿翼"),
 #line 7515
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7516
@@ -18729,7 +18729,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROBERT_5] =
     {
 #line 7531
-        .trainerName = _("ROBERT"),
+        .trainerName = _("阿翼"),
 #line 7532
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7533
@@ -18772,7 +18772,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALEX] =
     {
 #line 7548
-        .trainerName = _("ALEX"),
+        .trainerName = _("正嗣"),
 #line 7549
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7550
@@ -18815,7 +18815,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BECK] =
     {
 #line 7565
-        .trainerName = _("BECK"),
+        .trainerName = _("俊明"),
 #line 7566
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 7567
@@ -18847,7 +18847,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_YASU] =
     {
 #line 7578
-        .trainerName = _("YASU"),
+        .trainerName = _("广宣"),
 #line 7579
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 7580
@@ -18879,7 +18879,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TAKASHI] =
     {
 #line 7591
-        .trainerName = _("TAKASHI"),
+        .trainerName = _("四郎"),
 #line 7592
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 7593
@@ -18922,7 +18922,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DIANNE] =
     {
 #line 7608
-        .trainerName = _("DIANNE"),
+        .trainerName = _("心"),
 #line 7609
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 7610
@@ -18977,7 +18977,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JANI] =
     {
 #line 7629
-        .trainerName = _("JANI"),
+        .trainerName = _("麻美"),
 #line 7630
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 7631
@@ -19009,7 +19009,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LAO_1] =
     {
 #line 7641
-        .trainerName = _("LAO"),
+        .trainerName = _("金次"),
 #line 7642
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 7643
@@ -19082,7 +19082,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LUNG] =
     {
 #line 7673
-        .trainerName = _("LUNG"),
+        .trainerName = _("村正"),
 #line 7674
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 7675
@@ -19123,7 +19123,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LAO_2] =
     {
 #line 7689
-        .trainerName = _("LAO"),
+        .trainerName = _("金次"),
 #line 7690
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 7691
@@ -19211,7 +19211,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LAO_3] =
     {
 #line 7726
-        .trainerName = _("LAO"),
+        .trainerName = _("金次"),
 #line 7727
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 7728
@@ -19299,7 +19299,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LAO_4] =
     {
 #line 7763
-        .trainerName = _("LAO"),
+        .trainerName = _("金次"),
 #line 7764
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 7765
@@ -19385,7 +19385,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LAO_5] =
     {
 #line 7798
-        .trainerName = _("LAO"),
+        .trainerName = _("金次"),
 #line 7799
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 7800
@@ -19475,7 +19475,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOCELYN] =
     {
 #line 7835
-        .trainerName = _("JOCELYN"),
+        .trainerName = _("小忍"),
 #line 7836
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7837
@@ -19509,7 +19509,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LAURA] =
     {
 #line 7848
-        .trainerName = _("LAURA"),
+        .trainerName = _("美里"),
 #line 7849
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7850
@@ -19543,7 +19543,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_1] =
     {
 #line 7861
-        .trainerName = _("CYNDY"),
+        .trainerName = _("由梨香"),
 #line 7862
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7863
@@ -19588,7 +19588,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CORA] =
     {
 #line 7878
-        .trainerName = _("CORA"),
+        .trainerName = _("风华"),
 #line 7879
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7880
@@ -19622,7 +19622,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PAULA] =
     {
 #line 7891
-        .trainerName = _("PAULA"),
+        .trainerName = _("雏"),
 #line 7892
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7893
@@ -19656,7 +19656,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_2] =
     {
 #line 7904
-        .trainerName = _("CYNDY"),
+        .trainerName = _("由梨香"),
 #line 7905
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7906
@@ -19701,7 +19701,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_3] =
     {
 #line 7921
-        .trainerName = _("CYNDY"),
+        .trainerName = _("由梨香"),
 #line 7922
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7923
@@ -19746,7 +19746,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_4] =
     {
 #line 7938
-        .trainerName = _("CYNDY"),
+        .trainerName = _("由梨香"),
 #line 7939
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7940
@@ -19791,7 +19791,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CYNDY_5] =
     {
 #line 7955
-        .trainerName = _("CYNDY"),
+        .trainerName = _("由梨香"),
 #line 7956
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 7957
@@ -19836,7 +19836,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_1] =
     {
 #line 7972
-        .trainerName = _("MADELINE"),
+        .trainerName = _("圆香"),
 #line 7973
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 7974
@@ -19877,7 +19877,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CLARISSA] =
     {
 #line 7989
-        .trainerName = _("CLARISSA"),
+        .trainerName = _("美华"),
 #line 7990
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 7991
@@ -19922,7 +19922,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANGELICA] =
     {
 #line 8006
-        .trainerName = _("ANGELICA"),
+        .trainerName = _("浮江"),
 #line 8007
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8008
@@ -19963,7 +19963,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_2] =
     {
 #line 8023
-        .trainerName = _("MADELINE"),
+        .trainerName = _("圆香"),
 #line 8024
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8025
@@ -20004,7 +20004,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_3] =
     {
 #line 8040
-        .trainerName = _("MADELINE"),
+        .trainerName = _("圆香"),
 #line 8041
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8042
@@ -20045,7 +20045,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_4] =
     {
 #line 8057
-        .trainerName = _("MADELINE"),
+        .trainerName = _("圆香"),
 #line 8058
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8059
@@ -20104,7 +20104,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MADELINE_5] =
     {
 #line 8082
-        .trainerName = _("MADELINE"),
+        .trainerName = _("圆香"),
 #line 8083
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 8084
@@ -20163,7 +20163,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BEVERLY] =
     {
 #line 8107
-        .trainerName = _("BEVERLY"),
+        .trainerName = _("夏树"),
 #line 8108
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8109
@@ -20208,7 +20208,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_IMANI] =
     {
 #line 8124
-        .trainerName = _("IMANI"),
+        .trainerName = _("真由佳"),
 #line 8125
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8126
@@ -20242,7 +20242,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KYLA] =
     {
 #line 8137
-        .trainerName = _("KYLA"),
+        .trainerName = _("水羽"),
 #line 8138
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8139
@@ -20276,7 +20276,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DENISE] =
     {
 #line 8150
-        .trainerName = _("DENISE"),
+        .trainerName = _("雅美"),
 #line 8151
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8152
@@ -20321,7 +20321,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BETH] =
     {
 #line 8167
-        .trainerName = _("BETH"),
+        .trainerName = _("纪香"),
 #line 8168
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8169
@@ -20355,7 +20355,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TARA] =
     {
 #line 8180
-        .trainerName = _("TARA"),
+        .trainerName = _("千寻"),
 #line 8181
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8182
@@ -20400,7 +20400,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MISSY] =
     {
 #line 8197
-        .trainerName = _("MISSY"),
+        .trainerName = _("久美子"),
 #line 8198
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8199
@@ -20434,7 +20434,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALICE] =
     {
 #line 8210
-        .trainerName = _("ALICE"),
+        .trainerName = _("悦子"),
 #line 8211
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8212
@@ -20490,7 +20490,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JENNY_1] =
     {
 #line 8231
-        .trainerName = _("JENNY"),
+        .trainerName = _("小渚"),
 #line 8232
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8233
@@ -20524,7 +20524,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRACE] =
     {
 #line 8244
-        .trainerName = _("GRACE"),
+        .trainerName = _("秋江"),
 #line 8245
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8246
@@ -20558,7 +20558,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TANYA] =
     {
 #line 8257
-        .trainerName = _("TANYA"),
+        .trainerName = _("惠子"),
 #line 8258
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8259
@@ -20592,7 +20592,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHARON] =
     {
 #line 8270
-        .trainerName = _("SHARON"),
+        .trainerName = _("彩华"),
 #line 8271
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8272
@@ -20626,7 +20626,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NIKKI] =
     {
 #line 8283
-        .trainerName = _("NIKKI"),
+        .trainerName = _("静江"),
 #line 8284
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8285
@@ -20671,7 +20671,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDA] =
     {
 #line 8300
-        .trainerName = _("BRENDA"),
+        .trainerName = _("辉美"),
 #line 8301
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8302
@@ -20705,7 +20705,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATIE] =
     {
 #line 8313
-        .trainerName = _("KATIE"),
+        .trainerName = _("富美江"),
 #line 8314
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8315
@@ -20750,7 +20750,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SUSIE] =
     {
 #line 8330
-        .trainerName = _("SUSIE"),
+        .trainerName = _("美咲"),
 #line 8331
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8332
@@ -20784,7 +20784,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KARA] =
     {
 #line 8343
-        .trainerName = _("KARA"),
+        .trainerName = _("鞠绘"),
 #line 8344
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8345
@@ -20818,7 +20818,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DANA] =
     {
 #line 8356
-        .trainerName = _("DANA"),
+        .trainerName = _("美雪"),
 #line 8357
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8358
@@ -20852,7 +20852,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SIENNA] =
     {
 #line 8369
-        .trainerName = _("SIENNA"),
+        .trainerName = _("郁子"),
 #line 8370
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8371
@@ -20897,7 +20897,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DEBRA] =
     {
 #line 8386
-        .trainerName = _("DEBRA"),
+        .trainerName = _("里佳子"),
 #line 8387
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8388
@@ -20931,7 +20931,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LINDA] =
     {
 #line 8399
-        .trainerName = _("LINDA"),
+        .trainerName = _("春美"),
 #line 8400
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8401
@@ -20976,7 +20976,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAYLEE] =
     {
 #line 8416
-        .trainerName = _("KAYLEE"),
+        .trainerName = _("多可"),
 #line 8417
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8418
@@ -21021,7 +21021,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LAUREL] =
     {
 #line 8433
-        .trainerName = _("LAUREL"),
+        .trainerName = _("园子"),
 #line 8434
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8435
@@ -21066,7 +21066,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CARLEE] =
     {
 #line 8450
-        .trainerName = _("CARLEE"),
+        .trainerName = _("国子"),
 #line 8451
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8452
@@ -21100,7 +21100,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JENNY_2] =
     {
 #line 8463
-        .trainerName = _("JENNY"),
+        .trainerName = _("小渚"),
 #line 8464
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8465
@@ -21134,7 +21134,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JENNY_3] =
     {
 #line 8476
-        .trainerName = _("JENNY"),
+        .trainerName = _("小渚"),
 #line 8477
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8478
@@ -21168,7 +21168,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JENNY_4] =
     {
 #line 8489
-        .trainerName = _("JENNY"),
+        .trainerName = _("小渚"),
 #line 8490
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8491
@@ -21213,7 +21213,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JENNY_5] =
     {
 #line 8506
-        .trainerName = _("JENNY"),
+        .trainerName = _("小渚"),
 #line 8507
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 8508
@@ -21269,7 +21269,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HEIDI] =
     {
 #line 8527
-        .trainerName = _("HEIDI"),
+        .trainerName = _("千佳子"),
 #line 8528
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8529
@@ -21328,7 +21328,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BECKY] =
     {
 #line 8552
-        .trainerName = _("BECKY"),
+        .trainerName = _("爱弥"),
 #line 8553
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8554
@@ -21387,7 +21387,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAROL] =
     {
 #line 8577
-        .trainerName = _("CAROL"),
+        .trainerName = _("裕子"),
 #line 8578
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8579
@@ -21432,7 +21432,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NANCY] =
     {
 #line 8594
-        .trainerName = _("NANCY"),
+        .trainerName = _("皋月"),
 #line 8595
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8596
@@ -21477,7 +21477,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARTHA] =
     {
 #line 8611
-        .trainerName = _("MARTHA"),
+        .trainerName = _("朋子"),
 #line 8612
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8613
@@ -21522,7 +21522,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DIANA_1] =
     {
 #line 8628
-        .trainerName = _("DIANA"),
+        .trainerName = _("梢"),
 #line 8629
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8630
@@ -21578,7 +21578,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CEDRIC] =
     {
 #line 8649
-        .trainerName = _("CEDRIC"),
+        .trainerName = _("义清"),
 #line 8650
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 8651
@@ -21617,7 +21617,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_IRENE] =
     {
 #line 8666
-        .trainerName = _("IRENE"),
+        .trainerName = _("水木"),
 #line 8667
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8668
@@ -21662,7 +21662,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DIANA_2] =
     {
 #line 8683
-        .trainerName = _("DIANA"),
+        .trainerName = _("梢"),
 #line 8684
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8685
@@ -21718,7 +21718,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DIANA_3] =
     {
 #line 8704
-        .trainerName = _("DIANA"),
+        .trainerName = _("梢"),
 #line 8705
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8706
@@ -21774,7 +21774,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DIANA_4] =
     {
 #line 8725
-        .trainerName = _("DIANA"),
+        .trainerName = _("梢"),
 #line 8726
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8727
@@ -21830,7 +21830,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DIANA_5] =
     {
 #line 8746
-        .trainerName = _("DIANA"),
+        .trainerName = _("梢"),
 #line 8747
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 8748
@@ -21886,7 +21886,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_1] =
     {
 #line 8767
-        .trainerName = _("AMY & LIV"),
+        .trainerName = _("久美和留美"),
 #line 8768
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8769
@@ -21929,7 +21929,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_2] =
     {
 #line 8784
-        .trainerName = _("AMY & LIV"),
+        .trainerName = _("久美和留美"),
 #line 8785
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8786
@@ -21972,7 +21972,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GINA_AND_MIA_1] =
     {
 #line 8801
-        .trainerName = _("GINA & MIA"),
+        .trainerName = _("奈绪和美绪"),
 #line 8802
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8803
@@ -22015,7 +22015,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIU_AND_YUKI] =
     {
 #line 8818
-        .trainerName = _("MIU & YUKI"),
+        .trainerName = _("美雨和雪"),
 #line 8819
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8820
@@ -22058,7 +22058,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_3] =
     {
 #line 8835
-        .trainerName = _("AMY & LIV"),
+        .trainerName = _("久美和留美"),
 #line 8836
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8837
@@ -22101,7 +22101,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GINA_AND_MIA_2] =
     {
 #line 8852
-        .trainerName = _("GINA & MIA"),
+        .trainerName = _("奈绪和美绪"),
 #line 8853
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8854
@@ -22154,7 +22154,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_4] =
     {
 #line 8873
-        .trainerName = _("AMY & LIV"),
+        .trainerName = _("久美和留美"),
 #line 8874
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8875
@@ -22197,7 +22197,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_5] =
     {
 #line 8890
-        .trainerName = _("AMY & LIV"),
+        .trainerName = _("久美和留美"),
 #line 8891
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8892
@@ -22254,7 +22254,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AMY_AND_LIV_6] =
     {
 #line 8915
-        .trainerName = _("AMY & LIV"),
+        .trainerName = _("久美和留美"),
 #line 8916
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 8917
@@ -22311,7 +22311,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HUEY] =
     {
 #line 8940
-        .trainerName = _("HUEY"),
+        .trainerName = _("达郎"),
 #line 8941
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 8942
@@ -22354,7 +22354,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDMOND] =
     {
 #line 8957
-        .trainerName = _("EDMOND"),
+        .trainerName = _("克哉"),
 #line 8958
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 8959
@@ -22386,7 +22386,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_1] =
     {
 #line 8970
-        .trainerName = _("ERNEST"),
+        .trainerName = _("次郎"),
 #line 8971
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 8972
@@ -22429,7 +22429,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DWAYNE] =
     {
 #line 8987
-        .trainerName = _("DWAYNE"),
+        .trainerName = _("龙彦"),
 #line 8988
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 8989
@@ -22483,7 +22483,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PHILLIP] =
     {
 #line 9008
-        .trainerName = _("PHILLIP"),
+        .trainerName = _("勇作"),
 #line 9009
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9010
@@ -22526,7 +22526,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LEONARD] =
     {
 #line 9025
-        .trainerName = _("LEONARD"),
+        .trainerName = _("大树"),
 #line 9026
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9027
@@ -22580,7 +22580,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DUNCAN] =
     {
 #line 9046
-        .trainerName = _("DUNCAN"),
+        .trainerName = _("豪史"),
 #line 9047
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9048
@@ -22623,7 +22623,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_2] =
     {
 #line 9063
-        .trainerName = _("ERNEST"),
+        .trainerName = _("次郎"),
 #line 9064
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9065
@@ -22677,7 +22677,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_3] =
     {
 #line 9084
-        .trainerName = _("ERNEST"),
+        .trainerName = _("次郎"),
 #line 9085
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9086
@@ -22731,7 +22731,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_4] =
     {
 #line 9105
-        .trainerName = _("ERNEST"),
+        .trainerName = _("次郎"),
 #line 9106
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9107
@@ -22785,7 +22785,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ERNEST_5] =
     {
 #line 9126
-        .trainerName = _("ERNEST"),
+        .trainerName = _("次郎"),
 #line 9127
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9128
@@ -22839,7 +22839,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ELI] =
     {
 #line 9147
-        .trainerName = _("ELI"),
+        .trainerName = _("辉义"),
 #line 9148
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 9149
@@ -22871,7 +22871,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANNIKA] =
     {
 #line 9160
-        .trainerName = _("ANNIKA"),
+        .trainerName = _("峰子"),
 #line 9161
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 9162
@@ -22934,7 +22934,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JAZMYN] =
     {
 #line 9185
-        .trainerName = _("JAZMYN"),
+        .trainerName = _("美羽"),
 #line 9186
         .trainerClass = TRAINER_CLASS_COOLTRAINER_2,
 #line 9187
@@ -22970,7 +22970,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JONAS] =
     {
 #line 9199
-        .trainerName = _("JONAS"),
+        .trainerName = _("伸介"),
 #line 9200
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 9201
@@ -23009,7 +23009,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAYLEY] =
     {
 #line 9216
-        .trainerName = _("KAYLEY"),
+        .trainerName = _("薰子"),
 #line 9217
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 9218
@@ -23050,7 +23050,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AURON] =
     {
 #line 9233
-        .trainerName = _("AURON"),
+        .trainerName = _("一圭"),
 #line 9234
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 9235
@@ -23093,7 +23093,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KELVIN] =
     {
 #line 9250
-        .trainerName = _("KELVIN"),
+        .trainerName = _("直也"),
 #line 9251
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9252
@@ -23136,7 +23136,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARLEY] =
     {
 #line 9267
-        .trainerName = _("MARLEY"),
+        .trainerName = _("律子"),
 #line 9268
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 9269
@@ -23179,7 +23179,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_REYNA] =
     {
 #line 9285
-        .trainerName = _("REYNA"),
+        .trainerName = _("珠希"),
 #line 9286
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 9287
@@ -23224,7 +23224,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HUDSON] =
     {
 #line 9302
-        .trainerName = _("HUDSON"),
+        .trainerName = _("纯也"),
 #line 9303
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 9304
@@ -23256,7 +23256,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CONOR] =
     {
 #line 9315
-        .trainerName = _("CONOR"),
+        .trainerName = _("茂良"),
 #line 9316
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 9317
@@ -23299,7 +23299,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_1] =
     {
 #line 9332
-        .trainerName = _("EDWIN"),
+        .trainerName = _("元树"),
 #line 9333
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 9334
@@ -23342,7 +23342,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HECTOR] =
     {
 #line 9349
-        .trainerName = _("HECTOR"),
+        .trainerName = _("俊宣"),
 #line 9350
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 9351
@@ -23385,7 +23385,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TABITHA_MOSSDEEP] =
     {
 #line 9366
-        .trainerName = _("TABITHA"),
+        .trainerName = _("火村"),
 #line 9367
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 9368
@@ -23439,7 +23439,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_2] =
     {
 #line 9387
-        .trainerName = _("EDWIN"),
+        .trainerName = _("元树"),
 #line 9388
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 9389
@@ -23482,7 +23482,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_3] =
     {
 #line 9404
-        .trainerName = _("EDWIN"),
+        .trainerName = _("元树"),
 #line 9405
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 9406
@@ -23525,7 +23525,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_4] =
     {
 #line 9421
-        .trainerName = _("EDWIN"),
+        .trainerName = _("元树"),
 #line 9422
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 9423
@@ -23568,7 +23568,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EDWIN_5] =
     {
 #line 9438
-        .trainerName = _("EDWIN"),
+        .trainerName = _("元树"),
 #line 9439
         .trainerClass = TRAINER_CLASS_COLLECTOR,
 #line 9440
@@ -23611,7 +23611,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_1] =
     {
 #line 9455
-        .trainerName = _("WALLY"),
+        .trainerName = _("满充"),
 #line 9456
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9457
@@ -23724,7 +23724,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_MUDKIP] =
     {
 #line 9505
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9506
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9507
@@ -23756,7 +23756,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_MUDKIP] =
     {
 #line 9518
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9519
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9520
@@ -23810,7 +23810,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_MUDKIP] =
     {
 #line 9539
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9540
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9541
@@ -23864,7 +23864,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_TREECKO] =
     {
 #line 9560
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9561
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9562
@@ -23896,7 +23896,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_TREECKO] =
     {
 #line 9573
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9574
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9575
@@ -23950,7 +23950,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_TREECKO] =
     {
 #line 9594
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9595
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9596
@@ -24004,7 +24004,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_103_TORCHIC] =
     {
 #line 9615
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9616
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9617
@@ -24036,7 +24036,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_110_TORCHIC] =
     {
 #line 9628
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9629
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9630
@@ -24090,7 +24090,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_ROUTE_119_TORCHIC] =
     {
 #line 9649
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 9650
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9651
@@ -24144,7 +24144,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_MUDKIP] =
     {
 #line 9670
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9671
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9672
@@ -24178,7 +24178,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_MUDKIP] =
     {
 #line 9683
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9684
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9685
@@ -24234,7 +24234,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_MUDKIP] =
     {
 #line 9704
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9705
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9706
@@ -24290,7 +24290,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_TREECKO] =
     {
 #line 9725
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9726
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9727
@@ -24324,7 +24324,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_TREECKO] =
     {
 #line 9738
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9739
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9740
@@ -24380,7 +24380,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_TREECKO] =
     {
 #line 9759
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9760
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9761
@@ -24436,7 +24436,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_103_TORCHIC] =
     {
 #line 9780
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9781
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9782
@@ -24470,7 +24470,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_110_TORCHIC] =
     {
 #line 9793
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9794
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9795
@@ -24526,7 +24526,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_ROUTE_119_TORCHIC] =
     {
 #line 9814
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 9815
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 9816
@@ -24582,7 +24582,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_1] =
     {
 #line 9835
-        .trainerName = _("ISAAC"),
+        .trainerName = _("诚儿"),
 #line 9836
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 9837
@@ -24669,7 +24669,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DAVIS] =
     {
 #line 9868
-        .trainerName = _("DAVIS"),
+        .trainerName = _("喜朗"),
 #line 9869
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 9870
@@ -24701,7 +24701,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MITCHELL] =
     {
 #line 9881
-        .trainerName = _("MITCHELL"),
+        .trainerName = _("铁平"),
 #line 9882
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 9883
@@ -24758,7 +24758,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_2] =
     {
 #line 9906
-        .trainerName = _("ISAAC"),
+        .trainerName = _("诚儿"),
 #line 9907
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 9908
@@ -24845,7 +24845,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_3] =
     {
 #line 9939
-        .trainerName = _("ISAAC"),
+        .trainerName = _("诚儿"),
 #line 9940
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 9941
@@ -24932,7 +24932,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_4] =
     {
 #line 9972
-        .trainerName = _("ISAAC"),
+        .trainerName = _("诚儿"),
 #line 9973
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 9974
@@ -25019,7 +25019,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISAAC_5] =
     {
 #line 10005
-        .trainerName = _("ISAAC"),
+        .trainerName = _("诚儿"),
 #line 10006
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 10007
@@ -25106,7 +25106,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_1] =
     {
 #line 10038
-        .trainerName = _("LYDIA"),
+        .trainerName = _("郁惠"),
 #line 10039
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 10040
@@ -25195,7 +25195,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HALLE] =
     {
 #line 10071
-        .trainerName = _("HALLE"),
+        .trainerName = _("广惠"),
 #line 10072
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 10073
@@ -25242,7 +25242,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GARRISON] =
     {
 #line 10089
-        .trainerName = _("GARRISON"),
+        .trainerName = _("恒安"),
 #line 10090
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 10091
@@ -25274,7 +25274,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_2] =
     {
 #line 10102
-        .trainerName = _("LYDIA"),
+        .trainerName = _("郁惠"),
 #line 10103
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 10104
@@ -25363,7 +25363,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_3] =
     {
 #line 10135
-        .trainerName = _("LYDIA"),
+        .trainerName = _("郁惠"),
 #line 10136
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 10137
@@ -25452,7 +25452,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_4] =
     {
 #line 10168
-        .trainerName = _("LYDIA"),
+        .trainerName = _("郁惠"),
 #line 10169
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 10170
@@ -25541,7 +25541,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LYDIA_5] =
     {
 #line 10201
-        .trainerName = _("LYDIA"),
+        .trainerName = _("郁惠"),
 #line 10202
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 10203
@@ -25630,7 +25630,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_1] =
     {
 #line 10234
-        .trainerName = _("JACKSON"),
+        .trainerName = _("阿守"),
 #line 10235
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10236
@@ -25664,7 +25664,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LORENZO] =
     {
 #line 10248
-        .trainerName = _("LORENZO"),
+        .trainerName = _("淳一"),
 #line 10249
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10250
@@ -25720,7 +25720,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SEBASTIAN] =
     {
 #line 10270
-        .trainerName = _("SEBASTIAN"),
+        .trainerName = _("圭介"),
 #line 10271
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10272
@@ -25754,7 +25754,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_2] =
     {
 #line 10284
-        .trainerName = _("JACKSON"),
+        .trainerName = _("阿守"),
 #line 10285
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10286
@@ -25788,7 +25788,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_3] =
     {
 #line 10298
-        .trainerName = _("JACKSON"),
+        .trainerName = _("阿守"),
 #line 10299
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10300
@@ -25822,7 +25822,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_4] =
     {
 #line 10312
-        .trainerName = _("JACKSON"),
+        .trainerName = _("阿守"),
 #line 10313
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10314
@@ -25856,7 +25856,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JACKSON_5] =
     {
 #line 10326
-        .trainerName = _("JACKSON"),
+        .trainerName = _("阿守"),
 #line 10327
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10328
@@ -25901,7 +25901,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_1] =
     {
 #line 10344
-        .trainerName = _("CATHERINE"),
+        .trainerName = _("真奈美"),
 #line 10345
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10346
@@ -25948,7 +25948,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JENNA] =
     {
 #line 10362
-        .trainerName = _("JENNA"),
+        .trainerName = _("芹奈"),
 #line 10363
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10364
@@ -26006,7 +26006,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SOPHIA] =
     {
 #line 10384
-        .trainerName = _("SOPHIA"),
+        .trainerName = _("千秋"),
 #line 10385
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10386
@@ -26053,7 +26053,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_2] =
     {
 #line 10402
-        .trainerName = _("CATHERINE"),
+        .trainerName = _("真奈美"),
 #line 10403
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10404
@@ -26100,7 +26100,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_3] =
     {
 #line 10420
-        .trainerName = _("CATHERINE"),
+        .trainerName = _("真奈美"),
 #line 10421
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10422
@@ -26147,7 +26147,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_4] =
     {
 #line 10438
-        .trainerName = _("CATHERINE"),
+        .trainerName = _("真奈美"),
 #line 10439
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10440
@@ -26194,7 +26194,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CATHERINE_5] =
     {
 #line 10456
-        .trainerName = _("CATHERINE"),
+        .trainerName = _("真奈美"),
 #line 10457
         .trainerClass = TRAINER_CLASS_PKMN_RANGER,
 #line 10458
@@ -26241,7 +26241,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JULIO] =
     {
 #line 10474
-        .trainerName = _("JULIO"),
+        .trainerName = _("光雄"),
 #line 10475
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 10476
@@ -26273,7 +26273,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SEAFLOOR_CAVERN_5] =
     {
 #line 10487
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10488
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 10489
@@ -26316,7 +26316,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_UNUSED] =
     {
 #line 10504
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10505
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10506
@@ -26361,7 +26361,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_PYRE_4] =
     {
 #line 10521
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10522
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 10523
@@ -26406,7 +26406,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_JAGGED_PASS] =
     {
 #line 10538
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10539
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10540
@@ -26449,7 +26449,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARC] =
     {
 #line 10555
-        .trainerName = _("MARC"),
+        .trainerName = _("宗太郎"),
 #line 10556
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 10557
@@ -26492,7 +26492,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDEN] =
     {
 #line 10572
-        .trainerName = _("BRENDEN"),
+        .trainerName = _("和正"),
 #line 10573
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 10574
@@ -26524,7 +26524,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LILITH] =
     {
 #line 10585
-        .trainerName = _("LILITH"),
+        .trainerName = _("安昙"),
 #line 10586
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 10587
@@ -26558,7 +26558,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CRISTIAN] =
     {
 #line 10598
-        .trainerName = _("CRISTIAN"),
+        .trainerName = _("俊英"),
 #line 10599
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 10600
@@ -26590,7 +26590,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SYLVIA] =
     {
 #line 10611
-        .trainerName = _("SYLVIA"),
+        .trainerName = _("朝代"),
 #line 10612
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 10613
@@ -26624,7 +26624,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LEONARDO] =
     {
 #line 10624
-        .trainerName = _("LEONARDO"),
+        .trainerName = _("和成"),
 #line 10625
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 10626
@@ -26656,7 +26656,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ATHENA] =
     {
 #line 10637
-        .trainerName = _("ATHENA"),
+        .trainerName = _("江美里"),
 #line 10638
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 10639
@@ -26714,7 +26714,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HARRISON] =
     {
 #line 10660
-        .trainerName = _("HARRISON"),
+        .trainerName = _("正明"),
 #line 10661
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 10662
@@ -26746,7 +26746,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MT_CHIMNEY_2] =
     {
 #line 10673
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10674
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10675
@@ -26778,7 +26778,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CLARENCE] =
     {
 #line 10686
-        .trainerName = _("CLARENCE"),
+        .trainerName = _("义文"),
 #line 10687
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 10688
@@ -26810,7 +26810,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TERRY] =
     {
 #line 10699
-        .trainerName = _("TERRY"),
+        .trainerName = _("无名氏"),
 #line 10700
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 10701
@@ -26844,7 +26844,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NATE] =
     {
 #line 10712
-        .trainerName = _("NATE"),
+        .trainerName = _("东尼"),
 #line 10713
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 10714
@@ -26876,7 +26876,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KATHLEEN] =
     {
 #line 10725
-        .trainerName = _("KATHLEEN"),
+        .trainerName = _("幸代"),
 #line 10726
         .trainerClass = TRAINER_CLASS_HEX_MANIAC,
 #line 10727
@@ -26910,7 +26910,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CLIFFORD] =
     {
 #line 10738
-        .trainerName = _("CLIFFORD"),
+        .trainerName = _("史蒂夫"),
 #line 10739
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 10740
@@ -26942,7 +26942,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NICHOLAS] =
     {
 #line 10751
-        .trainerName = _("NICHOLAS"),
+        .trainerName = _("行世"),
 #line 10752
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 10753
@@ -26974,7 +26974,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_3] =
     {
 #line 10764
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10765
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10766
@@ -27019,7 +27019,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_4] =
     {
 #line 10781
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10782
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10783
@@ -27051,7 +27051,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_5] =
     {
 #line 10794
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10795
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10796
@@ -27083,7 +27083,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_6] =
     {
 #line 10807
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10808
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10809
@@ -27115,7 +27115,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_SPACE_CENTER_7] =
     {
 #line 10820
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10821
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 10822
@@ -27147,7 +27147,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MACEY] =
     {
 #line 10833
-        .trainerName = _("MACEY"),
+        .trainerName = _("总子"),
 #line 10834
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 10835
@@ -27181,7 +27181,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_TREECKO] =
     {
 #line 10846
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 10847
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10848
@@ -27224,7 +27224,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_MUDKIP] =
     {
 #line 10863
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 10864
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10865
@@ -27267,7 +27267,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PAXTON] =
     {
 #line 10880
-        .trainerName = _("PAXTON"),
+        .trainerName = _("刚藏"),
 #line 10881
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 10882
@@ -27310,7 +27310,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISABELLA] =
     {
 #line 10897
-        .trainerName = _("ISABELLA"),
+        .trainerName = _("和晴"),
 #line 10898
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 10899
@@ -27344,7 +27344,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_WEATHER_INST_5] =
     {
 #line 10910
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 10911
         .trainerClass = TRAINER_CLASS_TEAM_AQUA,
 #line 10912
@@ -27389,7 +27389,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TABITHA_MT_CHIMNEY] =
     {
 #line 10927
-        .trainerName = _("TABITHA"),
+        .trainerName = _("火村"),
 #line 10928
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 10929
@@ -27454,7 +27454,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JONATHAN] =
     {
 #line 10952
-        .trainerName = _("JONATHAN"),
+        .trainerName = _("凉介"),
 #line 10953
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 10954
@@ -27499,7 +27499,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_RUSTBORO_TORCHIC] =
     {
 #line 10970
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 10971
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10972
@@ -27542,7 +27542,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_MUDKIP] =
     {
 #line 10987
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 10988
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 10989
@@ -27587,7 +27587,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAXIE_MAGMA_HIDEOUT] =
     {
 #line 11004
-        .trainerName = _("MAXIE"),
+        .trainerName = _("赤焰松"),
 #line 11005
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
 #line 11006
@@ -27643,7 +27643,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAXIE_MT_CHIMNEY] =
     {
 #line 11026
-        .trainerName = _("MAXIE"),
+        .trainerName = _("赤焰松"),
 #line 11027
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
 #line 11028
@@ -27699,7 +27699,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TIANA] =
     {
 #line 11048
-        .trainerName = _("TIANA"),
+        .trainerName = _("千佳"),
 #line 11049
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11050
@@ -27744,7 +27744,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HALEY_1] =
     {
 #line 11065
-        .trainerName = _("HALEY"),
+        .trainerName = _("真希"),
 #line 11066
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11067
@@ -27789,7 +27789,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JANICE] =
     {
 #line 11082
-        .trainerName = _("JANICE"),
+        .trainerName = _("真理"),
 #line 11083
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11084
@@ -27823,7 +27823,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VIVI] =
     {
 #line 11095
-        .trainerName = _("VIVI"),
+        .trainerName = _("小秋"),
 #line 11096
         .trainerClass = TRAINER_CLASS_WINSTRATE,
 #line 11097
@@ -27879,7 +27879,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HALEY_2] =
     {
 #line 11116
-        .trainerName = _("HALEY"),
+        .trainerName = _("真希"),
 #line 11117
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11118
@@ -27924,7 +27924,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HALEY_3] =
     {
 #line 11133
-        .trainerName = _("HALEY"),
+        .trainerName = _("真希"),
 #line 11134
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11135
@@ -27969,7 +27969,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HALEY_4] =
     {
 #line 11150
-        .trainerName = _("HALEY"),
+        .trainerName = _("真希"),
 #line 11151
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11152
@@ -28014,7 +28014,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HALEY_5] =
     {
 #line 11167
-        .trainerName = _("HALEY"),
+        .trainerName = _("真希"),
 #line 11168
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11169
@@ -28070,7 +28070,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SALLY] =
     {
 #line 11188
-        .trainerName = _("SALLY"),
+        .trainerName = _("美奈"),
 #line 11189
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11190
@@ -28104,7 +28104,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROBIN] =
     {
 #line 11201
-        .trainerName = _("ROBIN"),
+        .trainerName = _("诗帆"),
 #line 11202
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11203
@@ -28160,7 +28160,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANDREA] =
     {
 #line 11222
-        .trainerName = _("ANDREA"),
+        .trainerName = _("美纪"),
 #line 11223
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11224
@@ -28194,7 +28194,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CRISSY] =
     {
 #line 11235
-        .trainerName = _("CRISSY"),
+        .trainerName = _("梅"),
 #line 11236
         .trainerClass = TRAINER_CLASS_LASS,
 #line 11237
@@ -28239,7 +28239,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RICK] =
     {
 #line 11252
-        .trainerName = _("RICK"),
+        .trainerName = _("真一"),
 #line 11253
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11254
@@ -28282,7 +28282,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LYLE] =
     {
 #line 11269
-        .trainerName = _("LYLE"),
+        .trainerName = _("不二雄"),
 #line 11270
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11271
@@ -28347,7 +28347,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOSE] =
     {
 #line 11294
-        .trainerName = _("JOSE"),
+        .trainerName = _("智德"),
 #line 11295
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11296
@@ -28390,7 +28390,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DOUG] =
     {
 #line 11311
-        .trainerName = _("DOUG"),
+        .trainerName = _("修"),
 #line 11312
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11313
@@ -28433,7 +28433,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GREG] =
     {
 #line 11328
-        .trainerName = _("GREG"),
+        .trainerName = _("浩之"),
 #line 11329
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11330
@@ -28476,7 +28476,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KENT] =
     {
 #line 11345
-        .trainerName = _("KENT"),
+        .trainerName = _("友道"),
 #line 11346
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11347
@@ -28508,7 +28508,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JAMES_1] =
     {
 #line 11358
-        .trainerName = _("JAMES"),
+        .trainerName = _("三树也"),
 #line 11359
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11360
@@ -28551,7 +28551,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JAMES_2] =
     {
 #line 11375
-        .trainerName = _("JAMES"),
+        .trainerName = _("三树也"),
 #line 11376
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11377
@@ -28583,7 +28583,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JAMES_3] =
     {
 #line 11388
-        .trainerName = _("JAMES"),
+        .trainerName = _("三树也"),
 #line 11389
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11390
@@ -28626,7 +28626,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JAMES_4] =
     {
 #line 11405
-        .trainerName = _("JAMES"),
+        .trainerName = _("三树也"),
 #line 11406
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11407
@@ -28680,7 +28680,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JAMES_5] =
     {
 #line 11426
-        .trainerName = _("JAMES"),
+        .trainerName = _("三树也"),
 #line 11427
         .trainerClass = TRAINER_CLASS_BUG_CATCHER,
 #line 11428
@@ -28745,7 +28745,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRICE] =
     {
 #line 11451
-        .trainerName = _("BRICE"),
+        .trainerName = _("晴信"),
 #line 11452
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11453
@@ -28788,7 +28788,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TRENT_1] =
     {
 #line 11468
-        .trainerName = _("TRENT"),
+        .trainerName = _("健作"),
 #line 11469
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11470
@@ -28842,7 +28842,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LENNY] =
     {
 #line 11489
-        .trainerName = _("LENNY"),
+        .trainerName = _("胜人"),
 #line 11490
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11491
@@ -28885,7 +28885,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LUCAS_1] =
     {
 #line 11506
-        .trainerName = _("LUCAS"),
+        .trainerName = _("三郎"),
 #line 11507
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11508
@@ -28928,7 +28928,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALAN] =
     {
 #line 11523
-        .trainerName = _("ALAN"),
+        .trainerName = _("正典"),
 #line 11524
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11525
@@ -28982,7 +28982,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CLARK] =
     {
 #line 11544
-        .trainerName = _("CLARK"),
+        .trainerName = _("和德"),
 #line 11545
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11546
@@ -29014,7 +29014,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ERIC] =
     {
 #line 11557
-        .trainerName = _("ERIC"),
+        .trainerName = _("大地"),
 #line 11558
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11559
@@ -29057,7 +29057,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LUCAS_2] =
     {
 #line 11574
-        .trainerName = _("LUCAS"),
+        .trainerName = _("三郎"),
 #line 11575
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11576
@@ -29094,7 +29094,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIKE_1] =
     {
 #line 11589
-        .trainerName = _("MIKE"),
+        .trainerName = _("登"),
 #line 11590
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11591
@@ -29147,7 +29147,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MIKE_2] =
     {
 #line 11610
-        .trainerName = _("MIKE"),
+        .trainerName = _("登"),
 #line 11611
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11612
@@ -29201,7 +29201,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TRENT_2] =
     {
 #line 11631
-        .trainerName = _("TRENT"),
+        .trainerName = _("健作"),
 #line 11632
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11633
@@ -29266,7 +29266,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TRENT_3] =
     {
 #line 11656
-        .trainerName = _("TRENT"),
+        .trainerName = _("健作"),
 #line 11657
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11658
@@ -29331,7 +29331,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TRENT_4] =
     {
 #line 11681
-        .trainerName = _("TRENT"),
+        .trainerName = _("健作"),
 #line 11682
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11683
@@ -29396,7 +29396,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TRENT_5] =
     {
 #line 11706
-        .trainerName = _("TRENT"),
+        .trainerName = _("健作"),
 #line 11707
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 11708
@@ -29461,7 +29461,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DEZ_AND_LUKE] =
     {
 #line 11731
-        .trainerName = _("DEZ & LUKE"),
+        .trainerName = _("真子和辉"),
 #line 11732
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 11733
@@ -29504,7 +29504,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LEA_AND_JED] =
     {
 #line 11748
-        .trainerName = _("LEA & JED"),
+        .trainerName = _("佳穗和阿新"),
 #line 11749
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 11750
@@ -29547,7 +29547,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_1] =
     {
 #line 11765
-        .trainerName = _("KIRA & DAN"),
+        .trainerName = _("夏和文"),
 #line 11766
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 11767
@@ -29590,7 +29590,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_2] =
     {
 #line 11782
-        .trainerName = _("KIRA & DAN"),
+        .trainerName = _("夏和文"),
 #line 11783
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 11784
@@ -29633,7 +29633,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_3] =
     {
 #line 11799
-        .trainerName = _("KIRA & DAN"),
+        .trainerName = _("夏和文"),
 #line 11800
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 11801
@@ -29676,7 +29676,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_4] =
     {
 #line 11816
-        .trainerName = _("KIRA & DAN"),
+        .trainerName = _("夏和文"),
 #line 11817
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 11818
@@ -29719,7 +29719,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KIRA_AND_DAN_5] =
     {
 #line 11833
-        .trainerName = _("KIRA & DAN"),
+        .trainerName = _("夏和文"),
 #line 11834
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 11835
@@ -29762,7 +29762,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOHANNA] =
     {
 #line 11850
-        .trainerName = _("JOHANNA"),
+        .trainerName = _("敦子"),
 #line 11851
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 11852
@@ -29796,7 +29796,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GERALD] =
     {
 #line 11863
-        .trainerName = _("GERALD"),
+        .trainerName = _("卓郎"),
 #line 11864
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 11865
@@ -29837,7 +29837,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_VIVIAN] =
     {
 #line 11881
-        .trainerName = _("VIVIAN"),
+        .trainerName = _("真琴"),
 #line 11882
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 11883
@@ -29896,7 +29896,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DANIELLE] =
     {
 #line 11906
-        .trainerName = _("DANIELLE"),
+        .trainerName = _("知美"),
 #line 11907
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 11908
@@ -29937,7 +29937,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HIDEO] =
     {
 #line 11923
-        .trainerName = _("HIDEO"),
+        .trainerName = _("克治"),
 #line 11924
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 11925
@@ -29994,7 +29994,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KEIGO] =
     {
 #line 11948
-        .trainerName = _("KEIGO"),
+        .trainerName = _("哲司"),
 #line 11949
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 11950
@@ -30051,7 +30051,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RILEY] =
     {
 #line 11973
-        .trainerName = _("RILEY"),
+        .trainerName = _("忠弘"),
 #line 11974
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 11975
@@ -30108,7 +30108,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FLINT] =
     {
 #line 11998
-        .trainerName = _("FLINT"),
+        .trainerName = _("辉夫"),
 #line 11999
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 12000
@@ -30151,7 +30151,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ASHLEY] =
     {
 #line 12015
-        .trainerName = _("ASHLEY"),
+        .trainerName = _("耳子"),
 #line 12016
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 12017
@@ -30207,7 +30207,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALLY_MAUVILLE] =
     {
 #line 12036
-        .trainerName = _("WALLY"),
+        .trainerName = _("满充"),
 #line 12037
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12038
@@ -30239,7 +30239,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_2] =
     {
 #line 12049
-        .trainerName = _("WALLY"),
+        .trainerName = _("满充"),
 #line 12050
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12051
@@ -30352,7 +30352,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_3] =
     {
 #line 12099
-        .trainerName = _("WALLY"),
+        .trainerName = _("满充"),
 #line 12100
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12101
@@ -30465,7 +30465,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_4] =
     {
 #line 12149
-        .trainerName = _("WALLY"),
+        .trainerName = _("满充"),
 #line 12150
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12151
@@ -30578,7 +30578,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WALLY_VR_5] =
     {
 #line 12199
-        .trainerName = _("WALLY"),
+        .trainerName = _("满充"),
 #line 12200
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12201
@@ -30691,7 +30691,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_MUDKIP] =
     {
 #line 12249
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 12250
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12251
@@ -30756,7 +30756,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_TREECKO] =
     {
 #line 12274
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 12275
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12276
@@ -30821,7 +30821,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_LILYCOVE_TORCHIC] =
     {
 #line 12299
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 12300
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12301
@@ -30886,7 +30886,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_MUDKIP] =
     {
 #line 12324
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 12325
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12326
@@ -30953,7 +30953,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_TREECKO] =
     {
 #line 12349
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 12350
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12351
@@ -31020,7 +31020,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_LILYCOVE_TORCHIC] =
     {
 #line 12374
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 12375
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 12376
@@ -31087,7 +31087,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JONAH] =
     {
 #line 12399
-        .trainerName = _("JONAH"),
+        .trainerName = _("善德"),
 #line 12400
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 12401
@@ -31141,7 +31141,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HENRY] =
     {
 #line 12420
-        .trainerName = _("HENRY"),
+        .trainerName = _("健太郎"),
 #line 12421
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 12422
@@ -31184,7 +31184,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROGER] =
     {
 #line 12437
-        .trainerName = _("ROGER"),
+        .trainerName = _("智彦"),
 #line 12438
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 12439
@@ -31238,7 +31238,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALEXA] =
     {
 #line 12458
-        .trainerName = _("ALEXA"),
+        .trainerName = _("明香"),
 #line 12459
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 12460
@@ -31285,7 +31285,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RUBEN] =
     {
 #line 12476
-        .trainerName = _("RUBEN"),
+        .trainerName = _("驯"),
 #line 12477
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 12478
@@ -31330,7 +31330,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KOJI_1] =
     {
 #line 12494
-        .trainerName = _("KOJI"),
+        .trainerName = _("铁郎"),
 #line 12495
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 12496
@@ -31362,7 +31362,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WAYNE] =
     {
 #line 12507
-        .trainerName = _("WAYNE"),
+        .trainerName = _("孝作"),
 #line 12508
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 12509
@@ -31416,7 +31416,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AIDAN] =
     {
 #line 12528
-        .trainerName = _("AIDAN"),
+        .trainerName = _("郁夫"),
 #line 12529
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 12530
@@ -31459,7 +31459,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_REED] =
     {
 #line 12545
-        .trainerName = _("REED"),
+        .trainerName = _("明夫"),
 #line 12546
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 12547
@@ -31502,7 +31502,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TISHA] =
     {
 #line 12562
-        .trainerName = _("TISHA"),
+        .trainerName = _("由佳理"),
 #line 12563
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 12564
@@ -31536,7 +31536,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TORI_AND_TIA] =
     {
 #line 12575
-        .trainerName = _("TORI & TIA"),
+        .trainerName = _("奈奈和宁宁"),
 #line 12576
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 12577
@@ -31579,7 +31579,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KIM_AND_IRIS] =
     {
 #line 12592
-        .trainerName = _("KIM & IRIS"),
+        .trainerName = _("真穗和奈穗"),
 #line 12593
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 12594
@@ -31636,7 +31636,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TYRA_AND_IVY] =
     {
 #line 12617
-        .trainerName = _("TYRA & IVY"),
+        .trainerName = _("佳代和依代"),
 #line 12618
         .trainerClass = TRAINER_CLASS_SR_AND_JR,
 #line 12619
@@ -31693,7 +31693,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MEL_AND_PAUL] =
     {
 #line 12642
-        .trainerName = _("MEL & PAUL"),
+        .trainerName = _("志木和理树"),
 #line 12643
         .trainerClass = TRAINER_CLASS_YOUNG_COUPLE,
 #line 12644
@@ -31750,7 +31750,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_1] =
     {
 #line 12667
-        .trainerName = _("JOHN & JAY"),
+        .trainerName = _("源和初"),
 #line 12668
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 12669
@@ -31807,7 +31807,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_2] =
     {
 #line 12692
-        .trainerName = _("JOHN & JAY"),
+        .trainerName = _("源和初"),
 #line 12693
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 12694
@@ -31864,7 +31864,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_3] =
     {
 #line 12717
-        .trainerName = _("JOHN & JAY"),
+        .trainerName = _("源和初"),
 #line 12718
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 12719
@@ -31921,7 +31921,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_4] =
     {
 #line 12742
-        .trainerName = _("JOHN & JAY"),
+        .trainerName = _("源和初"),
 #line 12743
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 12744
@@ -31978,7 +31978,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOHN_AND_JAY_5] =
     {
 #line 12767
-        .trainerName = _("JOHN & JAY"),
+        .trainerName = _("源和初"),
 #line 12768
         .trainerClass = TRAINER_CLASS_OLD_COUPLE,
 #line 12769
@@ -32035,7 +32035,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RELI_AND_IAN] =
     {
 #line 12792
-        .trainerName = _("RELI & IAN"),
+        .trainerName = _("胜和亚美"),
 #line 12793
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 12794
@@ -32078,7 +32078,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_1] =
     {
 #line 12809
-        .trainerName = _("LILA & ROY"),
+        .trainerName = _("小勇和佳子"),
 #line 12810
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 12811
@@ -32121,7 +32121,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_2] =
     {
 #line 12826
-        .trainerName = _("LILA & ROY"),
+        .trainerName = _("小勇和佳子"),
 #line 12827
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 12828
@@ -32164,7 +32164,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_3] =
     {
 #line 12843
-        .trainerName = _("LILA & ROY"),
+        .trainerName = _("小勇和佳子"),
 #line 12844
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 12845
@@ -32207,7 +32207,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_4] =
     {
 #line 12860
-        .trainerName = _("LILA & ROY"),
+        .trainerName = _("小勇和佳子"),
 #line 12861
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 12862
@@ -32250,7 +32250,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LILA_AND_ROY_5] =
     {
 #line 12877
-        .trainerName = _("LILA & ROY"),
+        .trainerName = _("小勇和佳子"),
 #line 12878
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 12879
@@ -32293,7 +32293,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LISA_AND_RAY] =
     {
 #line 12894
-        .trainerName = _("LISA & RAY"),
+        .trainerName = _("真和由美"),
 #line 12895
         .trainerClass = TRAINER_CLASS_SIS_AND_BRO,
 #line 12896
@@ -32336,7 +32336,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHRIS] =
     {
 #line 12911
-        .trainerName = _("CHRIS"),
+        .trainerName = _("正志"),
 #line 12912
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 12913
@@ -32401,7 +32401,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DAWSON] =
     {
 #line 12936
-        .trainerName = _("DAWSON"),
+        .trainerName = _("希望"),
 #line 12937
         .trainerClass = TRAINER_CLASS_RICH_BOY,
 #line 12938
@@ -32446,7 +32446,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SARAH] =
     {
 #line 12953
-        .trainerName = _("SARAH"),
+        .trainerName = _("樱子"),
 #line 12954
         .trainerClass = TRAINER_CLASS_LADY,
 #line 12955
@@ -32495,7 +32495,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DARIAN] =
     {
 #line 12971
-        .trainerName = _("DARIAN"),
+        .trainerName = _("健吉"),
 #line 12972
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 12973
@@ -32527,7 +32527,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HAILEY] =
     {
 #line 12984
-        .trainerName = _("HAILEY"),
+        .trainerName = _("小华"),
 #line 12985
         .trainerClass = TRAINER_CLASS_TUBER_F,
 #line 12986
@@ -32561,7 +32561,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHANDLER] =
     {
 #line 12997
-        .trainerName = _("CHANDLER"),
+        .trainerName = _("大辅"),
 #line 12998
         .trainerClass = TRAINER_CLASS_TUBER_M,
 #line 12999
@@ -32604,7 +32604,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KALEB] =
     {
 #line 13014
-        .trainerName = _("KALEB"),
+        .trainerName = _("雅贵"),
 #line 13015
         .trainerClass = TRAINER_CLASS_POKEFAN,
 #line 13016
@@ -32651,7 +32651,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOSEPH] =
     {
 #line 13031
-        .trainerName = _("JOSEPH"),
+        .trainerName = _("保罗"),
 #line 13032
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 13033
@@ -32694,7 +32694,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALYSSA] =
     {
 #line 13048
-        .trainerName = _("ALYSSA"),
+        .trainerName = _("冴美"),
 #line 13049
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 13050
@@ -32728,7 +32728,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARCOS] =
     {
 #line 13061
-        .trainerName = _("MARCOS"),
+        .trainerName = _("埃力克"),
 #line 13062
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 13063
@@ -32760,7 +32760,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RHETT] =
     {
 #line 13074
-        .trainerName = _("RHETT"),
+        .trainerName = _("茂森"),
 #line 13075
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 13076
@@ -32792,7 +32792,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TYRON] =
     {
 #line 13087
-        .trainerName = _("TYRON"),
+        .trainerName = _("俊文"),
 #line 13088
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 13089
@@ -32824,7 +32824,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CELINA] =
     {
 #line 13100
-        .trainerName = _("CELINA"),
+        .trainerName = _("和香子"),
 #line 13101
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 13102
@@ -32858,7 +32858,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BIANCA] =
     {
 #line 13113
-        .trainerName = _("BIANCA"),
+        .trainerName = _("伊织"),
 #line 13114
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 13115
@@ -32892,7 +32892,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HAYDEN] =
     {
 #line 13126
-        .trainerName = _("HAYDEN"),
+        .trainerName = _("国明"),
 #line 13127
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 13128
@@ -32924,7 +32924,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SOPHIE] =
     {
 #line 13139
-        .trainerName = _("SOPHIE"),
+        .trainerName = _("长闲"),
 #line 13140
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 13141
@@ -32969,7 +32969,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_COBY] =
     {
 #line 13156
-        .trainerName = _("COBY"),
+        .trainerName = _("和高"),
 #line 13157
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 13158
@@ -33012,7 +33012,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LAWRENCE] =
     {
 #line 13173
-        .trainerName = _("LAWRENCE"),
+        .trainerName = _("勇吾"),
 #line 13174
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 13175
@@ -33055,7 +33055,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WYATT] =
     {
 #line 13190
-        .trainerName = _("WYATT"),
+        .trainerName = _("道夫"),
 #line 13191
         .trainerClass = TRAINER_CLASS_POKEMANIAC,
 #line 13192
@@ -33098,7 +33098,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANGELINA] =
     {
 #line 13207
-        .trainerName = _("ANGELINA"),
+        .trainerName = _("茉莉"),
 #line 13208
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 13209
@@ -33143,7 +33143,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KAI] =
     {
 #line 13224
-        .trainerName = _("KAI"),
+        .trainerName = _("宏光"),
 #line 13225
         .trainerClass = TRAINER_CLASS_FISHERMAN,
 #line 13226
@@ -33175,7 +33175,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CHARLOTTE] =
     {
 #line 13237
-        .trainerName = _("CHARLOTTE"),
+        .trainerName = _("美波"),
 #line 13238
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 13239
@@ -33209,7 +33209,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DEANDRE] =
     {
 #line 13250
-        .trainerName = _("DEANDRE"),
+        .trainerName = _("雅也"),
 #line 13251
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 13252
@@ -33263,7 +33263,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_1] =
     {
 #line 13271
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13272
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13273
@@ -33295,7 +33295,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_2] =
     {
 #line 13284
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13285
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13286
@@ -33327,7 +33327,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_3] =
     {
 #line 13297
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13298
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13299
@@ -33359,7 +33359,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_4] =
     {
 #line 13310
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13311
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13312
@@ -33402,7 +33402,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_5] =
     {
 #line 13327
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13328
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13329
@@ -33445,7 +33445,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_6] =
     {
 #line 13344
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13345
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13346
@@ -33477,7 +33477,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_7] =
     {
 #line 13357
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13358
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13359
@@ -33509,7 +33509,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_8] =
     {
 #line 13370
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13371
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13372
@@ -33541,7 +33541,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_9] =
     {
 #line 13383
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13384
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13385
@@ -33573,7 +33573,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_10] =
     {
 #line 13396
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13397
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13398
@@ -33605,7 +33605,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_11] =
     {
 #line 13409
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13410
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13411
@@ -33637,7 +33637,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_12] =
     {
 #line 13422
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13423
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13424
@@ -33669,7 +33669,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_13] =
     {
 #line 13435
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13436
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13437
@@ -33701,7 +33701,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_14] =
     {
 #line 13448
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13449
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13450
@@ -33735,7 +33735,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_15] =
     {
 #line 13461
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13462
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13463
@@ -33769,7 +33769,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRUNT_MAGMA_HIDEOUT_16] =
     {
 #line 13474
-        .trainerName = _("GRUNT"),
+        .trainerName = _("手下"),
 #line 13475
         .trainerClass = TRAINER_CLASS_TEAM_MAGMA,
 #line 13476
@@ -33803,7 +33803,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TABITHA_MAGMA_HIDEOUT] =
     {
 #line 13487
-        .trainerName = _("TABITHA"),
+        .trainerName = _("火村"),
 #line 13488
         .trainerClass = TRAINER_CLASS_MAGMA_ADMIN,
 #line 13489
@@ -33868,7 +33868,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DARCY] =
     {
 #line 13512
-        .trainerName = _("DARCY"),
+        .trainerName = _("成美"),
 #line 13513
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 13514
@@ -33915,7 +33915,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAXIE_MOSSDEEP] =
     {
 #line 13530
-        .trainerName = _("MAXIE"),
+        .trainerName = _("赤焰松"),
 #line 13531
         .trainerClass = TRAINER_CLASS_MAGMA_LEADER,
 #line 13532
@@ -33969,7 +33969,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PETE] =
     {
 #line 13551
-        .trainerName = _("PETE"),
+        .trainerName = _("秀彦"),
 #line 13552
         .trainerClass = TRAINER_CLASS_SWIMMER_M,
 #line 13553
@@ -34001,7 +34001,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ISABELLE] =
     {
 #line 13564
-        .trainerName = _("ISABELLE"),
+        .trainerName = _("由美子"),
 #line 13565
         .trainerClass = TRAINER_CLASS_SWIMMER_F,
 #line 13566
@@ -34035,7 +34035,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_1] =
     {
 #line 13577
-        .trainerName = _("ANDRES"),
+        .trainerName = _("大次郎"),
 #line 13578
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 13579
@@ -34078,7 +34078,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOSUE] =
     {
 #line 13594
-        .trainerName = _("JOSUE"),
+        .trainerName = _("康文"),
 #line 13595
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 13596
@@ -34121,7 +34121,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAMRON] =
     {
 #line 13611
-        .trainerName = _("CAMRON"),
+        .trainerName = _("国男"),
 #line 13612
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 13613
@@ -34153,7 +34153,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CORY_1] =
     {
 #line 13624
-        .trainerName = _("CORY"),
+        .trainerName = _("典孝"),
 #line 13625
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 13626
@@ -34207,7 +34207,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CAROLINA] =
     {
 #line 13645
-        .trainerName = _("CAROLINA"),
+        .trainerName = _("圣华"),
 #line 13646
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 13647
@@ -34265,7 +34265,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ELIJAH] =
     {
 #line 13667
-        .trainerName = _("ELIJAH"),
+        .trainerName = _("俊隆"),
 #line 13668
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 13669
@@ -34308,7 +34308,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CELIA] =
     {
 #line 13684
-        .trainerName = _("CELIA"),
+        .trainerName = _("亚希子"),
 #line 13685
         .trainerClass = TRAINER_CLASS_PICNICKER,
 #line 13686
@@ -34353,7 +34353,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRYAN] =
     {
 #line 13701
-        .trainerName = _("BRYAN"),
+        .trainerName = _("博敏"),
 #line 13702
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 13703
@@ -34396,7 +34396,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRANDEN] =
     {
 #line 13718
-        .trainerName = _("BRANDEN"),
+        .trainerName = _("康范"),
 #line 13719
         .trainerClass = TRAINER_CLASS_CAMPER,
 #line 13720
@@ -34439,7 +34439,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRYANT] =
     {
 #line 13735
-        .trainerName = _("BRYANT"),
+        .trainerName = _("敦夫"),
 #line 13736
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 13737
@@ -34482,7 +34482,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SHAYLA] =
     {
 #line 13752
-        .trainerName = _("SHAYLA"),
+        .trainerName = _("妙子"),
 #line 13753
         .trainerClass = TRAINER_CLASS_AROMA_LADY,
 #line 13754
@@ -34527,7 +34527,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KYRA] =
     {
 #line 13769
-        .trainerName = _("KYRA"),
+        .trainerName = _("凛子"),
 #line 13770
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 13771
@@ -34572,7 +34572,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JAIDEN] =
     {
 #line 13786
-        .trainerName = _("JAIDEN"),
+        .trainerName = _("勇藏"),
 #line 13787
         .trainerClass = TRAINER_CLASS_NINJA_BOY,
 #line 13788
@@ -34615,7 +34615,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALIX] =
     {
 #line 13803
-        .trainerName = _("ALIX"),
+        .trainerName = _("诗乃"),
 #line 13804
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 13805
@@ -34660,7 +34660,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_HELENE] =
     {
 #line 13820
-        .trainerName = _("HELENE"),
+        .trainerName = _("千岁"),
 #line 13821
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 13822
@@ -34705,7 +34705,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARLENE] =
     {
 #line 13837
-        .trainerName = _("MARLENE"),
+        .trainerName = _("璃音"),
 #line 13838
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 13839
@@ -34750,7 +34750,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DEVAN] =
     {
 #line 13854
-        .trainerName = _("DEVAN"),
+        .trainerName = _("通泰"),
 #line 13855
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 13856
@@ -34793,7 +34793,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JOHNSON] =
     {
 #line 13871
-        .trainerName = _("JOHNSON"),
+        .trainerName = _("有利"),
 #line 13872
         .trainerClass = TRAINER_CLASS_YOUNGSTER,
 #line 13873
@@ -34836,7 +34836,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MELINA] =
     {
 #line 13888
-        .trainerName = _("MELINA"),
+        .trainerName = _("素子"),
 #line 13889
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 13890
@@ -34870,7 +34870,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRANDI] =
     {
 #line 13901
-        .trainerName = _("BRANDI"),
+        .trainerName = _("圣夏"),
 #line 13902
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 13903
@@ -34904,7 +34904,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_AISHA] =
     {
 #line 13914
-        .trainerName = _("AISHA"),
+        .trainerName = _("诗茉"),
 #line 13915
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 13916
@@ -34938,7 +34938,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAKAYLA] =
     {
 #line 13927
-        .trainerName = _("MAKAYLA"),
+        .trainerName = _("铃"),
 #line 13928
         .trainerClass = TRAINER_CLASS_EXPERT,
 #line 13929
@@ -34985,7 +34985,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FABIAN] =
     {
 #line 13945
-        .trainerName = _("FABIAN"),
+        .trainerName = _("吉米"),
 #line 13946
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 13947
@@ -35017,7 +35017,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DAYTON] =
     {
 #line 13958
-        .trainerName = _("DAYTON"),
+        .trainerName = _("淳宏"),
 #line 13959
         .trainerClass = TRAINER_CLASS_KINDLER,
 #line 13960
@@ -35060,7 +35060,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RACHEL] =
     {
 #line 13975
-        .trainerName = _("RACHEL"),
+        .trainerName = _("观月"),
 #line 13976
         .trainerClass = TRAINER_CLASS_PARASOL_LADY,
 #line 13977
@@ -35094,7 +35094,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LEONEL] =
     {
 #line 13988
-        .trainerName = _("LEONEL"),
+        .trainerName = _("和宏"),
 #line 13989
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 13990
@@ -35134,7 +35134,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CALLIE] =
     {
 #line 14005
-        .trainerName = _("CALLIE"),
+        .trainerName = _("风子"),
 #line 14006
         .trainerClass = TRAINER_CLASS_BATTLE_GIRL,
 #line 14007
@@ -35179,7 +35179,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CALE] =
     {
 #line 14022
-        .trainerName = _("CALE"),
+        .trainerName = _("健介"),
 #line 14023
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 14024
@@ -35222,7 +35222,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MYLES] =
     {
 #line 14039
-        .trainerName = _("MYLES"),
+        .trainerName = _("康夫"),
 #line 14040
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 14041
@@ -35309,7 +35309,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PAT] =
     {
 #line 14072
-        .trainerName = _("PAT"),
+        .trainerName = _("春衣"),
 #line 14073
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 14074
@@ -35398,7 +35398,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_1] =
     {
 #line 14105
-        .trainerName = _("CRISTIN"),
+        .trainerName = _("登纪子"),
 #line 14106
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 14107
@@ -35445,7 +35445,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_TREECKO] =
     {
 #line 14123
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 14124
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 14125
@@ -35490,7 +35490,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_RUSTBORO_TORCHIC] =
     {
 #line 14140
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 14141
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 14142
@@ -35535,7 +35535,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_2] =
     {
 #line 14157
-        .trainerName = _("ROXANNE"),
+        .trainerName = _("杜娟"),
 #line 14158
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14159
@@ -35636,7 +35636,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_3] =
     {
 #line 14199
-        .trainerName = _("ROXANNE"),
+        .trainerName = _("杜娟"),
 #line 14200
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14201
@@ -35755,7 +35755,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_4] =
     {
 #line 14249
-        .trainerName = _("ROXANNE"),
+        .trainerName = _("杜娟"),
 #line 14250
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14251
@@ -35874,7 +35874,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ROXANNE_5] =
     {
 #line 14299
-        .trainerName = _("ROXANNE"),
+        .trainerName = _("杜娟"),
 #line 14300
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14301
@@ -36011,7 +36011,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_2] =
     {
 #line 14357
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("藤树"),
 #line 14358
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14359
@@ -36110,7 +36110,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_3] =
     {
 #line 14399
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("藤树"),
 #line 14400
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14401
@@ -36209,7 +36209,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_4] =
     {
 #line 14441
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("藤树"),
 #line 14442
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14443
@@ -36326,7 +36326,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRAWLY_5] =
     {
 #line 14491
-        .trainerName = _("BRAWLY"),
+        .trainerName = _("藤树"),
 #line 14492
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14493
@@ -36461,7 +36461,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_2] =
     {
 #line 14549
-        .trainerName = _("WATTSON"),
+        .trainerName = _("铁旋"),
 #line 14550
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14551
@@ -36560,7 +36560,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_3] =
     {
 #line 14591
-        .trainerName = _("WATTSON"),
+        .trainerName = _("铁旋"),
 #line 14592
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14593
@@ -36677,7 +36677,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_4] =
     {
 #line 14641
-        .trainerName = _("WATTSON"),
+        .trainerName = _("铁旋"),
 #line 14642
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14643
@@ -36794,7 +36794,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WATTSON_5] =
     {
 #line 14691
-        .trainerName = _("WATTSON"),
+        .trainerName = _("铁旋"),
 #line 14692
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14693
@@ -36929,7 +36929,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_2] =
     {
 #line 14749
-        .trainerName = _("FLANNERY"),
+        .trainerName = _("亚莎"),
 #line 14750
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14751
@@ -37032,7 +37032,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_3] =
     {
 #line 14791
-        .trainerName = _("FLANNERY"),
+        .trainerName = _("亚莎"),
 #line 14792
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14793
@@ -37153,7 +37153,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_4] =
     {
 #line 14841
-        .trainerName = _("FLANNERY"),
+        .trainerName = _("亚莎"),
 #line 14842
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14843
@@ -37292,7 +37292,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FLANNERY_5] =
     {
 #line 14899
-        .trainerName = _("FLANNERY"),
+        .trainerName = _("亚莎"),
 #line 14900
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14901
@@ -37431,7 +37431,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_2] =
     {
 #line 14957
-        .trainerName = _("NORMAN"),
+        .trainerName = _("千里"),
 #line 14958
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 14959
@@ -37530,7 +37530,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_3] =
     {
 #line 14999
-        .trainerName = _("NORMAN"),
+        .trainerName = _("千里"),
 #line 15000
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15001
@@ -37647,7 +37647,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_4] =
     {
 #line 15049
-        .trainerName = _("NORMAN"),
+        .trainerName = _("千里"),
 #line 15050
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15051
@@ -37764,7 +37764,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NORMAN_5] =
     {
 #line 15099
-        .trainerName = _("NORMAN"),
+        .trainerName = _("千里"),
 #line 15100
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15101
@@ -37899,7 +37899,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINONA_2] =
     {
 #line 15157
-        .trainerName = _("WINONA"),
+        .trainerName = _("娜琪"),
 #line 15158
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15159
@@ -38018,7 +38018,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINONA_3] =
     {
 #line 15207
-        .trainerName = _("WINONA"),
+        .trainerName = _("娜琪"),
 #line 15208
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15209
@@ -38155,7 +38155,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINONA_4] =
     {
 #line 15265
-        .trainerName = _("WINONA"),
+        .trainerName = _("娜琪"),
 #line 15266
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15267
@@ -38292,7 +38292,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_WINONA_5] =
     {
 #line 15323
-        .trainerName = _("WINONA"),
+        .trainerName = _("娜琪"),
 #line 15324
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15325
@@ -38429,7 +38429,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_2] =
     {
 #line 15381
-        .trainerName = _("TATE&LIZA"),
+        .trainerName = _("小枫和小南"),
 #line 15382
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15383
@@ -38548,7 +38548,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_3] =
     {
 #line 15431
-        .trainerName = _("TATE&LIZA"),
+        .trainerName = _("小枫和小南"),
 #line 15432
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15433
@@ -38685,7 +38685,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_4] =
     {
 #line 15489
-        .trainerName = _("TATE&LIZA"),
+        .trainerName = _("小枫和小南"),
 #line 15490
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15491
@@ -38822,7 +38822,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TATE_AND_LIZA_5] =
     {
 #line 15547
-        .trainerName = _("TATE&LIZA"),
+        .trainerName = _("小枫和小南"),
 #line 15548
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15549
@@ -38959,7 +38959,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JUAN_2] =
     {
 #line 15605
-        .trainerName = _("JUAN"),
+        .trainerName = _("亚当"),
 #line 15606
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15607
@@ -39076,7 +39076,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JUAN_3] =
     {
 #line 15655
-        .trainerName = _("JUAN"),
+        .trainerName = _("亚当"),
 #line 15656
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15657
@@ -39193,7 +39193,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JUAN_4] =
     {
 #line 15705
-        .trainerName = _("JUAN"),
+        .trainerName = _("亚当"),
 #line 15706
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15707
@@ -39328,7 +39328,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_JUAN_5] =
     {
 #line 15763
-        .trainerName = _("JUAN"),
+        .trainerName = _("亚当"),
 #line 15764
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 15765
@@ -39463,7 +39463,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANGELO] =
     {
 #line 15821
-        .trainerName = _("ANGELO"),
+        .trainerName = _("基宏"),
 #line 15822
         .trainerClass = TRAINER_CLASS_BUG_MANIAC,
 #line 15823
@@ -39518,7 +39518,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_DARIUS] =
     {
 #line 15844
-        .trainerName = _("DARIUS"),
+        .trainerName = _("诚一"),
 #line 15845
         .trainerClass = TRAINER_CLASS_BIRD_KEEPER,
 #line 15846
@@ -39550,7 +39550,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_STEVEN] =
     {
 #line 15857
-        .trainerName = _("STEVEN"),
+        .trainerName = _("大吾"),
 #line 15858
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 15859
@@ -39683,7 +39683,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANABEL] =
     {
 #line 15915
-        .trainerName = _("ANABEL"),
+        .trainerName = _("莉拉"),
 #line 15916
         .trainerClass = TRAINER_CLASS_SALON_MAIDEN,
 #line 15917
@@ -39717,7 +39717,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_TUCKER] =
     {
 #line 15928
-        .trainerName = _("TUCKER"),
+        .trainerName = _("石南"),
 #line 15929
         .trainerClass = TRAINER_CLASS_DOME_ACE,
 #line 15930
@@ -39749,7 +39749,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SPENSER] =
     {
 #line 15941
-        .trainerName = _("SPENSER"),
+        .trainerName = _("郁金"),
 #line 15942
         .trainerClass = TRAINER_CLASS_PALACE_MAVEN,
 #line 15943
@@ -39781,7 +39781,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GRETA] =
     {
 #line 15954
-        .trainerName = _("GRETA"),
+        .trainerName = _("黄瓜香"),
 #line 15955
         .trainerClass = TRAINER_CLASS_ARENA_TYCOON,
 #line 15956
@@ -39815,7 +39815,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_NOLAND] =
     {
 #line 15967
-        .trainerName = _("NOLAND"),
+        .trainerName = _("达拉"),
 #line 15968
         .trainerClass = TRAINER_CLASS_FACTORY_HEAD,
 #line 15969
@@ -39847,7 +39847,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LUCY] =
     {
 #line 15980
-        .trainerName = _("LUCY"),
+        .trainerName = _("小蓟"),
 #line 15981
         .trainerClass = TRAINER_CLASS_PIKE_QUEEN,
 #line 15982
@@ -39881,7 +39881,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRANDON] =
     {
 #line 15993
-        .trainerName = _("BRANDON"),
+        .trainerName = _("神代"),
 #line 15994
         .trainerClass = TRAINER_CLASS_PYRAMID_KING,
 #line 15995
@@ -39913,7 +39913,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_2] =
     {
 #line 16006
-        .trainerName = _("ANDRES"),
+        .trainerName = _("大次郎"),
 #line 16007
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 16008
@@ -39956,7 +39956,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_3] =
     {
 #line 16023
-        .trainerName = _("ANDRES"),
+        .trainerName = _("大次郎"),
 #line 16024
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 16025
@@ -40010,7 +40010,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_4] =
     {
 #line 16044
-        .trainerName = _("ANDRES"),
+        .trainerName = _("大次郎"),
 #line 16045
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 16046
@@ -40064,7 +40064,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ANDRES_5] =
     {
 #line 16065
-        .trainerName = _("ANDRES"),
+        .trainerName = _("大次郎"),
 #line 16066
         .trainerClass = TRAINER_CLASS_RUIN_MANIAC,
 #line 16067
@@ -40118,7 +40118,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CORY_2] =
     {
 #line 16086
-        .trainerName = _("CORY"),
+        .trainerName = _("典孝"),
 #line 16087
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 16088
@@ -40172,7 +40172,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CORY_3] =
     {
 #line 16107
-        .trainerName = _("CORY"),
+        .trainerName = _("典孝"),
 #line 16108
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 16109
@@ -40226,7 +40226,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CORY_4] =
     {
 #line 16128
-        .trainerName = _("CORY"),
+        .trainerName = _("典孝"),
 #line 16129
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 16130
@@ -40280,7 +40280,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CORY_5] =
     {
 #line 16149
-        .trainerName = _("CORY"),
+        .trainerName = _("典孝"),
 #line 16150
         .trainerClass = TRAINER_CLASS_SAILOR,
 #line 16151
@@ -40334,7 +40334,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PABLO_2] =
     {
 #line 16170
-        .trainerName = _("PABLO"),
+        .trainerName = _("靖宏"),
 #line 16171
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 16172
@@ -40377,7 +40377,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PABLO_3] =
     {
 #line 16187
-        .trainerName = _("PABLO"),
+        .trainerName = _("靖宏"),
 #line 16188
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 16189
@@ -40431,7 +40431,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PABLO_4] =
     {
 #line 16208
-        .trainerName = _("PABLO"),
+        .trainerName = _("靖宏"),
 #line 16209
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 16210
@@ -40485,7 +40485,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_PABLO_5] =
     {
 #line 16229
-        .trainerName = _("PABLO"),
+        .trainerName = _("靖宏"),
 #line 16230
         .trainerClass = TRAINER_CLASS_TRIATHLETE,
 #line 16231
@@ -40539,7 +40539,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KOJI_2] =
     {
 #line 16250
-        .trainerName = _("KOJI"),
+        .trainerName = _("铁郎"),
 #line 16251
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 16252
@@ -40582,7 +40582,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KOJI_3] =
     {
 #line 16267
-        .trainerName = _("KOJI"),
+        .trainerName = _("铁郎"),
 #line 16268
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 16269
@@ -40636,7 +40636,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KOJI_4] =
     {
 #line 16288
-        .trainerName = _("KOJI"),
+        .trainerName = _("铁郎"),
 #line 16289
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 16290
@@ -40690,7 +40690,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_KOJI_5] =
     {
 #line 16309
-        .trainerName = _("KOJI"),
+        .trainerName = _("铁郎"),
 #line 16310
         .trainerClass = TRAINER_CLASS_BLACK_BELT,
 #line 16311
@@ -40744,7 +40744,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_2] =
     {
 #line 16330
-        .trainerName = _("CRISTIN"),
+        .trainerName = _("登纪子"),
 #line 16331
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 16332
@@ -40791,7 +40791,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_3] =
     {
 #line 16348
-        .trainerName = _("CRISTIN"),
+        .trainerName = _("登纪子"),
 #line 16349
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 16350
@@ -40849,7 +40849,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_4] =
     {
 #line 16370
-        .trainerName = _("CRISTIN"),
+        .trainerName = _("登纪子"),
 #line 16371
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 16372
@@ -40907,7 +40907,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_CRISTIN_5] =
     {
 #line 16392
-        .trainerName = _("CRISTIN"),
+        .trainerName = _("登纪子"),
 #line 16393
         .trainerClass = TRAINER_CLASS_COOLTRAINER,
 #line 16394
@@ -40965,7 +40965,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_2] =
     {
 #line 16414
-        .trainerName = _("FERNANDO"),
+        .trainerName = _("乔"),
 #line 16415
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 16416
@@ -41019,7 +41019,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_3] =
     {
 #line 16435
-        .trainerName = _("FERNANDO"),
+        .trainerName = _("乔"),
 #line 16436
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 16437
@@ -41073,7 +41073,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_4] =
     {
 #line 16456
-        .trainerName = _("FERNANDO"),
+        .trainerName = _("乔"),
 #line 16457
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 16458
@@ -41127,7 +41127,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_FERNANDO_5] =
     {
 #line 16477
-        .trainerName = _("FERNANDO"),
+        .trainerName = _("乔"),
 #line 16478
         .trainerClass = TRAINER_CLASS_GUITARIST,
 #line 16479
@@ -41181,7 +41181,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_2] =
     {
 #line 16498
-        .trainerName = _("SAWYER"),
+        .trainerName = _("雅彦"),
 #line 16499
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 16500
@@ -41224,7 +41224,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_3] =
     {
 #line 16515
-        .trainerName = _("SAWYER"),
+        .trainerName = _("雅彦"),
 #line 16516
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 16517
@@ -41278,7 +41278,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_4] =
     {
 #line 16536
-        .trainerName = _("SAWYER"),
+        .trainerName = _("雅彦"),
 #line 16537
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 16538
@@ -41332,7 +41332,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_SAWYER_5] =
     {
 #line 16557
-        .trainerName = _("SAWYER"),
+        .trainerName = _("雅彦"),
 #line 16558
         .trainerClass = TRAINER_CLASS_HIKER,
 #line 16559
@@ -41386,7 +41386,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_2] =
     {
 #line 16578
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("福美"),
 #line 16579
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 16580
@@ -41475,7 +41475,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_3] =
     {
 #line 16611
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("福美"),
 #line 16612
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 16613
@@ -41564,7 +41564,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_4] =
     {
 #line 16644
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("福美"),
 #line 16645
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 16646
@@ -41653,7 +41653,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_GABRIELLE_5] =
     {
 #line 16677
-        .trainerName = _("GABRIELLE"),
+        .trainerName = _("福美"),
 #line 16678
         .trainerClass = TRAINER_CLASS_PKMN_BREEDER,
 #line 16679
@@ -41742,7 +41742,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_THALIA_2] =
     {
 #line 16710
-        .trainerName = _("THALIA"),
+        .trainerName = _("睫"),
 #line 16711
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 16712
@@ -41787,7 +41787,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_THALIA_3] =
     {
 #line 16727
-        .trainerName = _("THALIA"),
+        .trainerName = _("睫"),
 #line 16728
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 16729
@@ -41843,7 +41843,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_THALIA_4] =
     {
 #line 16748
-        .trainerName = _("THALIA"),
+        .trainerName = _("睫"),
 #line 16749
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 16750
@@ -41899,7 +41899,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_THALIA_5] =
     {
 #line 16769
-        .trainerName = _("THALIA"),
+        .trainerName = _("睫"),
 #line 16770
         .trainerClass = TRAINER_CLASS_BEAUTY,
 #line 16771
@@ -41955,7 +41955,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MARIELA] =
     {
 #line 16790
-        .trainerName = _("MARIELA"),
+        .trainerName = _("未羽"),
 #line 16791
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 16792
@@ -41987,7 +41987,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_ALVARO] =
     {
 #line 16802
-        .trainerName = _("ALVARO"),
+        .trainerName = _("信也"),
 #line 16803
         .trainerClass = TRAINER_CLASS_PSYCHIC,
 #line 16804
@@ -42028,7 +42028,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_EVERETT] =
     {
 #line 16818
-        .trainerName = _("EVERETT"),
+        .trainerName = _("道格"),
 #line 16819
         .trainerClass = TRAINER_CLASS_GENTLEMAN,
 #line 16820
@@ -42058,7 +42058,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_RED] =
     {
 #line 16830
-        .trainerName = _("RED"),
+        .trainerName = _("赤红"),
 #line 16831
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 16832
@@ -42088,7 +42088,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_LEAF] =
     {
 #line 16842
-        .trainerName = _("LEAF"),
+        .trainerName = _("叶子"),
 #line 16843
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 16844
@@ -42120,7 +42120,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_BRENDAN_PLACEHOLDER] =
     {
 #line 16854
-        .trainerName = _("BRENDAN"),
+        .trainerName = _("小悠"),
 #line 16855
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
 #line 16856
@@ -42150,7 +42150,7 @@ F_TRAINER_FEMALE |
     [DIFFICULTY_NORMAL][TRAINER_MAY_PLACEHOLDER] =
     {
 #line 16866
-        .trainerName = _("MAY"),
+        .trainerName = _("小遥"),
 #line 16867
         .trainerClass = TRAINER_CLASS_RS_PROTAG,
 #line 16868

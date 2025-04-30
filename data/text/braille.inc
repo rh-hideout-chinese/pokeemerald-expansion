@@ -4,7 +4,8 @@
 @       section by editing ScrCmd_braillemessage.
 Underwater_SealedChamber_Braille_GoUpHere:
 	brailleformat 4, 6, 26, 13, 7, 9
-	.braille "GO UP HERE.$"
+	.braille "ZAI CI\n"
+	.braille "SHANG SHENG$"
 
 SealedChamber_OuterRoom_Braille_ABC:
 	brailleformat 7, 6, 21, 13, 10, 9
@@ -48,70 +49,75 @@ SealedChamber_OuterRoom_Braille_Comma:
 
 SealedChamber_OuterRoom_Braille_DigHere:
 	brailleformat 7, 4, 23, 15, 10, 7
-	.braille "DIG HERE.$"
+	.braille "ZAI CI\n"
+	.braille "WA DONG$"
 
 SealedChamber_InnerRoom_Braille_FirstWailordLastRelicanth:
 	brailleformat 0, 0, 29, 19, 3, 3
-	.braille "FIRST COMES\n"
-	.braille "WAILORD.\n"
-	.braille "LAST COMES\n"
-	.braille "RELICANTH.$"
+	.braille "HOU JING WANG\n"
+	.braille "WEI SHI\n"
+	.braille "GU KONG JI YU\n"
+	.braille "WEI MO\n"
+	.braille "XI SHU JIN KAI$"
 
 SealedChamber_InnerRoom_Braille_InThisCaveWeHaveLived:
 	brailleformat 2, 0, 26, 19, 5, 3
-	.braille "IN THIS\n"
-	.braille "CAVE WE\n"
-	.braille "HAVE\n"
-	.braille "LIVED.$"
+	.braille "WU DENG\n"
+	.braille "JU CI KU ZHONG\n"
+	.braille "CUN YU CI CHU$"
 
 SealedChamber_InnerRoom_Braille_WeOweAllToThePokemon:
 	brailleformat 7, 2, 23, 17, 10, 5
-	.braille "WE OWE ALL\n"
-	.braille "TO THE\n"
-	.braille "POKEMON.$"
+	.braille "CI JIE\n"
+	.braille "LAI YU\n"
+	.braille "BAO KE MENG$"
 
 SealedChamber_InnerRoom_Braille_ButWeSealedThePokemonAway:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "BUT, WE\n"
-	.braille "SEALED THE\n"
-	.braille "POKEMON\n"
-	.braille "AWAY.$"
+	.braille "RAN WU DENG\n"
+	.braille "JIANG QI\n"
+	.braille "FENG YIN$"
 
 SealedChamber_InnerRoom_Braille_WeFearedIt:
 	brailleformat 5, 6, 25, 13, 8, 9
-	.braille "WE FEARED IT.$"
+	.braille "JIE YIN QI$\n"
+	.braille "SHI ZAI$\n"
+	.braille "GUO YU KE BU$"
 
 SealedChamber_InnerRoom_Braille_ThoseWithCourageHope:
 	brailleformat 6, 0, 24, 19, 9, 3
-	.braille "THOSE WITH\n"
-	.braille "COURAGE,\n"
-	.braille "THOSE WITH\n"
-	.braille "HOPE.$"
+	.braille "YONG GAN\n"
+	.braille "ZHI REN\n"
+	.braille "XIONG CUN\n"
+	.braille "XI JI\n"
+	.braille "ZHI REN$"
 
 SealedChamber_InnerRoom_Braille_OpenDoorEternalPokemonWaits:
 	brailleformat 3, 2, 27, 17, 6, 5
-	.braille "OPEN A DOOR.\n"
-	.braille "AN ETERNAL\n"
-	.braille "POKEMON\n"
-	.braille "WAITS.$"
+	.braille "KAI CI MEN\n"
+	.braille "YONG HENG ZHI\n"
+	.braille "BAO KE MENG\n"
+	.braille "WEI HU\n"
+	.braille "QI ZHONG$"
 
 DesertRuins_Braille_UseRockSmash:
 	brailleformat 1, 0, 27, 19, 4, 3
-	.braille "LEFT, LEFT,\n"
-	.braille "DOWN, DOWN.\n"
-	.braille "THEN, USE\n"
-	.braille "ROCK SMASH.$"
+	.braille "ZUO ZUO\n"
+	.braille "XIA XIA\n"
+	.braille "ZAI CI\n"
+	.braille "SUI YAN$"
 
 IslandCave_Braille_RunLapAroundWall:
 	brailleformat 5, 0, 25, 19, 8, 3
-	.braille "STAY CLOSE\n"
-	.braille "TO THE WALL.\n"
-	.braille "RUN AROUND\n"
-	.braille "ONE LAP.$"
+	.braille "HUAN CI\n"
+	.braille "QIANG BI\n"
+	.braille "ZHOU ER\n"
+	.braille "XING ZHI$"
 
 AncientTomb_Braille_ShineInTheMiddle:
 	brailleformat 3, 0, 25, 19, 6, 3
-	.braille "THOSE WHO\n"
-	.braille "INHERIT OUR\n"
-	.braille "WILL, SHINE\n"
-	.braille "IN THE MIDDLE.$"
+	.braille "CHENG WU DENG\n"
+	.braille "ZHI ZHI ZHE\n"
+	.braille "YAO RU ZHI\n"
+	.braille "GUANG YU CI\n"
+	.braille "ZHENG ZHONG$"

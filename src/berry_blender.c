@@ -255,39 +255,39 @@ static const u16 sBlenderOuter_Pal[] = INCBIN_U16("graphics/berry_blender/outer.
 static const u16 sUnused_Pal[] = INCBIN_U16("graphics/berry_blender/unused.gbapal");
 static const u16 sEmpty_Pal[16 * 14] = {0};
 
-static const u8 sText_BerryBlenderStart[] = _("Starting up the BERRY BLENDER.\pPlease select a BERRY from your BAG\nto put in the BERRY BLENDER.\p");
+static const u8 sText_BerryBlenderStart[] = _("正在启动树果混合器。\p请从包包中选择想要投入的树果。\p");
 static const u8 sText_NewParagraph[] = _("\p");
-static const u8 sText_WasMade[] = _(" was made!");
+static const u8 sText_WasMade[] = _("制作完成了！");
 
 static const u8 *const sBlenderOpponentsNames[] =
 {
-    [BLENDER_MISTER] = COMPOUND_STRING("MISTER"),
-    [BLENDER_LADDIE] = COMPOUND_STRING("LADDIE"),
-    [BLENDER_LASSIE] = COMPOUND_STRING("LASSIE"),
-    [BLENDER_MASTER] = COMPOUND_STRING("MASTER"),
-    [BLENDER_DUDE]   = COMPOUND_STRING("DUDE"),
-    [BLENDER_MISS]   = COMPOUND_STRING("MISS"),
+    [BLENDER_MISTER] = COMPOUND_STRING("先生"),
+    [BLENDER_LADDIE] = COMPOUND_STRING("女士"),
+    [BLENDER_LASSIE] = COMPOUND_STRING("少女"),
+    [BLENDER_MASTER] = COMPOUND_STRING("大师"),
+    [BLENDER_DUDE]   = COMPOUND_STRING("小子"),
+    [BLENDER_MISS]   = COMPOUND_STRING("小姐"),
 };
 
-static const u8 sText_CommunicationStandby[] = _("Communication standby…");
-static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("Would you like to blend another BERRY?");
-static const u8 sText_RunOutOfBerriesForBlending[] = _("You've run out of BERRIES for\nblending in the BERRY BLENDER.\p");
-static const u8 sText_YourPokeblockCaseIsFull[] = _("Your {POKEBLOCK} CASE is full.\p");
-static const u8 sText_HasNoBerriesToPut[] = _(" has no BERRIES to put in\nthe BERRY BLENDER.");
-static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("'s {POKEBLOCK} CASE is full.\p");
-static const u8 sText_BlendingResults[] = _("RESULTS OF BLENDING");
-static const u8 sText_SpaceBerry[] = _(" BERRY");
-static const u8 sText_Time[] = _("Time:");
-static const u8 sText_Min[] = _(" min. ");
-static const u8 sText_Sec[] = _(" sec.");
-static const u8 sText_MaximumSpeed[] = _("MAXIMUM SPEED");
-static const u8 sText_RPM[] = _(" RPM");
+static const u8 sText_CommunicationStandby[] = _("等待连接中……");
+static const u8 sText_WouldLikeToBlendAnotherBerry[] = _("要再混合一个树果吗？");
+static const u8 sText_RunOutOfBerriesForBlending[] = _("没有能够继续放入\n树果混合器的树果了。\p");
+static const u8 sText_YourPokeblockCaseIsFull[] = _("你的宝可方块盒满了。\p");
+static const u8 sText_HasNoBerriesToPut[] = _("没有能够继续放入\n树果混合器的树果了。");
+static const u8 sText_ApostropheSPokeblockCaseIsFull[] = _("的宝可方块盒满了。\p");
+static const u8 sText_BlendingResults[] = _("混合结果");
+static const u8 sText_SpaceBerry[] = _("");
+static const u8 sText_Time[] = _("时间:");
+static const u8 sText_Min[] = _("分");
+static const u8 sText_Sec[] = _("秒");
+static const u8 sText_MaximumSpeed[] = _("最大速度");
+static const u8 sText_RPM[] = _("圈/分");
 static const u8 sText_Dot[] = _(".");
 static const u8 sText_NewLine[] = _("\n");
-static const u8 sText_Ranking[] = _("RANKING");
-static const u8 sText_TheLevelIs[] = _("The level is ");
-static const u8 sText_TheFeelIs[] = _(", and the feel is ");
-static const u8 sText_Dot2[] = _(".");
+static const u8 sText_Ranking[] = _("排名");
+static const u8 sText_TheLevelIs[] = _("等级是");
+static const u8 sText_TheFeelIs[] = _("级，光滑度是");
+static const u8 sText_Dot2[] = _("。");
 
 static const struct BgTemplate sBgTemplates[3] =
 {

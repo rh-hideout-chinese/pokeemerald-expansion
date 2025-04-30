@@ -18,13 +18,13 @@ array_pories = []
 
 # make a list of which script corresponds to which item
 for file in incs_to_check:
-    with open(file, "r") as f2:
+    with open(file, "r", encoding="utf-8") as f2:
         raw = f2.read()
     array += re.findall("(.*)::\n[	 ]*finditem (.*)\n[	 ]*end", raw)
 
 # since this doesn't catch poryscript-generated inc files, do the same for poryscript
 for file in pories_to_check:
-    with open(file, "r") as f2:
+    with open(file, "r", encoding="utf-8") as f2:
         raw = f2.read()
     array_pories += re.findall("script ([\w]*)[	 \n]*\{[	 \n]*finditem\((.*)\)[	 \n]*\}", raw)
 
@@ -38,7 +38,7 @@ for x in array:
 
 # apply changes to inc files
 for map in glob.glob('./data/maps/*/map.json'):
-    with open(map, "r") as f2:
+    with open(map, "r", encoding="utf-8") as f2:
         data = json.load(f2)
     if not 'object_events' in data:
         continue
@@ -46,13 +46,13 @@ for map in glob.glob('./data/maps/*/map.json'):
         if objevent["script"] in dict:
             objevent["trainer_sight_or_berry_tree_id"] = dict[objevent["script"]]
             objevent["script"] = "Common_EventScript_FindItem"
-    with open(map, "w") as f2:
+    with open(map, "w", encoding="utf-8") as f2:
         f2.write(json.dumps(data, indent=2) + "\n")
 
 # do another map search to find out which finditem scripts would somehow be still in use
 still_in_use = []
 for map in glob.glob('./data/maps/*/map.json'):
-    with open(map, "r") as f2:
+    with open(map, "r", encoding="utf-8") as f2:
         data = json.load(f2)
     if not 'object_events' in data:
         continue
@@ -66,20 +66,20 @@ for x in list(dict.keys()):
 
 # clean up scripts that are now no longer in use
 for file in incs_to_check:
-    with open(file, "r") as f2:
+    with open(file, "r", encoding="utf-8") as f2:
         raw = f2.read()
     for unused in list(dict.keys()):
         raw = re.sub("%s::\n[	 ]*finditem (.*)\n[	 ]*end\n*" % unused, "", raw)
-    with open(file, "w") as f2:
+    with open(file, "w", encoding="utf-8") as f2:
         f2.write(raw)
 
 # also clean up pory files
 for file in pories_to_check:
-    with open(file, "r") as f2:
+    with open(file, "r", encoding="utf-8") as f2:
         raw = f2.read()
     for unused in list(dict.keys()):
         raw = re.sub("script %s[	 \n]*\{[	 \n]*finditem\((.*)\)[	 \n]*\}[	 \n]*" % unused, "", raw)
-    with open(file, "w") as f2:
+    with open(file, "w", encoding="utf-8") as f2:
         f2.write(raw)
 
 print("Done!")

@@ -2473,7 +2473,7 @@ static u8* AddTextPrinterAndCreateWindowOnAbilityPopUp(const u8 *str, u32 x, u32
     u8 color[3] = {color1, color2, color3};
     struct WindowTemplate winTemplate = {0};
     winTemplate.width = POPUP_WINDOW_WIDTH;
-    winTemplate.height = 2;
+    winTemplate.height = 3;
 
     *windowId = AddWindow(&winTemplate);
     FillWindowPixelBuffer(*windowId, PIXEL_FILL(color1));
@@ -2491,9 +2491,12 @@ static void TextIntoAbilityPopUp(void *dest, u8 *windowTileData, s32 xTileAmount
         do
         {
             if (arg3)
-                CpuCopy32(windowTileData + 16, dest + 16, 16);
+                CpuCopy32(windowTileData + 12, dest + 12, 20);
             else
+            {
                 CpuCopy32(windowTileData + 20, dest + 20, 12);
+                CpuCopy32(windowTileData + 512, dest + 512, 4);
+            }
             dest += 32, windowTileData += 32;
             xTileAmount--;
         } while (xTileAmount != 0);
@@ -2534,7 +2537,7 @@ static void ClearAbilityName(u8 spriteId1, u8 spriteId2)
 static void PrintBattlerOnAbilityPopUp(u8 battlerId, u8 spriteId1, u8 spriteId2)
 {
     int i;
-    u8 lastChar;
+    //u8 lastChar;
     u8* textPtr;
     u8 monName[POKEMON_NAME_LENGTH + 3] = {0};
     u8* nick = gBattleMons[battlerId].nickname; // This needs to be updated for Illusion support
@@ -2552,16 +2555,22 @@ static void PrintBattlerOnAbilityPopUp(u8 battlerId, u8 spriteId1, u8 spriteId2)
     if (*(textPtr - 1) == EOS)
         textPtr--;
 
-    lastChar = *(textPtr - 1);
+    //lastChar = *(textPtr - 1);
 
     // Make the string say "[NAME]'s" instead of "[NAME]"
-    textPtr[0] = CHAR_SGL_QUOTE_RIGHT; // apostraphe
-    textPtr++;
-    if (lastChar != CHAR_S && lastChar != CHAR_s)
+    //textPtr[0] = CHAR_SGL_QUOTE_RIGHT; // apostraphe
+    //textPtr++;
+    /*if (lastChar != CHAR_S && lastChar != CHAR_s)
     {
         textPtr[0] = CHAR_s;
         textPtr++;
-    }
+    }*/
+    //修改，修改特性显示窗口文字
+    //调整为「○○的」
+    textPtr[0] = 0x03; //手动写入汉字第一部分
+    textPtr++;
+    textPtr[0] = 0x0B; //手动写入汉字第二部分
+    textPtr++;
 
     textPtr[0] = EOS;
 

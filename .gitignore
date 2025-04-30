@@ -45,3 +45,5 @@ tools/trainerproc/trainerproc
 *.smol
 *.fastSmol
 *.smolTM
+
+python_tools/src/~$文本.xlsx

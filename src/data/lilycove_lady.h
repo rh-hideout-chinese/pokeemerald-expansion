@@ -16,36 +16,36 @@ static const struct LilycoveContestLadyValues sContestLadyValues[] =
     [CONTEST_CATEGORY_COOL] = {
         .monGfxId = OBJ_EVENT_GFX_ZIGZAGOON_1,
         .monSpecies = SPECIES_ZIGZAGOON,
-        .monName = COMPOUND_STRING("HANDSOME"),
-        .categoryName = COMPOUND_STRING("coolness"),
+        .monName = COMPOUND_STRING("小帅"),
+        .categoryName = COMPOUND_STRING("帅气"),
         .contestName = gText_CoolnessContest,
     },
     [CONTEST_CATEGORY_BEAUTY] = {
         .monGfxId = OBJ_EVENT_GFX_SKITTY,
         .monSpecies = SPECIES_SKITTY,
-        .monName = COMPOUND_STRING("VINNY"),
-        .categoryName = COMPOUND_STRING("beauty"),
+        .monName = COMPOUND_STRING("温妮"),
+        .categoryName = COMPOUND_STRING("美丽"),
         .contestName = gText_BeautyContest,
     },
     [CONTEST_CATEGORY_CUTE] = {
         .monGfxId = OBJ_EVENT_GFX_POOCHYENA,
         .monSpecies = SPECIES_POOCHYENA,
-        .monName = COMPOUND_STRING("MOREME"),
-        .categoryName = COMPOUND_STRING("cuteness"),
+        .monName = COMPOUND_STRING("莫米"),
+        .categoryName = COMPOUND_STRING("可爱"),
         .contestName = gText_CutenessContest,
     },
     [CONTEST_CATEGORY_SMART] = {
         .monGfxId = OBJ_EVENT_GFX_KECLEON,
         .monSpecies = SPECIES_KECLEON,
-        .monName = COMPOUND_STRING("IRONHARD"),
-        .categoryName = COMPOUND_STRING("smartness"),
+        .monName = COMPOUND_STRING("铁刚"),
+        .categoryName = COMPOUND_STRING("聪明"),
         .contestName = gText_SmartnessContest,
     },
     [CONTEST_CATEGORY_TOUGH] = {
         .monGfxId = OBJ_EVENT_GFX_PIKACHU,
         .monSpecies = SPECIES_PIKACHU,
-        .monName = COMPOUND_STRING("MUSCLE"),
-        .categoryName = COMPOUND_STRING("toughness"),
+        .monName = COMPOUND_STRING("肌壮"),
+        .categoryName = COMPOUND_STRING("强壮"),
         .contestName = gText_ToughnessContest,
     },
 };
@@ -329,12 +329,12 @@ static const u16 sQuizLadyPrizes[] =
 // Favor Lady data
 static const u8 *const sFavorLadyRequests[] =
 {
-    COMPOUND_STRING("slippery"),
-    COMPOUND_STRING("roundish"),
-    COMPOUND_STRING("wham-ish"),
-    COMPOUND_STRING("shiny"),
-    COMPOUND_STRING("sticky"),
-    COMPOUND_STRING("pointy"),
+    COMPOUND_STRING("滑滑的"),
+    COMPOUND_STRING("圆圆的"),
+    COMPOUND_STRING("光秃秃的"),
+    COMPOUND_STRING("闪亮的"),
+    COMPOUND_STRING("黏黏的"),
+    COMPOUND_STRING("刺刺的"),
 };
 
 static const u16 sFavorLadyAcceptedItems_Slippery[] =

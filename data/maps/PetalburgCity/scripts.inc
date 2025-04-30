@@ -705,63 +705,37 @@ PetalburgCity_EventScript_GymBoy::
 	end
 
 PetalburgCity_Text_WhereIsWally:
-	.string "Where has our WALLY gone?\p"
-	.string "We have to leave for VERDANTURF TOWN\n"
-	.string "very soon…$"
+    .string "我家满充去哪儿了？\p我们得马上出发\n去绿茵镇了……$"
 
 PetalburgCity_Text_AreYouRookieTrainer:
-	.string "Hiya! Are you maybe…\n"
-	.string "A rookie TRAINER?\p"
-	.string "Do you know what POKéMON TRAINERS\n"
-	.string "do when they reach a new town?\p"
-	.string "They first check what kind of GYM\n"
-	.string "is in the town.$"
+    .string "嗨！莫非你是……\n新人训练家？\p你知道一名训练家来到\n新城镇时首先要做什么吗？\p他们会去看看那里\n有什么样的道馆。$"
 
 PetalburgCity_Text_ThisIsPetalburgGym:
-	.string "See? This is PETALBURG CITY's GYM.$"
+    .string "看到了吗？这就是橙华市的道馆。$"
 
 PetalburgCity_Text_ThisIsGymSign:
-	.string "This is the GYM's sign. Look for it\n"
-	.string "whenever you're looking for a GYM.$"
+    .string "这是道馆的标记。\n想要去道馆，找它就对了。$"
 
 PetalburgCity_Text_WaterReflection:
-	.string "My face is reflected in the water.\p"
-	.string "It's a shining grin full of hope…\p"
-	.string "Or it could be a look of somber silence\n"
-	.string "struggling with fear…\p"
-	.string "What do you see reflected in your face?$"
+    .string "我的脸倒映在水面上。\p那也许是张充满希望的笑脸……\p又或是在恐惧中挣扎的\n一张忧郁而沉默的脸……\p你的脸在水里会是什么样？$"
 
 PetalburgCity_Text_FullPartyExplanation:
-	.string "Let's say you have six POKéMON.\n"
-	.string "If you catch another one…\p"
-	.string "It is automatically sent to a STORAGE\n"
-	.string "BOX over a PC connection.$"
+    .string "假如你已经带了六只宝可梦，\n那么再捕捉一只的话……\p就会通过电脑传送到\n仓库盒子里。$"
 
 PetalburgCity_Text_GymSign:
-	.string "PETALBURG CITY POKéMON GYM\n"
-	.string "LEADER: NORMAN\l"
-	.string "“A man in pursuit of power!”$"
+    .string "橙华市宝可梦道馆\n馆主：千里\l“一个执著追求力量的人！”$"
 
 PetalburgCity_Text_CitySign:
-	.string "PETALBURG CITY\n"
-	.string "“Where people mingle with nature.”$"
+    .string "橙华市\n“人们和谐相处的地方。”$"
 
 PetalburgCity_Text_WallyHouseSign:
-	.string "WALLY'S HOUSE$"
+    .string "满充的家$"
 
 PetalburgCity_Text_AreYouATrainer:
-	.string "Excuse me!\p"
-	.string "Let me guess, from the way you're\n"
-	.string "dressed, are you a POKéMON TRAINER?$"
+    .string "打扰了！\p看你的打扮，\n是个宝可梦训练家吧？$"
 
 PetalburgCity_Text_WellMaybeNot:
-	.string "… … … … … …\p"
-	.string "Well, maybe not.\n"
-	.string "Your clothes aren't all that dirty.\p"
-	.string "You're either a rookie TRAINER,\n"
-	.string "or maybe you're just an ordinary kid.$"
+    .string "…… …… ……\p呃，也许我猜错了。\n你的衣服并不是很脏，\p你不是个新人训练家，\n就是个普通的小孩子。$"
 
 PetalburgCity_Text_ImLookingForTalentedTrainers:
-	.string "I'm roaming the land in search of\n"
-	.string "talented TRAINERS.\p"
-	.string "I'm sorry to have taken your time.$"
+    .string "抱歉，浪费你的时间了。\n我在这儿是为了\p寻找天才训练家。$"

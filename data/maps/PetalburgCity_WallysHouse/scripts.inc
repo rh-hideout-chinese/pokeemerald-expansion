@@ -68,70 +68,26 @@ PetalburgCity_WallysHouse_EventScript_ReceivedHMSurf::
 	end
 
 PetalburgCity_WallysHouse_Text_ThanksForPlayingWithWally:
-	.string "You're…\n"
-	.string "Ah, you must be {PLAYER}{KUN}, right?\p"
-	.string "Thank you for playing with WALLY a\n"
-	.string "little while ago.\p"
-	.string "He's been frail and sickly ever\n"
-	.string "since he was a baby.\p"
-	.string "We've sent him to stay with my relatives\n"
-	.string "in VERDANTURF TOWN for a while.\p"
-	.string "The air is a lot cleaner there\n"
-	.string "than it is here.\p"
-	.string "What's that? Where's WALLY?\n"
-	.string "He's already left, our WALLY.\p"
-	.string "I wonder where he could have\n"
-	.string "gotten by now?$"
+    .string "你是……\n啊，你一定是{PLAYER}{KUN}，对吗？\p谢谢你刚才能\n和满充一起玩。\p他从小\n体弱多病，\p我们打算送他到\n绿茵镇的亲戚家去，\p那里的空气\n比这儿洁净。\p什么？满充在哪儿？\n我们家满充已经出发了。\p不知道现在\n该到哪儿了呢？$"
 
 PetalburgCity_WallysHouse_Text_WonderHowWallyIsDoing:
-	.string "I wonder how our WALLY is doing?$"
+    .string "不知道我家满充在做什么？$"
 
 PetalburgCity_WallysHouse_Text_PleaseExcuseUs:
-	.string "{PLAYER}{KUN}! Please excuse us for\n"
-	.string "dragging you here this way.\p"
-	.string "But our WALLY's become very healthy\n"
-	.string "since he went to VERDANTURF TOWN.\p"
-	.string "We owe it all to you!\p"
-	.string "When WALLY left town, you helped\n"
-	.string "him catch a POKéMON, right?\p"
-	.string "I think that made WALLY really\n"
-	.string "happy.\p"
-	.string "Actually, not just WALLY.\n"
-	.string "It made me, his father, happy too.\p"
-	.string "Happy that he's gained such a great\n"
-	.string "friend as you.\p"
-	.string "This isn't a bribe or anything, but\n"
-	.string "I'd really like you to have this.$"
+    .string "{PLAYER}{KUN}！原谅我们\n这样拉你过来，\p但是，自从我家满充去了\n绿茵镇之后，他的身体好多了。\p我们都欠你的情！\p满充离开镇子前，\n是你陪他捕捉了一只宝可梦对吗？\p我想那让满充\n非常开心。\p实际上，不只是满充，\n作为父亲的我也很开心，\p很开心他能交上\n你这样的好朋友。\p这点礼物虽然不算什么\n但还是请你收下。$"
 
 PetalburgCity_WallysHouse_Text_SurfGoAllSortsOfPlaces:
-	.string "If your POKéMON can SURF, you'll be\n"
-	.string "able to go to all sorts of places.$"
+    .string "如果你的宝可梦会冲浪，\n你就可以去很多地方了。$"
 
 PetalburgCity_WallysHouse_Text_WallyIsComingHomeSoon:
-	.string "WALLY's coming home soon.\n"
-	.string "I'm looking forward to that.$"
+    .string "满充很快就会回家了，\n真想快点见到他。$"
 
 PetalburgCity_WallysHouse_Text_YouMetWallyInEverGrandeCity:
-	.string "Oh? You met WALLY in\n"
-	.string "EVER GRANDE CITY?\p"
-	.string "Oh, {PLAYER}{KUN}, don't be silly.\p"
-	.string "He may have gotten healthy, but he\n"
-	.string "can't go somewhere far away like\l"
-	.string "that all by himself.$"
+    .string "哦？你在彩悠市\n遇到了满充？\p哎，{PLAYER}{KUN}，别闹了。\p他可能健康多了，\n但它不可能一个人\l到那么远的地方去。$"
 
 PetalburgCity_WallysHouse_Text_WallyWasReallyHappy:
-	.string "WALLY was really happy when he told\n"
-	.string "us that he caught a POKéMON.\p"
-	.string "It's been ages since I've seen him\n"
-	.string "smile like that.$"
+    .string "满充非常兴奋地告诉我们\n他捕捉到了一只宝可梦。\p已经有很多年没看到过\n他那快乐的笑容了。$"
 
 PetalburgCity_WallysHouse_Text_WallyLeftWithoutTelling:
-	.string "I want you to keep this a secret\n"
-	.string "from my husband…\p"
-	.string "But our WALLY left VERDANTURF TOWN\n"
-	.string "without telling anyone.\p"
-	.string "You know, WALLY is frail, but\n"
-	.string "he's surprisingly strong-willed.\p"
-	.string "I'm sure that he'll come back safe\n"
-	.string "and sound one day!$"
+    .string "有件事你一定要\n对我丈夫保密……\p我们的满充没跟任何人说\n就离开了绿茵镇。\p你知道，尽管满充身体很弱，\n但他的意志很坚强。\p我知道他总有一天\n会平安无事地回家的！$"
 

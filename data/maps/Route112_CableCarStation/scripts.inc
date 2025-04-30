@@ -87,12 +87,11 @@ Route112_CableCarStation_Movement_ExitCableCar:
 	step_end
 
 Route112_CableCarStation_Text_CableCarReadyGetOn:
-	.string "The CABLE CAR is ready to go up.\n"
-	.string "Would you like to be on it?$"
+    .string "缆车已经准备好了。\n你想要登上瞧瞧吗？$"
 
 Route112_CableCarStation_Text_StepThisWay:
-	.string "Please step this way.$"
+    .string "请走这边。$"
 
 Route112_CableCarStation_Text_RideAnotherTime:
-	.string "Please ride with us another time.$"
+    .string "欢迎下次再来搭乘。$"
 

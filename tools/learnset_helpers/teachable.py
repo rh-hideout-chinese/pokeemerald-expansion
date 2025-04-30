@@ -4,7 +4,7 @@ import json
 import os
 
 # before all else, abort if the config is off
-with open("./include/config/pokemon.h", "r") as file:
+with open("./include/config/pokemon.h", "r", encoding="utf-8") as file:
     learnset_config = re.findall(r"#define P_LEARNSET_HELPER_TEACHABLE *([^ ]*)", file.read())
     if len(learnset_config) != 1:
         quit()
@@ -25,7 +25,7 @@ if len(incs_to_check) == 0: # disabled if no jsons present
     quit()
 
 for file in incs_to_check:
-    with open(file, 'r') as f2:
+    with open(file, 'r', encoding="utf-8") as f2:
         raw = f2.read()
     if 'special ChooseMonForMoveTutor' in raw:
         for x in re.findall(r'setvar VAR_0x8005, (MOVE_.*)', raw):
@@ -33,14 +33,14 @@ for file in incs_to_check:
                 tutor_moves.append(x)
 
 # scan TMs and HMs
-with open("./include/constants/tms_hms.h", 'r') as file:
+with open("./include/constants/tms_hms.h", 'r', encoding="utf-8") as file:
     for x in re.findall(r'F\((.*)\)', file.read()):
         if not 'MOVE_' + x in tm_moves:
             tm_moves.append('MOVE_' + x)
 
 # look up universal moves to exclude them
 universal_moves = []
-with open("./src/pokemon.c", "r") as file:
+with open("./src/pokemon.c", "r", encoding="utf-8") as file:
     for x in re.findall(r"static const u16 sUniversalMoves\[\] =(.|\n)*?{((.|\n)*?)};", file.read())[0]:
         x = x.replace("\n", "")
         for y in x.split(","):
@@ -53,7 +53,7 @@ with open("./src/pokemon.c", "r") as file:
 def construct_compatibility_dict(force_custom_check):
     dict_out = {}
     for pth in glob.glob('./tools/learnset_helpers/porymoves_files/*.json'):
-        f = open(pth, 'r')
+        f = open(pth, 'r', encoding="utf-8")
         data = json.load(f)
         for mon in data.keys():
             if not mon in dict_out:
@@ -75,7 +75,7 @@ def construct_compatibility_dict(force_custom_check):
                     dict_out[mon].append(move)
 
     # if the file was not previously generated, check if there is custom data there that needs to be preserved
-    with open("./src/data/pokemon/teachable_learnsets.h", 'r') as file:
+    with open("./src/data/pokemon/teachable_learnsets.h", 'r', encoding="utf-8") as file:
         raw = file.read()
         if not "// DO NOT MODIFY THIS FILE!" in raw and force_custom_check == True:
             custom_teachable_compatibilities = {}
@@ -103,7 +103,7 @@ def construct_compatibility_dict(force_custom_check):
                             custom_teachable_compatibilities[monname].append(move)
             # actually store the data in custom.json
             if os.path.exists("./tools/learnset_helpers/porymoves_files/custom.json"):
-                f2 = open("./tools/learnset_helpers/porymoves_files/custom.json", "r")
+                f2 = open("./tools/learnset_helpers/porymoves_files/custom.json", "r", encoding="utf-8")
                 custom_json = json.load(f2)
                 f2.close()
             else:
@@ -115,7 +115,7 @@ def construct_compatibility_dict(force_custom_check):
                     custom_json[x] = {"LevelMoves": [], "PreEvoMoves": [], "TMMoves": [], "EggMoves": [], "TutorMoves": []}
                 for move in custom_teachable_compatibilities[x]:
                     custom_json[x]["TutorMoves"].append(move)
-                f2 = open("./tools/learnset_helpers/porymoves_files/custom.json", "w")
+                f2 = open("./tools/learnset_helpers/porymoves_files/custom.json", "w", encoding="utf-8")
                 f2.write(json.dumps(custom_json, indent=2))
                 f2.close()
             print("FIRST RUN: Updated custom.json with teachable_learnsets.h's data")
@@ -126,7 +126,7 @@ def construct_compatibility_dict(force_custom_check):
 compatibility_dict = construct_compatibility_dict(True)
 
 # actually prepare the file
-with open("./src/data/pokemon/teachable_learnsets.h", 'r') as file:
+with open("./src/data/pokemon/teachable_learnsets.h", 'r', encoding="utf-8") as file:
     out = file.read()
     list_of_mons = re.findall(r'static const u16 s(.*)TeachableLearnset', out)
 for mon in list_of_mons:
@@ -210,5 +210,5 @@ if not "// DO NOT MODIFY THIS FILE!" in out:
 else:
     out = re.sub(r"\/\/\n\/\/ DO NOT MODIFY THIS FILE!(.|\n)*\* \/\/\n\n", header, out)
 
-with open("./src/data/pokemon/teachable_learnsets.h", 'w') as file:
+with open("./src/data/pokemon/teachable_learnsets.h", 'w', encoding="utf-8", newline="\n") as file:
     file.write(out)

@@ -9,7 +9,7 @@ exceptions = [ # the following exceptions are hardcoded to streamline the proces
 ]
 
 # convert egg_moves.h to the new format
-with open("src/data/pokemon/egg_moves.h", "r") as f:
+with open("src/data/pokemon/egg_moves.h", "r", encoding="utf-8") as f:
     data = f.read()
 
 data = re.sub(r"#define(.|\n)*const u16 gEggMoves\[\] = {", "static const u16 sNoneEggMoveLearnset[] = {\n    MOVE_UNAVAILABLE,\n};\n", data) # remove and replace header
@@ -29,13 +29,13 @@ data = re.sub(r"\),\n", ",\n        MOVE_UNAVAILABLE,\n};\n", data) # add termin
 
 data = re.sub(r"        MOVE_", "    MOVE_", data) # fix indentation
 
-with open("src/data/pokemon/egg_moves.h", "w") as f:
+with open("src/data/pokemon/egg_moves.h", "w", encoding="utf-8") as f:
     f.write(data)
 
 # update gBaseStats
 
 for file in glob.glob('./src/data/pokemon/species_info/gen_*_families.h'):
-    with open(file, "r") as f:
+    with open(file, "r", encoding="utf-8") as f:
         data = f.read()
 
     # go through all Pokemon with teachable learnsets that are also in the list, then assign egg moves to them
@@ -47,5 +47,5 @@ for file in glob.glob('./src/data/pokemon/species_info/gen_*_families.h'):
         if len(macrocheck) > 0:
             data = re.sub(r"\.teachableLearnset = s" + mon + r"TeachableLearnset," + macrocheck[0] + r"\\\\", ".teachableLearnset = s%sTeachableLearnset,%s\\\\\n        .eggMoveLearnset = s%sEggMoveLearnset,%s\\\\" % (mon, macrocheck[0], mon, " " * (len(macrocheck[0]) + 4)), data)
 
-    with open(file, "w") as f:
+    with open(file, "w", encoding="utf-8") as f:
         f.write(data)

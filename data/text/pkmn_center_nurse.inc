@@ -1,51 +1,29 @@
 gText_WouldYouLikeToRestYourPkmn::
-	.string "Hello, and welcome to\n"
-	.string "the POKéMON CENTER.\p"
-	.string "We restore your tired POKéMON\n"
-	.string "to full health.\p"
-	.string "Would you like to rest your POKéMON?$"
+    .string "你好，\n欢迎来到宝可梦中心，\p我们可以为疲劳的\n宝可梦恢复体力。\p要让你的宝可梦休息一下吗？$"
 
 gText_IllTakeYourPkmn::
-	.string "Okay, I'll take your POKéMON\n"
-	.string "for a few seconds.$"
+    .string "好的，\n你的宝可梦暂时由我保管。$"
 
 gText_RestoredPkmnToFullHealth::
-	.string "Thank you for waiting.\p"
-	.string "We've restored your POKéMON\n"
-	.string "to full health.$"
+    .string "久等了，\n宝可梦的体力都恢复了。$"
 
 gText_WeHopeToSeeYouAgain::
-	.string "We hope to see you again!$"
+    .string "欢迎下次再来！$"
 
 gText_WelcomeCutShort::
-	.string "Hello, and welcome to\n"
-	.string "the POKéMON CENTER.\p"
-	.string "We restore your tired POKéMON\n"
-	.string "to full health.\p"
-	.string "Would you like to…$"
+    .string "你好，\n欢迎来到宝可梦中心，\p我们可以为疲劳的\n宝可梦恢复体力。\p你想要……$"
 
 gText_NoticesGoldCard::
-	.string "Th-that card…\n"
-	.string "Could it be… The GOLD CARD?!\p"
-	.string "Oh, the gold color is brilliant!\n"
-	.string "The four stars seem to sparkle!\p"
-	.string "I've seen several TRAINERS with\n"
-	.string "a SILVER CARD before, but, {PLAYER},\l"
-	.string "you're the first TRAINER I've ever\l"
-	.string "seen with a GOLD CARD!\p"
-	.string "Okay, {PLAYER}, please allow me\n"
-	.string "the honor of resting your POKéMON!$"
+    .string "那——那张卡片……\n莫非是……黄金训练家卡？！\p啊，多么漂亮的金色！\n上面的4颗星星都在闪闪发光！\p我曾经见过几个拥有银卡\n的训练家，但是，{PLAYER}，\l你是我见过的第一个拥有\l金卡的训练家！\p好的，{PLAYER}，能为你\n保管宝可梦是我的荣幸！$"
 
 gText_YouWantTheUsual::
-	.string "I'm delighted to see you, {PLAYER}!\n"
-	.string "You want the usual, am I right?$"
+    .string "很高兴见到你，{PLAYER}！\n还像往常一样，是吗？$"
 
 gText_IllTakeYourPkmn2::
-	.string "Okay, I'll take your POKéMON\n"
-	.string "for a few seconds.$"
+    .string "好的，你的宝可梦\n暂时由我保管。$"
 
 gText_ThankYouForWaiting::
-	.string "Thank you for waiting.$"
+    .string "久等了。$"
 
 gText_WeHopeToSeeYouAgain2::
-	.string "We hope to see you again!$"
+    .string "欢迎下次再来！$"

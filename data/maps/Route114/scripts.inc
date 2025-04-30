@@ -177,26 +177,20 @@ Route114_EventScript_Kai::
 	end
 
 Route114_Text_AllMyMonDoesIsRoarTakeThis:
-	.string "All my POKéMON does is ROAR…\n"
-	.string "No one dares to come near me…\p"
-	.string "Sigh… If you would, please take\n"
-	.string "this TM away…$"
+    .string "我的宝可梦总是吼叫……\n没什么敢接近我……\p唉……喜欢的话，\n就把这招式学习器拿走吧……$"
 
 Route114_Text_ExplainRoar:
-	.string "TM05 contains ROAR.\n"
-	.string "A ROAR sends POKéMON scurrying.$"
+    .string "招式学习器05里面是吼叫。\n用吼叫可以吓跑宝可梦。$"
 
 Route114_Text_Poochyena:
-	.string "Bow! Bowwow!$"
+    .string "吼！哦吼吼！$"
 
 Route114_Text_MeteorFallsSign:
-	.string "METEOR FALLS\n"
-	.string "RUSTBORO CITY THROUGH HERE$"
+    .string "流星瀑布\n通往卡那兹市$"
 
 Route114_Text_FossilManiacsHouseSign:
-	.string "FOSSIL MANIAC'S HOUSE\n"
-	.string "“Fossils gratefully accepted!”$"
+    .string "化石迷的家\n“欢迎带化石来！”$"
 
 Route114_Text_LanettesHouse:
-	.string "LANETTE'S HOUSE$"
+    .string "真由美的家$"
 

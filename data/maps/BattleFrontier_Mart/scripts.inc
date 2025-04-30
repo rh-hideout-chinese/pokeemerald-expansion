@@ -47,21 +47,11 @@ BattleFrontier_Mart_EventScript_Boy::
 	end
 
 BattleFrontier_Mart_Text_ChaperonGrandson:
-	.string "We came here to chaperon our\n"
-	.string "grandson.\p"
-	.string "But since we're here, we thought\n"
-	.string "we should get some souvenirs.$"
+    .string "我们是来陪我们的\n孙子的。\p但既然来这儿了，我们\n觉得至少该带些纪念品回去。$"
 
 BattleFrontier_Mart_Text_ProteinMakeNiceGift:
-	.string "Dear, what do you think of this?\n"
-	.string "Wouldn't this make a nice gift?\p"
-	.string "It's…PRO…TE…IN?\n"
-	.string "It sounds delicious, doesn't it?$"
+    .string "亲爱的，你觉得这个怎么样？\n这应该是个不错的礼物吧？\p这是……攻击……之……源？\n听上去挺好吃的，不是吗？$"
 
 BattleFrontier_Mart_Text_FacilitiesDontAllowItems:
-	.string "A lot of the BATTLE FRONTIER's\n"
-	.string "facilities don't allow the use of items\l"
-	.string "during battles.\p"
-	.string "That rule makes things tougher than\n"
-	.string "they already are!$"
+    .string "对战开拓区里的\n比赛都不允许在战斗中\l使用物品，\p这条规定让原来就很困难的战斗\n难上加难！$"
 

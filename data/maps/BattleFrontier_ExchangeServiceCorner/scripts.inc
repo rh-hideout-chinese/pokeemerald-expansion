@@ -434,292 +434,210 @@ BattleFrontier_ExchangeServiceCorner_EventScript_Girl::
 	msgbox BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord, MSGBOX_NPC
 	end
 
-BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize:
-	.string "Hello, this is the EXCHANGE SERVICE\n"
-	.string "CORNER.\p"
-	.string "We exchange the Battle Points you\n"
-	.string "have collected for lovely prizes.\p"
-	.string "Please choose a prize from this list.$"
+BattleFrontier_ExchangeServiceCorner_Text_WelcomePleaseChoosePrize::
+    .string "你好，这里是交换服务中心。\p我们用可爱的奖品同你收集到的\n对战点数进行交换。\p请在列表上选择一个奖品。$"
 
 @ Unused
-BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize:
-	.string "Please choose a prize from this list.$"
+BattleFrontier_ExchangeServiceCorner_Text_PleaseChoosePrize::
+    .string "请选择一个奖品。$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster:
-	.string "You've chosen the KISS POSTER.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissPoster::
+    .string "你选择了亲吻的海报。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion:
-	.string "You've chosen the KISS CUSHION.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmKissCushion::
+    .string "你选择了亲吻的垫子。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSmoochumDoll:
-	.string "You've chosen the SMOOCHUM DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmSmoochumDoll::
+    .string "你选择了迷唇姐玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmTogepiDoll:
-	.string "You've chosen the TOGEPI DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmTogepiDoll::
+    .string "你选择了波克比玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll:
-	.string "You've chosen the MEOWTH DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmMeowthDoll::
+    .string "你选择了喵喵玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll:
-	.string "You've chosen the CLEFAIRY DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmClefairyDoll::
+    .string "你选择了皮皮玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll:
-	.string "You've chosen the DITTO DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmDittoDoll::
+    .string "你选择了百变怪玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll:
-	.string "You've chosen the CYNDAQUIL DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCyndaquilDoll::
+    .string "你选择了火球鼠玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll:
-	.string "You've chosen the CHIKORITA DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmChikoritaDoll::
+    .string "你选择了菊草叶玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll:
-	.string "You've chosen the TOTODILE DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmTotodileDoll::
+    .string "你选择了小锯鳄玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaprasDoll:
-	.string "You've chosen the LAPRAS DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmLaprasDoll::
+    .string "你选择了拉普拉斯玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll:
-	.string "You've chosen the SNORLAX DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmSnorlaxDoll::
+    .string "你选择了卡比兽玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll:
-	.string "You've chosen the VENUSAUR DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmVenusaurDoll::
+    .string "你选择了妙蛙花玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll:
-	.string "You've chosen the CHARIZARD DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCharizardDoll::
+    .string "你选择了喷火龙玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll:
-	.string "You've chosen the BLASTOISE DOLL.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmBlastoiseDoll::
+    .string "你选择了水箭龟玩偶。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein:
-	.string "You've chosen the PROTEIN.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmProtein::
+    .string "你选择了攻击增强剂。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalcium:
-	.string "You've chosen the CALCIUM.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCalcium::
+    .string "你选择了特攻增强剂。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmIron:
-	.string "You've chosen the IRON.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmIron::
+    .string "你选择了防御增强剂。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmZinc:
-	.string "You've chosen the ZINC.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmZinc::
+    .string "你选择了特防增强剂。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos:
-	.string "You've chosen the CARBOS.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmCarbos::
+    .string "你选择了速度增强剂。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp:
-	.string "You've chosen the HP UP.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmHPUp::
+    .string "你选择了HP增强剂。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder:
-	.string "You've chosen the BRIGHTPOWDER.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmBrightpowder::
+    .string "你选择了光粉。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb:
-	.string "You've chosen the WHITE HERB.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmWhiteHerb::
+    .string "你选择了白色香草。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw:
-	.string "You've chosen the QUICK CLAW.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmQuickClaw::
+    .string "你选择了先制之爪。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb:
-	.string "You've chosen the MENTAL HERB.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmMentalHerb::
+    .string "你选择了心灵香草。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand:
-	.string "You've chosen the CHOICE BAND.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmChoiceBand::
+    .string "你选择了讲究头巾。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock:
-	.string "You've chosen the KING'S ROCK.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmKingsRock::
+    .string "你选择了王者之证。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand:
-	.string "You've chosen the FOCUS BAND.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmFocusBand::
+    .string "你选择了气势头带。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens:
-	.string "You've chosen the SCOPE LENS.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmScopeLens::
+    .string "你选择了焦点镜。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers:
-	.string "You've chosen the LEFTOVERS.\n"
-	.string "Is that correct?$"
+BattleFrontier_ExchangeServiceCorner_Text_ConfirmLeftovers::
+    .string "你选择了吃剩的东西。\n可以吗？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC:
-	.string "Thank you!\n"
-	.string "We'll send it to your PC at home.$"
+BattleFrontier_ExchangeServiceCorner_Text_WellSendItToPC::
+    .string "谢谢！\n我们会把它送到你家的电脑上的。$"
 
-BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize:
-	.string "Here is your prize!$"
+BattleFrontier_ExchangeServiceCorner_Text_HereIsYourPrize::
+    .string "这里是你的奖品！$"
 
-BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints:
-	.string "I'm so sorry…\n"
-	.string "You don't have enough Battle Points…$"
+BattleFrontier_ExchangeServiceCorner_Text_DontHaveEnoughPoints::
+    .string "很抱歉……\n你没有足够多的对战点数……$"
 
-BattleFrontier_ExchangeServiceCorner_Text_PCIsFull:
-	.string "I'm so sorry…\n"
-	.string "Your PC appears to be full…$"
+BattleFrontier_ExchangeServiceCorner_Text_PCIsFull::
+    .string "很抱歉……\n你的电脑好像满了……$"
 
-BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt:
-	.string "I'm so sorry…\n"
-	.string "You don't have space to hold it…$"
+BattleFrontier_ExchangeServiceCorner_Text_DontHaveSpaceToHoldIt::
+    .string "很抱歉……\n你没有空间拿它……$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints:
-	.string "Thank you very much.\p"
-	.string "Please visit us when you have\n"
-	.string "saved up Battle Points.$"
+BattleFrontier_ExchangeServiceCorner_Text_ThankYouVisitWithPoints::
+    .string "非常感谢。\p当你存够了对战点数\n请再来见我们。$"
 
-BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls:
-	.string "Oh, they're so nice!\n"
-	.string "I wish I had them!\l"
-	.string "Cute cushions!\l"
-	.string "Big plush DOLLS!\l"
-	.string "Little plush DOLLS!\l"
-	.string "I wish I had them all!$"
+BattleFrontier_ExchangeServiceCorner_Text_WishIHadAllDolls::
+    .string "哦，它们真漂亮！\n我想要它们！\l漂亮的垫子！\l大号豪华的玩偶！\l小号豪华的玩偶！\l我希望能全部得到！$"
 
-BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant:
-	.string "Leave it to your mommy!\p"
-	.string "If it's anything you want, I'll go\n"
-	.string "through anything to get it, honey!$"
+BattleFrontier_ExchangeServiceCorner_Text_GetYouAnythingYouWant::
+    .string "交给你的妈妈吧！\p无论什么你想要的，我会通过\n任何途径为你得到，我的小宝贝！$"
 
-BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher:
-	.string "If I can get hold of the items here,\n"
-	.string "my POKéMON will get tougher.\p"
-	.string "You bet they will!\n"
-	.string "No question about it!$"
+BattleFrontier_ExchangeServiceCorner_Text_ItemsWillGetMonTougher::
+    .string "如果我能拿到这里的道具，\n我的宝可梦会变得更强。\p你要相信它们肯定会的！\n毫无疑问！$"
 
-BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll:
-	.string "Hah?\n"
-	.string "What are you gawking at?\p"
-	.string "I don't like you staring at my plush\n"
-	.string "doll like that.\p"
-	.string "If you want it, go get one yourself!\n"
-	.string "Isn't that right, SMOOCHUM?$"
+BattleFrontier_ExchangeServiceCorner_Text_GoGetYourOwnDoll::
+    .string "啊？\n你在呆望什么？\p我不喜欢你那样盯着\n我的漂亮娃娃看。\p如果你想要，自己去弄一只！\n这不很好吗，迷唇娃？$"
 
-BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord:
-	.string "Did you know?\p"
-	.string "If you stretch your record at any of\n"
-	.string "the BATTLE facilities, they start\l"
-	.string "giving you more and more Battle Points.$"
+BattleFrontier_ExchangeServiceCorner_Text_MoreBattlePointsForRecord::
+    .string "你知道吗？\p如果你能在任何战斗场\n创造新记录，他们会给你\l更多更多对战点数。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc::
-	.string "A large poster with a SMOOCHUM print.$"
+    .string "一大幅有迷唇姐签名的贴画。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissCushionDesc::
-	.string "A SMOOCHUM cushion.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个迷唇姐垫子。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDesc::
-	.string "A SMOOCHUM DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个迷唇姐玩偶。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDesc::
-	.string "A TOGEPI DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个波克比玩偶。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc::
-	.string "A MEOWTH DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个喵喵玩偶。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc::
-	.string "A CLEFAIRY DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个皮皮玩偶。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
-	.string "A DITTO DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个百变怪玩偶。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc::
-	.string "A CYNDAQUIL DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个火球鼠。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc::
-	.string "A CHIKORITA DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个菊草叶。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
-	.string "A TOTODILE DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个小锯鳄。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
-	.string "A large DOLL.\n"
-	.string "Place it on a mat or a desk.$"
+    .string "一个巨大的玩偶。\n把它放在席子或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
-	.string "Raises the stat ATTACK of one\n"
-	.string "POKéMON.$"
+    .string "提升宝可梦的攻击\n能力。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CalciumDesc::
-	.string "Raises the stat SP. ATK of one\n"
-	.string "POKéMON.$"
+    .string "提升宝可梦的特攻\n能力。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_IronDesc::
-	.string "Raises the stat DEFENSE of one\n"
-	.string "POKéMON.$"
+    .string "提升宝可梦的防御\n能力。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ZincDesc::
-	.string "Raises the stat SP. DEF of one\n"
-	.string "POKéMON.$"
+    .string "提升宝可梦的特防\n能力。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc::
-	.string "Raises the stat SPEED of one\n"
-	.string "POKéMON.$"
+    .string "提升宝可梦的速度\n能力。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc::
-	.string "Raises the HP of one POKéMON.$"
+    .string "提升宝可梦的体力。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
-	.string "A hold item that gradually restores\n"
-	.string "HP in battle.$"
+    .string "一件能在战斗中逐渐\n回复体力的道具。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
-	.string "A hold item that restores any\n"
-	.string "lowered stat.$"
+    .string "一件能回复所有能力\n的道具。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
-	.string "A hold item that occasionally allows\n"
-	.string "the first strike.$"
+    .string "一件能随机发生先制\n攻击的道具。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
-	.string "A hold item that snaps POKéMON out\n"
-	.string "of infatuation.$"
+    .string "一件能解除宝可梦昏迷\n的道具。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
-	.string "A hold item that casts a glare to\n"
-	.string "reduce accuracy.$"
+    .string "一件能射出眩目的光降低\n准确度的道具。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
-	.string "Raises a move's power, but permits\n"
-	.string "only that move.$"
+    .string "提升招式的力量，但只针对\n那个招式而言。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
-	.string "A hold item that may cause flinching\n"
-	.string "when the foe is hit.$"
+    .string "一件在遇到敌人时能使敌人\n畏缩的道具。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
-	.string "A hold item that occasionally\n"
-	.string "prevents fainting.$"
+    .string "一件能偶尔防止昏厥\n的道具。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
-	.string "A hold item that raises the\n"
-	.string "critical-hit rate.$"
+    .string "一件能提高会心率的\n道具。$"

@@ -39,7 +39,7 @@ def apply_palette(palette_file, input_file, output_file):  # Apply one file's pa
     w, h, rows, info = inp.read()
     src_palette = tuple(c[:3] for c in inp.palette())
     new_rows = [[closest_color(src_palette[c][:3], target_palette) if c else 0 for c in row] for row in rows]
-    with open(output_file, 'wb') as f:
+    with open(output_file, 'wb', encoding="utf-8") as f:
         w = png.Writer(width=w, height=h, bitdepth=4, palette=target_palette)
         w.write(f, new_rows)
 

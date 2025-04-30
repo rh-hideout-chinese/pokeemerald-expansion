@@ -51,39 +51,20 @@ PacifidlogTown_House3_EventScript_Girl::
 	end
 
 PacifidlogTown_House3_Text_WillingToTradeIt:
-	.string "Check out this {STR_VAR_2}!\p"
-	.string "It's the {STR_VAR_2} that I caught\n"
-	.string "yesterday to celebrate my birthday!\p"
-	.string "Oh, I can see that you want it!\n"
-	.string "After all, it's priceless!\p"
-	.string "I'll tell you what. I might be willing\n"
-	.string "to trade it for a {STR_VAR_1}.$"
+    .string "看看这个{STR_VAR_2}！\p是我昨天为庆祝自己的生日\n捉到的{STR_VAR_2}！\p啊，看来你想要它！\n毕竟，它是无可估价的！\p但是，你如果愿意用{STR_VAR_1}\n跟我换的话，我可以考虑。$"
 
 PacifidlogTown_House3_Text_ItsSubtlyDifferentThankYou:
-	.string "Oh, so this is a {STR_VAR_1}?\p"
-	.string "It's sort of like a {STR_VAR_2},\n"
-	.string "and yet it's subtly different.\p"
-	.string "Thank you!$"
+    .string "呀，这个是{STR_VAR_1}？\p虽然跟{STR_VAR_2}有点像，\n但它们还是有不同之处。\p谢谢！$"
 
 PacifidlogTown_House3_Text_WontAcceptAnyLessThanRealMon:
-	.string "No, no, no! I won't accept any\n"
-	.string "less than a real {STR_VAR_1}!$"
+    .string "不不不，除了真正的{STR_VAR_1}，\n我什么都不换！$"
 
 PacifidlogTown_House3_Text_NotDesperateOrAnything:
-	.string "Oh, so you're not going to go through\n"
-	.string "with this?\p"
-	.string "That's cool. I'm not desperate to make\n"
-	.string "a trade or anything.$"
+    .string "哦？你不想\n考虑一下吗？\p也好，我也不是急着\n想交换的。$"
 
 PacifidlogTown_House3_Text_ReallyWantedToGetBagon:
-	.string "I know I could go looking for one\n"
-	.string "on my own, but…\p"
-	.string "But I really wanted to get a BAGON\n"
-	.string "that another TRAINER caught…$"
+    .string "我知道我也能自己\n去找一只，但是……\p我真的很想要一只\n其他训练家捕捉的宝贝龙……$"
 
 PacifidlogTown_House3_Text_IsThatAPokedex:
-	.string "Is that a POKéDEX?\p"
-	.string "Did you get to meet a lot of different\n"
-	.string "POKéMON?\p"
-	.string "I wish I was like you.$"
+    .string "那是宝可梦图鉴吗？\p你见过了很多不同的\n宝可梦了吗？\p我要是也能像你一样多好。$"
 

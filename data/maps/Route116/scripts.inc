@@ -352,122 +352,56 @@ Route116_EventScript_Johnson::
 	end
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
-	.string "Ohhh, what am I to do?\p"
-	.string "We were on our walk, PEEKO and I, when\n"
-	.string "we were jumped by an odd thug…\p"
-	.string "The scoundrel made off with my\n"
-	.string "darling PEEKO!\p"
-	.string "Wrrrooooooaaaar! PEEKO!$"
+    .string "啊啊啊，我该怎么办？\p我和小皮散步的时候\n被一个奇怪的强盗袭击了……\p那混蛋抢走了\n我亲爱的小皮！\p哇啊啊啊啊啊啊！小皮！$"
 
 Route116_Text_WantToDigTunnel:
-	.string "Nnn… Roar!\p"
-	.string "I want to dig that tunnel!$"
+    .string "呜……吼！\p我想要挖那条隧道！$"
 
 Route116_Text_DiggingTunnelWhenGoonOrderedMeOut:
-	.string "Nnn… Roar!\n"
-	.string "What's going on?\p"
-	.string "I was digging the tunnel without any\n"
-	.string "tools when some goon ordered me out!\p"
-	.string "That tunnel's filled with POKéMON\n"
-	.string "that react badly to loud noises.\l"
-	.string "They could cause an uproar.\p"
-	.string "That's why we stopped using heavy\n"
-	.string "equipment for tunneling…\p"
-	.string "I'm worried that the goon will do\n"
-	.string "something stupid and startle the\l"
-	.string "POKéMON into an uproar.$"
+    .string "呜……吼！\n发生了什么？\p我刚才在徒手挖隧道，\n突然过来个蠢货把我赶了出来！\p那隧道里到处是\n容易受惊的宝可梦，\l它们会引起大骚动的。\p所以我们才会停止\n使用大型机械挖隧道的工程……\p我担心那蠢货\n会做出些什么吓到\l宝可梦的蠢事。$"
 
 Route116_Text_GoonHightailedItOutOfTunnel:
-	.string "Nnn… Roar!\p"
-	.string "That goofy goon hightailed it out of\n"
-	.string "the tunnel! I can go back to digging!$"
+    .string "呜……吼！\p那个蠢货夹着尾巴逃跑了！\n我可以回去挖隧道了！$"
 
 Route116_Text_ThankYouTokenOfAppreciation:
-	.string "Oh! It's you!\p"
-	.string "You're that person who not only helped\n"
-	.string "me in PETALBURG WOODS, but also got\l"
-	.string "back my stolen package and then even\l"
-	.string "graciously delivered it to SLATEPORT!\p"
-	.string "CAPT. STERN informed us that the\n"
-	.string "package arrived, too!\p"
-	.string "I thank you very, very much!\p"
-	.string "Why, if I were a rain cloud, I would\n"
-	.string "shower you with gratitude and hail\l"
-	.string "you as a hero!\p"
-	.string "For you, the most wonderful TRAINER,\n"
-	.string "I bear good news!\p"
-	.string "Recently, our company developed\n"
-	.string "a new kind of POKé BALL.\p"
-	.string "As a token of our appreciation, this\n"
-	.string "is our gift to our wonderful TRAINER!$"
+    .string "啊，是你！\p你就是那个在\n橙华森林里帮过我，\l又替我追回了被偷的包裹，\l然后好心地把它送到凯那市去的人！\p楠木馆长告诉我们\n包裹已经平安到达了！\p非常非常感谢！在下\p对您的感谢如同滔滔江水连绵不绝\n又如黄河泛滥一发不可收拾\l大英雄啊！\p我给你这最优秀的训练家\n带来了个好消息！\p最近我们公司开发出\n一种新的精灵球，\p我们把它送给你，就当作\n我们对一个杰出的训练家的感谢！$"
 
 Route116_Text_NewBallAvailableAtMart:
-	.string "Our new POKé BALL will be available\n"
-	.string "at the POKéMON MART in RUSTBORO.\p"
-	.string "Please do try it out!\n"
-	.string "Thank you and bye-bye!$"
+    .string "我们的新精灵球很快\n会在卡那兹市的友好商店出售。\p到时一定要试试！\n谢谢，再见！$"
 
 Route116_Text_BagIsJamPacked:
-	.string "Your BAG is jam-packed.\n"
-	.string "I can't give you this REPEAT BALL.$"
+    .string "你的包包满了，\n装不下这重复球。$"
 
 Route116_Text_TokenOfAppreciation:
-	.string "As a token of our appreciation for\n"
-	.string "your delivering our package, I have\l"
-	.string "a gift of a new kind of POKé BALL\l"
-	.string "for our most wonderful TRAINER!$"
+    .string "我把这种新的精灵球\n送给你，我们最优秀的训练家，\l就当作是我们对你\l为我们递送包裹的谢礼！$"
 
 Route116_Text_CanYouHelpMeFindGlasses:
-	.string "I dropped my glasses…\n"
-	.string "Can you help me find them?$"
+    .string "我的眼镜丢了……\n能帮我找找吗？$"
 
 Route116_Text_MayISeeThoseGlasses:
-	.string "Those glasses!\n"
-	.string "May I see them for a second?$"
+    .string "啊，那副眼镜！\n可以给我看看吗？$"
 
 Route116_Text_NotWhatImLookingForMaybeTheyArentHere:
-	.string "Hmm…\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for…\p"
-	.string "Maybe my glasses aren't around\n"
-	.string "here…$"
+    .string "唔……\n这是一副黑色眼镜，\l不是我要找的……\p也许我的眼镜\n不在这附近……$"
 
 Route116_Text_CantFindGlassesNotHere:
-	.string "Hmm…\n"
-	.string "I can't find my glasses anywhere…\l"
-	.string "Maybe they're not around here…$"
+    .string "唔……\n到处都找不到我的眼镜……\l也许并不在这附近……$"
 
 Route116_Text_NotWhatImLookingFor:
-	.string "Hmm…\n"
-	.string "These are BLACKGLASSES.\l"
-	.string "They're not what I'm looking for…$"
+    .string "唔……\n这是一副黑色眼镜，\l不是我要找的……$"
 
 Route116_Text_RouteSignRustboro:
-	.string "ROUTE 116\n"
-	.string "{LEFT_ARROW} RUSTBORO CITY$"
+    .string "116号道路\n{LEFT_ARROW}卡那兹市$"
 
 Route116_Text_RusturfTunnelSign:
-	.string "RUSTURF TUNNEL\n"
-	.string "“Linking RUSTBORO and VERDANTURF\p"
-	.string "“The tunnel project has been\n"
-	.string "canceled.”$"
+    .string "卡绿隧道\n“连接卡那兹市和绿茵镇的隧道\p工程已被\n取消”$"
 
 Route116_Text_TunnelersRestHouse:
-	.string "TUNNELER'S REST HOUSE$"
+    .string "隧道工人休息屋$"
 
 Route116_Text_TrainerTipsBToStopEvolution:
-	.string "TRAINER TIPS\p"
-	.string "If you want to stop a POKéMON from\n"
-	.string "evolving, press the B Button while it\l"
-	.string "is trying to evolve.\l"
-	.string "The startled POKéMON will stop.\p"
-	.string "This is called an evolution cancel.$"
+    .string "训练家小技巧\p如果你不希望宝可梦进化，\n则应在它试图进化时\l按下B键，\l受惊的宝可梦会停止进化。\p这叫做进化取消。$"
 
 Route116_Text_TrainerTipsBagHasPockets:
-	.string "TRAINER TIPS\p"
-	.string "Your BAG has several POCKETS.\p"
-	.string "Items you obtain are automatically\n"
-	.string "placed in the appropriate POCKETS.\p"
-	.string "No TRAINER can afford to be without\n"
-	.string "a BAG of their own.$"
+    .string "训练家小技巧\p包包由数个口袋组成，\p得到的物品会\n自动放入合适的口袋中。\p每个训练家都应\n有一个自己的包包。$"
 

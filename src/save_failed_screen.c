@@ -449,14 +449,13 @@ void CB2_FlashNotDetectedScreen(void)
     InitWindows(textWin);
     DrawStdFrameWithCustomTileAndPalette(0, TRUE, 0x214, 0xE);
     static const u8 saveFailedMessage[] =_(
-        "{COLOR RED}ERROR! {COLOR DARK_GRAY}Flash memory not detected!\n"
+        "{COLOR RED}发生错误! {COLOR DARK_GRAY}未检测到闪存!\n"
         "\n"
-        "If playing on an emulator, set your\n"
-        "save type setting to\n"
-        "Flash 1Mb/128K and reload the ROM.\n"
+        "如果在模拟器上运行，请将存档类型\n"
+        "设置为1Mb/128K，然后重新加载ROM。\n"
         "\n"
-        "If playing on hardware, your cart\n"
-        "does not have a working flash chip.");
+        "如果在硬件上运行, 那么您的卡带\n"
+        "没有可用的闪存芯片！");
     SaveFailedScreenTextPrint(saveFailedMessage, 1, 0);
     TransferPlttBuffer();
     *(u16*)PLTT = RGB(17, 18, 31);

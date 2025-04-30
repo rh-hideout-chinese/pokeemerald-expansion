@@ -8,7 +8,7 @@ def IsCommaMissing(line: str):
         return False
     return True
 
-input_file = open('./src/data/moves_info.h', 'r')
+input_file = open('./src/data/moves_info.h', 'r', encoding="utf-8")
 lines = input_file.readlines()
 input_file.close()
 
@@ -41,23 +41,23 @@ for line in lines:
 
     moves_info_lines.append(line)
 
-output_file_mi = open('./src/data/moves_info.h', 'w')
+output_file_mi = open('./src/data/moves_info.h', 'w', encoding="utf-8")
 output_file_mi.writelines(moves_info_lines)
 output_file_mi.close()
 
-output_file_bas = open('./include/battle_anim_scripts.h', 'w')
+output_file_bas = open('./include/battle_anim_scripts.h', 'w', encoding="utf-8")
 output_file_bas.writelines('#ifndef GUARD_BATTLE_ANIM_SCRIPTS_H\n')
 output_file_bas.writelines('#define GUARD_BATTLE_ANIM_SCRIPTS_H\n\n')
 output_file_bas.writelines(battle_anim_lines)
 output_file_bas.writelines('\n#endif // GUARD_BATTLE_ANIM_SCRIPTS_H\n')
 output_file_bas.close()
 
-b_anim_scripts_s = open('./data/battle_anim_scripts.s', 'r')
+b_anim_scripts_s = open('./data/battle_anim_scripts.s', 'r', encoding="utf-8")
 lines = b_anim_scripts_s.read()
 b_anim_scripts_s.close()
 
 lines = re.sub(r'(Move_[A-Za-z0-9_]*)([:]+)', r'\1::', lines)
 
-b_anim_scripts_s = open('./data/battle_anim_scripts.s', 'w')
+b_anim_scripts_s = open('./data/battle_anim_scripts.s', 'w', encoding="utf-8")
 b_anim_scripts_s.write(lines)
 b_anim_scripts_s.close()

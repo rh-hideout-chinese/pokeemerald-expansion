@@ -26,22 +26,14 @@ MtPyre_1F_EventScript_Man::
 	end
 
 MtPyre_1F_Text_TakeThisForYourOwnGood:
-	.string "All sorts of beings wander the slopes\n"
-	.string "of MT. PYRE…\p"
-	.string "There is no telling what may happen.\n"
-	.string "Take this. It's for your own good.$"
+    .string "送神山的山坡上\n有许多生灵在徘徊……\p无人得知将会发生何事。\n带上这个，对你有好处。$"
 
 MtPyre_1F_Text_ExplainCleanseTag:
-	.string "Have a POKéMON hold that\n"
-	.string "CLEANSE TAG.\p"
-	.string "It will help ward off wild POKéMON.$"
+    .string "让一只宝可梦携带\n这个净化之符，\p就能够避开一些野生宝可梦。$"
 
 MtPyre_1F_Text_ComeToPayRespects:
-	.string "Did you come to pay your respect\n"
-	.string "to the spirits of departed POKéMON?\p"
-	.string "You must care for your POKéMON a lot.$"
+    .string "你是来祭奠逝去的宝可梦\n的灵魂的吗？\p你一定很怀念你的宝可梦。$"
 
 MtPyre_1F_Text_RestingPlaceOfZigzagoon:
-	.string "This is the final resting place of my\n"
-	.string "ZIGZAGOON. I cherished it…$"
+    .string "这是我的蛇纹熊的安息之地。\n我很怀念它……$"
 

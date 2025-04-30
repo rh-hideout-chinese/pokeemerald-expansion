@@ -1,63 +1,54 @@
 @ Only contains the text for the Mauville Man named Giddy. The rest is in scripts/mauville_man.inc
 GiddyText_SoPretty::
-	.string " so pretty!$"
+    .string " 非常漂亮！$"
 
 GiddyText_SoDarling::
-	.string " so darling!$"
+    .string " 太迷人了！$"
 
 GiddyText_SoRelaxed::
-	.string " so relaxed!$"
+    .string " 太悠闲了！$"
 
 GiddyText_SoSunny::
-	.string " so sunny!$"
+    .string " 太愉快了！$"
 
 GiddyText_SoDesirable::
-	.string " so desirable!$"
+    .string " 太合意的了！$"
 
 GiddyText_SoExciting::
-	.string " so exciting!$"
+    .string " 太令人激动！$"
 
 GiddyText_SoAmusing::
-	.string " so amusing!$"
+    .string " 太有意思了！$"
 
 GiddyText_SoMagical::
-	.string " so magical!$"
+    .string " 太不可思议！$"
 
 GiddyText_Is::
-	.string " is$"
+    .string " 是$"
 
 GiddyText_DontYouAgree::
-	.string "\n"
-	.string "Don't you agree?$"
+    .string "\n你同意吗？$"
 
 GiddyText_ISoWantToGoOnAVacation::
-	.string "I so want to go on a vacation.\n"
-	.string "Would you happen to know a nice place?$"
+    .string "我很想去旅行。\n你知道什么好去处吗？$"
 
 GiddyText_IBoughtCrayonsWith120Colors::
-	.string "I bought crayons with 120 colors!\n"
-	.string "Don't you think that's nice?$"
+    .string "我买了一套120色的蜡笔！\n你不觉得很棒吗？$"
 
 GiddyText_WouldntItBeNiceIfWeCouldFloat::
-	.string "Wouldn't it be nice if we could float\n"
-	.string "away on a cloud of bubbles?$"
+    .string "你不觉得，\n漂浮在一片泡泡云上很舒服吗？$"
 
 GiddyText_WhenYouWriteOnASandyBeach::
-	.string "When you write on a sandy beach,\n"
-	.string "they wash away. It makes me sad.$"
+    .string "你在沙滩上写好字，\n不久就会被冲掉的。真扫兴。$"
 
 GiddyText_WhatsTheBottomOfTheSeaLike::
-	.string "What's the bottom of the sea like?\n"
-	.string "Just once I would so love to go!$"
+    .string "海底是个什么样子？\n我真想去一次，一次就好！$"
 
 GiddyText_WhenYouSeeTheSettingSunDoesIt::
-	.string "When you see the setting sun, does it\n"
-	.string "make you want to go home?$"
+    .string "当你看到夕阳的时候，\n是不是会想回家？$"
 
 GiddyText_LyingBackInTheGreenGrass::
-	.string "Lying back in the green grass…\n"
-	.string "Oh, it's so, so nice!$"
+    .string "往草地上这么一躺……\n哦，太，太棒了！$"
 
 GiddyText_SecretBasesAreSoWonderful::
-	.string "SECRET BASES are so wonderful!\n"
-	.string "Can't you feel the excitement?$"
+    .string "秘密基地真是太棒了！\n你不觉得刺激吗？$"

@@ -113,257 +113,108 @@ BattleFrontier_Lounge2_EventScript_TriathleteF::
 	end
 
 BattleFrontier_Lounge2_Text_FrontierManiacIntro::
-	.string "Howdy! When it comes to news about\n"
-	.string "the BATTLE FRONTIER, I'm no. 1.\p"
-	.string "You can think of me as\n"
-	.string "the FRONTIER MANIAC.\p"
-	.string "Just checking, but you are a TRAINER,\n"
-	.string "isn't that right?\p"
-	.string "I'll happily share the hottest news\n"
-	.string "I gathered about the BATTLE FRONTIER.$"
+    .string "嗨！我是对战开拓区\n消息最灵通的人，\p你可以叫我开拓区迷。\p只要看一眼我就知道你是个训练家，\n对不？\p我很高兴可以和你分享在\n对战开拓区收集的最新最热的新闻。$"
 
 BattleFrontier_Lounge2_Text_SwingByForTheLatestWord::
-	.string "Howdy! Did you swing by to grill me\n"
-	.string "about the latest word? Oh, all right!$"
+    .string "嗨！你来是想知道最新的\n消息吗？好吧！$"
 
 @ Unused
 BattleFrontier_Lounge2_Text_MyInformationsBeenUsefulRight::
-	.string "Well? Well? Well?\p"
-	.string "I'm sure my information's been\n"
-	.string "seriously useful to you, right?$"
+    .string "哇喔？哇喔？哇喔？\p我的情报对你来说\n非常有用，是吧？$"
 
 BattleFrontier_Lounge2_Text_FacilityIsHottest::
-	.string "Let's see now…\p"
-	.string "It sounds like the {STR_VAR_1}\n"
-	.string "is the hottest place going.$"
+    .string "让我想想……\p现在好像{STR_VAR_1}是\n最热门的地方。$"
 
 BattleFrontier_Lounge2_Text_BattleTowerIsHottest::
-	.string "Let's see now…\p"
-	.string "It sounds like BATTLE TOWER\n"
-	.string "{STR_VAR_1} is the hottest.$"
+    .string "让我想想……\p现在好像对战塔\n{STR_VAR_1}是最热门的。$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this mysterious TRAINER called\n"
-	.string "the SALON MAIDEN that runs the place.$"
+    .string "告诉你个秘密！\p被亚希达称作开拓区大脑\n的顶级训练家之一现在就在那里。\p那个地方就是这个名叫对战塔大君的\n神秘的训练家管理的。$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenSilverMons::
-	.string "Have you battled the SALON MAIDEN?\p"
-	.string "When she's measuring up her opponent,\n"
-	.string "she apparently uses these POKéMON:\p"
-	.string "A PSYCHIC-type PSI POKéMON,\n"
-	.string "a FIRE-type VOLCANO POKéMON,\l"
-	.string "and a NORMAL-type SLEEPING POKéMON.$"
+    .string "你跟对战塔大君交过手了吗？\p一开始她试对手的实力的时候，\n通常都会用这些宝可梦：\p超能力属性的超能宝可梦，\n火属性的火山宝可梦，\l和一般属性的睡眠宝可梦。$"
 
 BattleFrontier_Lounge2_Text_SalonMaidenGoldMons::
-	.string "Have you battled the SALON MAIDEN\n"
-	.string "when she's serious?\p"
-	.string "When she's battling flat out,\n"
-	.string "she apparently uses these POKéMON:\p"
-	.string "A DRAGON & PSYCHIC EON POKéMON,\n"
-	.string "an ELECTRIC-type THUNDER POKéMON,\l"
-	.string "and a NORMAL-type SLEEPING POKéMON.$"
+    .string "你跟认真起来的对战塔大君\n交过手了吗？\p她全力出手的时候，\n通常都会用这些宝可梦：\p龙和超能力属性的长寿宝可梦，\n电属性的闪电宝可梦，\l还有一般属性的睡眠宝可梦。$"
 
 BattleFrontier_Lounge2_Text_DomeAceIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this flamboyant TRAINER called\n"
-	.string "the DOME ACE that runs the place.$"
+    .string "告诉你个秘密！\p被亚希达称作开拓之脑\n的顶级训练家之一现在就在那里。\p那里就是这个名叫巨蛋超级巨星的\n如火般的训练家管理的。$"
 
 BattleFrontier_Lounge2_Text_DomeAceSilverMons::
-	.string "Have you battled the DOME ACE?\p"
-	.string "When he's treating the opponent\n"
-	.string "lightly, he uses these three POKéMON:\p"
-	.string "A DRAGON & FLYING DRAGON POKéMON,\n"
-	.string "a WATER & GROUND MUD FISH POKéMON,\l"
-	.string "and a FIRE & FLYING FLAME POKéMON.$"
+    .string "你跟巨蛋超级巨星交过手了吗？\p他没认真起来的时候，\n通常都会用这些宝可梦：\p龙和飞行的龙宝可梦，\n水和地面的泥鱼宝可梦，\l还有火和飞行的火焰宝可梦。$"
 
 BattleFrontier_Lounge2_Text_DomeAceGoldMons::
-	.string "Have you battled the DOME ACE\n"
-	.string "when he's serious?\p"
-	.string "When he's demonstrating his strategy,\n"
-	.string "he uses these three POKéMON:\p"
-	.string "A DRAGON & FLYING EON POKéMON,\n"
-	.string "a WATER & GROUND MUD FISH POKéMON,\l"
-	.string "and a STEEL- & PSYCHIC-type IRON LEG\l"
-	.string "POKéMON.$"
+    .string "你跟认真起来的巨蛋超级巨星\n交过手了吗？\p当他把自己的策略完全展示的时候，\n通常都会用这些宝可梦：\p龙和飞行的古代宝可梦，\n水和地面的泥鱼宝可梦，\l还有钢铁和超能力属性的铁腿\l宝可梦。$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this freaky TRAINER called\n"
-	.string "the FACTORY HEAD that runs the place.$"
+    .string "告诉你个秘密！\p被亚希达称作开拓之脑\n的顶级训练家之一现在就在那里。\p那个地方就是这个名叫工厂头目的\n令人无法捉摸的训练家管理的。$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadSilverMons::
-	.string "Have you battled the FACTORY HEAD\n"
-	.string "already?\p"
-	.string "Let me think… When he goes to battle,\n"
-	.string "he just gets three rental POKéMON.\p"
-	.string "He battles under pretty much the same\n"
-	.string "conditions as you.$"
+    .string "你跟工厂头目\n交过手了吗？\p我想想……他开始战斗的时候，\n通常只是借三只宝可梦用。\p他和你在非常相似的\n条件下战斗。$"
 
 BattleFrontier_Lounge2_Text_FactoryHeadGoldMons::
-	.string "Have you battled the FACTORY HEAD\n"
-	.string "when he's serious?\p"
-	.string "When he goes seriously to battle,\n"
-	.string "he still gets three rental POKéMON.\p"
-	.string "He battles under virtually the same\n"
-	.string "conditions as you.$"
+    .string "你跟认真起来的工厂头目\n交过手了吗？\p就算他认真起来了，\n他还是用借来的宝可梦战斗。\p他是和你在完全\n相同的条件下战斗。$"
 
 BattleFrontier_Lounge2_Text_PikeQueenIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this scary TRAINER called\n"
-	.string "the PIKE QUEEN that runs the place.$"
+    .string "告诉你个秘密！\p被亚希达称作开拓之脑\n的顶级训练家之一现在就在那里。\p那个地方就是这个名叫水管皇后的\n可怕的训练家管理的。$"
 
 BattleFrontier_Lounge2_Text_PikeQueenSilverMons::
-	.string "Have you battled the PIKE QUEEN\n"
-	.string "before?\p"
-	.string "When she's in a good mood, they say\n"
-	.string "she uses these three POKéMON:\p"
-	.string "A POISON-type FANG SNAKE POKéMON,\n"
-	.string "a BUG & ROCK MOLD POKéMON,\l"
-	.string "and a WATER-type TENDER POKéMON.$"
+    .string "你跟水管皇后\n交过手了吗？\p据说她心情好的时候，\n通常都会用这些宝可梦：\p毒的牙蛇宝可梦，\n虫和岩石的模型宝可梦，\l还有水属性的温和的宝可梦。$"
 
 BattleFrontier_Lounge2_Text_PikeQueenGoldMons::
-	.string "Have you battled the PIKE QUEEN\n"
-	.string "when she's serious?\p"
-	.string "When she's seriously annoyed, they say\n"
-	.string "she uses these three POKéMON:\p"
-	.string "A POISON-type FANG SNAKE POKéMON,\n"
-	.string "a STEEL & GROUND IRON SNAKE POKéMON,\l"
-	.string "and a WATER- & FLYING-type ATROCIOUS\l"
-	.string "POKéMON.$"
+    .string "你跟认真起来的水管皇后\n交过手了吗？\p据说她非常生气的时候，\n通常都会用这些宝可梦：\p毒属性的牙蛇宝可梦，\n钢铁和地面的钢蛇宝可梦，\l还有水和飞行属性的残暴\l宝可梦。$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this cute TRAINER called\n"
-	.string "the ARENA TYCOON that runs the place.$"
+    .string "告诉你个秘密！\p被亚希达称作开拓之脑\n的顶级训练家之一现在就在那里。\p那个地方就是这个名叫竞技场主将的\n可爱的训练家管理的。$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonSilverMons::
-	.string "Have you battled the ARENA TYCOON\n"
-	.string "before?\p"
-	.string "When she's assessing the foe's ability,\n"
-	.string "she supposedly uses these POKéMON:\p"
-	.string "A BUG & FIGHTING SINGLE HORN POKéMON,\n"
-	.string "a DARK-type MOONLIGHT POKéMON,\l"
-	.string "and a BUG & GHOST SHED POKéMON.$"
+    .string "你跟竞技场主将\n交过手了吗？\p一开始她估计敌方实力的时候，\n大概会用这些宝可梦：\p虫和格斗的独角宝可梦，\n恶属性的月光宝可梦，\l还有虫和鬼怪的躯壳宝可梦。$"
 
 BattleFrontier_Lounge2_Text_ArenaTycoonGoldMons::
-	.string "Have you battled the ARENA TYCOON\n"
-	.string "when she's serious?\p"
-	.string "When she battles for keeps,\n"
-	.string "she supposedly uses these POKéMON:\p"
-	.string "A DARK-type MOONLIGHT POKéMON,\n"
-	.string "a GHOST & POISON SHADOW POKéMON\l"
-	.string "and a GRASS- & FIGHTING-type\l"
-	.string "MUSHROOM POKéMON.$"
+    .string "你跟认真起来的竞技场主将\n交过手了吗？\p她在卫冕战里\n大概会用这些宝可梦：\p恶属性的月光宝可梦，\n鬼怪和毒的影子宝可梦，\l还有草和格斗属性的\l蘑菇宝可梦。$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this sinister TRAINER called\n"
-	.string "the PALACE MAVEN that runs the place.$"
+    .string "告诉你个秘密！\p被亚希达称作开拓之脑\n的顶级训练家之一现在就在那里。\p那个地方就是这个名叫宫殿守护者的\n对人很凶的训练家管理的。$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenSilverMons::
-	.string "Have you battled the PALACE MAVEN\n"
-	.string "before?\p"
-	.string "When he's testing the opponent's\n"
-	.string "spirit, he's said to use these POKéMON:\p"
-	.string "A POISON & FLYING-type BAT POKéMON,\n"
-	.string "a NORMAL-type LAZY POKéMON, and a\l"
-	.string "WATER- & ICE-type TRANSPORT POKéMON.$"
+    .string "你跟宫殿守护者\n交过手了吗？\p据说他测试对手的心的时候，\n通常会用这些宝可梦：\p毒和飞行属性的蝙蝠宝可梦，\n一般属性的懒惰宝可梦，还有\l水和冰属性的传送宝可梦。$"
 
 BattleFrontier_Lounge2_Text_PalaceMavenGoldMons::
-	.string "Have you battled the PALACE MAVEN\n"
-	.string "when he's serious?\p"
-	.string "When he throws his entire might into\n"
-	.string "battle, he's said to use these POKéMON:\p"
-	.string "A FIRE-type LEGENDARY POKéMON,\n"
-	.string "a NORMAL-type LAZY POKéMON,\l"
-	.string "and a WATER-type AURORA POKéMON.$"
+    .string "你跟认真起来的宫殿守护者\n交过手了吗？\p据说他把精力全部集中到战斗的时候，\n通常会使用这些宝可梦：\p火属性的传说宝可梦，\n一般属性的懒惰宝可梦，\l还有水属性的极光宝可梦。$"
 
 BattleFrontier_Lounge2_Text_PyramidKingIsThere::
-	.string "Bet you didn't know this!\p"
-	.string "One of those top TRAINERS that SCOTT\n"
-	.string "calls the FRONTIER BRAINS is there.\p"
-	.string "It's this fiery-hot TRAINER called\n"
-	.string "the PYRAMID KING that runs the place.$"
+    .string "告诉你个秘密！\p被亚希达称作开拓之脑\n的顶级训练家之一现在就在那里。\p那个地方就是这个名叫金字塔法老的\n热情如火的训练家管理的。$"
 
 BattleFrontier_Lounge2_Text_PyramidKingSilverMons::
-	.string "Have you battled the PYRAMID KING\n"
-	.string "before?\p"
-	.string "When he's checking the foe's power,\n"
-	.string "he apparently uses these POKéMON:\p"
-	.string "A ROCK-type ROCK PEAK POKéMON,\n"
-	.string "an ICE-type ICEBERG POKéMON,\l"
-	.string "and a STEEL-type IRON POKéMON.$"
+    .string "你跟金字塔法老\n交过手了吗？\p他试验敌方实力的时候，\n通常都会用这些宝可梦：\p岩石属性的石顶宝可梦，\n冰属性的冰山宝可梦，\l还有钢属性的铁宝可梦。$"
 
 BattleFrontier_Lounge2_Text_PyramidKingGoldMons::
-	.string "Have you battled the PYRAMID KING\n"
-	.string "when he's serious?\p"
-	.string "When he's pumped with hot power,\n"
-	.string "he apparently uses these POKéMON:\p"
-	.string "An ICE & FLYING FREEZE POKéMON, an\n"
-	.string "ELECTRIC & FLYING ELECTRIC POKéMON,\l"
-	.string "and a FIRE- & FLYING-type FLAME\l"
-	.string "POKéMON.$"
+    .string "你跟认真起来的金字塔法老\n交过手了吗？\p他的热情燃烧起来的时候，\n通常都会用这些宝可梦：\p冰和飞行的冰冻宝可梦，\n电和飞行的电宝可梦，\l还有火和飞行属性的火焰\l宝可梦。$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice1::
-	.string "Sure, there are several places where\n"
-	.string "you can enter DOUBLE BATTLES.\p"
-	.string "But the DOUBLE BATTLE ROOMS of\n"
-	.string "the BATTLE TOWER are, like, basic!\p"
-	.string "They're where you should learn about\n"
-	.string "how DOUBLE BATTLES are played here\l"
-	.string "in the BATTLE FRONTIER.$"
+    .string "确实，有些地方也可以\n进行双打对战，\p不过在对战塔的双人\n对战房间里，这可是最基本的！\p你可以在那里学习\n如何在对战开拓区\l进行双打对战。$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice2::
-	.string "Watch yourself in the battles here.\p"
-	.string "I hear there are TRAINERS that have\n"
-	.string "strategies they developed just for\l"
-	.string "DOUBLE BATTLES.$"
+    .string "在这里战斗不要大意。\p听说有些训练家\n可是专门为了双打对战\l而培育宝可梦的。$"
 
 BattleFrontier_Lounge2_Text_DoubleBattleAdvice3::
-	.string "Once you're confident and comfortable\n"
-	.string "with DOUBLE BATTLES here, you should\l"
-	.string "think about challenging other places\l"
-	.string "offering DOUBLE BATTLES.$"
+    .string "当你熟悉了这里的\n双打对战之后，\l就去试着挑战其他地方的\l双打对战吧。$"
 
 BattleFrontier_Lounge2_Text_MultiBattleAdvice::
-	.string "All sorts of TRAINERS gather in\n"
-	.string "the BATTLE SALON.\p"
-	.string "Just think--you may run into your\n"
-	.string "friends or followers!\l"
-	.string "You should look carefully!$"
+    .string "对战沙龙里聚集了\n各种各样的训练家。\p想想吧——你可能会碰上\n你的朋友或粉丝！\l要好好注意周围啊！$"
 
 BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice::
-	.string "If you're with a friend, head for the\n"
-	.string "LINK MULTI BATTLE ROOM.\p"
-	.string "If you play with a strong friend,\n"
-	.string "you can expect to see tough foes!$"
+    .string "如果碰到了朋友，就去\n联线多人对战房间吧。\p有一个很厉害的朋友在旁边的话，\n就有可能碰上很强的对手！$"
 
 BattleFrontier_Lounge2_Text_NewsGatheringPower::
-	.string "What amazing news-gathering power!\n"
-	.string "My mentor's like none other!$"
+    .string "收集消息好厉害！\n老师果然非同一般！$"
 
 BattleFrontier_Lounge2_Text_AmazingPowersOfObservation::
-	.string "What amazing powers of observation!\n"
-	.string "My mentor's like none other!$"
+    .string "调查资料好厉害！\n老师果然非同一般！$"
 
 BattleFrontier_Lounge2_Text_AmazingPowerOfPersuasion::
-	.string "What amazing power of persuasion!\n"
-	.string "My mentor's like none other!$"
+    .string "说服别人好厉害！\n老师果然非同一般！$"
 
 BattleFrontier_Lounge2_Text_ThisPlaceIsScaringMe::
-	.string "…What is this place?\n"
-	.string "It's scaring me…$"
+    .string "……这里是哪儿？\n好可怕……$"
 

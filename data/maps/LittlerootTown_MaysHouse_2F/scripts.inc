@@ -311,89 +311,28 @@ LittlerootTown_MaysHouse_2F_EventScript_TurnOffPlayerPC::
 	end
 
 RivalsHouse_2F_Text_MayWhoAreYou:
-	.string "Huh?\n"
-	.string "Who… Who are you?\p"
-	.string "… … … … … … … …\n"
-	.string "… … … … … … … …\p"
-	.string "Oh, you're {PLAYER}{KUN}.\n"
-	.string "So your move was today.\p"
-	.string "Um… I'm MAY.\n"
-	.string "Glad to meet you!\p"
-	.string "I…\n"
-	.string "I have this dream of becoming friends\l"
-	.string "with POKéMON all over the world.\p"
-	.string "I… I heard about you, {PLAYER}{KUN}, from\n"
-	.string "my dad, PROF. BIRCH.\p"
-	.string "I was hoping that you would be nice,\n"
-	.string "{PLAYER}{KUN}, and that we could be friends.\p"
-	.string "Oh, this is silly, isn't it?\n"
-	.string "I… I've just met you, {PLAYER}{KUN}.\p"
-	.string "Eheheh…\p"
-	.string "Oh, no! I forgot!\p"
-	.string "I was supposed to go help Dad catch\n"
-	.string "some wild POKéMON!\p"
-	.string "{PLAYER}{KUN}, I'll catch you later!$"
+    .string "嗯？\n你……你是谁？\p…… …… …… ……\n…… …… …… ……\p噢，是{PLAYER}{KUN}啊。\n这么说你搬家就是今天。\p呃……我叫小遥，\n很高兴见到你！\p我……\n我梦想要和世界上\l每一只宝可梦做朋友。\p我从爸爸……小田卷博士\n那儿听说过你，{PLAYER}{KUN}，\p我一直希望我们能\n成为好朋友，{PLAYER}{KUN}。\p呵呵，有点傻，是吗？\n我……我还刚刚认识你呢{PLAYER}{KUN}。\p啊哈哈……\p呀，坏了！我忘了！\p我还得去帮爸爸捕捉\n野生宝可梦！\p{PLAYER}{KUN}，回头见！$"
 
 RivalsHouse_2F_Text_MayGettingReady:
-	.string "POKéMON fully restored!\n"
-	.string "Items ready, and…$"
+    .string "宝可梦完全恢复了！\n东西都准备好了，还有……$"
 
 RivalsHouse_2F_Text_BrendanWhoAreYou:
-	.string "Hey!\n"
-	.string "You…\p"
-	.string "Who are you?\p"
-	.string "Oh, you're {PLAYER}, aren't you?\n"
-	.string "Moved in next door, right?\p"
-	.string "I didn't know that you're a girl.\p"
-	.string "Dad, PROF. BIRCH, said that our new\n"
-	.string "next-door neighbor is a GYM LEADER's\l"
-	.string "kid, so I assumed you'd be a guy.\p"
-	.string "My name's BRENDAN.\n"
-	.string "So, hi, neighbor!\p"
-	.string "Huh? Hey, {PLAYER}, don't you have\n"
-	.string "a POKéMON?\p"
-	.string "Do you want me to go catch you one?\p"
-	.string "Aw, darn, I forgot…\p"
-	.string "I'm supposed to go help my dad catch\n"
-	.string "some wild POKéMON.\p"
-	.string "Some other time, okay?$"
+    .string "嗨！\n你……\p你是谁？\p啊，是{PLAYER}吧？\n刚搬到隔壁的？\p没想到会是个女孩。\p老爸小田卷博士说\n新邻居是个道馆馆主的孩子，\l我还以为是男孩呢。\p我叫小悠，\n今天起我们就是邻居了！\p嗯？喂，{PLAYER}你还没有\n宝可梦吗？\p要我替你捉一只吗？\p啊，可恶，忘记了……\p我得去帮老爸\n捉野生宝可梦了。\p以后再聊，好吗？$"
 
 RivalsHouse_2F_Text_BrendanGettingReady:
-	.string "POKéMON fully restored…\n"
-	.string "Items all packed, and…$"
+    .string "宝可梦完全恢复了……\n东西都打包好了，还有……$"
 
 RivalsHouse_2F_Text_ItsRivalsPokeBall:
-	.string "It's {RIVAL}'s POKé BALL!\p"
-	.string "Better leave it right where it is.$"
+    .string "是{RIVAL}的精灵球！\p最好不要乱动。$"
 
 RivalsHouse_2F_Text_MayJustCheckingMyPokedex:
-	.string "MAY: {PLAYER}{KUN}!\p"
-	.string "I was just checking my POKéDEX.\p"
-	.string "There's still a lot of POKéMON that\n"
-	.string "I've seen but haven't caught.\p"
-	.string "And there are many others that\n"
-	.string "I think will evolve.\p"
-	.string "I wonder where I should go catch\n"
-	.string "some POKéMON next?$"
+    .string "小遥：{PLAYER}{KUN}！\p我在看我的宝可梦图鉴呢。\p有很多我看见却\n没捕捉的宝可梦，\p还有些我想\n可能会进化。\p不知道下面该\n去哪儿捕捉宝可梦呢？$"
 
 RivalsHouse_2F_Text_MayWhereShouldIGoNext:
-	.string "MAY: I wonder where I should go catch\n"
-	.string "some POKéMON next?\p"
-	.string "Wouldn't it be funny if we ran into each\n"
-	.string "other, {PLAYER}{KUN}?$"
+    .string "小遥：不知道下面该\n去哪儿捕捉宝可梦呢？\p如果我们能偶然遇上，那会\n很有趣吧，{PLAYER}{KUN}？$"
 
 RivalsHouse_2F_Text_BrendanJustCheckingMyPokedex:
-	.string "BRENDAN: Hey, it's {PLAYER}.\p"
-	.string "I was just checking out my POKéDEX.\p"
-	.string "There are still many POKéMON that\n"
-	.string "I need to catch, I know, but this\l"
-	.string "is looking pretty good.\p"
-	.string "Checking this POKéDEX out gives me\n"
-	.string "the urge to hit the road again.$"
+    .string "小悠：嗨，{PLAYER}，\p我在检查我的宝可梦图鉴。\p我还有不少宝可梦要捕捉，\n但现在这样\l进展也不错。\p看着这宝可梦图鉴就觉得它好像\n在催我回草丛里去。$"
 
 RivalsHouse_2F_Text_BrendanWhereShouldIGoNext:
-	.string "BRENDAN: I'm having a hard time deciding\n"
-	.string "where I should catch POKéMON next.\p"
-	.string "Hey, {PLAYER}, if I see you while I'm out\n"
-	.string "catching POKéMON, I can pitch you a\l"
-	.string "battle if you'd like.$"
+    .string "小悠：我正在头疼下面\n要去哪儿捉宝可梦。\p喂，{PLAYER}，我如果能在找\n宝可梦时碰见你，\l可以和你来场小小的战斗。$"
