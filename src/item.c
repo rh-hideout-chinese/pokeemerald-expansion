@@ -23,8 +23,8 @@
 
 static bool8 CheckPyramidBagHasItem(u16 itemId, u16 count);
 static bool8 CheckPyramidBagHasSpace(u16 itemId, u16 count);
-static const u8 *GetItemPluralName(u16);
-static bool32 DoesItemHavePluralName(u16);
+//static const u8 *GetItemPluralName(u16);
+//static bool32 DoesItemHavePluralName(u16);
 
 EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
 
@@ -877,15 +877,15 @@ u32 GetItemPrice(u16 itemId)
     return gItemsInfo[SanitizeItemId(itemId)].price;
 }
 
-static bool32 DoesItemHavePluralName(u16 itemId)
-{
-    return (gItemsInfo[SanitizeItemId(itemId)].pluralName[0] != '\0');
-}
+//static bool32 DoesItemHavePluralName(u16 itemId)
+//{
+//    return (gItemsInfo[SanitizeItemId(itemId)].pluralName[0] != '\0');
+//}
 
-static const u8 *GetItemPluralName(u16 itemId)
-{
-    return gItemsInfo[SanitizeItemId(itemId)].pluralName;
-}
+//static const u8 *GetItemPluralName(u16 itemId)
+//{
+//    return gItemsInfo[SanitizeItemId(itemId)].pluralName;
+//}
 
 const u8 *GetItemEffect(u32 itemId)
 {
