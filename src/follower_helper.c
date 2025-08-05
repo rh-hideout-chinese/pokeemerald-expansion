@@ -74,6 +74,7 @@ static const u8* const sDayTexts[] = {sCondMsg43, sCondMsg44, NULL};
 static const u8 sCondMsg45[] = _("你的宝可梦正呆呆地\n凝望着夜空！");
 static const u8 sCondMsg46[] = _("你的宝可梦正开心地\n凝视着美丽的星空！");
 static const u8* const sNightTexts[] = {sCondMsg45, sCondMsg46, NULL};
+static const u8 sCondMsg50[] = _("{STR_VAR_1} is disturbed by the\nabnormal weather!");
 
 // See the struct definition in follower_helper.h for more info
 const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT] =
@@ -377,6 +378,18 @@ const struct FollowerMsgInfoExtended gFollowerConditionalMessages[COND_MSG_COUNT
         {
             MATCH_TIME_OF_DAY(TIME_NIGHT),
         },
+    },
+    [COND_MSG_ABNORMAL_WEATHER] =
+    {
+        .text = sCondMsg50,
+        .emotion = FOLLOWER_EMOTION_SURPRISE,
+        .conditions =
+        {
+            MATCH_MUSIC(MUS_ABNORMAL_WEATHER),
+            MATCH_NOT_SPECIES(SPECIES_KYOGRE),
+            MATCH_NOT_SPECIES(SPECIES_GROUDON),
+            MATCH_NOT_SPECIES(SPECIES_RAYQUAZA),
+        }
     },
 };
 

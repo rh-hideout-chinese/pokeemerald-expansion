@@ -319,7 +319,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNENDUREDHIT]                       = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n挺住了攻击！"),
     [STRINGID_MAGNITUDESTRENGTH]                    = COMPOUND_STRING("震级{B_BUFF1}！"),
     [STRINGID_PKMNCUTHPMAXEDATTACK]                 = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n削减了体力并释放了全部力量！"),
-    [STRINGID_PKMNCOPIEDSTATCHANGES]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}复制了\n{B_DEF_NAME_WITH_PREFIX2}的能力变化！"),
+    [STRINGID_PKMNCOPIEDSTATCHANGES]                = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}复制了\n{B_DEF_NAME_WITH_PREFIX2}的能力变化！"),
     [STRINGID_PKMNGOTFREE]                          = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}摆脱了\n{B_DEF_NAME_WITH_PREFIX2}的{B_BUFF1}！"), //not in gen 5+, generic rapid spin?
     [STRINGID_PKMNSHEDLEECHSEED]                    = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}摆脱了\n寄生种子的束缚！"), //not in gen 5+, generic rapid spin?
     [STRINGID_PKMNBLEWAWAYSPIKES]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n吹飞了撒菱！"), //not in gen 5+, generic rapid spin?
@@ -629,13 +629,13 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_ICEBODYHPGAIN]                        = COMPOUND_STRING("因为{B_ATK_ABILITY}，\n{B_ATK_NAME_WITH_PREFIX}回复了少许HP。"), //don't think this message is displayed anymore
     [STRINGID_SNOWWARNINGHAIL]                      = COMPOUND_STRING("开始下冰雹了！"),
     [STRINGID_FRISKACTIVATES]                       = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}察觉到了\n{B_DEF_NAME_WITH_PREFIX2}的{B_LAST_ITEM}！"),
-    [STRINGID_UNNERVEENTERS]                        = COMPOUND_STRING("{B_DEF_TEAM1}因太紧张\n而无法食用树果！"),
+    [STRINGID_UNNERVEENTERS]                        = COMPOUND_STRING("{B_EFF_TEAM1}因太紧张\n而无法食用树果！"),
     [STRINGID_HARVESTBERRY]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n收获了{B_LAST_ITEM}！"),
     [STRINGID_MAGICBOUNCEACTIVATES]                 = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n将{B_ATK_NAME_WITH_PREFIX2}反射了回去！"),
     [STRINGID_PROTEANTYPECHANGE]                    = COMPOUND_STRING("因为{B_ATK_ABILITY}，\n{B_ATK_NAME_WITH_PREFIX}变成了{B_BUFF1}属性！"),
     [STRINGID_SYMBIOSISITEMPASS]                    = COMPOUND_STRING("因{B_LAST_ABILITY}，{B_SCR_NAME_WITH_PREFIX}\n将{B_LAST_ITEM}传给了{B_EFF_NAME_WITH_PREFIX2}！"),
     [STRINGID_STEALTHROCKDMG]                       = COMPOUND_STRING("尖锐的岩石扎进了\n{B_SCR_NAME_WITH_PREFIX2}的体内！"),
-    [STRINGID_TOXICSPIKESABSORBED]                  = COMPOUND_STRING("{B_SCR_TEAM2}脚下的\n毒菱消失不见了！"),
+    [STRINGID_TOXICSPIKESABSORBED]                  = COMPOUND_STRING("{B_EFF_TEAM2}脚下的\n毒菱消失不见了！"),
     [STRINGID_TOXICSPIKESPOISONED]                  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}中毒了！"),
     [STRINGID_TOXICSPIKESBADLYPOISONED]             = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}中剧毒了！"),
     [STRINGID_STICKYWEBSWITCHIN]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n被黏黏网粘住了！"),
@@ -857,7 +857,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_SWAMPENVELOPEDSIDE]                   = COMPOUND_STRING("在{B_DEF_TEAM2}周围\n延伸出了湿地！"),
     [STRINGID_THESWAMPDISAPPEARED]                  = COMPOUND_STRING("{B_ATK_TEAM2}周围的湿地\n消失不见了！"),
     [STRINGID_PKMNTELLCHILLINGRECEPTIONJOKE]        = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}说出了冷笑话！"),
-    [STRINGID_HOSPITALITYRESTORATION]               = COMPOUND_STRING("{B_ATK_PARTNER_NAME}喝光了\n{B_ATK_NAME_WITH_PREFIX2}泡的茶！"),
+    [STRINGID_HOSPITALITYRESTORATION]               = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}喝光了\n{B_SCR_NAME_WITH_PREFIX2}泡的茶！"),
     [STRINGID_ELECTROSHOTCHARGING]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}吸收了电力！"),
     [STRINGID_ITEMWASUSEDUP]                        = COMPOUND_STRING("{B_LAST_ITEM}已完成使命，\n消失了……"),
     [STRINGID_ATTACKERLOSTITSTYPE]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}失去了\n{B_BUFF1}属性！"),
@@ -1205,7 +1205,8 @@ const u16 gGotBurnedStringIds[] =
 
 const u16 gGotFrostbiteStringIds[] =
 {
-    [B_MSG_STATUSED]            = STRINGID_PKMNGOTFROSTBITE
+    [B_MSG_STATUSED]            = STRINGID_PKMNGOTFROSTBITE,
+    [B_MSG_STATUSED_BY_ABILITY] = STRINGID_PKMNGOTFROSTBITE,
 };
 
 const u16 gFrostbiteHealedStringIds[] =
@@ -3110,14 +3111,14 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
                 else
                     toCpy = sText_Opposing2;
                 break;
-            case B_TXT_SCR_TEAM1:
-                if (IsOnPlayerSide(gBattleScripting.battler))
+            case B_TXT_EFF_TEAM1:
+                if (IsOnPlayerSide(gEffectBattler))
                     toCpy = sText_Your1;
                 else
                     toCpy = sText_Opposing1;
                 break;
-            case B_TXT_SCR_TEAM2:
-                if (IsOnPlayerSide(gBattleScripting.battler))
+            case B_TXT_EFF_TEAM2:
+                if (IsOnPlayerSide(gEffectBattler))
                     toCpy = sText_Your2;
                 else
                     toCpy = sText_Opposing2;
@@ -3184,7 +3185,7 @@ static void IllusionNickHack(u32 battler, u32 partyId, u8 *dst)
         else
             partnerMon = mon;
 
-        id = GetIllusionMonPartyId(gEnemyParty, mon, partnerMon);
+        id = GetIllusionMonPartyId(gEnemyParty, mon, partnerMon, battler);
     }
 
     if (id != PARTY_SIZE)

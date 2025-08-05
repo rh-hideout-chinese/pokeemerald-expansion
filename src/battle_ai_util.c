@@ -548,8 +548,8 @@ bool32 IsDamageMoveUnusable(u32 battlerAtk, u32 battlerDef, u32 move, u32 moveTy
         if (!IS_BATTLER_OF_TYPE(battlerAtk, GetMoveArgType(move)))
             return TRUE;
         break;
-    case EFFECT_HIT_SET_REMOVE_TERRAIN:
-        if (!(gFieldStatuses & STATUS_FIELD_TERRAIN_ANY) && GetMoveEffectArg_MoveProperty(move) == ARG_TRY_REMOVE_TERRAIN_FAIL)
+    case EFFECT_STEEL_ROLLER:
+        if (!(gFieldStatuses & STATUS_FIELD_TERRAIN_ANY))
             return TRUE;
         break;
     case EFFECT_POLTERGEIST:
@@ -827,7 +827,7 @@ struct SimulatedDamage AI_CalcDamage(u32 move, u32 battlerAtk, u32 battlerDef, u
             simDamage.median = ApplyModifiersAfterDmgRoll(simDamage.median, &damageCalcData, effectivenessMultiplier,
                                                             aiData->abilities[battlerAtk], aiData->abilities[battlerDef],
                                                             aiData->holdEffects[battlerAtk], aiData->holdEffects[battlerDef]);
-                                                            
+
             simDamage.maximum = GetDamageByRollType(damage, DMG_ROLL_HIGHEST);
             simDamage.maximum = ApplyModifiersAfterDmgRoll(simDamage.maximum, &damageCalcData, effectivenessMultiplier,
                                                             aiData->abilities[battlerAtk], aiData->abilities[battlerDef],
@@ -4141,13 +4141,41 @@ bool32 IsRecycleEncouragedItem(u32 item)
     return FALSE;
 }
 
-static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, enum StatChange statId, bool32 considerContrary)
+static u32 GetStatBeingChanged(enum StatChange statChange)
+{
+    switch(statChange)
+    {
+        case STAT_CHANGE_ATK:
+        case STAT_CHANGE_ATK_2:
+            return STAT_ATK;
+        case STAT_CHANGE_DEF:
+        case STAT_CHANGE_DEF_2:
+            return STAT_DEF;
+        case STAT_CHANGE_SPEED:
+        case STAT_CHANGE_SPEED_2:
+            return STAT_SPEED;
+        case STAT_CHANGE_SPATK:
+        case STAT_CHANGE_SPATK_2:
+            return STAT_SPATK;
+        case STAT_CHANGE_SPDEF:
+        case STAT_CHANGE_SPDEF_2:
+            return STAT_SPDEF;
+        case STAT_CHANGE_ACC:
+            return STAT_ACC;
+        case STAT_CHANGE_EVASION:
+            return STAT_EVASION;
+    }
+    return 0; // STAT_HP, should never be getting changed
+}
+
+static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, enum StatChange statChange, bool32 considerContrary)
 {
     enum AIScore tempScore = NO_INCREASE;
     u32 noOfHitsToFaint = NoOfHitsForTargetToFaintAI(battlerDef, battlerAtk);
     u32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, TRUE);
     u32 shouldSetUp = ((noOfHitsToFaint >= 2 && aiIsFaster) || (noOfHitsToFaint >= 3 && !aiIsFaster) || noOfHitsToFaint == UNKNOWN_NO_OF_HITS);
     u32 i;
+    u32 statId = GetStatBeingChanged(statChange);
 
     if (considerContrary && gAiLogicData->abilities[battlerAtk] == ABILITY_CONTRARY)
         return NO_INCREASE;
@@ -4206,7 +4234,7 @@ static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, 
         tempScore += WEAK_EFFECT;
     }
 
-    switch (statId)
+    switch (statChange)
     {
     case STAT_CHANGE_ATK:
         if (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_PHYSICAL) && shouldSetUp)
@@ -4269,7 +4297,7 @@ static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, 
         }
         break;
     case STAT_CHANGE_ACC:
-        if (gBattleMons[battlerAtk].statStages[STAT_ACC] <= 3) // Increase only if necessary
+        if (gBattleMons[battlerAtk].statStages[statId] <= 3) // Increase only if necessary
             tempScore += DECENT_EFFECT;
         break;
     case STAT_CHANGE_EVASION:
@@ -4283,14 +4311,14 @@ static enum AIScore IncreaseStatUpScoreInternal(u32 battlerAtk, u32 battlerDef, 
     return tempScore;
 }
 
-u32 IncreaseStatUpScore(u32 battlerAtk, u32 battlerDef, enum StatChange statId)
+u32 IncreaseStatUpScore(u32 battlerAtk, u32 battlerDef, enum StatChange statChange)
 {
-    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statId, TRUE);
+    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statChange, TRUE);
 }
 
-u32 IncreaseStatUpScoreContrary(u32 battlerAtk, u32 battlerDef, enum StatChange statId)
+u32 IncreaseStatUpScoreContrary(u32 battlerAtk, u32 battlerDef, enum StatChange statChange)
 {
-    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statId, FALSE);
+    return IncreaseStatUpScoreInternal(battlerAtk, battlerDef, statChange, FALSE);
 }
 
 void IncreasePoisonScore(u32 battlerAtk, u32 battlerDef, u32 move, s32 *score)

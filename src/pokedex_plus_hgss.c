@@ -2764,7 +2764,7 @@ static u8 CreateMonName(u16 num, u8 left, u8 top)
         str = GetSpeciesName(num);
     else
         str = sText_TenDashes;
-    PrintMonDexNumAndName_2(0, FONT_NARROW, str, left, top);
+    PrintMonDexNumAndName_2(0, FONT_NORMAL, str, left, top);
     return StringLength(str);
 }
 
