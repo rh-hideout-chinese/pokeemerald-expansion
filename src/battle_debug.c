@@ -104,15 +104,15 @@ enum
     LIST_ITEM_STATS,
     LIST_ITEM_STAT_STAGES,
     LIST_ITEM_STATUS1,
-    LIST_ITEM_STATUS2,
-    LIST_ITEM_STATUS3,
-    LIST_ITEM_STATUS4,
+    LIST_ITEM_VOLATILE,
+    LIST_ITEM_HAZARDS,
     LIST_ITEM_SIDE_STATUS,
     LIST_ITEM_AI,
     LIST_ITEM_AI_MOVES_PTS,
     LIST_ITEM_AI_INFO,
     LIST_ITEM_AI_PARTY,
     LIST_ITEM_VARIOUS,
+    LIST_ITEM_INSTANT_WIN,
     LIST_ITEM_COUNT
 };
 
@@ -141,72 +141,22 @@ enum
 
 enum
 {
-    LIST_STATUS2_CONFUSION,
-    LIST_STATUS2_FLINCHED,
-    LIST_STATUS2_TORMENT,
-    LIST_STATUS2_POWDER,
-    LIST_STATUS2_DEFENSE_CURL,
-    LIST_STATUS2_RECHARGE,
-    LIST_STATUS2_RAGE,
-    LIST_STATUS2_DESTINY_BOND,
-    LIST_STATUS2_ESCAPE_PREVENTION,
-    LIST_STATUS2_CURSED,
-    LIST_STATUS2_FORESIGHT,
-    LIST_STATUS2_DRAGON_CHEER,
-    LIST_STATUS2_FOCUS_ENERGY
-};
-
-enum
-{
-    LIST_STATUS3_LEECH_SEED_HEALER,
-    LIST_STATUS3_LEECH_SEEDED,
-    LIST_STATUS3_ALWAYS_HITS,
-    LIST_STATUS3_PERISH_SONG,
-    LIST_STATUS3_ON_AIR,
-    LIST_STATUS3_UNDERGROUND,
-    LIST_STATUS3_MINIMIZED,
-    LIST_STATUS3_CHARGED_UP,
-    LIST_STATUS3_ROOTED,
-    LIST_STATUS3_YAWN,
-    LIST_STATUS3_IMPRISONED_OTHERS,
-    LIST_STATUS3_GRUDGE,
-    LIST_STATUS3_GASTRO_ACID,
-    LIST_STATUS3_EMBARGO,
-    LIST_STATUS3_UNDERWATER,
-    LIST_STATUS3_SMACKED_DOWN,
-    LIST_STATUS3_TELEKINESIS,
-    LIST_STATUS3_MIRACLE_EYED,
-    LIST_STATUS3_MAGNET_RISE,
-    LIST_STATUS3_HEAL_BLOCK,
-    LIST_STATUS3_AQUA_RING,
-    LIST_STATUS3_LASER_FOCUS,
-    LIST_STATUS3_POWER_TRICK,
-};
-
-enum
-{
-    LIST_STATUS4_ELECTRIFIED,
-    LIST_STATUS4_MUD_SPORT,
-    LIST_STATUS4_WATER_SPORT,
-    LIST_STATUS4_SALT_CURE,
-    LIST_STATUS4_SYRUP_BOMB,
-    LIST_STATUS4_GLAIVE_RUSH,
+    LIST_SIDE_STICKY_WEB,
+    LIST_SIDE_SPIKES,
+    LIST_SIDE_TOXIC_SPIKES,
+    LIST_SIDE_STEALTH_ROCK,
+    LIST_SIDE_STEELSURGE,
 };
 
 enum
 {
     LIST_SIDE_REFLECT,
     LIST_SIDE_LIGHTSCREEN,
-    LIST_SIDE_STICKY_WEB,
-    LIST_SIDE_SPIKES,
     LIST_SIDE_SAFEGUARD,
     LIST_SIDE_MIST,
     LIST_SIDE_TAILWIND,
     LIST_SIDE_AURORA_VEIL,
     LIST_SIDE_LUCKY_CHANT,
-    LIST_SIDE_TOXIC_SPIKES,
-    LIST_SIDE_STEALTH_ROCK,
-    LIST_SIDE_STEELSURGE,
     LIST_SIDE_DAMAGE_NON_TYPES,
     LIST_SIDE_RAINBOW,
     LIST_SIDE_SEA_OF_FIRE,
@@ -268,6 +218,8 @@ enum
     VAL_BITFIELD_8,
     VAL_BITFIELD_16,
     VAL_BITFIELD_32,
+    VAL_VOLATILE,
+    VAL_HAZARDS,
     VAR_SIDE_STATUS,
     VAR_SHOW_HP,
     VAR_SUBSTITUTE,
@@ -281,147 +233,10 @@ enum
 static const u8 *GetHoldEffectName(enum ItemHoldEffect holdEffect);
 
 // const rom data
-static const u8 sText_Moves[] = _("招式");
 static const u8 sText_Ability[] = _("特性");
 static const u8 sText_HeldItem[] = _("持有物");
 static const u8 sText_HoldEffect[] = _("携带效果");
-static const u8 sText_PP[] = _("PP");
-static const u8 sText_Types[] = _("属性");
-static const u8 sText_Stats[] = _("能力");
-static const u8 sText_StatStages[] = _("能力阶级");
-static const u8 sText_Status1[] = _("状态1");
-static const u8 sText_Status2[] = _("状态2");
-static const u8 sText_Status3[] = _("状态3");
-static const u8 sText_Status4[] = _("状态4");
-static const u8 sText_SideStatus[] = _("场地状态");
-static const u8 sText_AI[] = _("AI");
-static const u8 sText_AIMovePts[] = _("AI点数/伤害");
-static const u8 sText_AiKnowledge[] = _("AI信息");
-static const u8 sText_AiParty[] = _("AI队伍");
-static const u8 sText_Various[] = _("杂项");
-static const u8 sText_CurrHp[] = _("当前HP");
-static const u8 sText_MaxHp[] = _("最大HP");
-static const u8 sText_Attack[] = _("攻击");
-static const u8 sText_Defense[] = _("防御");
-static const u8 sText_Speed[] = _("速度");
-static const u8 sText_SpAtk[] = _("特攻");
-static const u8 sText_SpDef[] = _("特防");
-static const u8 sText_Sleep[] = _("睡眠");
-static const u8 sText_Poison[] = _("中毒");
-static const u8 sText_Burn[] = _("灼伤");
-static const u8 sText_Freeze[] = _("冰冻");
-static const u8 sText_Paralysis[] = _("麻痹");
-static const u8 sText_ToxicPoison[] = _("剧毒");
-static const u8 sText_ToxicCounter[] = _("剧毒经过回合");
-static const u8 sText_Frostbite[] = _("冻伤");
-static const u8 sText_Confusion[] = _("念力");
-static const u8 sText_Flinched[] = _("畏缩");
-static const u8 sText_Uproar[] = _("吵闹");
-static const u8 sText_Torment[] = _("无理取闹");
-static const u8 sText_Bide[] = _("忍耐");
-static const u8 sText_LockConfuse[] = _("锁定混乱？");
-static const u8 sText_MultipleTurns[] = _("多回合");
-static const u8 sText_Wrapped[] = _("束缚");
-static const u8 sText_Powder[] = _("粉尘");
-static const u8 sText_Infatuation[] = _("着迷");
-static const u8 sText_DefenseCurl[] = _("变圆");
-static const u8 sText_Transformed[] = _("变身");
-static const u8 sText_Recharge[] = _("无法动弹");
-static const u8 sText_Rage[] = _("愤怒");
-static const u8 sText_Substitute[] = _("替身");
-static const u8 sText_DestinyBond[] = _("同命");
-static const u8 sText_EscapePrevention[] = _("无法逃走");
-static const u8 sText_Nightmare[] = _("恶梦");
-static const u8 sText_Cursed[] = _("诅咒");
-static const u8 sText_Foresight[] = _("识破");
-static const u8 sText_DragonCheer[] = _("龙声鼓舞");
-static const u8 sText_FocusEnergy[] = _("聚气");
-static const u8 sText_LeechSeedHealer[] = _("因寄生种子回复");
-static const u8 sText_LeechSeeded[] = _("被寄生种子寄生");
-static const u8 sText_AlwaysHits[] = _("锁定");
-static const u8 sText_PerishSong[] = _("终焉之歌");
-static const u8 sText_OnAir[] = _("飞翔");
-static const u8 sText_Underground[] = _("挖洞");
-static const u8 sText_Minimized[] = _("变小");
-static const u8 sText_ChargedUp[] = _("充电");
-static const u8 sText_Rooted[] = _("扎根");
-static const u8 sText_Yawn[] = _("哈欠");
-static const u8 sText_ImprisonedOthers[] = _("封印其他宝可梦");
-static const u8 sText_Grudge[] = _("怨念");
-static const u8 sText_GastroAcid[] = _("胃液");
-static const u8 sText_Embargo[] = _("查封");
-static const u8 sText_Underwater[] = _("潜水");
-static const u8 sText_Trace[] = _("复制");
-static const u8 sText_SmackedDown[] = _("被击落");
-static const u8 sText_MeFirst[] = _("抢先一步");
-static const u8 sText_Telekinesis[] = _("意念移物");
-static const u8 sText_PhantomForce[] = _("潜灵奇袭");
-static const u8 sText_MiracleEyed[] = _("奇迹之眼");
-static const u8 sText_MagnetRise[] = _("电磁飘浮");
-static const u8 sText_HealBlock[] = _("回复封锁");
-static const u8 sText_AquaRing[] = _("水流环");
-static const u8 sText_LaserFocus[] = _("磨砺");
-static const u8 sText_PowerTrick[] = _("力量戏法");
-static const u8 sText_SkyDropped[] = _("自由落体中");
-static const u8 sText_Electrified[] = _("输电");
-static const u8 sText_MudSport[] = _("玩泥巴");
-static const u8 sText_WaterSport[] = _("玩水");
-static const u8 sText_InfiniteConfusion[] = _("无限混乱");
-static const u8 sText_SaltCure[] = _("盐腌");
-static const u8 sText_SyrupBomb[] = _("满身糖");
-static const u8 sText_GlaiveRush[] = _("巨剑突击");
-static const u8 sText_Reflect[] = _("反射壁");
-static const u8 sText_LightScreen[] = _("光墙");
-static const u8 sText_StickyWeb[] = _("黏黏网");
-static const u8 sText_Spikes[] = _("撒菱");
-static const u8 sText_Safeguard[] = _("神秘守护");
-static const u8 sText_FutureAttack[] = _("未来攻击");
-static const u8 sText_Mist[] = _("白雾");
-static const u8 sText_Tailwind[] = _("顺风");
-static const u8 sText_AuroraVeil[] = _("极光幕");
-static const u8 sText_LuckyChant[] = _("幸运咒语");
-static const u8 sText_ToxicSpikes[] = _("毒菱");
-static const u8 sText_StealthRock[] = _("隐形岩");
-static const u8 sText_Steelsurge[] = _("超极巨钢铁阵法");
-static const u8 sText_DamageNonTypes[] = _("无属性攻击？");
-static const u8 sText_Rainbow[] = _("彩虹");
-static const u8 sText_SeaOfFire[] = _("火海");
-static const u8 sText_Swamp[] = _("湿地");
-static const u8 sText_CheckBadMove[] = _("检查效果不好的招式");
-static const u8 sText_TryToFaint[] = _("尝试击晕");
-static const u8 sText_CheckViability[] = _("检查可行性");
-static const u8 sText_ForceSetupFirstTurn[] = _("遵循第一回合设置");
-static const u8 sText_Risky[] = _("危险大胆");
-static const u8 sText_TryTo2HKO[] = _("尝试两招击倒");
-static const u8 sText_PreferBatonPass[] = _("偏好接力棒");
-static const u8 sText_DoubleBattle[] = _("双打对战");
-static const u8 sText_HpAware[] = _("注意HP");
-static const u8 sText_PowerfulStatus[] = _("异常状态干扰？");
-static const u8 sText_NegateUnaware[] = _("纯朴无效？");
-static const u8 sText_WillSuicide[] = _("愿意自杀");
-static const u8 sText_PreferStatusMoves[] = _("偏好状态变化招式");
-static const u8 sText_Stall[] = _("拖延消耗");
-static const u8 sText_SmartSwitching[] = _("聪明替换");
-static const u8 sText_AcePokemon[] = _("主力宝可梦");
-static const u8 sText_Omniscient[] = _("全知");
-static const u8 sText_SmartMonChoices[] = _("聪明的宝可梦选择");
-static const u8 sText_Conservative[] = _("保守");
-static const u8 sText_SequenceSwitching[] = _("按顺序替换");
-static const u8 sText_DoubleAcePokemon[] = _("双主力宝可梦");
-static const u8 sText_WeighAbilityPrediction[] = _("权衡特性预测");
-static const u8 sText_PreferHighestDamageMove[] = _("偏好最高伤害招式");
-static const u8 sText_PredictSwitch[] = _("预测替换");
-static const u8 sText_PredictIncomingMon[] = _("预测上场宝可梦");
-static const u8 sText_DynamicFunc[] = _("动态功能");
-static const u8 sText_Roaming[] = _("四处游走");
-static const u8 sText_Safari[] = _("狩猎地带");
-static const u8 sText_FirstBattle[] = _("第一战");
-static const u8 sText_ShowHP[] = _("显示HP");
-static const u8 sText_SubstituteHp[] = _("替换HP");
-static const u8 sText_InLove[] = _("着迷");
-static const u8 sText_Unknown[] = _("未知");
 static const u8 sText_EmptyString[] = _("");
-static const u8 sText_IsSwitching[] = _("替换为");
 
 static const struct BitfieldInfo sStatus1Bitfield[] =
 {
@@ -433,23 +248,6 @@ static const struct BitfieldInfo sStatus1Bitfield[] =
     {/*Toxic Poison*/ 1, 7},
     {/*Toxic Counter*/ 4, 8},
     {/*Frostbite*/ 1, 12},
-};
-
-static const struct BitfieldInfo sStatus2Bitfield[] =
-{
-    {/*Confusion*/ 3, 0},
-    {/*Flinched*/ 1, 3},
-    {/*Torment*/ 1, 7},
-    {/*Powder*/ 1, 14},
-    {/*Defense Curl*/ 1, 20},
-    {/*Recharge*/ 1, 22},
-    {/*Rage*/ 1, 23},
-    {/*Destiny Bond*/ 1, 25},
-    {/*Escape Prevention*/ 1, 26},
-    {/*Cursed*/ 1, 28},
-    {/*Foresight*/ 1, 29},
-    {/*Dragon Cheer*/ 1, 30},
-    {/*Focus Energy*/ 1, 31},
 };
 
 static const struct BitfieldInfo sStatus3Bitfield[] =
@@ -477,16 +275,6 @@ static const struct BitfieldInfo sStatus3Bitfield[] =
     {/*Aqua Ring*/ 1, 28},
     {/*Laser Focus*/ 1, 29},
     {/*Power Trick*/ 1, 30},
-};
-
-static const struct BitfieldInfo sStatus4Bitfield[] =
-{
-    {/*Electrified*/ 1, 0},
-    {/*Mud Sport*/ 1, 1},
-    {/*Water Sport*/ 1, 2},
-    {/*Salt Cure*/ 1, 4},
-    {/*Syrup Bomb*/ 1, 5},
-    {/*Glaive Rush*/ 1, 6},
 };
 
 static const struct BitfieldInfo sAIBitfield[] =
@@ -524,160 +312,153 @@ static const struct BitfieldInfo sAIBitfield[] =
 
 static const struct ListMenuItem sMainListItems[] =
 {
-    {sText_Moves, LIST_ITEM_MOVES},
-    {sText_Ability, LIST_ITEM_ABILITY},
-    {sText_HeldItem, LIST_ITEM_HELD_ITEM},
-    {sText_PP, LIST_ITEM_PP},
-    {sText_Types, LIST_ITEM_TYPES},
-    {sText_Stats, LIST_ITEM_STATS},
-    {sText_StatStages, LIST_ITEM_STAT_STAGES},
-    {sText_Status1, LIST_ITEM_STATUS1},
-    {sText_Status2, LIST_ITEM_STATUS2},
-    {sText_Status3, LIST_ITEM_STATUS3},
-    {sText_Status4, LIST_ITEM_STATUS4},
-    {sText_SideStatus, LIST_ITEM_SIDE_STATUS},
-    {sText_AI, LIST_ITEM_AI},
-    {sText_AIMovePts, LIST_ITEM_AI_MOVES_PTS},
-    {sText_AiKnowledge, LIST_ITEM_AI_INFO},
-    {sText_AiParty, LIST_ITEM_AI_PARTY},
-    {sText_Various, LIST_ITEM_VARIOUS},
+    {COMPOUND_STRING("招式"),        LIST_ITEM_MOVES},
+    {sText_Ability,                   LIST_ITEM_ABILITY},
+    {sText_HeldItem,                  LIST_ITEM_HELD_ITEM},
+    {COMPOUND_STRING("PP"),           LIST_ITEM_PP},
+    {COMPOUND_STRING("属性"),        LIST_ITEM_TYPES},
+    {COMPOUND_STRING("能力"),        LIST_ITEM_STATS},
+    {COMPOUND_STRING("能力阶级"),  LIST_ITEM_STAT_STAGES},
+    {COMPOUND_STRING("状态1"),      LIST_ITEM_STATUS1},
+    {COMPOUND_STRING("临时状态"),    LIST_ITEM_VOLATILE},
+    {COMPOUND_STRING("场地陷阱"),      LIST_ITEM_HAZARDS},
+    {COMPOUND_STRING("场地状态"),  LIST_ITEM_SIDE_STATUS},
+    {COMPOUND_STRING("AI"),           LIST_ITEM_AI},
+    {COMPOUND_STRING("AI点数/伤害"),   LIST_ITEM_AI_MOVES_PTS},
+    {COMPOUND_STRING("AI信息"),      LIST_ITEM_AI_INFO},
+    {COMPOUND_STRING("AI队伍"),     LIST_ITEM_AI_PARTY},
+    {COMPOUND_STRING("杂项"),      LIST_ITEM_VARIOUS},
+    {COMPOUND_STRING("立即胜利"),  LIST_ITEM_INSTANT_WIN},
 };
 
 static const struct ListMenuItem sStatsListItems[] =
 {
-    {sText_CurrHp, LIST_STAT_HP_CURRENT},
-    {sText_MaxHp, LIST_STAT_HP_MAX},
-    {sText_Attack, LIST_STAT_ATTACK},
-    {sText_Defense, LIST_STAT_DEFENSE},
-    {sText_Speed, LIST_STAT_SPEED},
-    {sText_SpAtk, LIST_STAT_SP_ATK},
-    {sText_SpDef, LIST_STAT_SP_DEF},
+    {COMPOUND_STRING("当前HP"), LIST_STAT_HP_CURRENT},
+    {COMPOUND_STRING("最大HP"),     LIST_STAT_HP_MAX},
+    {COMPOUND_STRING("攻击"),     LIST_STAT_ATTACK},
+    {COMPOUND_STRING("防御"),    LIST_STAT_DEFENSE},
+    {COMPOUND_STRING("速度"),      LIST_STAT_SPEED},
+    {COMPOUND_STRING("特攻"),    LIST_STAT_SP_ATK},
+    {COMPOUND_STRING("特防"),    LIST_STAT_SP_DEF},
 };
 
 static const struct ListMenuItem sStatus1ListItems[] =
 {
-    {sText_Sleep, LIST_STATUS1_SLEEP},
-    {sText_Poison, LIST_STATUS1_POISON},
-    {sText_Burn, LIST_STATUS1_BURN},
-    {sText_Freeze, LIST_STATUS1_FREEZE},
-    {sText_Paralysis, LIST_STATUS1_PARALYSIS},
-    {sText_ToxicPoison, LIST_STATUS1_TOXIC_POISON},
-    {sText_ToxicCounter, LIST_STATUS1_TOXIC_COUNTER},
-    {sText_Frostbite, LIST_STATUS1_FROSTBITE},
+    {COMPOUND_STRING("睡眠"),         LIST_STATUS1_SLEEP},
+    {COMPOUND_STRING("中毒"),        LIST_STATUS1_POISON},
+    {COMPOUND_STRING("灼伤"),          LIST_STATUS1_BURN},
+    {COMPOUND_STRING("冰冻"),        LIST_STATUS1_FREEZE},
+    {COMPOUND_STRING("麻痹"),     LIST_STATUS1_PARALYSIS},
+    {COMPOUND_STRING("剧毒"),  LIST_STATUS1_TOXIC_POISON},
+    {COMPOUND_STRING("剧毒经过回合"), LIST_STATUS1_TOXIC_COUNTER},
+    {COMPOUND_STRING("冻伤"),     LIST_STATUS1_FROSTBITE},
 };
 
-static const struct ListMenuItem sStatus2ListItems[] =
+static const struct ListMenuItem sVolatileStatusListItems[] =
 {
-    {sText_Confusion, LIST_STATUS2_CONFUSION},
-    {sText_Flinched, LIST_STATUS2_FLINCHED},
-    {sText_Torment, LIST_STATUS2_TORMENT},
-    {sText_Powder, LIST_STATUS2_POWDER},
-    {sText_DefenseCurl, LIST_STATUS2_DEFENSE_CURL},
-    {sText_Recharge, LIST_STATUS2_RECHARGE},
-    {sText_Rage, LIST_STATUS2_RAGE},
-    {sText_DestinyBond, LIST_STATUS2_DESTINY_BOND},
-    {sText_EscapePrevention, LIST_STATUS2_ESCAPE_PREVENTION},
-    {sText_Cursed, LIST_STATUS2_CURSED},
-    {sText_Foresight, LIST_STATUS2_FORESIGHT},
-    {sText_DragonCheer, LIST_STATUS2_DRAGON_CHEER},
-    {sText_FocusEnergy, LIST_STATUS2_FOCUS_ENERGY},
+    {COMPOUND_STRING("念力"),          VOLATILE_CONFUSION},
+    {COMPOUND_STRING("畏缩"),           VOLATILE_FLINCHED},
+    {COMPOUND_STRING("无理取闹"),            VOLATILE_TORMENT},
+    {COMPOUND_STRING("粉尘"),             VOLATILE_POWDER},
+    {COMPOUND_STRING("变圆"),        VOLATILE_DEFENSE_CURL},
+    {COMPOUND_STRING("无法动弹"),           VOLATILE_RECHARGE},
+    {COMPOUND_STRING("愤怒"),               VOLATILE_RAGE},
+    {COMPOUND_STRING("同命"),        VOLATILE_DESTINY_BOND},
+    {COMPOUND_STRING("无法逃脱"),   VOLATILE_ESCAPE_PREVENTION},
+    {COMPOUND_STRING("诅咒"),             VOLATILE_CURSED},
+    {COMPOUND_STRING("识破"),          VOLATILE_FORESIGHT},
+    {COMPOUND_STRING("龙声鼓舞"),        VOLATILE_DRAGON_CHEER},
+    {COMPOUND_STRING("聚气"),        VOLATILE_FOCUS_ENERGY},
+    {COMPOUND_STRING("输电"),        VOLATILE_ELECTRIFIED},
+    {COMPOUND_STRING("玩泥巴"),           VOLATILE_MUD_SPORT},
+    {COMPOUND_STRING("玩水"),         VOLATILE_WATER_SPORT},
+    {COMPOUND_STRING("无限混乱"), VOLATILE_INFINITE_CONFUSION},
+    {COMPOUND_STRING("盐腌"),          VOLATILE_SALT_CURE},
+    {COMPOUND_STRING("满身糖"),         VOLATILE_SYRUP_BOMB},
+    {COMPOUND_STRING("巨剑突击"),        VOLATILE_GLAIVE_RUSH},
+    {COMPOUND_STRING("寄生种子"),         VOLATILE_LEECH_SEED},
+    {COMPOUND_STRING("锁定"),            VOLATILE_LOCK_ON},
+    {COMPOUND_STRING("终焉之歌"),        VOLATILE_PERISH_SONG},
+    {COMPOUND_STRING("变小"),           VOLATILE_MINIMIZE},
+    {COMPOUND_STRING("充电"),             VOLATILE_CHARGE},
+    {COMPOUND_STRING("扎根"),               VOLATILE_ROOT},
+    {COMPOUND_STRING("哈欠"),               VOLATILE_YAWN},
+    {COMPOUND_STRING("封印"),           VOLATILE_IMPRISON},
+    {COMPOUND_STRING("怨念"),             VOLATILE_GRUDGE},
+    {COMPOUND_STRING("胃液"),        VOLATILE_GASTRO_ACID},
+    {COMPOUND_STRING("查封"),            VOLATILE_EMBARGO},
+    {COMPOUND_STRING("击落"),         VOLATILE_SMACK_DOWN},
+    {COMPOUND_STRING("意念移物"),        VOLATILE_TELEKINESIS},
+    {COMPOUND_STRING("奇迹之眼"),        VOLATILE_MIRACLE_EYE},
+    {COMPOUND_STRING("电磁飘浮"),        VOLATILE_MAGNET_RISE},
+    {COMPOUND_STRING("回复封锁"),         VOLATILE_HEAL_BLOCK},
+    {COMPOUND_STRING("水流环"),          VOLATILE_AQUA_RING},
+    {COMPOUND_STRING("磨砺"),        VOLATILE_LASER_FOCUS},
+    {COMPOUND_STRING("力量戏法"),        VOLATILE_POWER_TRICK},
 };
 
-static const struct ListMenuItem sStatus3ListItems[] =
+static const struct ListMenuItem sHazardsListItems[] =
 {
-    {sText_LeechSeedHealer, LIST_STATUS3_LEECH_SEED_HEALER},
-    {sText_LeechSeeded, LIST_STATUS3_LEECH_SEEDED},
-    {sText_AlwaysHits, LIST_STATUS3_ALWAYS_HITS},
-    {sText_PerishSong, LIST_STATUS3_PERISH_SONG},
-    {sText_OnAir, LIST_STATUS3_ON_AIR},
-    {sText_Underground, LIST_STATUS3_UNDERGROUND},
-    {sText_Minimized, LIST_STATUS3_MINIMIZED},
-    {sText_ChargedUp, LIST_STATUS3_CHARGED_UP},
-    {sText_Rooted, LIST_STATUS3_ROOTED},
-    {sText_Yawn, LIST_STATUS3_YAWN},
-    {sText_ImprisonedOthers, LIST_STATUS3_IMPRISONED_OTHERS},
-    {sText_Grudge, LIST_STATUS3_GRUDGE},
-    {sText_GastroAcid, LIST_STATUS3_GASTRO_ACID},
-    {sText_Embargo, LIST_STATUS3_EMBARGO},
-    {sText_Underwater, LIST_STATUS3_UNDERWATER},
-    {sText_SmackedDown, LIST_STATUS3_SMACKED_DOWN},
-    {sText_Telekinesis, LIST_STATUS3_TELEKINESIS},
-    {sText_MiracleEyed, LIST_STATUS3_MIRACLE_EYED},
-    {sText_MagnetRise, LIST_STATUS3_MAGNET_RISE},
-    {sText_HealBlock, LIST_STATUS3_HEAL_BLOCK},
-    {sText_AquaRing, LIST_STATUS3_AQUA_RING},
-    {sText_LaserFocus, LIST_STATUS3_LASER_FOCUS},
-    {sText_PowerTrick, LIST_STATUS3_POWER_TRICK},
-};
-
-static const struct ListMenuItem sStatus4ListItems[] =
-{
-    {sText_Electrified, LIST_STATUS4_ELECTRIFIED},
-    {sText_MudSport, LIST_STATUS4_MUD_SPORT},
-    {sText_WaterSport, LIST_STATUS4_WATER_SPORT},
-    {sText_SaltCure, LIST_STATUS4_SALT_CURE},
-    {sText_SyrupBomb, LIST_STATUS4_SYRUP_BOMB},
-    {sText_GlaiveRush, LIST_STATUS4_GLAIVE_RUSH},
+    {COMPOUND_STRING("撒菱"),       LIST_SIDE_SPIKES},
+    {COMPOUND_STRING("黏黏网"),   LIST_SIDE_STICKY_WEB},
+    {COMPOUND_STRING("毒菱"), LIST_SIDE_TOXIC_SPIKES},
+    {COMPOUND_STRING("隐形岩"), LIST_SIDE_STEALTH_ROCK},
+    {COMPOUND_STRING("超极巨钢铁阵法"),   LIST_SIDE_STEELSURGE},
 };
 
 static const struct ListMenuItem sSideStatusListItems[] =
 {
-    {sText_Reflect, LIST_SIDE_REFLECT},
-    {sText_LightScreen, LIST_SIDE_LIGHTSCREEN},
-    {sText_StickyWeb, LIST_SIDE_STICKY_WEB},
-    {sText_Spikes, LIST_SIDE_SPIKES},
-    {sText_Safeguard, LIST_SIDE_SAFEGUARD},
-    {sText_Mist, LIST_SIDE_MIST},
-    {sText_Tailwind, LIST_SIDE_TAILWIND},
-    {sText_AuroraVeil, LIST_SIDE_AURORA_VEIL},
-    {sText_LuckyChant, LIST_SIDE_LUCKY_CHANT},
-    {sText_ToxicSpikes, LIST_SIDE_TOXIC_SPIKES},
-    {sText_StealthRock, LIST_SIDE_STEALTH_ROCK},
-    {sText_Steelsurge, LIST_SIDE_STEELSURGE},
-    {sText_DamageNonTypes, LIST_SIDE_DAMAGE_NON_TYPES},
-    {sText_Rainbow, LIST_SIDE_RAINBOW},
-    {sText_SeaOfFire, LIST_SIDE_SEA_OF_FIRE},
-    {sText_Swamp, LIST_SIDE_SWAMP},
+    {COMPOUND_STRING("反射壁"),          LIST_SIDE_REFLECT},
+    {COMPOUND_STRING("光墙"),     LIST_SIDE_LIGHTSCREEN},
+    {COMPOUND_STRING("神秘守护"),        LIST_SIDE_SAFEGUARD},
+    {COMPOUND_STRING("白雾"),             LIST_SIDE_MIST},
+    {COMPOUND_STRING("顺风"),         LIST_SIDE_TAILWIND},
+    {COMPOUND_STRING("极光幕"),      LIST_SIDE_AURORA_VEIL},
+    {COMPOUND_STRING("幸运咒语"),      LIST_SIDE_LUCKY_CHANT},
+    {COMPOUND_STRING("无属性攻击？"), LIST_SIDE_DAMAGE_NON_TYPES},
+    {COMPOUND_STRING("彩虹"),          LIST_SIDE_RAINBOW},
+    {COMPOUND_STRING("火海"),      LIST_SIDE_SEA_OF_FIRE},
+    {COMPOUND_STRING("湿地"),            LIST_SIDE_SWAMP},
 };
 
 static const struct ListMenuItem sAIListItems[] =
 {
-    {sText_CheckBadMove, LIST_AI_CHECK_BAD_MOVE},
-    {sText_TryToFaint, LIST_AI_TRY_TO_FAINT},
-    {sText_CheckViability, LIST_AI_CHECK_VIABILITY},
-    {sText_ForceSetupFirstTurn, LIST_AI_FORCE_SETUP_FIRST_TURN},
-    {sText_Risky, LIST_AI_RISKY},
-    {sText_TryTo2HKO, LIST_AI_TRY_TO_2HKO},
-    {sText_PreferBatonPass, LIST_AI_PREFER_BATON_PASS},
-    {sText_DoubleBattle, LIST_AI_DOUBLE_BATTLE},
-    {sText_HpAware, LIST_AI_HP_AWARE},
-    {sText_PowerfulStatus, LIST_AI_POWERFUL_STATUS},
-    {sText_NegateUnaware, LIST_AI_NEGATE_UNAWARE},
-    {sText_WillSuicide, LIST_AI_WILL_SUICIDE},
-    {sText_PreferStatusMoves, LIST_AI_PREFER_STATUS_MOVES},
-    {sText_Stall, LIST_AI_STALL},
-    {sText_SmartSwitching, LIST_AI_SMART_SWITCHING},
-    {sText_AcePokemon, LIST_AI_ACE_POKEMON},
-    {sText_Omniscient, LIST_AI_OMNISCIENT},
-    {sText_SmartMonChoices, LIST_AI_SMART_MON_CHOICES},
-    {sText_Conservative, LIST_AI_CONSERVATIVE},
-    {sText_SequenceSwitching, LIST_AI_SEQUENCE_SWITCHING},
-    {sText_DoubleAcePokemon, LIST_AI_DOUBLE_ACE_POKEMON},
-    {sText_WeighAbilityPrediction, LIST_AI_WEIGH_ABILITY_PREDICTION},
-    {sText_PreferHighestDamageMove, LIST_AI_PREFER_HIGHEST_DAMAGE_MOVE},
-    {sText_PredictSwitch, LIST_AI_PREDICT_SWITCH},
-    {sText_PredictIncomingMon, LIST_AI_PREDICT_INCOMING_MON},
-    {sText_DynamicFunc, LIST_AI_DYNAMIC_FUNC},
-    {sText_Roaming, LIST_AI_ROAMING},
-    {sText_Safari, LIST_AI_SAFARI},
-    {sText_FirstBattle, LIST_AI_FIRST_BATTLE},
+    {COMPOUND_STRING("检查效果不好的招式"),             LIST_AI_CHECK_BAD_MOVE},
+    {COMPOUND_STRING("尝试击晕"),               LIST_AI_TRY_TO_FAINT},
+    {COMPOUND_STRING("检查可行性"),            LIST_AI_CHECK_VIABILITY},
+    {COMPOUND_STRING("遵循第一回合设置"),     LIST_AI_FORCE_SETUP_FIRST_TURN},
+    {COMPOUND_STRING("危险大胆"),                      LIST_AI_RISKY},
+    {COMPOUND_STRING("尝试两招击倒"),                LIST_AI_TRY_TO_2HKO},
+    {COMPOUND_STRING("偏好接力棒"),          LIST_AI_PREFER_BATON_PASS},
+    {COMPOUND_STRING("双打对战"),              LIST_AI_DOUBLE_BATTLE},
+    {COMPOUND_STRING("注意HP"),                   LIST_AI_HP_AWARE},
+    {COMPOUND_STRING("异常状态干扰？"),            LIST_AI_POWERFUL_STATUS},
+    {COMPOUND_STRING("纯朴无效？"),             LIST_AI_NEGATE_UNAWARE},
+    {COMPOUND_STRING("愿意自杀"),               LIST_AI_WILL_SUICIDE},
+    {COMPOUND_STRING("偏好状态变化招式"),        LIST_AI_PREFER_STATUS_MOVES},
+    {COMPOUND_STRING("拖延消耗"),                      LIST_AI_STALL},
+    {COMPOUND_STRING("聪明替换"),            LIST_AI_SMART_SWITCHING},
+    {COMPOUND_STRING("主力宝可梦"),                LIST_AI_ACE_POKEMON},
+    {COMPOUND_STRING("全知"),                 LIST_AI_OMNISCIENT},
+    {COMPOUND_STRING("聪明的宝可梦选择"),          LIST_AI_SMART_MON_CHOICES},
+    {COMPOUND_STRING("保守"),               LIST_AI_CONSERVATIVE},
+    {COMPOUND_STRING("按顺序替换"),         LIST_AI_SEQUENCE_SWITCHING},
+    {COMPOUND_STRING("双主力宝可梦"),         LIST_AI_DOUBLE_ACE_POKEMON},
+    {COMPOUND_STRING("权衡特性预测"),   LIST_AI_WEIGH_ABILITY_PREDICTION},
+    {COMPOUND_STRING("偏好最高伤害招式"), LIST_AI_PREFER_HIGHEST_DAMAGE_MOVE},
+    {COMPOUND_STRING("预测替换"),             LIST_AI_PREDICT_SWITCH},
+    {COMPOUND_STRING("预测上场宝可梦"),       LIST_AI_PREDICT_INCOMING_MON},
+    {COMPOUND_STRING("动态功能"),               LIST_AI_DYNAMIC_FUNC},
+    {COMPOUND_STRING("四处游走"),                    LIST_AI_ROAMING},
+    {COMPOUND_STRING("狩猎地带"),                     LIST_AI_SAFARI},
+    {COMPOUND_STRING("第一战"),               LIST_AI_FIRST_BATTLE},
 };
 
 static const struct ListMenuItem sVariousListItems[] =
 {
-    {sText_ShowHP, VARIOUS_SHOW_HP},
-    {sText_SubstituteHp, VARIOUS_SUBSTITUTE_HP},
-    {sText_InLove, VARIOUS_IN_LOVE},
+    {COMPOUND_STRING("显示HP"),       VARIOUS_SHOW_HP},
+    {COMPOUND_STRING("替换HP"), VARIOUS_SUBSTITUTE_HP},
+    {COMPOUND_STRING("着迷"),       VARIOUS_IN_LOVE},
 };
 
 static const struct ListMenuItem sSecondaryListItems[] =
@@ -805,19 +586,6 @@ static const struct BgTemplate sBgTemplates[] =
    }
 };
 
-static const u8 sBitsToMaxDigit[] =
-{
-    [0] = 0,
-    [1] = 1, // max 1
-    [2] = 1, // max 3
-    [3] = 1, // max 7
-    [4] = 2, // max 15
-    [5] = 2, // max 31
-    [6] = 2, // max 63
-    [7] = 3, // max 127
-    [8] = 3, // max 255
-};
-
 static const bool8 sHasChangeableEntries[LIST_ITEM_COUNT] =
 {
     [LIST_ITEM_MOVES] = TRUE,
@@ -844,6 +612,8 @@ static void PrintDigitChars(struct BattleDebugMenu *data);
 static void SetUpModifyArrows(struct BattleDebugMenu *data);
 static void UpdateBattlerValue(struct BattleDebugMenu *data);
 static void UpdateMonData(struct BattleDebugMenu *data);
+static void ChangeHazardsValue(struct BattleDebugMenu *data);
+static u32 GetHazardsValue(struct BattleDebugMenu *data);
 static u16 *GetSideStatusValue(struct BattleDebugMenu *data, bool32 changeStatus, bool32 statusTrue);
 static bool32 TryMoveDigit(struct BattleDebugModifyArrows *modArrows, bool32 moveUp);
 static void SwitchToDebugView(u8 taskId);
@@ -983,9 +753,14 @@ static void PutMovesPointsText(struct BattleDebugMenu *data)
     if (gAiLogicData->shouldSwitch & (1u << data->aiBattlerId))
     {
         u32 switchMon = GetMonData(&gEnemyParty[gAiLogicData->mostSuitableMonId[data->aiBattlerId]], MON_DATA_SPECIES);
-
-        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, sText_IsSwitching, 74, 64, 0, NULL);
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, COMPOUND_STRING("替换为"), 74, 64, 0, NULL);
         AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, gSpeciesInfo[switchMon].speciesName, 74 + 68, 64, 0, NULL);
+    }
+    else
+    {
+        u32 chosenMoveIndex = gAiBattleData->chosenMoveIndex[data->aiBattlerId];
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, COMPOUND_STRING("Chosen move: "), 74, 64, 0, NULL);
+        AddTextPrinterParameterized(data->aiMovesWindowId, FONT_NORMAL, GetMoveName(gBattleMons[data->aiBattlerId].moves[chosenMoveIndex]), 74 + 68, 64, 0, NULL);
     }
 
     CopyWindowToVram(data->aiMovesWindowId, COPYWIN_FULL);
@@ -1415,6 +1190,13 @@ static void Task_DebugMenuProcessInput(u8 taskId)
                 SwitchToAiPartyView(taskId);
                 return;
             }
+            else if (listItemId == LIST_ITEM_INSTANT_WIN && JOY_NEW(A_BUTTON))
+            {
+                BattleDebug_WonBattle();
+                BeginNormalPaletteFade(-1, 0, 0, 0x10, 0);
+                gTasks[taskId].func = Task_DebugMenuFadeOut;
+                return;
+            }
             data->currentMainListItemId = listItemId;
 
             // Create the secondary menu list.
@@ -1586,20 +1368,9 @@ static void CreateSecondaryListMenu(struct BattleDebugMenu *data)
         itemsCount = ARRAY_COUNT(sStatus1ListItems);
         data->bitfield = sStatus1Bitfield;
         break;
-    case LIST_ITEM_STATUS2:
-        listTemplate.items = sStatus2ListItems;
-        itemsCount = ARRAY_COUNT(sStatus2ListItems);
-        data->bitfield = sStatus2Bitfield;
-        break;
-    case LIST_ITEM_STATUS3:
-        listTemplate.items = sStatus3ListItems;
-        itemsCount = ARRAY_COUNT(sStatus3ListItems);
-        data->bitfield = sStatus3Bitfield;
-        break;
-    case LIST_ITEM_STATUS4:
-        listTemplate.items = sStatus4ListItems;
-        itemsCount = ARRAY_COUNT(sStatus4ListItems);
-        data->bitfield = sStatus4Bitfield;
+    case LIST_ITEM_VOLATILE:
+        listTemplate.items = sVolatileStatusListItems;
+        itemsCount = ARRAY_COUNT(sVolatileStatusListItems);
         break;
     case LIST_ITEM_AI:
         listTemplate.items = sAIListItems;
@@ -1610,10 +1381,15 @@ static void CreateSecondaryListMenu(struct BattleDebugMenu *data)
         listTemplate.items = sVariousListItems;
         itemsCount = ARRAY_COUNT(sVariousListItems);
         break;
+    case LIST_ITEM_HAZARDS:
+        listTemplate.items = sHazardsListItems;
+        itemsCount = ARRAY_COUNT(sHazardsListItems);
+        break;
     case LIST_ITEM_SIDE_STATUS:
         listTemplate.items = sSideStatusListItems;
         itemsCount = ARRAY_COUNT(sSideStatusListItems);
         break;
+    case LIST_ITEM_INSTANT_WIN:
     case LIST_ITEM_AI_MOVES_PTS:
     case LIST_ITEM_AI_INFO:
         return;
@@ -1808,6 +1584,12 @@ static void UpdateBattlerValue(struct BattleDebugMenu *data)
         *(u32 *)(data->modifyArrows.modifiedValPtr) &= ~(GetBitfieldToAndValue(data->bitfield[data->currentSecondaryListItemId].currBit, data->bitfield[data->currentSecondaryListItemId].bitsCount));
         *(u32 *)(data->modifyArrows.modifiedValPtr) |= (data->modifyArrows.currValue << data->bitfield[data->currentSecondaryListItemId].currBit);
         break;
+    case VAL_VOLATILE:
+        SetMonVolatile(data->battlerId, data->currentSecondaryListItemId, data->modifyArrows.currValue);
+        break;
+    case VAL_HAZARDS:
+        ChangeHazardsValue(data);
+        break;
     case VAR_SIDE_STATUS:
         *GetSideStatusValue(data, TRUE, data->modifyArrows.currValue != 0) = data->modifyArrows.currValue;
         break;
@@ -1818,12 +1600,12 @@ static void UpdateBattlerValue(struct BattleDebugMenu *data)
         *(u8 *)(data->modifyArrows.modifiedValPtr) = data->modifyArrows.currValue;
         if (*(u8 *)(data->modifyArrows.modifiedValPtr) == 0)
         {
-            gBattleMons[data->battlerId].status2 &= ~STATUS2_SUBSTITUTE;
+            gBattleMons[data->battlerId].volatiles.substitute = FALSE;
             gBattleSpritesDataPtr->battlerData[data->battlerId].behindSubstitute = 0;
         }
         else
         {
-            gBattleMons[data->battlerId].status2 |= STATUS2_SUBSTITUTE;
+            gBattleMons[data->battlerId].volatiles.substitute = TRUE;
             gBattleSpritesDataPtr->battlerData[data->battlerId].behindSubstitute = 1;
         }
         break;
@@ -1831,13 +1613,13 @@ static void UpdateBattlerValue(struct BattleDebugMenu *data)
         if (data->modifyArrows.currValue)
         {
             if (IsBattlerAlive(BATTLE_OPPOSITE(data->battlerId)))
-                gBattleMons[data->battlerId].status2 |= STATUS2_INFATUATED_WITH(BATTLE_OPPOSITE(data->battlerId));
+                gBattleMons[data->battlerId].volatiles.infatuation = INFATUATED_WITH(BATTLE_OPPOSITE(data->battlerId));
             else
-                gBattleMons[data->battlerId].status2 |= STATUS2_INFATUATED_WITH(BATTLE_PARTNER(BATTLE_OPPOSITE(data->battlerId)));
+                gBattleMons[data->battlerId].volatiles.infatuation = INFATUATED_WITH(BATTLE_PARTNER(BATTLE_OPPOSITE(data->battlerId)));
         }
         else
         {
-            gBattleMons[data->battlerId].status2 &= ~STATUS2_INFATUATION;
+            gBattleMons[data->battlerId].volatiles.infatuation = 0;
         }
         break;
     }
@@ -1885,6 +1667,83 @@ static void ValueToCharDigits(u8 *charDigits, u32 newValue, u8 maxDigits)
         charDigits[i] = valueDigits[i] + CHAR_0;
 }
 
+static void ChangeHazardsValue(struct BattleDebugMenu *data)
+{
+    u32 side = GetBattlerSide(data->battlerId);
+
+    switch (data->currentSecondaryListItemId)
+    {
+    case LIST_SIDE_SPIKES:
+        if (data->modifyArrows.currValue > 0)
+        {
+            if (gSideTimers[side].spikesAmount == 0)
+                PushHazardTypeToQueue(side, HAZARDS_SPIKES);
+            gSideTimers[side].spikesAmount = data->modifyArrows.currValue;
+        }
+        else if (data->modifyArrows.currValue == 0)
+        {
+            gSideTimers[side].spikesAmount = 0;
+            RemoveHazardFromField(side, HAZARDS_SPIKES);
+        }
+        break;
+    case LIST_SIDE_TOXIC_SPIKES:
+        if (data->modifyArrows.currValue > 0)
+        {
+            if (gSideTimers[side].toxicSpikesAmount == 0)
+                PushHazardTypeToQueue(side, HAZARDS_TOXIC_SPIKES);
+            gSideTimers[side].toxicSpikesAmount = data->modifyArrows.currValue;
+        }
+        else if (data->modifyArrows.currValue == 0)
+        {
+            gSideTimers[side].toxicSpikesAmount = 0;
+            RemoveHazardFromField(side, HAZARDS_TOXIC_SPIKES);
+        }
+        break;
+    case LIST_SIDE_STICKY_WEB:
+        if (data->modifyArrows.currValue > 0)
+            PushHazardTypeToQueue(side, HAZARDS_STICKY_WEB);
+        else if (data->modifyArrows.currValue == 0)
+            RemoveHazardFromField(side, HAZARDS_STICKY_WEB);
+        break;
+    case LIST_SIDE_STEALTH_ROCK:
+        if (data->modifyArrows.currValue > 0)
+            PushHazardTypeToQueue(side, HAZARDS_STEALTH_ROCK);
+        else if (data->modifyArrows.currValue == 0)
+            RemoveHazardFromField(side, HAZARDS_STEALTH_ROCK);
+        break;
+    case LIST_SIDE_STEELSURGE:
+        if (data->modifyArrows.currValue > 0)
+            PushHazardTypeToQueue(side, HAZARDS_STEELSURGE);
+        else if (data->modifyArrows.currValue == 0)
+            RemoveHazardFromField(side, HAZARDS_STEELSURGE);
+        break;
+    }
+}
+
+static u32 GetHazardsValue(struct BattleDebugMenu *data)
+{
+    u32 hazardsLayers = 0;
+    switch (data->currentSecondaryListItemId)
+    {
+    case LIST_SIDE_SPIKES:
+        hazardsLayers = gSideTimers[GetBattlerSide(data->battlerId)].spikesAmount;
+        break;
+    case LIST_SIDE_TOXIC_SPIKES:
+        hazardsLayers = gSideTimers[GetBattlerSide(data->battlerId)].toxicSpikesAmount;
+        break;
+    case LIST_SIDE_STICKY_WEB:
+        hazardsLayers = IsHazardOnSide(GetBattlerSide(data->battlerId), HAZARDS_STICKY_WEB);
+        break;
+    case LIST_SIDE_STEALTH_ROCK:
+        hazardsLayers = IsHazardOnSide(GetBattlerSide(data->battlerId), HAZARDS_STEALTH_ROCK);
+        break;
+    case LIST_SIDE_STEELSURGE:
+        hazardsLayers = IsHazardOnSide(GetBattlerSide(data->battlerId), HAZARDS_STEELSURGE);
+        break;
+    }
+    return hazardsLayers;
+}
+
 static u16 *GetSideStatusValue(struct BattleDebugMenu *data, bool32 changeStatus, bool32 statusTrue)
 {
     struct SideTimer *sideTimer = &gSideTimers[GetBattlerSide(data->battlerId)];
@@ -1909,26 +1768,6 @@ static u16 *GetSideStatusValue(struct BattleDebugMenu *data, bool32 changeStatus
                 *(u32 *)(data->modifyArrows.modifiedValPtr) &= ~SIDE_STATUS_LIGHTSCREEN;
         }
         return &sideTimer->lightscreenTimer;
-    case LIST_SIDE_STICKY_WEB:
-        if (changeStatus)
-        {
-            if (statusTrue)
-                *(u32 *)(data->modifyArrows.modifiedValPtr) |= SIDE_STATUS_STICKY_WEB;
-            else
-                *(u32 *)(data->modifyArrows.modifiedValPtr) &= ~SIDE_STATUS_STICKY_WEB;
-            sideTimer->stickyWebBattlerId = data->battlerId;
-            sideTimer->stickyWebBattlerSide = GetBattlerSide(data->battlerId);
-        }
-        return &sideTimer->stickyWebAmount;
-    case LIST_SIDE_SPIKES:
-        if (changeStatus)
-        {
-            if (statusTrue)
-                *(u32 *)(data->modifyArrows.modifiedValPtr) |= SIDE_STATUS_SPIKES;
-            else
-                *(u32 *)(data->modifyArrows.modifiedValPtr) &= ~SIDE_STATUS_SPIKES;
-        }
-        return &sideTimer->spikesAmount;
     case LIST_SIDE_SAFEGUARD:
         if (changeStatus)
         {
@@ -1974,33 +1813,6 @@ static u16 *GetSideStatusValue(struct BattleDebugMenu *data, bool32 changeStatus
                 *(u32 *)(data->modifyArrows.modifiedValPtr) &= ~SIDE_STATUS_LUCKY_CHANT;
         }
         return &sideTimer->luckyChantTimer;
-    case LIST_SIDE_TOXIC_SPIKES:
-        if (changeStatus)
-        {
-            if (statusTrue)
-                *(u32 *)(data->modifyArrows.modifiedValPtr) |= SIDE_STATUS_TOXIC_SPIKES;
-            else
-                *(u32 *)(data->modifyArrows.modifiedValPtr) &= ~SIDE_STATUS_TOXIC_SPIKES;
-        }
-        return &sideTimer->toxicSpikesAmount;
-    case LIST_SIDE_STEALTH_ROCK:
-        if (changeStatus)
-        {
-            if (statusTrue)
-                *(u32 *)(data->modifyArrows.modifiedValPtr) |= SIDE_STATUS_STEALTH_ROCK;
-            else
-                *(u32 *)(data->modifyArrows.modifiedValPtr) &= ~SIDE_STATUS_STEALTH_ROCK;
-        }
-        return &sideTimer->stealthRockAmount;
-    case LIST_SIDE_STEELSURGE:
-        if (changeStatus)
-        {
-            if (statusTrue)
-                *(u32 *)(data->modifyArrows.modifiedValPtr) |= SIDE_STATUS_STEELSURGE;
-            else
-                *(u32 *)(data->modifyArrows.modifiedValPtr) &= ~SIDE_STATUS_STEELSURGE;
-        }
-        return &sideTimer->steelsurgeAmount;
     case LIST_SIDE_DAMAGE_NON_TYPES:
         if (changeStatus)
         {
@@ -2167,7 +1979,7 @@ static void SetUpModifyArrows(struct BattleDebugMenu *data)
             data->modifyArrows.maxDigits = 1;
             data->modifyArrows.modifiedValPtr = NULL;
             data->modifyArrows.typeOfVal = VAR_IN_LOVE;
-            data->modifyArrows.currValue = (gBattleMons[data->battlerId].status2 & STATUS2_INFATUATION) != 0;
+            data->modifyArrows.currValue = gBattleMons[data->battlerId].volatiles.infatuation;
         }
         break;
     case LIST_ITEM_STATUS1:
@@ -2175,21 +1987,28 @@ static void SetUpModifyArrows(struct BattleDebugMenu *data)
         data->modifyArrows.currValue = GetBitfieldValue(gBattleMons[data->battlerId].status1, data->bitfield[data->currentSecondaryListItemId].currBit, data->bitfield[data->currentSecondaryListItemId].bitsCount);
         data->modifyArrows.typeOfVal = VAL_BITFIELD_32;
         goto CASE_ITEM_STATUS;
-    case LIST_ITEM_STATUS2:
-        data->modifyArrows.modifiedValPtr = &gBattleMons[data->battlerId].status2;
-        data->modifyArrows.currValue = GetBitfieldValue(gBattleMons[data->battlerId].status2, data->bitfield[data->currentSecondaryListItemId].currBit, data->bitfield[data->currentSecondaryListItemId].bitsCount);
-        data->modifyArrows.typeOfVal = VAL_BITFIELD_32;
-        goto CASE_ITEM_STATUS;
-    case LIST_ITEM_STATUS3:
-        data->modifyArrows.modifiedValPtr = &gStatuses3[data->battlerId];
-        data->modifyArrows.currValue = GetBitfieldValue(gStatuses3[data->battlerId], data->bitfield[data->currentSecondaryListItemId].currBit, data->bitfield[data->currentSecondaryListItemId].bitsCount);
-        data->modifyArrows.typeOfVal = VAL_BITFIELD_32;
-        goto CASE_ITEM_STATUS;
-    case LIST_ITEM_STATUS4:
-        data->modifyArrows.modifiedValPtr = &gStatuses4[data->battlerId];
-        data->modifyArrows.currValue = GetBitfieldValue(gStatuses4[data->battlerId], data->bitfield[data->currentSecondaryListItemId].currBit, data->bitfield[data->currentSecondaryListItemId].bitsCount);
-        data->modifyArrows.typeOfVal = VAL_BITFIELD_32;
-        goto CASE_ITEM_STATUS;
+    case LIST_ITEM_VOLATILE:
+        data->modifyArrows.currValue = GetBattlerVolatile(data->battlerId, data->currentSecondaryListItemId);
+        data->modifyArrows.typeOfVal = VAL_VOLATILE;
+        data->modifyArrows.minValue = 0;
+#define UNPACK_VOLATILE_MAX_SIZE(_enum, _fieldName, _typeMaxValue, ...) case _enum: data->modifyArrows.maxValue = min(MAX_u16, GET_VOLATILE_MAXIMUM(_typeMaxValue)); break;
+        switch (data->currentSecondaryListItemId)
+        {
+            VOLATILE_DEFINITIONS(UNPACK_VOLATILE_MAX_SIZE)
+            /* Expands to the following:
+             * case VOLATILE_CONFUSION:
+                  data->modifyArrows.maxValue = MAX_BITS(3); // Max value 7
+                  break;
+             * case VOLATILE_FLINCHED:
+                  data->modifyArrows.maxValue = MAX_BITS(1); // Max value 1
+                  break;
+             * ...etc.
+             */
+            default:
+                data->modifyArrows.maxValue = 0;
+        }
+        data->modifyArrows.maxDigits = MAX_DIGITS(data->modifyArrows.maxValue);
+        break;
     case LIST_ITEM_AI:
         data->modifyArrows.modifiedValPtr = &gAiThinkingStruct->aiFlags[data->battlerId];
         data->modifyArrows.currValue = GetBitfieldValue(gAiThinkingStruct->aiFlags[data->battlerId], data->bitfield[data->currentSecondaryListItemId].currBit, data->bitfield[data->currentSecondaryListItemId].bitsCount);
@@ -2198,18 +2017,31 @@ static void SetUpModifyArrows(struct BattleDebugMenu *data)
     CASE_ITEM_STATUS:
         data->modifyArrows.minValue = 0;
         data->modifyArrows.maxValue = (1 << data->bitfield[data->currentSecondaryListItemId].bitsCount) - 1;
-        data->modifyArrows.maxDigits = sBitsToMaxDigit[data->bitfield[data->currentSecondaryListItemId].bitsCount];
+        data->modifyArrows.maxDigits = MAX_DIGITS(data->modifyArrows.maxValue);
+        break;
+    case LIST_ITEM_HAZARDS:
+        data->modifyArrows.minValue = 0;
+        switch (data->currentSecondaryListItemId)
+        {
+        case LIST_SIDE_SPIKES:
+            data->modifyArrows.maxValue = 3;
+            break;
+        case LIST_SIDE_TOXIC_SPIKES:
+            data->modifyArrows.maxValue = 2;
+            break;
+        case LIST_SIDE_STICKY_WEB:
+        case LIST_SIDE_STEALTH_ROCK:
+        case LIST_SIDE_STEELSURGE:
+            data->modifyArrows.maxValue = 1;
+            break;
+        }
+        data->modifyArrows.maxDigits = 2;
+        data->modifyArrows.typeOfVal = VAL_HAZARDS;
+        data->modifyArrows.currValue = GetHazardsValue(data);
         break;
     case LIST_ITEM_SIDE_STATUS:
         data->modifyArrows.minValue = 0;
-
-        if (data->currentSecondaryListItemId == LIST_SIDE_SPIKES)
-            data->modifyArrows.maxValue = 3;
-        else if (data->currentSecondaryListItemId == LIST_SIDE_STEALTH_ROCK || data->currentSecondaryListItemId == LIST_SIDE_STICKY_WEB)
-            data->modifyArrows.maxValue = 1;
-        else
-            data->modifyArrows.maxValue = 9;
-
+        data->modifyArrows.maxValue = 9;
         data->modifyArrows.maxDigits = 2;
         data->modifyArrows.modifiedValPtr = &gSideStatuses[GetBattlerSide(data->battlerId)];
         data->modifyArrows.typeOfVal = VAR_SIDE_STATUS;
@@ -2308,276 +2140,144 @@ static void UpdateMonData(struct BattleDebugMenu *data)
     }
 }
 
-static const u8 sText_HoldEffectNone[] = _("？？？");
-static const u8 sText_HoldEffectRestoreHp[] = _("回复HP");
-static const u8 sText_HoldEffectCurePar[] = _("麻痹解除");
-static const u8 sText_HoldEffectCureSlp[] = _("睡眠解除");
-static const u8 sText_HoldEffectCurePsn[] = _("中毒解除");
-static const u8 sText_HoldEffectCureBrn[] = _("灼伤解除");
-static const u8 sText_HoldEffectCureFrz[] = _("冰冻解除");
-static const u8 sText_HoldEffectRestorePp[] = _("回复PP");
-static const u8 sText_HoldEffectCureConfusion[] = _("混乱解除");
-static const u8 sText_HoldEffectCureStatus[] = _("异常状态解除");
-static const u8 sText_HoldEffectConfuseSpicy[] = _("因树果太辣混乱");
-static const u8 sText_HoldEffectConfuseDry[] = _("因树果太涩混乱");
-static const u8 sText_HoldEffectConfuseSweet[] = _("因树果太甜混乱");
-static const u8 sText_HoldEffectConfuseBitter[] = _("因树果太苦混乱");
-static const u8 sText_HoldEffectConfuseSour[] = _("因树果太酸混乱");
-static const u8 sText_HoldEffectAttackUp[] = _("攻击提升");
-static const u8 sText_HoldEffectDefenseUp[] = _("防御提升");
-static const u8 sText_HoldEffectSpeedUp[] = _("速度提升");
-static const u8 sText_HoldEffectSpAttackUp[] = _("特攻提升");
-static const u8 sText_HoldEffectSpDefenseUp[] = _("特防提升");
-static const u8 sText_HoldEffectCriticalUp[] = _("击中要害率提升");
-static const u8 sText_HoldEffectRandomStatUp[] = _("随机能力提升");
-static const u8 sText_HoldEffectEvasionUp[] = _("闪避率提升");
-static const u8 sText_HoldEffectRestoreStats[] = _("能力恢复");
-static const u8 sText_HoldEffectMachoBrace[] = _("强制锻炼器");
-static const u8 sText_HoldEffectExpShare[] = _("学习装置");
-static const u8 sText_HoldEffectQuickClaw[] = _("先制之爪");
-static const u8 sText_HoldEffectFriendshipUp[] = _("亲密度上升");
-static const u8 sText_HoldEffectMentalHerb[] = _("心灵香草");
-static const u8 sText_HoldEffectChoiceBand[] = _("讲究头带");
-static const u8 sText_HoldEffectFlinch[] = _("畏缩");
-static const u8 sText_HoldEffectDoublePrize[] = _("零花钱翻倍");
-static const u8 sText_HoldEffectRepel[] = _("除虫喷雾");
-static const u8 sText_HoldEffectSoulDew[] = _("心之水滴");
-static const u8 sText_HoldEffectDeepSeaTooth[] = _("深海之牙");
-static const u8 sText_HoldEffectDeepSeaScale[] = _("深海鳞片");
-static const u8 sText_HoldEffectCanAlwaysRun[] = _("必定能逃走");
-static const u8 sText_HoldEffectPreventEvolve[] = _("不会进化");
-static const u8 sText_HoldEffectFocusBand[] = _("气势头带");
-static const u8 sText_HoldEffectLuckyEgg[] = _("幸运蛋");
-static const u8 sText_HoldEffectScopeLens[] = _("焦点镜");
-static const u8 sText_HoldEffectLeftovers[] = _("吃剩的东西");
-static const u8 sText_HoldEffectDragonScale[] = _("龙之鳞片");
-static const u8 sText_HoldEffectLightBall[] = _("电气球");
-static const u8 sText_HoldEffectTypePower[] = _("属性威力");
-static const u8 sText_HoldEffectUpgrade[] = _("升级数据");
-static const u8 sText_HoldEffectShellBell[] = _("贝壳之铃");
-static const u8 sText_HoldEffectLuckyPunch[] = _("吉利拳");
-static const u8 sText_HoldEffectMetalPowder[] = _("金属粉");
-static const u8 sText_HoldEffectThickClub[] = _("粗骨头");
-static const u8 sText_HoldEffectLeek[] = _("大葱");
-static const u8 sText_HoldEffectChoiceScarf[] = _("讲究围巾");
-static const u8 sText_HoldEffectChoiceSpecs[] = _("讲究眼镜");
-static const u8 sText_HoldEffectDampRock[] = _("潮湿岩石");
-static const u8 sText_HoldEffectGripClaw[] = _("紧缠钩爪");
-static const u8 sText_HoldEffectHeatRock[] = _("炽热岩石");
-static const u8 sText_HoldEffectIcyRock[] = _("冰冷岩石");
-static const u8 sText_HoldEffectLightClay[] = _("光之黏土");
-static const u8 sText_HoldEffectSmoothRock[] = _("沙沙岩石");
-static const u8 sText_HoldEffectPowerHerb[] = _("强力香草");
-static const u8 sText_HoldEffectBigRoot[] = _("大根茎");
-static const u8 sText_HoldEffectExpertBelt[] = _("达人带");
-static const u8 sText_HoldEffectLifeOrb[] = _("生命宝珠");
-static const u8 sText_HoldEffectMetronome[] = _("挥指");
-static const u8 sText_HoldEffectMuscleBand[] = _("力量头带");
-static const u8 sText_HoldEffectWideLens[] = _("广角镜");
-static const u8 sText_HoldEffectWiseGlasses[] = _("博识眼镜");
-static const u8 sText_HoldEffectZoomLens[] = _("对焦镜");
-static const u8 sText_HoldEffectLaggingTail[] = _("后攻之尾");
-static const u8 sText_HoldEffectFocusSash[] = _("气势披带");
-static const u8 sText_HoldEffectFlameOrb[] = _("火焰宝珠");
-static const u8 sText_HoldEffectToxicOrb[] = _("剧毒宝珠");
-static const u8 sText_HoldEffectStickyBarb[] = _("附着针");
-static const u8 sText_HoldEffectIronBall[] = _("黑色铁球");
-static const u8 sText_HoldEffectBlackSludge[] = _("黑色污泥");
-static const u8 sText_HoldEffectDestinyKnot[] = _("红线");
-static const u8 sText_HoldEffectShedShell[] = _("美丽空壳");
-static const u8 sText_HoldEffectQuickPowder[] = _("速度粉");
-static const u8 sText_HoldEffectAdamantOrb[] = _("金刚宝珠");
-static const u8 sText_HoldEffectLustrousOrb[] = _("白玉宝珠");
-static const u8 sText_HoldEffectGriseousOrb[] = _("白金宝珠");
-static const u8 sText_HoldEffectEnigmaBerry[] = _("谜芝果");
-static const u8 sText_HoldEffectResistBerry[] = _("属性抵抗类树果");
-static const u8 sText_HoldEffectPowerItem[] = _("属性增强类道具");
-static const u8 sText_HoldEffectRestorePctHp[] = _("一定比例HP回复");
-static const u8 sText_HoldEffectMicleBerry[] = _("奇秘果");
-static const u8 sText_HoldEffectCustapBerry[] = _("释陀果");
-static const u8 sText_HoldEffectJabocaBerry[] = _("嘉珍果");
-static const u8 sText_HoldEffectRowapBerry[] = _("雾莲果");
-static const u8 sText_HoldEffectKeeBerry[] = _("亚开果");
-static const u8 sText_HoldEffectMarangaBerry[] = _("香罗果");
-static const u8 sText_HoldEffectFloatStone[] = _("轻石");
-static const u8 sText_HoldEffectEviolite[] = _("进化奇石");
-static const u8 sText_HoldEffectAssaultVest[] = _("突击背心");
-static const u8 sText_HoldEffectDrive[] = _("属性卡带");
-static const u8 sText_HoldEffectGems[] = _("属性宝石");
-static const u8 sText_HoldEffectRockyHelmet[] = _("凸凸头盔");
-static const u8 sText_HoldEffectAirBalloon[] = _("气球");
-static const u8 sText_HoldEffectRedCard[] = _("红牌");
-static const u8 sText_HoldEffectRingTarget[] = _("标靶");
-static const u8 sText_HoldEffectBindingBand[] = _("紧绑束带");
-static const u8 sText_HoldEffectEjectButton[] = _("逃脱按键");
-static const u8 sText_HoldEffectAbsorbBulb[] = _("球根");
-static const u8 sText_HoldEffectCellBattery[] = _("充电电池");
-static const u8 sText_HoldEffectMegaStone[] = _("超级进化石");
-static const u8 sText_HoldEffectSafetyGoggles[] = _("防尘护目镜");
-static const u8 sText_HoldEffectLuminousMoss[] = _("光苔");
-static const u8 sText_HoldEffectSnowball[] = _("雪丸");
-static const u8 sText_HoldEffectWeaknessPolicy[] = _("弱点保险");
-static const u8 sText_HoldEffectPrimalOrb[] = _("原始回归宝珠");
-static const u8 sText_HoldEffectProtectivePads[] = _("部位护具");
-static const u8 sText_HoldEffectTerrainExtender[] = _("大地膜");
-static const u8 sText_HoldEffectSeeds[] = _("场地种子");
-static const u8 sText_HoldEffectAdrenalineOrb[] = _("胆怯球");
-static const u8 sText_HoldEffectMemory[] = _("属性存储碟");
-static const u8 sText_HoldEffectZCrystal[] = _("Z纯晶");
-static const u8 sText_HoldEffectPlate[] = _("属性石板");
-static const u8 sText_HoldEffectUtilityUmbrella[] = _("万能伞");
-static const u8 sText_HoldEffectEjectPack[] = _("避难背包");
-static const u8 sText_HoldEffectRoomService[] = _("客房服务");
-static const u8 sText_HoldEffectBlunderPolicy[] = _("打空保险");
-static const u8 sText_HoldEffectHeavyDutyBoots[] = _("厚底靴");
-static const u8 sText_HoldEffectThroatSpray[] = _("爽喉喷雾");
-static const u8 sText_HoldEffectAbilityShield[] = _("特性护具");
-static const u8 sText_HoldEffectClearAmulet[] = _("清净坠饰");
-static const u8 sText_HoldEffectMirrorHerb[] = _("模仿香草");
-static const u8 sText_HoldEffectPunchingGlove[] = _("拳击手套");
-static const u8 sText_HoldEffectCovertCloak[] = _("密探斗篷");
-static const u8 sText_HoldEffectLoadedDice[] = _("机变骰子");
-static const u8 sText_HoldEffectBoosterEnergy[] = _("驱劲能量");
-static const u8 sText_HoldEffectBerserkGene[] = _("破坏基因");
-static const u8 sText_HoldEffectOgerponMask[] = _("厄诡椪面具");
-static const u8 *const sHoldEffectNames[] =
+static const u8 *const sHoldEffectNames[HOLD_EFFECT_COUNT] =
 {
-    [HOLD_EFFECT_NONE] = sText_HoldEffectNone,
-    [HOLD_EFFECT_RESTORE_HP] = sText_HoldEffectRestoreHp,
-    [HOLD_EFFECT_CURE_PAR] = sText_HoldEffectCurePar,
-    [HOLD_EFFECT_CURE_SLP] = sText_HoldEffectCureSlp,
-    [HOLD_EFFECT_CURE_PSN] = sText_HoldEffectCurePsn,
-    [HOLD_EFFECT_CURE_BRN] = sText_HoldEffectCureBrn,
-    [HOLD_EFFECT_CURE_FRZ] = sText_HoldEffectCureFrz,
-    [HOLD_EFFECT_RESTORE_PP] = sText_HoldEffectRestorePp,
-    [HOLD_EFFECT_CURE_CONFUSION] = sText_HoldEffectCureConfusion,
-    [HOLD_EFFECT_CURE_STATUS] = sText_HoldEffectCureStatus,
-    [HOLD_EFFECT_CONFUSE_SPICY] = sText_HoldEffectConfuseSpicy,
-    [HOLD_EFFECT_CONFUSE_DRY] = sText_HoldEffectConfuseDry,
-    [HOLD_EFFECT_CONFUSE_SWEET] = sText_HoldEffectConfuseSweet,
-    [HOLD_EFFECT_CONFUSE_BITTER] = sText_HoldEffectConfuseBitter,
-    [HOLD_EFFECT_CONFUSE_SOUR] = sText_HoldEffectConfuseSour,
-    [HOLD_EFFECT_ATTACK_UP] = sText_HoldEffectAttackUp,
-    [HOLD_EFFECT_DEFENSE_UP] = sText_HoldEffectDefenseUp,
-    [HOLD_EFFECT_SPEED_UP] = sText_HoldEffectSpeedUp,
-    [HOLD_EFFECT_SP_ATTACK_UP] = sText_HoldEffectSpAttackUp,
-    [HOLD_EFFECT_SP_DEFENSE_UP] = sText_HoldEffectSpDefenseUp,
-    [HOLD_EFFECT_CRITICAL_UP] = sText_HoldEffectCriticalUp,
-    [HOLD_EFFECT_RANDOM_STAT_UP] = sText_HoldEffectRandomStatUp,
-    [HOLD_EFFECT_EVASION_UP] = sText_HoldEffectEvasionUp,
-    [HOLD_EFFECT_WHITE_HERB] = sText_HoldEffectRestoreStats,
-    [HOLD_EFFECT_MACHO_BRACE] = sText_HoldEffectMachoBrace,
-    [HOLD_EFFECT_EXP_SHARE] = sText_HoldEffectExpShare,
-    [HOLD_EFFECT_QUICK_CLAW] = sText_HoldEffectQuickClaw,
-    [HOLD_EFFECT_FRIENDSHIP_UP] = sText_HoldEffectFriendshipUp,
-    [HOLD_EFFECT_MENTAL_HERB] = sText_HoldEffectMentalHerb,
-    [HOLD_EFFECT_CHOICE_BAND] = sText_HoldEffectChoiceBand,
-    [HOLD_EFFECT_FLINCH] = sText_HoldEffectFlinch,
-    [HOLD_EFFECT_DOUBLE_PRIZE] = sText_HoldEffectDoublePrize,
-    [HOLD_EFFECT_REPEL] = sText_HoldEffectRepel,
-    [HOLD_EFFECT_SOUL_DEW] = sText_HoldEffectSoulDew,
-    [HOLD_EFFECT_DEEP_SEA_TOOTH] = sText_HoldEffectDeepSeaTooth,
-    [HOLD_EFFECT_DEEP_SEA_SCALE] = sText_HoldEffectDeepSeaScale,
-    [HOLD_EFFECT_CAN_ALWAYS_RUN] = sText_HoldEffectCanAlwaysRun,
-    [HOLD_EFFECT_PREVENT_EVOLVE] = sText_HoldEffectPreventEvolve,
-    [HOLD_EFFECT_FOCUS_BAND] = sText_HoldEffectFocusBand,
-    [HOLD_EFFECT_LUCKY_EGG] = sText_HoldEffectLuckyEgg,
-    [HOLD_EFFECT_SCOPE_LENS] = sText_HoldEffectScopeLens,
-    [HOLD_EFFECT_LEFTOVERS] = sText_HoldEffectLeftovers,
-    [HOLD_EFFECT_DRAGON_SCALE] = sText_HoldEffectDragonScale,
-    [HOLD_EFFECT_LIGHT_BALL] = sText_HoldEffectLightBall,
-    [HOLD_EFFECT_TYPE_POWER] = sText_HoldEffectTypePower,
-    [HOLD_EFFECT_UPGRADE] = sText_HoldEffectUpgrade,
-    [HOLD_EFFECT_SHELL_BELL] = sText_HoldEffectShellBell,
-    [HOLD_EFFECT_LUCKY_PUNCH] = sText_HoldEffectLuckyPunch,
-    [HOLD_EFFECT_METAL_POWDER] = sText_HoldEffectMetalPowder,
-    [HOLD_EFFECT_THICK_CLUB] = sText_HoldEffectThickClub,
-    [HOLD_EFFECT_LEEK] = sText_HoldEffectLeek,
-    [HOLD_EFFECT_CHOICE_SCARF] = sText_HoldEffectChoiceScarf,
-    [HOLD_EFFECT_CHOICE_SPECS] = sText_HoldEffectChoiceSpecs,
-    [HOLD_EFFECT_DAMP_ROCK] = sText_HoldEffectDampRock,
-    [HOLD_EFFECT_GRIP_CLAW] = sText_HoldEffectGripClaw,
-    [HOLD_EFFECT_HEAT_ROCK] = sText_HoldEffectHeatRock,
-    [HOLD_EFFECT_ICY_ROCK] = sText_HoldEffectIcyRock,
-    [HOLD_EFFECT_LIGHT_CLAY] = sText_HoldEffectLightClay,
-    [HOLD_EFFECT_SMOOTH_ROCK] = sText_HoldEffectSmoothRock,
-    [HOLD_EFFECT_POWER_HERB] = sText_HoldEffectPowerHerb,
-    [HOLD_EFFECT_BIG_ROOT] = sText_HoldEffectBigRoot,
-    [HOLD_EFFECT_EXPERT_BELT] = sText_HoldEffectExpertBelt,
-    [HOLD_EFFECT_LIFE_ORB] = sText_HoldEffectLifeOrb,
-    [HOLD_EFFECT_METRONOME] = sText_HoldEffectMetronome,
-    [HOLD_EFFECT_MUSCLE_BAND] = sText_HoldEffectMuscleBand,
-    [HOLD_EFFECT_WIDE_LENS] = sText_HoldEffectWideLens,
-    [HOLD_EFFECT_WISE_GLASSES] = sText_HoldEffectWiseGlasses,
-    [HOLD_EFFECT_ZOOM_LENS] = sText_HoldEffectZoomLens,
-    [HOLD_EFFECT_LAGGING_TAIL] = sText_HoldEffectLaggingTail,
-    [HOLD_EFFECT_FOCUS_SASH] = sText_HoldEffectFocusSash,
-    [HOLD_EFFECT_FLAME_ORB] = sText_HoldEffectFlameOrb,
-    [HOLD_EFFECT_TOXIC_ORB] = sText_HoldEffectToxicOrb,
-    [HOLD_EFFECT_STICKY_BARB] = sText_HoldEffectStickyBarb,
-    [HOLD_EFFECT_IRON_BALL] = sText_HoldEffectIronBall,
-    [HOLD_EFFECT_BLACK_SLUDGE] = sText_HoldEffectBlackSludge,
-    [HOLD_EFFECT_DESTINY_KNOT] = sText_HoldEffectDestinyKnot,
-    [HOLD_EFFECT_SHED_SHELL] = sText_HoldEffectShedShell,
-    [HOLD_EFFECT_QUICK_POWDER] = sText_HoldEffectQuickPowder,
-    [HOLD_EFFECT_ADAMANT_ORB] = sText_HoldEffectAdamantOrb,
-    [HOLD_EFFECT_LUSTROUS_ORB] = sText_HoldEffectLustrousOrb,
-    [HOLD_EFFECT_GRISEOUS_ORB] = sText_HoldEffectGriseousOrb,
-    [HOLD_EFFECT_ENIGMA_BERRY] = sText_HoldEffectEnigmaBerry,
-    [HOLD_EFFECT_RESIST_BERRY] = sText_HoldEffectResistBerry,
-    [HOLD_EFFECT_POWER_ITEM] = sText_HoldEffectPowerItem,
-    [HOLD_EFFECT_RESTORE_PCT_HP] = sText_HoldEffectRestorePctHp,
-    [HOLD_EFFECT_MICLE_BERRY] = sText_HoldEffectMicleBerry,
-    [HOLD_EFFECT_CUSTAP_BERRY] = sText_HoldEffectCustapBerry,
-    [HOLD_EFFECT_JABOCA_BERRY] = sText_HoldEffectJabocaBerry,
-    [HOLD_EFFECT_ROWAP_BERRY] = sText_HoldEffectRowapBerry,
-    [HOLD_EFFECT_KEE_BERRY] = sText_HoldEffectKeeBerry,
-    [HOLD_EFFECT_MARANGA_BERRY] = sText_HoldEffectMarangaBerry,
-    [HOLD_EFFECT_PLATE] = sText_HoldEffectPlate,
-    [HOLD_EFFECT_FLOAT_STONE] = sText_HoldEffectFloatStone,
-    [HOLD_EFFECT_EVIOLITE] = sText_HoldEffectEviolite,
-    [HOLD_EFFECT_ASSAULT_VEST] = sText_HoldEffectAssaultVest,
-    [HOLD_EFFECT_DRIVE] = sText_HoldEffectDrive,
-    [HOLD_EFFECT_GEMS] = sText_HoldEffectGems,
-    [HOLD_EFFECT_ROCKY_HELMET] = sText_HoldEffectRockyHelmet,
-    [HOLD_EFFECT_AIR_BALLOON] = sText_HoldEffectAirBalloon,
-    [HOLD_EFFECT_RED_CARD] = sText_HoldEffectRedCard,
-    [HOLD_EFFECT_RING_TARGET] = sText_HoldEffectRingTarget,
-    [HOLD_EFFECT_BINDING_BAND] = sText_HoldEffectBindingBand,
-    [HOLD_EFFECT_EJECT_BUTTON] = sText_HoldEffectEjectButton,
-    [HOLD_EFFECT_ABSORB_BULB] = sText_HoldEffectAbsorbBulb,
-    [HOLD_EFFECT_CELL_BATTERY] = sText_HoldEffectCellBattery,
-    [HOLD_EFFECT_MEGA_STONE] = sText_HoldEffectMegaStone,
-    [HOLD_EFFECT_SAFETY_GOGGLES] = sText_HoldEffectSafetyGoggles,
-    [HOLD_EFFECT_LUMINOUS_MOSS] = sText_HoldEffectLuminousMoss,
-    [HOLD_EFFECT_SNOWBALL] = sText_HoldEffectSnowball,
-    [HOLD_EFFECT_WEAKNESS_POLICY] = sText_HoldEffectWeaknessPolicy,
-    [HOLD_EFFECT_PRIMAL_ORB] = sText_HoldEffectPrimalOrb,
-    [HOLD_EFFECT_PROTECTIVE_PADS] = sText_HoldEffectProtectivePads,
-    [HOLD_EFFECT_TERRAIN_EXTENDER] = sText_HoldEffectTerrainExtender,
-    [HOLD_EFFECT_SEEDS] = sText_HoldEffectSeeds,
-    [HOLD_EFFECT_ADRENALINE_ORB] = sText_HoldEffectAdrenalineOrb,
-    [HOLD_EFFECT_MEMORY] = sText_HoldEffectMemory,
-    [HOLD_EFFECT_Z_CRYSTAL] = sText_HoldEffectZCrystal,
-    [HOLD_EFFECT_UTILITY_UMBRELLA] = sText_HoldEffectUtilityUmbrella,
-    [HOLD_EFFECT_EJECT_PACK] = sText_HoldEffectEjectPack,
-    [HOLD_EFFECT_ROOM_SERVICE] = sText_HoldEffectRoomService,
-    [HOLD_EFFECT_BLUNDER_POLICY] = sText_HoldEffectBlunderPolicy,
-    [HOLD_EFFECT_HEAVY_DUTY_BOOTS] = sText_HoldEffectHeavyDutyBoots,
-    [HOLD_EFFECT_THROAT_SPRAY] = sText_HoldEffectThroatSpray,
-    [HOLD_EFFECT_ABILITY_SHIELD] = sText_HoldEffectAbilityShield,
-    [HOLD_EFFECT_CLEAR_AMULET] = sText_HoldEffectClearAmulet,
-    [HOLD_EFFECT_MIRROR_HERB] = sText_HoldEffectMirrorHerb,
-    [HOLD_EFFECT_PUNCHING_GLOVE] = sText_HoldEffectPunchingGlove,
-    [HOLD_EFFECT_COVERT_CLOAK] = sText_HoldEffectCovertCloak,
-    [HOLD_EFFECT_LOADED_DICE] = sText_HoldEffectLoadedDice,
-    [HOLD_EFFECT_BOOSTER_ENERGY] = sText_HoldEffectBoosterEnergy,
-    [HOLD_EFFECT_OGERPON_MASK] = sText_HoldEffectOgerponMask,
-    [HOLD_EFFECT_BERSERK_GENE] = sText_HoldEffectBerserkGene,
+    [HOLD_EFFECT_NONE]             = COMPOUND_STRING("不眠"),
+    [HOLD_EFFECT_RESTORE_HP]       = COMPOUND_STRING("回复HP"),
+    [HOLD_EFFECT_CURE_PAR]         = COMPOUND_STRING("麻痹解除"),
+    [HOLD_EFFECT_CURE_SLP]         = COMPOUND_STRING("睡眠解除"),
+    [HOLD_EFFECT_CURE_PSN]         = COMPOUND_STRING("中毒解除"),
+    [HOLD_EFFECT_CURE_BRN]         = COMPOUND_STRING("灼伤解除"),
+    [HOLD_EFFECT_CURE_FRZ]         = COMPOUND_STRING("冰冻解除"),
+    [HOLD_EFFECT_RESTORE_PP]       = COMPOUND_STRING("回复PP"),
+    [HOLD_EFFECT_CURE_CONFUSION]   = COMPOUND_STRING("混乱解除"),
+    [HOLD_EFFECT_CURE_STATUS]      = COMPOUND_STRING("异常状态解除"),
+    [HOLD_EFFECT_CONFUSE_SPICY]    = COMPOUND_STRING("因树果太辣混乱"),
+    [HOLD_EFFECT_CONFUSE_DRY]      = COMPOUND_STRING("因树果太涩混乱"),
+    [HOLD_EFFECT_CONFUSE_SWEET]    = COMPOUND_STRING("因树果太甜混乱"),
+    [HOLD_EFFECT_CONFUSE_BITTER]   = COMPOUND_STRING("因树果太苦混乱"),
+    [HOLD_EFFECT_CONFUSE_SOUR]     = COMPOUND_STRING("因树果太酸混乱"),
+    [HOLD_EFFECT_ATTACK_UP]        = COMPOUND_STRING("攻击提升"),
+    [HOLD_EFFECT_DEFENSE_UP]       = COMPOUND_STRING("防御提升"),
+    [HOLD_EFFECT_SPEED_UP]         = COMPOUND_STRING("速度提升"),
+    [HOLD_EFFECT_SP_ATTACK_UP]     = COMPOUND_STRING("特攻提升"),
+    [HOLD_EFFECT_SP_DEFENSE_UP]    = COMPOUND_STRING("特防提升"),
+    [HOLD_EFFECT_CRITICAL_UP]      = COMPOUND_STRING("击中要害率提升"),
+    [HOLD_EFFECT_RANDOM_STAT_UP]   = COMPOUND_STRING("随机能力提升"),
+    [HOLD_EFFECT_EVASION_UP]       = COMPOUND_STRING("闪避率提升"),
+    [HOLD_EFFECT_WHITE_HERB]       = COMPOUND_STRING("能力恢复"),
+    [HOLD_EFFECT_MACHO_BRACE]      = COMPOUND_STRING("强制锻炼器"),
+    [HOLD_EFFECT_EXP_SHARE]        = COMPOUND_STRING("学习装置"),
+    [HOLD_EFFECT_QUICK_CLAW]       = COMPOUND_STRING("先制之爪"),
+    [HOLD_EFFECT_FRIENDSHIP_UP]    = COMPOUND_STRING("亲密度上升"),
+    [HOLD_EFFECT_MENTAL_HERB]      = COMPOUND_STRING("心灵香草"),
+    [HOLD_EFFECT_CHOICE_BAND]      = COMPOUND_STRING("讲究头带"),
+    [HOLD_EFFECT_FLINCH]           = COMPOUND_STRING("畏缩"),
+    [HOLD_EFFECT_DOUBLE_PRIZE]     = COMPOUND_STRING("零花钱翻倍"),
+    [HOLD_EFFECT_REPEL]            = COMPOUND_STRING("除虫喷雾"),
+    [HOLD_EFFECT_SOUL_DEW]         = COMPOUND_STRING("心之水滴"),
+    [HOLD_EFFECT_DEEP_SEA_TOOTH]   = COMPOUND_STRING("深海之牙"),
+    [HOLD_EFFECT_DEEP_SEA_SCALE]   = COMPOUND_STRING("深海鳞片"),
+    [HOLD_EFFECT_CAN_ALWAYS_RUN]   = COMPOUND_STRING("必定能逃走"),
+    [HOLD_EFFECT_PREVENT_EVOLVE]   = COMPOUND_STRING("不会进化"),
+    [HOLD_EFFECT_FOCUS_BAND]       = COMPOUND_STRING("气势头带"),
+    [HOLD_EFFECT_LUCKY_EGG]        = COMPOUND_STRING("幸运蛋"),
+    [HOLD_EFFECT_SCOPE_LENS]       = COMPOUND_STRING("焦点镜"),
+    [HOLD_EFFECT_LEFTOVERS]        = COMPOUND_STRING("吃剩的东西"),
+    [HOLD_EFFECT_DRAGON_SCALE]     = COMPOUND_STRING("龙之鳞片"),
+    [HOLD_EFFECT_LIGHT_BALL]       = COMPOUND_STRING("电气球"),
+    [HOLD_EFFECT_TYPE_POWER]       = COMPOUND_STRING("Type Power"),
+    [HOLD_EFFECT_UPGRADE]          = COMPOUND_STRING("升级数据"),
+    [HOLD_EFFECT_SHELL_BELL]       = COMPOUND_STRING("贝壳之铃"),
+    [HOLD_EFFECT_LUCKY_PUNCH]      = COMPOUND_STRING("吉利拳"),
+    [HOLD_EFFECT_METAL_POWDER]     = COMPOUND_STRING("金属粉"),
+    [HOLD_EFFECT_THICK_CLUB]       = COMPOUND_STRING("粗骨头"),
+    [HOLD_EFFECT_LEEK]             = COMPOUND_STRING("大葱"),
+    [HOLD_EFFECT_CHOICE_SCARF]     = COMPOUND_STRING("讲究围巾"),
+    [HOLD_EFFECT_CHOICE_SPECS]     = COMPOUND_STRING("讲究眼镜"),
+    [HOLD_EFFECT_DAMP_ROCK]        = COMPOUND_STRING("潮湿岩石"),
+    [HOLD_EFFECT_GRIP_CLAW]        = COMPOUND_STRING("紧缠钩爪"),
+    [HOLD_EFFECT_HEAT_ROCK]        = COMPOUND_STRING("炽热岩石"),
+    [HOLD_EFFECT_ICY_ROCK]         = COMPOUND_STRING("冰冷岩石"),
+    [HOLD_EFFECT_LIGHT_CLAY]       = COMPOUND_STRING("光之黏土"),
+    [HOLD_EFFECT_SMOOTH_ROCK]      = COMPOUND_STRING("沙沙岩石"),
+    [HOLD_EFFECT_POWER_HERB]       = COMPOUND_STRING("强力香草"),
+    [HOLD_EFFECT_BIG_ROOT]         = COMPOUND_STRING("大根茎"),
+    [HOLD_EFFECT_EXPERT_BELT]      = COMPOUND_STRING("达人带"),
+    [HOLD_EFFECT_LIFE_ORB]         = COMPOUND_STRING("生命宝珠"),
+    [HOLD_EFFECT_METRONOME]        = COMPOUND_STRING("挥指"),
+    [HOLD_EFFECT_MUSCLE_BAND]      = COMPOUND_STRING("力量头带"),
+    [HOLD_EFFECT_WIDE_LENS]        = COMPOUND_STRING("广角镜"),
+    [HOLD_EFFECT_WISE_GLASSES]     = COMPOUND_STRING("博识眼镜"),
+    [HOLD_EFFECT_ZOOM_LENS]        = COMPOUND_STRING("对焦镜"),
+    [HOLD_EFFECT_LAGGING_TAIL]     = COMPOUND_STRING("后攻之尾"),
+    [HOLD_EFFECT_FOCUS_SASH]       = COMPOUND_STRING("气势披带"),
+    [HOLD_EFFECT_FLAME_ORB]        = COMPOUND_STRING("火焰宝珠"),
+    [HOLD_EFFECT_TOXIC_ORB]        = COMPOUND_STRING("剧毒宝珠"),
+    [HOLD_EFFECT_STICKY_BARB]      = COMPOUND_STRING("附着针"),
+    [HOLD_EFFECT_IRON_BALL]        = COMPOUND_STRING("黑色铁球"),
+    [HOLD_EFFECT_BLACK_SLUDGE]     = COMPOUND_STRING("黑色污泥"),
+    [HOLD_EFFECT_DESTINY_KNOT]     = COMPOUND_STRING("红线"),
+    [HOLD_EFFECT_SHED_SHELL]       = COMPOUND_STRING("美丽空壳"),
+    [HOLD_EFFECT_QUICK_POWDER]     = COMPOUND_STRING("速度粉"),
+    [HOLD_EFFECT_ADAMANT_ORB]      = COMPOUND_STRING("金刚宝珠"),
+    [HOLD_EFFECT_LUSTROUS_ORB]     = COMPOUND_STRING("白玉宝珠"),
+    [HOLD_EFFECT_GRISEOUS_ORB]     = COMPOUND_STRING("白金宝珠"),
+    [HOLD_EFFECT_ENIGMA_BERRY]     = COMPOUND_STRING("谜芝果"),
+    [HOLD_EFFECT_RESIST_BERRY]     = COMPOUND_STRING("属性抵抗类树果"),
+    [HOLD_EFFECT_POWER_ITEM]       = COMPOUND_STRING("属性增强类道具"),
+    [HOLD_EFFECT_RESTORE_PCT_HP]   = COMPOUND_STRING("一定比例HP回复"),
+    [HOLD_EFFECT_MICLE_BERRY]      = COMPOUND_STRING("奇秘果"),
+    [HOLD_EFFECT_CUSTAP_BERRY]     = COMPOUND_STRING("释陀果"),
+    [HOLD_EFFECT_JABOCA_BERRY]     = COMPOUND_STRING("嘉珍果"),
+    [HOLD_EFFECT_ROWAP_BERRY]      = COMPOUND_STRING("雾莲果"),
+    [HOLD_EFFECT_KEE_BERRY]        = COMPOUND_STRING("亚开果"),
+    [HOLD_EFFECT_MARANGA_BERRY]    = COMPOUND_STRING("香罗果"),
+    [HOLD_EFFECT_PLATE]            = COMPOUND_STRING("属性石板"),
+    [HOLD_EFFECT_FLOAT_STONE]      = COMPOUND_STRING("轻石"),
+    [HOLD_EFFECT_EVIOLITE]         = COMPOUND_STRING("进化奇石"),
+    [HOLD_EFFECT_ASSAULT_VEST]     = COMPOUND_STRING("突击背心"),
+    [HOLD_EFFECT_DRIVE]            = COMPOUND_STRING("属性卡带"),
+    [HOLD_EFFECT_GEMS]             = COMPOUND_STRING("属性宝石"),
+    [HOLD_EFFECT_ROCKY_HELMET]     = COMPOUND_STRING("凸凸头盔"),
+    [HOLD_EFFECT_AIR_BALLOON]      = COMPOUND_STRING("气球"),
+    [HOLD_EFFECT_RED_CARD]         = COMPOUND_STRING("红牌"),
+    [HOLD_EFFECT_RING_TARGET]      = COMPOUND_STRING("标靶"),
+    [HOLD_EFFECT_BINDING_BAND]     = COMPOUND_STRING("紧绑束带"),
+    [HOLD_EFFECT_EJECT_BUTTON]     = COMPOUND_STRING("逃脱按键"),
+    [HOLD_EFFECT_ABSORB_BULB]      = COMPOUND_STRING("球根"),
+    [HOLD_EFFECT_CELL_BATTERY]     = COMPOUND_STRING("充电电池"),
+    [HOLD_EFFECT_MEGA_STONE]       = COMPOUND_STRING("超级进化石"),
+    [HOLD_EFFECT_SAFETY_GOGGLES]   = COMPOUND_STRING("防尘护目镜"),
+    [HOLD_EFFECT_LUMINOUS_MOSS]    = COMPOUND_STRING("光苔"),
+    [HOLD_EFFECT_SNOWBALL]         = COMPOUND_STRING("雪丸"),
+    [HOLD_EFFECT_WEAKNESS_POLICY]  = COMPOUND_STRING("弱点保险"),
+    [HOLD_EFFECT_PRIMAL_ORB]       = COMPOUND_STRING("原始回归宝珠"),
+    [HOLD_EFFECT_PROTECTIVE_PADS]  = COMPOUND_STRING("部位护具"),
+    [HOLD_EFFECT_TERRAIN_EXTENDER] = COMPOUND_STRING("大地膜"),
+    [HOLD_EFFECT_SEEDS]            = COMPOUND_STRING("场地种子"),
+    [HOLD_EFFECT_ADRENALINE_ORB]   = COMPOUND_STRING("胆怯球"),
+    [HOLD_EFFECT_MEMORY]           = COMPOUND_STRING("属性存储碟"),
+    [HOLD_EFFECT_Z_CRYSTAL]        = COMPOUND_STRING("Z纯晶"),
+    [HOLD_EFFECT_UTILITY_UMBRELLA] = COMPOUND_STRING("万能伞"),
+    [HOLD_EFFECT_EJECT_PACK]       = COMPOUND_STRING("避难背包"),
+    [HOLD_EFFECT_ROOM_SERVICE]     = COMPOUND_STRING("客房服务"),
+    [HOLD_EFFECT_BLUNDER_POLICY]   = COMPOUND_STRING("打空保险"),
+    [HOLD_EFFECT_HEAVY_DUTY_BOOTS] = COMPOUND_STRING("厚底靴"),
+    [HOLD_EFFECT_THROAT_SPRAY]     = COMPOUND_STRING("爽喉喷雾"),
+    [HOLD_EFFECT_ABILITY_SHIELD]   = COMPOUND_STRING("特性护具"),
+    [HOLD_EFFECT_CLEAR_AMULET]     = COMPOUND_STRING("清净坠饰"),
+    [HOLD_EFFECT_MIRROR_HERB]      = COMPOUND_STRING("模仿香草"),
+    [HOLD_EFFECT_PUNCHING_GLOVE]   = COMPOUND_STRING("拳击手套"),
+    [HOLD_EFFECT_COVERT_CLOAK]     = COMPOUND_STRING("密探斗篷"),
+    [HOLD_EFFECT_LOADED_DICE]      = COMPOUND_STRING("机变骰子"),
+    [HOLD_EFFECT_BOOSTER_ENERGY]   = COMPOUND_STRING("驱劲能量"),
+    [HOLD_EFFECT_OGERPON_MASK]     = COMPOUND_STRING("厄诡椪面具"),
+    [HOLD_EFFECT_BERSERK_GENE]     = COMPOUND_STRING("破坏基因"),
 };
 static const u8 *GetHoldEffectName(enum ItemHoldEffect holdEffect)
 {
-    if (holdEffect > ARRAY_COUNT(sHoldEffectNames))
+    if (sHoldEffectNames[holdEffect] == NULL)
         return sHoldEffectNames[0];
     return sHoldEffectNames[holdEffect];
 }
