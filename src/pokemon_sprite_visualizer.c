@@ -401,7 +401,7 @@ const u8 gBattleBackgroundTerrainNames[][26] =
     [BATTLE_ENVIRONMENT_PLAIN]      = _("普通 - 平地          "),
 };
 
-const u8 sShadowSizeLabels[][4] =
+const u8 sShadowSizeLabels[][8] =
 {
     [SHADOW_SIZE_S]                 = _(" 小   "),
     [SHADOW_SIZE_M]                 = _(" 中   "),

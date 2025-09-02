@@ -2540,8 +2540,9 @@ static void TextIntoAbilityPopUp(void *dest, u8 *windowTileData, s32 windowWidth
             }
             else
             {
-                CpuCopy32(windowTileData + PIXELS(7), dest + PIXELS(7), PIXELS(1));//TODO
+                CpuCopy32(windowTileData + PIXELS(7), dest + PIXELS(7), PIXELS(1));
                 CpuCopy32(windowTileData + TILE_OFFSET_4BPP(ABILITY_POP_UP_WIN_WIDTH), dest + TILE_OFFSET_4BPP(8), TILE_SIZE_4BPP);
+                CpuCopy32(windowTileData + TILE_OFFSET_4BPP(ABILITY_POP_UP_WIN_WIDTH) * 2, dest + TILE_OFFSET_4BPP(8) * 2, PIXELS(1));
             }
 
             dest += TILE_SIZE_4BPP, windowTileData += TILE_SIZE_4BPP;
