@@ -18,8 +18,8 @@ const u8 gText_ExpandedPlaceholder_Kyogre[] = _("盖欧卡");
 const u8 gText_ExpandedPlaceholder_Groudon[] = _("固拉多");
 const u8 gText_ExpandedPlaceholder_Brendan[] = _("小悠");
 const u8 gText_ExpandedPlaceholder_May[] = _("小遥");
-const u8 gText_EggNickname[] = _("蛋");
-const u8 gText_Pokemon[] = _("宝可梦");
+const u8 gText_EggNickname[POKEMON_NAME_LENGTH + 1] = _("蛋");
+const u8 gText_Pokemon[POKEMON_NAME_LENGTH + 1] = _("宝可梦");
 const u8 gText_Player[] = _("玩家"); // Unused
 const u8 gText_Pokedex[] = _("图鉴"); // Unused
 const u8 gText_Time[] = _("冒险时间");
@@ -199,11 +199,11 @@ const u8 gText_ReturnToVar1[] = _("返回{STR_VAR_1}。");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
-    [ITEMS_POCKET] =    COMPOUND_STRING("道  具"),
-    [BALLS_POCKET] =    COMPOUND_STRING("精 灵 球"),
-    [TMHM_POCKET]  =    COMPOUND_STRING("招式学习器"),
-    [BERRIES_POCKET] =  COMPOUND_STRING("树  果"),
-    [KEYITEMS_POCKET] = COMPOUND_STRING("重要物品")
+    [POCKET_ITEMS] =    COMPOUND_STRING("道  具"),
+    [POCKET_POKE_BALLS] =    COMPOUND_STRING("精 灵 球"),
+    [POCKET_TM_HM]  =    COMPOUND_STRING("招式学习器"),
+    [POCKET_BERRIES] =  COMPOUND_STRING("树  果"),
+    [POCKET_KEY_ITEMS] = COMPOUND_STRING("重要物品")
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x07}{STR_VAR_2}");
