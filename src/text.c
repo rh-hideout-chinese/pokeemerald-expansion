@@ -1239,11 +1239,14 @@ static u16 RenderText(struct TextPrinter *textPrinter)
 
         if (IsChineseChar(currChar, *textPrinter->printerTemplate.currentChar, subStruct->fontId, textPrinter->japanese))
         {   
-            //合并字节获取汉字双字节编码
+            // 合并字节获取汉字双字节编码
             currChar = (currChar << 8) | *textPrinter->printerTemplate.currentChar;
             textPrinter->printerTemplate.currentChar++;
             DecompressGlyph_Chinese(currChar, subStruct->fontId);
         }
+        else if (IsChinesePunctuation(currChar, subStruct->fontId, textPrinter->japanese))
+            // 中文符号目前采用单字节编码占位(非与增益版完全一致)
+            DecompressGlyph_Chinese(currChar, subStruct->fontId);
         else
         {
             switch (subStruct->fontId)
@@ -1625,9 +1628,11 @@ s32 GetStringWidth(u8 fontId, const u8 *str, s16 letterSpacing)
         default:
             if (IsChineseChar(*str, str[1], fontId, isJapanese))
             {
-                glyphWidth = GetChineseFontWidthFunc(fontId);
+                glyphWidth = GetChineseFontWidthFunc(((*str << 8) | str[1]),fontId);
                 ++str;
             }
+            else if (IsChinesePunctuation(*str, fontId, isJapanese))
+                glyphWidth = GetChineseFontWidthFunc(*str,fontId);
             else
                 glyphWidth = func(*str, isJapanese);
             if (minGlyphWidth > 0)
