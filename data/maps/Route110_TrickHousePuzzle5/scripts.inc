@@ -896,7 +896,7 @@ Route110_TrickHousePuzzle5_Movement_MechadollShake:
 	step_end
 
 Route110_TrickHousePuzzle5_Text_WroteSecretCodeLockOpened:
-    .string "{PLAYER}在门上写下\n密码。\p“戏法大师是天才”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
+    .string "{PLAYER}在门上写下\n密码。\p“戏法大王是天才”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
 
 Route110_TrickHousePuzzle5_Text_Mechadoll1Intro:
     .string "咔嗒、噼啪……\n我是机械娃娃1！\p正确回答问题，\n通过机械娃娃5，\l就能得到密码。$"

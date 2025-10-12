@@ -230,16 +230,16 @@ gTVMassOutbreakText00::
     .string "大家好！\n现在是《宝可梦新闻》时间。\p我们刚刚收到一则\n关于罕见现象的报道。\p据报告显示在{STR_VAR_1}附近发生了\n{STR_VAR_2}的大量出现现象。\p{STR_VAR_2}这种宝可梦\n以稀有和难以遇到而著称。\p这将是见证{STR_VAR_2}在野外\n神秘出现的难得机会。\p以上就是本期《宝可梦新闻》的全部内容。$"
 
 gTV3CheersForPokeblocksText00::
-    .string "主持：希望大家干劲满满，\n《为宝可方块喝彩》现在开始！\p今天我们要评测的是{STR_VAR_1}\n等人制作的宝可方块。\p事不宜迟，现在就喂给我的\n美食家宝可梦——溶食兽吧。\p…… …… ……\n…… …… ……$"
+    .string "主持人：希望大家干劲满满，\n《为宝可方块喝彩》现在开始！\p今天我们要评测的是{STR_VAR_1}\n等人制作的宝可方块。\p事不宜迟，现在就喂给我的\n美食家宝可梦——溶食兽吧。\p…… …… ……\n…… …… ……$"
 
 gTV3CheersForPokeblocksText01::
-    .string "溶食兽：咕比！咕比比！\p主持：评价结果是\n它非常{STR_VAR_1}！\n溶食兽说味道“{STR_VAR_2}！”\p非常感谢你，{STR_VAR_3}！$"
+    .string "溶食兽：咕比！咕比比！\p主持人：评价结果是\n它非常{STR_VAR_1}！\n溶食兽说味道“{STR_VAR_2}！”\p非常感谢你，{STR_VAR_3}！$"
 
 gTV3CheersForPokeblocksText02::
     .string "{STR_VAR_1}的混合水平\n仍然有提升的空间。\p如果这位训练家能更熟练些，\n宝可方块的味道会更好。$"
 
 gTV3CheersForPokeblocksText03::
-    .string "溶食兽：咕比！咕比比！\p主持：嗯……太{STR_VAR_1}了。\n溶食兽说味道“{STR_VAR_2}！”\p看起来{STR_VAR_3}的操作失误\n影响了混合质量……$"
+    .string "溶食兽：咕比！咕比比！\p主持人：嗯……太{STR_VAR_1}了。\n溶食兽说味道“{STR_VAR_2}！”\p看起来{STR_VAR_3}的操作失误\n影响了混合质量……$"
 
 gTV3CheersForPokeblocksText04::
     .string "真遗憾，{STR_VAR_1}的\n努力付诸东流了。\p我们希望{STR_VAR_2}下次\n能够表现得更好！$"

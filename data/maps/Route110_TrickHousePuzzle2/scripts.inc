@@ -100,7 +100,7 @@ Route110_TrickHousePuzzle2_EventScript_Georgia::
 	end
 
 Route110_TrickHousePuzzle2_Text_WroteSecretCodeLockOpened:
-    .string "{PLAYER}在门上写下\n密码。\p“戏法大师十分聪颖”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
+    .string "{PLAYER}在门上写下\n密码。\p“戏法大王十分聪颖”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
 
 Route110_TrickHousePuzzle2_Text_TedIntro:
     .string "哪个开关能填补哪个洞？$"
@@ -118,7 +118,7 @@ Route110_TrickHousePuzzle2_Text_PaulDefeat:
     .string "你也很擅长对战是吗？$"
 
 Route110_TrickHousePuzzle2_Text_PaulPostBattle:
-    .string "这房子里的谜题都是\n戏法大师一个人做成的。$"
+    .string "这房子里的谜题都是\n戏法大王一个人做成的。$"
 
 Route110_TrickHousePuzzle2_Text_GeorgiaIntro:
     .string "我希望有一天能开设自己的道馆，\n所以，我要学习怎样设计谜题。$"
