@@ -361,7 +361,6 @@ static const struct ListMenuItem sVolatileStatusListItems[] =
     {COMPOUND_STRING("无理取闹"),            VOLATILE_TORMENT},
     {COMPOUND_STRING("粉尘"),             VOLATILE_POWDER},
     {COMPOUND_STRING("变圆"),        VOLATILE_DEFENSE_CURL},
-    {COMPOUND_STRING("无法动弹"),           VOLATILE_RECHARGE},
     {COMPOUND_STRING("愤怒"),               VOLATILE_RAGE},
     {COMPOUND_STRING("同命"),        VOLATILE_DESTINY_BOND},
     {COMPOUND_STRING("无法逃脱"),   VOLATILE_ESCAPE_PREVENTION},

@@ -1299,4 +1299,6 @@ const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
 const u8 gText_Relearn[] = _("{START_BUTTON} 回忆"); // future note: don't decap this, because it mimics the summary screen BG graphics which will not get decapped
 const u8 gText_Rename[] = _("更改昵称");
-const u8 gText_CannotSendMonToBoxHM[] = _("不能把那只宝可梦送回电脑，\n因为它学会了秘传招式。{PAUSE_UNTIL_PRESS}");
+const u8 gText_CannotSendMonToBoxHM[] = _("无法将那只宝可梦送回盒子，\n因为它学会了秘传招式。{PAUSE_UNTIL_PRESS}");
+const u8 gText_CannotSendMonToBoxActive[] = _("无法将正在战斗的宝可梦\n送回盒子。{PAUSE_UNTIL_PRESS}");
+const u8 gText_CannotSendMonToBoxPartner[] = _("无法将其他人的宝可梦\n送回盒子。{PAUSE_UNTIL_PRESS}");
