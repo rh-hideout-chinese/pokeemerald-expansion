@@ -693,7 +693,7 @@ struct BattleStruct
     u8 fickleBeamBoosted:1;
     u8 poisonPuppeteerConfusion:1;
     u16 startingStatusTimer;
-    u8 atkCancellerTracker;
+    u8 atkCancelerTracker;
     struct BattleTvMovePoints tvMovePoints;
     struct BattleTv tv;
     u8 AI_monToSwitchIntoId[MAX_BATTLERS_COUNT];
@@ -904,7 +904,7 @@ struct BattleScripting
     u8 specialTrainerBattleType;
     bool8 monCaught;
     s32 savedDmg;
-    u16 savedMoveEffect; // For moves hitting multiple targets.
+    u16 unused_0x2c;
     u16 moveEffect;
     u16 multihitMoveEffect;
     u8 illusionNickHack; // To properly display nick in STRINGID_ENEMYABOUTTOSWITCHPKMN.
@@ -1247,6 +1247,11 @@ static inline bool32 IsBattlerInvalidForSpreadMove(u32 battlerAtk, u32 battlerDe
     return battlerDef == battlerAtk
         || !IsBattlerAlive(battlerDef)
         || (battlerDef == BATTLE_PARTNER(battlerAtk) && (moveTarget == MOVE_TARGET_BOTH));
+}
+
+static inline u32 GetChosenMoveFromPosition(u32 battler)
+{
+    return gBattleMons[battler].moves[gBattleStruct->chosenMovePositions[battler]];
 }
 
 #endif // GUARD_BATTLE_H
