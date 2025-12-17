@@ -356,6 +356,42 @@ SINGLE_BATTLE_TEST("Protect: Multi-hit moves don't hit a protected target and fa
     }
 }
 
+SINGLE_BATTLE_TEST("Protect fails if user moves last")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Speed(5); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(10); }
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_CELEBRATE); MOVE(player, MOVE_PROTECT); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponent);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, player);
+    }
+}
+
+DOUBLE_BATTLE_TEST("Protect fails when the only slower battler is a fainted ally")
+{
+    GIVEN {
+        PLAYER(SPECIES_WOBBUFFET) { Speed(5); }
+        PLAYER(SPECIES_WYNAUT) { HP(1); Speed(1); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(20); }
+        OPPONENT(SPECIES_WYNAUT) { Speed(10); }
+    } WHEN {
+        TURN { MOVE(opponentLeft, MOVE_SCRATCH, target: playerRight); }
+        TURN {
+            MOVE(opponentLeft, MOVE_CELEBRATE);
+            MOVE(opponentRight, MOVE_CELEBRATE);
+            MOVE(playerLeft, MOVE_PROTECT);
+        }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_SCRATCH, opponentLeft);
+        MESSAGE("Wynaut fainted!");
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentLeft);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_CELEBRATE, opponentRight);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_PROTECT, playerLeft);
+    }
+}
+
 DOUBLE_BATTLE_TEST("Protect: Wide Guard protects self and ally from multi-target moves")
 {
     u16 move = MOVE_NONE;
@@ -398,12 +434,15 @@ DOUBLE_BATTLE_TEST("Protect: Wide Guard protects self and ally from multi-target
     }
 }
 
-DOUBLE_BATTLE_TEST("Protect: Wide Guard can not fail on consecutive turns")
+DOUBLE_BATTLE_TEST("Protect: Wide Guard can not fail on consecutive turns (Gen6+)")
 {
-    u8 turns;
+    u32 turns, config, passes;
 
-    PASSES_RANDOMLY(2, 2);
+    PARAMETRIZE { config = GEN_5; passes = 0; }
+    PARAMETRIZE { config = GEN_6; passes = 2; }
+    PASSES_RANDOMLY(passes, 2);
     GIVEN {
+        WITH_CONFIG(CONFIG_WIDE_GUARD, config);
         ASSUME(GetMoveTarget(MOVE_HYPER_VOICE) == MOVE_TARGET_BOTH);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
@@ -431,8 +470,8 @@ DOUBLE_BATTLE_TEST("Protect: Quick Guard protects self and ally from priority mo
     u16 move = MOVE_NONE;
     struct BattlePokemon *targetOpponent = NULL;
 
-    PARAMETRIZE { move = MOVE_SCRATCH; targetOpponent = opponentLeft; }
-    PARAMETRIZE { move = MOVE_SCRATCH; targetOpponent = opponentRight; }
+    PARAMETRIZE { move = MOVE_SCRATCH;      targetOpponent = opponentLeft; }
+    PARAMETRIZE { move = MOVE_SCRATCH;      targetOpponent = opponentRight; }
     PARAMETRIZE { move = MOVE_QUICK_ATTACK; targetOpponent = opponentLeft; }
     PARAMETRIZE { move = MOVE_QUICK_ATTACK; targetOpponent = opponentRight; }
 
@@ -461,12 +500,15 @@ DOUBLE_BATTLE_TEST("Protect: Quick Guard protects self and ally from priority mo
     }
 }
 
-DOUBLE_BATTLE_TEST("Protect: Quick Guard can not fail on consecutive turns")
+DOUBLE_BATTLE_TEST("Protect: Quick Guard can not fail on consecutive turns (Gen6+)")
 {
-    u8 turns;
+    u32 turns, config, passes;
 
-    PASSES_RANDOMLY(2, 2);
+    PARAMETRIZE { config = GEN_5; passes = 0; }
+    PARAMETRIZE { config = GEN_6; passes = 2; }
+    PASSES_RANDOMLY(passes, 2);
     GIVEN {
+        WITH_CONFIG(CONFIG_QUICK_GUARD, config);
         ASSUME(GetMovePriority(MOVE_QUICK_ATTACK) == 1);
         PLAYER(SPECIES_WOBBUFFET);
         PLAYER(SPECIES_WOBBUFFET);
