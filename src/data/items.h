@@ -2307,10 +2307,10 @@ const struct Item gItemsInfo[] =
             .price = 0,
             .importance = 1,
             .pocket = POCKET_KEY_ITEMS,
-        .sortType = ITEM_TYPE_FIELD_USE,
         #else
             .price = (I_PRICE >= GEN_7) ? 1000 : 550,
             .pocket = POCKET_ITEMS,
+            .sortType = ITEM_TYPE_FIELD_USE,
         #endif
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_EscapeRope,
@@ -3067,7 +3067,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = (I_PRICE >= GEN_7) ? 7000: 1000,
             .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_FOSSIL,
+            .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -3090,7 +3090,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = (I_PRICE >= GEN_7) ? 7000: 1000,
             .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_FOSSIL,
+            .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -3113,7 +3113,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = 1000,
             .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_FOSSIL,
+            .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -3133,7 +3133,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = (I_PRICE >= GEN_7) ? 7000: 1000,
             .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_FOSSIL,
+            .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -3153,7 +3153,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = (I_PRICE >= GEN_7) ? 7000: 1000,
             .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_FOSSIL,
+            .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -6201,8 +6201,8 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
         .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
         .iconPic = gItemIcon_Diancite,
@@ -6223,6 +6223,24 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Clefablite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Clefablite,
+    },
+
+    [ITEM_VICTREEBELITE] =
+    {
+        .name = ITEM_NAME("大食花进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让大食花携带后，\n"
+			"在战斗时能超级进\n"
+			"化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
         .iconPic = gItemIcon_QuestionMark, // gItemIcon_Victreebelite,
         .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Victreebelite,
     },
@@ -6234,8 +6252,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让宝石海星携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6251,9 +6269,9 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
-			"让快龙携带后，\n"
-			"在战斗时能超级进\n"
-			"化的超级石。"),
+			"让快龙携带后，在\n"
+			"战斗时能超级进化\n"
+			"的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6360,8 +6378,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让龙头地鼠携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6396,8 +6414,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让头巾混混携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6414,8 +6432,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让麻麻鳗鱼王携带\n"
-			"后，在战斗时能超级进\n"
-			"化的超级石。"),
+			"后，在战斗时能超\n"
+			"级进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6432,8 +6450,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让水晶灯火灵携带\n"
-			"后，在战斗时能超级进\n"
-			"化的超级石。"),
+			"后，在战斗时能超\n"
+			"级进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6450,8 +6468,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让布里卡隆携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6468,8 +6486,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让妖火红狐携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6486,8 +6504,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让甲贺忍蛙携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6558,8 +6576,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让龟足巨铠携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6594,8 +6612,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让摔角鹰人携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6612,8 +6630,8 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = COMPOUND_STRING(
 			"让基格尔德携带后\n"
-			"，在战斗时能超级进\n"
-			"化的超级石。"),
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -9909,7 +9927,6 @@ const struct Item gItemsInfo[] =
 			"携带后，可以治愈\n"
 			"麻痹。"),
         .pocket = POCKET_BERRIES,
-        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -11162,7 +11179,6 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("招式学习器07"),
         .price = 3000,
-
         .description = COMPOUND_STRING(
 			"在5回合内降下冰\n"
 			"雹，非冰属性的宝\n"
@@ -13550,6 +13566,7 @@ const struct Item gItemsInfo[] =
 			"饰。携带后不会因\n"
 			"为对手降低能力。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -13778,7 +13795,6 @@ const struct Item gItemsInfo[] =
 			"让宝可梦太晶化。"),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraOrb,
@@ -13794,6 +13810,7 @@ const struct Item gItemsInfo[] =
 			"在部分美食家中拥\n"
 			"有很高人气。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -14193,7 +14210,7 @@ const struct Item gItemsInfo[] =
 			"以使特定的宝可梦\n"
 			"进化。富含蜜汁。"),
         .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
+	    .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -14211,7 +14228,7 @@ const struct Item gItemsInfo[] =
 			"然破裂，可以使特\n"
 			"定的宝可梦进化。"),
         .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
+	    .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -14229,7 +14246,7 @@ const struct Item gItemsInfo[] =
 			"然破缺，可以使特\n"
 			"定的宝可梦进化。"),
         .pocket = POCKET_ITEMS,
-        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
+	    .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -14410,7 +14427,6 @@ const struct Item gItemsInfo[] =
 			"获得更多太晶碎块\n"
 			"的护符。"),
         .pocket = POCKET_KEY_ITEMS,
-        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_GlimmeringCharm,
@@ -14426,6 +14442,7 @@ const struct Item gItemsInfo[] =
 			"化的神奇金属。由\n"
 			"多层次叠加而成。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
