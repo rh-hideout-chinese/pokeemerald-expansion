@@ -531,55 +531,55 @@ Debug_EventScript_InflictStatus1_Text_Frostbite:
 	.string "冻伤$"
 
 Debug_EventScript_ChangeNature_Text_Hardy:
-	.string "Hardy$"
+	.string "勤奋$"
 Debug_EventScript_ChangeNature_Text_Lonely:
-	.string "Lonely$"
+	.string "怕寂寞$"
 Debug_EventScript_ChangeNature_Text_Brave:
-	.string "Brave$"
+	.string "勇敢$"
 Debug_EventScript_ChangeNature_Text_Adamant:
-	.string "Adamant$"
+	.string "固执$"
 Debug_EventScript_ChangeNature_Text_Naughty:
-	.string "Naughty$"
+	.string "顽皮$"
 Debug_EventScript_ChangeNature_Text_Bold:
-	.string "Bold$"
+	.string "大胆$"
 Debug_EventScript_ChangeNature_Text_Docile:
-	.string "Docile$"
+	.string "坦率$"
 Debug_EventScript_ChangeNature_Text_Relaxed:
-	.string "Relaxed$"
+	.string "悠闲$"
 Debug_EventScript_ChangeNature_Text_Impish:
-	.string "Impish$"
+	.string "淘气$"
 Debug_EventScript_ChangeNature_Text_Lax:
-	.string "Lax$"
+	.string "乐天$"
 Debug_EventScript_ChangeNature_Text_Timid:
-	.string "Timid$"
+	.string "胆小$"
 Debug_EventScript_ChangeNature_Text_Hasty:
-	.string "Hasty$"
+	.string "急躁$"
 Debug_EventScript_ChangeNature_Text_Serious:
-	.string "Serious$"
+	.string "认真$"
 Debug_EventScript_ChangeNature_Text_Jolly:
-	.string "Jolly$"
+	.string "爽朗$"
 Debug_EventScript_ChangeNature_Text_Naive:
-	.string "Naive$"
+	.string "天真$"
 Debug_EventScript_ChangeNature_Text_Modest:
-	.string "Modest$"
+	.string "内敛$"
 Debug_EventScript_ChangeNature_Text_Mild:
-	.string "Mild$"
+	.string "慢吞吞$"
 Debug_EventScript_ChangeNature_Text_Quiet:
-	.string "Quiet$"
+	.string "冷静$"
 Debug_EventScript_ChangeNature_Text_Bashful:
-	.string "Bashful$"
+	.string "害羞$"
 Debug_EventScript_ChangeNature_Text_Rash:
-	.string "Rash$"
+	.string "马虎$"
 Debug_EventScript_ChangeNature_Text_Calm:
-	.string "Calm$"
+	.string "温和$"
 Debug_EventScript_ChangeNature_Text_Gentle:
-	.string "Gentle$"
+	.string "温顺$"
 Debug_EventScript_ChangeNature_Text_Sassy:
-	.string "Sassy$"
+	.string "自大$"
 Debug_EventScript_ChangeNature_Text_Careful:
-	.string "Careful$"
+	.string "慎重$"
 Debug_EventScript_ChangeNature_Text_Quirky:
-	.string "Quirky$"
+	.string "浮躁$"
 
 Debug_EventScript_EWRAMCounters::
 	callnative CheckEWRAMCounters

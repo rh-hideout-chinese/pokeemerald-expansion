@@ -465,12 +465,10 @@ EventScript_EndRockClimb::
 	end
 
 Text_WantToRockClimb:
-    .string "The cliff is steep.\n"
-    .string "Would you like to use Rock Climb?$"
+    .string "岩石表面看起来非常粗糙……\n要使用攀岩吗？$"
 
 Text_MonUsedRockClimb:
-    .string "{STR_VAR_1} used Rock Climb!$"
+    .string "{STR_VAR_1}使出了攀岩！$"
 
 Text_CantRockClimb:
-    .string "The cliff is steep.\n"
-    .string "A Pokémon may be able to climb it.$"
+    .string "岩石表面看起来非常粗糙……\n或许可以用秘传招式攀爬？$"

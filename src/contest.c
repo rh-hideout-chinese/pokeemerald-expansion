@@ -717,7 +717,7 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .name = COMPOUND_STRING("帅气"),
         .condition = COMPOUND_STRING("帅气"),
         .generic = COMPOUND_STRING("帅气"),
-        .negativeTrait = COMPOUND_STRING("害羞"),
+        .negativeTrait = COMPOUND_STRING("扑通扑通"),
         .palette = 13,
     },
 
@@ -726,7 +726,7 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .name = COMPOUND_STRING("美丽"),
         .condition = COMPOUND_STRING("美丽"),
         .generic = COMPOUND_STRING("美丽招式"),
-        .negativeTrait = COMPOUND_STRING("焦虑"),
+        .negativeTrait = COMPOUND_STRING("慌慌张张"),
         .palette = 14,
     },
 
@@ -735,7 +735,7 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .name = COMPOUND_STRING("可爱"),
         .condition = COMPOUND_STRING("可爱"),
         .generic = COMPOUND_STRING("可爱招式"),
-        .negativeTrait = COMPOUND_STRING("懒惰"),
+        .negativeTrait = COMPOUND_STRING("散散漫漫"),
         .palette = 14,
     },
 
@@ -744,7 +744,7 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .name = COMPOUND_STRING("聪明"),
         .condition = COMPOUND_STRING("聪明"),
         .generic = COMPOUND_STRING("聪明招式"),
-        .negativeTrait = COMPOUND_STRING("犹豫"),
+        .negativeTrait = COMPOUND_STRING("犹犹豫豫"),
         .palette = 15,
     },
 
@@ -753,7 +753,7 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .name = COMPOUND_STRING("强壮"),
         .condition = COMPOUND_STRING("强壮"),
         .generic = COMPOUND_STRING("强壮招式"),
-        .negativeTrait = COMPOUND_STRING("害怕"),
+        .negativeTrait = COMPOUND_STRING("战战栗栗"),
         .palette = 13,
     },
 

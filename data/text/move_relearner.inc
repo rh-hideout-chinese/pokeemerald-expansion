@@ -1,55 +1,50 @@
 MoveRelearner_Text_WouldLearnNewMoves:
-	.string "Hi, I'm the Move Relearner.\n"
-	.string "Would you like to learn new moves?$"
+    .string "大家都叫我\n宝可梦招式爱好者！\p宝可梦成长过程中能学会的\n所有招式我都一清二楚。\p要把招式教给你的宝可梦吗？$"
 
 MoveRelearner_Text_LevelUpMoves:
-	.string "Level Up Moves$"
+	.string "升级招式$"
 
 MoveRelearner_Text_EggMoves:
-	.string "Egg Moves$"
+	.string "蛋招式$"
 
 MoveRelearner_Text_TMMoves:
-	.string "TM Moves$"
+	.string "学习器招式$"
 
 MoveRelearner_Text_TutormoveMoves:
-	.string "Tutor Moves$"
+	.string "教授招式$"
 
 MoveRelearner_Text_SeeYa:
-	.string "See ya!$"
+	.string "再见！$"
 
 MoveRelearner_Text_AnythingElse:
-	.string "Is there anything else I may do for you?$"
+	.string "还有其他要做的事吗？$"
 
 MoveRelearner_Text_ChoosePkmn:
-	.string "Please choose your Pokémon.$"
+	.string "要选择哪只宝可梦？$"
 
 MoveRelearner_Text_HaveNoPkmn:
-	.string "You have no Pokémon.$"
+	.string "你没有同行的宝可梦！$"
 
 MoveRelearner_Text_CantTeachMoveToEgg:
-	.string "Sorry…\n"
-	.string "But an Egg can't learn moves.$"
+    .string "嗯……\p蛋应该没法学习招式吧？$"
 
 MoveRelearner_Text_CantTeachMoveToPkmn:
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have any move\n"
-	.string "I can teach that Pokémon.$"
+    .string "抱歉……\p我看来没有能够教给\n这只宝可梦的招式。$"
 
 MoveRelearner_Text_LevelUpMoveLWR::
-	.string "level up move$"
+	.string "升级招式$"
 
 MoveRelearner_Text_EggMoveLWR::
-	.string "egg move$"
+	.string "蛋招式$"
 
 MoveRelearner_Text_TMMoveLWR::
-	.string "TM move$"
+	.string "学习器招式$"
 
 MoveRelearner_Text_TutorMoveLWR::
-	.string "tutor move$"
+	.string "教授招式$"
 
 MoveRelearner_Text_WhichXmoveShouldTeach:
-	.string "Which {STR_VAR_3} should I teach?$"
+    .string "要学习哪个{STR_VAR_3}？$"
 
 MoveRelearner_Text_ThankYouComeAgain:
-	.string "Thank you for using our services.\n"
-	.string "Please come again!$"
+	.string "想让宝可梦学习招式时再过来吧。$"
