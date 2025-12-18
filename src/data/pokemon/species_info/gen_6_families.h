@@ -2173,6 +2173,7 @@ const struct SpeciesInfo gSpeciesInfoGen6[] =
         .backPicYOffset = 2,
         .levelUpLearnset = sFloetteEternalLevelUpLearnset,
         .teachableLearnset = sFloetteEternalTeachableLearnset,
+        .formChangeTable = sFloetteEternalFormChangeTable,
     },
 
 #define FLORGES_MISC_INFO(Form, iconPal)                                        \

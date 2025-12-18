@@ -2157,7 +2157,7 @@ static void UpdateMonData(struct BattleDebugMenu *data)
 
 static const u8 *const sHoldEffectNames[HOLD_EFFECT_COUNT] =
 {
-    [HOLD_EFFECT_NONE]             = COMPOUND_STRING("不眠"),
+    [HOLD_EFFECT_NONE]             = COMPOUND_STRING("？？？"),
     [HOLD_EFFECT_RESTORE_HP]       = COMPOUND_STRING("回复HP"),
     [HOLD_EFFECT_CURE_PAR]         = COMPOUND_STRING("麻痹解除"),
     [HOLD_EFFECT_CURE_SLP]         = COMPOUND_STRING("睡眠解除"),
