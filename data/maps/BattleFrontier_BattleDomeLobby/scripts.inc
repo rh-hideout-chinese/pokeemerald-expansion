@@ -210,10 +210,14 @@ BattleFrontier_BattleDomeLobby_EventScript_NotEnoughValidMons::
 
 BattleFrontier_BattleDomeLobby_EventScript_NotEnoughValidMonsLv50::
 	msgbox BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleDomeLobby_EventScript_EndCancelChallenge
 
 BattleFrontier_BattleDomeLobby_EventScript_NotEnoughValidMonsLvOpen::
 	msgbox BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLvOpen, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleDomeLobby_EventScript_EndCancelChallenge
 
 BattleFrontier_BattleDomeLobby_EventScript_CancelChallengeSaveFailed::
@@ -455,10 +459,13 @@ BattleFrontier_BattleDomeLobby_Text_SelectThreeMons:
     .string "请挑选参加的\n3只宝可梦。$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLvOpen:
-    .string "很抱歉！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只不同种类的\n宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧！$"
+	.string "很抱歉！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只不同种类的\n宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！$"
+
+BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsEnd:
+	.string "请在准备就绪之后，\n再来参加吧！$"
 
 BattleFrontier_BattleDomeLobby_Text_NotEnoughValidMonsLv50:
-    .string "很抱歉！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧！$"
+	.string "很抱歉！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！$"
 
 BattleFrontier_BattleDomeLobby_Text_ShowYouToBattleDome:
     .string "现在我将带您前往\n对战巨蛋。$"

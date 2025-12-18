@@ -531,7 +531,6 @@
     {
       "id": "MAPSEC_AQUA_HIDEOUT_OLD",
       "name": "{AQUA}基地",
-      "name_clone": true,
       "x": 19,
       "y": 3,
       "width": 1,
@@ -698,12 +697,7 @@
       "height": 1
     },
     {
-      "id": "MAPSEC_DYNAMIC",
-      "name": " ",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "id": "MAPSEC_DYNAMIC"
     },
     {
       "id": "MAPSEC_PALLET_TOWN",
@@ -795,17 +789,11 @@
     },
     {
       "id": "MAPSEC_ROUTE_4_POKECENTER",
-      "name": "4号道路",
-      "name_clone": true,
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "name": "ROUTE 4"
     },
     {
       "id": "MAPSEC_ROUTE_10_POKECENTER",
       "name": "10号道路",
-      "name_clone": true,
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1046,7 +1034,6 @@
     {
       "id": "MAPSEC_UNDERGROUND_PATH_2",
       "name": "地下通道",
-      "name_clone": true,
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1063,7 +1050,6 @@
     {
       "id": "MAPSEC_KANTO_VICTORY_ROAD",
       "name": "冠军之路",
-      "name_clone": true,
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1096,7 +1082,6 @@
     {
       "id": "MAPSEC_KANTO_SAFARI_ZONE",
       "name": "狩猎地带",
-      "name_clone": true,
       "x": 0,
       "y": 0,
       "width": 1,
@@ -1441,7 +1426,6 @@
     {
       "id": "MAPSEC_TRAINER_TOWER_2",
       "name": "训练家塔",
-      "name_clone": true,
       "x": 0,
       "y": 0,
       "width": 1,
