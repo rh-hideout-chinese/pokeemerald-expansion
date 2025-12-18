@@ -17,6 +17,12 @@ struct LandmarkList
 
 static const u8 LandmarkName_MagmaHideout[] = _("熔岩队基地"); //Unused
 
+static const struct Landmark Landmark_FlowerShop = {COMPOUND_STRING("花店"), FLAG_LANDMARK_FLOWER_SHOP};
+static const struct Landmark Landmark_PetalburgWoods = {COMPOUND_STRING("橙华森林"), -1};
+static const struct Landmark Landmark_MrBrineysCottage = {COMPOUND_STRING("哈奇老人的小屋"), FLAG_LANDMARK_MR_BRINEY_HOUSE};
+static const struct Landmark Landmark_AbandonedShip = {COMPOUND_STRING("弃船"), FLAG_LANDMARK_ABANDONED_SHIP};
+static const struct Landmark Landmark_SeashoreHouse = {COMPOUND_STRING("大海之家"), FLAG_LANDMARK_SEASHORE_HOUSE};
+static const struct Landmark Landmark_SlateportBeach = {COMPOUND_STRING("凯那海滩"), -1};
 static const struct Landmark Landmark_CyclingRoad = {COMPOUND_STRING("自行车道"), -1};
 static const struct Landmark Landmark_NewMauville = {COMPOUND_STRING("新紫堇"), FLAG_LANDMARK_NEW_MAUVILLE};
 static const struct Landmark Landmark_TrickHouse = {COMPOUND_STRING("戏法屋"), FLAG_LANDMARK_TRICK_HOUSE};

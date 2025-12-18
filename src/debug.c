@@ -666,9 +666,9 @@ static const struct DebugMenuOption sDebugMenu_Actions_Flags[] =
 
 static const u8 *const sDebugMenu_Actions_BagUse_Options[] =
 {
-    COMPOUND_STRING("No Bag: {STR_VAR_1}Inactive"),
-    COMPOUND_STRING("No Bag: {STR_VAR_1}VS Trainers"),
-    COMPOUND_STRING("No Bag: {STR_VAR_1}Active"),
+    COMPOUND_STRING("无法打开包包: {STR_VAR_1}未启用"),
+    COMPOUND_STRING("无法打开包包: {STR_VAR_1}仅对战时"),
+    COMPOUND_STRING("无法打开包包: {STR_VAR_1}启用"),
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Main[] =

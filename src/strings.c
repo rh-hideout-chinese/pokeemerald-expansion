@@ -972,9 +972,9 @@ ALIGNED(4) const u8 gText_FrontierFacilityRoomsCleared[] = _("通过房间：{ST
 ALIGNED(4) const u8 gText_FrontierFacilityKOsStreak[] = _("连续击败：{STR_VAR_2}");
 ALIGNED(4) const u8 gText_FrontierFacilityFloorsCleared[] = _("通过楼层：{STR_VAR_2}");
 ALIGNED(4) const u8 gText_123Dot[][3] = {_("1."), _("2."), _("3.")};
-const u8 gText_FrontierFacilityTotalCaughtSpeciesBanned[] = _(" and {STR_VAR_2} of the POKéMON species\nyou caught are inelegible");
-const u8 gText_FrontierFacilityIncluding[] = _(".\pThese include ");
-const u8 gText_FrontierFacilityAreInelegible[] = _(" are inelegible");
+const u8 gText_FrontierFacilityTotalCaughtSpeciesBanned[] = _("和{STR_VAR_2}种\n您捕捉的宝可梦无法参加");
+const u8 gText_FrontierFacilityIncluding[] = _("！\p其中包括");
+const u8 gText_FrontierFacilityAreInelegible[] = _("无法参加");
 
 const u8 gText_SavingDontTurnOff2[] = _("正在写入记录……\n请勿切断电源。");
 const u8 gText_BlenderMaxSpeedRecord[] = _("树果混合器\n最快纪录！");

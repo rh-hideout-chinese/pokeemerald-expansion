@@ -42,7 +42,7 @@ static void PrintContestPaintingCaption(u8, u8);
 static void VBlankCB_ContestPainting(void);
 static void _InitContestMonPixels(u8 *spriteGfx, u16 *palette, u16 (*destPixels)[64][64]);
 
-const u8 gContestHallPaintingCaption[] = COMPOUND_STRING("{STR_VAR_1}\n{STR_VAR_2}'s {STR_VAR_3}");
+const u8 gContestHallPaintingCaption[] = COMPOUND_STRING("{STR_VAR_1}\n{STR_VAR_2}的{STR_VAR_3}");
 
 static const u16 sPictureFramePalettes[]          = INCBIN_U16("graphics/picture_frame/bg.gbapal");
 static const u32 sPictureFrameTiles_Cool[]        = INCBIN_U32("graphics/picture_frame/cool.4bpp.smol");
@@ -60,20 +60,20 @@ static const u32 sPictureFrameTilemap_HallLobby[] = INCBIN_U32("graphics/picture
 
 static const u8 *const sContestCategoryNames_Unused[] =
 {
-    [CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("COOLNESS"),
-    [CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("BEAUTY"),
-    [CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("CUTENESS"),
-    [CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("SMARTNESS"),
-    [CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("TOUGHNESS"),
+    [CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("帅气"),
+    [CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("美丽"),
+    [CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("可爱"),
+    [CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("聪明"),
+    [CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("强壮"),
 };
 
 static const u8 *const sContestRankNames[] =
 {
-    [CONTEST_RANK_NORMAL] = COMPOUND_STRING("NORMAL RANK"),
-    [CONTEST_RANK_SUPER]  = COMPOUND_STRING("SUPER RANK"),
-    [CONTEST_RANK_HYPER]  = COMPOUND_STRING("HYPER RANK"),
-    [CONTEST_RANK_MASTER] = COMPOUND_STRING("MASTER RANK"),
-    [CONTEST_RANK_LINK]   = COMPOUND_STRING("LINK"),
+    [CONTEST_RANK_NORMAL] = COMPOUND_STRING("普通级"),
+    [CONTEST_RANK_SUPER]  = COMPOUND_STRING("高手级"),
+    [CONTEST_RANK_HYPER]  = COMPOUND_STRING("究极级"),
+    [CONTEST_RANK_MASTER] = COMPOUND_STRING("大师级"),
+    [CONTEST_RANK_LINK]   = COMPOUND_STRING("连接"),
 };
 
 static const struct BgTemplate sBgTemplates[] =

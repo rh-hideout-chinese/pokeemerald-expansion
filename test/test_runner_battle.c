@@ -1028,19 +1028,19 @@ void TestRunner_Battle_RecordSubHit(u32 battlerId, u32 damage, bool32 broke)
 
 static const char *const sBattleActionNames[] =
 {
-    [B_ACTION_USE_MOVE] = "MOVE",
-    [B_ACTION_USE_ITEM] = "USE_ITEM",
-    [B_ACTION_SWITCH] = "SWITCH",
+    [B_ACTION_USE_MOVE] = "招式",
+    [B_ACTION_USE_ITEM] = "道具",
+    [B_ACTION_SWITCH] = "替换",
 };
 
 static const char *const sGimmickIdentifiers[GIMMICKS_COUNT] =
 {
     [GIMMICK_NONE] = "N/A",
-    [GIMMICK_MEGA] = "Mega Evolution",
-    [GIMMICK_ULTRA_BURST] = "Ultra Burst",
-    [GIMMICK_Z_MOVE] = "Z-Move",
-    [GIMMICK_DYNAMAX] = "Dynamax",
-    [GIMMICK_TERA] = "Terastallize",
+    [GIMMICK_MEGA] = "超级进化",
+    [GIMMICK_ULTRA_BURST] = "究极爆发",
+    [GIMMICK_Z_MOVE] = "Z招式",
+    [GIMMICK_DYNAMAX] = "极巨化",
+    [GIMMICK_TERA] = "太晶化",
 };
 
 static u32 CountAiExpectMoves(struct ExpectedAIAction *expectedAction, u32 battlerId, bool32 printLog)

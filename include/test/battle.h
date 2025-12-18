@@ -1192,17 +1192,17 @@ void SendOut(u32 sourceLine, struct BattlePokemon *, u32 partyIndex);
     (B_USE_FROSTBITE ? STATUS_ICON(battler, frostbite: isFrostbite) : STATUS_ICON(battler, freeze: isFrostbite))
 
 #define SWITCH_OUT_MESSAGE(name) ONE_OF {                                         \
-                                     MESSAGE(name ", that's enough! Come back!"); \
-                                     MESSAGE(name ", come back!");                \
-                                     MESSAGE(name ", OK! Come back!");            \
-                                     MESSAGE(name ", good! Come back!");          \
+                                     MESSAGE(name "，好了！\n回来！"); \
+                                     MESSAGE(name "，\n回来！");                \
+                                     MESSAGE(name "，很好！\n回来！");            \
+                                     MESSAGE(name "，很好！\n回来！");          \
                                  }
 
 #define SEND_IN_MESSAGE(name)    ONE_OF {                                                   \
-                                     MESSAGE("Go! " name "!");                              \
-                                     MESSAGE("You're in charge, " name "!");                \
-                                     MESSAGE("Go for it, " name "!");                       \
-                                     MESSAGE("Your opponent's weak! Get 'em, " name "!");   \
+                                     MESSAGE("上吧！" name "!");                              \
+                                     MESSAGE("交给你了！" name "!");                \
+                                     MESSAGE("加油！" name "!");                       \
+                                     MESSAGE("对手变弱了！\n机会来了！" name "!");   \
                                  }
 
 enum QueueGroupType
