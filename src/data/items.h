@@ -616,6 +616,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦回复20H\n"
 			"P。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -635,6 +636,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦回复60H\n"
 			"P。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -654,6 +656,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦回复120\n"
 			"HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -673,6 +676,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦回复所有H\n"
 			"P。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -692,6 +696,7 @@ const struct Item gItemsInfo[] =
 			"有HP并治愈所有\n"
 			"异常状态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_HEAL_AND_CURE_STATUS,
@@ -710,6 +715,7 @@ const struct Item gItemsInfo[] =
 			"的宝可梦复活，并\n"
 			"回复一半HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_REVIVE,
@@ -725,6 +731,7 @@ const struct Item gItemsInfo[] =
         .price = 4000,
         .description = sMaxReviveDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_REVIVE,
@@ -744,6 +751,7 @@ const struct Item gItemsInfo[] =
 			"能让宝可梦回复3\n"
 			"0HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -763,6 +771,7 @@ const struct Item gItemsInfo[] =
 			"。能让宝可梦回复\n"
 			"50HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -782,6 +791,7 @@ const struct Item gItemsInfo[] =
 			"能让宝可梦回复7\n"
 			"0HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -801,6 +811,7 @@ const struct Item gItemsInfo[] =
 			"。能让宝可梦回复\n"
 			"100HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -819,6 +830,7 @@ const struct Item gItemsInfo[] =
 			"让宝可梦回复60\n"
 			"HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -837,6 +849,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦回复120\n"
 			"HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -855,6 +868,7 @@ const struct Item gItemsInfo[] =
 			"治愈宝可梦的所有\n"
 			"异常状态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -873,6 +887,7 @@ const struct Item gItemsInfo[] =
 			"让1只昏厥的宝可\n"
 			"梦回复所有HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_REVIVE,
@@ -891,6 +906,7 @@ const struct Item gItemsInfo[] =
 			"愈宝可梦的中毒状\n"
 			"态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -909,6 +925,7 @@ const struct Item gItemsInfo[] =
 			"愈宝可梦的麻痹状\n"
 			"态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -927,6 +944,7 @@ const struct Item gItemsInfo[] =
 			"愈宝可梦的灼伤状\n"
 			"态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -945,6 +963,7 @@ const struct Item gItemsInfo[] =
 			"愈宝可梦的冰冻状\n"
 			"态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -963,6 +982,7 @@ const struct Item gItemsInfo[] =
 			"愈宝可梦的睡眠状\n"
 			"态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -978,6 +998,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 400 : 600,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -997,6 +1018,7 @@ const struct Item gItemsInfo[] =
 			"其中1个招式回复\n"
 			"10PP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
         .type = ITEM_USE_PARTY_MENU_MOVES,
         .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
@@ -1016,6 +1038,7 @@ const struct Item gItemsInfo[] =
 			"其中1个招式回复\n"
 			"所有PP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
         .type = ITEM_USE_PARTY_MENU_MOVES,
         .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
@@ -1035,6 +1058,7 @@ const struct Item gItemsInfo[] =
 			"4个招式各回复1\n"
 			"0PP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
@@ -1054,6 +1078,7 @@ const struct Item gItemsInfo[] =
 			"4个招式回复所有\n"
 			"PP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PP_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PPRecovery,
         .battleUsage = EFFECT_ITEM_RESTORE_PP,
@@ -1074,6 +1099,7 @@ const struct Item gItemsInfo[] =
 			"。能让宝可梦回复\n"
 			"20HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -1092,6 +1118,7 @@ const struct Item gItemsInfo[] =
 			"部宝可梦回复所有\n"
 			"HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_SacredAsh,
         .effect = gItemEffect_SacredAsh,
@@ -1110,6 +1137,7 @@ const struct Item gItemsInfo[] =
 			"。能让宝可梦回复\n"
 			"20HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -1125,6 +1153,7 @@ const struct Item gItemsInfo[] =
         .price = 8000,
         .description = sMaxReviveDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_REVIVE,
@@ -1142,6 +1171,7 @@ const struct Item gItemsInfo[] =
         .price = 250,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -1157,6 +1187,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 300,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -1175,6 +1206,7 @@ const struct Item gItemsInfo[] =
 			"能治愈宝可梦的所\n"
 			"有异常状态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -1190,6 +1222,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -1205,6 +1238,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 100,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -1220,6 +1254,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -1235,6 +1270,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 350 : 200,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -1250,6 +1286,7 @@ const struct Item gItemsInfo[] =
         .price = 350,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -1270,6 +1307,7 @@ const struct Item gItemsInfo[] =
 			"。能提高宝可梦的\n"
 			"HP的基础点数。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_HPUp,
@@ -1287,6 +1325,7 @@ const struct Item gItemsInfo[] =
 			"。能提高宝可梦的\n"
 			"攻击的基础点数。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Protein,
@@ -1304,6 +1343,7 @@ const struct Item gItemsInfo[] =
 			"。能提高宝可梦的\n"
 			"防御的基础点数。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Iron,
@@ -1321,6 +1361,7 @@ const struct Item gItemsInfo[] =
 			"。能提高宝可梦的\n"
 			"特攻的基础点数。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Calcium,
@@ -1338,6 +1379,7 @@ const struct Item gItemsInfo[] =
 			"。能提高宝可梦的\n"
 			"特防的基础点数。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Zinc,
@@ -1355,6 +1397,7 @@ const struct Item gItemsInfo[] =
 			"。能提高宝可梦的\n"
 			"速度的基础点数。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_Carbos,
@@ -1372,6 +1415,7 @@ const struct Item gItemsInfo[] =
 			"其中1个招式PP\n"
 			"最大值少量提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PPUp,
         .effect = gItemEffect_PPUp,
@@ -1389,6 +1433,7 @@ const struct Item gItemsInfo[] =
 			"其中1个招式PP\n"
 			"最大值提至最高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_DRINK,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_PPUp,
         .effect = gItemEffect_PPMax,
@@ -1405,6 +1450,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
         .description = sHealthFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_HpFeather,
@@ -1419,6 +1465,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
         .description = sMuscleFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_AtkFeather,
@@ -1433,6 +1480,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
         .description = sResistFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_DefFeather,
@@ -1447,6 +1495,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
         .description = sGeniusFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpatkFeather,
@@ -1461,6 +1510,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
         .description = sCleverFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpdefFeather,
@@ -1475,6 +1525,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 300 : 3000,
         .description = sSwiftFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_FEATHER,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpeedFeather,
@@ -1495,6 +1546,7 @@ const struct Item gItemsInfo[] =
 			"的宝可梦特性变为\n"
 			"另一种的胶囊。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_AbilityCapsule,
         .iconPic = gItemIcon_AbilityCapsule,
@@ -1511,6 +1563,7 @@ const struct Item gItemsInfo[] =
 			"性的膏药。其特性\n"
 			"会变为稀有特性。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_AbilityPatch,
         .iconPic = gItemIcon_AbilityPatch,
@@ -1528,6 +1581,7 @@ const struct Item gItemsInfo[] =
 			"击会易于提高，而\n"
 			"防御则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_LONELY,
@@ -1545,6 +1599,7 @@ const struct Item gItemsInfo[] =
 			"击会易于提高，而\n"
 			"特攻则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_ADAMANT,
@@ -1562,6 +1617,7 @@ const struct Item gItemsInfo[] =
 			"击容易提高，而特\n"
 			"防则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_NAUGHTY,
@@ -1579,6 +1635,7 @@ const struct Item gItemsInfo[] =
 			"击容易提高，而速\n"
 			"度则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_BRAVE,
@@ -1596,6 +1653,7 @@ const struct Item gItemsInfo[] =
 			"御容易提高，而攻\n"
 			"击则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_BOLD,
@@ -1613,6 +1671,7 @@ const struct Item gItemsInfo[] =
 			"御容易提高，而特\n"
 			"攻则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_IMPISH,
@@ -1630,6 +1689,7 @@ const struct Item gItemsInfo[] =
 			"御容易提高，而特\n"
 			"防则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_LAX,
@@ -1647,6 +1707,7 @@ const struct Item gItemsInfo[] =
 			"御容易提高，而速\n"
 			"度则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_RELAXED,
@@ -1664,6 +1725,7 @@ const struct Item gItemsInfo[] =
 			"攻容易提高，而攻\n"
 			"击则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_MODEST,
@@ -1681,6 +1743,7 @@ const struct Item gItemsInfo[] =
 			"攻容易提高，而防\n"
 			"御则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_MILD,
@@ -1698,6 +1761,7 @@ const struct Item gItemsInfo[] =
 			"攻容易提高，而特\n"
 			"防则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_RASH,
@@ -1715,6 +1779,7 @@ const struct Item gItemsInfo[] =
 			"攻容易提高，而速\n"
 			"度则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_QUIET,
@@ -1732,6 +1797,7 @@ const struct Item gItemsInfo[] =
 			"防容易提高，而攻\n"
 			"击则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_CALM,
@@ -1749,6 +1815,7 @@ const struct Item gItemsInfo[] =
 			"防容易提高，而防\n"
 			"御则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_GENTLE,
@@ -1766,6 +1833,7 @@ const struct Item gItemsInfo[] =
 			"防容易提高，而特\n"
 			"攻则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_CAREFUL,
@@ -1783,6 +1851,7 @@ const struct Item gItemsInfo[] =
 			"防容易提高，而速\n"
 			"度则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_SASSY,
@@ -1800,6 +1869,7 @@ const struct Item gItemsInfo[] =
 			"度容易提高，而攻\n"
 			"击则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_TIMID,
@@ -1817,6 +1887,7 @@ const struct Item gItemsInfo[] =
 			"度容易提高，而防\n"
 			"御则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_HASTY,
@@ -1834,6 +1905,7 @@ const struct Item gItemsInfo[] =
 			"度容易提高，而特\n"
 			"攻则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_JOLLY,
@@ -1851,6 +1923,7 @@ const struct Item gItemsInfo[] =
 			"度容易提高，而特\n"
 			"防则难以提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_NAIVE,
@@ -1867,6 +1940,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦闻了后，能\n"
 			"力全方位提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NATURE_MINT,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Mint,
         .secondaryId = NATURE_SERIOUS,
@@ -1886,6 +1960,7 @@ const struct Item gItemsInfo[] =
 			"给宝可梦后，等级\n"
 			"会提高1。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
@@ -1904,6 +1979,7 @@ const struct Item gItemsInfo[] =
 			"给宝可梦后，可增\n"
 			"加一点点经验值。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
@@ -1922,6 +1998,7 @@ const struct Item gItemsInfo[] =
 			"给宝可梦后，可增\n"
 			"加少许经验值。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
@@ -1940,6 +2017,7 @@ const struct Item gItemsInfo[] =
 			"给宝可梦后，可增\n"
 			"加经验值。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
@@ -1958,6 +2036,7 @@ const struct Item gItemsInfo[] =
 			"给宝可梦后，可增\n"
 			"加许多经验值。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
@@ -1976,6 +2055,7 @@ const struct Item gItemsInfo[] =
 			"给宝可梦后，可增\n"
 			"加大量经验值。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_RareCandy,
         .effect = gItemEffect_RareCandy,
@@ -1993,6 +2073,7 @@ const struct Item gItemsInfo[] =
 			"给宝可梦后，极巨\n"
 			"化等级能提高1。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_LEVEL_UP_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_DynamaxCandy,
         .flingPower = 30,
@@ -2012,6 +2093,7 @@ const struct Item gItemsInfo[] =
 			"眠状态。"),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FLUTE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -2031,6 +2113,7 @@ const struct Item gItemsInfo[] =
 			"乱状态。"),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FLUTE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -2050,6 +2133,7 @@ const struct Item gItemsInfo[] =
 			"迷状态。"),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FLUTE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -2072,6 +2156,7 @@ const struct Item gItemsInfo[] =
 			"强大的宝可梦。"),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FLUTE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_BlackWhiteFlute,
         .flingPower = 30,
@@ -2090,6 +2175,7 @@ const struct Item gItemsInfo[] =
 			"弱小的宝可梦。"),
         .notConsumed = TRUE,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FLUTE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_BlackWhiteFlute,
         .flingPower = 30,
@@ -2109,6 +2195,7 @@ const struct Item gItemsInfo[] =
 			"，弱小的野生宝可\n"
 			"梦将不会出现。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
@@ -2126,6 +2213,7 @@ const struct Item gItemsInfo[] =
 			"将不会出现。效果\n"
 			"比除虫喷雾持久。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
@@ -2143,6 +2231,7 @@ const struct Item gItemsInfo[] =
 			"将不会出现。效果\n"
 			"比白银喷雾持久。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Repel,
         .flingPower = 30,
@@ -2160,6 +2249,7 @@ const struct Item gItemsInfo[] =
 			"时间内，稀有宝可\n"
 			"梦会更容易出现。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Lure,
         .secondaryId = 0,
@@ -2178,6 +2268,7 @@ const struct Item gItemsInfo[] =
 			"会更易出现。效果\n"
 			"比引虫香水持久。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Lure,
         .secondaryId = 0,
@@ -2196,6 +2287,7 @@ const struct Item gItemsInfo[] =
 			"会更易出现。效果\n"
 			"比白银香水持久。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Lure,
         .secondaryId = 0,
@@ -2215,6 +2307,7 @@ const struct Item gItemsInfo[] =
             .price = 0,
             .importance = 1,
             .pocket = POCKET_KEY_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
         #else
             .price = (I_PRICE >= GEN_7) ? 1000 : 550,
             .pocket = POCKET_ITEMS,
@@ -2237,6 +2330,7 @@ const struct Item gItemsInfo[] =
 			"大幅提高战斗中宝\n"
 			"可梦攻击的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
@@ -2255,6 +2349,7 @@ const struct Item gItemsInfo[] =
 			"大幅提高战斗中宝\n"
 			"可梦防御的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
@@ -2273,6 +2368,7 @@ const struct Item gItemsInfo[] =
 			"大幅提高战斗中宝\n"
 			"可梦特攻的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
@@ -2291,6 +2387,7 @@ const struct Item gItemsInfo[] =
 			"大幅提高战斗中宝\n"
 			"可梦特防的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
@@ -2309,6 +2406,7 @@ const struct Item gItemsInfo[] =
 			"大幅提高战斗中宝\n"
 			"可梦速度的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
@@ -2327,6 +2425,7 @@ const struct Item gItemsInfo[] =
 			"大幅提高战斗中宝\n"
 			"可梦命中的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
@@ -2345,6 +2444,7 @@ const struct Item gItemsInfo[] =
 			"大幅提高。只能使\n"
 			"用1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_SET_FOCUS_ENERGY,
@@ -2363,6 +2463,7 @@ const struct Item gItemsInfo[] =
 			"内不让我方能力降\n"
 			"低的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_X_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_SET_MIST,
@@ -2378,6 +2479,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE == GEN_7) ? 100 : 300),
         .description = sPokeDollDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_BATTLE_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_ESCAPE,
@@ -2392,6 +2494,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 100 : 1000,
         .description = sPokeDollDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_BATTLE_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_ESCAPE,
@@ -2406,6 +2509,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 100 : 1000,
         .description = sPokeDollDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_BATTLE_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_ESCAPE,
@@ -2423,6 +2527,7 @@ const struct Item gItemsInfo[] =
 			"蘑菇，能改变宝可\n"
 			"梦极巨化的样子。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_BATTLE_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_ALL_STATS,
@@ -2442,6 +2547,7 @@ const struct Item gItemsInfo[] =
 			"有些人收到它会很\n"
 			"高兴。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2458,6 +2564,7 @@ const struct Item gItemsInfo[] =
 			"有些人收到它会很\n"
 			"高兴。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2474,6 +2581,7 @@ const struct Item gItemsInfo[] =
 			"制成的珠子。可以\n"
 			"在商店高价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2490,6 +2598,7 @@ const struct Item gItemsInfo[] =
 			"光的大珠子。可以\n"
 			"在商店高价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 130,
@@ -2506,6 +2615,7 @@ const struct Item gItemsInfo[] =
 			"一些爱好者中有着\n"
 			"相当高的人气。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2519,6 +2629,7 @@ const struct Item gItemsInfo[] =
         .price = 5000 * TREASURE_FACTOR,
         .description = sBigMushroomDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2532,6 +2643,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 15000 * TREASURE_FACTOR: 12500,
         .description = sBigMushroomDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2548,6 +2660,7 @@ const struct Item gItemsInfo[] =
 			"小的珍珠。可以在\n"
 			"商店低价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2564,6 +2677,7 @@ const struct Item gItemsInfo[] =
 			"大颗的珍珠。可以\n"
 			"在商店高价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2580,6 +2694,7 @@ const struct Item gItemsInfo[] =
 			"大颗的珍珠。可以\n"
 			"在商店高价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2596,6 +2711,7 @@ const struct Item gItemsInfo[] =
 			"红色沙子。可以在\n"
 			"商店低价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2612,6 +2728,7 @@ const struct Item gItemsInfo[] =
 			"的宝石碎片。可以\n"
 			"在商店高价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2628,6 +2745,7 @@ const struct Item gItemsInfo[] =
 			"地表的碎片。可以\n"
 			"在商店高价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2643,6 +2761,7 @@ const struct Item gItemsInfo[] =
 			"在浅滩洞穴这地方\n"
 			"找到的海盐。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2658,6 +2777,7 @@ const struct Item gItemsInfo[] =
 			"在浅滩洞穴这地方\n"
 			"找到的贝壳。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2671,6 +2791,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .description = sShardsDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2684,6 +2805,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .description = sShardsDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2697,6 +2819,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .description = sShardsDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2710,6 +2833,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 1000 : 200,
         .description = sShardsDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2726,6 +2850,7 @@ const struct Item gItemsInfo[] =
 			"的珍稀鳞片。有些\n"
 			"人收到会很高兴。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2742,6 +2867,7 @@ const struct Item gItemsInfo[] =
 			"芬芳的花蜜。可在\n"
 			"商店里廉价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_Honey,
         .flingPower = 30,
@@ -2758,6 +2884,7 @@ const struct Item gItemsInfo[] =
 			"重的骨头。可以在\n"
 			"商店高价出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -2774,6 +2901,7 @@ const struct Item gItemsInfo[] =
 			"石头。有时能从石\n"
 			"头里听到声音。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -2790,6 +2918,7 @@ const struct Item gItemsInfo[] =
 			"有任何效果，极其\n"
 			"普通的羽毛。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 20,
@@ -2805,6 +2934,7 @@ const struct Item gItemsInfo[] =
 			"约3000年前的\n"
 			"文明使用的铜币。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2820,6 +2950,7 @@ const struct Item gItemsInfo[] =
 			"约3000年前的\n"
 			"文明使用的银币。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2835,6 +2966,7 @@ const struct Item gItemsInfo[] =
 			"约3000年前的\n"
 			"文明使用的金币。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2850,6 +2982,7 @@ const struct Item gItemsInfo[] =
 			"约3000年前的\n"
 			"文明制造的壶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2865,6 +2998,7 @@ const struct Item gItemsInfo[] =
 			"约3000年前的\n"
 			"文明制造的手镯。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2880,6 +3014,7 @@ const struct Item gItemsInfo[] =
 			"约3000年前的\n"
 			"文明制造的石像。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2895,6 +3030,7 @@ const struct Item gItemsInfo[] =
 			"约3000年前的\n"
 			"文明制造的王冠。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2911,6 +3047,7 @@ const struct Item gItemsInfo[] =
 			"被称为守护神宝可\n"
 			"梦而制作的摆设。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_RELIC,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -2930,6 +3067,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = (I_PRICE >= GEN_7) ? 7000: 1000,
             .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -2952,6 +3090,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = (I_PRICE >= GEN_7) ? 7000: 1000,
             .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -2974,6 +3113,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = 1000,
             .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -2993,6 +3133,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = (I_PRICE >= GEN_7) ? 7000: 1000,
             .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -3012,6 +3153,7 @@ const struct Item gItemsInfo[] =
         #if I_KEY_FOSSILS >= GEN_4
             .price = (I_PRICE >= GEN_7) ? 7000: 1000,
             .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         #else
             .price = 0,
             .importance = 1,
@@ -3033,6 +3175,7 @@ const struct Item gItemsInfo[] =
 			"可梦的化石。好像\n"
 			"是领饰的一部分。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3049,6 +3192,7 @@ const struct Item gItemsInfo[] =
 			"可梦的化石。好像\n"
 			"是头部的一部分。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3065,6 +3209,7 @@ const struct Item gItemsInfo[] =
 			"可梦的化石。好像\n"
 			"是后背的一部分。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3081,6 +3226,7 @@ const struct Item gItemsInfo[] =
 			"先的化石。好像是\n"
 			"翅膀的一部分。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3097,6 +3243,7 @@ const struct Item gItemsInfo[] =
 			"可梦的化石。好像\n"
 			"是巨颚的一部分。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3113,6 +3260,7 @@ const struct Item gItemsInfo[] =
 			"梦的化石。好像是\n"
 			"头鳍的一部分。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3129,6 +3277,7 @@ const struct Item gItemsInfo[] =
 			"石残片。本来面目\n"
 			"至今是未解之谜。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3142,6 +3291,7 @@ const struct Item gItemsInfo[] =
         .price = 5000,
         .description = sFossilizedFishDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3158,6 +3308,7 @@ const struct Item gItemsInfo[] =
 			"石残片。本来面目\n"
 			"至今是未解之谜。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3171,6 +3322,7 @@ const struct Item gItemsInfo[] =
         .price = 5000,
         .description = sFossilizedFishDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3193,6 +3345,7 @@ const struct Item gItemsInfo[] =
         .description = sGenericMulchDesc,
 #endif
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_GROWTH_MULCH),
@@ -3214,6 +3367,7 @@ const struct Item gItemsInfo[] =
         .description = sGenericMulchDesc,
 #endif
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_DAMP_MULCH),
@@ -3235,6 +3389,7 @@ const struct Item gItemsInfo[] =
         .description = sGenericMulchDesc,
 #endif
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_STABLE_MULCH),
@@ -3256,6 +3411,7 @@ const struct Item gItemsInfo[] =
         .description = sGenericMulchDesc,
 #endif
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_GOOEY_MULCH),
@@ -3277,6 +3433,7 @@ const struct Item gItemsInfo[] =
         .description = sGenericMulchDesc,
 #endif
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_RICH_MULCH),
@@ -3298,6 +3455,7 @@ const struct Item gItemsInfo[] =
         .description = sGenericMulchDesc,
 #endif
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_SURPRISE_MULCH),
@@ -3319,6 +3477,7 @@ const struct Item gItemsInfo[] =
         .description = sGenericMulchDesc,
 #endif
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_BOOST_MULCH),
@@ -3340,6 +3499,7 @@ const struct Item gItemsInfo[] =
         .description = sGenericMulchDesc,
 #endif
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = ITEM_TO_MULCH(ITEM_AMAZE_MULCH),
@@ -3358,6 +3518,7 @@ const struct Item gItemsInfo[] =
 			"红色的球果。有种\n"
 			"刺鼻的气味。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_RedApricorn,
@@ -3372,6 +3533,7 @@ const struct Item gItemsInfo[] =
 			"蓝色的球果。略有\n"
 			"一股青草的香味。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_BlueApricorn,
@@ -3386,6 +3548,7 @@ const struct Item gItemsInfo[] =
 			"黄色的球果。有种\n"
 			"清爽的香味。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_YellowApricorn,
@@ -3401,6 +3564,7 @@ const struct Item gItemsInfo[] =
 			"焦香的香味，非常\n"
 			"神奇。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_GreenApricorn,
@@ -3416,6 +3580,7 @@ const struct Item gItemsInfo[] =
 			"种甜甜的，好闻的\n"
 			"香味。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_PinkApricorn,
@@ -3430,6 +3595,7 @@ const struct Item gItemsInfo[] =
 			"白色的球果。没有\n"
 			"任何气味。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_WhiteApricorn,
@@ -3444,6 +3610,7 @@ const struct Item gItemsInfo[] =
 			"黑色的球果。有种\n"
 			"无法形容的气味。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_BlackApricorn,
@@ -3459,6 +3626,7 @@ const struct Item gItemsInfo[] =
 			"穴里会吸引极巨化\n"
 			"宝可梦。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse, // Todo
         .flingPower = 50,
@@ -3475,6 +3643,7 @@ const struct Item gItemsInfo[] =
 			"可以用来制作某种\n"
 			"宝可梦的饰品。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -3490,6 +3659,7 @@ const struct Item gItemsInfo[] =
 			"能够在铠岛找出的\n"
 			"珍稀石头。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -3505,6 +3675,7 @@ const struct Item gItemsInfo[] =
 			"能够在王冠雪原找\n"
 			"出的珍稀石头。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -3523,6 +3694,7 @@ const struct Item gItemsInfo[] =
 			"，可以让宝可梦携\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_ORANGE_MAIL),
@@ -3539,6 +3711,7 @@ const struct Item gItemsInfo[] =
 			"，可以让宝可梦携\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_HARBOR_MAIL),
@@ -3555,6 +3728,7 @@ const struct Item gItemsInfo[] =
 			"，可以让宝可梦携\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_GLITTER_MAIL),
@@ -3571,6 +3745,7 @@ const struct Item gItemsInfo[] =
 			"，可以让宝可梦携\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_MECH_MAIL),
@@ -3587,6 +3762,7 @@ const struct Item gItemsInfo[] =
 			"，可以让宝可梦携\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_WOOD_MAIL),
@@ -3603,6 +3779,7 @@ const struct Item gItemsInfo[] =
 			"，可以让宝可梦携\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_WAVE_MAIL),
@@ -3616,6 +3793,7 @@ const struct Item gItemsInfo[] =
         .price = 50,
         .description = sBeadMailDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_BEAD_MAIL),
@@ -3632,6 +3810,7 @@ const struct Item gItemsInfo[] =
 			"，可以让宝可梦携\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_SHADOW_MAIL),
@@ -3648,6 +3827,7 @@ const struct Item gItemsInfo[] =
 			"，可以让宝可梦携\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_TROPIC_MAIL),
@@ -3661,6 +3841,7 @@ const struct Item gItemsInfo[] =
         .price = 50,
         .description = sBeadMailDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_DREAM_MAIL),
@@ -3677,6 +3858,7 @@ const struct Item gItemsInfo[] =
 			"可以让宝可梦携带\n"
 			"。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_FAB_MAIL),
@@ -3693,6 +3875,7 @@ const struct Item gItemsInfo[] =
 			"信纸，可以让宝可\n"
 			"梦携带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MAIL,
         .type = ITEM_USE_MAIL,
         .fieldUseFunc = ItemUseOutOfBattle_Mail,
         .secondaryId = ITEM_TO_MAIL(ITEM_RETRO_MAIL),
@@ -3708,6 +3891,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3722,6 +3906,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3736,6 +3921,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3750,6 +3936,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3764,6 +3951,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3778,6 +3966,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3792,6 +3981,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3806,6 +3996,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3820,6 +4011,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3834,6 +4026,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_STONE,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3851,6 +4044,7 @@ const struct Item gItemsInfo[] =
 			"以使特定的宝可梦\n"
 			"进化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3868,6 +4062,7 @@ const struct Item gItemsInfo[] =
 			"以使特定的宝可梦\n"
 			"进化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3885,6 +4080,7 @@ const struct Item gItemsInfo[] =
 			"有破裂，可以使特\n"
 			"定的宝可梦进化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3902,6 +4098,7 @@ const struct Item gItemsInfo[] =
 			"有缺陷，可以使特\n"
 			"定的宝可梦进化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3919,6 +4116,7 @@ const struct Item gItemsInfo[] =
 			"手环。伽勒尔呆呆\n"
 			"兽戴上会很开心。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3936,6 +4134,7 @@ const struct Item gItemsInfo[] =
 			"花冠。伽勒尔呆呆\n"
 			"兽戴上会很开心。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -3955,6 +4154,7 @@ const struct Item gItemsInfo[] =
 			"。龙属性宝可梦有\n"
 			"时会携带它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -3973,6 +4173,7 @@ const struct Item gItemsInfo[] =
 			"息的透明机器。西\n"
 			"尔佛公司制造。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -3990,6 +4191,7 @@ const struct Item gItemsInfo[] =
 			"硬而且沉重。某种\n"
 			"宝可梦很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4007,6 +4209,7 @@ const struct Item gItemsInfo[] =
 			"量的箱子。某种宝\n"
 			"可梦很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4024,6 +4227,7 @@ const struct Item gItemsInfo[] =
 			"量的箱子。某种宝\n"
 			"可梦很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4041,6 +4245,7 @@ const struct Item gItemsInfo[] =
 			"息的透明机器。制\n"
 			"造者不明。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4058,6 +4263,7 @@ const struct Item gItemsInfo[] =
 			"力的布。某种宝可\n"
 			"梦很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4075,6 +4281,7 @@ const struct Item gItemsInfo[] =
 			"化的神奇鳞片。散\n"
 			"发着虹色光辉。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4092,6 +4299,7 @@ const struct Item gItemsInfo[] =
 			"甜的奶油。某种宝\n"
 			"可梦很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4109,6 +4317,7 @@ const struct Item gItemsInfo[] =
 			"料的袋子。某种宝\n"
 			"可梦很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4126,6 +4335,7 @@ const struct Item gItemsInfo[] =
 			"化的神奇石头。像\n"
 			"珠子一般圆润。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -4143,6 +4353,7 @@ const struct Item gItemsInfo[] =
 			"果。小仙奶非常喜\n"
 			"欢。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -4159,6 +4370,7 @@ const struct Item gItemsInfo[] =
 			"果。小仙奶非常喜\n"
 			"欢。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -4175,6 +4387,7 @@ const struct Item gItemsInfo[] =
 			"果。小仙奶非常喜\n"
 			"欢。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -4191,6 +4404,7 @@ const struct Item gItemsInfo[] =
 			"糖果。小仙奶非常\n"
 			"喜欢。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -4207,6 +4421,7 @@ const struct Item gItemsInfo[] =
 			"果。小仙奶非常喜\n"
 			"欢。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -4223,6 +4438,7 @@ const struct Item gItemsInfo[] =
 			"果。小仙奶非常喜\n"
 			"欢。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -4239,6 +4455,7 @@ const struct Item gItemsInfo[] =
 			"糖果。小仙奶非常\n"
 			"喜欢。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -4256,6 +4473,7 @@ const struct Item gItemsInfo[] =
 			"此期间不会进化的\n"
 			"神奇石头。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -4272,6 +4490,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 0,
         .description = sNectarDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NECTAR,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
         .flingPower = 10,
@@ -4286,6 +4505,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 0,
         .description = sNectarDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NECTAR,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
         .flingPower = 10,
@@ -4300,6 +4520,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 0,
         .description = sNectarDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NECTAR,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
         .flingPower = 10,
@@ -4314,6 +4535,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 0,
         .description = sNectarDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_NECTAR,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange_ConsumedOnUse,
         .flingPower = 10,
@@ -4334,6 +4556,7 @@ const struct Item gItemsInfo[] =
 			"带后，火招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
@@ -4353,6 +4576,7 @@ const struct Item gItemsInfo[] =
 			"带后，水招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
@@ -4372,6 +4596,7 @@ const struct Item gItemsInfo[] =
 			"带后，电招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
@@ -4391,6 +4616,7 @@ const struct Item gItemsInfo[] =
 			"带后，草招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
@@ -4410,6 +4636,7 @@ const struct Item gItemsInfo[] =
 			"带后，冰招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
@@ -4429,6 +4656,7 @@ const struct Item gItemsInfo[] =
 			"携带后，格斗招式\n"
 			"威力会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
@@ -4448,6 +4676,7 @@ const struct Item gItemsInfo[] =
 			"带后，毒招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
@@ -4467,6 +4696,7 @@ const struct Item gItemsInfo[] =
 			"携带后，地面招式\n"
 			"威力会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
@@ -4486,6 +4716,7 @@ const struct Item gItemsInfo[] =
 			"携带后，飞行招式\n"
 			"威力会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
@@ -4505,6 +4736,7 @@ const struct Item gItemsInfo[] =
 			"携带后，超能招式\n"
 			"威力会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
@@ -4524,6 +4756,7 @@ const struct Item gItemsInfo[] =
 			"带后，虫招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
@@ -4543,6 +4776,7 @@ const struct Item gItemsInfo[] =
 			"携带后，岩石招式\n"
 			"威力会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
@@ -4562,6 +4796,7 @@ const struct Item gItemsInfo[] =
 			"携带后，幽灵招式\n"
 			"威力会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
@@ -4581,6 +4816,7 @@ const struct Item gItemsInfo[] =
 			"带后，龙招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
@@ -4600,6 +4836,7 @@ const struct Item gItemsInfo[] =
 			"带后，恶招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
@@ -4619,6 +4856,7 @@ const struct Item gItemsInfo[] =
 			"带后，钢招式威力\n"
 			"会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
@@ -4638,6 +4876,7 @@ const struct Item gItemsInfo[] =
 			"携带后，妖精招式\n"
 			"威力会增强。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_PLATE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
@@ -4658,6 +4897,7 @@ const struct Item gItemsInfo[] =
 			"特的某招式就会变\n"
 			"为水属性。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
@@ -4676,6 +4916,7 @@ const struct Item gItemsInfo[] =
 			"特的某招式就会变\n"
 			"为电属性。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
@@ -4694,6 +4935,7 @@ const struct Item gItemsInfo[] =
 			"特的某招式就会变\n"
 			"为火属性。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
@@ -4712,6 +4954,7 @@ const struct Item gItemsInfo[] =
 			"特的某招式就会变\n"
 			"为冰属性。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_DRIVE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
@@ -4733,6 +4976,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
@@ -4752,6 +4996,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
@@ -4771,6 +5016,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
@@ -4790,6 +5036,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
@@ -4809,6 +5056,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
@@ -4828,6 +5076,7 @@ const struct Item gItemsInfo[] =
 			"储碟。某宝可梦携\n"
 			"带后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
@@ -4847,6 +5096,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
@@ -4866,6 +5116,7 @@ const struct Item gItemsInfo[] =
 			"储碟。某宝可梦携\n"
 			"带后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
@@ -4885,6 +5136,7 @@ const struct Item gItemsInfo[] =
 			"储碟。某宝可梦携\n"
 			"带后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
@@ -4904,6 +5156,7 @@ const struct Item gItemsInfo[] =
 			"储碟。某宝可梦携\n"
 			"带后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
@@ -4923,6 +5176,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
@@ -4942,6 +5196,7 @@ const struct Item gItemsInfo[] =
 			"储碟。某宝可梦携\n"
 			"带后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
@@ -4961,6 +5216,7 @@ const struct Item gItemsInfo[] =
 			"储碟。某宝可梦携\n"
 			"带后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
@@ -4980,6 +5236,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
@@ -4999,6 +5256,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
@@ -5018,6 +5276,7 @@ const struct Item gItemsInfo[] =
 			"碟。某宝可梦携带\n"
 			"后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
@@ -5037,6 +5296,7 @@ const struct Item gItemsInfo[] =
 			"储碟。某宝可梦携\n"
 			"带后属性会变化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEMORY,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
@@ -5054,6 +5314,7 @@ const struct Item gItemsInfo[] =
 			"的剑。而现在早已\n"
 			"变得锈迹斑斑。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_RustedSword,
@@ -5069,6 +5330,7 @@ const struct Item gItemsInfo[] =
 			"的盾。而现在早已\n"
 			"变得锈迹斑斑。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_RustedShield,
@@ -5087,6 +5349,7 @@ const struct Item gItemsInfo[] =
 			"宝珠。据说和丰缘\n"
 			"传说渊源颇深。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_RedOrb,
@@ -5103,6 +5366,7 @@ const struct Item gItemsInfo[] =
 			"宝珠。据说和丰缘\n"
 			"传说渊源颇深。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_BlueOrb,
@@ -5121,6 +5385,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5135,6 +5400,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sCharizarditeDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5149,6 +5415,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sCharizarditeDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5166,6 +5433,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5183,6 +5451,7 @@ const struct Item gItemsInfo[] =
 			"战斗时能超级进化\n"
 			"的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5200,6 +5469,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5217,6 +5487,7 @@ const struct Item gItemsInfo[] =
 			"战斗时能超级进化\n"
 			"的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5234,6 +5505,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5251,6 +5523,7 @@ const struct Item gItemsInfo[] =
 			"战斗时能超级进化\n"
 			"的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5268,6 +5541,7 @@ const struct Item gItemsInfo[] =
 			"战斗时能超级进化\n"
 			"的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5285,6 +5559,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5302,6 +5577,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5319,6 +5595,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5333,6 +5610,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sMewtwoniteDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5347,6 +5625,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
         .description = sMewtwoniteDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5364,6 +5643,7 @@ const struct Item gItemsInfo[] =
 			"斗时就能超级进化\n"
 			"的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5381,6 +5661,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5398,6 +5679,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5415,6 +5697,7 @@ const struct Item gItemsInfo[] =
 			"后，在战斗时能超\n"
 			"级进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5432,6 +5715,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5449,6 +5733,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5466,6 +5751,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5483,6 +5769,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5500,6 +5787,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5517,6 +5805,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5534,6 +5823,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5551,6 +5841,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5568,6 +5859,7 @@ const struct Item gItemsInfo[] =
 			"后，在战斗时能超\n"
 			"级进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5585,6 +5877,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5602,6 +5895,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5619,6 +5913,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5636,6 +5931,7 @@ const struct Item gItemsInfo[] =
 			"战斗时能超级进化\n"
 			"的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5653,6 +5949,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5670,6 +5967,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5687,6 +5985,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5704,6 +6003,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5721,6 +6021,7 @@ const struct Item gItemsInfo[] =
 			"战斗时能超级进化\n"
 			"的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5738,6 +6039,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5755,6 +6057,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5772,6 +6075,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5789,6 +6093,7 @@ const struct Item gItemsInfo[] =
 			"战斗时能超级进化\n"
 			"的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5806,6 +6111,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5823,6 +6129,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5840,6 +6147,7 @@ const struct Item gItemsInfo[] =
 			"在战斗时能超级进\n"
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5857,6 +6165,7 @@ const struct Item gItemsInfo[] =
 			"，在战斗时能超级\n"
 			"进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5874,6 +6183,7 @@ const struct Item gItemsInfo[] =
 			"后，在战斗时能超\n"
 			"级进化的超级石。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -5892,10 +6202,461 @@ const struct Item gItemsInfo[] =
 			"化的超级石。"),
         .pocket = POCKET_ITEMS,
         .type = ITEM_USE_BAG_MENU,
+        .sortType = ITEM_TYPE_MEGA_STONE,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
         .iconPic = gItemIcon_Diancite,
         .iconPalette = gItemIconPalette_Diancite,
+    },
+
+    [ITEM_CLEFABLITE] =
+    {
+        .name = ITEM_NAME("Clefablite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Diancie to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Victreebelite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Victreebelite,
+    },
+
+    [ITEM_STARMINITE] =
+    {
+        .name = ITEM_NAME("Starminite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Starmie to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Starminite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Starminite,
+    },
+
+    [ITEM_DRAGONINITE] =
+    {
+        .name = ITEM_NAME("Dragoninite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Dragonite to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Dragoninite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Dragoninite,
+    },
+
+    [ITEM_MEGANIUMITE] =
+    {
+        .name = ITEM_NAME("Meganiumite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Meganium to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Meganiumite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Meganiumite,
+    },
+
+    [ITEM_FERALIGITE] =
+    {
+        .name = ITEM_NAME("Feraligite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Feraligatr to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Feraligite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Feraligite,
+    },
+
+    [ITEM_SKARMORITE] =
+    {
+        .name = ITEM_NAME("Skarmorite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Skarmory to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Skarmorite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Skarmorite,
+    },
+
+    [ITEM_FROSLASSITE] =
+    {
+        .name = ITEM_NAME("Froslassite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Froslass to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Froslassite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Froslassite,
+    },
+
+    [ITEM_EMBOARITE] =
+    {
+        .name = ITEM_NAME("Emboarite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Emboar to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Emboarite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Emboarite,
+    },
+
+    [ITEM_EXCADRITE] =
+    {
+        .name = ITEM_NAME("Excadrite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Excadrill to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Excadrite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Excadrite,
+    },
+
+    [ITEM_SCOLIPITE] =
+    {
+        .name = ITEM_NAME("Scolipite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Scolipede to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Scolipite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Scolipite,
+    },
+
+    [ITEM_SCRAFTINITE] =
+    {
+        .name = ITEM_NAME("Scraftinite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Scrafty to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Scraftinite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Scraftinite,
+    },
+
+    [ITEM_EELEKTROSSITE] =
+    {
+        .name = ITEM_NAME("Eelektrossite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Eelektross to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Eelektrossite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Eelektrossite,
+    },
+
+    [ITEM_CHANDELURITE] =
+    {
+        .name = ITEM_NAME("Chandelurite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Chandelure to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Chandelurite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Chandelurite,
+    },
+
+    [ITEM_CHESNAUGHTITE] =
+    {
+        .name = ITEM_NAME("Chesnaughtite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Chesnaught to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Chesnaughtite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Chesnaughtite,
+    },
+
+    [ITEM_DELPHOXITE] =
+    {
+        .name = ITEM_NAME("Delphoxite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Delphox to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Delphoxite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Delphoxite,
+    },
+
+    [ITEM_GRENINJITE] =
+    {
+        .name = ITEM_NAME("Greninjite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Greninja to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Greninjite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Greninjite,
+    },
+
+    [ITEM_PYROARITE] =
+    {
+        .name = ITEM_NAME("Pyroarite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Pyroar to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Pyroarite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Pyroarite,
+    },
+
+    [ITEM_FLOETTITE] =
+    {
+        .name = ITEM_NAME("Floettite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Floette to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Floettite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Floettite,
+    },
+
+    [ITEM_MALAMARITE] =
+    {
+        .name = ITEM_NAME("Malamarite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Malamar to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Malamarite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Malamarite,
+    },
+
+    [ITEM_BARBARACITE] =
+    {
+        .name = ITEM_NAME("Barbaracite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Barbaracle to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Barbaracite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Barbaracite,
+    },
+
+    [ITEM_DRAGALGITE] =
+    {
+        .name = ITEM_NAME("Dragalgite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Dragalge to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Dragalgite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Dragalgite,
+    },
+
+    [ITEM_HAWLUCHANITE] =
+    {
+        .name = ITEM_NAME("Hawluchanite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Hawlucha to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Hawluchanite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Hawluchanite,
+    },
+
+    [ITEM_ZYGARDITE] =
+    {
+        .name = ITEM_NAME("Zygardite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Zygarde to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Zygardite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Zygardite,
+    },
+
+    [ITEM_DRAMPANITE] =
+    {
+        .name = ITEM_NAME("Drampanite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Drampa to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Drampanite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Drampanite,
+    },
+
+    [ITEM_FALINKSITE] =
+    {
+        .name = ITEM_NAME("Falinksite"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+            "This stone enables\n"
+            "Falinks to Mega\n"
+            "Evolve in battle."),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Falinksite,
+        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Falinksite,
     },
 
 // Gems
@@ -5911,6 +6672,7 @@ const struct Item gItemsInfo[] =
 			"携带后，一般招式\n"
 			"威力会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_NORMAL,
@@ -5929,6 +6691,7 @@ const struct Item gItemsInfo[] =
 			"带后，火招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
@@ -5947,6 +6710,7 @@ const struct Item gItemsInfo[] =
 			"带后，水招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
@@ -5965,6 +6729,7 @@ const struct Item gItemsInfo[] =
 			"带后，电招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
@@ -5983,6 +6748,7 @@ const struct Item gItemsInfo[] =
 			"带后，草招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
@@ -6001,6 +6767,7 @@ const struct Item gItemsInfo[] =
 			"带后，冰招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
@@ -6019,6 +6786,7 @@ const struct Item gItemsInfo[] =
 			"携带后，格斗招式\n"
 			"威力会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
@@ -6037,6 +6805,7 @@ const struct Item gItemsInfo[] =
 			"带后，毒招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
@@ -6055,6 +6824,7 @@ const struct Item gItemsInfo[] =
 			"携带后，地面招式\n"
 			"威力会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
@@ -6073,6 +6843,7 @@ const struct Item gItemsInfo[] =
 			"携带后，飞行招式\n"
 			"威力会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
@@ -6091,6 +6862,7 @@ const struct Item gItemsInfo[] =
 			"携带后，超能招式\n"
 			"威力会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
@@ -6109,6 +6881,7 @@ const struct Item gItemsInfo[] =
 			"带后，虫招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
@@ -6127,6 +6900,7 @@ const struct Item gItemsInfo[] =
 			"携带后，岩石招式\n"
 			"威力会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
@@ -6145,6 +6919,7 @@ const struct Item gItemsInfo[] =
 			"携带后，幽灵招式\n"
 			"威力会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
@@ -6163,6 +6938,7 @@ const struct Item gItemsInfo[] =
 			"带后，龙招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
@@ -6181,6 +6957,7 @@ const struct Item gItemsInfo[] =
 			"带后，恶招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
@@ -6199,6 +6976,7 @@ const struct Item gItemsInfo[] =
 			"带后，钢招式威力\n"
 			"会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
@@ -6217,6 +6995,7 @@ const struct Item gItemsInfo[] =
 			"携带后，妖精招式\n"
 			"威力会增强1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_GEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
@@ -6236,6 +7015,7 @@ const struct Item gItemsInfo[] =
 			"式升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_NORMAL,
@@ -6253,6 +7033,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
@@ -6270,6 +7051,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
@@ -6287,6 +7069,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
@@ -6304,6 +7087,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
@@ -6321,6 +7105,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
@@ -6338,6 +7123,7 @@ const struct Item gItemsInfo[] =
 			"式升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
@@ -6355,6 +7141,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
@@ -6372,6 +7159,7 @@ const struct Item gItemsInfo[] =
 			"式升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
@@ -6389,6 +7177,7 @@ const struct Item gItemsInfo[] =
 			"式升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
@@ -6406,6 +7195,7 @@ const struct Item gItemsInfo[] =
 			"式升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
@@ -6423,6 +7213,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
@@ -6440,6 +7231,7 @@ const struct Item gItemsInfo[] =
 			"式升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
@@ -6457,6 +7249,7 @@ const struct Item gItemsInfo[] =
 			"式升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
@@ -6474,6 +7267,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
@@ -6491,6 +7285,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
@@ -6508,6 +7303,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_STEEL,
@@ -6525,6 +7321,7 @@ const struct Item gItemsInfo[] =
 			"式升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
@@ -6542,6 +7339,7 @@ const struct Item gItemsInfo[] =
 			"攻击升级成Z招式\n"
 			"的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6559,6 +7357,7 @@ const struct Item gItemsInfo[] =
 			"级成Z招式的Z结\n"
 			"晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6576,6 +7375,7 @@ const struct Item gItemsInfo[] =
 			"冲击升级成Z招式\n"
 			"的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6593,6 +7393,7 @@ const struct Item gItemsInfo[] =
 			"念升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6610,6 +7411,7 @@ const struct Item gItemsInfo[] =
 			"影升级成Z招式的\n"
 			"Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6627,6 +7429,7 @@ const struct Item gItemsInfo[] =
 			"DD金勾臂升级成\n"
 			"Z招式的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6644,6 +7447,7 @@ const struct Item gItemsInfo[] =
 			"影的咏叹调升级成\n"
 			"Z招式的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6661,6 +7465,7 @@ const struct Item gItemsInfo[] =
 			"石攻击升级成Z招\n"
 			"式的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6678,6 +7483,7 @@ const struct Item gItemsInfo[] =
 			"升级成Z招式的Z\n"
 			"结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6695,6 +7501,7 @@ const struct Item gItemsInfo[] =
 			"鳞片噪音升级成Z\n"
 			"招式的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6712,6 +7519,7 @@ const struct Item gItemsInfo[] =
 			"之怒升级成Z招式\n"
 			"的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  //signature z move
@@ -6729,6 +7537,7 @@ const struct Item gItemsInfo[] =
 			"流星闪冲升级成Z\n"
 			"招式的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6746,6 +7555,7 @@ const struct Item gItemsInfo[] =
 			"影之光升级成Z招\n"
 			"式的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6763,6 +7573,7 @@ const struct Item gItemsInfo[] =
 			"偷盗升级成Z招式\n"
 			"的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6780,6 +7591,7 @@ const struct Item gItemsInfo[] =
 			"十万伏特升级成Z\n"
 			"招式的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6797,6 +7609,7 @@ const struct Item gItemsInfo[] =
 			"的十万伏特升级成\n"
 			"Z招式的Z结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255,  // signature z move
@@ -6814,6 +7627,7 @@ const struct Item gItemsInfo[] =
 			"洛兹玛变成崭新样\n"
 			"子的结晶。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_Z_CRYSTAL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = 255, //signature z move
@@ -6833,6 +7647,7 @@ const struct Item gItemsInfo[] =
 			"攻击和特攻提高的\n"
 			"神奇之球。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -6850,6 +7665,7 @@ const struct Item gItemsInfo[] =
 			"招式会变得容易击\n"
 			"中要害的大葱。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -6867,6 +7683,7 @@ const struct Item gItemsInfo[] =
 			"嘎啦携带后，攻击\n"
 			"就会提高的骨头。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 90,
@@ -6884,6 +7701,7 @@ const struct Item gItemsInfo[] =
 			"招式会变得容易击\n"
 			"中要害的拳套。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 40,
@@ -6901,6 +7719,7 @@ const struct Item gItemsInfo[] =
 			"防御就会提高的神\n"
 			"奇粉末。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -6918,6 +7737,7 @@ const struct Item gItemsInfo[] =
 			"速度就会提高的神\n"
 			"奇粉末。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -6935,6 +7755,7 @@ const struct Item gItemsInfo[] =
 			"特防就会提高的鳞\n"
 			"片。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -6953,6 +7774,7 @@ const struct Item gItemsInfo[] =
 			"特攻就会提高的牙\n"
 			"齿。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -6972,6 +7794,7 @@ const struct Item gItemsInfo[] =
 			"能和龙招式威力提\n"
 			"高的神奇珠子。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -6990,6 +7813,7 @@ const struct Item gItemsInfo[] =
 			"话，龙和钢招式威\n"
 			"力就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -7008,6 +7832,7 @@ const struct Item gItemsInfo[] =
 			"话，龙和水招式威\n"
 			"力就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -7026,6 +7851,7 @@ const struct Item gItemsInfo[] =
 			"话，龙和幽灵招式\n"
 			"威力就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -7043,6 +7869,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 20,
         .description = sSeaIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
@@ -7062,6 +7889,7 @@ const struct Item gItemsInfo[] =
 			"会变得不容易命中\n"
 			"。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7077,6 +7905,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 20,
         .description = sOddIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
@@ -7093,6 +7922,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 20,
         .description = sRockIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
@@ -7109,6 +7939,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 5,
         .description = sFullIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7124,6 +7955,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 20,
         .description = sSeaIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
@@ -7140,6 +7972,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 20,
         .description = sRoseIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
@@ -7155,6 +7988,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_DOUBLE_PRIZE,
         .description = sLuckIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7169,6 +8003,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_REPEL,
         .description = sPureIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_INCENSE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7187,6 +8022,7 @@ const struct Item gItemsInfo[] =
 			"大赛的话会比平时\n"
 			"更加帅气。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7203,6 +8039,7 @@ const struct Item gItemsInfo[] =
 			"大赛的话会比平时\n"
 			"更加美丽。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7219,6 +8056,7 @@ const struct Item gItemsInfo[] =
 			"大赛的话会比平时\n"
 			"更加可爱。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7235,6 +8073,7 @@ const struct Item gItemsInfo[] =
 			"大赛的话会比平时\n"
 			"更加聪明。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7251,6 +8090,7 @@ const struct Item gItemsInfo[] =
 			"大赛的话会比平时\n"
 			"更加强壮。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_CONTEST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7270,6 +8110,7 @@ const struct Item gItemsInfo[] =
 			"降低，但会比平时\n"
 			"更容易成长。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -7288,6 +8129,7 @@ const struct Item gItemsInfo[] =
 			"降低，但HP会比\n"
 			"平时成长得更高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_HP,
@@ -7307,6 +8149,7 @@ const struct Item gItemsInfo[] =
 			"降低，但攻击会比\n"
 			"平时成长得更高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_ATK,
@@ -7326,6 +8169,7 @@ const struct Item gItemsInfo[] =
 			"降低，但防御会比\n"
 			"平时成长得更高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_DEF,
@@ -7345,6 +8189,7 @@ const struct Item gItemsInfo[] =
 			"降低，但特攻会比\n"
 			"平时成长得更高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_SPATK,
@@ -7364,6 +8209,7 @@ const struct Item gItemsInfo[] =
 			"降低，但特防会比\n"
 			"平时成长得更高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_SPDEF,
@@ -7383,6 +8229,7 @@ const struct Item gItemsInfo[] =
 			"降低，但速度会比\n"
 			"平时成长得更高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EV_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = STAT_SPEED,
@@ -7404,6 +8251,7 @@ const struct Item gItemsInfo[] =
 			"携带后，一般招式\n"
 			"威力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_NORMAL,
@@ -7423,6 +8271,7 @@ const struct Item gItemsInfo[] =
 			"带后，火招式威力\n"
 			"会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIRE,
@@ -7442,6 +8291,7 @@ const struct Item gItemsInfo[] =
 			"携带后，水招式威\n"
 			"力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_WATER,
@@ -7461,6 +8311,7 @@ const struct Item gItemsInfo[] =
 			"后，电招式威力会\n"
 			"提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ELECTRIC,
@@ -7475,11 +8326,9 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING(
-			"孕育生命的种子。\n"
-			"携带后，草招式威\n"
-			"力会提高。"),
+        .description = sRoseIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GRASS,
@@ -7499,6 +8348,7 @@ const struct Item gItemsInfo[] =
 			"携带后，冰招式威\n"
 			"力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ICE,
@@ -7518,6 +8368,7 @@ const struct Item gItemsInfo[] =
 			"。携带后，格斗招\n"
 			"式威力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FIGHTING,
@@ -7537,6 +8388,7 @@ const struct Item gItemsInfo[] =
 			"后，毒招式威力会\n"
 			"提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_POISON,
@@ -7556,6 +8408,7 @@ const struct Item gItemsInfo[] =
 			"携带后，地面招式\n"
 			"威力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GROUND,
@@ -7575,6 +8428,7 @@ const struct Item gItemsInfo[] =
 			"携带后，飞行招式\n"
 			"威力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FLYING,
@@ -7589,11 +8443,9 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING(
-			"注入了念力的汤匙\n"
-			"。携带后，超能力\n"
-			"招式威力会提高。"),
+        .description = sOddIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_PSYCHIC,
@@ -7613,6 +8465,7 @@ const struct Item gItemsInfo[] =
 			"粉末。携带后，虫\n"
 			"招式威力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_BUG,
@@ -7627,11 +8480,9 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
-        .description = COMPOUND_STRING(
-			"绝对不会裂开的石\n"
-			"头。携带后，岩石\n"
-			"招式威力会提高。"),
+        .description = sRockIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_ROCK,
@@ -7651,6 +8502,7 @@ const struct Item gItemsInfo[] =
 			"携带后，幽灵招式\n"
 			"威力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_GHOST,
@@ -7670,6 +8522,7 @@ const struct Item gItemsInfo[] =
 			"携带后，龙招式威\n"
 			"力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DRAGON,
@@ -7689,6 +8542,7 @@ const struct Item gItemsInfo[] =
 			"镜。携带后，恶招\n"
 			"式威力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_DARK,
@@ -7708,6 +8562,7 @@ const struct Item gItemsInfo[] =
 			"带后，钢招式威力\n"
 			"会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -7729,6 +8584,7 @@ const struct Item gItemsInfo[] =
 			"携带后攻击提升但\n"
 			"只能用相同招式。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7746,6 +8602,7 @@ const struct Item gItemsInfo[] =
 			"携带后特攻提升但\n"
 			"只能用相同招式。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7763,6 +8620,7 @@ const struct Item gItemsInfo[] =
 			"携带后速度提升但\n"
 			"只能用相同招式。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7782,6 +8640,7 @@ const struct Item gItemsInfo[] =
 			"宝珠。携带后在战\n"
 			"斗时会灼伤。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7799,6 +8658,7 @@ const struct Item gItemsInfo[] =
 			"珠。携带后在战斗\n"
 			"时会中剧毒。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7818,6 +8678,7 @@ const struct Item gItemsInfo[] =
 			"雨后持续时间就会\n"
 			"更长。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -7835,6 +8696,7 @@ const struct Item gItemsInfo[] =
 			"晴天后持续时间就\n"
 			"会更长。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -7852,6 +8714,7 @@ const struct Item gItemsInfo[] =
 			"暴后持续时间就会\n"
 			"更长。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7869,6 +8732,7 @@ const struct Item gItemsInfo[] =
 			"雹后持续时间就会\n"
 			"更长。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 40,
@@ -7882,13 +8746,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("电气种子"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
-        .holdEffect = HOLD_EFFECT_SEEDS,
+        .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_ELECTRIC_TERRAIN,
         .description = COMPOUND_STRING(
 			"携带后，在电气场\n"
 			"地上使用，防御就\n"
 			"会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7900,13 +8765,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("精神种子"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
-        .holdEffect = HOLD_EFFECT_SEEDS,
+        .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_PSYCHIC_TERRAIN,
         .description = COMPOUND_STRING(
 			"携带后，在精神场\n"
 			"地上使用，特防就\n"
 			"会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7918,13 +8784,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("薄雾种子"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
-        .holdEffect = HOLD_EFFECT_SEEDS,
+        .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_MISTY_TERRAIN,
         .description = COMPOUND_STRING(
 			"携带后，在薄雾场\n"
 			"地上使用，特防就\n"
 			"会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7936,13 +8803,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("青草种子"),
         .price = (I_PRICE >= GEN_9) ? 20000 : 4000,
-        .holdEffect = HOLD_EFFECT_SEEDS,
+        .holdEffect = HOLD_EFFECT_TERRAIN_SEED,
         .holdEffectParam = HOLD_EFFECT_PARAM_GRASSY_TERRAIN,
         .description = COMPOUND_STRING(
 			"携带后，在青草场\n"
 			"地上使用，防御就\n"
 			"会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -7963,6 +8831,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦受到水招式\n"
 			"，特攻就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7981,6 +8850,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦受到电招式\n"
 			"，攻击就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -7999,6 +8869,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦受到水招式\n"
 			"，特防就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8017,6 +8888,7 @@ const struct Item gItemsInfo[] =
 			"宝可梦受到冰属性\n"
 			"，攻击就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8037,6 +8909,7 @@ const struct Item gItemsInfo[] =
 			"式变得不易命中的\n"
 			"闪闪发光的粉末。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8054,6 +8927,7 @@ const struct Item gItemsInfo[] =
 			"降低时，仅能回到\n"
 			"之前的状态1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8071,6 +8945,7 @@ const struct Item gItemsInfo[] =
 			"的所有宝可梦获得\n"
 			"经验值的装置。"),
         .pocket = I_EXP_SHARE_ITEM >= GEN_6 ? POCKET_KEY_ITEMS : POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_ExpShare,
         .flingPower = 30,
@@ -8089,6 +8964,7 @@ const struct Item gItemsInfo[] =
 			"。携带后，有时能\n"
 			"先一步行动。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8106,6 +8982,7 @@ const struct Item gItemsInfo[] =
 			"携带宝可梦会变得\n"
 			"容易亲密。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8123,6 +9000,7 @@ const struct Item gItemsInfo[] =
 			"自由使出招式时，\n"
 			"仅会回复1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8138,6 +9016,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -8153,6 +9032,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_DOUBLE_PRIZE,
         .description = sLuckIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8167,6 +9047,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_REPEL,
         .description = sPureIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8184,6 +9065,7 @@ const struct Item gItemsInfo[] =
 			"生宝可梦的战斗中\n"
 			"绝对可以逃走。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8202,6 +9084,7 @@ const struct Item gItemsInfo[] =
 			"致命招式有时也能\n"
 			"以1HP撑过去。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8219,6 +9102,7 @@ const struct Item gItemsInfo[] =
 			"携带后获得的经验\n"
 			"值会少量增加。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8236,6 +9120,7 @@ const struct Item gItemsInfo[] =
 			"。携带后会变得容\n"
 			"易击中要害。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8254,6 +9139,7 @@ const struct Item gItemsInfo[] =
 			"HP会在战斗期间\n"
 			"缓缓回复。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8272,6 +9158,7 @@ const struct Item gItemsInfo[] =
 			"伤害时，能回复少\n"
 			"量HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8290,6 +9177,7 @@ const struct Item gItemsInfo[] =
 			"中率就会少量提高\n"
 			"的镜片。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8308,6 +9196,7 @@ const struct Item gItemsInfo[] =
 			"的威力就会少量提\n"
 			"高的头带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8326,6 +9215,7 @@ const struct Item gItemsInfo[] =
 			"的威力就会少量提\n"
 			"高的眼镜。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8345,6 +9235,7 @@ const struct Item gItemsInfo[] =
 			"佳时的招式威力就\n"
 			"会少量提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8362,6 +9253,7 @@ const struct Item gItemsInfo[] =
 			"或反射壁时，效果\n"
 			"会持续得更长。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8379,6 +9271,7 @@ const struct Item gItemsInfo[] =
 			"攻击时HP减少，\n"
 			"但威力会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8396,6 +9289,7 @@ const struct Item gItemsInfo[] =
 			"次机会直接使出需\n"
 			"要蓄力的招式。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8413,6 +9307,7 @@ const struct Item gItemsInfo[] =
 			"命伤，也能以1H\n"
 			"P撑过去1次。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8431,6 +9326,7 @@ const struct Item gItemsInfo[] =
 			"手行动迟缓时，招\n"
 			"式会容易命中。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8449,6 +9345,7 @@ const struct Item gItemsInfo[] =
 			"相同招式时，威力\n"
 			"就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8467,6 +9364,7 @@ const struct Item gItemsInfo[] =
 			"会被地面招式击中\n"
 			"。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 130,
@@ -8481,6 +9379,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_LAGGING_TAIL,
         .description = sFullIncenseDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8498,6 +9397,7 @@ const struct Item gItemsInfo[] =
 			"迷时能让对手也着\n"
 			"迷的红色细线。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8515,6 +9415,7 @@ const struct Item gItemsInfo[] =
 			"缓回HP。其他属\n"
 			"性HP则会减少。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8532,6 +9433,7 @@ const struct Item gItemsInfo[] =
 			"等招式的回合数会\n"
 			"增加。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 90,
@@ -8549,6 +9451,7 @@ const struct Item gItemsInfo[] =
 			"会受伤。有时也会\n"
 			"附到触碰对手上。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8566,6 +9469,7 @@ const struct Item gItemsInfo[] =
 			"携带宝可梦必定可\n"
 			"以换下。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8584,6 +9488,7 @@ const struct Item gItemsInfo[] =
 			"式能更多地回复自\n"
 			"己的HP。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8601,6 +9506,7 @@ const struct Item gItemsInfo[] =
 			"后，招式会变得容\n"
 			"易击中要害。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -8617,6 +9523,7 @@ const struct Item gItemsInfo[] =
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = EVO_HELD_ITEM_TYPE,
         .fieldUseFunc = EVO_HELD_ITEM_FIELD_FUNC,
         .effect = gItemEffect_EvoItem,
@@ -8636,6 +9543,7 @@ const struct Item gItemsInfo[] =
 			"的宝可梦的防御和\n"
 			"特防就会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 40,
@@ -8653,6 +9561,7 @@ const struct Item gItemsInfo[] =
 			"带后，宝可梦的体\n"
 			"重会变轻。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8671,6 +9580,7 @@ const struct Item gItemsInfo[] =
 			"击招式攻击时，能\n"
 			"给予对手伤害。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -8689,6 +9599,7 @@ const struct Item gItemsInfo[] =
 			"浮在空中。受到攻\n"
 			"击就会破裂。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8707,6 +9618,7 @@ const struct Item gItemsInfo[] =
 			"招式的对手退场的\n"
 			"卡片。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8725,6 +9637,7 @@ const struct Item gItemsInfo[] =
 			"的招式现在能够击\n"
 			"中自己。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -8742,6 +9655,7 @@ const struct Item gItemsInfo[] =
 			"的威力会变强的束\n"
 			"带。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8760,6 +9674,7 @@ const struct Item gItemsInfo[] =
 			"到招式攻击，就能\n"
 			"换下脱战。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8778,6 +9693,7 @@ const struct Item gItemsInfo[] =
 			"击和特攻就会大幅\n"
 			"提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8796,6 +9712,7 @@ const struct Item gItemsInfo[] =
 			"提高，但会无法使\n"
 			"出变化招式。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8813,6 +9730,7 @@ const struct Item gItemsInfo[] =
 			"粉末招式效果的护\n"
 			"目镜。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8829,6 +9747,7 @@ const struct Item gItemsInfo[] =
 			"携带后，在受到威\n"
 			"吓时速度会提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8846,6 +9765,7 @@ const struct Item gItemsInfo[] =
 			"时，持续时间会比\n"
 			"平时更长。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -8863,6 +9783,7 @@ const struct Item gItemsInfo[] =
 			"对手时本应受到的\n"
 			"效果。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8880,6 +9801,7 @@ const struct Item gItemsInfo[] =
 			"式时，特攻会提高\n"
 			"。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -8897,6 +9819,7 @@ const struct Item gItemsInfo[] =
 			"时，同行宝可梦就\n"
 			"会自动替换上场。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 50,
@@ -8913,6 +9836,7 @@ const struct Item gItemsInfo[] =
 			"不受脚下陷阱等的\n"
 			"影响。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8930,6 +9854,7 @@ const struct Item gItemsInfo[] =
 			"而落空时，速度会\n"
 			"大幅提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
@@ -8947,6 +9872,7 @@ const struct Item gItemsInfo[] =
 			"间使用时，速度会\n"
 			"下降。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -8964,6 +9890,7 @@ const struct Item gItemsInfo[] =
 			"不受各种天气的影\n"
 			"响。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -8982,6 +9909,7 @@ const struct Item gItemsInfo[] =
 			"携带后，可以治愈\n"
 			"麻痹。"),
         .pocket = POCKET_BERRIES,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -10159,7 +11087,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FOCUS_PUNCH,
     },
 
     [ITEM_TM_DRAGON_CLAW] =
@@ -10173,7 +11100,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_DRAGON_CLAW,
     },
 
     [ITEM_TM_WATER_PULSE] =
@@ -10188,7 +11114,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_WATER_PULSE,
     },
 
     [ITEM_TM_CALM_MIND] =
@@ -10203,7 +11128,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_CALM_MIND,
     },
 
     [ITEM_TM_ROAR] =
@@ -10218,7 +11142,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_ROAR,
     },
 
     [ITEM_TM_TOXIC] =
@@ -10233,7 +11156,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_TOXIC,
     },
 
     [ITEM_TM_HAIL] =
@@ -10255,7 +11177,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_HAIL,
     },
 
     [ITEM_TM_BULK_UP] =
@@ -10270,7 +11191,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_BULK_UP,
     },
 
     [ITEM_TM_BULLET_SEED] =
@@ -10285,7 +11205,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_BULLET_SEED,
     },
 
     [ITEM_TM_HIDDEN_POWER] =
@@ -10300,7 +11219,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_HIDDEN_POWER,
     },
 
     [ITEM_TM_SUNNY_DAY] =
@@ -10315,7 +11233,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SUNNY_DAY,
     },
 
     [ITEM_TM_TAUNT] =
@@ -10330,7 +11247,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_TAUNT,
     },
 
     [ITEM_TM_ICE_BEAM] =
@@ -10345,7 +11261,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_ICE_BEAM,
     },
 
     [ITEM_TM_BLIZZARD] =
@@ -10360,7 +11275,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_BLIZZARD,
     },
 
     [ITEM_TM_HYPER_BEAM] =
@@ -10375,7 +11289,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_HYPER_BEAM,
     },
 
     [ITEM_TM_LIGHT_SCREEN] =
@@ -10390,7 +11303,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_LIGHT_SCREEN,
     },
 
     [ITEM_TM_PROTECT] =
@@ -10405,7 +11317,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_PROTECT,
     },
 
     [ITEM_TM_RAIN_DANCE] =
@@ -10420,7 +11331,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_RAIN_DANCE,
     },
 
     [ITEM_TM_GIGA_DRAIN] =
@@ -10435,7 +11345,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_GIGA_DRAIN,
     },
 
     [ITEM_TM_SAFEGUARD] =
@@ -10450,7 +11359,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SAFEGUARD,
     },
 
     [ITEM_TM_FRUSTRATION] =
@@ -10465,7 +11373,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FRUSTRATION,
     },
 
     [ITEM_TM_SOLAR_BEAM] =
@@ -10480,7 +11387,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SOLAR_BEAM,
     },
 
     [ITEM_TM_IRON_TAIL] =
@@ -10495,7 +11401,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_IRON_TAIL,
     },
 
     [ITEM_TM_THUNDERBOLT] =
@@ -10510,7 +11415,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_THUNDERBOLT,
     },
 
     [ITEM_TM_THUNDER] =
@@ -10525,7 +11429,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_THUNDER,
     },
 
     [ITEM_TM_EARTHQUAKE] =
@@ -10540,7 +11443,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_EARTHQUAKE,
     },
 
     [ITEM_TM_RETURN] =
@@ -10555,7 +11457,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_RETURN,
     },
 
     [ITEM_TM_DIG] =
@@ -10570,7 +11471,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_DIG,
     },
 
     [ITEM_TM_PSYCHIC] =
@@ -10585,7 +11485,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_PSYCHIC,
     },
 
     [ITEM_TM_SHADOW_BALL] =
@@ -10600,7 +11499,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SHADOW_BALL,
     },
 
     [ITEM_TM_BRICK_BREAK] =
@@ -10615,7 +11513,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_BRICK_BREAK,
     },
 
     [ITEM_TM_DOUBLE_TEAM] =
@@ -10630,7 +11527,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_DOUBLE_TEAM,
     },
 
     [ITEM_TM_REFLECT] =
@@ -10645,7 +11541,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_REFLECT,
     },
 
     [ITEM_TM_SHOCK_WAVE] =
@@ -10660,7 +11555,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SHOCK_WAVE,
     },
 
     [ITEM_TM_FLAMETHROWER] =
@@ -10675,7 +11569,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FLAMETHROWER,
     },
 
     [ITEM_TM_SLUDGE_BOMB] =
@@ -10690,7 +11583,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SLUDGE_BOMB,
     },
 
     [ITEM_TM_SANDSTORM] =
@@ -10705,7 +11597,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SANDSTORM,
     },
 
     [ITEM_TM_FIRE_BLAST] =
@@ -10720,7 +11611,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FIRE_BLAST,
     },
 
     [ITEM_TM_ROCK_TOMB] =
@@ -10735,7 +11625,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_ROCK_TOMB,
     },
 
     [ITEM_TM_AERIAL_ACE] =
@@ -10750,7 +11639,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_AERIAL_ACE,
     },
 
     [ITEM_TM_TORMENT] =
@@ -10765,7 +11653,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_TORMENT,
     },
 
     [ITEM_TM_FACADE] =
@@ -10780,7 +11667,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FACADE,
     },
 
     [ITEM_TM_SECRET_POWER] =
@@ -10795,7 +11681,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SECRET_POWER,
     },
 
     [ITEM_TM_REST] =
@@ -10810,7 +11695,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_REST,
     },
 
     [ITEM_TM_ATTRACT] =
@@ -10825,7 +11709,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_ATTRACT,
     },
 
     [ITEM_TM_THIEF] =
@@ -10840,7 +11723,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_THIEF,
     },
 
     [ITEM_TM_STEEL_WING] =
@@ -10855,7 +11737,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_STEEL_WING,
     },
 
     [ITEM_TM_SKILL_SWAP] =
@@ -10870,7 +11751,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SKILL_SWAP,
     },
 
     [ITEM_TM_SNATCH] =
@@ -10885,7 +11765,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SNATCH,
     },
 
     [ITEM_TM_OVERHEAT] =
@@ -10900,7 +11779,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_OVERHEAT,
     },
 
     [ITEM_TM51] =
@@ -10912,7 +11790,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM52] =
@@ -10924,7 +11801,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM53] =
@@ -10936,7 +11812,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM54] =
@@ -10948,7 +11823,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM55] =
@@ -10960,7 +11834,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM56] =
@@ -10972,7 +11845,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM57] =
@@ -10984,7 +11856,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM58] =
@@ -10996,7 +11867,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM59] =
@@ -11008,7 +11878,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM60] =
@@ -11020,7 +11889,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM61] =
@@ -11032,7 +11900,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM62] =
@@ -11044,7 +11911,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM63] =
@@ -11056,7 +11922,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM64] =
@@ -11068,7 +11933,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM65] =
@@ -11080,7 +11944,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM66] =
@@ -11092,7 +11955,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM67] =
@@ -11104,7 +11966,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM68] =
@@ -11116,7 +11977,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM69] =
@@ -11128,7 +11988,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM70] =
@@ -11140,7 +11999,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM71] =
@@ -11152,7 +12010,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM72] =
@@ -11164,7 +12021,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM73] =
@@ -11176,7 +12032,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM74] =
@@ -11188,7 +12043,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM75] =
@@ -11200,7 +12054,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM76] =
@@ -11212,7 +12065,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM77] =
@@ -11224,7 +12076,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM78] =
@@ -11236,7 +12087,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM79] =
@@ -11248,7 +12098,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM80] =
@@ -11260,7 +12109,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM81] =
@@ -11272,7 +12120,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM82] =
@@ -11284,7 +12131,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM83] =
@@ -11296,7 +12142,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM84] =
@@ -11308,7 +12153,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM85] =
@@ -11320,7 +12164,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM86] =
@@ -11332,7 +12175,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM87] =
@@ -11344,7 +12186,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM88] =
@@ -11356,7 +12197,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM89] =
@@ -11368,7 +12208,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM90] =
@@ -11380,7 +12219,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM91] =
@@ -11392,7 +12230,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM92] =
@@ -11404,7 +12241,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM93] =
@@ -11416,7 +12252,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM94] =
@@ -11428,7 +12263,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM95] =
@@ -11440,7 +12274,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM96] =
@@ -11452,7 +12285,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM97] =
@@ -11464,7 +12296,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM98] =
@@ -11476,7 +12307,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM99] =
@@ -11488,7 +12318,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_TM100] =
@@ -11500,7 +12329,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_NONE, // Todo
     },
 
     [ITEM_HM_CUT] =
@@ -11514,7 +12342,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_CUT,
     },
 
     [ITEM_HM_FLY] =
@@ -11529,7 +12356,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FLY,
     },
 
     [ITEM_HM_SURF] =
@@ -11544,7 +12370,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_SURF,
     },
 
     [ITEM_HM_STRENGTH] =
@@ -11558,7 +12383,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_STRENGTH,
     },
 
     [ITEM_HM_FLASH] =
@@ -11573,7 +12397,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_FLASH,
     },
 
     [ITEM_HM_ROCK_SMASH] =
@@ -11588,7 +12411,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_ROCK_SMASH,
     },
 
     [ITEM_HM_WATERFALL] =
@@ -11603,7 +12425,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_WATERFALL,
     },
 
     [ITEM_HM_DIVE] =
@@ -11618,7 +12439,6 @@ const struct Item gItemsInfo[] =
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TMHM,
-        .secondaryId = MOVE_DIVE,
     },
 
 
@@ -12753,6 +13573,7 @@ const struct Item gItemsInfo[] =
 			"威力提高，且不会\n"
 			"接触到对手。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -12770,6 +13591,7 @@ const struct Item gItemsInfo[] =
 			"受到招式的追加效\n"
 			"果影响。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -12787,6 +13609,7 @@ const struct Item gItemsInfo[] =
 			"续招式时，能使出\n"
 			"较多次招式。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -12803,6 +13626,7 @@ const struct Item gItemsInfo[] =
 			"化的神奇铠甲。蕴\n"
 			"含着祝贺的感情。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -12821,6 +13645,7 @@ const struct Item gItemsInfo[] =
 			"可梦携带后能力会\n"
 			"提升的胶囊。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -12837,6 +13662,7 @@ const struct Item gItemsInfo[] =
 			"在部分美食家中拥\n"
 			"有非常高人气。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -12853,6 +13679,7 @@ const struct Item gItemsInfo[] =
 			"。索财灵珍爱有加\n"
 			"地收集着它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_GimmighoulCoin,
@@ -12868,6 +13695,7 @@ const struct Item gItemsInfo[] =
 			"兵群体的劈斩司令\n"
 			"能携带着的碎片。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_LeadersCrest,
@@ -12883,6 +13711,7 @@ const struct Item gItemsInfo[] =
 			"化的神奇铠甲。蕴\n"
 			"含着诅咒的感情。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -12901,6 +13730,7 @@ const struct Item gItemsInfo[] =
 			"提高能力时，模仿\n"
 			"提高同样的能力。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 30,
@@ -12918,6 +13748,7 @@ const struct Item gItemsInfo[] =
 			"面写着恶之奥秘。"),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -12935,6 +13766,7 @@ const struct Item gItemsInfo[] =
 			"面写着水之奥秘。"),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -12952,6 +13784,7 @@ const struct Item gItemsInfo[] =
 			"让宝可梦太晶化。"),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraOrb,
@@ -12980,6 +13813,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -12992,6 +13826,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13004,6 +13839,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13016,6 +13852,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13028,6 +13865,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13040,6 +13878,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13052,6 +13891,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13064,6 +13904,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13076,6 +13917,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13088,6 +13930,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13100,6 +13943,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13112,6 +13956,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13124,6 +13969,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13136,6 +13982,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13148,6 +13995,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13160,6 +14008,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13172,6 +14021,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13184,6 +14034,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_TeraShard,
@@ -13201,6 +14052,7 @@ const struct Item gItemsInfo[] =
 			"，能使之力量高涨\n"
 			"并改变形态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -13219,6 +14071,7 @@ const struct Item gItemsInfo[] =
 			"，能使之力量高涨\n"
 			"并改变形态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -13237,6 +14090,7 @@ const struct Item gItemsInfo[] =
 			"，能使之力量高涨\n"
 			"并改变形态。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 60,
@@ -13253,6 +14107,7 @@ const struct Item gItemsInfo[] =
 			"玻璃的黑石。某种\n"
 			"宝可梦很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -13270,6 +14125,7 @@ const struct Item gItemsInfo[] =
 			"量的绳子。某种宝\n"
 			"可梦们很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -13287,6 +14143,7 @@ const struct Item gItemsInfo[] =
 			"炭块。某种宝可梦\n"
 			"很喜欢它。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -13305,6 +14162,7 @@ const struct Item gItemsInfo[] =
 			"高，但会造成混乱\n"
 			"。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
@@ -13323,6 +14181,7 @@ const struct Item gItemsInfo[] =
 			"羽毛。携带后妖精\n"
 			"招式威力提高。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TYPE_BOOST_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .secondaryId = TYPE_FAIRY,
@@ -13340,6 +14199,7 @@ const struct Item gItemsInfo[] =
 			"以使特定的宝可梦\n"
 			"进化。富含蜜汁。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -13357,6 +14217,7 @@ const struct Item gItemsInfo[] =
 			"然破裂，可以使特\n"
 			"定的宝可梦进化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -13374,6 +14235,7 @@ const struct Item gItemsInfo[] =
 			"然破缺，可以使特\n"
 			"定的宝可梦进化。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -13393,6 +14255,7 @@ const struct Item gItemsInfo[] =
 			"会用岩石属性覆盖\n"
 			"全身进行战斗。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_CornerstoneMask,
@@ -13410,6 +14273,7 @@ const struct Item gItemsInfo[] =
 			"会用水属性覆盖全\n"
 			"身进行战斗。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_WellspringMask,
@@ -13427,6 +14291,7 @@ const struct Item gItemsInfo[] =
 			"会用火属性覆盖全\n"
 			"身进行战斗。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SPECIAL_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_HearthflameMask,
@@ -13439,6 +14304,7 @@ const struct Item gItemsInfo[] =
         .price = 500,
         .description = sHealthFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_HpMochi,
@@ -13453,6 +14319,7 @@ const struct Item gItemsInfo[] =
         .price = 500,
         .description = sMuscleFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_AtkMochi,
@@ -13467,6 +14334,7 @@ const struct Item gItemsInfo[] =
         .price = 500,
         .description = sResistFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_DefMochi,
@@ -13481,6 +14349,7 @@ const struct Item gItemsInfo[] =
         .price = 500,
         .description = sGeniusFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpatkMochi,
@@ -13495,6 +14364,7 @@ const struct Item gItemsInfo[] =
         .price = 500,
         .description = sCleverFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpdefMochi,
@@ -13509,6 +14379,7 @@ const struct Item gItemsInfo[] =
         .price = 500,
         .description = sSwiftFeatherDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .effect = gItemEffect_SpeedMochi,
@@ -13526,6 +14397,7 @@ const struct Item gItemsInfo[] =
 			"能让宝可梦的基础\n"
 			"点数全部消失。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STAT_BOOST_MOCHI,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_ResetEVs,
         .effect = gItemEffect_ResetMochi,
@@ -13544,6 +14416,7 @@ const struct Item gItemsInfo[] =
 			"获得更多太晶碎块\n"
 			"的护符。"),
         .pocket = POCKET_KEY_ITEMS,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_GlimmeringCharm,
@@ -13572,6 +14445,7 @@ const struct Item gItemsInfo[] =
         .price = 0,
         .description = sTeraShardDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_TERA_SHARD,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_StellarTeraShard,
@@ -13584,6 +14458,7 @@ const struct Item gItemsInfo[] =
         .price = 250,
         .description = sFullHealDesc,
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_CURE_STATUS,
@@ -13602,6 +14477,7 @@ const struct Item gItemsInfo[] =
 			"0HP，但很苦，\n"
 			"友好度会降低。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -13620,6 +14496,7 @@ const struct Item gItemsInfo[] =
 			"00HP，但很苦\n"
 			"，友好度会降低。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -13638,6 +14515,7 @@ const struct Item gItemsInfo[] =
 			"50HP，但很苦\n"
 			"，友好度会降低。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_HEALTH_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
         .battleUsage = EFFECT_ITEM_RESTORE_HP,
@@ -13657,6 +14535,7 @@ const struct Item gItemsInfo[] =
 			"变得较不易被对手\n"
 			"招式命中的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_AUX_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         //.effect = currently missing
@@ -13674,6 +14553,7 @@ const struct Item gItemsInfo[] =
 			"可梦防守力的道具\n"
 			"。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_AUX_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         //.effect = currently missing
@@ -13691,6 +14571,7 @@ const struct Item gItemsInfo[] =
 			"可梦进攻力的道具\n"
 			"。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_AUX_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         //.effect = currently missing
@@ -13708,6 +14589,7 @@ const struct Item gItemsInfo[] =
 			"可梦进攻力和防守\n"
 			"力的道具。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_AUX_ITEM,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         //.effect = currently missing
@@ -13763,9 +14645,13 @@ const struct Item gItemsInfo[] =
 			"玩具。可以在杂货\n"
 			"店出售。"),
         .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .iconPic = gItemIcon_PokeshiDoll,
         .iconPalette = gItemIconPalette_PokeshiDoll,
     },
 };
+
+#undef ITEM_NAME
+#undef ITEM_PLURAL_NAME

@@ -360,10 +360,32 @@ EWRAM_DATA u8 gCurContestWinnerSaveIdx = 0;
 // IWRAM common vars.
 COMMON_DATA rng_value_t gContestRngValue = {0};
 
-extern const u8 gText_LinkStandby4[];
+const u8 gText_LinkStandby4[] = COMPOUND_STRING("正在等待连接！");
 extern const u8 gText_BDot[];
 extern const u8 gText_CDot[];
-extern void (*const gContestEffectFuncs[])(void);
+
+//Text
+const u8 gText_AppealNumWhichMoveWillBePlayed[] = COMPOUND_STRING("第{STR_VAR_1}回合的表演！\n要使用哪个招式呢？");
+const u8 gText_AppealNumButItCantParticipate[] = COMPOUND_STRING("第{STR_VAR_1}回合的表演！\n但是无法参加！");
+const u8 gText_MonAppealedWithMove[] = COMPOUND_STRING("{STR_VAR_1}使用了\n{STR_VAR_2}进行表演！");
+const u8 gText_MonWasWatchingOthers[] = COMPOUND_STRING("{STR_VAR_1}在观察\n其他的宝可梦！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AllOutOfAppealTime[] = COMPOUND_STRING("表演时间结束！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_JudgeLookedAtMonExpectantly[] = COMPOUND_STRING("评委满怀期待地\n看着{STR_VAR_1}！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AppealComboWentOverWell[] = COMPOUND_STRING("前后演出的招式组合\n得到了大家的喜爱！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AppealComboWentOverVeryWell[] = COMPOUND_STRING("前后演出的招式组合\n很受大家喜欢！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AppealComboWentOverExcellently[] = COMPOUND_STRING("前后演出的招式组合\n特别受大家喜欢！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonWasTooNervousToMove[] = COMPOUND_STRING("{STR_VAR_1}因为紧张\n无法使用招式表演了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_CouldntImproveItsCondition[] = COMPOUND_STRING("但是它并没能提升自己的气势……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_BadConditionResultedInWeakAppeal[] = COMPOUND_STRING("它因为气势不行表演得一点也不好……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonWasUnaffected[] = COMPOUND_STRING("{STR_VAR_1}完全不为所动！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_RepeatedAppeal[] = COMPOUND_STRING("{STR_VAR_1}因为重复表演，让大家失望了。{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonsXWentOverGreat[] = COMPOUND_STRING("{STR_VAR_1}的{STR_VAR_3}表演\n受到了大家的热烈欢迎！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonsXDidntGoOverWell[] = COMPOUND_STRING("{STR_VAR_1}的{STR_VAR_3}表演\n在这里不受欢迎……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonsXGotTheCrowdGoing[] = COMPOUND_STRING("{STR_VAR_1}的{STR_VAR_3}表演\n让整个会场沸腾了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonCantAppealNextTurn[] = COMPOUND_STRING("{STR_VAR_1}无法参加下一次的表演了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AttractedCrowdsAttention[] = COMPOUND_STRING("吸引了观众们的注意！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_CrowdContinuesToWatchMon[] = COMPOUND_STRING("观众们一直持续关注着{STR_VAR_3}！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonsMoveIsIgnored[] = COMPOUND_STRING("{STR_VAR_1}的{STR_VAR_2}被完全无视了……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
 
 static const u8 sSliderHeartYPositions[CONTESTANT_COUNT] =
 {
@@ -688,84 +710,57 @@ static const u16 sText_Pal[] = INCBIN_U16("graphics/contest/text.gbapal");
 
 #include "data/contest_text_tables.h"
 
-const u8 *const gContestEffectDescriptionPointers[] =
+const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] =
 {
-    [CONTEST_EFFECT_HIGHLY_APPEALING]                      = COMPOUND_STRING("能够吸引人的表演。"),
-    [CONTEST_EFFECT_USER_MORE_EASILY_STARTLED]             = COMPOUND_STRING("虽然能够演出很好的表演，\n但是之后会更容易受干扰。"),
-    [CONTEST_EFFECT_GREAT_APPEAL_BUT_NO_MORE_MOVES]        = COMPOUND_STRING("极具吸引力的表演，\n但是此后无法再进行表演。"),
-    [CONTEST_EFFECT_REPETITION_NOT_BORING]                 = COMPOUND_STRING("即使重复演出也不会\n让评委感到无聊。"),
-    [CONTEST_EFFECT_AVOID_STARTLE_ONCE]                    = COMPOUND_STRING("即使被之后的宝可梦干扰\n也会挺住一次。"),
-    [CONTEST_EFFECT_AVOID_STARTLE]                         = COMPOUND_STRING("即使被之后的宝可梦干扰\n也会挺住。"),
-    [CONTEST_EFFECT_AVOID_STARTLE_SLIGHTLY]                = COMPOUND_STRING("能够稍稍避免受到\n被其他宝可梦干扰。"),
-    [CONTEST_EFFECT_USER_LESS_EASILY_STARTLED]             = COMPOUND_STRING("在表演这个招式之后\n宝可梦会变得不易受干扰。"),
-    [CONTEST_EFFECT_STARTLE_FRONT_MON]                     = COMPOUND_STRING("稍稍干扰在自己之前表演的\n宝可梦。"),
-    [CONTEST_EFFECT_SLIGHTLY_STARTLE_PREV_MONS]            = COMPOUND_STRING("稍稍干扰表演完成的\n所有宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_PREV_MON]                      = COMPOUND_STRING("干扰在自己之前表演的\n宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_PREV_MONS]                     = COMPOUND_STRING("干扰表演完成的\n所有宝可梦。"),
-    [CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON]               = COMPOUND_STRING("严重干扰在自己之前表演的\n宝可梦。"),
-    [CONTEST_EFFECT_BADLY_STARTLE_PREV_MONS]               = COMPOUND_STRING("严重干扰表演完成的\n所有宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_PREV_MON_2]                    = COMPOUND_STRING("干扰在自己之前表演的\n宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_PREV_MONS_2]                   = COMPOUND_STRING("干扰表演完成的\n所有宝可梦。"),
-    [CONTEST_EFFECT_SHIFT_JUDGE_ATTENTION]                 = COMPOUND_STRING("分散评委对之前宝可梦的\n注意。"),
-    [CONTEST_EFFECT_STARTLE_MON_WITH_JUDGES_ATTENTION]     = COMPOUND_STRING("特别干扰评委注意的\n宝可梦。"),
-    [CONTEST_EFFECT_JAMS_OTHERS_BUT_MISS_ONE_TURN]         = COMPOUND_STRING("激烈地干扰大家，\n但无法参加下一次表演。"),
-    [CONTEST_EFFECT_STARTLE_MONS_SAME_TYPE_APPEAL]         = COMPOUND_STRING("特别干扰演出了相同类别的\n宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_MONS_COOL_APPEAL]              = COMPOUND_STRING("特别干扰演出了帅气招式的\n宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_MONS_BEAUTY_APPEAL]            = COMPOUND_STRING("特别干扰演出了美丽招式的\n宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_MONS_CUTE_APPEAL]              = COMPOUND_STRING("特别干扰演出了可爱招式的\n宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_MONS_SMART_APPEAL]             = COMPOUND_STRING("特别干扰演出了聪明招式的\n宝可梦。"),
-    [CONTEST_EFFECT_STARTLE_MONS_TOUGH_APPEAL]             = COMPOUND_STRING("特别干扰演出了强壮招式的\n宝可梦。"),
-    [CONTEST_EFFECT_MAKE_FOLLOWING_MON_NERVOUS]            = COMPOUND_STRING("让下一只表演的宝可梦\n感到紧张。"),
-    [CONTEST_EFFECT_MAKE_FOLLOWING_MONS_NERVOUS]           = COMPOUND_STRING("让之后表演的所有宝可梦\n都感到紧张。"),
-    [CONTEST_EFFECT_WORSEN_CONDITION_OF_PREV_MONS]         = COMPOUND_STRING("降低表演完成的\n宝可梦的气势。"),
-    [CONTEST_EFFECT_BADLY_STARTLES_MONS_IN_GOOD_CONDITION] = COMPOUND_STRING("严重干扰气势良好的\n所有宝可梦。"),
-    [CONTEST_EFFECT_BETTER_IF_FIRST]                       = COMPOUND_STRING("最先演出时表演\n会更加吸引人。"),
-    [CONTEST_EFFECT_BETTER_IF_LAST]                        = COMPOUND_STRING("最后演出时表演\n会更加吸引人。"),
-    [CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONES]           = COMPOUND_STRING("演出和此前所有宝可梦表演\n吸引力程度相当的表演。"),
-    [CONTEST_EFFECT_APPEAL_AS_GOOD_AS_PREV_ONE]            = COMPOUND_STRING("和前一位宝可梦的\n表演一样吸引人。"),
-    [CONTEST_EFFECT_BETTER_WHEN_LATER]                     = COMPOUND_STRING("演出时排序越靠后，\n越能演出吸引人的表演。"),
-    [CONTEST_EFFECT_QUALITY_DEPENDS_ON_TIMING]             = COMPOUND_STRING("每次演出的结果都不同。"),
-    [CONTEST_EFFECT_BETTER_IF_SAME_TYPE]                   = COMPOUND_STRING("和前一位宝可梦的表演类别\n相同时会更吸引人。"),
-    [CONTEST_EFFECT_BETTER_IF_DIFF_TYPE]                   = COMPOUND_STRING("和前一位宝可梦的表演类别\n不同时会更吸引人。"),
-    [CONTEST_EFFECT_AFFECTED_BY_PREV_APPEAL]               = COMPOUND_STRING("演出水平受前一位宝可梦\n表演吸引程度的影响。"),
-    [CONTEST_EFFECT_IMPROVE_CONDITION_PREVENT_NERVOUSNESS] = COMPOUND_STRING("提升表演的气势，\n变得不容易感到紧张。"),
-    [CONTEST_EFFECT_BETTER_WITH_GOOD_CONDITION]            = COMPOUND_STRING("气势良好时表演\n会非常吸引人。"),
-    [CONTEST_EFFECT_NEXT_APPEAL_EARLIER]                   = COMPOUND_STRING("下一次表演时最先出场。"),
-    [CONTEST_EFFECT_NEXT_APPEAL_LATER]                     = COMPOUND_STRING("下一次表演时最后出场。"),
-    [CONTEST_EFFECT_MAKE_SCRAMBLING_TURN_ORDER_EASIER]     = COMPOUND_STRING("使下一次表演的顺序\n容易被打乱。"),
-    [CONTEST_EFFECT_SCRAMBLE_NEXT_TURN_ORDER]              = COMPOUND_STRING("打乱下一次表演的顺序。"),
-    [CONTEST_EFFECT_EXCITE_AUDIENCE_IN_ANY_CONTEST]        = COMPOUND_STRING("任何类别的华丽大赛中\n都会让会场兴奋的表演。"),
-    [CONTEST_EFFECT_BADLY_STARTLE_MONS_WITH_GOOD_APPEALS]  = COMPOUND_STRING("严重干扰表演具有吸引力的\n所有宝可梦。"),
-    [CONTEST_EFFECT_BETTER_WHEN_AUDIENCE_EXCITED]          = COMPOUND_STRING("会场越兴奋，\n表演越吸引人。"),
-    [CONTEST_EFFECT_DONT_EXCITE_AUDIENCE]                  = COMPOUND_STRING("表演后会场暂时不会\n变得更加兴奋。"),
-};
+    [CONTEST_CATEGORY_COOL] =
+    {
+        .name = COMPOUND_STRING("帅气"),
+        .condition = COMPOUND_STRING("帅气"),
+        .generic = COMPOUND_STRING("帅气"),
+        .negativeTrait = COMPOUND_STRING("害羞"),
+        .palette = 13,
+    },
 
-const u8 *const gContestMoveTypeTextPointers[] =
-{
-    [CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("帅气"),
-    [CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("美丽"),
-    [CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("可爱"),
-    [CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("聪明"),
-    [CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("强壮"),
-};
+    [CONTEST_CATEGORY_BEAUTY] =
+    {
+        .name = COMPOUND_STRING("美丽"),
+        .condition = COMPOUND_STRING("美丽"),
+        .generic = COMPOUND_STRING("美丽招式"),
+        .negativeTrait = COMPOUND_STRING("焦虑"),
+        .palette = 14,
+    },
 
-static const u8 *const sContestConditions[] =
-{
-    [CONTEST_CATEGORY_COOL]   = COMPOUND_STRING("帅气"),
-    [CONTEST_CATEGORY_BEAUTY] = COMPOUND_STRING("美丽"),
-    [CONTEST_CATEGORY_CUTE]   = COMPOUND_STRING("可爱"),
-    [CONTEST_CATEGORY_SMART]  = COMPOUND_STRING("聪明"),
-    [CONTEST_CATEGORY_TOUGH]  = COMPOUND_STRING("强壮"),
-};
+    [CONTEST_CATEGORY_CUTE] =
+    {
+        .name = COMPOUND_STRING("可爱"),
+        .condition = COMPOUND_STRING("可爱"),
+        .generic = COMPOUND_STRING("可爱招式"),
+        .negativeTrait = COMPOUND_STRING("懒惰"),
+        .palette = 14,
+    },
 
-static const u8 *const sInvalidContestMoveNames[] =
-{
-    [CONTEST_CATEGORY_COOL]    = COMPOUND_STRING("帅气招式"),
-    [CONTEST_CATEGORY_BEAUTY]  = COMPOUND_STRING("美丽招式"),
-    [CONTEST_CATEGORY_CUTE]    = COMPOUND_STRING("可爱招式"),
-    [CONTEST_CATEGORY_SMART]   = COMPOUND_STRING("聪明招式"),
-    [CONTEST_CATEGORY_TOUGH]   = COMPOUND_STRING("强壮招式"),
-    [CONTEST_CATEGORIES_COUNT] = COMPOUND_STRING("???"),
+    [CONTEST_CATEGORY_SMART] =
+    {
+        .name = COMPOUND_STRING("聪明"),
+        .condition = COMPOUND_STRING("聪明"),
+        .generic = COMPOUND_STRING("聪明招式"),
+        .negativeTrait = COMPOUND_STRING("犹豫"),
+        .palette = 15,
+    },
+
+    [CONTEST_CATEGORY_TOUGH] =
+    {
+        .name = COMPOUND_STRING("强壮"),
+        .condition = COMPOUND_STRING("强壮"),
+        .generic = COMPOUND_STRING("强壮招式"),
+        .negativeTrait = COMPOUND_STRING("害怕"),
+        .palette = 13,
+    },
+
+    [CONTEST_CATEGORIES_COUNT] =
+    {
+        .generic = COMPOUND_STRING("？？？"),
+    },
 };
 
 // Takes the .attentionLevel of a contestant as an index.
@@ -1914,7 +1909,7 @@ static void Task_DoAppeals(u8 taskId)
             if (eContestantStatus[contestant].currMove < MOVES_COUNT)
                 StringCopy(gStringVar2, GetMoveName(eContestantStatus[contestant].currMove));
             else
-                StringCopy(gStringVar2, sInvalidContestMoveNames[eContestantStatus[contestant].moveCategory]);
+                StringCopy(gStringVar2, gContestCategoryInfo[eContestantStatus[contestant].moveCategory].generic);
             StringExpandPlaceholders(gStringVar4, gText_MonAppealedWithMove);
             Contest_StartTextPrinter(gStringVar4, TRUE);
             gTasks[taskId].tState = APPEALSTATE_WAIT_USED_MOVE_MSG;
@@ -2310,7 +2305,7 @@ static void Task_DoAppeals(u8 taskId)
             }
             else
             {
-                StringCopy(gStringVar3, sContestConditions[GetMoveContestCategory(eContestantStatus[contestant].currMove)]);
+                StringCopy(gStringVar3, gContestCategoryInfo[GetMoveContestCategory(eContestantStatus[contestant].currMove)].condition);
             }
 
             if (r3 > 0 && eContestantStatus[contestant].repeatedMove)
@@ -3330,7 +3325,7 @@ static void PrintContestMoveDescription(u16 move)
     ContestBG_FillBoxWithTile(0, TILE_FILLED_JAM_HEART, 0x15, 0x20, numHearts, 0x01, 0x11);
 
     FillWindowPixelBuffer(WIN_MOVE_DESCRIPTION, PIXEL_FILL(0));
-    Contest_PrintTextToBg0WindowStd(WIN_MOVE_DESCRIPTION, gContestEffectDescriptionPointers[GetMoveContestEffect(move)]);
+    Contest_PrintTextToBg0WindowStd(WIN_MOVE_DESCRIPTION, gContestEffects[GetMoveContestEffect(move)].description);
     Contest_PrintTextToBg0WindowStd(WIN_SLASH, gText_Slash);
 }
 
@@ -4559,7 +4554,7 @@ static void CalculateAppealMoveImpact(u8 contestant)
         && !AreMovesContestCombo(eContestantStatus[contestant].prevMove, eContestantStatus[contestant].currMove))
         eContestantStatus[contestant].hasJudgesAttention = FALSE;
 
-    gContestEffectFuncs[effect]();
+    gContestEffects[effect].function();
 
     if (eContestantStatus[contestant].conditionMod == CONDITION_GAIN)
         eContestantStatus[contestant].appeal += eContestantStatus[contestant].condition - 10;
@@ -4664,16 +4659,7 @@ static void PrintAppealMoveResultText(u8 contestant, u8 stringId)
 {
     StringCopy(gStringVar1, gContestMons[contestant].nickname);
     StringCopy(gStringVar2, GetMoveName(eContestantStatus[contestant].currMove));
-    if      (GetMoveContestCategory(eContestantStatus[eContestAppealResults.contestant].currMove) == CONTEST_CATEGORY_COOL)
-        StringCopy(gStringVar3, gText_Contest_Shyness);
-    else if (GetMoveContestCategory(eContestantStatus[eContestAppealResults.contestant].currMove) == CONTEST_CATEGORY_BEAUTY)
-        StringCopy(gStringVar3, gText_Contest_Anxiety);
-    else if (GetMoveContestCategory(eContestantStatus[eContestAppealResults.contestant].currMove) == CONTEST_CATEGORY_CUTE)
-        StringCopy(gStringVar3, gText_Contest_Laziness);
-    else if (GetMoveContestCategory(eContestantStatus[eContestAppealResults.contestant].currMove) == CONTEST_CATEGORY_SMART)
-        StringCopy(gStringVar3, gText_Contest_Hesitancy);
-    else
-        StringCopy(gStringVar3, gText_Contest_Fear);
+    StringCopy(gStringVar3, gContestCategoryInfo[GetMoveContestCategory(eContestantStatus[eContestAppealResults.contestant].currMove)].negativeTrait);
     StringExpandPlaceholders(gStringVar4, sAppealResultTexts[stringId]);
     ContestClearGeneralTextWindow();
     Contest_StartTextPrinter(gStringVar4, TRUE);

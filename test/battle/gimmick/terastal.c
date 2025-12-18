@@ -420,8 +420,8 @@ SINGLE_BATTLE_TEST("(TERA) Double Shock does not remove the user's Electric type
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); MOVE(opponent, MOVE_RECOVER); }
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK, gimmick: GIMMICK_TERA); MOVE(opponent, MOVE_RECOVER); }
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); MOVE(opponent, MOVE_RECOVER); }
-        TURN { SWITCH(player, 1); MOVE(opponent, MOVE_RECOVER); }
-        TURN { SWITCH(player, 0); MOVE(opponent, MOVE_RECOVER); }
+        TURN { SWITCH(player, 1); }
+        TURN { SWITCH(player, 0); }
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); MOVE(opponent, MOVE_RECOVER); }
         TURN { MOVE(player, MOVE_DOUBLE_SHOCK); }
     } SCENE {
@@ -826,7 +826,7 @@ SINGLE_BATTLE_TEST("(TERA) Pokemon with Tera forms change upon Terastallizing")
 
 SINGLE_BATTLE_TEST("(TERA) All type indicators function correctly")
 {
-    u32 type;
+    enum Type type;
     PARAMETRIZE { type = TYPE_NONE; }
     PARAMETRIZE { type = TYPE_NORMAL; }
     PARAMETRIZE { type = TYPE_FIGHTING; }
@@ -858,7 +858,7 @@ SINGLE_BATTLE_TEST("(TERA) All type indicators function correctly")
 
 SINGLE_BATTLE_TEST("(TERA) All type indicators function correctly - Opponent")
 {
-    u32 type;
+    enum Type type;
     PARAMETRIZE { type = TYPE_NONE; }
     PARAMETRIZE { type = TYPE_NORMAL; }
     PARAMETRIZE { type = TYPE_FIGHTING; }
