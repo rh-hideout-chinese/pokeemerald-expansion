@@ -1929,7 +1929,7 @@ static void Cmd_adjustdamage(void)
             gLastUsedItem = gBattleMons[battlerDef].item;
             gBattleStruct->moveResultFlags[battlerDef] |= MOVE_RESULT_FOE_HUNG_ON;
         }
-        else if (B_STURDY >= GEN_5 && GetBattlerAbility(battlerDef) == ABILITY_STURDY && IsBattlerAtMaxHp(battlerDef))
+        else if (GetConfig(CONFIG_STURDY) >= GEN_5 && GetBattlerAbility(battlerDef) == ABILITY_STURDY && IsBattlerAtMaxHp(battlerDef))
         {
             enduredHit |= 1u << battlerDef;
             RecordAbilityBattle(battlerDef, ABILITY_STURDY);
@@ -3049,7 +3049,7 @@ void SetMoveEffect(u32 battler, u32 effectBattler, enum MoveEffect moveEffect, c
     if (!primary && !affectsUser && IsMoveEffectBlockedByTarget(battlerAbility))
         moveEffect = MOVE_EFFECT_NONE;
     else if (!primary
-          && TestIfSheerForceAffected(gBattlerAttacker, gCurrentMove)
+          && IsSheerForceAffected(gCurrentMove, GetBattlerAbility(battler))
           && !(GetMoveEffect(gCurrentMove) == EFFECT_ORDER_UP && gBattleStruct->battlerState[gBattlerAttacker].commanderSpecies != SPECIES_NONE))
         moveEffect = MOVE_EFFECT_NONE;
     else if (!IsBattlerAlive(gEffectBattler) && !activateAfterFaint)
@@ -6400,7 +6400,7 @@ static void Cmd_moveend(void)
                 && gBattlerTarget != gBattlerAttacker
                 && !IsBattlerAlly(gBattlerTarget, gBattlerAttacker)
                 && gProtectStructs[gBattlerTarget].physicalBattlerId == gBattlerAttacker
-                && !TestIfSheerForceAffected(gBattlerAttacker, gCurrentMove))
+                && !IsSheerForceAffected(gCurrentMove, GetBattlerAbility(gBattlerAttacker)))
             {
                 gProtectStructs[gBattlerTarget].shellTrap = TRUE;
                 // Change move order in double battles, so the hit mon with shell trap moves immediately after being hit.
@@ -6660,7 +6660,7 @@ static void Cmd_moveend(void)
             gBattleScripting.moveendState++;
             break;
         case MOVEEND_SHEER_FORCE:
-            if (TestIfSheerForceAffected(gBattlerAttacker, gCurrentMove))
+            if (IsSheerForceAffected(gCurrentMove, GetBattlerAbility(gBattlerAttacker)))
                 gBattleScripting.moveendState = MOVEEND_EJECT_PACK;
             else
                 gBattleScripting.moveendState++;
@@ -9525,7 +9525,7 @@ static bool32 IsElectricAbilityAffected(u32 battler, enum Ability ability)
         moveType = GetMoveType(gCurrentMove);
 
     if (moveType == TYPE_ELECTRIC
-     && (ability != ABILITY_LIGHTNING_ROD || B_REDIRECT_ABILITY_IMMUNITY >= GEN_5)
+     && (ability != ABILITY_LIGHTNING_ROD || GetConfig(CONFIG_REDIRECT_ABILITY_IMMUNITY) >= GEN_5)
      && GetBattlerAbility(battler) == ability)
         return TRUE;
     else
@@ -11526,120 +11526,75 @@ static void Cmd_settypetorandomresistance(void)
 
     // Before Gen 5 Conversion 2 only worked on a move the attacker was actually hit by.
     // This changed later to the last move used by the selected target.
-    if (B_UPDATED_CONVERSION_2 < GEN_5)
+    u32 moveToCheck;
+    u32 typeToCheck;
+
+    if (GetConfig(CONFIG_UPDATED_CONVERSION_2) < GEN_5)
     {
-        if (gLastLandedMoves[gBattlerAttacker] == MOVE_NONE
-         || gLastLandedMoves[gBattlerAttacker] == MOVE_UNAVAILABLE)
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else if (gBattleMoveEffects[GetMoveEffect(gLastLandedMoves[gBattlerAttacker])].twoTurnEffect
-              && gBattleMons[gLastHitBy[gBattlerAttacker]].volatiles.multipleTurns)
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_TERA)
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else if (gLastHitByType[gBattlerAttacker] == TYPE_STELLAR || gLastHitByType[gBattlerAttacker] == TYPE_MYSTERY)
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
+        moveToCheck = gLastLandedMoves[gBattlerAttacker];
+        if (GetMoveEffect(moveToCheck) == EFFECT_STRUGGLE)
+            typeToCheck = TYPE_NORMAL;
         else
-        {
-            u32 i, resistTypes = 0;
-            u32 hitByType = gLastHitByType[gBattlerAttacker];
-
-            for (i = 0; i < NUMBER_OF_MON_TYPES; i++) // Find all types that resist.
-            {
-                switch (GetTypeModifier(hitByType, i))
-                {
-                case UQ_4_12(0):
-                case UQ_4_12(0.5):
-                    resistTypes |= 1u << i;
-                    break;
-                }
-            }
-
-            while (resistTypes != 0)
-            {
-                i = Random() % NUMBER_OF_MON_TYPES;
-                if (resistTypes & 1u << i)
-                {
-                    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, i))
-                    {
-                        resistTypes &= ~(1u << i); // Type resists, but the user is already of this type.
-                    }
-                    else
-                    {
-                        SET_BATTLER_TYPE(gBattlerAttacker, i);
-                        PREPARE_TYPE_BUFFER(gBattleTextBuff1, i);
-                        gBattlescriptCurrInstr = cmd->nextInstr;
-                        return;
-                    }
-                }
-            }
-
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
+            typeToCheck = gLastHitByType[gBattlerAttacker];
     }
     else
     {
-        if (gLastResultingMoves[gBattlerTarget] == MOVE_NONE
-         || gLastResultingMoves[gBattlerTarget] == MOVE_UNAVAILABLE
-         || gLastResultingMoves[gBattlerTarget] == MOVE_STRUGGLE)
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else if (!BreaksThroughSemiInvulnerablity(gBattlerTarget, gCurrentMove))
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else if (gLastUsedMoveType[gBattlerTarget] == TYPE_NONE || gLastUsedMoveType[gBattlerTarget] == TYPE_STELLAR || gLastUsedMoveType[gBattlerTarget] == TYPE_MYSTERY)
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_TERA)
-        {
-            gBattlescriptCurrInstr = cmd->failInstr;
-        }
-        else
-        {
-            u32 i, resistTypes = 0;
+        moveToCheck = gLastResultingMoves[gBattlerTarget];
+        typeToCheck = gLastUsedMoveType[gBattlerTarget];
+    }
 
-            for (i = 0; i < NUMBER_OF_MON_TYPES; i++) // Find all types that resist.
+    if (moveToCheck == MOVE_NONE
+        || moveToCheck == MOVE_UNAVAILABLE)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (!BreaksThroughSemiInvulnerablity(gBattlerTarget, moveToCheck))
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (GetActiveGimmick(gBattlerAttacker) == GIMMICK_TERA)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else if (typeToCheck == TYPE_NONE || typeToCheck == TYPE_STELLAR || typeToCheck == TYPE_MYSTERY)
+    {
+        gBattlescriptCurrInstr = cmd->failInstr;
+    }
+    else
+    {
+        u32 i, resistTypes = 0;
+
+        for (i = 0; i < NUMBER_OF_MON_TYPES; i++) // Find all types that resist.
+        {
+            switch (GetTypeModifier(typeToCheck, i))
             {
-                switch (GetTypeModifier(gLastUsedMoveType[gBattlerTarget], i))
+            case UQ_4_12(0):
+            case UQ_4_12(0.5):
+                resistTypes |= 1u << i;
+                break;
+            }
+        }
+
+        while (resistTypes != 0)
+        {
+            i = Random() % NUMBER_OF_MON_TYPES;
+            if (resistTypes & 1u << i)
+            {
+                if (IS_BATTLER_OF_TYPE(gBattlerAttacker, i))
                 {
-                case UQ_4_12(0):
-                case UQ_4_12(0.5):
-                    resistTypes |= 1u << i;
-                    break;
+                    resistTypes &= ~(1u << i); // Type resists, but the user is already of this type.
+                }
+                else
+                {
+                    SET_BATTLER_TYPE(gBattlerAttacker, i);
+                    PREPARE_TYPE_BUFFER(gBattleTextBuff1, i);
+                    gBattlescriptCurrInstr = cmd->nextInstr;
+                    return;
                 }
             }
-
-            while (resistTypes != 0)
-            {
-                i = Random() % NUMBER_OF_MON_TYPES;
-                if (resistTypes & 1u << i)
-                {
-                    if (IS_BATTLER_OF_TYPE(gBattlerAttacker, i))
-                    {
-                        resistTypes &= ~(1u << i); // Type resists, but the user is already of this type.
-                    }
-                    else
-                    {
-                        SET_BATTLER_TYPE(gBattlerAttacker, i);
-                        PREPARE_TYPE_BUFFER(gBattleTextBuff1, i);
-                        gBattlescriptCurrInstr = cmd->nextInstr;
-                        return;
-                    }
-                }
-            }
-
-            gBattlescriptCurrInstr = cmd->failInstr;
         }
+
+        gBattlescriptCurrInstr = cmd->failInstr;
     }
 }
 
@@ -11739,7 +11694,7 @@ static void Cmd_settailwind(void)
     if (!(gSideStatuses[side] & SIDE_STATUS_TAILWIND))
     {
         gSideStatuses[side] |= SIDE_STATUS_TAILWIND;
-        gSideTimers[side].tailwindTimer = (B_TAILWIND_TURNS >= GEN_5 ? 4 : 3);
+        gSideTimers[side].tailwindTimer = (GetConfig(CONFIG_TAILWIND_TURNS) >= GEN_5 ? 4 : 3);
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
     else

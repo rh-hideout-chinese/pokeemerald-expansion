@@ -24,7 +24,7 @@
     F(MAX_LEVEL_EV_GAINS,        maxLevelEvGains,         (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(RECALCULATE_STATS,         recalculateStats,        (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     /* Damage settings */ \
-    F(BURN_DAMAGE,               burnDamage,              (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
+    F(BURN_DAMAGE,               burnDamage,              (u32, GEN_COUNT - 1)) \
     F(BURN_FACADE_DMG,           burnFacadeDmg,           (u32, GEN_COUNT - 1)) \
     F(BINDING_DAMAGE,            bindingDamage,           (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(PSYWAVE_DMG,               psywaveDmg,              (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
@@ -51,7 +51,7 @@
     F(UPROAR_TURNS,              uproarTurns,             (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(UPROAR_IGNORE_SOUNDPROOF,  uproarIgnoreSoundproof,  (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(DISABLE_TURNS,             disableTurns,            (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
-    F(TAILWIND_TURNS,            tailwindTurns,           (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
+    F(TAILWIND_TURNS,            tailwindTurns,           (u32, GEN_COUNT - 1)) \
     F(SLEEP_TURNS,               sleepTurns,              (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(TAUNT_TURNS,               tauntTurns,              (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(SPORT_TURNS,               sportTurns,              (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
@@ -64,9 +64,9 @@
     F(UPDATED_MOVE_FLAGS,        updatedMoveFlags,        (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(PHYSICAL_SPECIAL_SPLIT,    physicalSpecialSplit,    (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(RECOIL_IF_MISS_DMG,        recoilIfMissDmg,         (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
-    F(KLUTZ_FLING_INTERACTION,   klutzFlingInteraction,   (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
+    F(KLUTZ_FLING_INTERACTION,   klutzFlingInteraction,   (u32, GEN_COUNT - 1)) \
     F(UPDATED_CONVERSION,        updatedConversion,       (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
-    F(UPDATED_CONVERSION_2,      updatedConversion2,      (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
+    F(UPDATED_CONVERSION_2,      updatedConversion2,      (u32, GEN_COUNT - 1)) \
     F(PP_REDUCED_BY_SPITE,       ppReducedBySpite,        (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(EXTRAPOLATED_MOVE_FLAGS,   extrapolatedMoveFlags,   (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     /* Ability data settings */ \
@@ -129,15 +129,15 @@
     F(SHADOW_TAG_ESCAPE,         shadowTagEscape,         (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(MOODY_ACC_EVASION,         moodyAccEvasion,         (u32, GEN_COUNT - 1)) \
     F(FLASH_FIRE_FROZEN,         flashFireFrozen,         (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
-    F(SYNCHRONIZE_TOXIC,         synchronizeToxic,        (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
+    F(SYNCHRONIZE_TOXIC,         synchronizeToxic,        (u32, GEN_COUNT - 1)) \
     F(UPDATED_INTIMIDATE,        updatedIntimidate,       (u32, GEN_COUNT - 1)) \
     F(OBLIVIOUS_TAUNT,           obliviousTaunt,          (u32, GEN_COUNT - 1)) \
-    F(STURDY,                    sturdy,                  (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
+    F(STURDY,                    sturdy,                  (u32, GEN_COUNT - 1)) \
     F(PLUS_MINUS_INTERACTION,    plusMinusInteraction,    (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(WEATHER_FORMS,             weatherForms,            (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(SYMBIOSIS_GEMS,            symbiosisGems,           (u32, GEN_COUNT - 1)) \
     F(ABSORBING_ABILITY_STRING,  absorbingAbilityString,  (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
-    F(REDIRECT_ABILITY_IMMUNITY, redirectAbilityImmunity, (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
+    F(REDIRECT_ABILITY_IMMUNITY, redirectAbilityImmunity, (u32, GEN_COUNT - 1)) \
     F(REDIRECT_ABILITY_ALLIES,   redirectAbilityAllies,   (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(LEAF_GUARD_PREVENTS_REST,  leafGuardPreventsRest,   (u32, GEN_COUNT - 1)) \
     F(TRANSISTOR_BOOST,          transistorBoost,         (u32, GEN_COUNT - 1)) \
@@ -176,7 +176,7 @@
     F(SAFARI_BALL_MODIFIER,      safariBallModifier,      (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(FRIEND_BALL_MODIFIER,      friendBallModifier,      (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
     F(SERENE_GRACE_BOOST,        sereneGraceBoost,        (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
-    F(IRON_BALL,                 ironBall,                (u32, GEN_COUNT - 1)) /* TODO: use in tests */ \
+    F(IRON_BALL,                 ironBall,                (u32, GEN_COUNT - 1)) \
     /* Weather settings */ \
     F(ABILITY_WEATHER,           abilityWeather,          (u32, GEN_COUNT - 1)) \
     F(SANDSTORM_SPDEF_BOOST,     sandstormSpDefBoost,     (u32, GEN_COUNT - 1)) \
