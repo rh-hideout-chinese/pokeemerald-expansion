@@ -685,22 +685,22 @@ BattleFrontier_BattlePikeRoomNormal_Text_DusclopsStop:
     .string "彷徨夜灵！\n快停下来！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedToxic:
-    .string "奇鲁莉安使用了剧毒！$"
+    .string "奇鲁莉安使出了剧毒！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis:
-    .string "奇鲁莉安使用了催眠术！$"
+    .string "奇鲁莉安使出了催眠术！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave:
-    .string "奇鲁莉安使用了电击波！$"
+    .string "奇鲁莉安使出了电击波！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp:
-    .string "奇鲁莉安使用了磷火！$"
+    .string "奇鲁莉安使出了磷火！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedWillOWisp:
-    .string "彷徨夜灵使用了磷火！$"
+    .string "彷徨夜灵使出了磷火！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_DusclopsUsedIceBeam:
-    .string "彷徨夜灵使用了冰冻光束！$"
+    .string "彷徨夜灵使出了冰冻光束！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_ThatsEnough:
     .string "适可而止吧！$"

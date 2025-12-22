@@ -2961,3 +2961,28 @@
 ❌ ITEM_JUBILIFE_MUFFIN 没有单独道具说明，跳过
 ❌ ITEM_SWAP_SNACK 没有单独道具说明，跳过
 ❌ ITEM_TWICE_SPICED_RADISH 没有单独道具说明，跳过
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_1_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_2_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_3_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_4_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_5_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_6_families.h
+❌ 未找到 SPECIES_FLOETTE_MEGA，跳过
+❌ 未找到 SPECIES_ZYGARDE_10_AURA_BREAK，跳过
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_7_families.h
+❌ 未找到 SPECIES_MIMIKYU_BUSTED_TOTEM，跳过
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_8_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_9_families.h
+❌ 未找到 SPECIES_CAPSAKID，跳过
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_1_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_2_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_3_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_4_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_5_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_6_families.h
+❌ 未找到 SPECIES_ZYGARDE_10_AURA_BREAK，跳过
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_7_families.h
+❌ 未找到 SPECIES_MIMIKYU_BUSTED_TOTEM，跳过
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_8_families.h
+✅ 处理文件：c:\Users\Nox\Documents\GitHub\pokeemerald-expansion-Chinese\src\data\pokemon\species_info\gen_9_families.h
+❌ 未找到 SPECIES_CAPSAKID，跳过

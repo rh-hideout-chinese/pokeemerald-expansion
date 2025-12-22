@@ -6782,10 +6782,7 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 dept
                 case IF_REGION:
                 case IF_NOT_REGION:
                 {
-                    if (condition == IF_REGION)
-                        StringAppend(gStringVar4, COMPOUND_STRING("in "));
-                    else if (condition == IF_NOT_REGION)
-                        StringAppend(gStringVar4, COMPOUND_STRING("out of "));
+                    StringAppend(gStringVar4, COMPOUND_STRING("在"));
 
                     switch ((enum Region)evolutions[i].params[j].arg1)
                     {
@@ -6793,17 +6790,23 @@ static void PrintEvolutionTargetSpeciesAndMethod(u8 taskId, u16 species, u8 dept
                     case REGIONS_COUNT:
                         StringAppend(gStringVar4, COMPOUND_STRING("???"));
                         break;
-                    case REGION_KANTO: StringAppend(gStringVar4, COMPOUND_STRING("Kanto")); break;
-                    case REGION_JOHTO: StringAppend(gStringVar4, COMPOUND_STRING("Johto")); break;
-                    case REGION_HOENN: StringAppend(gStringVar4, COMPOUND_STRING("Hoenn")); break;
-                    case REGION_SINNOH: StringAppend(gStringVar4, COMPOUND_STRING("Sinnoh")); break;
-                    case REGION_UNOVA: StringAppend(gStringVar4, COMPOUND_STRING("Unova")); break;
-                    case REGION_KALOS: StringAppend(gStringVar4, COMPOUND_STRING("Kalos")); break;
-                    case REGION_ALOLA: StringAppend(gStringVar4, COMPOUND_STRING("Alola")); break;
-                    case REGION_GALAR: StringAppend(gStringVar4, COMPOUND_STRING("Galar")); break;
-                    case REGION_HISUI: StringAppend(gStringVar4, COMPOUND_STRING("Hisui")); break;
-                    case REGION_PALDEA: StringAppend(gStringVar4, COMPOUND_STRING("Paldea")); break;
+                    case REGION_KANTO: StringAppend(gStringVar4, COMPOUND_STRING("关都")); break;
+                    case REGION_JOHTO: StringAppend(gStringVar4, COMPOUND_STRING("城都")); break;
+                    case REGION_HOENN: StringAppend(gStringVar4, COMPOUND_STRING("丰缘")); break;
+                    case REGION_SINNOH: StringAppend(gStringVar4, COMPOUND_STRING("神奥")); break;
+                    case REGION_UNOVA: StringAppend(gStringVar4, COMPOUND_STRING("合众")); break;
+                    case REGION_KALOS: StringAppend(gStringVar4, COMPOUND_STRING("卡洛斯")); break;
+                    case REGION_ALOLA: StringAppend(gStringVar4, COMPOUND_STRING("阿罗拉")); break;
+                    case REGION_GALAR: StringAppend(gStringVar4, COMPOUND_STRING("伽勒尔")); break;
+                    case REGION_HISUI: StringAppend(gStringVar4, COMPOUND_STRING("洗翠")); break;
+                    case REGION_PALDEA: StringAppend(gStringVar4, COMPOUND_STRING("帕底亚")); break;
                     }
+
+                    if (condition == IF_REGION)
+                        StringAppend(gStringVar4, COMPOUND_STRING("地区"));
+                    else if (condition == IF_NOT_REGION)
+                        StringAppend(gStringVar4, COMPOUND_STRING("之外的其他地区"));
+                    
                     break;
                 }
                 // Gen 8

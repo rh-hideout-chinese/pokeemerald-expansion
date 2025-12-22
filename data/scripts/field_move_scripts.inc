@@ -48,7 +48,7 @@ Text_WantToCut:
 	.string "要用居合劈来砍吗？$"
 
 Text_MonUsedFieldMove:
-	.string "{STR_VAR_1}使用了{STR_VAR_2}！$"
+	.string "{STR_VAR_1}使出了{STR_VAR_2}！$"
 
 Text_CantCut:
 	.string "这棵树好像可以用\n"
@@ -268,7 +268,7 @@ Text_WantToStrength:
 	.string "要使用怪力吗？$"
 
 Text_MonUsedStrength:
-	.string "{STR_VAR_1}使用了怪力！\p"
+	.string "{STR_VAR_1}使出了怪力！\p"
 	.string "使出了怪力后，\n"
 	.string "可以推动岩石了！$"
 
@@ -314,7 +314,7 @@ Text_WantToWaterfall:
 	.string "要使用攀瀑吗？$"
 
 Text_MonUsedWaterfall:
-	.string "{STR_VAR_1}使用了攀瀑。$"
+	.string "{STR_VAR_1}使出了攀瀑。$"
 
 EventScript_UseDive::
 	lockall
@@ -408,7 +408,7 @@ Text_WantToDive:
 	.string "要使用潜水吗？$"
 
 Text_MonUsedDive:
-	.string "{STR_VAR_1}使用了潜水。$"
+	.string "{STR_VAR_1}使出了潜水。$"
 
 Text_CantSurface:
 	.string "上方有亮光洒下。\n"

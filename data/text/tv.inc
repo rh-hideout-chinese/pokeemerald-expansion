@@ -559,7 +559,7 @@ gTVBreakingNewsText06::
 	.string "当{STR_VAR_1}遇到稀有的\n{STR_VAR_2}时，训练家派出了\l宝可梦{STR_VAR_3}。$"
 
 gTVBreakingNewsText07::
-	.string "训练家让{STR_VAR_2}\n使用了招式{STR_VAR_1}。\p一不小心，训练家使稀有宝可梦\n昏厥了……$"
+	.string "训练家让{STR_VAR_2}\n使出了招式{STR_VAR_1}。\p一不小心，训练家使稀有宝可梦\n昏厥了……$"
 
 gTVBreakingNewsText12::
 	.string "然而，{STR_VAR_1}看到稀有的\n{STR_VAR_2}时慌了神。\p慌乱中，训练家命令\n{STR_VAR_3}发动攻击。\p一不小心，训练家使稀有宝可梦\n昏厥了。$"
@@ -625,7 +625,7 @@ gTVThePokemonBattleSeminarText00::
 	.string "宝可梦对战研讨会！\p我们通过分析对战\n来学习他人的经验。\p今天的研究案例是\n{STR_VAR_1}的对战。\p{STR_VAR_1}的{STR_VAR_2}\n正在与{STR_VAR_3}对战……$"
 
 gTVThePokemonBattleSeminarText01::
-	.string "它使用了招式{STR_VAR_3}\n攻击{STR_VAR_2}……\p嗯……{STR_VAR_1}！\n这样做是不对的！$"
+	.string "它使出了招式{STR_VAR_3}\n攻击{STR_VAR_2}……\p嗯……{STR_VAR_1}！\n这样做是不对的！$"
 
 gTVThePokemonBattleSeminarText02::
 	.string "除了这个注定失败的招式外，\n训练家的{STR_VAR_1}还会$"
