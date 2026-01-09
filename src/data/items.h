@@ -9156,6 +9156,7 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("学习装置"),
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
+        #if I_EXP_SHARE_ITEM >= GEN_6
             .price = 0,
             .importance = 1,
             .description = COMPOUND_STRING(
