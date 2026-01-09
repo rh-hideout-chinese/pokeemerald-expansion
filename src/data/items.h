@@ -544,7 +544,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SPORT_BALL] =
     {
         .name = ITEM_NAME("竞赛球"),
-        .price = (I_PRICE < GEN_3 || I_PRICE >= GEN_9) ? 0 : 300,
+        .price = (I_PRICE <= GEN_3 || I_PRICE >= GEN_9) ? 0 : 300,
         .description = COMPOUND_STRING(
 			"曾在城都地区的捕\n"
 			"虫大赛上使用的特\n"
@@ -938,7 +938,13 @@ const struct Item gItemsInfo[] =
     [ITEM_BURN_HEAL] =
     {
         .name = ITEM_NAME("灼伤药"),
-        .price = (I_PRICE == GEN_7) ? 300 : ((I_PRICE <= GEN_7) ? 250 : 200),
+    #if I_PRICE >= GEN_8
+        .price = 200,
+    #elif I_PRICE == GEN_7
+        .price = 300,
+    #else
+        .price = 250,
+    #endif
         .description = COMPOUND_STRING(
 			"喷雾式药水。能治\n"
 			"愈宝可梦的灼伤状\n"
@@ -957,7 +963,13 @@ const struct Item gItemsInfo[] =
     [ITEM_ICE_HEAL] =
     {
         .name = ITEM_NAME("解冻药"),
-        .price = (I_PRICE == GEN_7) ? 100 : ((I_PRICE <= GEN_7) ? 250 : 200),
+    #if I_PRICE >= GEN_8
+        .price = 200,
+    #elif I_PRICE == GEN_7
+        .price = 100,
+    #else
+        .price = 250,
+    #endif
         .description = COMPOUND_STRING(
 			"喷雾式药水。能治\n"
 			"愈宝可梦的冰冻状\n"
@@ -976,7 +988,13 @@ const struct Item gItemsInfo[] =
     [ITEM_AWAKENING] =
     {
         .name = ITEM_NAME("解眠药"),
-        .price = (I_PRICE >= GEN_2 && I_PRICE <= GEN_6) ? 250 : ((I_PRICE == GEN_7) ? 100 : 200),
+    #if (I_PRICE >= GEN_8 || I_PRICE == GEN_1)
+        .price = 200,
+    #elif I_PRICE == GEN_7
+        .price = 100,
+    #else
+        .price = 250,
+    #endif
         .description = COMPOUND_STRING(
 			"喷雾式药水。能治\n"
 			"愈宝可梦的睡眠状\n"
@@ -1409,7 +1427,13 @@ const struct Item gItemsInfo[] =
     [ITEM_PP_UP] =
     {
         .name = ITEM_NAME("PP提升剂"),
-        .price = (I_PRICE == GEN_1) ? 1 : ((I_PRICE >= GEN_7) ? 10000 : 9800),
+    #if I_PRICE >= GEN_7
+        .price = 10000,
+    #elif I_PRICE >= GEN_2
+        .price = 9800,
+    #else
+        .price = 1,
+    #endif
         .description = COMPOUND_STRING(
 			"能让宝可梦学会的\n"
 			"其中1个招式PP\n"
@@ -1539,7 +1563,13 @@ const struct Item gItemsInfo[] =
     [ITEM_ABILITY_CAPSULE] =
     {
         .name = ITEM_NAME("特性胶囊"),
-        .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE < GEN_9) ? 10000 : 100000),
+    #if I_PRICE >= GEN_9
+        .price = 100000,
+    #elif I_PRICE >= GEN_7
+        .price = 10000,
+    #else
+        .price = 1000,
+    #endif
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
 			"能让有着2种特性\n"
@@ -2476,7 +2506,13 @@ const struct Item gItemsInfo[] =
     [ITEM_POKE_DOLL] =
     {
         .name = ITEM_NAME("皮皮玩偶"),
-        .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE == GEN_7) ? 100 : 300),
+    #if I_PRICE >= GEN_8
+        .price = 300,
+    #elif I_PRICE == GEN_7
+        .price = 100,
+    #else
+        .price = 1000,
+    #endif
         .description = sPokeDollDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_BATTLE_ITEM,
@@ -2592,7 +2628,13 @@ const struct Item gItemsInfo[] =
     [ITEM_BIG_NUGGET] =
     {
         .name = ITEM_NAME("巨大金珠"),
-        .price = (I_PRICE >= GEN_7) ? (40000 * TREASURE_FACTOR) : 20000,
+    #if I_PRICE >= GEN_7
+        .price = 40000 * TREASURE_FACTOR,
+    #elif I_PRICE == GEN_6
+        .price = 20000,
+    #else
+        .price = 0,
+    #endif
         .description = COMPOUND_STRING(
 			"以纯金制成闪着金\n"
 			"光的大珠子。可以\n"
@@ -2601,7 +2643,7 @@ const struct Item gItemsInfo[] =
         .sortType = ITEM_TYPE_SELLABLE,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-        .flingPower = 130,
+        .flingPower = B_UPDATED_MOVE_DATA >= GEN_8 ? 130 : 80,
         .iconPic = gItemIcon_BigNugget,
         .iconPalette = gItemIconPalette_BigNugget,
     },
@@ -2640,7 +2682,13 @@ const struct Item gItemsInfo[] =
     [ITEM_BALM_MUSHROOM] =
     {
         .name = ITEM_NAME("芳香蘑菇"),
-        .price = (I_PRICE >= GEN_7) ? 15000 * TREASURE_FACTOR: 12500,
+    #if I_PRICE >= GEN_7
+        .price = 15000 * TREASURE_FACTOR,
+    #elif I_PRICE == GEN_6
+        .price = 12500,
+    #else
+        .price = 0,
+    #endif
         .description = sBigMushroomDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_SELLABLE,
@@ -2688,7 +2736,15 @@ const struct Item gItemsInfo[] =
     [ITEM_PEARL_STRING] =
     {
         .name = ITEM_NAME("丸子珍珠"),
-        .price = (I_PRICE >= GEN_8) ? 15000 * TREASURE_FACTOR: ((I_PRICE == GEN_7) ? 30000 : 15000),
+    #if I_PRICE >= GEN_8
+        .price = 20000 * TREASURE_FACTOR,
+    #elif I_PRICE == GEN_7
+        .price = 30000,
+    #elif I_PRICE == GEN_6
+        .price = 15000,
+    #else
+        .price = 0,
+    #endif
         .description = COMPOUND_STRING(
 			"散发着光泽且非常\n"
 			"大颗的珍珠。可以\n"
@@ -2861,7 +2917,13 @@ const struct Item gItemsInfo[] =
     [ITEM_HONEY] =
     {
         .name = ITEM_NAME("甜甜蜜"),
-        .price = (I_PRICE < GEN_5) ? 100 : ((I_PRICE < GEN_8) ? 300 : 900),
+    #if I_PRICE >= GEN_8
+        .price = 900,
+    #elif I_PRICE == GEN_7
+        .price = 300,
+    #else
+        .price = 100,
+    #endif
         .description = COMPOUND_STRING(
 			"宝可梦采集的清甜\n"
 			"芬芳的花蜜。可在\n"
@@ -2961,7 +3023,7 @@ const struct Item gItemsInfo[] =
     [ITEM_RELIC_GOLD] =
     {
         .name = ITEM_NAME("古代金币"),
-        .price = 0,
+        .price = (I_PRICE >= GEN_6) ? 60000 : 0,
         .description = COMPOUND_STRING(
 			"约3000年前的\n"
 			"文明使用的金币。"),
@@ -3509,11 +3571,18 @@ const struct Item gItemsInfo[] =
     },
 
 // Apricorns
+    #if (I_PRICE >= GEN_8 || I_PRICE <= GEN_2)
+        #define APRICORN_PRICE 200
+    #elif I_PRICE >= GEN_5
+        #define APRICORN_PRICE 20
+    #else
+        #define APRICORN_PRICE 0
+    #endif
 
     [ITEM_RED_APRICORN] =
     {
         .name = ITEM_NAME("红球果"),
-        .price = (I_PRICE == GEN_4) ? 0 : ((I_PRICE >= GEN_5 && I_PRICE <= GEN_7) ? 20 : 200),
+        .price = APRICORN_PRICE,
         .description = COMPOUND_STRING(
 			"红色的球果。有种\n"
 			"刺鼻的气味。"),
@@ -3528,7 +3597,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BLUE_APRICORN] =
     {
         .name = ITEM_NAME("蓝球果"),
-        .price = (I_PRICE == GEN_4) ? 0 : ((I_PRICE >= GEN_5 && I_PRICE <= GEN_7) ? 20 : 200),
+        .price = APRICORN_PRICE,
         .description = COMPOUND_STRING(
 			"蓝色的球果。略有\n"
 			"一股青草的香味。"),
@@ -3543,7 +3612,7 @@ const struct Item gItemsInfo[] =
     [ITEM_YELLOW_APRICORN] =
     {
         .name = ITEM_NAME("黄球果"),
-        .price = (I_PRICE == GEN_4) ? 0 : ((I_PRICE >= GEN_5 && I_PRICE <= GEN_7) ? 20 : 200),
+        .price = APRICORN_PRICE,
         .description = COMPOUND_STRING(
 			"黄色的球果。有种\n"
 			"清爽的香味。"),
@@ -3558,7 +3627,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GREEN_APRICORN] =
     {
         .name = ITEM_NAME("绿球果"),
-        .price = (I_PRICE == GEN_4) ? 0 : ((I_PRICE >= GEN_5 && I_PRICE <= GEN_7) ? 20 : 200),
+        .price = APRICORN_PRICE,
         .description = COMPOUND_STRING(
 			"绿色的球果。有种\n"
 			"焦香的香味，非常\n"
@@ -3574,7 +3643,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PINK_APRICORN] =
     {
         .name = ITEM_NAME("粉球果"),
-        .price = (I_PRICE == GEN_4) ? 0 : ((I_PRICE >= GEN_5 && I_PRICE <= GEN_7) ? 20 : 200),
+        .price = APRICORN_PRICE,
         .description = COMPOUND_STRING(
 			"粉红色的球果。有\n"
 			"种甜甜的，好闻的\n"
@@ -3590,7 +3659,7 @@ const struct Item gItemsInfo[] =
     [ITEM_WHITE_APRICORN] =
     {
         .name = ITEM_NAME("白球果"),
-        .price = (I_PRICE == GEN_4) ? 0 : ((I_PRICE >= GEN_5 && I_PRICE <= GEN_7) ? 20 : 200),
+        .price = APRICORN_PRICE,
         .description = COMPOUND_STRING(
 			"白色的球果。没有\n"
 			"任何气味。"),
@@ -3605,7 +3674,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BLACK_APRICORN] =
     {
         .name = ITEM_NAME("黑球果"),
-        .price = (I_PRICE == GEN_4) ? 0 : ((I_PRICE >= GEN_5 && I_PRICE <= GEN_7) ? 20 : 200),
+        .price = APRICORN_PRICE,
         .description = COMPOUND_STRING(
 			"黑色的球果。有种\n"
 			"无法形容的气味。"),
@@ -3978,7 +4047,15 @@ const struct Item gItemsInfo[] =
     [ITEM_MOON_STONE] =
     {
         .name = ITEM_NAME("月之石"),
-        .price = (I_PRICE >= GEN_7) ? 3000 : 2100,
+    #if I_PRICE >= GEN_7
+        .price = 3000,
+    #elif I_PRICE >= GEN_4
+        .price = 2100,
+    #elif I_PRICE == GEN_3
+        .price = 0,
+    #else
+        .price = 1,
+    #endif
         .description = sEvolutionStoneDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_STONE,
@@ -4275,7 +4352,13 @@ const struct Item gItemsInfo[] =
     [ITEM_PRISM_SCALE] =
     {
         .name = ITEM_NAME("美丽鳞片"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 2000 : 500),
+    #if I_PRICE >= GEN_9
+        .price = 3000,
+    #elif I_PRICE >= GEN_7
+        .price = 2000,
+    #else
+        .price = 500,
+    #endif
         .description = COMPOUND_STRING(
 			"能让某些宝可梦进\n"
 			"化的神奇鳞片。散\n"
@@ -6678,11 +6761,18 @@ const struct Item gItemsInfo[] =
     },
 
 // Gems
+    #if I_PRICE >= GEN_9
+        #define GEM_PRICE 15000
+    #elif I_PRICE >= GEN_7
+        #define GEM_PRICE 4000
+    #else
+        #define GEM_PRICE 200
+    #endif
 
     [ITEM_NORMAL_GEM] =
     {
         .name = ITEM_NAME("一般宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6701,7 +6791,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FIRE_GEM] =
     {
         .name = ITEM_NAME("火之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6720,7 +6810,7 @@ const struct Item gItemsInfo[] =
     [ITEM_WATER_GEM] =
     {
         .name = ITEM_NAME("水之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6739,7 +6829,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ELECTRIC_GEM] =
     {
         .name = ITEM_NAME("电之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6758,7 +6848,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GRASS_GEM] =
     {
         .name = ITEM_NAME("草之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6777,7 +6867,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ICE_GEM] =
     {
         .name = ITEM_NAME("冰之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6796,7 +6886,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FIGHTING_GEM] =
     {
         .name = ITEM_NAME("格斗宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6815,7 +6905,7 @@ const struct Item gItemsInfo[] =
     [ITEM_POISON_GEM] =
     {
         .name = ITEM_NAME("毒之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6834,7 +6924,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GROUND_GEM] =
     {
         .name = ITEM_NAME("地面宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6853,7 +6943,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FLYING_GEM] =
     {
         .name = ITEM_NAME("飞行宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6872,7 +6962,7 @@ const struct Item gItemsInfo[] =
     [ITEM_PSYCHIC_GEM] =
     {
         .name = ITEM_NAME("超能力宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6891,7 +6981,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BUG_GEM] =
     {
         .name = ITEM_NAME("虫之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6910,7 +7000,7 @@ const struct Item gItemsInfo[] =
     [ITEM_ROCK_GEM] =
     {
         .name = ITEM_NAME("岩石宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6929,7 +7019,7 @@ const struct Item gItemsInfo[] =
     [ITEM_GHOST_GEM] =
     {
         .name = ITEM_NAME("幽灵宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6948,7 +7038,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DRAGON_GEM] =
     {
         .name = ITEM_NAME("龙之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6967,7 +7057,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DARK_GEM] =
     {
         .name = ITEM_NAME("恶之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -6986,7 +7076,7 @@ const struct Item gItemsInfo[] =
     [ITEM_STEEL_GEM] =
     {
         .name = ITEM_NAME("钢之宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -7005,7 +7095,7 @@ const struct Item gItemsInfo[] =
     [ITEM_FAIRY_GEM] =
     {
         .name = ITEM_NAME("妖精宝石"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+        .price = GEM_PRICE,
         .holdEffect = HOLD_EFFECT_GEMS,
         .holdEffectParam = GEM_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -7884,7 +7974,7 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("海潮薰香"),
         .price = (I_PRICE >= GEN_7) ? 2000 : 9600,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
-        .holdEffectParam = 20,
+        .holdEffectParam = I_TYPE_BOOST_POWER >= GEN_4 ? 20 : 5,
         .description = sSeaIncenseDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_INCENSE,
@@ -8257,11 +8347,18 @@ const struct Item gItemsInfo[] =
     },
 
 // Type-boosting Held Items
+    #if I_PRICE >= GEN_9
+        #define TYPE_BOOSTING_PRICE 3000
+    #elif I_PRICE >= GEN_7
+        #define TYPE_BOOSTING_PRICE 1000
+    #else
+        #define TYPE_BOOSTING_PRICE 100
+    #endif
 
     [ITEM_SILK_SCARF] =
     {
         .name = ITEM_NAME("丝绸围巾"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8281,7 +8378,13 @@ const struct Item gItemsInfo[] =
     [ITEM_CHARCOAL] =
     {
         .name = ITEM_NAME("木炭"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 9800),
+    #if I_PRICE >= GEN_9
+        .price = 3000,
+    #elif I_PRICE >= GEN_7
+        .price = 1000,
+    #else
+        .price = 9800,
+    #endif
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8301,7 +8404,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MYSTIC_WATER] =
     {
         .name = ITEM_NAME("神秘水滴"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8321,7 +8424,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MAGNET] =
     {
         .name = ITEM_NAME("磁铁"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8341,7 +8444,7 @@ const struct Item gItemsInfo[] =
     [ITEM_MIRACLE_SEED] =
     {
         .name = ITEM_NAME("奇迹种子"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = sRoseIncenseDesc,
@@ -8358,7 +8461,7 @@ const struct Item gItemsInfo[] =
     [ITEM_NEVER_MELT_ICE] =
     {
         .name = ITEM_NAME("不融冰"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8378,7 +8481,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BLACK_BELT] =
     {
         .name = ITEM_NAME("黑带"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8398,7 +8501,7 @@ const struct Item gItemsInfo[] =
     [ITEM_POISON_BARB] =
     {
         .name = ITEM_NAME("毒针"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8418,7 +8521,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SOFT_SAND] =
     {
         .name = ITEM_NAME("柔软沙子"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8438,7 +8541,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SHARP_BEAK] =
     {
         .name = ITEM_NAME("锐利鸟嘴"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8458,7 +8561,7 @@ const struct Item gItemsInfo[] =
     [ITEM_TWISTED_SPOON] =
     {
         .name = ITEM_NAME("弯曲的汤匙"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = sOddIncenseDesc,
@@ -8475,7 +8578,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SILVER_POWDER] =
     {
         .name = ITEM_NAME("银粉"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8495,7 +8598,7 @@ const struct Item gItemsInfo[] =
     [ITEM_HARD_STONE] =
     {
         .name = ITEM_NAME("硬石头"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = sRockIncenseDesc,
@@ -8512,7 +8615,7 @@ const struct Item gItemsInfo[] =
     [ITEM_SPELL_TAG] =
     {
         .name = ITEM_NAME("咒术之符"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8532,7 +8635,7 @@ const struct Item gItemsInfo[] =
     [ITEM_DRAGON_FANG] =
     {
         .name = ITEM_NAME("龙之牙"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8552,7 +8655,7 @@ const struct Item gItemsInfo[] =
     [ITEM_BLACK_GLASSES] =
     {
         .name = ITEM_NAME("黑色眼镜"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 1000 : 100),
+        .price = TYPE_BOOSTING_PRICE,
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8572,7 +8675,13 @@ const struct Item gItemsInfo[] =
     [ITEM_METAL_COAT] =
     {
         .name = ITEM_NAME("金属膜"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 2000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 3000,
+    #elif I_PRICE >= GEN_7
+        .price = 2000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_TYPE_POWER,
         .holdEffectParam = TYPE_BOOST_PARAM,
         .description = COMPOUND_STRING(
@@ -8595,7 +8704,13 @@ const struct Item gItemsInfo[] =
     [ITEM_CHOICE_BAND] =
     {
         .name = ITEM_NAME("讲究头带"),
-        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 100000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_CHOICE_BAND,
         .description = COMPOUND_STRING(
 			"有点讲究的头带。\n"
@@ -8613,7 +8728,13 @@ const struct Item gItemsInfo[] =
     [ITEM_CHOICE_SPECS] =
     {
         .name = ITEM_NAME("讲究眼镜"),
-        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 100000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_CHOICE_SPECS,
         .description = COMPOUND_STRING(
 			"有点讲究的眼镜。\n"
@@ -8631,7 +8752,13 @@ const struct Item gItemsInfo[] =
     [ITEM_CHOICE_SCARF] =
     {
         .name = ITEM_NAME("讲究围巾"),
-        .price = (I_PRICE >= GEN_9) ? 100000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 100000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_CHOICE_SCARF,
         .description = COMPOUND_STRING(
 			"有点讲究的围巾。\n"
@@ -8651,7 +8778,13 @@ const struct Item gItemsInfo[] =
     [ITEM_FLAME_ORB] =
     {
         .name = ITEM_NAME("火焰宝珠"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 15000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_FLAME_ORB,
         .description = COMPOUND_STRING(
 			"会放出热量的神奇\n"
@@ -8669,7 +8802,13 @@ const struct Item gItemsInfo[] =
     [ITEM_TOXIC_ORB] =
     {
         .name = ITEM_NAME("剧毒宝珠"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 15000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_TOXIC_ORB,
         .description = COMPOUND_STRING(
 			"会放出毒的神奇宝\n"
@@ -8689,7 +8828,13 @@ const struct Item gItemsInfo[] =
     [ITEM_DAMP_ROCK] =
     {
         .name = ITEM_NAME("潮湿岩石"),
-        .price = (I_PRICE >= GEN_9) ? 8000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 8000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_DAMP_ROCK,
         .description = COMPOUND_STRING(
 			"携带宝可梦使出求\n"
@@ -8707,7 +8852,13 @@ const struct Item gItemsInfo[] =
     [ITEM_HEAT_ROCK] =
     {
         .name = ITEM_NAME("炽热岩石"),
-        .price = (I_PRICE >= GEN_9) ? 8000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 8000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_HEAT_ROCK,
         .description = COMPOUND_STRING(
 			"携带宝可梦使出大\n"
@@ -8725,7 +8876,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SMOOTH_ROCK] =
     {
         .name = ITEM_NAME("沙沙岩石"),
-        .price = (I_PRICE >= GEN_9) ? 8000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 8000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_SMOOTH_ROCK,
         .description = COMPOUND_STRING(
 			"携带宝可梦使出沙\n"
@@ -8743,7 +8900,13 @@ const struct Item gItemsInfo[] =
     [ITEM_ICY_ROCK] =
     {
         .name = ITEM_NAME("冰冷岩石"),
-        .price = (I_PRICE >= GEN_9) ? 8000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 8000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_ICY_ROCK,
         .description = COMPOUND_STRING(
 			"携带宝可梦使出冰\n"
@@ -8841,7 +9004,13 @@ const struct Item gItemsInfo[] =
     [ITEM_ABSORB_BULB] =
     {
         .name = ITEM_NAME("球根"),
-        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 5000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_ABSORB_BULB,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -8860,7 +9029,13 @@ const struct Item gItemsInfo[] =
     [ITEM_CELL_BATTERY] =
     {
         .name = ITEM_NAME("充电电池"),
-        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 5000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_CELL_BATTERY,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -8879,7 +9054,13 @@ const struct Item gItemsInfo[] =
     [ITEM_LUMINOUS_MOSS] =
     {
         .name = ITEM_NAME("光苔"),
-        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 4000 : 1000),
+    #if I_PRICE >= GEN_9
+        .price = 5000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 1000,
+    #endif
         .holdEffect = HOLD_EFFECT_LUMINOUS_MOSS,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -8898,7 +9079,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SNOWBALL] =
     {
         .name = ITEM_NAME("雪丸"),
-        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 5000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_SNOWBALL,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -8919,7 +9106,13 @@ const struct Item gItemsInfo[] =
     [ITEM_BRIGHT_POWDER] =
     {
         .name = ITEM_NAME("光粉"),
-        .price = (I_PRICE >= GEN_9) ? 30000 : ((I_PRICE >= GEN_7) ? 4000 : 10),
+    #if I_PRICE >= GEN_9
+        .price = 30000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 10,
+    #endif
         .holdEffect = HOLD_EFFECT_EVASION_UP,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
@@ -8938,7 +9131,13 @@ const struct Item gItemsInfo[] =
     [ITEM_WHITE_HERB] =
     {
         .name = ITEM_NAME("白色香草"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_WHITE_HERB,
         .description = COMPOUND_STRING(
 			"当携带宝可梦能力\n"
@@ -8957,12 +9156,22 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("学习装置"),
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
+        #if I_EXP_SHARE_ITEM >= GEN_6
             .price = 0,
+            .importance = 1,
             .description = COMPOUND_STRING(
-			"打开后，能让同行\n"
-			"的所有宝可梦获得\n"
-			"经验值的装置。"),
-        .pocket = I_EXP_SHARE_ITEM >= GEN_6 ? POCKET_KEY_ITEMS : POCKET_ITEMS,
+                "打开后，能让同行\n"
+                "的所有宝可梦获得\n"
+                "经验值的装置。"),
+            .pocket = POCKET_KEY_ITEMS,
+        #else
+            .price = (I_PRICE == GEN_1) ? 1 : 3000,
+            .description = COMPOUND_STRING(
+                "携带后，能让同行\n"
+                "的所有宝可梦获得\n"
+                "经验值的装置。"),
+            .pocket = POCKET_ITEMS,
+        #endif
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_ExpShare,
@@ -8974,7 +9183,13 @@ const struct Item gItemsInfo[] =
     [ITEM_QUICK_CLAW] =
     {
         .name = ITEM_NAME("先制之爪"),
-        .price = (I_PRICE >= GEN_9) ? 8000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 8000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_QUICK_CLAW,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -8993,7 +9208,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SOOTHE_BELL] =
     {
         .name = ITEM_NAME("安抚之铃"),
-        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 5000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_FRIENDSHIP_UP,
         .description = COMPOUND_STRING(
 			"音色悦耳的铃铛。\n"
@@ -9011,7 +9232,13 @@ const struct Item gItemsInfo[] =
     [ITEM_MENTAL_HERB] =
     {
         .name = ITEM_NAME("心灵香草"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_MENTAL_HERB,
         .description = COMPOUND_STRING(
 			"当携带宝可梦无法\n"
@@ -9029,7 +9256,13 @@ const struct Item gItemsInfo[] =
     [ITEM_KINGS_ROCK] =
     {
         .name = ITEM_NAME("王者之证"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 5000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 5000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
@@ -9046,7 +9279,13 @@ const struct Item gItemsInfo[] =
     [ITEM_AMULET_COIN] =
     {
         .name = ITEM_NAME("护符金币"),
-        .price = (I_PRICE >= GEN_9) ? 30000 : ((I_PRICE >= GEN_7) ? 10000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 30000,
+    #elif I_PRICE >= GEN_7
+        .price = 10000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_DOUBLE_PRIZE,
         .description = sLuckIncenseDesc,
         .pocket = POCKET_ITEMS,
@@ -9076,7 +9315,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SMOKE_BALL] =
     {
         .name = ITEM_NAME("烟雾球"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 15000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_CAN_ALWAYS_RUN,
         .description = COMPOUND_STRING(
 			"携带宝可梦在和野\n"
@@ -9094,7 +9339,13 @@ const struct Item gItemsInfo[] =
     [ITEM_FOCUS_BAND] =
     {
         .name = ITEM_NAME("气势头带"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_FOCUS_BAND,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
@@ -9131,7 +9382,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SCOPE_LENS] =
     {
         .name = ITEM_NAME("焦点镜"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 15000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_SCOPE_LENS,
         .description = COMPOUND_STRING(
 			"能看见弱点的镜片\n"
@@ -9149,7 +9406,13 @@ const struct Item gItemsInfo[] =
     [ITEM_LEFTOVERS] =
     {
         .name = ITEM_NAME("吃剩的东西"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_LEFTOVERS,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
@@ -9168,7 +9431,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SHELL_BELL] =
     {
         .name = ITEM_NAME("贝壳之铃"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_SHELL_BELL,
         .holdEffectParam = 8,
         .description = COMPOUND_STRING(
@@ -9187,7 +9456,13 @@ const struct Item gItemsInfo[] =
     [ITEM_WIDE_LENS] =
     {
         .name = ITEM_NAME("广角镜"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_WIDE_LENS,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
@@ -9206,7 +9481,13 @@ const struct Item gItemsInfo[] =
     [ITEM_MUSCLE_BAND] =
     {
         .name = ITEM_NAME("力量头带"),
-        .price = (I_PRICE >= GEN_9) ? 8000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 8000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_MUSCLE_BAND,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
@@ -9225,7 +9506,13 @@ const struct Item gItemsInfo[] =
     [ITEM_WISE_GLASSES] =
     {
         .name = ITEM_NAME("博识眼镜"),
-        .price = (I_PRICE >= GEN_9) ? 8000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 8000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_WISE_GLASSES,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
@@ -9244,7 +9531,13 @@ const struct Item gItemsInfo[] =
     [ITEM_EXPERT_BELT] =
     {
         .name = ITEM_NAME("达人带"),
-        .price = (I_PRICE >= GEN_9) ? 30000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 30000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_EXPERT_BELT,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -9264,7 +9557,13 @@ const struct Item gItemsInfo[] =
     [ITEM_LIGHT_CLAY] =
     {
         .name = ITEM_NAME("光之黏土"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_LIGHT_CLAY,
         .description = COMPOUND_STRING(
 			"当携带后使出光墙\n"
@@ -9282,7 +9581,13 @@ const struct Item gItemsInfo[] =
     [ITEM_LIFE_ORB] =
     {
         .name = ITEM_NAME("生命宝珠"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 50000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_LIFE_ORB,
         .description = COMPOUND_STRING(
 			"携带后，虽然每次\n"
@@ -9300,7 +9605,13 @@ const struct Item gItemsInfo[] =
     [ITEM_POWER_HERB] =
     {
         .name = ITEM_NAME("强力香草"),
-        .price = (I_PRICE >= GEN_9) ? 30000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 30000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_POWER_HERB,
         .description = COMPOUND_STRING(
 			"携带宝可梦可有1\n"
@@ -9318,7 +9629,13 @@ const struct Item gItemsInfo[] =
     [ITEM_FOCUS_SASH] =
     {
         .name = ITEM_NAME("气势披带"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 50000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_FOCUS_SASH,
         .description = COMPOUND_STRING(
 			"满HP时即使受致\n"
@@ -9336,7 +9653,13 @@ const struct Item gItemsInfo[] =
     [ITEM_ZOOM_LENS] =
     {
         .name = ITEM_NAME("对焦镜"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_ZOOM_LENS,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -9355,7 +9678,13 @@ const struct Item gItemsInfo[] =
     [ITEM_METRONOME] =
     {
         .name = ITEM_NAME("节拍器"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 15000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_METRONOME,
         .holdEffectParam = 20,
         .description = COMPOUND_STRING(
@@ -9374,7 +9703,13 @@ const struct Item gItemsInfo[] =
     [ITEM_IRON_BALL] =
     {
         .name = ITEM_NAME("黑色铁球"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_IRON_BALL,
         .description = COMPOUND_STRING(
 			"携带后速度降低。\n"
@@ -9393,7 +9728,13 @@ const struct Item gItemsInfo[] =
     [ITEM_LAGGING_TAIL] =
     {
         .name = ITEM_NAME("后攻之尾"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_LAGGING_TAIL,
         .description = sFullIncenseDesc,
         .pocket = POCKET_ITEMS,
@@ -9408,7 +9749,13 @@ const struct Item gItemsInfo[] =
     [ITEM_DESTINY_KNOT] =
     {
         .name = ITEM_NAME("红线"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_DESTINY_KNOT,
         .description = COMPOUND_STRING(
 			"携带后，在自己着\n"
@@ -9426,7 +9773,13 @@ const struct Item gItemsInfo[] =
     [ITEM_BLACK_SLUDGE] =
     {
         .name = ITEM_NAME("黑色污泥"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_BLACK_SLUDGE,
         .description = COMPOUND_STRING(
 			"携带后毒宝可梦会\n"
@@ -9444,7 +9797,13 @@ const struct Item gItemsInfo[] =
     [ITEM_GRIP_CLAW] =
     {
         .name = ITEM_NAME("紧缠钩爪"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_GRIP_CLAW,
         .description = COMPOUND_STRING(
 			"携带后，绑紧紧束\n"
@@ -9462,7 +9821,13 @@ const struct Item gItemsInfo[] =
     [ITEM_STICKY_BARB] =
     {
         .name = ITEM_NAME("附着针"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_STICKY_BARB,
         .description = COMPOUND_STRING(
 			"携带后，每回合都\n"
@@ -9480,7 +9845,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SHED_SHELL] =
     {
         .name = ITEM_NAME("美丽空壳"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 100),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 100,
+    #endif
         .holdEffect = HOLD_EFFECT_SHED_SHELL,
         .description = COMPOUND_STRING(
 			"结实坚硬的空壳。\n"
@@ -9498,7 +9869,13 @@ const struct Item gItemsInfo[] =
     [ITEM_BIG_ROOT] =
     {
         .name = ITEM_NAME("大根茎"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_BIG_ROOT,
         .holdEffectParam = 30,
         .description = COMPOUND_STRING(
@@ -9517,7 +9894,13 @@ const struct Item gItemsInfo[] =
     [ITEM_RAZOR_CLAW] =
     {
         .name = ITEM_NAME("锐利之爪"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 5000 : 2100),
+    #if I_PRICE >= GEN_9
+        .price = 15000,
+    #elif I_PRICE >= GEN_7
+        .price = 5000,
+    #else
+        .price = 2100,
+    #endif
         .holdEffect = HOLD_EFFECT_SCOPE_LENS,
         .description = COMPOUND_STRING(
 			"尖锐的爪子。携带\n"
@@ -9536,7 +9919,13 @@ const struct Item gItemsInfo[] =
     [ITEM_RAZOR_FANG] =
     {
         .name = ITEM_NAME("锐利之牙"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 5000 : 2100),
+    #if I_PRICE >= GEN_9
+        .price = 15000,
+    #elif I_PRICE >= GEN_7
+        .price = 5000,
+    #else
+        .price = 2100,
+    #endif
         .holdEffect = HOLD_EFFECT_FLINCH,
         .holdEffectParam = 10,
         .description = sKingsRockDesc,
@@ -9553,7 +9942,13 @@ const struct Item gItemsInfo[] =
     [ITEM_EVIOLITE] =
     {
         .name = ITEM_NAME("进化奇石"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 50000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_EVIOLITE,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
@@ -9572,7 +9967,13 @@ const struct Item gItemsInfo[] =
     [ITEM_FLOAT_STONE] =
     {
         .name = ITEM_NAME("轻石"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_FLOAT_STONE,
         .description = COMPOUND_STRING(
 			"非常轻的石头。携\n"
@@ -9590,7 +9991,13 @@ const struct Item gItemsInfo[] =
     [ITEM_ROCKY_HELMET] =
     {
         .name = ITEM_NAME("凸凸头盔"),
-        .price = (I_PRICE >= GEN_9) ? 50000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 50000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_ROCKY_HELMET,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -9609,7 +10016,13 @@ const struct Item gItemsInfo[] =
     [ITEM_AIR_BALLOON] =
     {
         .name = ITEM_NAME("气球"),
-        .price = (I_PRICE >= GEN_9) ? 15000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 15000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_AIR_BALLOON,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -9628,7 +10041,13 @@ const struct Item gItemsInfo[] =
     [ITEM_RED_CARD] =
     {
         .name = ITEM_NAME("红牌"),
-        .price = (I_PRICE >= GEN_9) ? 3000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 3000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_RED_CARD,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -9647,7 +10066,13 @@ const struct Item gItemsInfo[] =
     [ITEM_RING_TARGET] =
     {
         .name = ITEM_NAME("标靶"),
-        .price = (I_PRICE >= GEN_9) ? 10000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 10000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_RING_TARGET,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -9666,7 +10091,13 @@ const struct Item gItemsInfo[] =
     [ITEM_BINDING_BAND] =
     {
         .name = ITEM_NAME("紧绑束带"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_BINDING_BAND,
         .description = COMPOUND_STRING(
 			"携带后，绑紧招式\n"
@@ -9684,7 +10115,13 @@ const struct Item gItemsInfo[] =
     [ITEM_EJECT_BUTTON] =
     {
         .name = ITEM_NAME("逃脱按键"),
-        .price = (I_PRICE >= GEN_9) ? 30000 : ((I_PRICE >= GEN_7) ? 4000 : 200),
+    #if I_PRICE >= GEN_9
+        .price = 30000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 200,
+    #endif
         .holdEffect = HOLD_EFFECT_EJECT_BUTTON,
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
@@ -9741,7 +10178,13 @@ const struct Item gItemsInfo[] =
     [ITEM_SAFETY_GOGGLES] =
     {
         .name = ITEM_NAME("防尘护目镜"),
-        .price = (I_PRICE >= GEN_9) ? 20000 : ((I_PRICE >= GEN_7) ? 4000 : 1000),
+    #if I_PRICE >= GEN_9
+        .price = 20000,
+    #elif I_PRICE >= GEN_7
+        .price = 4000,
+    #else
+        .price = 1000,
+    #endif
         .holdEffect = HOLD_EFFECT_SAFETY_GOGGLES,
         .description = COMPOUND_STRING(
 			"能防御天气伤害和\n"
@@ -9759,7 +10202,13 @@ const struct Item gItemsInfo[] =
     [ITEM_ADRENALINE_ORB] =
     {
         .name = ITEM_NAME("胆怯球"),
-        .price = (I_PRICE >= GEN_9) ? 5000 : ((I_PRICE >= GEN_8) ? 4000 : 300),
+    #if I_PRICE >= GEN_9
+        .price = 5000,
+    #elif I_PRICE == GEN_8
+        .price = 4000,
+    #else
+        .price = 300,
+    #endif
         .holdEffect = HOLD_EFFECT_ADRENALINE_ORB,
         .description = COMPOUND_STRING(
 			"携带后，在受到威\n"
@@ -12700,6 +13149,7 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("极巨腕带"),
         .price = 0,
+        .importance = 1,
         .description = COMPOUND_STRING(
 			"内嵌了许愿星，在\n"
 			"能量点会发出光芒\n"
