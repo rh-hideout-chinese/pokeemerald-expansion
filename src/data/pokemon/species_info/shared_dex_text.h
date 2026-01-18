@@ -22,10 +22,6 @@ const u8 gEeveePokedexText[] = _(
 const u8 gUnownPokedexText[] = _(
     "身体很薄，\n会一直贴在墙上。\n它的外形好像有着某种含义。");
 
-// Gen 3 families
-const u8 gDeoxysNormalPokedexText[] = _(
-    "附着在陨石上的宇宙病毒的\nDNA变异后生成的宝可梦。");
-
 // Gen 4 families
 const u8 gMothimPokedexText[] = _(
     "非常喜欢吃花蜜。\n会抢夺三蜜蜂采集到的蜜，\n然后自己吃掉。");
