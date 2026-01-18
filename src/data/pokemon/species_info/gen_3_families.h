@@ -12903,10 +12903,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 17,
         .weight = 608,
         .description = COMPOUND_STRING(
-            "Deoxys emerged from a virus that came\n"
-            "from space. It is highly intelligent and\n"
-            "can shoot lasers from the crystalline\n"
-            "organ on its chest."),
+			"它是宇宙病毒的DNA受到激光照射后，\n"
+			"发生突变而生成的宝可梦。\n"
+			"胸部的水晶体好像是它的大脑。"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -12983,9 +12982,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 17,
         .weight = 608,
         .description = COMPOUND_STRING(
-            "This Deoxys has transformed into its\n"
-            "aggressive guise. It can fool enemies\n"
-            "by altering its appearance."),
+			"变化为攻击形态的代欧奇希斯\n"
+			"能够变换形态来迷惑对手。"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -13061,9 +13059,8 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 17,
         .weight = 608,
         .description = COMPOUND_STRING(
-            "When it changes form, an aurora\n"
-            "appears. It absorbs attacks by\n"
-            "altering its cellular structure."),
+			"变化形态的时候会出现极光。\n"
+			"通过变化细胞形态来吸取攻击。"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,
@@ -13140,10 +13137,9 @@ const struct SpeciesInfo gSpeciesInfoGen3[] =
         .height = 17,
         .weight = 608,
         .description = COMPOUND_STRING(
-            "A Pokémon that mutated from an\n"
-            "extraterrestrial virus exposed to a laser\n"
-            "beam. Its body is configured for superior \n"
-            "agility and speed."),
+			"当宇宙病毒被激光照射时，\n"
+			"发生突变而形成的宝可梦。\n"
+			"身体的形状很适合快速移动。"),
         .pokemonScale = 256,
         .pokemonOffset = 0,
         .trainerScale = 290,
