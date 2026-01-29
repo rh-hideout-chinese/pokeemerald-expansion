@@ -4602,6 +4602,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, u32 battler, enum Ability ab
              && IsBattlerAlive(battler)
              && gBattleStruct->battlerState[partner].commanderSpecies == SPECIES_NONE
              && gBattleMons[partner].species == SPECIES_DONDOZO
+             && (gChosenActionByBattler[partner] != B_ACTION_SWITCH || HasBattlerActedThisTurn(partner))
              && GET_BASE_SPECIES_ID(GetMonData(GetBattlerMon(battler), MON_DATA_SPECIES)) == SPECIES_TATSUGIRI)
             {
                 SaveBattlerAttacker(gBattlerAttacker);
@@ -9409,19 +9410,23 @@ bool32 TryBattleFormChange(u32 battler, enum FormChanges method)
 bool32 DoBattlersShareType(u32 battler1, u32 battler2)
 {
     s32 i;
+    s32 j;
     enum Type types1[3], types2[3];
     GetBattlerTypes(battler1, FALSE, types1);
     GetBattlerTypes(battler2, FALSE, types2);
 
-    if (types1[2] == TYPE_MYSTERY)
-        types1[2] = types1[0];
-    if (types2[2] == TYPE_MYSTERY)
-        types2[2] = types2[0];
-
     for (i = 0; i < 3; i++)
     {
-        if (types1[i] == types2[0] || types1[i] == types2[1] || types1[i] == types2[2])
-            return TRUE;
+        if (types1[i] == TYPE_MYSTERY)
+            continue;
+
+        for (j = 0; j < 3; j++)
+        {
+            if (types2[j] == TYPE_MYSTERY)
+                continue;
+            if (types1[i] == types2[j])
+                return TRUE;
+        }
     }
 
     return FALSE;
@@ -9805,6 +9810,7 @@ bool32 CanFling(u32 battler)
       || (GetConfig(CONFIG_KLUTZ_FLING_INTERACTION) >= GEN_5 && GetBattlerAbility(battler) == ABILITY_KLUTZ)
       || gFieldStatuses & STATUS_FIELD_MAGIC_ROOM
       || gBattleMons[battler].volatiles.embargo
+      || (GetItemTMHMIndex(item) != 0 && GetItemImportance(item) == 1) // don't fling reusable TMs
       || GetFlingPowerFromItemId(item) == 0
       || !CanBattlerGetOrLoseItem(battler, item))
         return FALSE;
