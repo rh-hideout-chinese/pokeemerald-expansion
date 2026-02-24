@@ -138,7 +138,7 @@ const struct FrontierBrain gFrontierBrainInfo[NUM_FRONTIER_FACILITIES] =
             COMPOUND_STRING("我巨蛋超级巨星\n可不是浪得虚名！") //Gold
         },
         .battledBit = {1 << 2, 1 << 3},
-        .streakAppearances = {1, 2, 5, 0},
+        .streakAppearances = {4, 9, 5, 0},
     },
     [FRONTIER_FACILITY_PALACE] =
     {
