@@ -702,743 +702,739 @@
     {
       "id": "MAPSEC_PALLET_TOWN",
       "name": "真新镇",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 11,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_VIRIDIAN_CITY",
       "name": "常青市",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_PEWTER_CITY",
       "name": "深灰市",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 4,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_CERULEAN_CITY",
       "name": "华蓝市",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_LAVENDER_TOWN",
       "name": "紫苑镇",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_VERMILION_CITY",
       "name": "枯叶市",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_CELADON_CITY",
       "name": "玉虹市",
-      "x": 0,
-      "y": 0,
+      "x": 11,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_FUCHSIA_CITY",
       "name": "浅红市",
-      "x": 0,
-      "y": 0,
+      "x": 12,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_CINNABAR_ISLAND",
       "name": "红莲镇",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 14,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_INDIGO_PLATEAU",
       "name": "石英高原",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_SAFFRON_CITY",
       "name": "金黄市",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_4_POKECENTER",
-      "name": "4号道路"
+      "name": "4号道路",
+      "name_clone": true,
+      "x": 8,
+      "y": 3,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_10_POKECENTER",
-      "name": "10号道路"
+      "name": "10号道路",
+      "name_clone": true,
+      "x": 18,
+      "y": 3,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_1",
       "name": "1号道路",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 9,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_2",
       "name": "2号道路",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 5,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "id": "MAPSEC_ROUTE_3",
       "name": "3号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 5,
+      "y": 4,
+      "width": 4,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_4",
       "name": "4号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 8,
+      "y": 3,
+      "width": 6,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_5",
       "name": "5号道路",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 4,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_6",
       "name": "6号道路",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 7,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_7",
       "name": "7号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 12,
+      "y": 6,
+      "width": 2,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_8",
       "name": "8号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 15,
+      "y": 6,
+      "width": 3,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_9",
       "name": "9号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 15,
+      "y": 3,
+      "width": 3,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_10",
       "name": "10号道路",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 3,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "id": "MAPSEC_ROUTE_11",
       "name": "11号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 15,
+      "y": 9,
+      "width": 3,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_12",
       "name": "12号道路",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 7,
       "width": 1,
-      "height": 1
+      "height": 5
     },
     {
       "id": "MAPSEC_ROUTE_13",
       "name": "13号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 16,
+      "y": 11,
+      "width": 2,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_14",
       "name": "14号道路",
-      "x": 0,
-      "y": 0,
+      "x": 15,
+      "y": 11,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_15",
       "name": "15号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 13,
+      "y": 12,
+      "width": 2,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_16",
       "name": "16号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 7,
+      "y": 6,
+      "width": 4,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_17",
       "name": "17号道路",
-      "x": 0,
-      "y": 0,
+      "x": 7,
+      "y": 7,
       "width": 1,
-      "height": 1
+      "height": 5
     },
     {
       "id": "MAPSEC_ROUTE_18",
       "name": "18号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 7,
+      "y": 12,
+      "width": 5,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_19",
       "name": "19号水路",
-      "x": 0,
-      "y": 0,
+      "x": 12,
+      "y": 13,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_20",
       "name": "20号水路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 5,
+      "y": 14,
+      "width": 7,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_21",
       "name": "21号水路",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 12,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_22",
       "name": "22号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 2,
+      "y": 8,
+      "width": 2,
       "height": 1
     },
     {
       "id": "MAPSEC_ROUTE_23",
       "name": "23号道路",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 4,
       "width": 1,
-      "height": 1
+      "height": 4
     },
     {
       "id": "MAPSEC_ROUTE_24",
       "name": "24号道路",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 1,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_ROUTE_25",
       "name": "25号道路",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 15,
+      "y": 1,
+      "width": 2,
       "height": 1
     },
     {
       "id": "MAPSEC_VIRIDIAN_FOREST",
       "name": "常青森林",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_MT_MOON",
       "name": "月见山",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_S_S_ANNE",
       "name": "圣特安努号",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_UNDERGROUND_PATH",
       "name": "地下通道",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 7,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_UNDERGROUND_PATH_2",
-      "name": "地下通道"
+      "name": "地下通道",
+      "name_clone": true,
+      "x": 12,
+      "y": 6,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_DIGLETTS_CAVE",
       "name": "地鼠洞穴",
-      "x": 0,
-      "y": 0,
+      "x": 15,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_KANTO_VICTORY_ROAD",
-      "name": "冠军之路"
+      "name": "冠军之路",
+      "x": 2,
+      "y": 4,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_ROCKET_HIDEOUT",
       "name": "火箭队基地",
-      "x": 0,
-      "y": 0,
+      "x": 11,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_SILPH_CO",
       "name": "西尔佛公司",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_POKEMON_MANSION",
       "name": "宝可梦屋",
-      "x": 0,
-      "y": 0,
+      "x": 4,
+      "y": 14,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_KANTO_SAFARI_ZONE",
-      "name": "狩猎地带"
+      "name": "狩猎地带",
+      "x": 12,
+      "y": 12,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_POKEMON_LEAGUE",
       "name": "宝可梦联盟",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_ROCK_TUNNEL",
       "name": "岩山隧道",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 5,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_SEAFOAM_ISLANDS",
       "name": "双子岛",
-      "x": 0,
-      "y": 0,
+      "x": 8,
+      "y": 14,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_POKEMON_TOWER",
       "name": "宝可梦塔",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 6,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_CERULEAN_CAVE",
       "name": "华蓝洞窟",
-      "x": 0,
-      "y": 0,
+      "x": 13,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_POWER_PLANT",
       "name": "无人发电厂",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 4,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_ONE_ISLAND",
       "name": "第1岛",
-      "x": 0,
-      "y": 0,
+      "x": 1,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_TWO_ISLAND",
       "name": "第2岛",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_THREE_ISLAND",
       "name": "第3岛",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_FOUR_ISLAND",
       "name": "第4岛",
-      "x": 0,
-      "y": 0,
+      "x": 3,
+      "y": 4,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_FIVE_ISLAND",
       "name": "第5岛",
-      "x": 0,
-      "y": 0,
+      "x": 16,
+      "y": 11,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_SEVEN_ISLAND",
       "name": "第7岛",
-      "x": 0,
-      "y": 0,
+      "x": 5,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_SIX_ISLAND",
       "name": "第6岛",
-      "x": 0,
-      "y": 0,
+      "x": 17,
+      "y": 5,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_KINDLE_ROAD",
       "name": "热气之路",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 3,
       "width": 1,
-      "height": 1
+      "height": 6
     },
     {
       "id": "MAPSEC_TREASURE_BEACH",
       "name": "宝物海滩",
-      "x": 0,
-      "y": 0,
+      "x": 1,
+      "y": 9,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_CAPE_BRINK",
       "name": "边缘海岬",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 7,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_BOND_BRIDGE",
       "name": "索桥",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 13,
+      "y": 12,
+      "width": 4,
       "height": 1
     },
     {
       "id": "MAPSEC_THREE_ISLE_PORT",
       "name": "第3岛码头",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "id": "MAPSEC_SEVII_ISLE_6",
-      "name": "6号七之岛",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "id": "MAPSEC_SEVII_ISLE_7",
-      "name": "7号七之岛",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "id": "MAPSEC_SEVII_ISLE_8",
-      "name": "8号七之岛",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
-    },
-    {
-      "id": "MAPSEC_SEVII_ISLE_9",
-      "name": "9号七之岛",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 18,
+      "y": 13,
+      "width": 2,
       "height": 1
     },
     {
       "id": "MAPSEC_RESORT_GORGEOUS",
       "name": "豪华度假区",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 16,
+      "y": 9,
+      "width": 3,
       "height": 1
     },
     {
       "id": "MAPSEC_WATER_LABYRINTH",
       "name": "水之迷宫",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 14,
+      "y": 10,
+      "width": 3,
       "height": 1
     },
     {
       "id": "MAPSEC_FIVE_ISLE_MEADOW",
       "name": "第5岛空地",
-      "x": 0,
-      "y": 0,
+      "x": 17,
+      "y": 10,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "id": "MAPSEC_MEMORIAL_PILLAR",
       "name": "回忆之塔",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 12,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "id": "MAPSEC_OUTCAST_ISLAND",
       "name": "外岛",
-      "x": 0,
+      "x": 15,
       "y": 0,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "id": "MAPSEC_GREEN_PATH",
       "name": "绿之步道",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 15,
+      "y": 3,
+      "width": 3,
       "height": 1
     },
     {
       "id": "MAPSEC_WATER_PATH",
       "name": "水之步道",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 3,
       "width": 1,
-      "height": 1
+      "height": 5
     },
     {
       "id": "MAPSEC_RUIN_VALLEY",
       "name": "遗迹山谷",
-      "x": 0,
-      "y": 0,
-      "width": 1,
-      "height": 1
+      "x": 16,
+      "y": 7,
+      "width": 2,
+      "height": 2
     },
     {
       "id": "MAPSEC_TRAINER_TOWER",
-      "name": "训练家塔",
-      "x": 0,
-      "y": 0,
+      "name": "训练师塔",
+      "x": 5,
+      "y": 6,
       "width": 1,
-      "height": 1
+      "height": 2
     },
     {
       "id": "MAPSEC_CANYON_ENTRANCE",
       "name": "溪谷入口",
-      "x": 0,
-      "y": 0,
+      "x": 5,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_SEVAULT_CANYON",
       "name": "七宝溪谷",
-      "x": 0,
-      "y": 0,
+      "x": 6,
+      "y": 9,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "id": "MAPSEC_TANOBY_RUINS",
       "name": "阿斯卡纳遗迹",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 3,
+      "y": 12,
+      "width": 7,
       "height": 1
     },
     {
       "id": "MAPSEC_SEVII_ISLE_22",
       "name": "22号七之岛",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "id": "MAPSEC_SEVII_ISLE_23",
       "name": "23号七之岛",
-      "x": 0,
-      "y": 0,
-      "width": 1,
+      "x": 3,
+      "y": 14,
+      "width": 6,
       "height": 1
     },
     {
       "id": "MAPSEC_SEVII_ISLE_24",
       "name": "24号七之岛",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 12,
       "width": 1,
-      "height": 1
+      "height": 3
     },
     {
       "id": "MAPSEC_NAVEL_ROCK_FRLG",
       "name": "脐之岩",
-      "x": 0,
-      "y": 0,
+      "x": 10,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_MT_EMBER",
       "name": "灯火山",
-      "x": 0,
-      "y": 0,
+      "x": 2,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_BERRY_FOREST",
       "name": "树果森林",
-      "x": 0,
-      "y": 0,
+      "x": 14,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_ICEFALL_CAVE",
       "name": "冻瀑洞窟",
-      "x": 0,
-      "y": 0,
+      "x": 3,
+      "y": 4,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_ROCKET_WAREHOUSE",
       "name": "火箭队仓库",
-      "x": 0,
-      "y": 0,
+      "x": 17,
+      "y": 11,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_TRAINER_TOWER_2",
-      "name": "训练家塔"
+      "name": "训练师塔",
+      "name_clone": true,
+      "x": 5,
+      "y": 6,
+      "width": 1,
+      "height": 1
     },
     {
       "id": "MAPSEC_DOTTED_HOLE",
       "name": "点之穴",
-      "x": 0,
-      "y": 0,
+      "x": 16,
+      "y": 8,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_LOST_CAVE",
       "name": "不归之穴",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_PATTERN_BUSH",
       "name": "标志之林",
-      "x": 0,
-      "y": 0,
+      "x": 17,
+      "y": 3,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_ALTERING_CAVE_FRLG",
       "name": "变化洞窟",
-      "x": 0,
+      "x": 15,
       "y": 0,
       "width": 1,
       "height": 1
@@ -1446,88 +1442,88 @@
     {
       "id": "MAPSEC_TANOBY_CHAMBERS",
       "name": "阿斯卡纳石室",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_THREE_ISLE_PATH",
       "name": "第3岛隧道",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 13,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_TANOBY_KEY",
       "name": "阿斯卡纳的钥匙",
-      "x": 0,
-      "y": 0,
+      "x": 6,
+      "y": 9,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_BIRTH_ISLAND_FRLG",
       "name": "诞生之岛",
-      "x": 0,
-      "y": 0,
+      "x": 18,
+      "y": 13,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_MONEAN_CHAMBER",
       "name": "伊莱斯石室",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_LIPTOO_CHAMBER",
       "name": "那藏石室",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_WEEPTH_CHAMBER",
       "name": "由格石室",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_DILFORD_CHAMBER",
       "name": "阿利波卡石室",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_SCUFIB_CHAMBER",
       "name": "科斗石室",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_RIXY_CHAMBER",
       "name": "阿努泽石室",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
       "height": 1
     },
     {
       "id": "MAPSEC_VIAPOIS_CHAMBER",
       "name": "澳利弗石室",
-      "x": 0,
-      "y": 0,
+      "x": 9,
+      "y": 12,
       "width": 1,
       "height": 1
     },

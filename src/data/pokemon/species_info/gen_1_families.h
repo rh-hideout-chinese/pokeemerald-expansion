@@ -254,7 +254,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_THICK_FAT, ABILITY_THICK_FAT, ABILITY_THICK_FAT },
         .bodyColor = BODY_COLOR_GREEN,
         .speciesName = _("妙蛙花"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_VENUSAUR_MEGA,
+    #else
+        .cryId = CRY_VENUSAUR,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_VENUSAUR,
         .categoryName = _("种子"),
         .height = 24,
@@ -596,7 +600,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_BLACK,
         .speciesName = _("喷火龙"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_CHARIZARD_MEGA_X,
+    #else
+        .cryId = CRY_CHARIZARD,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_CHARIZARD,
         .categoryName = _("火焰"),
         .height = 17,
@@ -663,7 +671,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_DROUGHT, ABILITY_DROUGHT, ABILITY_DROUGHT },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("喷火龙"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_CHARIZARD_MEGA_Y,
+    #else
+        .cryId = CRY_CHARIZARD,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_CHARIZARD,
         .categoryName = _("火焰"),
         .height = 17,
@@ -1009,7 +1021,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_MEGA_LAUNCHER, ABILITY_MEGA_LAUNCHER, ABILITY_MEGA_LAUNCHER },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("水箭龟"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_BLASTOISE_MEGA,
+    #else
+        .cryId = CRY_BLASTOISE,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_BLASTOISE,
         .categoryName = _("甲壳"),
         .height = 16,
@@ -1184,7 +1200,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Caterpie,
             gShinyOverworldPalette_Caterpie
         )
-        .tmIlliterate = TRUE,
+        .teachingType = TM_ILLITERATE,
         .levelUpLearnset = sCaterpieLevelUpLearnset,
         .teachableLearnset = sCaterpieTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_METAPOD}),
@@ -1251,7 +1267,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Metapod,
             gShinyOverworldPalette_Metapod
         )
-        .tmIlliterate = TRUE,
+        .teachingType = TM_ILLITERATE,
         .levelUpLearnset = sMetapodLevelUpLearnset,
         .teachableLearnset = sMetapodTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BUTTERFREE}),
@@ -1491,7 +1507,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Weedle,
             gShinyOverworldPalette_Weedle
         )
-        .tmIlliterate = TRUE,
+        .teachingType = TM_ILLITERATE,
         .levelUpLearnset = sWeedleLevelUpLearnset,
         .teachableLearnset = sWeedleTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 7, SPECIES_KAKUNA}),
@@ -1568,7 +1584,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Kakuna,
             gShinyOverworldPalette_Kakuna
         )
-        .tmIlliterate = TRUE,
+        .teachingType = TM_ILLITERATE,
         .levelUpLearnset = sKakunaLevelUpLearnset,
         .teachableLearnset = sKakunaTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 10, SPECIES_BEEDRILL}),
@@ -1680,7 +1696,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY, ABILITY_ADAPTABILITY },
         .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("大针蜂"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_BEEDRILL_MEGA,
+    #else
+        .cryId = CRY_BEEDRILL,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_BEEDRILL,
         .categoryName = _("毒蜂"),
         .height = 14,
@@ -1978,7 +1998,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_NO_GUARD, ABILITY_NO_GUARD, ABILITY_NO_GUARD },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("大比鸟"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_PIDGEOT_MEGA,
+    #else
+        .cryId = CRY_PIDGEOT,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_PIDGEOT,
         .categoryName = _("鸟"),
         .height = 22,
@@ -2462,6 +2486,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Spearow,
             gShinyOverworldPalette_Spearow
         )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
         .levelUpLearnset = sSpearowLevelUpLearnset,
         .teachableLearnset = sSpearowTeachableLearnset,
         .eggMoveLearnset = sSpearowEggMoveLearnset,
@@ -3916,6 +3941,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sRaichuLevelUpLearnset,
         .teachableLearnset = sRaichuTeachableLearnset,
         .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
+        .formChangeTable = sRaichuFormChangeTable,
     },
 
 #if P_ALOLAN_FORMS
@@ -3984,6 +4010,123 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
     },
 #endif //P_ALOLAN_FORMS
+
+#if P_GEN_9_MEGA_EVOLUTIONS
+    [SPECIES_RAICHU_MEGA_X] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 135,
+        .baseDefense   = 95,
+        .baseSpeed     = 110,
+        .baseSpAttack  = 90,
+        .baseSpDefense = 95,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 75,
+        .expYield = RAICHU_EXP_YIELD,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("雷丘"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_RAICHU_MEGA_X,
+    #else
+        .cryId = CRY_RAICHU,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_RAICHU,
+        .categoryName = _("鼠"),
+        .height = 12,
+        .weight = 380,
+        .description = COMPOUND_STRING(
+			"从双耳和分叉的尾巴发出\n"
+			"5000万伏特的电光，\n"
+			"并以X字的样子飞翔。"),
+        .frontPic = gMonFrontPic_RaichuMegaX,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 4,
+        .frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_RaichuMegaX,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_RaichuMegaX,
+        .shinyPalette = gMonShinyPalette_RaichuMegaX,
+        .iconSprite = gMonIcon_RaichuMegaX,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Raichu)
+        SHADOW(6, 6, SHADOW_SIZE_M)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sRaichuLevelUpLearnset,
+        .teachableLearnset = sRaichuTeachableLearnset,
+        .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
+        .formChangeTable = sRaichuFormChangeTable,
+    },
+#endif //P_GEN_9_MEGA_EVOLUTIONS
+
+
+#if P_GEN_9_MEGA_EVOLUTIONS
+    [SPECIES_RAICHU_MEGA_Y] =
+    {
+        .baseHP        = 60,
+        .baseAttack    = 100,
+        .baseDefense   = 55,
+        .baseSpeed     = 130,
+        .baseSpAttack  = 160,
+        .baseSpDefense = 80,
+        .types = MON_TYPES(TYPE_ELECTRIC),
+        .catchRate = 75,
+        .expYield = RAICHU_EXP_YIELD,
+        .evYield_Speed = 3,
+        .genderRatio = PERCENT_FEMALE(50),
+        .eggCycles = 10,
+        .friendship = STANDARD_FRIENDSHIP,
+        .growthRate = GROWTH_MEDIUM_FAST,
+        .eggGroups = MON_EGG_GROUPS(EGG_GROUP_FIELD, EGG_GROUP_FAIRY),
+        .abilities = { ABILITY_STATIC, ABILITY_NONE, ABILITY_LIGHTNING_ROD },
+        .bodyColor = BODY_COLOR_YELLOW,
+        .speciesName = _("雷丘"),
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_RAICHU_MEGA_Y,
+    #else
+        .cryId = CRY_RAICHU,
+    #endif // P_MODIFIED_MEGA_CRIES
+        .natDexNum = NATIONAL_DEX_RAICHU,
+        .categoryName = _("鼠"),
+        .height = 10,
+        .weight = 260,
+        .description = COMPOUND_STRING(
+			"从太阳穴伸展出来的\n"
+			"锯齿状体毛和尾巴尖端\n"
+			"会放出Y字轨迹的电击。"),
+        //.frontPic = gMonBackPic_CircledQuestionMark,
+        //.frontPicSize = MON_COORDS_SIZE(40, 40),
+        //.frontPicYOffset = 12,
+        //.frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        //.backPic = gMonBackPic_CircledQuestionMark,
+        //.backPicSize = MON_COORDS_SIZE(40, 40),
+        //.backPicYOffset = 12,
+        //.backAnimId = BACK_ANIM_NONE,
+        //.palette = gMonPalette_CircledQuestionMark,
+        //.shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_RaichuMegaY,
+        .iconPalIndex = 0,
+        .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
+        FOOTPRINT(Raichu)
+        //SHADOW(-1, 0, SHADOW_SIZE_M)
+        .isMegaEvolution = TRUE,
+        .levelUpLearnset = sRaichuLevelUpLearnset,
+        .teachableLearnset = sRaichuTeachableLearnset,
+        .formSpeciesIdTable = sRaichuFormSpeciesIdTable,
+        .formChangeTable = sRaichuFormChangeTable,
+    },
+#endif //P_GEN_9_MEGA_EVOLUTIONS
 #endif //P_FAMILY_PIKACHU
 
 #if P_FAMILY_SANDSHREW
@@ -4975,7 +5118,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_CUTE_CHARM, ABILITY_MAGIC_GUARD, ABILITY_UNAWARE },
         .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("皮可西"),
-        .cryId = CRY_CLEFABLE, // CRY_CLEFABLE_MEGA,
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_CLEFABLE_MEGA,
+    #else
+        .cryId = CRY_CLEFABLE,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_CLEFABLE,
         .categoryName = _("妖精"),
         .height = 17,
@@ -4984,19 +5131,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 			"利用月光的力量，\n"
 			"自如地控制周围20米\n"
 			"的重力来四处飞行。"),
-        // .frontPic = gMonFrontPic_CircledQuestionMark,
-        // .frontPicSize = MON_COORDS_SIZE(40, 40),
-        // .frontPicYOffset = 12,
-        // .frontAnimFrames = sAnims_TwoFramePlaceHolder,
-        // .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        // .backPic = gMonBackPic_CircledQuestionMark,
-        // .backPicSize = MON_COORDS_SIZE(40, 40),
-        // .backPicYOffset = 12,
-        // .backAnimId = BACK_ANIM_NONE,
-        // .palette = gMonPalette_CircledQuestionMark,
-        // .shinyPalette = gMonShinyPalette_CircledQuestionMark,
-        // .iconSprite = gMonIcon_QuestionMark,
-        // .iconPalIndex = 0,
+        //.frontPic = gMonFrontPic_CircledQuestionMark,
+        //.frontPicSize = MON_COORDS_SIZE(40, 40),
+        //.frontPicYOffset = 12,
+        //.frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        //.backPic = gMonBackPic_CircledQuestionMark,
+        //.backPicSize = MON_COORDS_SIZE(40, 40),
+        //.backPicYOffset = 12,
+        //.backAnimId = BACK_ANIM_NONE,
+        //.palette = gMonPalette_CircledQuestionMark,
+        //.shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_ClefableMega,
+        .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Clefable)
         //SHADOW(-1, 0, SHADOW_SIZE_M)
@@ -7830,6 +7977,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .isHisuianForm = TRUE,
         .levelUpLearnset = sGrowlitheHisuiLevelUpLearnset,
         .teachableLearnset = sGrowlitheHisuiTeachableLearnset,
+        .eggMoveLearnset = sGrowlitheHisuiEggMoveLearnset,
         .formSpeciesIdTable = sGrowlitheFormSpeciesIdTable,
         .evolutions = EVOLUTION({EVO_ITEM, ITEM_FIRE_STONE, SPECIES_ARCANINE_HISUI}),
     },
@@ -8501,7 +8649,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_TRACE, ABILITY_TRACE, ABILITY_TRACE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("胡地"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_ALAKAZAM_MEGA,
+    #else
+        .cryId = CRY_ALAKAZAM,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_ALAKAZAM,
         .categoryName = _("念力"),
         .height = 12,
@@ -9106,7 +9258,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .bodyColor = BODY_COLOR_GREEN,
         .noFlip = TRUE,
         .speciesName = _("大食花"),
-        .cryId = CRY_VICTREEBEL, // CRY_VICTREEBEL_MEGA,
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_VICTREEBEL_MEGA,
+    #else
+        .cryId = CRY_VICTREEBEL,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_VICTREEBEL,
         .categoryName = _("捕蝇"),
         .height = 45,
@@ -9115,22 +9271,22 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 			"口中充满因超级进化\n"
 			"而增加的溶解液。一不留神\n"
 			"就会从嘴里溢出。"),
-        // .frontPic = gMonFrontPic_CircledQuestionMark,
-        // .frontPicSize = MON_COORDS_SIZE(40, 40),
-        // .frontPicYOffset = 12,
-        // .frontAnimFrames = sAnims_TwoFramePlaceHolder,
-        // .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        // .backPic = gMonBackPic_CircledQuestionMark,
-        // .backPicSize = MON_COORDS_SIZE(40, 40),
-        // .backPicYOffset = 12,
-        // .backAnimId = BACK_ANIM_NONE,
-        // .palette = gMonPalette_CircledQuestionMark,
-        // .shinyPalette = gMonShinyPalette_CircledQuestionMark,
-        // .iconSprite = gMonIcon_QuestionMark,
-        // .iconPalIndex = 0,
+        .frontPic = gMonFrontPic_VictreebelMega,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        .backPic = gMonBackPic_VictreebelMega,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 1,
+        //.backAnimId = BACK_ANIM_NONE,
+        .palette = gMonPalette_VictreebelMega,
+        .shinyPalette = gMonShinyPalette_VictreebelMega,
+        .iconSprite = gMonIcon_VictreebelMega,
+        .iconPalIndex = 1,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Victreebel)
-        //SHADOW(-1, 0, SHADOW_SIZE_M)
+        SHADOW(-2, 13, SHADOW_SIZE_L)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sVictreebelLevelUpLearnset,
         .teachableLearnset = sVictreebelTeachableLearnset,
@@ -10776,6 +10932,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Farfetchd,
             gShinyOverworldPalette_Farfetchd
         )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
         .levelUpLearnset = sFarfetchdLevelUpLearnset,
         .teachableLearnset = sFarfetchdTeachableLearnset,
         .eggMoveLearnset = sFarfetchdEggMoveLearnset,
@@ -10995,6 +11152,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
         .levelUpLearnset = sDoduoLevelUpLearnset,
         .teachableLearnset = sDoduoTeachableLearnset,
         .eggMoveLearnset = sDoduoEggMoveLearnset,
@@ -11088,6 +11246,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             TRACKS_FOOT,
             sAnimTable_Following
         )
+        .isSkyBattleBanned = B_SKY_BATTLE_STRICT_ELIGIBILITY,
         .levelUpLearnset = sDodrioLevelUpLearnset,
         .teachableLearnset = sDodrioTeachableLearnset,
     },
@@ -11920,7 +12079,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SHADOW_TAG, ABILITY_SHADOW_TAG, ABILITY_SHADOW_TAG },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("耿鬼"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_GENGAR_MEGA,
+    #else
+        .cryId = CRY_GENGAR,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_GENGAR,
         .categoryName = _("影子"),
         .height = 14,
@@ -12204,7 +12367,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_SAND_FORCE, ABILITY_SAND_FORCE, ABILITY_SAND_FORCE },
         .bodyColor = BODY_COLOR_GRAY,
         .speciesName = _("大钢蛇"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_STEELIX_MEGA,
+    #else
+        .cryId = CRY_STEELIX,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_STEELIX,
         .categoryName = _("铁蛇"),
         .height = 105,
@@ -14796,7 +14963,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND, ABILITY_PARENTAL_BOND },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("袋兽"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_KANGASKHAN_MEGA,
+    #else
+        .cryId = CRY_KANGASKHAN,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_KANGASKHAN,
         .categoryName = _("亲子"),
         .height = 22,
@@ -15421,7 +15592,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_ILLUMINATE, ABILITY_NATURAL_CURE, ABILITY_ANALYTIC },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("宝石海星"),
-        .cryId = CRY_STARMIE, // CRY_STARMIE_MEGA,
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_STARMIE_MEGA,
+    #else
+        .cryId = CRY_STARMIE,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_STARMIE,
         .categoryName = _("谜"),
         .height = 23,
@@ -15430,19 +15605,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 			"动作变得越来越像人。\n"
 			"它是试图沟通，还是打算代替\n"
 			"人类，仍是未解之谜。"),
-        // .frontPic = gMonFrontPic_CircledQuestionMark,
-        // .frontPicSize = MON_COORDS_SIZE(40, 40),
-        // .frontPicYOffset = 12,
-        // .frontAnimFrames = sAnims_TwoFramePlaceHolder,
-        // .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        // .backPic = gMonBackPic_CircledQuestionMark,
-        // .backPicSize = MON_COORDS_SIZE(40, 40),
-        // .backPicYOffset = 12,
-        // .backAnimId = BACK_ANIM_NONE,
-        // .palette = gMonPalette_CircledQuestionMark,
-        // .shinyPalette = gMonShinyPalette_CircledQuestionMark,
-        // .iconSprite = gMonIcon_QuestionMark,
-        // .iconPalIndex = 0,
+        //.frontPic = gMonFrontPic_CircledQuestionMark,
+        //.frontPicSize = MON_COORDS_SIZE(40, 40),
+        //.frontPicYOffset = 12,
+        //.frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        //.backPic = gMonBackPic_CircledQuestionMark,
+        //.backPicSize = MON_COORDS_SIZE(40, 40),
+        //.backPicYOffset = 12,
+        //.backAnimId = BACK_ANIM_NONE,
+        //.palette = gMonPalette_CircledQuestionMark,
+        //.shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_StarmieMega,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Starmie)
         //SHADOW(-1, 0, SHADOW_SIZE_M)
@@ -15951,7 +16126,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_TECHNICIAN, ABILITY_TECHNICIAN, ABILITY_TECHNICIAN },
         .bodyColor = BODY_COLOR_RED,
         .speciesName = _("巨钳螳螂"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_SCIZOR_MEGA,
+    #else
+        .cryId = CRY_SCIZOR,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_SCIZOR,
         .categoryName = _("钳子"),
         .height = 20,
@@ -16750,7 +16929,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_AERILATE, ABILITY_AERILATE, ABILITY_AERILATE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("凯罗斯"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_PINSIR_MEGA,
+    #else
+        .cryId = CRY_PINSIR,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_PINSIR,
         .categoryName = _("锹形虫"),
         .height = 17,
@@ -17154,7 +17337,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             TRACKS_SPOT,
             sAnimTable_Following
         )
-        .tmIlliterate = TRUE,
+        .teachingType = TM_ILLITERATE,
         .levelUpLearnset = sMagikarpLevelUpLearnset,
         .teachableLearnset = sMagikarpTeachableLearnset,
         .evolutions = EVOLUTION({EVO_LEVEL, 20, SPECIES_GYARADOS}),
@@ -17262,7 +17445,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER, ABILITY_MOLD_BREAKER },
         .bodyColor = BODY_COLOR_BLUE,
         .speciesName = _("暴鲤龙"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_GYARADOS_MEGA,
+    #else
+        .cryId = CRY_GYARADOS,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_GYARADOS,
         .categoryName = _("凶恶"),
         .height = 65,
@@ -17509,7 +17696,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Ditto,
             gShinyOverworldPalette_Ditto
         )
-        .tmIlliterate = TRUE,
+        .teachingType = TM_ILLITERATE,
         .levelUpLearnset = sDittoLevelUpLearnset,
         .teachableLearnset = sDittoTeachableLearnset,
     },
@@ -18908,7 +19095,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS, ABILITY_TOUGH_CLAWS },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("化石翼龙"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_AERODACTYL_MEGA,
+    #else
+        .cryId = CRY_AERODACTYL,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_AERODACTYL,
         .categoryName = _("化石"),
         .height = 21,
@@ -19235,7 +19426,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Articuno,
             gShinyOverworldPalette_Articuno
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sArticunoLevelUpLearnset,
         .teachableLearnset = sArticunoTeachableLearnset,
@@ -19302,7 +19493,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_ArticunoGalar,
             gShinyOverworldPalette_ArticunoGalar
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .isGalarianForm = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sArticunoGalarLevelUpLearnset,
@@ -19386,7 +19577,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Zapdos,
             gShinyOverworldPalette_Zapdos
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sZapdosLevelUpLearnset,
         .teachableLearnset = sZapdosTeachableLearnset,
@@ -19452,7 +19643,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_ZapdosGalar,
             gShinyOverworldPalette_ZapdosGalar
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .isGalarianForm = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sZapdosGalarLevelUpLearnset,
@@ -19561,7 +19752,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Moltres,
             gShinyOverworldPalette_Moltres
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMoltresLevelUpLearnset,
         .teachableLearnset = sMoltresTeachableLearnset,
@@ -19626,7 +19817,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_MoltresGalar,
             gShinyOverworldPalette_MoltresGalar
         )
-        .isLegendary = TRUE,
+        .isSubLegendary = TRUE,
         .isGalarianForm = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMoltresGalarLevelUpLearnset,
@@ -19872,7 +20063,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_INNER_FOCUS, ABILITY_NONE, ABILITY_MULTISCALE },
         .bodyColor = BODY_COLOR_BROWN,
         .speciesName = _("快龙"),
-        .cryId = CRY_DRAGONITE, // CRY_DRAGONITE_MEGA,
+    #if P_MODIFIED_MEGA_CRIES
+        .cryId = CRY_DRAGONITE_MEGA,
+    #else
+        .cryId = CRY_DRAGONITE,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_DRAGONITE,
         .categoryName = _("龙"),
         .height = 22,
@@ -19881,19 +20076,19 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
 			"超级进化的能量让它的\n"
 			"情感变得过于温柔。\n"
 			"会以慈悲之心终结敌人。"),
-        // .frontPic = gMonFrontPic_CircledQuestionMark,
-        // .frontPicSize = MON_COORDS_SIZE(40, 40),
-        // .frontPicYOffset = 12,
-        // .frontAnimFrames = sAnims_TwoFramePlaceHolder,
-        // .frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        // .backPic = gMonBackPic_CircledQuestionMark,
-        // .backPicSize = MON_COORDS_SIZE(40, 40),
-        // .backPicYOffset = 12,
-        // .backAnimId = BACK_ANIM_NONE,
-        // .palette = gMonPalette_CircledQuestionMark,
-        // .shinyPalette = gMonShinyPalette_CircledQuestionMark,
-        // .iconSprite = gMonIcon_QuestionMark,
-        // .iconPalIndex = 0,
+        //.frontPic = gMonFrontPic_CircledQuestionMark,
+        //.frontPicSize = MON_COORDS_SIZE(40, 40),
+        //.frontPicYOffset = 12,
+        //.frontAnimFrames = sAnims_TwoFramePlaceHolder,
+        //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
+        //.backPic = gMonBackPic_CircledQuestionMark,
+        //.backPicSize = MON_COORDS_SIZE(40, 40),
+        //.backPicYOffset = 12,
+        //.backAnimId = BACK_ANIM_NONE,
+        //.palette = gMonPalette_CircledQuestionMark,
+        //.shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .iconSprite = gMonIcon_DragoniteMega,
+        .iconPalIndex = 2,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Dragonite)
         //SHADOW(-1, 0, SHADOW_SIZE_M)
@@ -19973,7 +20168,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gOverworldPalette_Mewtwo,
             gShinyOverworldPalette_Mewtwo
         )
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
         .levelUpLearnset = sMewtwoLevelUpLearnset,
@@ -20003,7 +20198,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_STEADFAST, ABILITY_STEADFAST, ABILITY_STEADFAST },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("超梦"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_MEWTWO_MEGA_X,
+    #else
+        .cryId = CRY_MEWTWO,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MEWTWO,
         .categoryName = _("基因"),
         .height = 23,
@@ -20043,7 +20242,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gShinyOverworldPalette_MewtwoMegaX
         )
     #endif //OW_BATTLE_ONLY_FORMS
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .isMegaEvolution = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
@@ -20073,7 +20272,11 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .abilities = { ABILITY_INSOMNIA, ABILITY_INSOMNIA, ABILITY_INSOMNIA },
         .bodyColor = BODY_COLOR_PURPLE,
         .speciesName = _("超梦"),
+    #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_MEWTWO_MEGA_Y,
+    #else
+        .cryId = CRY_MEWTWO,
+    #endif // P_MODIFIED_MEGA_CRIES
         .natDexNum = NATIONAL_DEX_MEWTWO,
         .categoryName = _("基因"),
         .height = 15,
@@ -20114,7 +20317,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
             gShinyOverworldPalette_MewtwoMegaY
         )
     #endif //OW_BATTLE_ONLY_FORMS
-        .isLegendary = TRUE,
+        .isRestrictedLegendary = TRUE,
         .isMegaEvolution = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
@@ -20201,6 +20404,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .isMythical = TRUE,
         .isFrontierBanned = TRUE,
         .perfectIVCount = LEGENDARY_PERFECT_IV_COUNT,
+        .teachingType = ALL_TEACHABLES,
         .levelUpLearnset = sMewLevelUpLearnset,
         .teachableLearnset = sMewTeachableLearnset,
     },

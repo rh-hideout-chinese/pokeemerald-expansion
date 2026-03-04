@@ -1,443 +1,379 @@
-const u8 gEasyChatWord_MatchUp[] = _("匹配");
-const u8 gEasyChatWord_Go[] = _("一场");
-const u8 gEasyChatWord_No1[] = _("第一");
-const u8 gEasyChatWord_Decide[] = _("决定");
-const u8 gEasyChatWord_LetMeWin[] = _("让我赢");
-const u8 gEasyChatWord_Wins[] = _("赢");
-const u8 gEasyChatWord_Win[] = _("获胜");
-const u8 gEasyChatWord_Won[] = _("赢了");
-const u8 gEasyChatWord_IfIWin[] = _("如果我赢");
-const u8 gEasyChatWord_WhenIWin[] = _("当我赢了");
-const u8 gEasyChatWord_CantWin[] = _("赢不了");
-const u8 gEasyChatWord_CanWin[] = _("能赢");
-const u8 gEasyChatWord_NoMatch[] = _("不配");
-const u8 gEasyChatWord_Spirit[] = _("精神");
-const u8 gEasyChatWord_Decided[] = _("打败");
-const u8 gEasyChatWord_TrumpCard[] = _("王牌");
-const u8 gEasyChatWord_TakeThat[] = _("接招");
-const u8 gEasyChatWord_ComeOn[] = _("来吧");
-const u8 gEasyChatWord_Attack[] = _("攻击");
-const u8 gEasyChatWord_Surrender[] = _("投降");
-const u8 gEasyChatWord_Gutsy[] = _("勇敢");
-const u8 gEasyChatWord_Talent[] = _("才能");
-const u8 gEasyChatWord_Strategy[] = _("战略");
-const u8 gEasyChatWord_Smite[] = _("比赛");
-const u8 gEasyChatWord_Match[] = _("比试");
-const u8 gEasyChatWord_Victory[] = _("胜利");
-const u8 gEasyChatWord_Offensive[] = _("克制");
-const u8 gEasyChatWord_Sense[] = _("感觉");
-const u8 gEasyChatWord_Versus[] = _("应对");
-const u8 gEasyChatWord_Fights[] = _("感到");
-const u8 gEasyChatWord_Power[] = _("力量");
-const u8 gEasyChatWord_Challenge[] = _("挑战");
-const u8 gEasyChatWord_Strong[] = _("强大");
-const u8 gEasyChatWord_TooStrong[] = _("太强了");
-const u8 gEasyChatWord_GoEasy[] = _("错");
-const u8 gEasyChatWord_Foe[] = _("对");
-const u8 gEasyChatWord_Genius[] = _("天才");
-const u8 gEasyChatWord_Legend[] = _("传奇");
-const u8 gEasyChatWord_Escape[] = _("逃走");
-const u8 gEasyChatWord_Aim[] = _("瞄准");
-const u8 gEasyChatWord_Battle[] = _("战斗");
-const u8 gEasyChatWord_Fight[] = _("对战");
-const u8 gEasyChatWord_Resuscitate[] = _("复活");
-const u8 gEasyChatWord_Points[] = _("点数");
-const u8 gEasyChatWord_Serious[] = _("认真");
-const u8 gEasyChatWord_GiveUp[] = _("放弃");
-const u8 gEasyChatWord_Loss[] = _("输");
-const u8 gEasyChatWord_IfILose[] = _("如果我输了");
-const u8 gEasyChatWord_Lost[] = _("输了");
-const u8 gEasyChatWord_Lose[] = _("输过");
-const u8 gEasyChatWord_Guard[] = _("防御");
-const u8 gEasyChatWord_Partner[] = _("伙伴");
-const u8 gEasyChatWord_Reject[] = _("行动");
-const u8 gEasyChatWord_Accept[] = _("接受");
-const u8 gEasyChatWord_Invincible[] = _("无敌");
-const u8 gEasyChatWord_Received[] = _("接收");
-const u8 gEasyChatWord_Easy[] = _("过");
-const u8 gEasyChatWord_Weak[] = _("弱");
-const u8 gEasyChatWord_TooWeak[] = _("太弱了");
-const u8 gEasyChatWord_Pushover[] = _("轻而易举");
-const u8 gEasyChatWord_Leader[] = _("组长");
-const u8 gEasyChatWord_Rule[] = _("规则");
-const u8 gEasyChatWord_Move[] = _("招式");
-
 const struct EasyChatWordInfo gEasyChatGroup_Battle[] = {
     [EC_INDEX(EC_WORD_MATCH_UP)] =
     {
-        .text = gEasyChatWord_MatchUp,
+        .text = COMPOUND_STRING("匹配"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ACCEPT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GO)] =
     {
-        .text = gEasyChatWord_Go,
+        .text = COMPOUND_STRING("一场"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AIM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NO_1)] =
     {
-        .text = gEasyChatWord_No1,
+        .text = COMPOUND_STRING("第一"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ATTACK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DECIDE)] =
     {
-        .text = gEasyChatWord_Decide,
+        .text = COMPOUND_STRING("决定"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BATTLE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LET_ME_WIN)] =
     {
-        .text = gEasyChatWord_LetMeWin,
+        .text = COMPOUND_STRING("让我赢"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CAN_WIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WINS)] =
     {
-        .text = gEasyChatWord_Wins,
+        .text = COMPOUND_STRING("赢"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CAN_T_WIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WIN)] =
     {
-        .text = gEasyChatWord_Win,
+        .text = COMPOUND_STRING("获胜"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CHALLENGE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WON)] =
     {
-        .text = gEasyChatWord_Won,
+        .text = COMPOUND_STRING("赢了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COME_ON),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_IF_I_WIN)] =
     {
-        .text = gEasyChatWord_IfIWin,
+        .text = COMPOUND_STRING("如果我赢"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DECIDE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHEN_I_WIN)] =
     {
-        .text = gEasyChatWord_WhenIWin,
+        .text = COMPOUND_STRING("当我赢了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DECIDED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CAN_T_WIN)] =
     {
-        .text = gEasyChatWord_CantWin,
+        .text = COMPOUND_STRING("赢不了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EASY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CAN_WIN)] =
     {
-        .text = gEasyChatWord_CanWin,
+        .text = COMPOUND_STRING("能赢"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ESCAPE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NO_MATCH)] =
     {
-        .text = gEasyChatWord_NoMatch,
+        .text = COMPOUND_STRING("不配"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FIGHT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SPIRIT)] =
     {
-        .text = gEasyChatWord_Spirit,
+        .text = COMPOUND_STRING("精神"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FIGHTS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DECIDED)] =
     {
-        .text = gEasyChatWord_Decided,
+        .text = COMPOUND_STRING("打败"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FOE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TRUMP_CARD)] =
     {
-        .text = gEasyChatWord_TrumpCard,
+        .text = COMPOUND_STRING("王牌"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GENIUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TAKE_THAT)] =
     {
-        .text = gEasyChatWord_TakeThat,
+        .text = COMPOUND_STRING("接招"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GIVE_UP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COME_ON)] =
     {
-        .text = gEasyChatWord_ComeOn,
+        .text = COMPOUND_STRING("来吧"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ATTACK)] =
     {
-        .text = gEasyChatWord_Attack,
+        .text = COMPOUND_STRING("攻击"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GO_EASY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SURRENDER)] =
     {
-        .text = gEasyChatWord_Surrender,
+        .text = COMPOUND_STRING("投降"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GUARD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GUTSY)] =
     {
-        .text = gEasyChatWord_Gutsy,
+        .text = COMPOUND_STRING("勇敢"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GUTSY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TALENT)] =
     {
-        .text = gEasyChatWord_Talent,
+        .text = COMPOUND_STRING("才能"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_IF_I_LOSE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STRATEGY)] =
     {
-        .text = gEasyChatWord_Strategy,
+        .text = COMPOUND_STRING("战略"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_IF_I_WIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMITE)] =
     {
-        .text = gEasyChatWord_Smite,
+        .text = COMPOUND_STRING("比赛"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_INVINCIBLE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MATCH)] =
     {
-        .text = gEasyChatWord_Match,
+        .text = COMPOUND_STRING("比试"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LEADER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VICTORY)] =
     {
-        .text = gEasyChatWord_Victory,
+        .text = COMPOUND_STRING("胜利"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LEGEND),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OFFENSIVE)] =
     {
-        .text = gEasyChatWord_Offensive,
+        .text = COMPOUND_STRING("克制"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LET_ME_WIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SENSE)] =
     {
-        .text = gEasyChatWord_Sense,
+        .text = COMPOUND_STRING("感觉"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOSE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VERSUS)] =
     {
-        .text = gEasyChatWord_Versus,
+        .text = COMPOUND_STRING("应对"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOSS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIGHTS)] =
     {
-        .text = gEasyChatWord_Fights,
+        .text = COMPOUND_STRING("感到"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POWER)] =
     {
-        .text = gEasyChatWord_Power,
+        .text = COMPOUND_STRING("力量"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MATCH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CHALLENGE)] =
     {
-        .text = gEasyChatWord_Challenge,
+        .text = COMPOUND_STRING("挑战"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MATCH_UP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STRONG)] =
     {
-        .text = gEasyChatWord_Strong,
+        .text = COMPOUND_STRING("强大"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MOVE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TOO_STRONG)] =
     {
-        .text = gEasyChatWord_TooStrong,
+        .text = COMPOUND_STRING("太强了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NO_MATCH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GO_EASY)] =
     {
-        .text = gEasyChatWord_GoEasy,
+        .text = COMPOUND_STRING("错"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NO_1),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FOE)] =
     {
-        .text = gEasyChatWord_Foe,
+        .text = COMPOUND_STRING("对"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OFFENSIVE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GENIUS)] =
     {
-        .text = gEasyChatWord_Genius,
+        .text = COMPOUND_STRING("天才"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PARTNER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LEGEND)] =
     {
-        .text = gEasyChatWord_Legend,
+        .text = COMPOUND_STRING("传奇"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_POINTS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ESCAPE)] =
     {
-        .text = gEasyChatWord_Escape,
+        .text = COMPOUND_STRING("逃走"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_POWER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AIM)] =
     {
-        .text = gEasyChatWord_Aim,
+        .text = COMPOUND_STRING("瞄准"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PUSHOVER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BATTLE)] =
     {
-        .text = gEasyChatWord_Battle,
+        .text = COMPOUND_STRING("战斗"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RECEIVED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIGHT)] =
     {
-        .text = gEasyChatWord_Fight,
+        .text = COMPOUND_STRING("对战"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_REJECT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RESUSCITATE)] =
     {
-        .text = gEasyChatWord_Resuscitate,
+        .text = COMPOUND_STRING("复活"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RESUSCITATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POINTS)] =
     {
-        .text = gEasyChatWord_Points,
+        .text = COMPOUND_STRING("点数"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RULE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SERIOUS)] =
     {
-        .text = gEasyChatWord_Serious,
+        .text = COMPOUND_STRING("认真"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SENSE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GIVE_UP)] =
     {
-        .text = gEasyChatWord_GiveUp,
+        .text = COMPOUND_STRING("放弃"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SERIOUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOSS)] =
     {
-        .text = gEasyChatWord_Loss,
+        .text = COMPOUND_STRING("输"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SMITE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_IF_I_LOSE)] =
     {
-        .text = gEasyChatWord_IfILose,
+        .text = COMPOUND_STRING("如果我输了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SPIRIT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOST)] =
     {
-        .text = gEasyChatWord_Lost,
+        .text = COMPOUND_STRING("输了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STRATEGY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOSE)] =
     {
-        .text = gEasyChatWord_Lose,
+        .text = COMPOUND_STRING("输过"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STRONG),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GUARD)] =
     {
-        .text = gEasyChatWord_Guard,
+        .text = COMPOUND_STRING("防御"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SURRENDER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PARTNER)] =
     {
-        .text = gEasyChatWord_Partner,
+        .text = COMPOUND_STRING("伙伴"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TAKE_THAT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_REJECT)] =
     {
-        .text = gEasyChatWord_Reject,
+        .text = COMPOUND_STRING("行动"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TALENT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ACCEPT)] =
     {
-        .text = gEasyChatWord_Accept,
+        .text = COMPOUND_STRING("接受"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TOO_STRONG),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INVINCIBLE)] =
     {
-        .text = gEasyChatWord_Invincible,
+        .text = COMPOUND_STRING("无敌"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TOO_WEAK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RECEIVED)] =
     {
-        .text = gEasyChatWord_Received,
+        .text = COMPOUND_STRING("接收"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TRUMP_CARD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EASY)] =
     {
-        .text = gEasyChatWord_Easy,
+        .text = COMPOUND_STRING("过"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_VERSUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WEAK)] =
     {
-        .text = gEasyChatWord_Weak,
+        .text = COMPOUND_STRING("弱"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_VICTORY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TOO_WEAK)] =
     {
-        .text = gEasyChatWord_TooWeak,
+        .text = COMPOUND_STRING("太弱了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WEAK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PUSHOVER)] =
     {
-        .text = gEasyChatWord_Pushover,
+        .text = COMPOUND_STRING("轻而易举"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHEN_I_WIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LEADER)] =
     {
-        .text = gEasyChatWord_Leader,
+        .text = COMPOUND_STRING("队长"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RULE)] =
     {
-        .text = gEasyChatWord_Rule,
+        .text = COMPOUND_STRING("规则"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WINS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MOVE)] =
     {
-        .text = gEasyChatWord_Move,
+        .text = COMPOUND_STRING("招式"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WON),
         .enabled = TRUE,
     },

@@ -12,7 +12,7 @@ DOUBLE_BATTLE_TEST("Pickpocket checks contact/effect per target for spread moves
     GIVEN {
         ASSUME(GetSpeciesType(SPECIES_CLEFAIRY, 0) == TYPE_FAIRY);
         ASSUME(GetMoveType(MOVE_BREAKING_SWIPE) == TYPE_DRAGON);
-        ASSUME(GetMoveTarget(MOVE_BREAKING_SWIPE) == MOVE_TARGET_BOTH);
+        ASSUME(GetMoveTarget(MOVE_BREAKING_SWIPE) == TARGET_BOTH);
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_MAGOST_BERRY); }
         PLAYER(SPECIES_WYNAUT);
         OPPONENT(SPECIES_SNEASEL) { Ability(ABILITY_PICKPOCKET); }
@@ -31,7 +31,7 @@ DOUBLE_BATTLE_TEST("Pickpocket checks contact/effect per target for spread moves
 DOUBLE_BATTLE_TEST("Pickpocket activates for the fastest itemless target when both are hit by a contact spread move")
 {
     GIVEN {
-        ASSUME(GetMoveTarget(MOVE_BREAKING_SWIPE) == MOVE_TARGET_BOTH);
+        ASSUME(GetMoveTarget(MOVE_BREAKING_SWIPE) == TARGET_BOTH);
         PLAYER(SPECIES_WOBBUFFET) { Speed(20); Item(ITEM_MAGOST_BERRY); }
         PLAYER(SPECIES_WYNAUT) { Speed(10); }
         OPPONENT(SPECIES_SNEASEL) { Speed(40); Ability(ABILITY_PICKPOCKET); }
@@ -137,7 +137,7 @@ SINGLE_BATTLE_TEST("Pickpocket cannot steal restricted held items")
 SINGLE_BATTLE_TEST("Pickpocket activates after the final hit of a multi-strike move")
 {
     GIVEN {
-        ASSUME(GetMoveEffect(MOVE_FURY_SWIPES) == EFFECT_MULTI_HIT);
+        ASSUME(IsMultiHitMove(MOVE_FURY_SWIPES));
         ASSUME(MoveMakesContact(MOVE_FURY_SWIPES));
         PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_MAGOST_BERRY); }
         OPPONENT(SPECIES_SNEASEL) { Ability(ABILITY_PICKPOCKET); }
@@ -310,3 +310,50 @@ SINGLE_BATTLE_TEST("Pickpocket does not prevent King's Rock or Razor Fang flinch
         EXPECT(player->item == ITEM_NONE);
     }
 }
+
+SINGLE_BATTLE_TEST("Pickpocket activates when user has Protective Pads, but not with Punching Glove or Long Reach")
+{
+    u32 item, ability;
+
+    PARAMETRIZE { item = ITEM_PROTECTIVE_PADS; ability = ABILITY_OVERGROW;   }
+    PARAMETRIZE { item = ITEM_PUNCHING_GLOVE;  ability = ABILITY_OVERGROW;   }
+    PARAMETRIZE { item = ITEM_NONE;            ability = ABILITY_LONG_REACH; }
+
+    GIVEN {
+        ASSUME(MoveMakesContact(MOVE_MACH_PUNCH));
+        ASSUME(IsPunchingMove(MOVE_MACH_PUNCH));
+        ASSUME(GetItemHoldEffect(ITEM_PROTECTIVE_PADS) == HOLD_EFFECT_PROTECTIVE_PADS);
+        ASSUME(GetItemHoldEffect(ITEM_PUNCHING_GLOVE) == HOLD_EFFECT_PUNCHING_GLOVE);
+        ASSUME(GetItemHoldEffect(ITEM_FOCUS_SASH) == HOLD_EFFECT_FOCUS_SASH);
+        PLAYER(SPECIES_DECIDUEYE) { Ability(ability); Item(item); }
+        OPPONENT(SPECIES_SNEASEL) { Ability(ABILITY_PICKPOCKET); Item(ITEM_FOCUS_SASH); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_MACH_PUNCH); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_MACH_PUNCH, player);
+
+        if (item == ITEM_PROTECTIVE_PADS) {
+            ABILITY_POPUP(opponent, ABILITY_PICKPOCKET);
+        } else {
+            NOT ABILITY_POPUP(opponent, ABILITY_PICKPOCKET);
+        }
+    }
+}
+
+SINGLE_BATTLE_TEST("Pickpocket activates after an Item was knocked off")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_KNOCK_OFF) == EFFECT_KNOCK_OFF);
+        PLAYER(SPECIES_WOBBUFFET) { Item(ITEM_POTION); }
+        OPPONENT(SPECIES_SNEASEL) { Item(ITEM_POTION); Ability(ABILITY_PICKPOCKET); }
+    } WHEN {
+        TURN { MOVE(player, MOVE_KNOCK_OFF); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_KNOCK_OFF, player);
+        ABILITY_POPUP(opponent, ABILITY_PICKPOCKET);
+    } THEN {
+        EXPECT(opponent->item == ITEM_POTION);
+        EXPECT(player->item == ITEM_NONE);
+    }
+}
+

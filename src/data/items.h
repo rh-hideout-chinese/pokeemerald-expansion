@@ -90,6 +90,22 @@ static const u8 sMewtwoniteDesc[]     = _("让超梦携带后，\n"
     "在战斗时能超级进\n"
     "化的超级石。");
 
+static const u8 sRaichuniteDesc[]     = _("让雷秋携带后，\n"
+                                          "在战斗时能超级进\n"
+                                          "化的超级石。");
+
+static const u8 sAbsoliteDesc[]       = _("让阿勃梭鲁携带后\n"
+                                        "，在战斗时能超级\n"
+                                        "进化的超级石。");
+
+static const u8 sGarchompiteDesc[]    = _("让烈咬陆鲨携带后\n"
+                                        "，在战斗时能超级\n"
+                                        "进化的超级石。");
+
+static const u8 sLucarioniteDesc[]    = _("让路卡利欧携带后\n"
+                                          "，在战斗时能超级\n"
+                                          "进化的超级石。");
+
 static const u8 sSeaIncenseDesc[]     = _("香气神奇的薰香。\n"
     "携带后，水属性的\n"
     "招式会增强。");
@@ -141,7 +157,7 @@ static const u8 sGenericMulchDesc[]   = _("培育树果时的肥料。\n"
     "但完全不适合\n"
     "丰缘地区的土壤。");
 
-const struct Item gItemsInfo[] =
+const struct ItemInfo gItemsInfo[] =
 {
     [ITEM_NONE] =
     {
@@ -2333,15 +2349,15 @@ const struct Item gItemsInfo[] =
 			"结实的长绳。可从\n"
 			"洞窟或迷宫中脱身\n"
 			"。能够反复使用。"),
-        #if I_KEY_ESCAPE_ROPE >= GEN_8
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #else
-            .price = (I_PRICE >= GEN_7) ? 1000 : 550,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FIELD_USE,
-        #endif
+    #if I_KEY_ESCAPE_ROPE >= GEN_8
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+    #else
+        .price = (I_PRICE >= GEN_7) ? 1000 : 550,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FIELD_USE,
+    #endif
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_EscapeRope,
         .flingPower = 30,
@@ -2361,7 +2377,7 @@ const struct Item gItemsInfo[] =
 			"可梦攻击的道具。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
-        .type = ITEM_USE_BAG_MENU,
+        .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
         .effect = gItemEffect_XAttack,
@@ -2380,7 +2396,7 @@ const struct Item gItemsInfo[] =
 			"可梦防御的道具。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
-        .type = ITEM_USE_BAG_MENU,
+        .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
         .effect = gItemEffect_XDefense,
@@ -2399,7 +2415,7 @@ const struct Item gItemsInfo[] =
 			"可梦特攻的道具。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
-        .type = ITEM_USE_BAG_MENU,
+        .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
         .effect = gItemEffect_XSpecialAttack,
@@ -2418,7 +2434,7 @@ const struct Item gItemsInfo[] =
 			"可梦特防的道具。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
-        .type = ITEM_USE_BAG_MENU,
+        .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
         .effect = gItemEffect_XSpecialDefense,
@@ -2437,7 +2453,7 @@ const struct Item gItemsInfo[] =
 			"可梦速度的道具。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
-        .type = ITEM_USE_BAG_MENU,
+        .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
         .effect = gItemEffect_XSpeed,
@@ -2456,7 +2472,7 @@ const struct Item gItemsInfo[] =
 			"可梦命中的道具。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
-        .type = ITEM_USE_BAG_MENU,
+        .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_STAT,
         .effect = gItemEffect_XAccuracy,
@@ -2475,7 +2491,7 @@ const struct Item gItemsInfo[] =
 			"用1次。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_X_ITEM,
-        .type = ITEM_USE_BAG_MENU,
+        .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_SET_FOCUS_ENERGY,
         .effect = gItemEffect_DireHit,
@@ -2564,7 +2580,7 @@ const struct Item gItemsInfo[] =
 			"梦极巨化的样子。"),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_BATTLE_ITEM,
-        .type = ITEM_USE_BAG_MENU,
+        .type = B_X_ITEMS_CROSSUSE ? ITEM_USE_BATTLER : ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .battleUsage = EFFECT_ITEM_INCREASE_ALL_STATS,
         .flingPower = 30,
@@ -3126,15 +3142,15 @@ const struct Item gItemsInfo[] =
 			"很久以前的古代宝\n"
 			"可梦的化石。好像\n"
 			"是贝壳的一部分。"),
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FOSSIL,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+    #if I_KEY_FOSSILS >= GEN_4
+        .price = (I_PRICE >= GEN_7) ? 7000: 1000,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
+    #else
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+    #endif
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3149,15 +3165,15 @@ const struct Item gItemsInfo[] =
 			"很久以前的古代宝\n"
 			"可梦的化石。好像\n"
 			"是甲壳的一部分。"),
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FOSSIL,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+    #if I_KEY_FOSSILS >= GEN_4
+        .price = (I_PRICE >= GEN_7) ? 7000: 1000,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
+    #else
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+    #endif
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3172,15 +3188,15 @@ const struct Item gItemsInfo[] =
 			"封存着古代宝可梦\n"
 			"遗传基因的琥珀，\n"
 			"透着点红色。"),
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = 1000,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FOSSIL,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+    #if I_KEY_FOSSILS >= GEN_4
+        .price = 1000,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
+    #else
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+    #endif
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3192,15 +3208,15 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("根状化石"),
         .description = sRootFossilDesc,
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FOSSIL,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+    #if I_KEY_FOSSILS >= GEN_4
+        .price = (I_PRICE >= GEN_7) ? 7000: 1000,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
+    #else
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+    #endif
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3212,15 +3228,15 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("爪子化石"),
         .description = sRootFossilDesc,
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FOSSIL,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+    #if I_KEY_FOSSILS >= GEN_4
+        .price = (I_PRICE >= GEN_7) ? 7000: 1000,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
+    #else
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+    #endif
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3398,14 +3414,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("速速肥"),
         .price = 200,
-#if OW_BERRY_MULCH_USAGE == TRUE
+    #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
 			"培育树果时的肥料\n"
 			"。但完全不适合丰\n"
 			"缘的土壤。"),
-#else
+    #else
         .description = sGenericMulchDesc,
-#endif
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3420,14 +3436,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("湿湿肥"),
         .price = 200,
-#if OW_BERRY_MULCH_USAGE == TRUE
+    #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
 			"培育树果时的肥料\n"
 			"。但完全不适合丰\n"
 			"缘的土壤。"),
-#else
+    #else
         .description = sGenericMulchDesc,
-#endif
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3442,14 +3458,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("久久肥"),
         .price = 200,
-#if OW_BERRY_MULCH_USAGE == TRUE
+    #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
 			"培育树果时的肥料\n"
 			"。但完全不适合丰\n"
 			"缘的土壤。"),
-#else
+    #else
         .description = sGenericMulchDesc,
-#endif
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3464,14 +3480,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("粘粘肥"),
         .price = 200,
-#if OW_BERRY_MULCH_USAGE == TRUE
+    #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
 			"培育树果时的肥料\n"
 			"。但完全不适合丰\n"
 			"缘的土壤。"),
-#else
+    #else
         .description = sGenericMulchDesc,
-#endif
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3486,14 +3502,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("硕果肥"),
         .price = 200,
-#if OW_BERRY_MULCH_USAGE == TRUE
+    #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
 			"培育树果时的肥料\n"
 			"。但完全不适合丰\n"
 			"缘的土壤。"),
-#else
+    #else
         .description = sGenericMulchDesc,
-#endif
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3508,14 +3524,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("吃惊肥"),
         .price = 200,
-#if OW_BERRY_MULCH_USAGE == TRUE
+    #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
 			"培育树果时的肥料\n"
 			"。但完全不适合丰\n"
 			"缘的土壤。"),
-#else
+    #else
         .description = sGenericMulchDesc,
-#endif
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3530,14 +3546,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("劲劲肥"),
         .price = 200,
-#if OW_BERRY_MULCH_USAGE == TRUE
+    #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
 			"培育树果时的肥料\n"
 			"。但完全不适合丰\n"
 			"缘的土壤。"),
-#else
+    #else
         .description = sGenericMulchDesc,
-#endif
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -3552,14 +3568,14 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("超效肥"),
         .price = 200,
-#if OW_BERRY_MULCH_USAGE == TRUE
+    #if OW_BERRY_MULCH_USAGE == TRUE
         .description = COMPOUND_STRING(
 			"培育树果时的肥料\n"
 			"。但完全不适合丰\n"
 			"缘的土壤。"),
-#else
+    #else
         .description = sGenericMulchDesc,
-#endif
+    #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_GROWTH,
         .type = ITEM_USE_BAG_MENU,
@@ -4224,7 +4240,6 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("龙之鳞片"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .holdEffect = HOLD_EFFECT_DRAGON_SCALE,
         .holdEffectParam = 10,
         .description = COMPOUND_STRING(
 			"又硬又坚固的鳞片\n"
@@ -4244,7 +4259,6 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("升级数据"),
         .price = (I_PRICE >= GEN_7) ? 2000 * TREASURE_FACTOR : 2100,
-        .holdEffect = HOLD_EFFECT_UPGRADE,
         .description = COMPOUND_STRING(
 			"内部储存了各种信\n"
 			"息的透明机器。西\n"
@@ -6063,10 +6077,7 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("阿勃梭鲁进化石"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING(
-			"让阿勃梭鲁携带后\n"
-			"，在战斗时能超级\n"
-			"进化的超级石。"),
+        .description = sAbsoliteDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6189,10 +6200,7 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("烈咬陆鲨进化石"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING(
-			"让烈咬陆鲨携带后\n"
-			"，在战斗时能超级\n"
-			"进化的超级石。"),
+        .description = sGarchompiteDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6207,10 +6215,7 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("路卡利欧进化石"),
         .price = 0,
         .holdEffect = HOLD_EFFECT_MEGA_STONE,
-        .description = COMPOUND_STRING(
-			"让路卡利欧携带后\n"
-			"，在战斗时能超级\n"
-			"进化的超级石。"),
+        .description = sLucarioniteDesc,
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_MEGA_STONE,
         .type = ITEM_USE_BAG_MENU,
@@ -6306,8 +6311,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Clefablite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Clefablite,
+        .iconPic = gItemIcon_Clefablite,
+        .iconPalette = gItemIconPalette_Clefablite,
     },
 
     [ITEM_VICTREEBELITE] =
@@ -6324,8 +6329,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Victreebelite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Victreebelite,
+        .iconPic = gItemIcon_Victreebelite,
+        .iconPalette = gItemIconPalette_Victreebelite,
     },
 
     [ITEM_STARMINITE] =
@@ -6342,8 +6347,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Starminite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Starminite,
+        .iconPic = gItemIcon_Starminite,
+        .iconPalette = gItemIconPalette_Starminite,
     },
 
     [ITEM_DRAGONINITE] =
@@ -6360,8 +6365,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Dragoninite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Dragoninite,
+        .iconPic = gItemIcon_Dragoninite,
+        .iconPalette = gItemIconPalette_Dragoninite,
     },
 
     [ITEM_MEGANIUMITE] =
@@ -6378,8 +6383,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Meganiumite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Meganiumite,
+        .iconPic = gItemIcon_Meganiumite,
+        .iconPalette = gItemIconPalette_Meganiumite,
     },
 
     [ITEM_FERALIGITE] =
@@ -6396,8 +6401,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Feraligite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Feraligite,
+        .iconPic = gItemIcon_Feraligite,
+        .iconPalette = gItemIconPalette_Feraligite,
     },
 
     [ITEM_SKARMORITE] =
@@ -6414,8 +6419,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Skarmorite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Skarmorite,
+        .iconPic = gItemIcon_Skarmorite,
+        .iconPalette = gItemIconPalette_Skarmorite,
     },
 
     [ITEM_FROSLASSITE] =
@@ -6432,8 +6437,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Froslassite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Froslassite,
+        .iconPic = gItemIcon_Froslassite,
+        .iconPalette = gItemIconPalette_Froslassite,
     },
 
     [ITEM_EMBOARITE] =
@@ -6450,8 +6455,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Emboarite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Emboarite,
+        .iconPic = gItemIcon_Emboarite,
+        .iconPalette = gItemIconPalette_Emboarite,
     },
 
     [ITEM_EXCADRITE] =
@@ -6468,8 +6473,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Excadrite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Excadrite,
+        .iconPic = gItemIcon_Excadrite,
+        .iconPalette = gItemIconPalette_Excadrite,
     },
 
     [ITEM_SCOLIPITE] =
@@ -6486,8 +6491,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Scolipite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Scolipite,
+        .iconPic = gItemIcon_Scolipite,
+        .iconPalette = gItemIconPalette_Scolipite,
     },
 
     [ITEM_SCRAFTINITE] =
@@ -6504,8 +6509,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Scraftinite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Scraftinite,
+        .iconPic = gItemIcon_Scraftinite,
+        .iconPalette = gItemIconPalette_Scraftinite,
     },
 
     [ITEM_EELEKTROSSITE] =
@@ -6522,8 +6527,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Eelektrossite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Eelektrossite,
+        .iconPic = gItemIcon_Eelektrossite,
+        .iconPalette = gItemIconPalette_Eelektrossite,
     },
 
     [ITEM_CHANDELURITE] =
@@ -6540,8 +6545,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Chandelurite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Chandelurite,
+        .iconPic = gItemIcon_Chandelurite,
+        .iconPalette = gItemIconPalette_Chandelurite,
     },
 
     [ITEM_CHESNAUGHTITE] =
@@ -6558,8 +6563,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Chesnaughtite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Chesnaughtite,
+        .iconPic = gItemIcon_Chesnaughtite,
+        .iconPalette = gItemIconPalette_Chesnaughtite,
     },
 
     [ITEM_DELPHOXITE] =
@@ -6576,8 +6581,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Delphoxite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Delphoxite,
+        .iconPic = gItemIcon_Delphoxite,
+        .iconPalette = gItemIconPalette_Delphoxite,
     },
 
     [ITEM_GRENINJITE] =
@@ -6594,8 +6599,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Greninjite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Greninjite,
+        .iconPic = gItemIcon_Greninjite,
+        .iconPalette = gItemIconPalette_Greninjite,
     },
 
     [ITEM_PYROARITE] =
@@ -6612,8 +6617,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Pyroarite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Pyroarite,
+        .iconPic = gItemIcon_Pyroarite,
+        .iconPalette = gItemIconPalette_Pyroarite,
     },
 
     [ITEM_FLOETTITE] =
@@ -6630,8 +6635,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Floettite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Floettite,
+        .iconPic = gItemIcon_Floettite,
+        .iconPalette = gItemIconPalette_Floettite,
     },
 
     [ITEM_MALAMARITE] =
@@ -6648,8 +6653,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Malamarite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Malamarite,
+        .iconPic = gItemIcon_Malamarite,
+        .iconPalette = gItemIconPalette_Malamarite,
     },
 
     [ITEM_BARBARACITE] =
@@ -6666,8 +6671,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Barbaracite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Barbaracite,
+        .iconPic = gItemIcon_Barbaracite,
+        .iconPalette = gItemIconPalette_Barbaracite,
     },
 
     [ITEM_DRAGALGITE] =
@@ -6684,8 +6689,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Dragalgite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Dragalgite,
+        .iconPic = gItemIcon_Dragalgite,
+        .iconPalette = gItemIconPalette_Dragalgite,
     },
 
     [ITEM_HAWLUCHANITE] =
@@ -6702,8 +6707,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Hawluchanite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Hawluchanite,
+        .iconPic = gItemIcon_Hawluchanite,
+        .iconPalette = gItemIconPalette_Hawluchanite,
     },
 
     [ITEM_ZYGARDITE] =
@@ -6720,8 +6725,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Zygardite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Zygardite,
+        .iconPic = gItemIcon_Zygardite,
+        .iconPalette = gItemIconPalette_Zygardite,
     },
 
     [ITEM_DRAMPANITE] =
@@ -6738,8 +6743,8 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Drampanite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Drampanite,
+        .iconPic = gItemIcon_Drampanite,
+        .iconPalette = gItemIconPalette_Drampanite,
     },
 
     [ITEM_FALINKSITE] =
@@ -6756,8 +6761,335 @@ const struct Item gItemsInfo[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 80,
-        .iconPic = gItemIcon_QuestionMark, // gItemIcon_Falinksite,
-        .iconPalette = gItemIconPalette_QuestionMark, // gItemIconPalette_Falinksite,
+        .iconPic = gItemIcon_Falinksite,
+        .iconPalette = gItemIconPalette_Falinksite,
+    },
+
+    [ITEM_HEATRANITE] =
+    {
+        .name = ITEM_NAME("席多蓝恩进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让席多蓝恩携带后\n"
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Heatranite,
+        .iconPalette = gItemIconPalette_Heatranite,
+    },
+
+    [ITEM_DARKRANITE] =
+    {
+        .name = ITEM_NAME("达克莱伊进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让达克莱伊携带后\n"
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Darkranite,
+        .iconPalette = gItemIconPalette_Darkranite,
+    },
+
+    [ITEM_ZERAORITE] =
+    {
+        .name = ITEM_NAME("捷拉奥拉进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让捷拉奥拉携带后\n"
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Zeraorite,
+        .iconPalette = gItemIconPalette_Zeraorite,
+    },
+
+    [ITEM_RAICHUNITE_X] =
+    {
+        .name = ITEM_NAME("雷丘进化石X"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sRaichuniteDesc,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_RaichuniteX,
+        .iconPalette = gItemIconPalette_RaichuniteX,
+    },
+
+    [ITEM_RAICHUNITE_Y] =
+    {
+        .name = ITEM_NAME("雷丘进化石Y"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sRaichuniteDesc,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_RaichuniteY,
+        .iconPalette = gItemIconPalette_RaichuniteY,
+    },
+
+    [ITEM_CHIMECHITE] =
+    {
+        .name = ITEM_NAME("风铃铃进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让风铃铃携带后，\n"
+			"在战斗时能超级进\n"
+			"化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Chimechite,
+        .iconPalette = gItemIconPalette_Chimechite,
+    },
+
+    [ITEM_ABSOLITE_Z] =
+    {
+        .name = ITEM_NAME("阿勃梭鲁进化石Z"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sAbsoliteDesc,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_AbsoliteZ,
+        .iconPalette = gItemIconPalette_AbsoliteZ,
+    },
+
+    [ITEM_STARAPTITE] =
+    {
+        .name = ITEM_NAME("姆克鹰进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让姆克鹰携带后，\n"
+			"在战斗时能超级进\n"
+			"化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Staraptite,
+        .iconPalette = gItemIconPalette_Staraptite,
+    },
+
+    [ITEM_GARCHOMPITE_Z] =
+    {
+        .name = ITEM_NAME("烈咬陆鲨进化石Z"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sGarchompiteDesc,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_GarchompiteZ,
+        .iconPalette = gItemIconPalette_GarchompiteZ,
+    },
+
+    [ITEM_LUCARIONITE_Z] =
+    {
+        .name = ITEM_NAME("路卡利欧进化石Z"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = sLucarioniteDesc,
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_LucarioniteZ,
+        .iconPalette = gItemIconPalette_LucarioniteZ,
+    },
+
+    [ITEM_GOLURKITE] =
+    {
+        .name = ITEM_NAME("泥偶巨人进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让泥偶巨人携带后\n"
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Golurkite,
+        .iconPalette = gItemIconPalette_Golurkite,
+    },
+
+    [ITEM_MEOWSTICITE] =
+    {
+        .name = ITEM_NAME("超能妙喵进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让超能妙喵携带后\n"
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Meowsticite,
+        .iconPalette = gItemIconPalette_Meowsticite,
+    },
+
+    [ITEM_CRABOMINITE] =
+    {
+        .name = ITEM_NAME("好胜毛蟹进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让好胜毛蟹携带后\n"
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Crabominite,
+        .iconPalette = gItemIconPalette_Crabominite,
+    },
+
+    [ITEM_GOLISOPITE] =
+    {
+        .name = ITEM_NAME("具甲武者进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让具甲武者携带后\n"
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Golisopite,
+        .iconPalette = gItemIconPalette_Golisopite,
+    },
+
+    [ITEM_MAGEARNITE] =
+    {
+        .name = ITEM_NAME("玛机雅娜进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让玛机雅娜携带后\n"
+			"，在战斗时能超级\n"
+			"进化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Magearnite,
+        .iconPalette = gItemIconPalette_Magearnite,
+    },
+
+    [ITEM_SCOVILLAINITE] =
+    {
+        .name = ITEM_NAME("狠辣椒进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让狠辣椒携带后，\n"
+			"在战斗时能超级进\n"
+			"化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Scovillainite,
+        .iconPalette = gItemIconPalette_Scovillainite,
+    },
+
+    [ITEM_BAXCALIBRITE] =
+    {
+        .name = ITEM_NAME("戟脊龙进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让戟脊龙携带后，\n"
+			"在战斗时能超级进\n"
+			"化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Baxcalibrite,
+        .iconPalette = gItemIconPalette_Baxcalibrite,
+    },
+
+    [ITEM_TATSUGIRINITE] =
+    {
+        .name = ITEM_NAME("米立龙进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让米立龙携带后，\n"
+			"在战斗时能超级进\n"
+			"化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Tatsugirinite,
+        .iconPalette = gItemIconPalette_Tatsugirinite,
+    },
+
+    [ITEM_GLIMMORANITE] =
+    {
+        .name = ITEM_NAME("晶光花进化石"),
+        .price = 0,
+        .holdEffect = HOLD_EFFECT_MEGA_STONE,
+        .description = COMPOUND_STRING(
+			"让晶光花携带后，\n"
+			"在战斗时能超级进\n"
+			"化的超级石。"),
+        .pocket = POCKET_ITEMS,
+        .sortType = ITEM_TYPE_MEGA_STONE,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .flingPower = 80,
+        .iconPic = gItemIcon_Glimmoranite,
+        .iconPalette = gItemIconPalette_Glimmoranite,
     },
 
 // Gems
@@ -7992,6 +8324,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 5000 : 9600,
         .holdEffect = HOLD_EFFECT_EVASION_UP,
         .holdEffectParam = 10,
+
         .description = COMPOUND_STRING(
 			"携带后，对手招式\n"
 			"会变得不容易命中\n"
@@ -9156,22 +9489,22 @@ const struct Item gItemsInfo[] =
     {
         .name = ITEM_NAME("学习装置"),
         .holdEffect = HOLD_EFFECT_EXP_SHARE,
-        #if I_EXP_SHARE_ITEM >= GEN_6
-            .price = 0,
-            .importance = 1,
-            .description = COMPOUND_STRING(
-                "打开后，能让同行\n"
-                "的所有宝可梦获得\n"
-                "经验值的装置。"),
-            .pocket = POCKET_KEY_ITEMS,
-        #else
-            .price = (I_PRICE == GEN_1) ? 1 : 3000,
-            .description = COMPOUND_STRING(
-                "携带后，能让同行\n"
-                "的所有宝可梦获得\n"
-                "经验值的装置。"),
-            .pocket = POCKET_ITEMS,
-        #endif
+    #if I_EXP_SHARE_ITEM >= GEN_6
+        .price = 0,
+        .importance = 1,
+        .description = COMPOUND_STRING(
+			"打开后，能让同行\n"
+			"的所有宝可梦获得\n"
+			"经验值的装置。"),
+        .pocket = POCKET_KEY_ITEMS,
+    #else
+        .price = (I_PRICE == GEN_1) ? 1 : 3000,
+        .description = COMPOUND_STRING(
+			"携带后，能让同行\n"
+			"的所有宝可梦获得\n"
+			"经验值的装置。"),
+        .pocket = POCKET_ITEMS,
+    #endif
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_ExpShare,
@@ -13174,7 +13507,8 @@ const struct Item gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .fieldUseFunc = ItemUseOutOfBattle_Bike,
+        .secondaryId = STANDARD_BIKE,
         .iconPic = gItemIcon_Bicycle,
         .iconPalette = gItemIconPalette_Bicycle,
     },
@@ -13307,11 +13641,11 @@ const struct Item gItemsInfo[] =
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
-#if I_VS_SEEKER_CHARGING != 0
+    #if I_VS_SEEKER_CHARGING != 0
         .fieldUseFunc = FieldUseFunc_VsSeeker,
-#else
+    #else
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
-#endif
+    #endif
         .iconPic = gItemIcon_VsSeeker,
         .iconPalette = gItemIconPalette_VsSeeker,
     },
@@ -14660,7 +14994,7 @@ const struct Item gItemsInfo[] =
 			"以使特定的宝可梦\n"
 			"进化。富含蜜汁。"),
         .pocket = POCKET_ITEMS,
-	    .sortType = ITEM_TYPE_EVOLUTION_ITEM,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -14678,7 +15012,7 @@ const struct Item gItemsInfo[] =
 			"然破裂，可以使特\n"
 			"定的宝可梦进化。"),
         .pocket = POCKET_ITEMS,
-	    .sortType = ITEM_TYPE_EVOLUTION_ITEM,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,
@@ -14696,7 +15030,7 @@ const struct Item gItemsInfo[] =
 			"然破缺，可以使特\n"
 			"定的宝可梦进化。"),
         .pocket = POCKET_ITEMS,
-	    .sortType = ITEM_TYPE_EVOLUTION_ITEM,
+        .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,
         .effect = gItemEffect_EvoItem,

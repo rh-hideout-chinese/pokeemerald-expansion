@@ -1,296 +1,253 @@
-const u8 gEasyChatWord_Highs[] = _("最高");
-const u8 gEasyChatWord_Lows[] = _("最低");
-const u8 gEasyChatWord_Um[] = _("中");
-const u8 gEasyChatWord_Rear[] = _("后方");
-const u8 gEasyChatWord_Things[] = _("整个");
-const u8 gEasyChatWord_Thing[] = _("东西");
-const u8 gEasyChatWord_Below[] = _("下面");
-const u8 gEasyChatWord_Above[] = _("上面");
-const u8 gEasyChatWord_Back[] = _("出");
-const u8 gEasyChatWord_High[] = _("高");
-const u8 gEasyChatWord_Here[] = _("这里");
-const u8 gEasyChatWord_Inside[] = _("里面");
-const u8 gEasyChatWord_Outside[] = _("外面");
-const u8 gEasyChatWord_Beside[] = _("休息");
-const u8 gEasyChatWord_ThisIsItExcl[] = _("就");
-const u8 gEasyChatWord_This[] = _("这");
-const u8 gEasyChatWord_Every[] = _("这样");
-const u8 gEasyChatWord_These[] = _("这些");
-const u8 gEasyChatWord_TheseWere[] = _("这个");
-const u8 gEasyChatWord_Down[] = _("这是");
-const u8 gEasyChatWord_That[] = _("那");
-const u8 gEasyChatWord_ThoseAre[] = _("方面");
-const u8 gEasyChatWord_ThoseWere[] = _("事情");
-const u8 gEasyChatWord_ThatsItExcl[] = _("就是这样！");
-const u8 gEasyChatWord_Am[] = _("相关");
-const u8 gEasyChatWord_ThatWas[] = _("那是");
-const u8 gEasyChatWord_Front[] = _("前面");
-const u8 gEasyChatWord_Up[] = _("上");
-const u8 gEasyChatWord_Choice[] = _("下");
-const u8 gEasyChatWord_Far[] = _("远");
-const u8 gEasyChatWord_Away[] = _("防止");
-const u8 gEasyChatWord_Near[] = _("近");
-const u8 gEasyChatWord_Where[] = _("哪里");
-const u8 gEasyChatWord_When[] = _("何时");
-const u8 gEasyChatWord_What[] = _("什么");
-const u8 gEasyChatWord_Deep[] = _("深");
-const u8 gEasyChatWord_Shallow[] = _("浅");
-const u8 gEasyChatWord_Why[] = _("为什么");
-const u8 gEasyChatWord_Confused[] = _("困惑");
-const u8 gEasyChatWord_Opposite[] = _("混乱");
-const u8 gEasyChatWord_Left[] = _("左");
-const u8 gEasyChatWord_Right[] = _("右");
-
 const struct EasyChatWordInfo gEasyChatGroup_Misc[] = {
     [EC_INDEX(EC_WORD_HIGHS)] =
     {
-        .text = gEasyChatWord_Highs,
+        .text = COMPOUND_STRING("最高"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ABOVE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOWS)] =
     {
-        .text = gEasyChatWord_Lows,
+        .text = COMPOUND_STRING("最低"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_UM)] =
     {
-        .text = gEasyChatWord_Um,
+        .text = COMPOUND_STRING("中"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AWAY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_REAR)] =
     {
-        .text = gEasyChatWord_Rear,
+        .text = COMPOUND_STRING("后方"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BACK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THINGS)] =
     {
-        .text = gEasyChatWord_Things,
+        .text = COMPOUND_STRING("整个"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BELOW),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THING)] =
     {
-        .text = gEasyChatWord_Thing,
+        .text = COMPOUND_STRING("东西"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BESIDE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BELOW)] =
     {
-        .text = gEasyChatWord_Below,
+        .text = COMPOUND_STRING("下面"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CHOICE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ABOVE)] =
     {
-        .text = gEasyChatWord_Above,
+        .text = COMPOUND_STRING("上面"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CONFUSED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BACK)] =
     {
-        .text = gEasyChatWord_Back,
+        .text = COMPOUND_STRING("出"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DEEP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HIGH)] =
     {
-        .text = gEasyChatWord_High,
+        .text = COMPOUND_STRING("高"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DOWN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HERE)] =
     {
-        .text = gEasyChatWord_Here,
+        .text = COMPOUND_STRING("这里"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EVERY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INSIDE)] =
     {
-        .text = gEasyChatWord_Inside,
+        .text = COMPOUND_STRING("里面"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FAR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OUTSIDE)] =
     {
-        .text = gEasyChatWord_Outside,
+        .text = COMPOUND_STRING("外面"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FRONT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BESIDE)] =
     {
-        .text = gEasyChatWord_Beside,
+        .text = COMPOUND_STRING("休息"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HERE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THIS_IS_IT_EXCL)] =
     {
-        .text = gEasyChatWord_ThisIsItExcl,
+        .text = COMPOUND_STRING("就"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HIGH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THIS)] =
     {
-        .text = gEasyChatWord_This,
+        .text = COMPOUND_STRING("这"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HIGHS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EVERY)] =
     {
-        .text = gEasyChatWord_Every,
+        .text = COMPOUND_STRING("这样"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_INSIDE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THESE)] =
     {
-        .text = gEasyChatWord_These,
+        .text = COMPOUND_STRING("这些"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LEFT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THESE_WERE)] =
     {
-        .text = gEasyChatWord_TheseWere,
+        .text = COMPOUND_STRING("这个"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOWS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DOWN)] =
     {
-        .text = gEasyChatWord_Down,
+        .text = COMPOUND_STRING("这是"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NEAR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THAT)] =
     {
-        .text = gEasyChatWord_That,
+        .text = COMPOUND_STRING("那"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OPPOSITE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THOSE_ARE)] =
     {
-        .text = gEasyChatWord_ThoseAre,
+        .text = COMPOUND_STRING("方面"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OUTSIDE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THOSE_WERE)] =
     {
-        .text = gEasyChatWord_ThoseWere,
+        .text = COMPOUND_STRING("事情"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_REAR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THAT_S_IT_EXCL)] =
     {
-        .text = gEasyChatWord_ThatsItExcl,
+        .text = COMPOUND_STRING("就是这样！"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RIGHT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AM)] =
     {
-        .text = gEasyChatWord_Am,
+        .text = COMPOUND_STRING("相关"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHALLOW),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THAT_WAS)] =
     {
-        .text = gEasyChatWord_ThatWas,
+        .text = COMPOUND_STRING("那是"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THAT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FRONT)] =
     {
-        .text = gEasyChatWord_Front,
+        .text = COMPOUND_STRING("前面"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THAT_WAS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_UP)] =
     {
-        .text = gEasyChatWord_Up,
+        .text = COMPOUND_STRING("上"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THAT_S_IT_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CHOICE)] =
     {
-        .text = gEasyChatWord_Choice,
+        .text = COMPOUND_STRING("下"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THESE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FAR)] =
     {
-        .text = gEasyChatWord_Far,
+        .text = COMPOUND_STRING("远"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THESE_WERE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AWAY)] =
     {
-        .text = gEasyChatWord_Away,
+        .text = COMPOUND_STRING("防止"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NEAR)] =
     {
-        .text = gEasyChatWord_Near,
+        .text = COMPOUND_STRING("近"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THINGS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHERE)] =
     {
-        .text = gEasyChatWord_Where,
+        .text = COMPOUND_STRING("哪里"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THIS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHEN)] =
     {
-        .text = gEasyChatWord_When,
+        .text = COMPOUND_STRING("这么"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THIS_IS_IT_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHAT)] =
     {
-        .text = gEasyChatWord_What,
+        .text = COMPOUND_STRING("什么"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THOSE_ARE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DEEP)] =
     {
-        .text = gEasyChatWord_Deep,
+        .text = COMPOUND_STRING("深"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THOSE_WERE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHALLOW)] =
     {
-        .text = gEasyChatWord_Shallow,
+        .text = COMPOUND_STRING("浅"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_UM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHY)] =
     {
-        .text = gEasyChatWord_Why,
+        .text = COMPOUND_STRING("为什么"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_UP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CONFUSED)] =
     {
-        .text = gEasyChatWord_Confused,
+        .text = COMPOUND_STRING("困惑"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHAT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OPPOSITE)] =
     {
-        .text = gEasyChatWord_Opposite,
+        .text = COMPOUND_STRING("混乱"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHEN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LEFT)] =
     {
-        .text = gEasyChatWord_Left,
+        .text = COMPOUND_STRING("容易"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHERE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RIGHT)] =
     {
-        .text = gEasyChatWord_Right,
+        .text = COMPOUND_STRING("错过"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHY),
         .enabled = TRUE,
     },

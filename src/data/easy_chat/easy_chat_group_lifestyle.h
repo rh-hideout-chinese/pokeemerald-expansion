@@ -1,317 +1,271 @@
-const u8 gEasyChatWord_Chores[] = _("家务");
-const u8 gEasyChatWord_Home[] = _("家");
-const u8 gEasyChatWord_Money[] = _("金钱");
-const u8 gEasyChatWord_Allowance[] = _("零用钱");
-const u8 gEasyChatWord_Bath[] = _("洗澡");
-const u8 gEasyChatWord_Conversation[] = _("对话");
-const u8 gEasyChatWord_School[] = _("学校");
-const u8 gEasyChatWord_Commemorate[] = _("纪念");
-const u8 gEasyChatWord_Habit[] = _("习惯");
-const u8 gEasyChatWord_Group[] = _("团体");
-const u8 gEasyChatWord_Word[] = _("组词");
-const u8 gEasyChatWord_Store[] = _("商店");
-const u8 gEasyChatWord_Service[] = _("服务");
-const u8 gEasyChatWord_Work[] = _("造型");
-const u8 gEasyChatWord_System[] = _("系统");
-const u8 gEasyChatWord_Train[] = _("起床");
-const u8 gEasyChatWord_Class[] = _("班级");
-const u8 gEasyChatWord_Lessons[] = _("课程");
-const u8 gEasyChatWord_Information[] = _("信息");
-const u8 gEasyChatWord_Living[] = _("生活");
-const u8 gEasyChatWord_Teacher[] = _("老师");
-const u8 gEasyChatWord_Tournament[] = _("锦标赛");
-const u8 gEasyChatWord_Letter[] = _("信件");
-const u8 gEasyChatWord_Event[] = _("事件");
-const u8 gEasyChatWord_Digital[] = _("数字");
-const u8 gEasyChatWord_Test[] = _("测试");
-const u8 gEasyChatWord_DeptStore[] = _("百货商店");
-const u8 gEasyChatWord_Television[] = _("电视");
-const u8 gEasyChatWord_Phone[] = _("电话");
-const u8 gEasyChatWord_Item[] = _("物品");
-const u8 gEasyChatWord_Name[] = _("名字");
-const u8 gEasyChatWord_News[] = _("新闻");
-const u8 gEasyChatWord_Popular[] = _("流行");
-const u8 gEasyChatWord_Party[] = _("派对");
-const u8 gEasyChatWord_Study[] = _("学习");
-const u8 gEasyChatWord_Machine[] = _("作业");
-const u8 gEasyChatWord_Mail[] = _("邮件");
-const u8 gEasyChatWord_Message[] = _("保证");
-const u8 gEasyChatWord_Promise[] = _("约定");
-const u8 gEasyChatWord_Dream[] = _("梦想");
-const u8 gEasyChatWord_Kindergarten[] = _("幼儿园");
-const u8 gEasyChatWord_Life[] = _("梦");
-const u8 gEasyChatWord_Radio[] = _("电台");
-const u8 gEasyChatWord_Rental[] = _("租借");
-const u8 gEasyChatWord_World[] = _("世界");
-
 const struct EasyChatWordInfo gEasyChatGroup_Lifestyle[] = {
     [EC_INDEX(EC_WORD_CHORES)] =
     {
-        .text = gEasyChatWord_Chores,
+        .text = COMPOUND_STRING("家务"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ALLOWANCE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HOME)] =
     {
-        .text = gEasyChatWord_Home,
+        .text = COMPOUND_STRING("开学"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BATH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MONEY)] =
     {
-        .text = gEasyChatWord_Money,
+        .text = COMPOUND_STRING("金钱"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CHORES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ALLOWANCE)] =
     {
-        .text = gEasyChatWord_Allowance,
+        .text = COMPOUND_STRING("零用钱"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CLASS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BATH)] =
     {
-        .text = gEasyChatWord_Bath,
+        .text = COMPOUND_STRING("洗澡"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COMMEMORATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CONVERSATION)] =
     {
-        .text = gEasyChatWord_Conversation,
+        .text = COMPOUND_STRING("对话"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CONVERSATION),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SCHOOL)] =
     {
-        .text = gEasyChatWord_School,
+        .text = COMPOUND_STRING("学校"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DEPT_STORE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COMMEMORATE)] =
     {
-        .text = gEasyChatWord_Commemorate,
+        .text = COMPOUND_STRING("纪念"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DIGITAL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HABIT)] =
     {
-        .text = gEasyChatWord_Habit,
+        .text = COMPOUND_STRING("习惯"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DREAM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GROUP)] =
     {
-        .text = gEasyChatWord_Group,
+        .text = COMPOUND_STRING("团体"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EVENT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WORD)] =
     {
-        .text = gEasyChatWord_Word,
+        .text = COMPOUND_STRING("组词"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GROUP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STORE)] =
     {
-        .text = gEasyChatWord_Store,
+        .text = COMPOUND_STRING("商店"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HABIT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SERVICE)] =
     {
-        .text = gEasyChatWord_Service,
+        .text = COMPOUND_STRING("服务"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HOME),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WORK)] =
     {
-        .text = gEasyChatWord_Work,
+        .text = COMPOUND_STRING("造型"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_INFORMATION),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SYSTEM)] =
     {
-        .text = gEasyChatWord_System,
+        .text = COMPOUND_STRING("系统"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ITEM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TRAIN)] =
     {
-        .text = gEasyChatWord_Train,
+        .text = COMPOUND_STRING("起床"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_KINDERGARTEN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CLASS)] =
     {
-        .text = gEasyChatWord_Class,
+        .text = COMPOUND_STRING("班级"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LESSONS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LESSONS)] =
     {
-        .text = gEasyChatWord_Lessons,
+        .text = COMPOUND_STRING("课程"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LETTER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INFORMATION)] =
     {
-        .text = gEasyChatWord_Information,
+        .text = COMPOUND_STRING("信息"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LIFE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LIVING)] =
     {
-        .text = gEasyChatWord_Living,
+        .text = COMPOUND_STRING("生活"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LIVING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TEACHER)] =
     {
-        .text = gEasyChatWord_Teacher,
+        .text = COMPOUND_STRING("老师"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MACHINE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TOURNAMENT)] =
     {
-        .text = gEasyChatWord_Tournament,
+        .text = COMPOUND_STRING("锦标赛"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MAIL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LETTER)] =
     {
-        .text = gEasyChatWord_Letter,
+        .text = COMPOUND_STRING("信件"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MESSAGE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EVENT)] =
     {
-        .text = gEasyChatWord_Event,
+        .text = COMPOUND_STRING("事件"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MONEY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DIGITAL)] =
     {
-        .text = gEasyChatWord_Digital,
+        .text = COMPOUND_STRING("数字"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NAME),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TEST)] =
     {
-        .text = gEasyChatWord_Test,
+        .text = COMPOUND_STRING("测试"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NEWS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DEPT_STORE)] =
     {
-        .text = gEasyChatWord_DeptStore,
+        .text = COMPOUND_STRING("百货商店"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PARTY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TELEVISION)] =
     {
-        .text = gEasyChatWord_Television,
+        .text = COMPOUND_STRING("电视"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PHONE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PHONE)] =
     {
-        .text = gEasyChatWord_Phone,
+        .text = COMPOUND_STRING("电话"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_POPULAR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ITEM)] =
     {
-        .text = gEasyChatWord_Item,
+        .text = COMPOUND_STRING("物品"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PROMISE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NAME)] =
     {
-        .text = gEasyChatWord_Name,
+        .text = COMPOUND_STRING("名字"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RADIO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NEWS)] =
     {
-        .text = gEasyChatWord_News,
+        .text = COMPOUND_STRING("新闻"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RENTAL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POPULAR)] =
     {
-        .text = gEasyChatWord_Popular,
+        .text = COMPOUND_STRING("流行"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SCHOOL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PARTY)] =
     {
-        .text = gEasyChatWord_Party,
+        .text = COMPOUND_STRING("派对"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SERVICE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STUDY)] =
     {
-        .text = gEasyChatWord_Study,
+        .text = COMPOUND_STRING("学习"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STORE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MACHINE)] =
     {
-        .text = gEasyChatWord_Machine,
+        .text = COMPOUND_STRING("作业"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STUDY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MAIL)] =
     {
-        .text = gEasyChatWord_Mail,
+        .text = COMPOUND_STRING("邮件"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SYSTEM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MESSAGE)] =
     {
-        .text = gEasyChatWord_Message,
+        .text = COMPOUND_STRING("保证"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TEACHER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PROMISE)] =
     {
-        .text = gEasyChatWord_Promise,
+        .text = COMPOUND_STRING("约定"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TELEVISION),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DREAM)] =
     {
-        .text = gEasyChatWord_Dream,
+        .text = COMPOUND_STRING("梦想"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TEST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_KINDERGARTEN)] =
     {
-        .text = gEasyChatWord_Kindergarten,
+        .text = COMPOUND_STRING("幼儿园"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TOURNAMENT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LIFE)] =
     {
-        .text = gEasyChatWord_Life,
+        .text = COMPOUND_STRING("梦"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TRAIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RADIO)] =
     {
-        .text = gEasyChatWord_Radio,
+        .text = COMPOUND_STRING("电台"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WORD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RENTAL)] =
     {
-        .text = gEasyChatWord_Rental,
+        .text = COMPOUND_STRING("租借"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WORK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WORLD)] =
     {
-        .text = gEasyChatWord_World,
+        .text = COMPOUND_STRING("世界"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WORLD),
         .enabled = TRUE,
     },
