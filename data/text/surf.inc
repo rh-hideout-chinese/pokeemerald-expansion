@@ -3,3 +3,6 @@ gText_WantToUseSurf::
 
 gText_PlayerUsedSurf::
     .string "{STR_VAR_1}使出了冲浪！$"
+
+Text_CurrentTooFast::
+	.string "水流实在太湍急了！\n这里无法使用冲浪……$"

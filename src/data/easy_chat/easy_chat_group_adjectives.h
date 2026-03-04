@@ -1,254 +1,217 @@
-const u8 gEasyChatWord_Wandering[] = _("徘徊");
-const u8 gEasyChatWord_Rickety[] = _("过时");
-const u8 gEasyChatWord_RockSolid[] = _("坚如磐石");
-const u8 gEasyChatWord_Hungry[] = _("饥饿");
-const u8 gEasyChatWord_Tight[] = _("紧张");
-const u8 gEasyChatWord_Ticklish[] = _("狂野");
-const u8 gEasyChatWord_Twirling[] = _("旋转");
-const u8 gEasyChatWord_Spiraling[] = _("刻薄");
-const u8 gEasyChatWord_Thirsty[] = _("口渴");
-const u8 gEasyChatWord_Lolling[] = _("懒洋洋");
-const u8 gEasyChatWord_Silky[] = _("柔滑");
-const u8 gEasyChatWord_Sadly[] = _("悲伤");
-const u8 gEasyChatWord_Hopeless[] = _("绝望");
-const u8 gEasyChatWord_Useless[] = _("没用的");
-const u8 gEasyChatWord_Drooling[] = _("普通");
-const u8 gEasyChatWord_Exciting[] = _("令人兴奋");
-const u8 gEasyChatWord_Thick[] = _("厚");
-const u8 gEasyChatWord_Smooth[] = _("光滑");
-const u8 gEasyChatWord_Slimy[] = _("黏糊糊");
-const u8 gEasyChatWord_Thin[] = _("薄");
-const u8 gEasyChatWord_Break[] = _("打破");
-const u8 gEasyChatWord_Voracious[] = _("贪婪");
-const u8 gEasyChatWord_Scatter[] = _("散落");
-const u8 gEasyChatWord_Awesome[] = _("棒极了");
-const u8 gEasyChatWord_Wimpy[] = _("软弱");
-const u8 gEasyChatWord_Wobbly[] = _("摇摇晃晃");
-const u8 gEasyChatWord_Shaky[] = _("摇晃");
-const u8 gEasyChatWord_Ripped[] = _("撕裂");
-const u8 gEasyChatWord_Shredded[] = _("碎裂");
-const u8 gEasyChatWord_Increasing[] = _("增加");
-const u8 gEasyChatWord_Yet[] = _("然而");
-const u8 gEasyChatWord_Destroyed[] = _("被摧毁");
-const u8 gEasyChatWord_Fiery[] = _("火热");
-const u8 gEasyChatWord_LoveyDovey[] = _("甜蜜");
-const u8 gEasyChatWord_Happily[] = _("幸福");
-const u8 gEasyChatWord_Anticipation[] = _("期待");
-
 const struct EasyChatWordInfo gEasyChatGroup_Adjectives[] = {
     [EC_INDEX(EC_WORD_WANDERING)] =
     {
-        .text = gEasyChatWord_Wandering,
+        .text = COMPOUND_STRING("徘徊"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ANTICIPATION),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RICKETY)] =
     {
-        .text = gEasyChatWord_Rickety,
+        .text = COMPOUND_STRING("过时"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AWESOME),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ROCK_SOLID)] =
     {
-        .text = gEasyChatWord_RockSolid,
+        .text = COMPOUND_STRING("坚如磐石"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BREAK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HUNGRY)] =
     {
-        .text = gEasyChatWord_Hungry,
+        .text = COMPOUND_STRING("饥饿"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DESTROYED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TIGHT)] =
     {
-        .text = gEasyChatWord_Tight,
+        .text = COMPOUND_STRING("紧张"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DROOLING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TICKLISH)] =
     {
-        .text = gEasyChatWord_Ticklish,
+        .text = COMPOUND_STRING("狂野"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCITING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TWIRLING)] =
     {
-        .text = gEasyChatWord_Twirling,
+        .text = COMPOUND_STRING("旋转"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FIERY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SPIRALING)] =
     {
-        .text = gEasyChatWord_Spiraling,
+        .text = COMPOUND_STRING("刻薄"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HAPPILY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THIRSTY)] =
     {
-        .text = gEasyChatWord_Thirsty,
+        .text = COMPOUND_STRING("口渴"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HOPELESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOLLING)] =
     {
-        .text = gEasyChatWord_Lolling,
+        .text = COMPOUND_STRING("懒洋洋"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HUNGRY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SILKY)] =
     {
-        .text = gEasyChatWord_Silky,
+        .text = COMPOUND_STRING("柔滑"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_INCREASING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SADLY)] =
     {
-        .text = gEasyChatWord_Sadly,
+        .text = COMPOUND_STRING("悲伤"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOLLING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HOPELESS)] =
     {
-        .text = gEasyChatWord_Hopeless,
+        .text = COMPOUND_STRING("绝望"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOVEY_DOVEY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_USELESS)] =
     {
-        .text = gEasyChatWord_Useless,
+        .text = COMPOUND_STRING("没用的"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RICKETY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DROOLING)] =
     {
-        .text = gEasyChatWord_Drooling,
+        .text = COMPOUND_STRING("普通"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RIPPED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EXCITING)] =
     {
-        .text = gEasyChatWord_Exciting,
+        .text = COMPOUND_STRING("令人兴奋"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ROCK_SOLID),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THICK)] =
     {
-        .text = gEasyChatWord_Thick,
+        .text = COMPOUND_STRING("厚"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SADLY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMOOTH)] =
     {
-        .text = gEasyChatWord_Smooth,
+        .text = COMPOUND_STRING("光滑"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SCATTER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SLIMY)] =
     {
-        .text = gEasyChatWord_Slimy,
+        .text = COMPOUND_STRING("黏糊糊"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHAKY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THIN)] =
     {
-        .text = gEasyChatWord_Thin,
+        .text = COMPOUND_STRING("薄"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHREDDED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BREAK)] =
     {
-        .text = gEasyChatWord_Break,
+        .text = COMPOUND_STRING("打破"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SILKY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VORACIOUS)] =
     {
-        .text = gEasyChatWord_Voracious,
+        .text = COMPOUND_STRING("贪婪"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SLIMY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SCATTER)] =
     {
-        .text = gEasyChatWord_Scatter,
+        .text = COMPOUND_STRING("散落"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SMOOTH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AWESOME)] =
     {
-        .text = gEasyChatWord_Awesome,
+        .text = COMPOUND_STRING("棒极了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SPIRALING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WIMPY)] =
     {
-        .text = gEasyChatWord_Wimpy,
+        .text = COMPOUND_STRING("软弱"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THICK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WOBBLY)] =
     {
-        .text = gEasyChatWord_Wobbly,
+        .text = COMPOUND_STRING("摇摇晃晃"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHAKY)] =
     {
-        .text = gEasyChatWord_Shaky,
+        .text = COMPOUND_STRING("摇晃"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THIRSTY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RIPPED)] =
     {
-        .text = gEasyChatWord_Ripped,
+        .text = COMPOUND_STRING("撕裂"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TICKLISH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHREDDED)] =
     {
-        .text = gEasyChatWord_Shredded,
+        .text = COMPOUND_STRING("碎裂"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TIGHT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INCREASING)] =
     {
-        .text = gEasyChatWord_Increasing,
+        .text = COMPOUND_STRING("增加"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TWIRLING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YET)] =
     {
-        .text = gEasyChatWord_Yet,
+        .text = COMPOUND_STRING("然而"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_USELESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DESTROYED)] =
     {
-        .text = gEasyChatWord_Destroyed,
+        .text = COMPOUND_STRING("被摧毁"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_VORACIOUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIERY)] =
     {
-        .text = gEasyChatWord_Fiery,
+        .text = COMPOUND_STRING("火热"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WANDERING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOVEY_DOVEY)] =
     {
-        .text = gEasyChatWord_LoveyDovey,
+        .text = COMPOUND_STRING("甜蜜"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WIMPY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HAPPILY)] =
     {
-        .text = gEasyChatWord_Happily,
+        .text = COMPOUND_STRING("幸福"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WOBBLY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ANTICIPATION)] =
     {
-        .text = gEasyChatWord_Anticipation,
+        .text = COMPOUND_STRING("期待"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YET),
         .enabled = TRUE,
     },

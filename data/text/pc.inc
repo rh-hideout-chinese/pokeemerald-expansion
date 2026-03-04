@@ -15,3 +15,6 @@ gText_AccessedPlayersPC::
 
 gText_AccessedLanettesPC::
     .string "连接上了真由美的电脑！$"
+
+gText_AccessedBillsPC::
+	.string "连接上了正辉的电脑！$"

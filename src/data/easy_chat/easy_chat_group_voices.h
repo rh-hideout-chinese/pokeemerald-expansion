@@ -1,443 +1,379 @@
-const u8 gEasyChatWord_Excl[] = _("！");
-const u8 gEasyChatWord_ExclExcl[] = _("！！");
-const u8 gEasyChatWord_QuesExcl[] = _("？！");
-const u8 gEasyChatWord_Ques[] = _("？");
-const u8 gEasyChatWord_Ellipsis[] = _("……");
-const u8 gEasyChatWord_EllipsisExcl[] = _("……！");
-const u8 gEasyChatWord_EllipsisEllipsisEllipsis[] = _("………");
-const u8 gEasyChatWord_Dash[] = _("-");
-const u8 gEasyChatWord_DashDashDash[] = _("- - -");
-const u8 gEasyChatWord_UhOh[] = _("啊哦");
-const u8 gEasyChatWord_Waaah[] = _("哇");
-const u8 gEasyChatWord_Ahaha[] = _("啊哈哈");
-const u8 gEasyChatWord_OhQues[] = _("哦？");
-const u8 gEasyChatWord_Nope[] = _("啦");
-const u8 gEasyChatWord_Urgh[] = _("呃");
-const u8 gEasyChatWord_Hmm[] = _("嗯");
-const u8 gEasyChatWord_Whoah[] = _("哇哦");
-const u8 gEasyChatWord_WroooaarExcl[] = _("吼嗷嗷");
-const u8 gEasyChatWord_Wow[] = _("可惜");
-const u8 gEasyChatWord_Giggle[] = _("咯咯");
-const u8 gEasyChatWord_Sigh[] = _("唉");
-const u8 gEasyChatWord_Unbelievable[] = _("难以置信");
-const u8 gEasyChatWord_Cries[] = _("哭");
-const u8 gEasyChatWord_Agree[] = _("拜托");
-const u8 gEasyChatWord_EhQues[] = _("才是");
-const u8 gEasyChatWord_Cry[] = _("好了");
-const u8 gEasyChatWord_Ehehe[] = _("哎嘿嘿");
-const u8 gEasyChatWord_OiOiOi[] = _("喂喂喂");
-const u8 gEasyChatWord_OhYeah[] = _("噢耶");
-const u8 gEasyChatWord_Oh[] = _("哦");
-const u8 gEasyChatWord_Oops[] = _("哎呀");
-const u8 gEasyChatWord_Shocked[] = _("震惊");
-const u8 gEasyChatWord_Eek[] = _("罢了");
-const u8 gEasyChatWord_Graaah[] = _("样子");
-const u8 gEasyChatWord_Gwahahaha[] = _("难怪");
-const u8 gEasyChatWord_Way[] = _("太");
-const u8 gEasyChatWord_Tch[] = _("啧");
-const u8 gEasyChatWord_Hehe[] = _("嘿嘿");
-const u8 gEasyChatWord_Hah[] = _("哈");
-const u8 gEasyChatWord_Yup[] = _("吧");
-const u8 gEasyChatWord_Hahaha[] = _("哈哈哈");
-const u8 gEasyChatWord_Aiyeeh[] = _("哎耶");
-const u8 gEasyChatWord_Hiyah[] = _("嘿呀");
-const u8 gEasyChatWord_Fufufu[] = _("呼呼呼");
-const u8 gEasyChatWord_Lol[] = _("笑死");
-const u8 gEasyChatWord_Snort[] = _("了吗？");
-const u8 gEasyChatWord_Humph[] = _("哼");
-const u8 gEasyChatWord_Hehehe[] = _("呵呵呵");
-const u8 gEasyChatWord_Heh[] = _("呵");
-const u8 gEasyChatWord_Hohoho[] = _("嚯嚯嚯");
-const u8 gEasyChatWord_UhHuh[] = _("嗯嗯");
-const u8 gEasyChatWord_OhDear[] = _("哦天");
-const u8 gEasyChatWord_Arrgh[] = _("啊啊");
-const u8 gEasyChatWord_Mufufu[] = _("没错");
-const u8 gEasyChatWord_Mmm[] = _("嗯……");
-const u8 gEasyChatWord_OhKay[] = _("好好");
-const u8 gEasyChatWord_Okay[] = _("好吧");
-const u8 gEasyChatWord_Lalala[] = _("啦啦啦");
-const u8 gEasyChatWord_Yay[] = _("耶");
-const u8 gEasyChatWord_Aww[] = _("啊");
-const u8 gEasyChatWord_Wowee[] = _("哇耶");
-const u8 gEasyChatWord_Gwah[] = _("嘎啊");
-const u8 gEasyChatWord_Wahahaha[] = _("哇哈哈哈");
-
 const struct EasyChatWordInfo gEasyChatGroup_Voices[] = {
     [EC_INDEX(EC_WORD_EXCL)] =
     {
-        .text = gEasyChatWord_Excl,
+        .text = COMPOUND_STRING("！"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EXCL_EXCL)] =
     {
-        .text = gEasyChatWord_ExclExcl,
+        .text = COMPOUND_STRING("！！"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EXCL_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_QUES_EXCL)] =
     {
-        .text = gEasyChatWord_QuesExcl,
+        .text = COMPOUND_STRING("？！"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DASH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_QUES)] =
     {
-        .text = gEasyChatWord_Ques,
+        .text = COMPOUND_STRING("？"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DASH_DASH_DASH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ELLIPSIS)] =
     {
-        .text = gEasyChatWord_Ellipsis,
+        .text = COMPOUND_STRING("……"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ELLIPSIS_EXCL)] =
     {
-        .text = gEasyChatWord_EllipsisExcl,
+        .text = COMPOUND_STRING("……！"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS)] =
     {
-        .text = gEasyChatWord_EllipsisEllipsisEllipsis,
+        .text = COMPOUND_STRING("………"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ELLIPSIS_ELLIPSIS_ELLIPSIS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DASH)] =
     {
-        .text = gEasyChatWord_Dash,
+        .text = COMPOUND_STRING("-"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_QUES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DASH_DASH_DASH)] =
     {
-        .text = gEasyChatWord_DashDashDash,
+        .text = COMPOUND_STRING("---"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_QUES_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_UH_OH)] =
     {
-        .text = gEasyChatWord_UhOh,
+        .text = COMPOUND_STRING("啊哦"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AGREE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WAAAH)] =
     {
-        .text = gEasyChatWord_Waaah,
+        .text = COMPOUND_STRING("哇"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AHAHA),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AHAHA)] =
     {
-        .text = gEasyChatWord_Ahaha,
+        .text = COMPOUND_STRING("啊哈哈"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AIYEEH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OH_QUES)] =
     {
-        .text = gEasyChatWord_OhQues,
+        .text = COMPOUND_STRING("哦？"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ARRGH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NOPE)] =
     {
-        .text = gEasyChatWord_Nope,
+        .text = COMPOUND_STRING("啦"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AWW),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_URGH)] =
     {
-        .text = gEasyChatWord_Urgh,
+        .text = COMPOUND_STRING("呃"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CRIES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HMM)] =
     {
-        .text = gEasyChatWord_Hmm,
+        .text = COMPOUND_STRING("嗯"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CRY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHOAH)] =
     {
-        .text = gEasyChatWord_Whoah,
+        .text = COMPOUND_STRING("哇哦"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EEK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WROOOAAR_EXCL)] =
     {
-        .text = gEasyChatWord_WroooaarExcl,
+        .text = COMPOUND_STRING("吼嗷嗷"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EH_QUES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WOW)] =
     {
-        .text = gEasyChatWord_Wow,
+        .text = COMPOUND_STRING("可惜"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EHEHE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GIGGLE)] =
     {
-        .text = gEasyChatWord_Giggle,
+        .text = COMPOUND_STRING("咯咯"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FUFUFU),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SIGH)] =
     {
-        .text = gEasyChatWord_Sigh,
+        .text = COMPOUND_STRING("唉"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GIGGLE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_UNBELIEVABLE)] =
     {
-        .text = gEasyChatWord_Unbelievable,
+        .text = COMPOUND_STRING("难以置信"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GRAAAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CRIES)] =
     {
-        .text = gEasyChatWord_Cries,
+        .text = COMPOUND_STRING("哭"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GWAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AGREE)] =
     {
-        .text = gEasyChatWord_Agree,
+        .text = COMPOUND_STRING("拜托"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GWAHAHAHA),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EH_QUES)] =
     {
-        .text = gEasyChatWord_EhQues,
+        .text = COMPOUND_STRING("才是"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CRY)] =
     {
-        .text = gEasyChatWord_Cry,
+        .text = COMPOUND_STRING("好了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HAHAHA),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EHEHE)] =
     {
-        .text = gEasyChatWord_Ehehe,
+        .text = COMPOUND_STRING("哎嘿嘿"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HEH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OI_OI_OI)] =
     {
-        .text = gEasyChatWord_OiOiOi,
+        .text = COMPOUND_STRING("喂喂喂"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HEHE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OH_YEAH)] =
     {
-        .text = gEasyChatWord_OhYeah,
+        .text = COMPOUND_STRING("噢耶"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HEHEHE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OH)] =
     {
-        .text = gEasyChatWord_Oh,
+        .text = COMPOUND_STRING("哦"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HIYAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OOPS)] =
     {
-        .text = gEasyChatWord_Oops,
+        .text = COMPOUND_STRING("哎呀"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HMM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHOCKED)] =
     {
-        .text = gEasyChatWord_Shocked,
+        .text = COMPOUND_STRING("震惊"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HOHOHO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EEK)] =
     {
-        .text = gEasyChatWord_Eek,
+        .text = COMPOUND_STRING("罢了"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HUMPH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GRAAAH)] =
     {
-        .text = gEasyChatWord_Graaah,
+        .text = COMPOUND_STRING("样子"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LALALA),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GWAHAHAHA)] =
     {
-        .text = gEasyChatWord_Gwahahaha,
+        .text = COMPOUND_STRING("难怪"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LOL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WAY)] =
     {
-        .text = gEasyChatWord_Way,
+        .text = COMPOUND_STRING("太"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MMM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TCH)] =
     {
-        .text = gEasyChatWord_Tch,
+        .text = COMPOUND_STRING("啧"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MUFUFU),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HEHE)] =
     {
-        .text = gEasyChatWord_Hehe,
+        .text = COMPOUND_STRING("嘿嘿"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NOPE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HAH)] =
     {
-        .text = gEasyChatWord_Hah,
+        .text = COMPOUND_STRING("哈"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YUP)] =
     {
-        .text = gEasyChatWord_Yup,
+        .text = COMPOUND_STRING("吧"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OH_DEAR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HAHAHA)] =
     {
-        .text = gEasyChatWord_Hahaha,
+        .text = COMPOUND_STRING("哈哈哈"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OH_YEAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AIYEEH)] =
     {
-        .text = gEasyChatWord_Aiyeeh,
+        .text = COMPOUND_STRING("哎耶"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OH_KAY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HIYAH)] =
     {
-        .text = gEasyChatWord_Hiyah,
+        .text = COMPOUND_STRING("嘿呀"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OH_QUES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FUFUFU)] =
     {
-        .text = gEasyChatWord_Fufufu,
+        .text = COMPOUND_STRING("呼呼呼"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OI_OI_OI),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LOL)] =
     {
-        .text = gEasyChatWord_Lol,
+        .text = COMPOUND_STRING("笑死"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OKAY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SNORT)] =
     {
-        .text = gEasyChatWord_Snort,
+        .text = COMPOUND_STRING("了吗？"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OOPS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HUMPH)] =
     {
-        .text = gEasyChatWord_Humph,
+        .text = COMPOUND_STRING("哼"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHOCKED),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HEHEHE)] =
     {
-        .text = gEasyChatWord_Hehehe,
+        .text = COMPOUND_STRING("呵呵呵"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SIGH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HEH)] =
     {
-        .text = gEasyChatWord_Heh,
+        .text = COMPOUND_STRING("呵"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SNORT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HOHOHO)] =
     {
-        .text = gEasyChatWord_Hohoho,
+        .text = COMPOUND_STRING("嚯嚯嚯"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TCH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_UH_HUH)] =
     {
-        .text = gEasyChatWord_UhHuh,
+        .text = COMPOUND_STRING("嗯嗯"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_UH_HUH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OH_DEAR)] =
     {
-        .text = gEasyChatWord_OhDear,
+        .text = COMPOUND_STRING("哦天"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_UH_OH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ARRGH)] =
     {
-        .text = gEasyChatWord_Arrgh,
+        .text = COMPOUND_STRING("啊啊"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_UNBELIEVABLE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MUFUFU)] =
     {
-        .text = gEasyChatWord_Mufufu,
+        .text = COMPOUND_STRING("没错"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_URGH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MMM)] =
     {
-        .text = gEasyChatWord_Mmm,
+        .text = COMPOUND_STRING("嗯……"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WAAAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OH_KAY)] =
     {
-        .text = gEasyChatWord_OhKay,
+        .text = COMPOUND_STRING("好好"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WAHAHAHA),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OKAY)] =
     {
-        .text = gEasyChatWord_Okay,
+        .text = COMPOUND_STRING("好吧"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WAY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LALALA)] =
     {
-        .text = gEasyChatWord_Lalala,
+        .text = COMPOUND_STRING("啦啦啦"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHOAH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_YAY)] =
     {
-        .text = gEasyChatWord_Yay,
+        .text = COMPOUND_STRING("耶"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WOW),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AWW)] =
     {
-        .text = gEasyChatWord_Aww,
+        .text = COMPOUND_STRING("啊"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WOWEE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WOWEE)] =
     {
-        .text = gEasyChatWord_Wowee,
+        .text = COMPOUND_STRING("哇耶"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WROOOAAR_EXCL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GWAH)] =
     {
-        .text = gEasyChatWord_Gwah,
+        .text = COMPOUND_STRING("嘎啊"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YAY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WAHAHAHA)] =
     {
-        .text = gEasyChatWord_Wahahaha,
+        .text = COMPOUND_STRING("哇哈哈哈"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_YUP),
         .enabled = TRUE,
     },

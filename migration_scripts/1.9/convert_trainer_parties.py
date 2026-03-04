@@ -183,7 +183,7 @@ begin_trainer_definition           = re.compile(r'    \[(TRAINER_\w+)\] =')
 end_trainer_definition             = re.compile(r'    }')
 trainer_class_definition           = re.compile(r'\.trainerClass = TRAINER_CLASS_(\w+)')
 encounter_music_gender_definition  = re.compile(r'\.encounterMusic_gender = (F_TRAINER_FEMALE \| )?TRAINER_ENCOUNTER_MUSIC_(\w+)')
-trainer_pic_definition             = re.compile(r'\.trainerPic = TRAINER_PIC_(\w+)')
+trainer_pic_definition             = re.compile(r'\.trainerPic = TRAINER_PIC_FRONT_(\w+)')
 trainer_name_definition            = re.compile(r'\.trainerName = _\("([^"]*)"\)')
 trainer_items_definition           = re.compile(r'\.items = \{([^}]*)\}')
 trainer_item_definition            = re.compile(r'ITEM_(\w+)')
@@ -325,6 +325,6 @@ if __name__ == '__main__':
     except:
         print(f"usage: python3 {sys.argv[0]} <trainers.h> <trainer_parties.h> <out>")
     else:
-        with open(trainers_in_path, "r", encoding="utf-8") as trainers_in_h, open(parties_in_path, "r", encoding="utf-8") as parties_in_h, open(out_path, "w", encoding="utf-8") as out_party:
+        with open(trainers_in_path, "r") as trainers_in_h, open(parties_in_path, "r") as parties_in_h, open(out_path, "w") as out_party:
             parties = convert_parties(parties_in_path, parties_in_h)
             trainers = convert_trainers(trainers_in_path, trainers_in_h, parties, out_party)

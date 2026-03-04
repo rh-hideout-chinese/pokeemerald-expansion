@@ -280,6 +280,9 @@ $(FONTGFXDIR)/chinese_normal.latfont: $(FONTGFXDIR)/chinese_normal.png
 
 ### Miscellaneous ###
 
+$(MISCGFXDIR)/emoticons.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 2 -mheight 2
+
 $(TITLESCREENGFXDIR)/pokemon_logo.gbapal: %.gbapal: %.pal
 	$(GFX) $< $@ -num_colors 224
 
