@@ -230,16 +230,16 @@ gTVMassOutbreakText00::
     .string "大家好！\n现在是《宝可梦新闻》时间。\p我们刚刚收到一则\n关于罕见现象的报道。\p据报告显示在{STR_VAR_1}附近发生了\n{STR_VAR_2}的大量出现现象。\p{STR_VAR_2}这种宝可梦\n以稀有和难以遇到而著称。\p这将是见证{STR_VAR_2}在野外\n神秘出现的难得机会。\p以上就是本期《宝可梦新闻》的全部内容。$"
 
 gTV3CheersForPokeblocksText00::
-    .string "主持：希望大家干劲满满，\n《为宝可方块喝彩》现在开始！\p今天我们要评测的是{STR_VAR_1}\n等人制作的宝可方块。\p事不宜迟，现在就喂给我的\n美食家宝可梦——溶食兽吧。\p…… …… ……\n…… …… ……$"
+    .string "主持人：希望大家干劲满满，\n《为宝可方块喝彩》现在开始！\p今天我们要评测的是{STR_VAR_1}\n等人制作的宝可方块。\p事不宜迟，现在就喂给我的\n美食家宝可梦——溶食兽吧。\p…… …… ……\n…… …… ……$"
 
 gTV3CheersForPokeblocksText01::
-    .string "溶食兽：咕比！咕比比！\p主持：评价结果是\n它非常{STR_VAR_1}！\n溶食兽说味道“{STR_VAR_2}！”\p非常感谢你，{STR_VAR_3}！$"
+    .string "溶食兽：咕比！咕比比！\p主持人：评价结果是\n它非常{STR_VAR_1}！\n溶食兽说味道“{STR_VAR_2}！”\p非常感谢你，{STR_VAR_3}！$"
 
 gTV3CheersForPokeblocksText02::
     .string "{STR_VAR_1}的混合水平\n仍然有提升的空间。\p如果这位训练家能更熟练些，\n宝可方块的味道会更好。$"
 
 gTV3CheersForPokeblocksText03::
-    .string "溶食兽：咕比！咕比比！\p主持：嗯……太{STR_VAR_1}了。\n溶食兽说味道“{STR_VAR_2}！”\p看起来{STR_VAR_3}的操作失误\n影响了混合质量……$"
+    .string "溶食兽：咕比！咕比比！\p主持人：嗯……太{STR_VAR_1}了。\n溶食兽说味道“{STR_VAR_2}！”\p看起来{STR_VAR_3}的操作失误\n影响了混合质量……$"
 
 gTV3CheersForPokeblocksText04::
     .string "真遗憾，{STR_VAR_1}的\n努力付诸东流了。\p我们希望{STR_VAR_2}下次\n能够表现得更好！$"
@@ -559,7 +559,7 @@ gTVBreakingNewsText06::
 	.string "当{STR_VAR_1}遇到稀有的\n{STR_VAR_2}时，训练家派出了\l宝可梦{STR_VAR_3}。$"
 
 gTVBreakingNewsText07::
-	.string "训练家让{STR_VAR_2}\n使用了招式{STR_VAR_1}。\p一不小心，训练家使稀有宝可梦\n昏厥了……$"
+	.string "训练家让{STR_VAR_2}\n使出了招式{STR_VAR_1}。\p一不小心，训练家使稀有宝可梦\n昏厥了……$"
 
 gTVBreakingNewsText12::
 	.string "然而，{STR_VAR_1}看到稀有的\n{STR_VAR_2}时慌了神。\p慌乱中，训练家命令\n{STR_VAR_3}发动攻击。\p一不小心，训练家使稀有宝可梦\n昏厥了。$"
@@ -625,7 +625,7 @@ gTVThePokemonBattleSeminarText00::
 	.string "宝可梦对战研讨会！\p我们通过分析对战\n来学习他人的经验。\p今天的研究案例是\n{STR_VAR_1}的对战。\p{STR_VAR_1}的{STR_VAR_2}\n正在与{STR_VAR_3}对战……$"
 
 gTVThePokemonBattleSeminarText01::
-	.string "它使用了招式{STR_VAR_3}\n攻击{STR_VAR_2}……\p嗯……{STR_VAR_1}！\n这样做是不对的！$"
+	.string "它使出了招式{STR_VAR_3}\n攻击{STR_VAR_2}……\p嗯……{STR_VAR_1}！\n这样做是不对的！$"
 
 gTVThePokemonBattleSeminarText02::
 	.string "除了这个注定失败的招式外，\n训练家的{STR_VAR_1}还会$"

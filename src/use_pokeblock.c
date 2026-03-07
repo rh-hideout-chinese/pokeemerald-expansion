@@ -50,7 +50,7 @@ enum {
 struct UsePokeblockSession
 {
     void (*callback)(void);
-    void (*exitCallback)(void);
+    MainCallback exitCallback;
     struct Pokeblock *pokeblock;
     struct Pokemon *mon;
     u8 stringBuffer[64];
@@ -156,13 +156,19 @@ static void SpriteCB_SelectionIconCancel(struct Sprite *);
 static void SpriteCB_MonPic(struct Sprite *);
 static void SpriteCB_Condition(struct Sprite *);
 
+static const u8 sText_GetsAPokeBlockQuestion[] = _("吃宝可方块吗？");
+static const u8 sText_WasEnhanced[] = _("磨练了");
+static const u8 sText_NothingChanged[] = _("没有任何变化！");
+static const u8 sText_WontEatAnymore[] = _("似乎已经吃不下了……");
+static const u8 sText_NatureSlash[] = _("性格/");
+
 extern const u16 gConditionGraphData_Pal[];
 extern const u16 gConditionText_Pal[];
 
 // The below 3 are saved for returning to the screen after feeding a pokeblock to a mon
 // so that the rest of the data can be freed
 static EWRAM_DATA struct UsePokeblockSession *sInfo = NULL;
-static EWRAM_DATA void (*sExitCallback)(void) = NULL;
+static EWRAM_DATA MainCallback sExitCallback = NULL;
 static EWRAM_DATA struct Pokeblock *sPokeblock = NULL;
 EWRAM_DATA u8 gPokeblockMonId = 0;
 EWRAM_DATA s16 gPokeblockGain = 0;
@@ -173,8 +179,8 @@ static EWRAM_DATA struct UsePokeblockMenu *sMenu = NULL;
 
 static const u32 sMonFrame_Pal[] = INCBIN_U32("graphics/pokeblock/use_screen/mon_frame_pal.bin");
 static const u32 sMonFrame_Gfx[] = INCBIN_U32("graphics/pokeblock/use_screen/mon_frame.4bpp");
-static const u32 sMonFrame_Tilemap[] = INCBIN_U32("graphics/pokeblock/use_screen/mon_frame.bin.lz");
-static const u32 sGraphData_Tilemap[] = INCBIN_U32("graphics/pokeblock/use_screen/graph_data.bin.lz");
+static const u32 sMonFrame_Tilemap[] = INCBIN_U32("graphics/pokeblock/use_screen/mon_frame.bin.smolTM");
+static const u32 sGraphData_Tilemap[] = INCBIN_U32("graphics/pokeblock/use_screen/graph_data.bin.smolTM");
 
 // The condition/flavors aren't listed in their normal order in this file, they're listed as shown on the graph going counter-clockwise
 // Normally they would go Cool/Spicy, Beauty/Dry, Cute/Sweet, Smart/Bitter, Tough/Sour (also graph order, but clockwise)
@@ -352,9 +358,6 @@ static const struct SpriteTemplate sSpriteTemplate_UpDown =
     .paletteTag = TAG_UP_DOWN,
     .oam = &sOam_UpDown,
     .anims = sAnims_UpDown,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCallbackDummy,
 };
 
 static const struct OamData sOam_Condition =
@@ -402,8 +405,6 @@ static const struct SpriteTemplate sSpriteTemplate_Condition =
     .paletteTag = TAG_CONDITION,
     .oam = &sOam_Condition,
     .anims = sAnims_Condition,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_Condition,
 };
 
@@ -871,7 +872,7 @@ static void AskUsePokeblock(void)
     GetMonData(&gPlayerParty[GetPartyIdFromSelectionId(sMenu->info.curSelection)], MON_DATA_NICKNAME, stringBuffer2);
     StringGet_Nickname(stringBuffer2);
     StringAppend(stringBuffer, stringBuffer2);
-    StringAppend(stringBuffer, gText_GetsAPokeBlockQuestion);
+    StringAppend(stringBuffer, sText_GetsAPokeBlockQuestion);
     StringCopy(gStringVar4, stringBuffer);
     FillWindowPixelBuffer(WIN_TEXT, 17);
     DrawTextBorderOuter(WIN_TEXT, 151, 14);
@@ -951,7 +952,7 @@ static void PrintWontEatAnymore(void)
 {
     FillWindowPixelBuffer(WIN_TEXT, 17);
     DrawTextBorderOuter(WIN_TEXT, 151, 14);
-    AddTextPrinterParameterized(WIN_TEXT, FONT_NORMAL, gText_WontEatAnymore, 0, 1, 0, NULL);
+    AddTextPrinterParameterized(WIN_TEXT, FONT_NORMAL, sText_WontEatAnymore, 0, 1, 0, NULL);
     PutWindowTilemap(WIN_TEXT);
     CopyWindowToVram(WIN_TEXT, COPYWIN_FULL);
 }
@@ -978,12 +979,11 @@ static void BufferEnhancedText(u8 *dest, u8 condition, s16 enhancement)
     case -32768 ... -1: // if < 0
         if (enhancement)
             dest[(u16)enhancement] += 0; // something you can't imagine
-        StringCopy(dest, gText_WasEnhanced);
-        StringAppend(dest, sConditionNames[condition]);
-        StringAppend(dest, COMPOUND_STRING("！"));
+        StringCopy(dest, sConditionNames[condition]);
+        StringAppend(dest, sText_WasEnhanced);
         break;
     case 0:
-        StringCopy(dest, gText_NothingChanged);
+        StringCopy(dest, sText_NothingChanged);
         break;
     }
 }
@@ -1337,7 +1337,7 @@ static bool8 LoadUsePokeblockMenuGfx(void)
         sMonFrame_TilemapPtr = Alloc(1280);
         break;
     case 2:
-        LZ77UnCompVram(sMonFrame_Tilemap, sMonFrame_TilemapPtr);
+        DecompressDataWithHeaderVram(sMonFrame_Tilemap, sMonFrame_TilemapPtr);
         break;
     case 3:
         LoadBgTiles(3, sMonFrame_Gfx, 224, 0);
@@ -1350,10 +1350,10 @@ static bool8 LoadUsePokeblockMenuGfx(void)
         sMenu->curMonXOffset = -80;
         break;
     case 6:
-        LZ77UnCompVram(gUsePokeblockGraph_Gfx, sGraph_Gfx);
+        DecompressDataWithHeaderVram(gUsePokeblockGraph_Gfx, sGraph_Gfx);
         break;
     case 7:
-        LZ77UnCompVram(gUsePokeblockGraph_Tilemap, sGraph_Tilemap);
+        DecompressDataWithHeaderVram(gUsePokeblockGraph_Tilemap, sGraph_Tilemap);
         LoadPalette(gUsePokeblockGraph_Pal, BG_PLTT_ID(2), PLTT_SIZE_4BPP);
         break;
     case 8:
@@ -1365,7 +1365,7 @@ static bool8 LoadUsePokeblockMenuGfx(void)
         CopyBgTilemapBufferToVram(1);
         break;
     case 10:
-        LZ77UnCompVram(sGraphData_Tilemap, sMenu->tilemapBuffer);
+        DecompressDataWithHeaderVram(sGraphData_Tilemap, sMenu->tilemapBuffer);
         break;
     case 11:
         LoadBgTilemap(2, sMenu->tilemapBuffer, 1280, 0);
@@ -1395,7 +1395,7 @@ static void UpdateMonInfoText(u16 loadId, bool8 firstPrint)
         AddTextPrinterParameterized(WIN_NAME, FONT_NORMAL, sMenu->monNameStrings[loadId], 0, 1, 0, NULL);
         partyIndex = GetPartyIdFromSelectionId(sMenu->info.curSelection);
         nature = GetNature(&gPlayerParty[partyIndex]);
-        str = StringCopy(sMenu->info.natureText, gText_NatureSlash);
+        str = StringCopy(sMenu->info.natureText, sText_NatureSlash);
         str = StringCopy(str, gNaturesInfo[nature].name);
         AddTextPrinterParameterized3(WIN_NATURE, FONT_NORMAL, 2, 1, sNatureTextColors, 0, sMenu->info.natureText);
     }

@@ -1483,25 +1483,25 @@ LilycoveCity_ContestLobby_Text_ComeBackForPrizeLater:
 	.string "您的奖品吧。$"
 
 ContestHall_Text_GettingStartedParticipantsAsFollows:
-	.string "主持：大家好！\n"
+	.string "主持人：大家好！\n"
 	.string "{STR_VAR_2}的\l"
 	.string "{STR_VAR_3}即将开始！\p"
 	.string "参加比赛的训练家和\n"
 	.string "宝可梦有——$"
 
 ContestHall_Text_GettingStartedParticipantsAsFollowsLink:
-	.string "主持：大家好！\n"
+	.string "主持人：大家好！\n"
 	.string "4名玩家的连接\l"
 	.string "{STR_VAR_2}即将开始！\p"
 	.string "参加比赛的训练家和\n"
 	.string "宝可梦有——$"
 
 ContestHall_Text_EntryXTrainersMon:
-	.string "主持：参赛编号{STR_VAR_2}号！\n"
+	.string "主持人：参赛编号{STR_VAR_2}号！\n"
 	.string "{STR_VAR_1}的{STR_VAR_3}！$"
 
 ContestHall_Text_SeenContestantsAudienceWillVote:
-	.string "主持：4位参赛选手的宝可梦\n"
+	.string "主持人：4位参赛选手的宝可梦\n"
 	.string "已经全部登场完毕！\p"
 	.string "现在进入第1轮评审！\p"
 	.string "现场观众将为您最喜爱的\n"
@@ -1524,7 +1524,7 @@ ContestHall_Text_VotingCompleteLetsAppeal:
 	.string "表演现在开始！$"
 
 ContestHall_Text_ThatsItForJudging:
-	.string "主持：评审到此结束！$"
+	.string "主持人：评审到此结束！$"
 
 ContestHall_Text_ThankYouForAppeals:
 	.string "感谢大家为我们带来了\n"
@@ -1542,16 +1542,16 @@ ContestHall_Text_WeWillNowDeclareWinner:
 	.string "评委：现在公布本次大赛的冠军！$"
 
 ContestHall_Text_CongratsTrainerXandMon:
-	.string "主持：{STR_VAR_2}号！\p"
+	.string "主持人：{STR_VAR_2}号！\p"
 	.string "{STR_VAR_3}和{STR_VAR_1}，\n"
 	.string "恭喜你们！$"
 
 ContestHall_Text_CongratsPleaseCompeteAgain:
-	.string "主持：恭喜获胜！\n"
+	.string "主持人：恭喜获胜！\n"
 	.string "期待您下次再参加！$"
 
 ContestHall_Text_AcceptYourPrize:
-	.string "主持：请来领取\n"
+	.string "主持人：请来领取\n"
 	.string "您的奖品！$"
 
 ContestHall_Text_ConferRibbonAsPrize:
@@ -1742,7 +1742,7 @@ LilycoveCity_ContestLobby_Text_WhichContestMode:
 	.string "您想要参加哪个模式呢？$"
 
 ContestHall_Text_GettingStartedWireless:
-	.string "主持：大家好！\n"
+	.string "主持人：大家好！\n"
 	.string "4名玩家的连接\l"
 	.string "{STR_VAR_2}即将开始！$"
 
@@ -1751,7 +1751,7 @@ ContestHall_Text_ParticipantsAsFollows:
 	.string "宝可梦有——$"
 
 ContestHall_Text_WeveSeenContestants:
-	.string "主持：4位参赛选手的宝可梦\n"
+	.string "主持人：4位参赛选手的宝可梦\n"
 	.string "已经全部登场完毕！\p"
 	.string "现在进入第1轮评审！$"
 

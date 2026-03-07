@@ -115,14 +115,14 @@ static u32 ExitCheckPage(s32);
 static u32 ExitMatchCall(s32);
 
 static const u16 sMatchCallUI_Pal[] = INCBIN_U16("graphics/pokenav/match_call/ui.gbapal");
-static const u32 sMatchCallUI_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/ui.4bpp.lz");
-static const u32 sMatchCallUI_Tilemap[] = INCBIN_U32("graphics/pokenav/match_call/ui.bin.lz");
+static const u32 sMatchCallUI_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/ui.4bpp.smol");
+static const u32 sMatchCallUI_Tilemap[] = INCBIN_U32("graphics/pokenav/match_call/ui.bin.smolTM");
 static const u16 sOptionsCursor_Pal[] = INCBIN_U16("graphics/pokenav/match_call/options_cursor.gbapal");
-static const u32 sOptionsCursor_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/options_cursor.4bpp.lz");
+static const u32 sOptionsCursor_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/options_cursor.4bpp.smol");
 static const u16 sCallWindow_Pal[] = INCBIN_U16("graphics/pokenav/match_call/call_window.gbapal");
 static const u16 sListWindow_Pal[] = INCBIN_U16("graphics/pokenav/match_call/list_window.gbapal");
 static const u16 sPokeball_Pal[] = INCBIN_U16("graphics/pokenav/match_call/pokeball.gbapal");
-static const u32 sPokeball_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/pokeball.4bpp.lz");
+static const u32 sPokeball_Gfx[] = INCBIN_U32("graphics/pokenav/match_call/pokeball.4bpp.smol");
 
 static const u8 gText_NumberRegistered[] = _("登记人数");
 static const u8 gText_NumberOfBattles[] = _("对战次数");
@@ -252,9 +252,6 @@ static const struct SpriteTemplate sOptionsCursorSpriteTemplate =
     .tileTag = GFXTAG_CURSOR,
     .paletteTag = PALTAG_CURSOR,
     .oam = &sOptionsCursorOamData,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_OptionsCursor,
 };
 
@@ -277,10 +274,6 @@ static const struct SpriteTemplate sTrainerPicSpriteTemplate =
     .tileTag = GFXTAG_TRAINER_PIC,
     .paletteTag = PALTAG_TRAINER_PIC,
     .oam = &sTrainerPicOamData,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = SpriteCallbackDummy,
 };
 
 bool32 OpenMatchCall(void)
@@ -1027,7 +1020,7 @@ static void PrintMatchCallLocation(struct Pokenav_MatchCallGfx *gfx, int delta)
     u8 mapName[32];
     int x;
     int index = PokenavList_GetSelectedIndex() + delta;
-    int mapSec = GetMatchCallMapSec(index);
+    mapsec_s32_t mapSec = GetMatchCallMapSec(index);
     if (mapSec != MAPSEC_NONE)
         GetMapName(mapName, mapSec, 0);
     else
@@ -1127,7 +1120,7 @@ static void PrintCallingDots(struct Pokenav_MatchCallGfx *gfx)
 static bool32 WaitForCallingDotsText(struct Pokenav_MatchCallGfx *gfx)
 {
     RunTextPrinters();
-    return IsTextPrinterActive(gfx->msgBoxWindowId);
+    return IsTextPrinterActiveOnWindow(gfx->msgBoxWindowId);
 }
 
 static void PrintTrainerIsCloseBy(struct Pokenav_MatchCallGfx *gfx)
@@ -1138,7 +1131,7 @@ static void PrintTrainerIsCloseBy(struct Pokenav_MatchCallGfx *gfx)
 static bool32 WaitForTrainerIsCloseByText(struct Pokenav_MatchCallGfx *gfx)
 {
     RunTextPrinters();
-    return IsTextPrinterActive(gfx->msgBoxWindowId);
+    return IsTextPrinterActiveOnWindow(gfx->msgBoxWindowId);
 }
 
 static void PrintMatchCallMessage(struct Pokenav_MatchCallGfx *gfx)
@@ -1157,7 +1150,7 @@ static bool32 WaitForMatchCallMessageText(struct Pokenav_MatchCallGfx *gfx)
         gTextFlags.canABSpeedUpPrint = FALSE;
 
     RunTextPrinters();
-    return IsTextPrinterActive(gfx->msgBoxWindowId);
+    return IsTextPrinterActiveOnWindow(gfx->msgBoxWindowId);
 }
 
 static void EraseCallMessageBox(struct Pokenav_MatchCallGfx *gfx)
@@ -1249,7 +1242,7 @@ static struct Sprite *CreateTrainerPicSprite(void)
 static void LoadCheckPageTrainerPic(struct Pokenav_MatchCallGfx *gfx)
 {
     u16 cursor;
-    int trainerPic = GetMatchCallTrainerPic(PokenavList_GetSelectedIndex());
+    enum TrainerPicID trainerPic = GetMatchCallTrainerPic(PokenavList_GetSelectedIndex());
     if (trainerPic >= 0)
     {
         DecompressPicFromTable(&gTrainerSprites[trainerPic].frontPic, gfx->trainerPicGfx);

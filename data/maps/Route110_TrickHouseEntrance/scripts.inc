@@ -722,7 +722,7 @@ Route110_TrickHouseEntrance_Text_ConcealedBeneathCushion:
     .string "哈？咕……\p你怎么看出来我藏在\n垫子下面？眼睛真尖！$"
 
 Route110_TrickHouseEntrance_Text_TheyCallMeTrickMaster:
-    .string "看！\p我是丰缘地区\n最伟大的谜题之人！\l人称……\p戏法大师！\n哇哈哈哈！很高兴见到你！$"
+    .string "看！\p我是丰缘地区\n最伟大的谜题之人！\l人称……\p戏法大王！\n哇哈哈哈！很高兴见到你！$"
 
 Route110_TrickHouseEntrance_Text_ComeToChallengeTrickHouse:
     .string "你想挑战我的\n戏法屋，对吗？\p所以你才会来这里，对吗？\n当然没错！\p我接受你的挑战！\p现在就从那边的卷轴进去，\n开始挑战吧！\p我会在后面等着你！$"
@@ -734,7 +734,7 @@ Route110_TrickHouseEntrance_Text_GoInHoleBehindScroll:
     .string "卷轴后面有一个大洞！\p要进去吗？$"
 
 Route110_TrickHouseEntrance_Text_LeavingOnJourneyNote:
-    .string "卷轴上贴着一张纸条……\p“外出旅行。不要来找我。\n戏法大师”$"
+    .string "卷轴上贴着一张纸条……\p“外出旅行。不要来找我。\n戏法大王”$"
 
 Route110_TrickHouseEntrance_Text_NextTimeUseThisTrick:
     .string "下次，我就要这样，\n这样，再那样……\p噢呵呵呵……就算对我来说，\n困难的程度也是非常华丽的。$"
@@ -749,7 +749,7 @@ Route110_TrickHouseEntrance_Text_DidYouNotComeToClaimReward:
     .string "啊？\n你不是来拿奖励的吗？$"
 
 Route110_TrickHouseEntrance_Text_MechadollWhichTent:
-    .string "我是机械娃娃5！\n不带走奖励，\l跟不上戏法大师的脚步。\p红帐篷和蓝帐篷，\n你更喜欢哪一个？$"
+    .string "我是机械娃娃5！\n不带走奖励，\l跟不上戏法大王的脚步。\p红帐篷和蓝帐篷，\n你更喜欢哪一个？$"
 
 Route110_TrickHouseEntrance_Text_ThenFarewell:
     .string "那么，再见。$"

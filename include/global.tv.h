@@ -103,7 +103,7 @@ typedef union // size = 0x24
                  u8 contestRank:2;
                  u8 contestResult:2;
                  //u8 padding:1;
-        /*0x14*/ u16 move;
+        /*0x14*/ enum Move move;
         /*0x16*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
         /*0x1E*/ u8 language;
         /*0x1F*/ u8 pokemonNameLanguage;
@@ -137,7 +137,7 @@ typedef union // size = 0x24
         /*0x0D*/ u8 round1Placing;
         /*0x0E*/ u8 round2Placing;
         /*0x0F*/ u8 winnerAppealFlag;
-        /*0x10*/ u16 move;
+        /*0x10*/ enum Move move;
         /*0x12*/ u16 winningSpecies;
         /*0x14*/ u8 winningTrainerName[PLAYER_NAME_LENGTH + 1];
         /*0x1C*/ u8 category;
@@ -151,7 +151,7 @@ typedef union // size = 0x24
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;
         /*0x02*/ u8 sheen;
-        /*0x03*/ u8 flavor:3;
+        /*0x03*/ enum Flavor flavor:3;
                  u8 color:2;
                  //u8 padding:3;
         /*0x04*/ u8 worstBlenderName[PLAYER_NAME_LENGTH + 1];
@@ -167,7 +167,7 @@ typedef union // size = 0x24
         /*0x02*/ u16 speciesOpponent;
         /*0x04*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
         /*0x0C*/ u8 linkOpponentName[PLAYER_NAME_LENGTH + 1];
-        /*0x14*/ u16 move;
+        /*0x14*/ enum Move move;
         /*0x16*/ u16 speciesPlayer;
         /*0x18*/ u8 battleType;
         /*0x19*/ u8 language;
@@ -224,9 +224,9 @@ typedef union // size = 0x24
         /*0x02*/ u8 priceReduced;
         /*0x03*/ u8 language;
         /*0x04*/ u8 filler_04[2];
-        /*0x06*/ u16 itemIds[SMARTSHOPPER_NUM_ITEMS];
+        /*0x06*/ enum Item itemIds[SMARTSHOPPER_NUM_ITEMS];
         /*0x0C*/ u16 itemAmounts[SMARTSHOPPER_NUM_ITEMS];
-        /*0x12*/ u8 shopLocation;
+        /*0x12*/ mapsec_u8_t shopLocation;
         /*0x13*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
         /*0x1B*/ //u8 padding;
     } smartshopperShow;
@@ -241,7 +241,7 @@ typedef union // size = 0x24
         /*0x0E*/ u16 species2;
         /*0x10*/ u8 nBallsUsed;
         /*0x11*/ u8 outcome;
-        /*0x12*/ u8 location;
+        /*0x12*/ mapsec_u8_t location;
         /*0x13*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
         /*0x1B*/ //u8 padding;
     } pokemonTodayFailed;
@@ -267,7 +267,7 @@ typedef union // size = 0x24
         /*0x04*/ u16 caughtPoke;
         /*0x06*/ u16 steps;
         /*0x08*/ u16 species;
-        /*0x0A*/ u8 location;
+        /*0x0A*/ mapsec_u8_t location;
         /*0x0B*/ u8 language;
         /*0x0C*/ u8 filler_0C[7];
         /*0x13*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
@@ -282,7 +282,7 @@ typedef union // size = 0x24
         /*0x04*/ u8 badgeCount;
         /*0x05*/ u8 nSilverSymbols;
         /*0x06*/ u8 nGoldSymbols;
-        /*0x07*/ u8 location;
+        /*0x07*/ mapsec_u8_t location;
         /*0x08*/ u16 battlePoints;
         /*0x0A*/ u16 mapLayoutId;
         /*0x0C*/ u8 language;
@@ -308,8 +308,8 @@ typedef union // size = 0x24
     struct {
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;
-        /*0x02*/ u16 item;
-        /*0x04*/ u8 location;
+        /*0x02*/ enum Item item;
+        /*0x04*/ mapsec_u8_t location;
         /*0x05*/ u8 language;
         /*0x06*/ u16 mapLayoutId;
         /*0x08*/ u8 filler_08[11];
@@ -336,7 +336,7 @@ typedef union // size = 0x24
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;
         /*0x02*/ u16 lastOpponentSpecies;
-        /*0x04*/ u8 location;
+        /*0x04*/ mapsec_u8_t location;
         /*0x05*/ u8 outcome;
         /*0x06*/ u16 caughtMonBall;
         /*0x08*/ u16 balls;
@@ -356,7 +356,7 @@ typedef union // size = 0x24
         /*0x03*/ u8 numDecorations;
         /*0x04*/ u8 decorations[4];
         /*0x08*/ u16 species;
-        /*0x0A*/ u16 move;
+        /*0x0A*/ enum Move move;
         /*0x0C*/ u8 language;
         /*0x0D*/ u8 filler_0d[6];
         /*0x13*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
@@ -367,7 +367,7 @@ typedef union // size = 0x24
     struct {
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;
-        /*0x02*/ u16 item;
+        /*0x02*/ enum Item item;
         /*0x04*/ u8 whichPrize;
         /*0x05*/ u8 language;
         /*0x06*/ u8 filler_06[13];
@@ -379,7 +379,7 @@ typedef union // size = 0x24
     struct {
         /*0x00*/ u8 kind;
         /*0x01*/ bool8 active;
-        /*0x02*/ u16 move;
+        /*0x02*/ enum Move move;
         /*0x04*/ u16 foeSpecies;
         /*0x06*/ u16 species;
         /*0x08*/ u16 otherMoves[3];
@@ -451,7 +451,7 @@ typedef union // size = 0x24
         /*0x02*/ u16 stepsInBase;
         /*0x04*/ u8 baseOwnersName[PLAYER_NAME_LENGTH + 1];
         /*0x0C*/ u32 flags;
-        /*0x10*/ u16 item;
+        /*0x10*/ enum Item item;
         /*0x12*/ u8 savedState;
         /*0x13*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
         /*0x1B*/ u8 language;
@@ -477,7 +477,7 @@ typedef union // size = 0x24
         /*0x01*/ bool8 active;
         /*0x02*/ u8 unused1;
         /*0x03*/ u8 unused3;
-        /*0x04*/ u16 moves[MAX_MON_MOVES];
+        /*0x04*/ enum Move moves[MAX_MON_MOVES];
         /*0x0C*/ u16 species;
         /*0x0E*/ u16 unused2;
         /*0x10*/ u8 locationMapNum;
@@ -505,7 +505,7 @@ struct GabbyAndTyData
     /*2BA6*/ u16 mon2;
     /*2BA8*/ u16 lastMove;
     /*2BAA*/ u16 quote[1];
-    /*2BAC*/ u8 mapnum;
+    /*2BAC*/ mapsec_u8_t mapnum;
     /*2BAD*/ u8 battleNum;
     /*2BAE*/ u8 battleTookMoreThanOneTurn:1;
              u8 playerLostAMon:1;

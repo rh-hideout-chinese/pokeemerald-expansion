@@ -302,10 +302,10 @@ static const u8 sUnusedBrendan_Gfx[] = INCBIN_U8("graphics/battle_transitions/un
 static const u8 sUnusedLass_Gfx[] = INCBIN_U8("graphics/battle_transitions/unused_lass.4bpp");
 static const u32 sShrinkingBoxTileset[] = INCBIN_U32("graphics/battle_transitions/shrinking_box.4bpp");
 static const u16 sEvilTeam_Palette[] = INCBIN_U16("graphics/battle_transitions/evil_team.gbapal");
-static const u32 sTeamAqua_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_aqua.4bpp.lz");
-static const u32 sTeamAqua_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_aqua.bin.lz");
-static const u32 sTeamMagma_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_magma.4bpp.lz");
-static const u32 sTeamMagma_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_magma.bin.lz");
+static const u32 sTeamAqua_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_aqua.4bpp.smol");
+static const u32 sTeamAqua_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_aqua.bin.smolTM");
+static const u32 sTeamMagma_Tileset[] = INCBIN_U32("graphics/battle_transitions/team_magma.4bpp.smol");
+static const u32 sTeamMagma_Tilemap[] = INCBIN_U32("graphics/battle_transitions/team_magma.bin.smolTM");
 static const u32 sRegis_Tileset[] = INCBIN_U32("graphics/battle_transitions/regis.4bpp");
 static const u16 sRegice_Palette[] = INCBIN_U16("graphics/battle_transitions/regice.gbapal");
 static const u16 sRegisteel_Palette[] = INCBIN_U16("graphics/battle_transitions/registeel.gbapal");
@@ -314,10 +314,10 @@ static const u32 sRegice_Tilemap[] = INCBIN_U32("graphics/battle_transitions/reg
 static const u32 sRegisteel_Tilemap[] = INCBIN_U32("graphics/battle_transitions/registeel.bin");
 static const u32 sRegirock_Tilemap[] = INCBIN_U32("graphics/battle_transitions/regirock.bin");
 static const u16 sUnused_Palette[] = INCBIN_U16("graphics/battle_transitions/unused.gbapal");
-static const u32 sKyogre_Tileset[] = INCBIN_U32("graphics/battle_transitions/kyogre.4bpp.lz");
-static const u32 sKyogre_Tilemap[] = INCBIN_U32("graphics/battle_transitions/kyogre.bin.lz");
-static const u32 sGroudon_Tileset[] = INCBIN_U32("graphics/battle_transitions/groudon.4bpp.lz");
-static const u32 sGroudon_Tilemap[] = INCBIN_U32("graphics/battle_transitions/groudon.bin.lz");
+static const u32 sKyogre_Tileset[] = INCBIN_U32("graphics/battle_transitions/kyogre.4bpp.smol");
+static const u32 sKyogre_Tilemap[] = INCBIN_U32("graphics/battle_transitions/kyogre.bin.smolTM");
+static const u32 sGroudon_Tileset[] = INCBIN_U32("graphics/battle_transitions/groudon.4bpp.smol");
+static const u32 sGroudon_Tilemap[] = INCBIN_U32("graphics/battle_transitions/groudon.bin.smolTM");
 static const u16 sKyogre1_Palette[] = INCBIN_U16("graphics/battle_transitions/kyogre_pt1.gbapal");
 static const u16 sKyogre2_Palette[] = INCBIN_U16("graphics/battle_transitions/kyogre_pt2.gbapal");
 static const u16 sGroudon1_Palette[] = INCBIN_U16("graphics/battle_transitions/groudon_pt1.gbapal");
@@ -326,13 +326,13 @@ static const u16 sRayquaza_Palette[] = INCBIN_U16("graphics/battle_transitions/r
 static const u32 sRayquaza_Tileset[] = INCBIN_U32("graphics/battle_transitions/rayquaza.4bpp");
 static const u32 sRayquaza_Tilemap[] = INCBIN_U32("graphics/battle_transitions/rayquaza.bin");
 static const u16 sFrontierLogo_Palette[] = INCBIN_U16("graphics/battle_transitions/frontier_logo.gbapal");
-static const u32 sFrontierLogo_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_logo.4bpp.lz");
-static const u32 sFrontierLogo_Tilemap[] = INCBIN_U32("graphics/battle_transitions/frontier_logo.bin.lz");
+static const u32 sFrontierLogo_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_logo.4bpp.smol");
+static const u32 sFrontierLogo_Tilemap[] = INCBIN_U32("graphics/battle_transitions/frontier_logo.bin.smolTM");
 static const u16 sFrontierSquares_Palette[] = INCBIN_U16("graphics/battle_transitions/frontier_squares_blanktiles.gbapal");
-static const u32 sFrontierSquares_FilledBg_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_1.4bpp.lz");
-static const u32 sFrontierSquares_EmptyBg_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_2.4bpp.lz");
-static const u32 sFrontierSquares_Shrink1_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_3.4bpp.lz");
-static const u32 sFrontierSquares_Shrink2_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_4.4bpp.lz");
+static const u32 sFrontierSquares_FilledBg_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_1.4bpp.smol");
+static const u32 sFrontierSquares_EmptyBg_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_2.4bpp.smol");
+static const u32 sFrontierSquares_Shrink1_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_3.4bpp.smol");
+static const u32 sFrontierSquares_Shrink2_Tileset[] = INCBIN_U32("graphics/battle_transitions/frontier_square_4.4bpp.smol");
 static const u32 sFrontierSquares_Tilemap[] = INCBIN_U32("graphics/battle_transitions/frontier_squares.bin");
 
 // All battle transitions use the same intro
@@ -847,7 +847,6 @@ static const struct SpriteTemplate sSpriteTemplate_UnusedBrendan =
     .oam = &sOam_UnusedBrendanLass,
     .anims = sSpriteAnimTable_UnusedBrendanLass,
     .images = sImageTable_UnusedBrendan,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_MugshotTrainerPic
 };
 
@@ -858,7 +857,6 @@ static const struct SpriteTemplate sSpriteTemplate_UnusedLass =
     .oam = &sOam_UnusedBrendanLass,
     .anims = sSpriteAnimTable_UnusedBrendanLass,
     .images = sImageTable_UnusedLass,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCB_MugshotTrainerPic
 };
 
@@ -1388,7 +1386,7 @@ static bool8 Aqua_Init(struct Task *task)
     InitPatternWeaveTransition(task);
     GetBg0TilesDst(&tilemap, &tileset);
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
-    LZ77UnCompVram(sTeamAqua_Tileset, tileset);
+    DecompressDataWithHeaderVram(sTeamAqua_Tileset, tileset);
     LoadPalette(sEvilTeam_Palette, BG_PLTT_ID(15), sizeof(sEvilTeam_Palette));
 
     task->tState++;
@@ -1403,7 +1401,7 @@ static bool8 Magma_Init(struct Task *task)
     InitPatternWeaveTransition(task);
     GetBg0TilesDst(&tilemap, &tileset);
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
-    LZ77UnCompVram(sTeamMagma_Tileset, tileset);
+    DecompressDataWithHeaderVram(sTeamMagma_Tileset, tileset);
     LoadPalette(sEvilTeam_Palette, BG_PLTT_ID(15), sizeof(sEvilTeam_Palette));
 
     task->tState++;
@@ -1463,7 +1461,7 @@ static bool8 Aqua_SetGfx(struct Task *task)
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    LZ77UnCompVram(sTeamAqua_Tilemap, tilemap);
+    DecompressDataWithHeaderVram(sTeamAqua_Tilemap, tilemap);
     SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
 
     task->tState++;
@@ -1475,7 +1473,7 @@ static bool8 Magma_SetGfx(struct Task *task)
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    LZ77UnCompVram(sTeamMagma_Tilemap, tilemap);
+    DecompressDataWithHeaderVram(sTeamMagma_Tilemap, tilemap);
     SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
 
     task->tState++;
@@ -1529,8 +1527,8 @@ static bool8 Kyogre_Init(struct Task *task)
 
     GetBg0TilesDst(&tilemap, &tileset);
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
-    LZ77UnCompVram(sKyogre_Tileset, tileset);
-    LZ77UnCompVram(sKyogre_Tilemap, tilemap);
+    DecompressDataWithHeaderVram(sKyogre_Tileset, tileset);
+    DecompressDataWithHeaderVram(sKyogre_Tilemap, tilemap);
 
     task->tState++;
     return FALSE;
@@ -2280,7 +2278,7 @@ static bool8 Mugshot_SetGfx(struct Task *task)
     s16 i, j;
     u16 *tilemap, *tileset;
     const u16 *mugshotsMap = sMugshotsTilemap;
-    u8 mugshotColor = GetTrainerMugshotColorFromId(TRAINER_BATTLE_PARAM.opponentA);
+    enum MugshotColor mugshotColor = GetTrainerMugshotColorFromId(TRAINER_BATTLE_PARAM.opponentA);
 
     GetBg0TilesDst(&tilemap, &tileset);
     CpuSet(sEliteFour_Tileset, tileset, 0xF0);
@@ -2288,7 +2286,7 @@ static bool8 Mugshot_SetGfx(struct Task *task)
     if (mugshotColor >= ARRAY_COUNT(sOpponentMugshotsPals))
         mugshotColor = MUGSHOT_COLOR_PURPLE;
 
-    LoadPalette(sOpponentMugshotsPals[mugshotColor], 0xF0, 0x20);
+    LoadPalette(sOpponentMugshotsPals[mugshotColor], BG_PLTT_ID(15), PLTT_SIZE_4BPP);
     LoadPalette(sPlayerMugshotsPals[gSaveBlock2Ptr->playerGender], BG_PLTT_ID(15) + 10, PLTT_SIZEOF(6));
 
     for (i = 0; i < 20; i++)
@@ -2426,7 +2424,7 @@ static bool8 Mugshot_WaitPlayerSlide(struct Task *task)
     sTransitionData->BG0HOFS_Lower -= 8;
     sTransitionData->BG0HOFS_Upper += 8;
 
-    if (gPartnerTrainerId != TRAINER_PARTNER(PARTNER_NONE) && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER) 
+    if (gPartnerTrainerId != TRAINER_PARTNER(PARTNER_NONE) && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
     {
         if (IsTrainerPicSlideDone(task->tPartnerSpriteId))
         {
@@ -2446,7 +2444,7 @@ static bool8 Mugshot_WaitPlayerSlide(struct Task *task)
         else
         {
             return FALSE;
-        } 
+        }
     }
     else
     {
@@ -2468,7 +2466,7 @@ static bool8 Mugshot_WaitPlayerSlide(struct Task *task)
         else
         {
             return FALSE;
-        } 
+        }
     }
     return FALSE;
 }
@@ -2587,7 +2585,7 @@ static void Mugshots_CreateTrainerPics(struct Task *task)
 
     u8 trainerAPicId = GetTrainerPicFromId(TRAINER_BATTLE_PARAM.opponentA);
     u8 trainerBPicId = GetTrainerPicFromId(TRAINER_BATTLE_PARAM.opponentB);
-    u8 partnerPicId = gTrainerPicToTrainerBackPic[GetTrainerPicFromId(gPartnerTrainerId)];
+    u8 partnerPicId = GetTrainerPicFromId(gPartnerTrainerId);
     s16 opponentARotationScales = 0;
     s16 opponentBRotationScales = 0;
 
@@ -2615,11 +2613,11 @@ static void Mugshots_CreateTrainerPics(struct Task *task)
                                                   0, NULL);
 
     gReservedSpritePaletteCount = 12;
-    if (gPartnerTrainerId != TRAINER_PARTNER(PARTNER_NONE) && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER) 
+    if (gPartnerTrainerId != TRAINER_PARTNER(PARTNER_NONE) && gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
     {
-        task->tPartnerSpriteId = CreateTrainerSprite(partnerPicId, 
-                                                DISPLAY_WIDTH + 240, 
-                                                106, 
+        task->tPartnerSpriteId = CreateTrainerSprite(partnerPicId,
+                                                DISPLAY_WIDTH + 240,
+                                                106,
                                                 0, NULL);
         partnerSprite = &gSprites[task->tPartnerSpriteId];
         partnerSprite->callback = SpriteCB_MugshotTrainerPicPartner;
@@ -2631,10 +2629,10 @@ static void Mugshots_CreateTrainerPics(struct Task *task)
         SetOamMatrixRotationScaling(partnerSprite->oam.matrixNum, -512, 512, 0);
     }
 
-    task->tPlayerSpriteId = CreateTrainerSprite(PlayerGenderToFrontTrainerPicId(gSaveBlock2Ptr->playerGender), 
-                                                DISPLAY_WIDTH + 32, 
-                                                106, 
-                                                0, NULL); 
+    task->tPlayerSpriteId = CreateTrainerSprite(PlayerGenderToFrontTrainerPicId(gSaveBlock2Ptr->playerGender),
+                                                DISPLAY_WIDTH + 32,
+                                                106,
+                                                0, NULL);
 
     opponentSpriteA = &gSprites[task->tOpponentSpriteAId];
     playerSprite = &gSprites[task->tPlayerSpriteId];
@@ -3421,8 +3419,8 @@ static bool8 Groudon_Init(struct Task *task)
 
     GetBg0TilesDst(&tilemap, &tileset);
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
-    LZ77UnCompVram(sGroudon_Tileset, tileset);
-    LZ77UnCompVram(sGroudon_Tilemap, tilemap);
+    DecompressDataWithHeaderVram(sGroudon_Tileset, tileset);
+    DecompressDataWithHeaderVram(sGroudon_Tilemap, tilemap);
 
     task->tState++;
     task->tTimer = 0;
@@ -4307,7 +4305,7 @@ static bool8 FrontierLogoWiggle_Init(struct Task *task)
     InitPatternWeaveTransition(task);
     GetBg0TilesDst(&tilemap, &tileset);
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
-    LZ77UnCompVram(sFrontierLogo_Tileset, tileset);
+    DecompressDataWithHeaderVram(sFrontierLogo_Tileset, tileset);
     LoadPalette(sFrontierLogo_Palette, BG_PLTT_ID(15), sizeof(sFrontierLogo_Palette));
 
     task->tState++;
@@ -4319,7 +4317,7 @@ static bool8 FrontierLogoWiggle_SetGfx(struct Task *task)
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    LZ77UnCompVram(sFrontierLogo_Tilemap, tilemap);
+    DecompressDataWithHeaderVram(sFrontierLogo_Tilemap, tilemap);
     SetSinWave((s16*)gScanlineEffectRegBuffers[0], 0, task->tSinIndex, 132, task->tAmplitude, DISPLAY_HEIGHT);
 
     task->tState++;
@@ -4369,7 +4367,7 @@ static bool8 FrontierLogoWave_Init(struct Task *task)
     REG_BLDALPHA = sTransitionData->BLDALPHA;
     GetBg0TilesDst(&tilemap, &tileset);
     CpuFill16(0, tilemap, BG_SCREEN_SIZE);
-    LZ77UnCompVram(sFrontierLogo_Tileset, tileset);
+    DecompressDataWithHeaderVram(sFrontierLogo_Tileset, tileset);
     LoadPalette(sFrontierLogo_Palette, BG_PLTT_ID(15), sizeof(sFrontierLogo_Palette));
     sTransitionData->cameraY = 0;
     UpdateShadowColor(RGB_GRAY);
@@ -4383,7 +4381,7 @@ static bool8 FrontierLogoWave_SetGfx(struct Task *task)
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    LZ77UnCompVram(sFrontierLogo_Tilemap, tilemap);
+    DecompressDataWithHeaderVram(sFrontierLogo_Tilemap, tilemap);
 
     task->tState++;
     return TRUE;
@@ -4515,7 +4513,7 @@ static bool8 FrontierSquares_Init(struct Task *task)
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    LZ77UnCompVram(sFrontierSquares_FilledBg_Tileset, tileset);
+    DecompressDataWithHeaderVram(sFrontierSquares_FilledBg_Tileset, tileset);
 
     FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 32, 32);
     FillBgTilemapBufferRect(0, 1, 0, 0, MARGIN_SIZE, 32, 15);
@@ -4573,13 +4571,13 @@ static bool8 FrontierSquares_Shrink(struct Task *task)
             break;
         case 1:
             BlendPalettes(PALETTES_ALL & ~(1 << 15), 16, RGB_BLACK);
-            LZ77UnCompVram(sFrontierSquares_EmptyBg_Tileset, tileset);
+            DecompressDataWithHeaderVram(sFrontierSquares_EmptyBg_Tileset, tileset);
             break;
         case 2:
-            LZ77UnCompVram(sFrontierSquares_Shrink1_Tileset, tileset);
+            DecompressDataWithHeaderVram(sFrontierSquares_Shrink1_Tileset, tileset);
             break;
         case 3:
-            LZ77UnCompVram(sFrontierSquares_Shrink2_Tileset, tileset);
+            DecompressDataWithHeaderVram(sFrontierSquares_Shrink2_Tileset, tileset);
             break;
         default:
             FillBgTilemapBufferRect_Palette0(0, 1, 0, 0, 32, 32);
@@ -4610,7 +4608,7 @@ static bool8 FrontierSquaresSpiral_Init(struct Task *task)
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    LZ77UnCompVram(sFrontierSquares_FilledBg_Tileset, tileset);
+    DecompressDataWithHeaderVram(sFrontierSquares_FilledBg_Tileset, tileset);
 
     FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 32, 32);
     FillBgTilemapBufferRect(0, 1, 0, 0, MARGIN_SIZE, 32, 15);
@@ -4728,7 +4726,7 @@ static bool8 FrontierSquaresScroll_Init(struct Task *task)
     u16 *tilemap, *tileset;
 
     GetBg0TilesDst(&tilemap, &tileset);
-    LZ77UnCompVram(sFrontierSquares_FilledBg_Tileset, tileset);
+    DecompressDataWithHeaderVram(sFrontierSquares_FilledBg_Tileset, tileset);
     FillBgTilemapBufferRect_Palette0(0, 0, 0, 0, 32, 32);
     CopyBgTilemapBufferToVram(0);
     LoadPalette(sFrontierSquares_Palette, BG_PLTT_ID(15), sizeof(sFrontierSquares_Palette));

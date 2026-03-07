@@ -1,8 +1,7 @@
 @ Interact with cuttable tree
 EventScript_CutTree::
 	lockall
-	goto_if_unset FLAG_BADGE01_GET, EventScript_CheckTreeCantCut
-	checkpartymove MOVE_CUT
+	checkfieldmove FIELD_MOVE_CUT, TRUE
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CheckTreeCantCut
 	setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -49,7 +48,7 @@ Text_WantToCut:
 	.string "要用居合劈来砍吗？$"
 
 Text_MonUsedFieldMove:
-	.string "{STR_VAR_1}使用了{STR_VAR_2}！$"
+	.string "{STR_VAR_1}使出了{STR_VAR_2}！$"
 
 Text_CantCut:
 	.string "这棵树好像可以用\n"
@@ -63,8 +62,7 @@ EventScript_UseRockSmash::
 @ Interact with smashable rock
 EventScript_RockSmash::
 	lockall
-	goto_if_unset FLAG_BADGE03_GET, EventScript_CantSmashRock
-	checkpartymove MOVE_ROCK_SMASH
+	checkfieldmove FIELD_MOVE_ROCK_SMASH, TRUE
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSmashRock
 	setfieldeffectargument 0, VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -224,9 +222,8 @@ Text_CantSmash:
 
 EventScript_StrengthBoulder::
 	lockall
-	goto_if_unset FLAG_BADGE04_GET, EventScript_CantStrength
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_CheckActivatedBoulder
-	checkpartymove MOVE_STRENGTH
+	checkfieldmove FIELD_MOVE_STRENGTH, TRUE
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantStrength
 	setfieldeffectargument 0, VAR_RESULT
 	msgbox Text_WantToStrength, MSGBOX_YESNO
@@ -271,7 +268,7 @@ Text_WantToStrength:
 	.string "要使用怪力吗？$"
 
 Text_MonUsedStrength:
-	.string "{STR_VAR_1}使用了怪力！\p"
+	.string "{STR_VAR_1}使出了怪力！\p"
 	.string "使出了怪力后，\n"
 	.string "可以推动岩石了！$"
 
@@ -285,7 +282,7 @@ Text_StrengthActivated:
 
 EventScript_UseWaterfall::
 	lockall
-	checkpartymove MOVE_WATERFALL
+	checkfieldmove FIELD_MOVE_WATERFALL
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantWaterfall
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
@@ -317,11 +314,11 @@ Text_WantToWaterfall:
 	.string "要使用攀瀑吗？$"
 
 Text_MonUsedWaterfall:
-	.string "{STR_VAR_1}使用了攀瀑。$"
+	.string "{STR_VAR_1}使出了攀瀑。$"
 
 EventScript_UseDive::
 	lockall
-	checkpartymove MOVE_DIVE
+	checkfieldmove FIELD_MOVE_DIVE
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantDive
 	copyvar 0x8004 VAR_RESULT
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
@@ -348,7 +345,7 @@ EventScript_EndDive::
 
 EventScript_UseDiveUnderwater::
 	lockall
-	checkpartymove MOVE_DIVE
+	checkfieldmove FIELD_MOVE_DIVE
 	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantSurface
 	bufferpartymonnick STR_VAR_1, VAR_RESULT
 	setfieldeffectargument 0, VAR_RESULT
@@ -411,7 +408,7 @@ Text_WantToDive:
 	.string "要使用潜水吗？$"
 
 Text_MonUsedDive:
-	.string "{STR_VAR_1}使用了潜水。$"
+	.string "{STR_VAR_1}使出了潜水。$"
 
 Text_CantSurface:
 	.string "上方有亮光洒下。\n"
@@ -444,3 +441,34 @@ EventScript_UseDefog::
 	waitstate
 	releaseall
 	end
+
+EventScript_UseRockClimb::
+	lockall
+	checkfieldmove FIELD_MOVE_ROCK_CLIMB
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantRockClimb
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	setfieldeffectargument 0, VAR_RESULT
+	msgbox Text_WantToRockClimb, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_EndRockClimb
+	msgbox Text_MonUsedRockClimb, MSGBOX_DEFAULT
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_CLIMB
+	waitstate
+	goto EventScript_EndRockClimb
+	end
+
+EventScript_CantRockClimb::
+	msgbox Text_CantRockClimb, MSGBOX_DEFAULT
+
+EventScript_EndRockClimb::
+	releaseall
+	end
+
+Text_WantToRockClimb:
+    .string "岩石表面看起来非常粗糙……\n要使用攀岩吗？$"
+
+Text_MonUsedRockClimb:
+    .string "{STR_VAR_1}使出了攀岩！$"
+
+Text_CantRockClimb:
+    .string "岩石表面看起来非常粗糙……\n或许可以用秘传招式攀爬？$"

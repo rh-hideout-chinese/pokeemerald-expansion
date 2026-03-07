@@ -28,7 +28,7 @@ Route110_TrickHousePuzzle8_EventScript_Leroy::
 	end
 
 Route110_TrickHousePuzzle8_Text_WroteSecretCodeLockOpened:
-    .string "{PLAYER}在门上写下\n密码。\p“我爱戏法大师”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
+    .string "{PLAYER}在门上写下\n密码。\p“我爱戏法大王”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
 
 Route110_TrickHousePuzzle8_Text_VincentIntro:
     .string "没有多少训练家 \n能到达这里。$"
@@ -55,5 +55,5 @@ Route110_TrickHousePuzzle8_Text_LeroyDefeat:
     .string "明白了……\n你的行事风格很特别。$"
 
 Route110_TrickHousePuzzle8_Text_LeroyPostBattle:
-    .string "见到你这样的人\n戏法大师应该会很高兴吧。$"
+    .string "见到你这样的人\n戏法大王应该会很高兴吧。$"
 

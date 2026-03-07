@@ -43,7 +43,7 @@ Route110_TrickHousePuzzle6_EventScript_Sebastian::
 	end
 
 Route110_TrickHousePuzzle6_Text_WroteSecretCodeLockOpened:
-    .string "{PLAYER}在门上写下\n密码。\p“戏法大师是我的生命”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
+    .string "{PLAYER}在门上写下\n密码。\p“戏法大王是我的生命”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
 
 Route110_TrickHousePuzzle6_Text_SophiaIntro:
     .string "我听说这儿有间奇怪的房子，\n所以我就来了。$"

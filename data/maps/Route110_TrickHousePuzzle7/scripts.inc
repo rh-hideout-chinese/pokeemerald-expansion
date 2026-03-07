@@ -315,10 +315,10 @@ Route110_TrickHousePuzzle7_EventScript_Everett::
 	end
 
 Route110_TrickHousePuzzle7_Text_WroteSecretCodeLockOpened:
-    .string "{PLAYER}在门上写下\n密码。\p“我想拥抱戏法大师”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
+    .string "{PLAYER}在门上写下\n密码。\p“我想拥抱戏法大王”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaIntro:
-    .string "戏法大师总是像一阵烟\n似的消失了，他怎么做到的？$"
+    .string "戏法大王总是像一阵烟\n似的消失了，他怎么做到的？$"
 
 Route110_TrickHousePuzzle7_Text_JoshuaDefeat:
     .string "啊呀！你真是太强了！\n你怎么做到的？$"

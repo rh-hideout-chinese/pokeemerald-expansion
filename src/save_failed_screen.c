@@ -133,7 +133,7 @@ static const u8 sClockFrames[8][3] =
 };
 
 static const u8 sSaveFailedClockPal[] = INCBIN_U8("graphics/misc/clock_small.gbapal");
-static const u32 sSaveFailedClockGfx[] = INCBIN_U32("graphics/misc/clock_small.4bpp.lz");
+static const u32 sSaveFailedClockGfx[] = INCBIN_U32("graphics/misc/clock_small.4bpp.smol");
 
 static void CB2_SaveFailedScreen(void);
 static void CB2_WipeSave(void);
@@ -205,10 +205,10 @@ static void CB2_SaveFailedScreen(void)
         DmaFill16(3, 0, VRAM, VRAM_SIZE);
         DmaFill32(3, 0, OAM, OAM_SIZE);
         DmaFill16(3, 0, PLTT, PLTT_SIZE);
-        LZ77UnCompVram(gBirchBagGrass_Gfx, (void *)VRAM);
-        LZ77UnCompVram(gBirchBagTilemap, (void *)(BG_SCREEN_ADDR(14)));
-        LZ77UnCompVram(gBirchGrassTilemap, (void *)(BG_SCREEN_ADDR(15)));
-        LZ77UnCompVram(sSaveFailedClockGfx, (void *)(OBJ_VRAM0 + 0x20));
+        DecompressDataWithHeaderVram(gBirchBagGrass_Gfx, (void *)VRAM);
+        DecompressDataWithHeaderVram(gBirchBagTilemap, (void *)(BG_SCREEN_ADDR(14)));
+        DecompressDataWithHeaderVram(gBirchGrassTilemap, (void *)(BG_SCREEN_ADDR(15)));
+        DecompressDataWithHeaderVram(sSaveFailedClockGfx, (void *)(OBJ_VRAM0 + 0x20));
         ResetBgsAndClearDma3BusyFlags(0);
         InitBgsFromTemplates(0, sBgTemplates, ARRAY_COUNT(sBgTemplates));
         SetBgTilemapBuffer(0, sSaveFailedBuffers->tilemapBuffer);
@@ -336,7 +336,7 @@ static void CB2_ReturnToTitleScreen(void)
         }
         else
         {
-            SetMainCallback2((MainCallback)gGameContinueCallback);
+            SetMainCallback2(gGameContinueCallback);
             gGameContinueCallback = NULL;
         }
     }
@@ -444,8 +444,8 @@ void CB2_FlashNotDetectedScreen(void)
     DeactivateAllTextPrinters();
     ResetTasks();
     ResetPaletteFade();
-    LoadPalette(gTextWindowFrame1_Pal, 0xE0, 0x20);
-    LoadPalette(gStandardMenuPalette, 0xF0, 0x20);
+    LoadPalette(gTextWindowFrame1_Pal, BG_PLTT_ID(14), PLTT_SIZE_4BPP);
+    LoadPalette(gStandardMenuPalette, BG_PLTT_ID(15), PLTT_SIZE_4BPP);
     InitWindows(textWin);
     DrawStdFrameWithCustomTileAndPalette(0, TRUE, 0x214, 0xE);
     static const u8 saveFailedMessage[] =_(

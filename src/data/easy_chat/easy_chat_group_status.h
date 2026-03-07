@@ -1,765 +1,655 @@
-const u8 gEasyChatWord_Dark[] = _("恶");
-const u8 gEasyChatWord_Stench[] = _("臭味");
-const u8 gEasyChatWord_ThickFat[] = _("厚脂肪");
-const u8 gEasyChatWord_RainDish[] = _("雨盘");
-const u8 gEasyChatWord_Drizzle[] = _("降雨");
-const u8 gEasyChatWord_ArenaTrap[] = _("沙穴");
-const u8 gEasyChatWord_Intimidate[] = _("威吓");
-const u8 gEasyChatWord_RockHead[] = _("坚持");
-const u8 gEasyChatWord_Color[] = _("颜色");
-const u8 gEasyChatWord_AltColor[] = _("异色");
-const u8 gEasyChatWord_Rock[] = _("岩石");
-const u8 gEasyChatWord_Beautiful[] = _("魅力");
-const u8 gEasyChatWord_Beauty[] = _("美丽");
-const u8 gEasyChatWord_AirLock[] = _("气闸");
-const u8 gEasyChatWord_Psychic[] = _("优雅");
-const u8 gEasyChatWord_HyperCutter[] = _("怪力钳");
-const u8 gEasyChatWord_Fighting[] = _("格斗");
-const u8 gEasyChatWord_ShadowTag[] = _("踩影");
-const u8 gEasyChatWord_Smart[] = _("聪明");
-const u8 gEasyChatWord_Smartness[] = _("冷静");
-const u8 gEasyChatWord_SpeedBoost[] = _("加速");
-const u8 gEasyChatWord_Cool[] = _("帅气");
-const u8 gEasyChatWord_Coolness[] = _("保持");
-const u8 gEasyChatWord_BattleArmor[] = _("装甲");
-const u8 gEasyChatWord_Cute[] = _("可爱");
-const u8 gEasyChatWord_Cuteness[] = _("队伍");
-const u8 gEasyChatWord_Sturdy[] = _("结实");
-const u8 gEasyChatWord_SuctionCups[] = _("吸盘");
-const u8 gEasyChatWord_Grass[] = _("草");
-const u8 gEasyChatWord_ClearBody[] = _("身体");
-const u8 gEasyChatWord_Torrent[] = _("激流");
-const u8 gEasyChatWord_Ghost[] = _("幽灵");
-const u8 gEasyChatWord_Ice[] = _("冰");
-const u8 gEasyChatWord_Guts[] = _("毅力");
-const u8 gEasyChatWord_RoughSkin[] = _("变强");
-const u8 gEasyChatWord_ShellArmor[] = _("坚硬");
-const u8 gEasyChatWord_NaturalCure[] = _("自然回复");
-const u8 gEasyChatWord_Damp[] = _("潮湿");
-const u8 gEasyChatWord_Ground[] = _("地面");
-const u8 gEasyChatWord_Limber[] = _("黑暗");
-const u8 gEasyChatWord_MagnetPull[] = _("磁力");
-const u8 gEasyChatWord_WhiteSmoke[] = _("迷路");
-const u8 gEasyChatWord_Synchronize[] = _("同步");
-const u8 gEasyChatWord_Overgrow[] = _("茂盛");
-const u8 gEasyChatWord_SwiftSwim[] = _("快速游泳");
-const u8 gEasyChatWord_SandStream[] = _("扬沙");
-const u8 gEasyChatWord_SandVeil[] = _("沙隐");
-const u8 gEasyChatWord_KeenEye[] = _("锐利目光");
-const u8 gEasyChatWord_InnerFocus[] = _("精神力");
-const u8 gEasyChatWord_Static[] = _("刺激");
-const u8 gEasyChatWord_Type[] = _("属性");
-const u8 gEasyChatWord_Tough[] = _("强壮");
-const u8 gEasyChatWord_Toughness[] = _("厉害");
-const u8 gEasyChatWord_ShedSkin[] = _("蜕皮");
-const u8 gEasyChatWord_HugePower[] = _("炫耀");
-const u8 gEasyChatWord_VoltAbsorb[] = _("蓄电");
-const u8 gEasyChatWord_WaterAbsorb[] = _("储水");
-const u8 gEasyChatWord_Electric[] = _("电");
-const u8 gEasyChatWord_Forecast[] = _("天气预报");
-const u8 gEasyChatWord_SereneGrace[] = _("天恩");
-const u8 gEasyChatWord_Poison[] = _("毒");
-const u8 gEasyChatWord_PoisonPoint[] = _("毒刺");
-const u8 gEasyChatWord_Dragon[] = _("龙");
-const u8 gEasyChatWord_Trace[] = _("复制");
-const u8 gEasyChatWord_Oblivious[] = _("迟钝");
-const u8 gEasyChatWord_Truant[] = _("懒惰");
-const u8 gEasyChatWord_RunAway[] = _("逃跑");
-const u8 gEasyChatWord_StickyHold[] = _("黏着");
-const u8 gEasyChatWord_CloudNine[] = _("无关天气");
-const u8 gEasyChatWord_Normal[] = _("一般");
-const u8 gEasyChatWord_Steel[] = _("钢");
-const u8 gEasyChatWord_Illuminate[] = _("发光");
-const u8 gEasyChatWord_EarlyBird[] = _("早起");
-const u8 gEasyChatWord_Hustle[] = _("活力");
-const u8 gEasyChatWord_Shine[] = _("超能");
-const u8 gEasyChatWord_Flying[] = _("飞行");
-const u8 gEasyChatWord_Drought[] = _("下落");
-const u8 gEasyChatWord_Lightningrod[] = _("避雷针");
-const u8 gEasyChatWord_Compoundeyes[] = _("复眼");
-const u8 gEasyChatWord_MarvelScale[] = _("神奇鳞片");
-const u8 gEasyChatWord_WonderGuard[] = _("神奇守护");
-const u8 gEasyChatWord_Insomnia[] = _("不眠");
-const u8 gEasyChatWord_Levitate[] = _("飘浮");
-const u8 gEasyChatWord_Plus[] = _("水平");
-const u8 gEasyChatWord_Pressure[] = _("压迫感");
-const u8 gEasyChatWord_LiquidOoze[] = _("污泥浆");
-const u8 gEasyChatWord_ColorChange[] = _("变色");
-const u8 gEasyChatWord_Soundproof[] = _("隔音");
-const u8 gEasyChatWord_EffectSpore[] = _("孢子");
-const u8 gEasyChatWord_Pkrs[] = _("宝可病毒");
-const u8 gEasyChatWord_Fire[] = _("状态");
-const u8 gEasyChatWord_FlameBody[] = _("火车");
-const u8 gEasyChatWord_Minus[] = _("正常");
-const u8 gEasyChatWord_OwnTempo[] = _("我行我素");
-const u8 gEasyChatWord_MagmaArmor[] = _("发挥");
-const u8 gEasyChatWord_Water[] = _("水");
-const u8 gEasyChatWord_WaterVeil[] = _("水幕");
-const u8 gEasyChatWord_Bug[] = _("虫");
-const u8 gEasyChatWord_Swarm[] = _("虫之预感");
-const u8 gEasyChatWord_CuteCharm[] = _("迷人之躯");
-const u8 gEasyChatWord_Immunity[] = _("免疫");
-const u8 gEasyChatWord_Blaze[] = _("猛火");
-const u8 gEasyChatWord_Pickup[] = _("捡拾");
-const u8 gEasyChatWord_Pattern[] = _("图案");
-const u8 gEasyChatWord_FlashFire[] = _("火焰");
-const u8 gEasyChatWord_VitalSpirit[] = _("干劲");
-const u8 gEasyChatWord_Chlorophyll[] = _("叶绿素");
-const u8 gEasyChatWord_PurePower[] = _("机器");
-const u8 gEasyChatWord_ShieldDust[] = _("鳞粉");
-
 const struct EasyChatWordInfo gEasyChatGroup_Status[] = {
     [EC_INDEX(EC_WORD_DARK)] =
     {
-        .text = gEasyChatWord_Dark,
+        .text = COMPOUND_STRING("恶"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_AIR_LOCK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STENCH)] =
     {
-        .text = gEasyChatWord_Stench,
+        .text = COMPOUND_STRING("臭味"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ALT_COLOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_THICK_FAT)] =
     {
-        .text = gEasyChatWord_ThickFat,
+        .text = COMPOUND_STRING("厚脂肪"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ARENA_TRAP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RAIN_DISH)] =
     {
-        .text = gEasyChatWord_RainDish,
+        .text = COMPOUND_STRING("雨盘"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BATTLE_ARMOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DRIZZLE)] =
     {
-        .text = gEasyChatWord_Drizzle,
+        .text = COMPOUND_STRING("降雨"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BEAUTIFUL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ARENA_TRAP)] =
     {
-        .text = gEasyChatWord_ArenaTrap,
+        .text = COMPOUND_STRING("沙穴"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BEAUTY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INTIMIDATE)] =
     {
-        .text = gEasyChatWord_Intimidate,
+        .text = COMPOUND_STRING("威吓"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BLAZE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ROCK_HEAD)] =
     {
-        .text = gEasyChatWord_RockHead,
+        .text = COMPOUND_STRING("坚持"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_BUG),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COLOR)] =
     {
-        .text = gEasyChatWord_Color,
+        .text = COMPOUND_STRING("颜色"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CHLOROPHYLL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ALT_COLOR)] =
     {
-        .text = gEasyChatWord_AltColor,
+        .text = COMPOUND_STRING("异色"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CLEAR_BODY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ROCK)] =
     {
-        .text = gEasyChatWord_Rock,
+        .text = COMPOUND_STRING("岩石"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CLOUD_NINE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BEAUTIFUL)] =
     {
-        .text = gEasyChatWord_Beautiful,
+        .text = COMPOUND_STRING("魅力"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COLOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BEAUTY)] =
     {
-        .text = gEasyChatWord_Beauty,
+        .text = COMPOUND_STRING("美丽"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COLOR_CHANGE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_AIR_LOCK)] =
     {
-        .text = gEasyChatWord_AirLock,
+        .text = COMPOUND_STRING("气闸"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COMPOUNDEYES),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PSYCHIC)] =
     {
-        .text = gEasyChatWord_Psychic,
+        .text = COMPOUND_STRING("优雅"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COOL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HYPER_CUTTER)] =
     {
-        .text = gEasyChatWord_HyperCutter,
+        .text = COMPOUND_STRING("怪力钳"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_COOLNESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIGHTING)] =
     {
-        .text = gEasyChatWord_Fighting,
+        .text = COMPOUND_STRING("格斗"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CUTE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHADOW_TAG)] =
     {
-        .text = gEasyChatWord_ShadowTag,
+        .text = COMPOUND_STRING("踩影"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CUTE_CHARM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMART)] =
     {
-        .text = gEasyChatWord_Smart,
+        .text = COMPOUND_STRING("聪明"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_CUTENESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SMARTNESS)] =
     {
-        .text = gEasyChatWord_Smartness,
+        .text = COMPOUND_STRING("冷静"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DAMP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SPEED_BOOST)] =
     {
-        .text = gEasyChatWord_SpeedBoost,
+        .text = COMPOUND_STRING("加速"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DARK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COOL)] =
     {
-        .text = gEasyChatWord_Cool,
+        .text = COMPOUND_STRING("帅气"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DRAGON),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COOLNESS)] =
     {
-        .text = gEasyChatWord_Coolness,
+        .text = COMPOUND_STRING("保持"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DRIZZLE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BATTLE_ARMOR)] =
     {
-        .text = gEasyChatWord_BattleArmor,
+        .text = COMPOUND_STRING("装甲"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_DROUGHT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CUTE)] =
     {
-        .text = gEasyChatWord_Cute,
+        .text = COMPOUND_STRING("可爱"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EARLY_BIRD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CUTENESS)] =
     {
-        .text = gEasyChatWord_Cuteness,
+        .text = COMPOUND_STRING("队伍"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_EFFECT_SPORE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STURDY)] =
     {
-        .text = gEasyChatWord_Sturdy,
+        .text = COMPOUND_STRING("结实"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ELECTRIC),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SUCTION_CUPS)] =
     {
-        .text = gEasyChatWord_SuctionCups,
+        .text = COMPOUND_STRING("吸盘"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FIGHTING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GRASS)] =
     {
-        .text = gEasyChatWord_Grass,
+        .text = COMPOUND_STRING("草"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FIRE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CLEAR_BODY)] =
     {
-        .text = gEasyChatWord_ClearBody,
+        .text = COMPOUND_STRING("身体"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FLAME_BODY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TORRENT)] =
     {
-        .text = gEasyChatWord_Torrent,
+        .text = COMPOUND_STRING("激流"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FLASH_FIRE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GHOST)] =
     {
-        .text = gEasyChatWord_Ghost,
+        .text = COMPOUND_STRING("幽灵"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FLYING),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ICE)] =
     {
-        .text = gEasyChatWord_Ice,
+        .text = COMPOUND_STRING("冰"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_FORECAST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GUTS)] =
     {
-        .text = gEasyChatWord_Guts,
+        .text = COMPOUND_STRING("毅力"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GHOST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ROUGH_SKIN)] =
     {
-        .text = gEasyChatWord_RoughSkin,
+        .text = COMPOUND_STRING("变强"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GRASS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHELL_ARMOR)] =
     {
-        .text = gEasyChatWord_ShellArmor,
+        .text = COMPOUND_STRING("坚硬"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GROUND),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NATURAL_CURE)] =
     {
-        .text = gEasyChatWord_NaturalCure,
+        .text = COMPOUND_STRING("自然回复"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_GUTS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DAMP)] =
     {
-        .text = gEasyChatWord_Damp,
+        .text = COMPOUND_STRING("潮湿"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HUGE_POWER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_GROUND)] =
     {
-        .text = gEasyChatWord_Ground,
+        .text = COMPOUND_STRING("地面"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HUSTLE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LIMBER)] =
     {
-        .text = gEasyChatWord_Limber,
+        .text = COMPOUND_STRING("黑暗"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_HYPER_CUTTER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MAGNET_PULL)] =
     {
-        .text = gEasyChatWord_MagnetPull,
+        .text = COMPOUND_STRING("磁力"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ICE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WHITE_SMOKE)] =
     {
-        .text = gEasyChatWord_WhiteSmoke,
+        .text = COMPOUND_STRING("迷路"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ILLUMINATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SYNCHRONIZE)] =
     {
-        .text = gEasyChatWord_Synchronize,
+        .text = COMPOUND_STRING("同步"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_IMMUNITY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OVERGROW)] =
     {
-        .text = gEasyChatWord_Overgrow,
+        .text = COMPOUND_STRING("茂盛"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_INNER_FOCUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SWIFT_SWIM)] =
     {
-        .text = gEasyChatWord_SwiftSwim,
+        .text = COMPOUND_STRING("快速游泳"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_INSOMNIA),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SAND_STREAM)] =
     {
-        .text = gEasyChatWord_SandStream,
+        .text = COMPOUND_STRING("扬沙"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_INTIMIDATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SAND_VEIL)] =
     {
-        .text = gEasyChatWord_SandVeil,
+        .text = COMPOUND_STRING("沙隐"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_KEEN_EYE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_KEEN_EYE)] =
     {
-        .text = gEasyChatWord_KeenEye,
+        .text = COMPOUND_STRING("锐利目光"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LEVITATE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INNER_FOCUS)] =
     {
-        .text = gEasyChatWord_InnerFocus,
+        .text = COMPOUND_STRING("精神力"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LIGHTNINGROD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STATIC)] =
     {
-        .text = gEasyChatWord_Static,
+        .text = COMPOUND_STRING("刺激"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LIMBER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TYPE)] =
     {
-        .text = gEasyChatWord_Type,
+        .text = COMPOUND_STRING("属性"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_LIQUID_OOZE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TOUGH)] =
     {
-        .text = gEasyChatWord_Tough,
+        .text = COMPOUND_STRING("强壮"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MAGMA_ARMOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TOUGHNESS)] =
     {
-        .text = gEasyChatWord_Toughness,
+        .text = COMPOUND_STRING("厉害"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MAGNET_PULL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHED_SKIN)] =
     {
-        .text = gEasyChatWord_ShedSkin,
+        .text = COMPOUND_STRING("蜕皮"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MARVEL_SCALE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HUGE_POWER)] =
     {
-        .text = gEasyChatWord_HugePower,
+        .text = COMPOUND_STRING("炫耀"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_MINUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VOLT_ABSORB)] =
     {
-        .text = gEasyChatWord_VoltAbsorb,
+        .text = COMPOUND_STRING("蓄电"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NATURAL_CURE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WATER_ABSORB)] =
     {
-        .text = gEasyChatWord_WaterAbsorb,
+        .text = COMPOUND_STRING("储水"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_NORMAL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ELECTRIC)] =
     {
-        .text = gEasyChatWord_Electric,
+        .text = COMPOUND_STRING("电"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OBLIVIOUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FORECAST)] =
     {
-        .text = gEasyChatWord_Forecast,
+        .text = COMPOUND_STRING("天气预报"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OVERGROW),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SERENE_GRACE)] =
     {
-        .text = gEasyChatWord_SereneGrace,
+        .text = COMPOUND_STRING("天恩"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_OWN_TEMPO),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POISON)] =
     {
-        .text = gEasyChatWord_Poison,
+        .text = COMPOUND_STRING("毒"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PATTERN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_POISON_POINT)] =
     {
-        .text = gEasyChatWord_PoisonPoint,
+        .text = COMPOUND_STRING("毒刺"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PICKUP),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DRAGON)] =
     {
-        .text = gEasyChatWord_Dragon,
+        .text = COMPOUND_STRING("龙"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PKRS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TRACE)] =
     {
-        .text = gEasyChatWord_Trace,
+        .text = COMPOUND_STRING("复制"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PLUS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OBLIVIOUS)] =
     {
-        .text = gEasyChatWord_Oblivious,
+        .text = COMPOUND_STRING("迟钝"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_POISON),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_TRUANT)] =
     {
-        .text = gEasyChatWord_Truant,
+        .text = COMPOUND_STRING("懒惰"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_POISON_POINT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_RUN_AWAY)] =
     {
-        .text = gEasyChatWord_RunAway,
+        .text = COMPOUND_STRING("逃跑"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PRESSURE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STICKY_HOLD)] =
     {
-        .text = gEasyChatWord_StickyHold,
+        .text = COMPOUND_STRING("黏着"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PSYCHIC),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CLOUD_NINE)] =
     {
-        .text = gEasyChatWord_CloudNine,
+        .text = COMPOUND_STRING("无关天气"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_PURE_POWER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_NORMAL)] =
     {
-        .text = gEasyChatWord_Normal,
+        .text = COMPOUND_STRING("一般"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RAIN_DISH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_STEEL)] =
     {
-        .text = gEasyChatWord_Steel,
+        .text = COMPOUND_STRING("钢"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ROCK),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_ILLUMINATE)] =
     {
-        .text = gEasyChatWord_Illuminate,
+        .text = COMPOUND_STRING("发光"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ROCK_HEAD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EARLY_BIRD)] =
     {
-        .text = gEasyChatWord_EarlyBird,
+        .text = COMPOUND_STRING("早起"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_ROUGH_SKIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_HUSTLE)] =
     {
-        .text = gEasyChatWord_Hustle,
+        .text = COMPOUND_STRING("活力"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_RUN_AWAY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHINE)] =
     {
-        .text = gEasyChatWord_Shine,
+        .text = COMPOUND_STRING("超能"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SAND_STREAM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FLYING)] =
     {
-        .text = gEasyChatWord_Flying,
+        .text = COMPOUND_STRING("飞行"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SAND_VEIL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_DROUGHT)] =
     {
-        .text = gEasyChatWord_Drought,
+        .text = COMPOUND_STRING("下落"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SERENE_GRACE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LIGHTNINGROD)] =
     {
-        .text = gEasyChatWord_Lightningrod,
+        .text = COMPOUND_STRING("避雷针"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHADOW_TAG),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COMPOUNDEYES)] =
     {
-        .text = gEasyChatWord_Compoundeyes,
+        .text = COMPOUND_STRING("复眼"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHED_SKIN),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MARVEL_SCALE)] =
     {
-        .text = gEasyChatWord_MarvelScale,
+        .text = COMPOUND_STRING("神奇鳞片"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHELL_ARMOR),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WONDER_GUARD)] =
     {
-        .text = gEasyChatWord_WonderGuard,
+        .text = COMPOUND_STRING("神奇守护"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHIELD_DUST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_INSOMNIA)] =
     {
-        .text = gEasyChatWord_Insomnia,
+        .text = COMPOUND_STRING("不眠"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SHINE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LEVITATE)] =
     {
-        .text = gEasyChatWord_Levitate,
+        .text = COMPOUND_STRING("飘浮"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SMART),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PLUS)] =
     {
-        .text = gEasyChatWord_Plus,
+        .text = COMPOUND_STRING("水平"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SMARTNESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PRESSURE)] =
     {
-        .text = gEasyChatWord_Pressure,
+        .text = COMPOUND_STRING("压迫感"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SOUNDPROOF),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_LIQUID_OOZE)] =
     {
-        .text = gEasyChatWord_LiquidOoze,
+        .text = COMPOUND_STRING("污泥浆"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SPEED_BOOST),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_COLOR_CHANGE)] =
     {
-        .text = gEasyChatWord_ColorChange,
+        .text = COMPOUND_STRING("变色"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STATIC),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SOUNDPROOF)] =
     {
-        .text = gEasyChatWord_Soundproof,
+        .text = COMPOUND_STRING("隔音"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STEEL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_EFFECT_SPORE)] =
     {
-        .text = gEasyChatWord_EffectSpore,
+        .text = COMPOUND_STRING("孢子"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STENCH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PKRS)] =
     {
-        .text = gEasyChatWord_Pkrs,
+        .text = COMPOUND_STRING("宝可病毒"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STICKY_HOLD),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FIRE)] =
     {
-        .text = gEasyChatWord_Fire,
+        .text = COMPOUND_STRING("状态"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_STURDY),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FLAME_BODY)] =
     {
-        .text = gEasyChatWord_FlameBody,
+        .text = COMPOUND_STRING("火车"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SUCTION_CUPS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MINUS)] =
     {
-        .text = gEasyChatWord_Minus,
+        .text = COMPOUND_STRING("正常"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SWARM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_OWN_TEMPO)] =
     {
-        .text = gEasyChatWord_OwnTempo,
+        .text = COMPOUND_STRING("我行我素"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SWIFT_SWIM),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_MAGMA_ARMOR)] =
     {
-        .text = gEasyChatWord_MagmaArmor,
+        .text = COMPOUND_STRING("发挥"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_SYNCHRONIZE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WATER)] =
     {
-        .text = gEasyChatWord_Water,
+        .text = COMPOUND_STRING("水"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_THICK_FAT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_WATER_VEIL)] =
     {
-        .text = gEasyChatWord_WaterVeil,
+        .text = COMPOUND_STRING("水幕"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TORRENT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BUG)] =
     {
-        .text = gEasyChatWord_Bug,
+        .text = COMPOUND_STRING("虫"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TOUGH),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SWARM)] =
     {
-        .text = gEasyChatWord_Swarm,
+        .text = COMPOUND_STRING("虫之预感"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TOUGHNESS),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CUTE_CHARM)] =
     {
-        .text = gEasyChatWord_CuteCharm,
+        .text = COMPOUND_STRING("迷人之躯"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TRACE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_IMMUNITY)] =
     {
-        .text = gEasyChatWord_Immunity,
+        .text = COMPOUND_STRING("免疫"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TRUANT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_BLAZE)] =
     {
-        .text = gEasyChatWord_Blaze,
+        .text = COMPOUND_STRING("猛火"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_TYPE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PICKUP)] =
     {
-        .text = gEasyChatWord_Pickup,
+        .text = COMPOUND_STRING("捡拾"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_VITAL_SPIRIT),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PATTERN)] =
     {
-        .text = gEasyChatWord_Pattern,
+        .text = COMPOUND_STRING("图案"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_VOLT_ABSORB),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_FLASH_FIRE)] =
     {
-        .text = gEasyChatWord_FlashFire,
+        .text = COMPOUND_STRING("火焰"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WATER),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_VITAL_SPIRIT)] =
     {
-        .text = gEasyChatWord_VitalSpirit,
+        .text = COMPOUND_STRING("干劲"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WATER_ABSORB),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_CHLOROPHYLL)] =
     {
-        .text = gEasyChatWord_Chlorophyll,
+        .text = COMPOUND_STRING("叶绿素"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WATER_VEIL),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_PURE_POWER)] =
     {
-        .text = gEasyChatWord_PurePower,
+        .text = COMPOUND_STRING("机器"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WHITE_SMOKE),
         .enabled = TRUE,
     },
     [EC_INDEX(EC_WORD_SHIELD_DUST)] =
     {
-        .text = gEasyChatWord_ShieldDust,
+        .text = COMPOUND_STRING("鳞粉"),
         .alphabeticalOrder = EC_INDEX(EC_WORD_WONDER_GUARD),
         .enabled = TRUE,
     },

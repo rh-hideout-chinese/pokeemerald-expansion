@@ -73,7 +73,7 @@ struct GFRomHeader
     const struct SpeciesInfo *speciesInfo;
     const u8 (*abilityNames)[];
     const u8 *const *abilityDescriptions;
-    const struct Item *items;
+    const struct ItemInfo *items;
     const struct MoveInfo *moves;
     const struct CompressedSpriteSheet *ballGfx;
     const struct SpritePalette *ballPalettes;
@@ -97,9 +97,8 @@ struct GFRomHeader
 };
 
 // This seems to need to be in the text section for some reason.
-// To avoid a changed section attributes warning it's put in a special .text.consts section.
-__attribute__((section(".text.consts")))
-USED static const struct GFRomHeader sGFRomHeader = {
+// To avoid a changed section attributes warning it's put in a special .text.header_gf section.
+__attribute__((section(".text.header_gf"))) USED static const struct GFRomHeader sGFRomHeader = {
     .version = GAME_VERSION,
     .language = GAME_LANGUAGE,
     .gameName = "pokemon emerald version",
@@ -158,8 +157,8 @@ USED static const struct GFRomHeader sGFRomHeader = {
     //.abilityDescriptions = gAbilityDescriptionPointers, //handled in gAbilitiesInfo
     .items = gItemsInfo,
     .moves = gMovesInfo,
-    .ballGfx = gBallSpriteSheets,
-    .ballPalettes = gBallSpritePalettes,
+    //.ballGfx = gBallSpriteSheets, //handled in gPokeBalls
+    //.ballPalettes = gBallSpritePalettes, //handled in gPokeBalls
     .gcnLinkFlagsOffset = offsetof(struct SaveBlock2, gcnLinkFlags),
     .gameClearFlag = FLAG_SYS_GAME_CLEAR,
     .ribbonFlag = FLAG_SYS_RIBBON_GET,

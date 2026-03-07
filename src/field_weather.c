@@ -730,6 +730,11 @@ void ApplyWeatherColorMapIfIdle_Gradual(u8 colorMapIndex, u8 targetColorMapIndex
 
 void FadeScreen(u8 mode, s8 delay)
 {
+    FadeSelectedPals(mode, delay, PALETTES_ALL);
+}
+
+void FadeSelectedPals(u8 mode, s8 delay, u32 selectedPalettes)
+{
     u32 fadeColor;
     bool8 fadeOut;
     bool8 useWeatherPal;
@@ -778,7 +783,7 @@ void FadeScreen(u8 mode, s8 delay)
         // For cases like that, use fadescreenswapbuffers
         CpuFastCopy(gPlttBufferFaded, gPlttBufferUnfaded, PLTT_BUFFER_SIZE * 2);
 
-        BeginNormalPaletteFade(PALETTES_ALL, delay, 0, 16, fadeColor);
+        BeginNormalPaletteFade(selectedPalettes, delay, 0, 16, fadeColor);
         gWeatherPtr->palProcessingState = WEATHER_PAL_STATE_SCREEN_FADING_OUT;
     }
     else
@@ -791,12 +796,12 @@ void FadeScreen(u8 mode, s8 delay)
         }
         else if (MapHasNaturalLight(gMapHeader.mapType))
         {
-            UpdateAltBgPalettes(PALETTES_BG);
-            BeginTimeOfDayPaletteFade(PALETTES_ALL, delay, 16, 0, &gTimeBlend.startBlend, &gTimeBlend.endBlend, gTimeBlend.weight, fadeColor);
+            UpdateAltBgPalettes(selectedPalettes & PALETTES_BG);
+            BeginTimeOfDayPaletteFade(selectedPalettes, delay, 16, 0, &gTimeBlend.startBlend, &gTimeBlend.endBlend, gTimeBlend.weight, fadeColor);
         }
         else
         {
-            BeginNormalPaletteFade(PALETTES_ALL, delay, 16, 0, fadeColor);
+            BeginNormalPaletteFade(selectedPalettes, delay, 16, 0, fadeColor);
         }
 
         gWeatherPtr->palProcessingState = WEATHER_PAL_STATE_SCREEN_FADING_IN;
@@ -1185,4 +1190,34 @@ bool32 IsWeatherAlphaBlend(void)
          || gWeatherPtr->currWeather == WEATHER_FOG_DIAGONAL
          || gWeatherPtr->currWeather == WEATHER_UNDERWATER_BUBBLES
          || gWeatherPtr->currWeather == WEATHER_UNDERWATER);
+}
+
+static const u8 sWeatherNames[WEATHER_COUNT][24] = {
+    [WEATHER_NONE]               = _("无"),
+    [WEATHER_SUNNY_CLOUDS]       = _("晴天、云朵倒影"),
+    [WEATHER_SUNNY]              = _("晴天"),
+    [WEATHER_RAIN]               = _("下雨"),
+    [WEATHER_SNOW]               = _("下雪"),
+    [WEATHER_RAIN_THUNDERSTORM]  = _("雷雨"),
+    [WEATHER_FOG_HORIZONTAL]     = _("横向雾"),
+    [WEATHER_VOLCANIC_ASH]       = _("火山灰"),
+    [WEATHER_SANDSTORM]          = _("沙暴"),
+    [WEATHER_FOG_DIAGONAL]       = _("斜向雾"),
+    [WEATHER_UNDERWATER]         = _("水下"),
+    [WEATHER_SHADE]              = _("阴天"),
+    [WEATHER_DROUGHT]            = _("干旱"),
+    [WEATHER_DOWNPOUR]           = _("暴雨"),
+    [WEATHER_UNDERWATER_BUBBLES] = _("水下泡泡"),
+    [WEATHER_ABNORMAL]           = _("异常天气(无效)"),
+    [WEATHER_ROUTE119_CYCLE]     = _("119号道路天气循环"),
+    [WEATHER_ROUTE123_CYCLE]     = _("123号道路天气循环"),
+    [WEATHER_FOG]                = _("浓雾"),
+};
+
+static const u8 sDebugText_WeatherNotDefined[] = _("未定义！！！");
+const u8 *GetWeatherName(u32 weatherId)
+{
+    if (sWeatherNames[weatherId][0] != 0)
+        return sWeatherNames[weatherId];
+    return sDebugText_WeatherNotDefined;
 }

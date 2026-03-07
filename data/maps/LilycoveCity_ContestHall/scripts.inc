@@ -323,7 +323,7 @@ LilycoveCity_ContestHall_Text_IsntThisPlaceHumongous:
     .string "哇，这儿好大！\p空气中充满了紧张感……\n一点也不像是华丽大赛会场。$"
 
 LilycoveCity_ContestHall_Text_GiveItBestSmartAppeal:
-    .string "主持：好了，聪明宝可梦和\n训练家们，准备好了吗？！\p努力吧！\n开始！$"
+    .string "主持人：好了，聪明宝可梦和\n训练家们，准备好了吗？！\p努力吧！\n开始！$"
 
 LilycoveCity_ContestHall_Text_AreYouEnjoyingThisContest:
     .string "评委：你喜欢这华丽大赛吗？\p和3个朋友一起来，\n大家可以一起参加大赛！$"
@@ -353,7 +353,7 @@ LilycoveCity_ContestHall_Text_StillLoveSmartnessContests:
     .string "无论人们说什么，\n我都喜欢聪明大赛。\p那智慧的绿色……\n它非常……非常……美妙。$"
 
 LilycoveCity_ContestHall_Text_AreYouEnteringBeautyContest:
-    .string "主持：你也要参加\n漂亮部门吗？加油！$"
+    .string "主持人：你也要参加\n漂亮部门吗？加油！$"
 
 LilycoveCity_ContestHall_Text_EveryPokemonPristineBeauty:
     .string "评委：啊，这儿的每只宝可梦\n都拥有着纯洁的美！\p哎，我都忘了要为它们计分了！$"
@@ -380,7 +380,7 @@ LilycoveCity_ContestHall_Text_CantWinOnBeautyAlone:
     .string "只有美丽不可能\n长久获胜下去，\p还得经常为宝可梦梳洗，\n让它像我一样光彩照人。$"
 
 LilycoveCity_ContestHall_Text_InTheMiddleOfContest:
-    .string "主持：呃，啊，你好！\n现在华丽大赛正在进行之中！\p请先去接待处登记\n再来参加比赛。$"
+    .string "主持人：呃，啊，你好！\n现在华丽大赛正在进行之中！\p请先去接待处登记\n再来参加比赛。$"
 
 LilycoveCity_ContestHall_Text_SuchCharmingCuteAppeals:
     .string "评委：啊，如此迷人，\n如此可爱！\p哎，天啊！那水之游\n多么完美，多么可爱！$"

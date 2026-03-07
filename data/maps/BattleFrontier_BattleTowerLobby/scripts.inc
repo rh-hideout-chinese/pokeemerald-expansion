@@ -543,16 +543,22 @@ BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50::
 	case FRONTIER_MODE_SINGLES, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50Singles
 	case FRONTIER_MODE_DOUBLES, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50Doubles
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Multis, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 	end
 
 BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50Singles::
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 	end
 
 BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLv50Doubles::
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 	end
 
@@ -561,16 +567,22 @@ BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpen::
 	case FRONTIER_MODE_SINGLES, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenSingles
 	case FRONTIER_MODE_DOUBLES, BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenDoubles
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenMultis, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 	end
 
 BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenSingles::
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenSingles, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 	end
 
 BattleFrontier_BattleTowerLobby_EventScript_NotEnoughValidMonsLvOpenDoubles::
 	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenDoubles, MSGBOX_DEFAULT
+	call BattleFrontier_ShowCaughtBannedSpecies
+	msgbox BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd, MSGBOX_DEFAULT
 	goto BattleFrontier_BattleTowerLobby_EventScript_EndCancelChallenge
 	end
 
@@ -1019,29 +1031,32 @@ BattleFrontier_BattleTowerLobby_Text_RecordLastMatch:
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50:
-    .string "这位客人！\p您符合条件的宝可梦不足{STR_VAR_2}只。\p需要有{STR_VAR_2}只不同的等级50以内的\n宝可梦才可以参加比赛，\p同时这些宝可梦携带的道具\n也需要各不相同。\p蛋{STR_VAR_1}不能参加。\p准备好之后再来吧。$"
+    .string "这位客人！\p您符合条件的宝可梦不足{STR_VAR_2}只。\p需要有{STR_VAR_2}只不同的等级50以内的\n宝可梦才可以参加比赛，\p同时这些宝可梦携带的道具\n也需要各不相同。\p蛋{STR_VAR_1}。$"
+
+BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsEnd:
+	.string "准备好之后再来吧。$"
 
 @ Unused
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpen:
-    .string "这位客人！\p您符合条件的宝可梦不足{STR_VAR_2}只。\p需要有{STR_VAR_2}只不同的宝可梦\n才可以参加比赛，\p同时这些宝可梦携带的道具\n也需要各不相同。\p蛋{STR_VAR_1}不能参加。\p准备好之后再来吧。$"
+    .string "这位客人！\p您符合条件的宝可梦不足{STR_VAR_2}只。\p需要有{STR_VAR_2}只不同的宝可梦\n才可以参加比赛，\p同时这些宝可梦携带的道具\n也需要各不相同。\p蛋{STR_VAR_1}。$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Singles:
-    .string "这位客人！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧。$"
+    .string "这位客人！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}。$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenSingles:
-    .string "这位客人！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧。$"
+    .string "这位客人！\p您能够参加对战的\n宝可梦不满3只。\p您需要准备3只\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}。$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Doubles:
-    .string "这位客人！\p您能够参加对战的\n宝可梦不满4只。\p您需要准备4只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧。$"
+    .string "这位客人！\p您能够参加对战的\n宝可梦不满4只。\p您需要准备4只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}。$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenDoubles:
-    .string "这位客人！\p您能够参加对战的\n宝可梦不满4只。\p您需要准备4只\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧。$"
+    .string "这位客人！\p您能够参加对战的\n宝可梦不满4只。\p您需要准备4只\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}。$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLv50Multis:
-    .string "这位客人！\p您能够参加对战的\n宝可梦不满2只。\p您需要准备2只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧。$"
+    .string "这位客人！\p您能够参加对战的\n宝可梦不满2只。\p您需要准备2只等级50以内的\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}。$"
 
 BattleFrontier_BattleTowerLobby_Text_NotEnoughValidMonsLvOpenMultis:
-    .string "这位客人！\p您能够参加对战的\n宝可梦不满2只。\p您需要准备2只\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}无法参加对战！\p请在准备就绪之后，\n再来参加吧。$"
+    .string "这位客人！\p您能够参加对战的\n宝可梦不满2只。\p您需要准备2只\n不同种类的宝可梦，\p且让它们分别携带不同道具\n才可参加对战。\p此外，蛋{STR_VAR_1}。$"
 
 BattleFrontier_BattleTowerLobby_Text_WelcomSingleBattle:
     .string "训练家的才能\n将在此接受考验！\p欢迎来到对战塔！\p我是您的单打对战间向导。$"

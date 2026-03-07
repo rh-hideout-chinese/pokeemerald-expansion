@@ -302,7 +302,7 @@ Route110_TrickHousePuzzle3_EventScript_Alan::
 	end
 
 Route110_TrickHousePuzzle3_Text_WroteSecretCodeLockOpened:
-    .string "{PLAYER}在门上写下\n密码。\p“戏法大师令人仰慕”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
+    .string "{PLAYER}在门上写下\n密码。\p“戏法大王令人仰慕”\n…… …… …… ……\p锁“咔嗒”一声开了！$"
 
 Route110_TrickHousePuzzle3_Text_JustinIntro:
     .string "我总是会绕回相同的地方！$"

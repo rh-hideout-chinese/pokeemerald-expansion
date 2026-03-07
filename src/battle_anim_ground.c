@@ -7,7 +7,6 @@
 #include "constants/rgb.h"
 
 static void AnimBonemerangProjectile(struct Sprite *);
-static void AnimBoneHitProjectile(struct Sprite *);
 static void AnimDirtPlumeParticle_Step(struct Sprite *);
 static void AnimDigDirtMound(struct Sprite *);
 static void AnimBonemerangProjectile_Step(struct Sprite *);
@@ -50,8 +49,6 @@ const struct SpriteTemplate gBonemerangSpriteTemplate =
     .tileTag = ANIM_TAG_BONE,
     .paletteTag = ANIM_TAG_BONE,
     .oam = &gOamData_AffineNormal_ObjNormal_32x32,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
     .affineAnims = sAffineAnims_Bonemerang,
     .callback = AnimBonemerangProjectile,
 };
@@ -61,8 +58,6 @@ const struct SpriteTemplate gSpinningBoneSpriteTemplate =
     .tileTag = ANIM_TAG_BONE,
     .paletteTag = ANIM_TAG_BONE,
     .oam = &gOamData_AffineNormal_ObjNormal_32x32,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
     .affineAnims = gAffineAnims_SpinningBone,
     .callback = AnimBoneHitProjectile,
 };
@@ -72,9 +67,6 @@ const struct SpriteTemplate gSandAttackDirtSpriteTemplate =
     .tileTag = ANIM_TAG_MUD_SAND,
     .paletteTag = ANIM_TAG_MUD_SAND,
     .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimDirtScatter,
 };
 
@@ -84,7 +76,7 @@ static const union AnimCmd sAnim_MudSlapMud[] =
     ANIMCMD_END,
 };
 
-static const union AnimCmd *const sAnims_MudSlapMud[] =
+const union AnimCmd *const sAnims_MudSlapMud[] =
 {
     sAnim_MudSlapMud,
 };
@@ -95,8 +87,6 @@ const struct SpriteTemplate gMudSlapMudSpriteTemplate =
     .paletteTag = ANIM_TAG_MUD_SAND,
     .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = sAnims_MudSlapMud,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimDirtScatter,
 };
 
@@ -105,9 +95,6 @@ const struct SpriteTemplate gMudsportMudSpriteTemplate =
     .tileTag = ANIM_TAG_MUD_SAND,
     .paletteTag = ANIM_TAG_MUD_SAND,
     .oam = &gOamData_AffineOff_ObjNormal_16x16,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimMudSportDirt,
 };
 
@@ -116,9 +103,6 @@ const struct SpriteTemplate gDirtPlumeSpriteTemplate =
     .tileTag = ANIM_TAG_MUD_SAND,
     .paletteTag = ANIM_TAG_MUD_SAND,
     .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimDirtPlumeParticle,
 };
 
@@ -127,9 +111,6 @@ const struct SpriteTemplate gDirtMoundSpriteTemplate =
     .tileTag = ANIM_TAG_DIRT_MOUND,
     .paletteTag = ANIM_TAG_DIRT_MOUND,
     .oam = &gOamData_AffineOff_ObjNormal_32x16,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimDigDirtMound,
 };
 
@@ -138,9 +119,6 @@ const struct SpriteTemplate gMudBombSplash =
     .tileTag = ANIM_TAG_MUD_SAND,
     .paletteTag = ANIM_TAG_MUD_SAND,
     .oam = &gOamData_AffineOff_ObjNormal_8x8,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimSludgeBombHitParticle,
 };
 
@@ -150,8 +128,6 @@ const struct SpriteTemplate gMudBombToss =
     .paletteTag = ANIM_TAG_MUD_SAND,
     .oam = &gOamData_AffineOff_ObjNormal_16x16,
     .anims = sAnims_MudSlapMud,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
     .callback = AnimThrowProjectile,
 };
 
@@ -199,7 +175,7 @@ static void AnimBonemerangProjectile_End(struct Sprite *sprite)
 // arg 2: target x pixel offset
 // arg 3: target y pixel offset
 // arg 4: duration
-static void AnimBoneHitProjectile(struct Sprite *sprite)
+void AnimBoneHitProjectile(struct Sprite *sprite)
 {
     InitSpritePosToAnimTarget(sprite, TRUE);
     if (!IsOnPlayerSide(gBattleAnimAttacker))
@@ -521,7 +497,7 @@ static void SetDigScanlineEffect(u8 useBG1, s16 y, s16 endY)
 // arg 5: duration
 void AnimDirtPlumeParticle(struct Sprite *sprite)
 {
-    s8 battler;
+    enum BattlerId battler;
     s16 xOffset;
 
     if (gBattleAnimArgs[0] == ANIM_ATTACKER)
@@ -560,7 +536,7 @@ static void AnimDirtPlumeParticle_Step(struct Sprite *sprite)
 // arg 2: duration
 static void AnimDigDirtMound(struct Sprite *sprite)
 {
-    s8 battler;
+    enum BattlerId battler;
 
     if (gBattleAnimArgs[0] == 0)
         battler = gBattleAnimAttacker;
@@ -593,6 +569,7 @@ void AnimTask_HorizontalShake(u8 taskId)
 {
     u16 i;
     struct Task *task = &gTasks[taskId];
+    enum AnimBattler animBattler = gBattleAnimArgs[0];
 
     if (gBattleAnimArgs[1] != 0)
         task->tHorizOffset = task->tInitHorizOffset = gBattleAnimArgs[1] + 3;
@@ -600,13 +577,13 @@ void AnimTask_HorizontalShake(u8 taskId)
         task->tHorizOffset = task->tInitHorizOffset = (gAnimMovePower / 10) + 3;
 
     task->tMaxTime = gBattleAnimArgs[2];
-    switch (gBattleAnimArgs[0])
+    switch (animBattler)
     {
-    case MAX_BATTLERS_COUNT + 1: // Shake platforms
+    case ANIM_OPPONENT_LEFT: // Shake platforms
         task->tInitialX = gBattle_BG3_X;
         task->func = AnimTask_ShakePlatforms;
         break;
-    case MAX_BATTLERS_COUNT: // Shake all battlers
+    case ANIM_PLAYER_LEFT: // Shake all battlers
         task->tNumBattlers = 0;
         for (i = 0; i < MAX_BATTLERS_COUNT; i++)
         {
@@ -619,7 +596,7 @@ void AnimTask_HorizontalShake(u8 taskId)
         task->func = AnimTask_ShakeBattlers;
         break;
     default: // Shake specific battler
-        task->tbattlerSpriteIds(0) = GetAnimBattlerSpriteId(gBattleAnimArgs[0]);
+        task->tbattlerSpriteIds(0) = GetAnimBattlerSpriteId(animBattler);
         if (task->tbattlerSpriteIds(0) == SPRITE_NONE)
         {
             DestroyAnimVisualTask(taskId);
@@ -757,7 +734,7 @@ void AnimTask_IsPowerOver99(u8 taskId)
 void AnimTask_PositionFissureBgOnBattler(u8 taskId)
 {
     struct Task *newTask;
-    u8 battler = (gBattleAnimArgs[0] & ANIM_TARGET) ? gBattleAnimTarget : gBattleAnimAttacker;
+    enum BattlerId battler = (gBattleAnimArgs[0] & ANIM_TARGET) ? gBattleAnimTarget : gBattleAnimAttacker;
 
     if (gBattleAnimArgs[0] > ANIM_TARGET)
         battler = BATTLE_PARTNER(battler);

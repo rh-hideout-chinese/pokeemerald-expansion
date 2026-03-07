@@ -170,7 +170,7 @@ SlateportCity_ContestHall_Text_ExplainTorment:
 
 @ Unused
 SlateportCity_ContestHall_Text_MCStepUpTakePartInContest:
-    .string "主持：天啊，天啊！\n它难道不是宝可梦中的花花公子？\p请一定快点来参加\n我们完美的华丽大赛！\p你会做得很好的！我相信你！\n我看好你哟！$"
+    .string "主持人：天啊，天啊！\n它难道不是宝可梦中的花花公子？\p请一定快点来参加\n我们完美的华丽大赛！\p你会做得很好的！我相信你！\n我看好你哟！$"
 
 @ Unused
 SlateportCity_ContestHall_Text_JudgeWouldntDoToMissContest:

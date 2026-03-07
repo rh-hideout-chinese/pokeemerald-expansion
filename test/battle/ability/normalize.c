@@ -11,13 +11,13 @@ ASSUMPTIONS
 
 SINGLE_BATTLE_TEST("Normalize turns a move into a Normal-type move")
 {
-    u16 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_GASTLY].types[0] == TYPE_GHOST);
+        ASSUME(GetSpeciesType(SPECIES_GASTLY, 0) == TYPE_GHOST);
         PLAYER(SPECIES_GASTLY);
-        OPPONENT(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_WATER_GUN);}
+        OPPONENT(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_WATER_GUN); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_WATER_GUN); }
     } SCENE {
@@ -36,14 +36,14 @@ SINGLE_BATTLE_TEST("Normalize turns a move into a Normal-type move")
 
 SINGLE_BATTLE_TEST("Normalize affects status moves")
 {
-    u16 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
     GIVEN {
         ASSUME(GetMoveType(MOVE_THUNDER_WAVE) == TYPE_ELECTRIC);
-        ASSUME(gSpeciesInfo[SPECIES_DRILBUR].types[0] == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_DRILBUR, 0) == TYPE_GROUND);
         PLAYER(SPECIES_DRILBUR);
-        OPPONENT(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_THUNDER_WAVE);}
+        OPPONENT(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_THUNDER_WAVE); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_THUNDER_WAVE); }
     } SCENE {
@@ -62,15 +62,15 @@ SINGLE_BATTLE_TEST("Normalize affects status moves")
 
 SINGLE_BATTLE_TEST("Normalize still makes Freeze-Dry do super effective damage to Water-type Pokémon", s16 damage)
 {
-    u16 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
     GIVEN {
         ASSUME(GetMoveType(MOVE_FREEZE_DRY) == TYPE_ICE);
         ASSUME(GetMoveEffect(MOVE_FREEZE_DRY) == EFFECT_SUPER_EFFECTIVE_ON_ARG);
-        ASSUME(gSpeciesInfo[SPECIES_MUDKIP].types[0] == TYPE_WATER);
+        ASSUME(GetSpeciesType(SPECIES_MUDKIP, 0) == TYPE_WATER);
         PLAYER(SPECIES_MUDKIP);
-        OPPONENT(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_FREEZE_DRY);}
+        OPPONENT(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_FREEZE_DRY); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_FREEZE_DRY); }
     } SCENE {
@@ -82,12 +82,12 @@ SINGLE_BATTLE_TEST("Normalize still makes Freeze-Dry do super effective damage t
 
 SINGLE_BATTLE_TEST("Normalize doesn't boost power of unaffected moves by 20% (< Gen7)", s16 damage)
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
 
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_ATE_MULTIPLIER, GEN_6);
+        WITH_CONFIG(B_ATE_MULTIPLIER, GEN_6);
         PLAYER(SPECIES_DELCATTY) { Ability(ability); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -101,12 +101,12 @@ SINGLE_BATTLE_TEST("Normalize doesn't boost power of unaffected moves by 20% (< 
 
 SINGLE_BATTLE_TEST("Normalize boosts power of unaffected moves by 20% (Gen7+)", s16 damage)
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
 
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_ATE_MULTIPLIER, GEN_7);
+        WITH_CONFIG(B_ATE_MULTIPLIER, GEN_7);
         PLAYER(SPECIES_DELCATTY) { Ability(ability); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -120,12 +120,12 @@ SINGLE_BATTLE_TEST("Normalize boosts power of unaffected moves by 20% (Gen7+)", 
 
 SINGLE_BATTLE_TEST("Normalize doesn't boost power of affected moves by 20% (< Gen7)", s16 damage)
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
 
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_ATE_MULTIPLIER, GEN_6);
+        WITH_CONFIG(B_ATE_MULTIPLIER, GEN_6);
         PLAYER(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_WATER_GUN); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -139,12 +139,12 @@ SINGLE_BATTLE_TEST("Normalize doesn't boost power of affected moves by 20% (< Ge
 
 SINGLE_BATTLE_TEST("Normalize boosts power of affected moves by 20% (Gen7+)", s16 damage)
 {
-    u32 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
 
     GIVEN {
-        WITH_CONFIG(GEN_CONFIG_ATE_MULTIPLIER, GEN_7);
+        WITH_CONFIG(B_ATE_MULTIPLIER, GEN_7);
         PLAYER(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_WATER_GUN); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -184,7 +184,8 @@ SINGLE_BATTLE_TEST("Normalize-affected moves become Electric-type under Ion Delu
 
 SINGLE_BATTLE_TEST("Normalize doesn't affect Weather Ball's type", s16 damage)
 {
-    u16 move, ability;
+    enum Move move;
+    enum Ability ability;
     PARAMETRIZE { move = MOVE_CELEBRATE; ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { move = MOVE_SUNNY_DAY; ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { move = MOVE_CELEBRATE; ability = ABILITY_NORMALIZE; }
@@ -192,7 +193,7 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect Weather Ball's type", s16 damage)
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_WEATHER_BALL) == EFFECT_WEATHER_BALL);
         ASSUME(GetMoveType(MOVE_WEATHER_BALL) == TYPE_NORMAL);
-        ASSUME(gSpeciesInfo[SPECIES_MEGANIUM].types[0] == TYPE_GRASS);
+        ASSUME(GetSpeciesType(SPECIES_MEGANIUM, 0) == TYPE_GRASS);
         PLAYER(SPECIES_SKITTY) { Ability(ability); }
         OPPONENT(SPECIES_MEGANIUM);
     } WHEN {
@@ -212,13 +213,13 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect Weather Ball's type", s16 damage)
 
 SINGLE_BATTLE_TEST("Normalize doesn't affect Natural Gift's type")
 {
-    u16 ability;
+    enum Ability ability;
     PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
     PARAMETRIZE { ability = ABILITY_NORMALIZE; }
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_NATURAL_GIFT) == EFFECT_NATURAL_GIFT);
         ASSUME(gNaturalGiftTable[ITEM_TO_BERRY(ITEM_ORAN_BERRY)].type == TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_BELDUM].types[0] == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_BELDUM, 0) == TYPE_STEEL);
         PLAYER(SPECIES_SKITTY) { Ability(ability); Item(ITEM_ORAN_BERRY); }
         OPPONENT(SPECIES_BELDUM);
     } WHEN {
@@ -231,7 +232,8 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect Natural Gift's type")
 
 SINGLE_BATTLE_TEST("Normalize doesn't affect Judgment / Techno Blast / Multi-Attack's type")
 {
-    u16 move, item;
+    enum Move move;
+    enum Item item;
     PARAMETRIZE { move = MOVE_JUDGMENT; item = ITEM_ZAP_PLATE; }
     PARAMETRIZE { move = MOVE_TECHNO_BLAST; item = ITEM_SHOCK_DRIVE; }
     PARAMETRIZE { move = MOVE_MULTI_ATTACK; item = ITEM_ELECTRIC_MEMORY; }
@@ -245,7 +247,7 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect Judgment / Techno Blast / Multi-Att
         ASSUME(gItemsInfo[ITEM_SHOCK_DRIVE].secondaryId == TYPE_ELECTRIC);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].holdEffect == HOLD_EFFECT_MEMORY);
         ASSUME(gItemsInfo[ITEM_ELECTRIC_MEMORY].secondaryId == TYPE_ELECTRIC);
-        ASSUME(gSpeciesInfo[SPECIES_DIGLETT].types[0] == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
         PLAYER(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); Item(item); }
         OPPONENT(SPECIES_DIGLETT);
     } WHEN {
@@ -261,7 +263,7 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect Hidden Power's type")
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_HIDDEN_POWER) == EFFECT_HIDDEN_POWER);
         ASSUME(gTypesInfo[TYPE_ELECTRIC].isHiddenPowerType == TRUE);
-        ASSUME(gSpeciesInfo[SPECIES_DIGLETT].types[0] == TYPE_GROUND);
+        ASSUME(GetSpeciesType(SPECIES_DIGLETT, 0) == TYPE_GROUND);
         PLAYER(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); HPIV(31); AttackIV(31); DefenseIV(31); SpAttackIV(30); SpDefenseIV(31); SpeedIV(31); } // HP Electric
         OPPONENT(SPECIES_DIGLETT);
     } WHEN {
@@ -272,7 +274,72 @@ SINGLE_BATTLE_TEST("Normalize doesn't affect Hidden Power's type")
     }
 }
 
-TO_DO_BATTLE_TEST("Aerilate doesn't affect Tera Starstorm's type");
-TO_DO_BATTLE_TEST("Normalize makes Flying Press do Normal/Flying damage");
-TO_DO_BATTLE_TEST("Normalize doesn't affect Terrain Pulse's type");
-TO_DO_BATTLE_TEST("Normalize doesn't affect damaging Z-Move types");
+SINGLE_BATTLE_TEST("Normalize doesn't change Tera Blast's type when Terastallized")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_TERA_BLAST) == EFFECT_TERA_BLAST);
+        ASSUME(GetMoveType(MOVE_TERA_BLAST) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_MISDREAVUS, 0) == TYPE_GHOST);
+        PLAYER(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); TeraType(TYPE_DARK); }
+        OPPONENT(SPECIES_MISDREAVUS);
+    } WHEN {
+        TURN { MOVE(player, MOVE_TERA_BLAST, gimmick: GIMMICK_TERA); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TERA_BLAST, player);
+        MESSAGE("It's super effective!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Normalize makes Flying Press do Normal/Flying damage")
+{
+    enum Ability ability;
+    PARAMETRIZE { ability = ABILITY_CUTE_CHARM; }
+    PARAMETRIZE { ability = ABILITY_NORMALIZE; }
+    GIVEN {
+        ASSUME(GetSpeciesType(SPECIES_GOLEM, 0) == TYPE_ROCK || GetSpeciesType(SPECIES_GOLEM, 1) == TYPE_ROCK);
+        PLAYER(SPECIES_SKITTY) { Ability(ability); Moves(MOVE_FLYING_PRESS); }
+        OPPONENT(SPECIES_GOLEM);
+    } WHEN {
+        TURN { MOVE(player, MOVE_FLYING_PRESS); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_FLYING_PRESS, player);
+        if (ability == ABILITY_NORMALIZE)
+            MESSAGE("It's not very effective…");
+        else
+            NOT { MESSAGE("It's not very effective…"); }
+    }
+}
+
+SINGLE_BATTLE_TEST("Normalize doesn't affect Terrain Pulse's type")
+{
+    GIVEN {
+        ASSUME(GetMoveEffect(MOVE_TERRAIN_PULSE) == EFFECT_TERRAIN_PULSE);
+        ASSUME(GetMoveType(MOVE_TERRAIN_PULSE) == TYPE_NORMAL);
+        ASSUME(GetSpeciesType(SPECIES_SANDSHREW, 0) == TYPE_GROUND || GetSpeciesType(SPECIES_SANDSHREW, 1) == TYPE_GROUND);
+        PLAYER(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); }
+        OPPONENT(SPECIES_SANDSHREW);
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_ELECTRIC_TERRAIN); MOVE(player, MOVE_CELEBRATE); }
+        TURN { MOVE(player, MOVE_TERRAIN_PULSE); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ELECTRIC_TERRAIN, opponent);
+        NOT { ANIMATION(ANIM_TYPE_MOVE, MOVE_TERRAIN_PULSE, player); }
+        MESSAGE("It doesn't affect the opposing Sandshrew…");
+    }
+}
+
+SINGLE_BATTLE_TEST("Normalize doesn't affect damaging Z-Move types")
+{
+    GIVEN {
+        ASSUME(GetMoveType(MOVE_WATER_GUN) == TYPE_WATER);
+        ASSUME(GetSpeciesType(SPECIES_GOLEM, 0) == TYPE_ROCK || GetSpeciesType(SPECIES_GOLEM, 1) == TYPE_ROCK);
+        PLAYER(SPECIES_SKITTY) { Ability(ABILITY_NORMALIZE); Item(ITEM_WATERIUM_Z); Moves(MOVE_WATER_GUN); }
+        OPPONENT(SPECIES_GOLEM);
+    } WHEN {
+        TURN { MOVE(player, MOVE_WATER_GUN, gimmick: GIMMICK_Z_MOVE); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_GENERAL, B_ANIM_ZMOVE_ACTIVATE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_HYDRO_VORTEX, player);
+        MESSAGE("It's super effective!");
+    }
+}

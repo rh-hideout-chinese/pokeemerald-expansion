@@ -35,11 +35,10 @@ const u16 gEasyChatWordsByLetter_A[] = {
     EC_MOVE(SHADOW_BALL),
     EC_MOVE(SHADOW_PUNCH),
     EC_WORD_EXPENSIVE,
-    EC_POKEMON(TAILLOW), 
+    EC_POKEMON(TAILLOW),
 };
 
 const u16 gEasyChatWordsByLetter_B[] = {
-    EC_POKEMON_NATIONAL(BUTTERFREE),
     EC_POKEMON_NATIONAL(LEDYBA),
     EC_WORD_DO,
     EC_WORD_FATHER,
@@ -172,6 +171,11 @@ const u16 gEasyChatWordsByLetter_C[] = {
     EC_POKEMON(CROBAT),
     EC_POKEMON_NATIONAL(CROBAT),
     EC_MOVE(CONSTRICT),
+    EC_POKEMON(NUZLEAF),
+    EC_POKEMON(WINGULL),
+    EC_MOVE2(HOWL),
+    EC_POKEMON_NATIONAL(PILOSWINE),
+    EC_POKEMON_NATIONAL(AIPOM),
     EC_WORD_TRY,
     EC_WORD_RANK,
     EC_MOVE(SING),
@@ -258,6 +262,7 @@ const u16 gEasyChatWordsByLetter_C[] = {
 };
 
 const u16 gEasyChatWordsByLetter_D[] = {
+    EC_WORD_CONCEDE,
     EC_WORD_HIT,
     EC_WORD_DECIDED,
     EC_MOVE(SNORE),
@@ -400,6 +405,7 @@ const u16 gEasyChatWordsByLetter_D[] = {
     EC_WORD_TO_HER,
     EC_WORD_TO_ME,
     EC_WORD_TO_US,
+    EC_WORD_FIGHT,
     EC_WORD_BATTLE_ROOM,
     EC_WORD_BATTLE_TOWER,
     EC_POKEMON(CASCOON),
@@ -417,13 +423,13 @@ const u16 gEasyChatWordsByLetter_E[] = {
     EC_WORD_DARK,
     EC_MOVE(NIGHTMARE),
     EC_MOVE(LOVELY_KISS),
-    EC_WORD_CHILD_S_PLAY,
-    EC_WORD_HOWEVER,
-    EC_MOVE2(DOUBLE_KICK),
     EC_WORD_HMM,
     EC_WORD_HUH_QUES,
     EC_WORD_MMM,
     EC_WORD_UH_HUH,
+    EC_WORD_CHILD_S_PLAY,
+    EC_WORD_HOWEVER,
+    EC_MOVE2(DOUBLE_KICK),
 };
 
 const u16 gEasyChatWordsByLetter_F[] = {
@@ -1235,7 +1241,6 @@ const u16 gEasyChatWordsByLetter_Q[] = {
 const u16 gEasyChatWordsByLetter_R[] = {
     EC_WORD_YET,
     EC_WORD_LEARN,
-    EC_WORD_CONCEDE,
     EC_WORD_LET_S,
     EC_WORD_LET_ME_WIN,
     EC_WORD_HOT,
@@ -1263,6 +1268,7 @@ const u16 gEasyChatWordsByLetter_R[] = {
     EC_WORD_IF,
     EC_WORD_IF_I_LOSE,
     EC_WORD_IF_I_WIN,
+    EC_WORD_I_VE_ARRIVED,
     EC_WORD_SOFTWARE,
     EC_WORD_WIMPY,
     EC_WORD_KEEN_EYE,
@@ -1546,7 +1552,6 @@ const u16 gEasyChatWordsByLetter_W[] = {
     EC_POKEMON_NATIONAL(POLIWRATH),
     EC_WORD_QUESTION,
     EC_WORD_ME,
-    EC_WORD_I_VE_ARRIVED,
     EC_WORD_MY,
     EC_WORD_HERE_I_COME,
     EC_WORD_WE,
@@ -1852,16 +1857,10 @@ const u16 gEasyChatWordsByLetter_Z[] = {
     EC_WORD_OVERDO,
     EC_WORD_SHOW,
     EC_WORD_BATTLE,
-    EC_WORD_FIGHT,
     EC_WORD_STRATEGY,
     EC_POKEMON_NATIONAL(HITMONTOP),
     EC_POKEMON_NATIONAL(OCTILLERY),
     EC_MOVE(OCTAZOOKA),
-    EC_POKEMON(NUZLEAF),
-    EC_POKEMON(WINGULL),
-    EC_MOVE2(HOWL),
-    EC_POKEMON_NATIONAL(PILOSWINE),
-    EC_POKEMON_NATIONAL(AIPOM),
     EC_WORD_MOVE,
     EC_POKEMON_NATIONAL(QUAGSIRE),
     EC_POKEMON(MARSHTOMP),

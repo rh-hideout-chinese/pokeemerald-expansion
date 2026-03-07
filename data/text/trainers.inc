@@ -3171,28 +3171,28 @@ Route131_Text_KaraPostBattle::
     .string "也许吸引了别人的目光的不是\n我的泳装，而是我的美貌啊！$"
 
 Route131_Text_ReliIntro::
-    .string "胜：我们两个会\n齐心协力对付你的！$"
+    .string "亚美：我们两个会\n齐心协力对付你的！$"
 
 Route131_Text_ReliDefeat::
-    .string "胜：就算齐心协力，\n我们还是赢不了……$"
+    .string "亚美：就算齐心协力，\n我们还是赢不了……$"
 
 Route131_Text_ReliPostBattle::
-    .string "胜：暮水镇的人们\n从出生的那一刻就一直跟\l大海和宝可梦为伴。$"
+    .string "亚美：暮水镇的人们\n从出生的那一刻就一直跟\l大海和宝可梦为伴。$"
 
 Route131_Text_ReliNotEnoughMons::
-    .string "胜：你没带足2只宝可梦？\n真可惜，这样就不能对战了。$"
+    .string "亚美：你没带足2只宝可梦？\n真可惜，这样就不能对战了。$"
 
 Route131_Text_IanIntro::
-    .string "亚美：我要努力地和姐姐\n一起战斗！$"
+    .string "胜：我要努力地和姐姐\n一起战斗！$"
 
 Route131_Text_IanDefeat::
-    .string "亚美：我和姐姐都努力了，\n但我们还是输了……$"
+    .string "胜：我和姐姐都努力了，\n但我们还是输了……$"
 
 Route131_Text_IanPostBattle::
-    .string "亚美：你知道那个被称作\n漂浮的小镇的暮水镇吗？\p凡是有大海的地方，\n都是暮水镇的一部分！$"
+    .string "胜：你知道那个被称作\n漂浮的小镇的暮水镇吗？\p凡是有大海的地方，\n都是暮水镇的一部分！$"
 
 Route131_Text_IanNotEnoughMons::
-    .string "亚美：假如你有2只宝可梦，\n我们就可以和你对战了！$"
+    .string "胜：假如你有2只宝可梦，\n我们就可以和你对战了！$"
 
 Route131_Text_TaliaIntro::
     .string "你能打败我的话，\n我就告诉你一些好事情。$"

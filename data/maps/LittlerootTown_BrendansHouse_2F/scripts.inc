@@ -280,7 +280,8 @@ PlayersHouse_2F_Text_Notebook:
     .string "{PLAYER}翻开笔记。\p冒险须知第一条\n用START键打开菜单。\p冒险须知第二条\n记录选项可以写下记录。\p后面是空白……$"
 
 Common_Text_LookCloserAtMap:
-    .string "{PLAYER}仔细察看\n丰缘地区的地图。$"
+	.string "{PLAYER}仔细察看\n"
+	.string "{REGION}地区的地图。$"
 
 PlayersHouse_2F_Text_ItsAGameCube:
     .string "这是NGC。\p上面连着个GBA\n当做手柄。$"

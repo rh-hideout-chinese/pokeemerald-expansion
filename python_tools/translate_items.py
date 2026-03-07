@@ -47,7 +47,11 @@ def replace_item_info(content, df):
         block = original_block
 
         # 替换 .moveName
-        block = re.sub(r'\.name\s*=\s*_\(.*?\),', f'.name = _("{info["中文名"]}"),', block)
+        block = re.sub(
+    r'\.name\s*=\s*ITEM_NAME\(".*?"\),',
+    f'.name = ITEM_NAME("{info["中文名"]}"),',
+    block
+)
 
         # block = re.sub(r'\.categoryName\s*=\s*_\(.*?\),', f'.categoryName = _("{info["categoryName"]}"),', block)
         try:

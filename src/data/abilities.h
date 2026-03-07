@@ -1,4 +1,4 @@
-const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
+const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 {
     [ABILITY_NONE] =
     {
@@ -1247,6 +1247,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("花幕"),
         .description = COMPOUND_STRING("守护己方草宝可梦能力状态"),
         .aiRating = 0,
+        .breakable = TRUE,
     },
 
     [ABILITY_CHEEK_POUCH] =
@@ -1282,6 +1283,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
     {
         .name = _("防弹"),
         .description = COMPOUND_STRING("防守球和弹类招式"),
+        .breakable = TRUE,
         .aiRating = 7,
     },
 
@@ -1409,6 +1411,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("气场破坏"),
         .description = COMPOUND_STRING("让气场的效果发生逆转"),
         .aiRating = 3,
+        .breakable = TRUE,
     },
 
     [ABILITY_PRIMORDIAL_SEA] =
@@ -1491,6 +1494,7 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("水泡"),
         .description = COMPOUND_STRING("降低火招式伤害且不会灼伤"),
         .aiRating = 8,
+        .breakable = TRUE,
     },
 
     [ABILITY_STEELWORKER] =
@@ -1824,7 +1828,8 @@ const struct Ability gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("一口导弹"),
         .description = COMPOUND_STRING("冲浪潜水时会吐出猎物攻击"),
         .aiRating = 3,
-        .cantBeCopied = TRUE,
+        .cantBeCopied = B_UPDATED_MOVE_FLAGS <= GEN_8,
+        .cantBeSwapped = B_UPDATED_MOVE_FLAGS <= GEN_8,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
         .failsOnImposter = TRUE,

@@ -1,11 +1,11 @@
 #include "global.h"
 #include "event_data.h"
 #include "heal_location.h"
+#include "constants/event_objects.h"
 #include "constants/heal_locations.h"
 #include "constants/maps.h"
 
 #include "data/heal_locations.h"
-#include "data/heal_locations_pkm_center.h"
 
 u32 GetHealLocationIndexByMap(u16 mapGroup, u16 mapNum)
 {
@@ -70,7 +70,8 @@ bool32 IsLastHealLocationPlayerHouse()
     if (IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE)
         || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_MAYS_HOUSE_2F)
         || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE)
-        || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F))
+        || IsLastHealLocation(HEAL_LOCATION_LITTLEROOT_TOWN_BRENDANS_HOUSE_2F)
+        || IsLastHealLocation(HEAL_LOCATION_PALLET_TOWN))
         return TRUE;
 
     return FALSE;
@@ -79,16 +80,15 @@ bool32 IsLastHealLocationPlayerHouse()
 u32 GetHealNpcLocalId(u32 healLocationId)
 {
     if (healLocationId == HEAL_LOCATION_NONE || healLocationId >= NUM_HEAL_LOCATIONS)
-        return 0;
+        return LOCALID_NONE;
 
-    return sHealNpcLocalId[healLocationId - 1];
+    return sWhiteoutRespawnHealerNpcIds[healLocationId - 1];
 }
 
 void SetWhiteoutRespawnWarpAndHealerNPC(struct WarpData *warp)
 {
     u32 healLocationId = GetHealLocationIndexByWarpData(&gSaveBlock1Ptr->lastHealLocation);
     u32 healNpcLocalId = GetHealNpcLocalId(healLocationId);
-    struct HealLocation pkmCenterHealLocation;
 
     if (!healNpcLocalId)
     {
@@ -96,11 +96,10 @@ void SetWhiteoutRespawnWarpAndHealerNPC(struct WarpData *warp)
         return;
     }
 
-    pkmCenterHealLocation = sHealLocationsPokemonCenter[healLocationId - 1];
-    warp->mapGroup = pkmCenterHealLocation.mapGroup;
-    warp->mapNum = pkmCenterHealLocation.mapNum;
+    warp->mapGroup = sWhiteoutRespawnHealCenterMapIdxs[healLocationId - 1][0];
+    warp->mapNum = sWhiteoutRespawnHealCenterMapIdxs[healLocationId - 1][1];
     warp->warpId = WARP_ID_NONE;
-    warp->x = pkmCenterHealLocation.x;
-    warp->y = pkmCenterHealLocation.y;
+    warp->x = sWhiteoutRespawnHealCenterMapIdxs[healLocationId - 1][2];
+    warp->y = sWhiteoutRespawnHealCenterMapIdxs[healLocationId - 1][3];
     gSpecialVar_LastTalked = healNpcLocalId;
 }

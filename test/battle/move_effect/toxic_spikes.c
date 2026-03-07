@@ -92,18 +92,18 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on subsequent switch ins")
 SINGLE_BATTLE_TEST("Toxic Spikes do not poison airborne Pokemon")
 {
     u32 species = SPECIES_WOBBUFFET;
-    u32 item = ITEM_NONE;
-    u32 move1 = MOVE_CELEBRATE;
-    u32 move2 = MOVE_CELEBRATE;
+    enum Item item = ITEM_NONE;
+    enum Move move1 = MOVE_CELEBRATE;
+    enum Move move2 = MOVE_CELEBRATE;
     bool32 airborne;
 
-    ASSUME(gSpeciesInfo[SPECIES_PIDGEY].types[1] == TYPE_FLYING);
+    ASSUME(GetSpeciesType(SPECIES_PIDGEY, 1) == TYPE_FLYING);
     PARAMETRIZE { species = SPECIES_PIDGEY; airborne = TRUE; }
     PARAMETRIZE { species = SPECIES_PIDGEY; item = ITEM_IRON_BALL; airborne = FALSE; }
     PARAMETRIZE { species = SPECIES_PIDGEY; move1 = MOVE_GRAVITY; airborne = FALSE; }
     PARAMETRIZE { species = SPECIES_PIDGEY; move1 = MOVE_INGRAIN; airborne = FALSE; }
 
-    ASSUME(gSpeciesInfo[SPECIES_UNOWN].abilities[0] == ABILITY_LEVITATE);
+    ASSUME(GetSpeciesAbility(SPECIES_UNOWN, 0) == ABILITY_LEVITATE);
     PARAMETRIZE { species = SPECIES_UNOWN; airborne = TRUE; }
     PARAMETRIZE { species = SPECIES_UNOWN; item = ITEM_IRON_BALL; airborne = FALSE; }
     PARAMETRIZE { species = SPECIES_UNOWN; move1 = MOVE_GRAVITY; airborne = FALSE; }
@@ -139,7 +139,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes do not poison airborne Pokemon")
 SINGLE_BATTLE_TEST("Toxic Spikes do not affect Steel-types")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_STEELIX].types[0] == TYPE_STEEL);
+        ASSUME(GetSpeciesType(SPECIES_STEELIX, 0) == TYPE_STEEL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_STEELIX);
@@ -154,8 +154,8 @@ SINGLE_BATTLE_TEST("Toxic Spikes do not affect Steel-types")
 SINGLE_BATTLE_TEST("Toxic Spikes are removed by grounded Poison-type Pokémon on switch in")
 {
     u32 species;
-    u32 item = ITEM_NONE;
-    u32 move = MOVE_CELEBRATE;
+    enum Item item = ITEM_NONE;
+    enum Move move = MOVE_CELEBRATE;
     bool32 grounded;
     PARAMETRIZE { species = SPECIES_EKANS; grounded = TRUE; }
     PARAMETRIZE { species = SPECIES_ZUBAT; grounded = FALSE; }
@@ -163,9 +163,9 @@ SINGLE_BATTLE_TEST("Toxic Spikes are removed by grounded Poison-type Pokémon on
     PARAMETRIZE { species = SPECIES_ZUBAT; move = MOVE_GRAVITY; grounded = TRUE; }
     PARAMETRIZE { species = SPECIES_ZUBAT; move = MOVE_INGRAIN; grounded = TRUE; }
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_EKANS].types[0] == TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_ZUBAT].types[0] == TYPE_POISON);
-        ASSUME(gSpeciesInfo[SPECIES_ZUBAT].types[1] == TYPE_FLYING);
+        ASSUME(GetSpeciesType(SPECIES_EKANS, 0) == TYPE_POISON);
+        ASSUME(GetSpeciesType(SPECIES_ZUBAT, 0) == TYPE_POISON);
+        ASSUME(GetSpeciesType(SPECIES_ZUBAT, 1) == TYPE_FLYING);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(species) { Item(item); }
@@ -190,7 +190,7 @@ SINGLE_BATTLE_TEST("Toxic Spikes are removed by grounded Poison-type Pokémon on
 SINGLE_BATTLE_TEST("Toxic Spikes are not removed by Poison-type Pokémon affected by Magnet Rise on switch in")
 {
     GIVEN {
-        ASSUME(gSpeciesInfo[SPECIES_EKANS].types[0] == TYPE_POISON);
+        ASSUME(GetSpeciesType(SPECIES_EKANS, 0) == TYPE_POISON);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_EKANS);
@@ -208,10 +208,10 @@ SINGLE_BATTLE_TEST("Toxic Spikes inflicts poison on switch in after Primal Rever
 {
     GIVEN {
         ASSUME(GetMoveEffect(MOVE_MEMENTO) == EFFECT_MEMENTO); // Faints the user.
-        PLAYER(SPECIES_WOBBUFFET) {Speed(5); }
+        PLAYER(SPECIES_WOBBUFFET) { Speed(5); }
         PLAYER(SPECIES_GROUDON) { Item(ITEM_RED_ORB); Speed(1); }
-        PLAYER(SPECIES_WYNAUT) {Speed(5); }
-        OPPONENT(SPECIES_WOBBUFFET) {Speed(15); }
+        PLAYER(SPECIES_WYNAUT) { Speed(5); }
+        OPPONENT(SPECIES_WOBBUFFET) { Speed(15); }
     } WHEN {
         TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
         TURN { SWITCH(player, 1); }
@@ -264,5 +264,30 @@ SINGLE_BATTLE_TEST("Toxic Spikes print bad poison for 2 layers")
         TURN {}
     } SCENE {
         MESSAGE("The opposing Wynaut was badly poisoned!");
+    }
+}
+
+SINGLE_BATTLE_TEST("Toxic Spikes: Only two layers can be set up")
+{
+    GIVEN {
+        PLAYER(SPECIES_WYNAUT);
+        OPPONENT(SPECIES_WOBBUFFET);
+    } WHEN {
+        TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
+        TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
+        TURN { MOVE(opponent, MOVE_TOXIC_SPIKES); }
+    } SCENE {
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, opponent);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, opponent);
+        NOT ANIMATION(ANIM_TYPE_MOVE, MOVE_TOXIC_SPIKES, opponent);
+    } THEN {
+        EXPECT_EQ(gBattleStruct->hazardsQueue[0][0], HAZARDS_TOXIC_SPIKES);
+        EXPECT_EQ(gBattleStruct->hazardsQueue[0][1], HAZARDS_NONE);
+        EXPECT_EQ(gBattleStruct->hazardsQueue[0][2], HAZARDS_NONE);
+        EXPECT_EQ(gBattleStruct->hazardsQueue[0][3], HAZARDS_NONE);
+        EXPECT_EQ(gBattleStruct->hazardsQueue[0][4], HAZARDS_NONE);
+        EXPECT_EQ(gBattleStruct->hazardsQueue[0][5], HAZARDS_NONE);
+        u32 toxicSpikesAmount = gSideTimers[0].toxicSpikesAmount;
+        EXPECT_EQ(toxicSpikesAmount, 2);
     }
 }
