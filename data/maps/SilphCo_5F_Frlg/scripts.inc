@@ -58,83 +58,82 @@ SilphCo_5F_EventScript_Dalton::
 	end
 
 SilphCo_5F_Text_RocketsInUproarAboutIntruder::
-	.string "TEAM ROCKET is in an uproar over\n"
-	.string "some intruder.\p"
-	.string "That's you, right?$"
+    .string "火箭队有一些慌乱是因为\n"
+    .string "有一些闯入者进来了。\p"
+    .string "你就是那个闯入者，对吧？$"
 
 SilphCo_5F_Text_YoureOurHeroThankYou::
-	.string "TEAM ROCKET took off!\n"
-	.string "You're our hero! Thank you!$"
+    .string "火箭队逃跑了！\n"
+    .string "你是我们的英雄！谢谢！$"
 
 SilphCo_5F_Text_Grunt1Intro::
-	.string "I heard a kid was wandering\n"
-	.string "around.$"
+    .string "我听说有一个孩子\n"
+    .string "在周围徘徊。$"
 
 SilphCo_5F_Text_Grunt1Defeat::
-	.string "Boom!$"
+    .string "隆隆！$"
 
 SilphCo_5F_Text_Grunt1PostBattle::
-	.string "It's not smart to pick a fight with\n"
-	.string "TEAM ROCKET!$"
+    .string "和火箭队战斗可不是\n"
+    .string "一个明智的选择！$"
 
 SilphCo_5F_Text_BeauIntro::
-	.string "We study POKé BALL technology on\n"
-	.string "this floor.$"
+    .string "我们在这一层研究\n"
+    .string "关于精灵球的技术。$"
 
 SilphCo_5F_Text_BeauDefeat::
-	.string "Dang!\n"
-	.string "Blast it!$"
+    .string "啊！\n"
+    .string "哎哟！$"
 
 SilphCo_5F_Text_BeauPostBattle::
-	.string "We worked on the ultimate POKé\n"
-	.string "BALL which would catch anything.$"
+    .string "我们正在研究可以抓住任何\n"
+    .string "宝可梦的超级精灵球。$"
 
 SilphCo_5F_Text_DaltonIntro::
-	.string "Whaaat?\p"
-	.string "There shouldn't be any children\n"
-	.string "here!$"
+    .string "怎么回事？\p"
+    .string "孩子不应该来这里的！$"
 
 SilphCo_5F_Text_DaltonDefeat::
-	.string "Oh, goodness!$"
+    .string "哦，天哪！$"
 
 SilphCo_5F_Text_DaltonPostBattle::
-	.string "You're only on 5F.\n"
-	.string "It's a long way to my BOSS!$"
+    .string "你只不过刚到5F而已。\n"
+    .string "要见我们的老大，还要走很长的一段路！$"
 
 SilphCo_5F_Text_Grunt2Intro::
-	.string "Show TEAM ROCKET a little respect!$"
+    .string "在火箭队面前放尊重些！$"
 
 SilphCo_5F_Text_Grunt2Defeat::
-	.string "Cough…\n"
-	.string "Cough…$"
+    .string "咳……\n"
+    .string "咳……$"
 
 SilphCo_5F_Text_Grunt2PostBattle::
-	.string "Which reminds me.\p"
-	.string "KOFFING evolves into WEEZING!$"
+    .string "那倒提醒了我。\p"
+    .string "瓦斯弹进化成了双弹瓦斯！$"
 
 SilphCo_5F_Text_PorygonFirstVRMon::
-	.string "It's a POKéMON REPORT!\p"
-	.string "POKéMON LAB created PORYGON,\n"
-	.string "the first virtual-reality POKéMON.$"
+    .string "这是一份宝可梦研究报告！\p"
+    .string "宝可梦实验室创造了多边兽，\n"
+    .string "第一个虚拟现实的宝可梦。$"
 
 SilphCo_5F_Text_Over350TechniquesConfirmed::
-	.string "It's a POKéMON REPORT!\p"
-	.string "Over 350 POKéMON techniques have\n"
-	.string "been confirmed.$"
+    .string "这是一份宝可梦研究报告！\p"
+    .string "已证实存在350个宝可梦\n"
+    .string "的技能。$"
 
 SilphCo_5F_Text_SomeMonsEvolveWhenTraded::
-	.string "It's a POKéMON REPORT!\p"
-	.string "Some POKéMON have been confirmed\n"
-	.string "to evolve when they are traded.$"
+    .string "这是一份宝可梦研究报告！\p"
+    .string "有些宝可梦已经被确认\n"
+    .string "在他们被交换时会进化。$"
 
 SilphCo_5F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "5F$"
+    .string "西尔佛公司总部\n"
+    .string "5层$"
 
 SilphCo_5F_Text_RocketBossLookingForStrongMons::
-	.string "Those thugs that took over our\n"
-	.string "building…\p"
-	.string "Their BOSS said he was looking for\n"
-	.string "strong POKéMON.\p"
-	.string "I hope our PRESIDENT managed to\n"
-	.string "avoid trouble…$"
+    .string "那些混蛋占领了\n"
+    .string "我们的大厦……\p"
+    .string "他们的头目说他一直\n"
+    .string "在寻找强大的宝可梦。\p"
+    .string "我希望我们的总裁能\n"
+    .string "不遇上这些麻烦……$"

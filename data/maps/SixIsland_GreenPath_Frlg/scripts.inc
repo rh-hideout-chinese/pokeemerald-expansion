@@ -10,23 +10,23 @@ SixIsland_GreenPath_EventScript_LeftRouteSign::
 	end
 
 SixIsland_GreenPath_Text_JaclynIntro::
-	.string "…Huh?\p"
-	.string "I was envisioning my house, but\n"
-	.string "this is where I TELEPORT?$"
+    .string "……呃？\p"
+    .string "我正在想像着我的房子，\n"
+    .string "就瞬间移动到这儿来了？$"
 
 SixIsland_GreenPath_Text_JaclynDefeat::
-	.string "Big boo-boo!$"
+    .string "大错特错了！$"
 
 SixIsland_GreenPath_Text_JaclynPostBattle::
-	.string "I am so scatterbrained!\p"
-	.string "I need to focus so I can TELEPORT\n"
-	.string "properly to my house!$"
+    .string "我太三心二意了！\p"
+    .string "我必须集中精力来瞬间移动\n"
+    .string "到我的房子！$"
 
 SixIsland_GreenPath_Text_LeftRouteSign::
-	.string "GREEN PATH\n"
-	.string "PATTERN BUSH AHEAD$"
+    .string "绿之步道\n"
+    .string "前方标志之林$"
 
 SixIsland_GreenPath_Text_RightRouteSign::
-	.string "GREEN PATH\n"
-	.string "Think Green, Keep Nature Clean!$"
+    .string "绿之步道\n"
+    .string "畅想绿色，保持自然的纯净！$"
 

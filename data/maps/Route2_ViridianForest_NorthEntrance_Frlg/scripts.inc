@@ -14,22 +14,22 @@ Route2_ViridianForest_NorthEntrance_EventScript_CooltrainerF::
 	end
 
 Route2_ViridianForest_NorthEntrance_Text_ManyMonsOnlyInForests::
-	.string "Many POKéMON live only in forests \n"
-	.string "and caves.\p"
-	.string "You need to be persistent and look\n"
-	.string "everywhere to get different kinds.$"
+    .string "很多宝可梦只生活在\n"
+    .string "森林和洞穴里。\p"
+    .string "你需要持续地四处搜寻\n"
+    .string "来得到不同的种类。$"
 
 Route2_ViridianForest_NorthEntrance_Text_CanCutSkinnyTrees::
-	.string "Have you noticed the skinny trees\n"
-	.string "on the roadside?\p"
-	.string "They can be cut down by a special\n"
-	.string "POKéMON move, I hear.$"
+    .string "你有没有注意到路边\n"
+    .string "细小的树木？\p"
+    .string "我听说它们能被一种宝可梦的\n"
+    .string "特殊技能斩断。$"
 
 Route2_ViridianForest_NorthEntrance_Text_CanCancelEvolution::
-	.string "Do you know the evolution-cancel\n"
-	.string "technique?\p"
-	.string "When a POKéMON is evolving, you\n"
-	.string "can stop the process.\p"
-	.string "It's a technique for raising\n"
-	.string "POKéMON the way they are.$"
+    .string "你知道怎么\n"
+    .string "取消进化吗？\p"
+    .string "当一只宝可梦正在进化的时候，\n"
+    .string "你能够使它停下来。\p"
+    .string "这个窍门是养育宝可梦\n"
+    .string "的一种方式。$"
 

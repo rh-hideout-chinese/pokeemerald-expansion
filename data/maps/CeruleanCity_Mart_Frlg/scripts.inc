@@ -35,16 +35,15 @@ CeruleanCity_Mart_Items::
 	end
 
 CeruleanCity_Mart_Text_RepelWorksOnWeakMons::
-	.string "REPEL not only keeps bugs away,\n"
-	.string "it also works on weak POKéMON.\p"
-	.string "Put your strongest POKéMON at the\n"
-	.string "left of the POKéMON LIST.\p"
-	.string "If your first POKéMON is strong,\n"
-	.string "REPEL's effect is boosted.$"
+    .string "除虫喷雾不仅使虫属性的无法接近，\n"
+    .string "还会作用于弱小的宝可梦。\p"
+    .string "把你最强的宝可梦放在\n"
+    .string "宝可梦列表的最左边。\p"
+    .string "如果你的第一只宝可梦很强。\n"
+    .string "除虫喷雾的作用就会更明显。$"
 
 CeruleanCity_Mart_Text_DoYouKnowAboutRareCandy::
-	.string "Do you know about RARE CANDY?\n"
-	.string "They don't sell it in shops.\p"
-	.string "I think it makes POKéMON grow\n"
-	.string "very quickly all of a sudden.$"
+    .string "你知道神奇糖果吗？\n"
+    .string "在商店没有卖的。\p"
+    .string "它能迅速的提高宝可梦的实力。$"
 

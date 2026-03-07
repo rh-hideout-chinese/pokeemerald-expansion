@@ -61,21 +61,21 @@ CeladonCity_DepartmentStore_2F_TMs::
 	end
 
 CeladonCity_DepartmentStore_2F_Text_SuperRepelMorePowerfulRepel::
-	.string "SUPER REPEL keeps weak POKéMON at\n"
-	.string "bay…\p"
-	.string "Hmm, it's a more powerful REPEL.$"
+	.string "白银喷雾可以防止\n"
+	.string "弱小的宝可梦靠近你……\p"
+	.string "嗯，它是种效果更好的除虫喷雾。$"
 
 CeladonCity_DepartmentStore_2F_Text_BuyReviveForLongOutings::
-	.string "For long outings, you should buy\n"
-	.string "REVIVE.$"
+	.string "长途旅行的话，\n"
+	.string "你该买些活力碎片带着。$"
 
 CeladonCity_DepartmentStore_2F_Text_FloorSign::
-	.string "Top-Grade Items for TRAINERS!\p"
-	.string "2F: TRAINER'S MARKET$"
+	.string "为训练家准备的顶级物品！\p"
+	.string "二楼：训练家商店$"
 
 CeladonCity_DepartmentStore_2F_Text_LanceComesToBuyCapes::
-	.string "We have a customer, LANCE, who\n"
-	.string "occasionally comes.\p"
-	.string "He always buys capes.\p"
-	.string "I wonder… Does he have many\n"
-	.string "identical capes at home?$"
+	.string "我们有个偶尔会来光顾的客人，\n"
+	.string "就是渡。\p"
+	.string "他总是来买披风。\p"
+	.string "我很想知道……他家里是不是有很多\n"
+	.string "一模一样的披风？$"

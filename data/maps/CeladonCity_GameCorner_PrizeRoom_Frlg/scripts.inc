@@ -380,35 +380,33 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_YellowFlute::
 	end
 
 CeladonCity_GameCorner_PrizeRoom_Text_FancyThatPorygon::
-	.string "I sure do fancy that PORYGON!\n"
-	.string "But, it's hard to win at slots!$"
+    .string "我非常非常想要那个多边兽！\n"
+    .string "可是老虎机太难赢了！$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_RakedItInToday::
-	.string "Gahaha! I raked it in today!\n"
-	.string "If only every day were like this…$"
+    .string "哇哈哈！我今天人品大爆发了哇！\n"
+    .string "要是每天都像今天一样就好了……$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_CoinCaseRequired::
-	.string "A COIN CASE is required…$"
+    .string "你还没有代币盒……$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_WeExchangeCoinsForPrizes::
-	.string "We exchange your COINS for prizes.$"
+    .string "你可以用硬代币和我们兑换奖品。$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_WhichPrize::
-	.string "Which prize would you like?$"
+    .string "你想要哪个奖品？$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_HereYouGo::
 	.string "はい どうぞ$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantPrize::
-	.string "So, you want the {STR_VAR_1}?$"
+    .string "嗯，你想要的是{STR_VAR_1}？$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_YouWantTM::
-	.string "Okay, a TM of {STR_VAR_2}\n"
-	.string "is what you want?$"
+    .string "好的，你想要的是技能机{STR_VAR_2}？$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_NeedMoreCoins::
-	.string "Sorry, you'll need more COINS\n"
-	.string "than that.$"
+    .string "抱歉，你的代币不够兑换它哦。$"
 
 CeladonCity_GameCorner_PrizeRoom_Text_OopsNotEnoughRoom::
 	.string "おきゃくさん もう もてないよ$"

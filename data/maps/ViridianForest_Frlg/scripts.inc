@@ -64,107 +64,108 @@ ViridianForest_EventScript_Charlie::
 	end
 
 ViridianForest_Text_FriendsItchingToBattle::
-	.string "I came here with some friends to\n"
-	.string "catch us some BUG POKéMON!\p"
-	.string "They're all itching to get into\n"
-	.string "some POKéMON battles!$"
+    .string "我和朋友们来这里\n"
+    .string "收服虫属性的宝可梦。\p"
+    .string "他们都渴望用\n"
+    .string "自己的宝可梦去战斗！$"
 
 ViridianForest_Text_RickIntro::
-	.string "Hey! You have POKéMON!\n"
-	.string "Come on!\l"
-	.string "Let's battle 'em!$"
+    .string "嘿！你有宝可梦啊！\l"
+    .string "来吧！\l"
+    .string "我们对战！$"
 
 ViridianForest_Text_RickDefeat::
-	.string "No!\nCATERPIE can't hack it!$"
+    .string "不！\n"
+    .string "绿毛虫根本打不过它！$"
 
 ViridianForest_Text_RickPostBattle::
-	.string "Ssh! You'll scare the bugs away.\n"
-	.string "Another time, okay?$"
+    .string "嘘！你这样会把虫子吓跑的。\n"
+    .string "下次再来打一场，怎么样？$"
 
 ViridianForest_Text_DougIntro::
-	.string "Yo!\n"
-	.string "You can't jam out if you're a\l"
-	.string "POKéMON TRAINER!$"
+    .string "嗨！\n"
+    .string "如果你是一个宝可梦训练家，\l"
+    .string "就不能大意！$"
 
 ViridianForest_Text_DougDefeat::
-	.string "Huh?\n"
-	.string "I ran out of POKéMON!$"
+    .string "啥？\n"
+    .string "我的宝可梦全倒下了！$"
 
 ViridianForest_Text_DougPostBattle::
-	.string "That totally stinks! I'm going to\n"
-	.string "catch some stronger ones!$"
+    .string "太糟了！\n"
+    .string "我要去抓些更强大的！$"
 
 ViridianForest_Text_SammyIntro::
-	.string "Hey, wait up!\n"
-	.string "What's the hurry? Why the rush?$"
+    .string "嘿！等一下！\n"
+    .string "怎么了？你跑这么快干嘛？$"
 
 ViridianForest_Text_SammyDefeat::
-	.string "I give!\n"
-	.string "You're good at this!$"
+    .string "我服了！\n"
+    .string "你的确很强！$"
 
 ViridianForest_Text_SammyPostBattle::
-	.string "Sometimes, you can find stuff on\n"
-	.string "the ground.\p"
-	.string "I'm looking for the stuff I\n"
-	.string "dropped. Can you help me?$"
+    .string "有的时候，\n"
+    .string "你能找到一些掉在地上的东西。\p"
+    .string "我正在找我掉了的东西。\n"
+    .string "你能帮我找找吗？$"
 
 ViridianForest_Text_AnthonyIntro::
-	.string "I might be little, but I won't like\n"
-	.string "it if you go easy on me!$"
+    .string "我身材可能很矮小，\n"
+    .string "但我可不希望你因此对我手下留情！$"
 
 ViridianForest_Text_AnthonyDefeat::
-	.string "Oh, boo.\n"
-	.string "Nothing went right.$"
+    .string "唉，真不好。\n"
+    .string "完全没照我的计划来。$"
 
 ViridianForest_Text_AnthonyPostBattle::
-	.string "I lost some of my allowance…$"
+    .string "我弄丢了一些零用钱……$"
 
 ViridianForest_Text_CharlieIntro::
-	.string "Did you know that POKéMON evolve?$"
+    .string "宝可梦的进化你知道多少？$"
 
 ViridianForest_Text_CharlieDefeat::
-	.string "Oh!\n"
-	.string "I lost!$"
+    .string "噢！\n"
+    .string "我输了！$"
 
 ViridianForest_Text_CharliePostBattle::
-	.string "BUG POKéMON evolve quickly.\n"
-	.string "They're a lot of fun!$"
+    .string "虫属性宝可梦进化得很快。\n"
+    .string "和它们在一起乐趣多多！$"
 
 ViridianForest_Text_RanOutOfPokeBalls::
-	.string "I was throwing POKé BALLS to\n"
-	.string "catch POKéMON, and I ran out.\p"
-	.string "That's why you can never have too\n"
-	.string "many POKé BALLS.$"
+    .string "为了收服宝可梦\n"
+    .string "我把精灵球都用光了。\p"
+    .string "所以你需要常备\n"
+    .string "一些精灵球在身边。$"
 
 ViridianForest_Text_AvoidGrassyAreasWhenWeak::
-	.string "TRAINER TIPS\p"
-	.string "If your POKéMON are weak and you\n"
-	.string "want to avoid battles, stay away\l"
-	.string "from grassy areas!$"
+    .string "训练家贴士\p"
+    .string "如果你的宝可梦很虚弱，\n"
+    .string "而且你不想进行无谓的战斗的话，\l"
+    .string "那么就避开草地吧！$"
 
 ViridianForest_Text_UseAntidoteForPoison::
-	.string "For poison, use ANTIDOTE!\n"
-	.string "Get it at POKéMON MARTS!$"
+    .string "如果中毒了，就用解毒药！\n"
+    .string "你可以在宝可梦商店里买到！$"
 
 ViridianForest_Text_ContactOakViaPCToRatePokedex::
-	.string "TRAINER TIPS\p"
-	.string "Contact PROF. OAK via a PC to\n"
-	.string "get your POKéDEX evaluated!$"
+    .string "训练家贴士\p"
+    .string "通过电脑联系大木博士，\n"
+    .string "让他给你的宝可梦图鉴做个评价！$"
 
 ViridianForest_Text_CantCatchOwnedMons::
-	.string "TRAINER TIPS\p"
-	.string "You can't catch a POKéMON that\n"
-	.string "belongs to someone else.\p"
-	.string "Throw POKé BALLS only at wild\n"
-	.string "POKéMON to catch them!$"
+    .string "训练家贴士\p"
+    .string "你不可以收服\n"
+    .string "别人的宝可梦。\p"
+    .string "只有对野生的宝可梦\n"
+    .string "才能用精灵球收服！$"
 
 ViridianForest_Text_WeakenMonsBeforeCapture::
-	.string "TRAINER TIPS\p"
-	.string "Weaken POKéMON before attempting\n"
-	.string "capture!\p"
-	.string "When healthy, they may escape!$"
+    .string "训练家贴士\p"
+    .string "在收服宝可梦之前\n"
+    .string "先削弱它们的体力！\p"
+    .string "它们精力充沛时可能会逃跑！$"
 
 ViridianForest_Text_LeavingViridianForest::
-	.string "LEAVING VIRIDIAN FOREST\n"
-	.string "PEWTER CITY AHEAD$"
+    .string "走出常青森林后\n"
+    .string "深灰市就在前面$"
 

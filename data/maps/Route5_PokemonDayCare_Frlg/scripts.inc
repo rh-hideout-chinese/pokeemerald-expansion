@@ -4,65 +4,65 @@ Route5_PokemonDayCare_Frlg_MapScripts::
 	.byte 0
 
 Route5_PokemonDayCare_Text_WantMeToRaiseMon::
-	.string "I run the DAY-CARE service.\p"
-	.string "Would you like me to raise one of\n"
-	.string "your POKéMON?$"
+	.string "我开着这家培育屋。\p"
+	.string "你需要寄养一只\n"
+	.string "你的宝可梦吗？$"
 
 Route5_PokemonDayCare_Text_ComeAgain::
-	.string "Come again.$"
+	.string "欢迎再来。$"
 
 Route5_PokemonDayCare_Text_WhichMonShouldIRaise::
-	.string "Which POKéMON should I raise?$"
+	.string "你要寄养哪只宝可梦？$"
 
 Route5_PokemonDayCare_Text_ComeAnytimeYouLike::
-	.string "Fine.\n"
-	.string "Come anytime you like.$"
+	.string "好的。\n"
+	.string "随时欢迎你再来。$"
 
 Route5_PokemonDayCare_Text_LookAfterMonForAWhile::
-	.string "Fine, I'll look after your\n"
-	.string "{STR_VAR_1} for a while.$"
+	.string "好的，我会照顾你的\n"
+	.string "{STR_VAR_1}一段时间。$"
 
 Route5_PokemonDayCare_Text_ComeSeeMeInAWhile::
-	.string "Come see me in a while.$"
+	.string "过一会儿来见我。$"
 
 Route5_PokemonDayCare_Text_MonNeedsToSpendMoreTime::
-	.string "You're back already?\p"
-	.string "Your {STR_VAR_1} needs to spend\n"
-	.string "some more time with me.$"
+	.string "你回来的这么快？\p"
+	.string "你的{STR_VAR_1}需要和我\n"
+	.string "多呆一会儿。$"
 
 Route5_PokemonDayCare_Text_OweMeXForMonsReturn::
-	.string "You owe me ¥{STR_VAR_2} for the return\n"
-	.string "of this POKéMON.$"
+	.string "想要取回这只宝可梦的话\n"
+	.string "需要支付我{STR_VAR_2}元$"
 
 Route5_PokemonDayCare_Text_ThankYouHeresMon::
-	.string "Thank you!\n"
-	.string "Here's your POKéMON.$"
+	.string "谢谢。\n"
+	.string "这是你的宝可梦。$"
 
 Route5_PokemonDayCare_Text_PlayerGotMonBack::
-	.string "{PLAYER} got {STR_VAR_1} back\n"
-	.string "from the DAY-CARE MAN.$"
+	.string "{PLAYER}从培育屋爷爷那儿 \n"
+	.string "取回了{STR_VAR_1}。$"
 
 Route5_PokemonDayCare_Text_OnlyHaveOneMonWithYou::
-	.string "Oh? You only have one POKéMON\n"
-	.string "with you.$"
+	.string "哦？你的身上只有\n"
+	.string "一只宝可梦了。$"
 
 Route5_PokemonDayCare_Text_WhatWillYouBattleWith::
-	.string "If you leave me that POKéMON,\n"
-	.string "what will you battle with?$"
+	.string "如果你把那只宝可梦存到我这里，\n"
+	.string "你用什么来战斗呢？$"
 
 Route5_PokemonDayCare_Text_MonHasGrownByXLevels::
-	.string "Your {STR_VAR_1} has grown a lot.\n"
-	.string "Yes, quite a lot, I'd say.\p"
-	.string "Let me see…\n"
-	.string "By level, it's grown by {STR_VAR_2}.\p"
-	.string "Aren't I great?$"
+	.string "你的{STR_VAR_1}成长了很多。\n"
+	.string "嗯，说实话，真的很多。\p"
+	.string "我看看……\n"
+	.string "它的等级已经上升了{STR_VAR_2}。\p"
+	.string "是不是很棒啊？$"
 
 Route5_PokemonDayCare_Text_YouveGotNoRoomForIt::
-	.string "You can't take this POKéMON back\n"
-	.string "if you've got no room for it.$"
+	.string "你的身上已经没有足够的空间，\n"
+	.string "所以你不能把这只宝可梦取回。$"
 
 Route5_PokemonDayCare_Text_DontHaveEnoughMoney::
-	.string "You don't have enough money.$"
+	.string "你的钱不够。$"
 
 Route5_PokemonDayCare_Text_WantMeToTakeALookAtYours::
 	.string "きみの\n"

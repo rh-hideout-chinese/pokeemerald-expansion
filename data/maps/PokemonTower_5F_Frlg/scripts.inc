@@ -42,53 +42,52 @@ PokemonTower_5F_EventScript_Janae::
 	end
 
 PokemonTower_5F_Text_RestHereInPurifiedSpace::
-	.string "Come, child!\n"
-	.string "I have purified this space.\l"
-	.string "You can rest here.$"
+    .string "过来，孩子！\n"
+    .string "我已经净化了这里！\l"
+    .string "在这里回复体力吧。$"
 
 PokemonTower_5F_Text_TammyIntro::
-	.string "Give…me…\n"
-	.string "your…all…$"
+    .string "给……我……\n"
+    .string "你的……全部……$"
 
 PokemonTower_5F_Text_TammyDefeat::
-	.string "Gasp!$"
+    .string "呼！$"
 
 PokemonTower_5F_Text_TammyPostBattle::
-	.string "I was under possession.$"
+    .string "我被控制了。$"
 
 PokemonTower_5F_Text_RuthIntro::
-	.string "You…shall…\n"
-	.string "join…us…$"
+    .string "你……应该……\n"
+    .string "加入……我们……$"
 
 PokemonTower_5F_Text_RuthDefeat::
-	.string "What a nightmare!$"
+    .string "真是一场恶梦！$"
 
 PokemonTower_5F_Text_RuthPostBattle::
-	.string "I was possessed.$"
+    .string "我有些失态了。$"
 
 PokemonTower_5F_Text_KarinaIntro::
-	.string "Zombies!$"
+    .string "僵尸！$"
 
 PokemonTower_5F_Text_KarinaDefeat::
-	.string "Ha?$"
+    .string "哈？$"
 
 PokemonTower_5F_Text_KarinaPostBattle::
-	.string "I regained my senses.$"
+    .string "我恢复了理智。$"
 
 PokemonTower_5F_Text_JanaeIntro::
-	.string "Urgah…\n"
-	.string "Urff…$"
+    .string "恩……\n"
+    .string "啊……$"
 
 PokemonTower_5F_Text_JanaeDefeat::
-	.string "Whoo!$"
+    .string "哇！$"
 
 PokemonTower_5F_Text_JanaePostBattle::
-	.string "I fell to evil spirits despite my\n"
-	.string "training in the mountains…$"
+    .string "尽管我在山上不断地修行\n"
+    .string "却还是堕入了邪念……$"
 
 PokemonTower_5F_Text_PurifiedZoneMonsFullyHealed::
-	.string "Entered the purified and protected\n"
-	.string "zone.\p"
-	.string "{PLAYER}'s POKéMON were fully\n"
-	.string "healed.$"
+    .string "进入了净化和被保护的区域。\p"
+    .string "{PLAYER}的宝可梦\n"
+    .string "全都恢复了体力。$"
 

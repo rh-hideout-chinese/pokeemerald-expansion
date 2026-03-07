@@ -166,67 +166,64 @@ PalletTown_RivalsHouse_EventScript_Picture::
 	end
 
 PalletTown_RivalsHouse_Text_HiBrothersAtLab::
-	.string "DAISY: Hi, {PLAYER}!\p"
-	.string "My brother, {RIVAL}, is out at\n"
-	.string "Grandpa's LAB.$"
+    .string "奈奈美：嗨，{PLAYER}！\p"
+    .string "{RIVAL}是我的弟弟，\n"
+    .string "他在爷爷的研究所里。$"
 
 PalletTown_RivalsHouse_Text_HeardYouBattledRival::
-	.string "DAISY: {PLAYER}, I heard you had\n"
-	.string "a battle against {RIVAL}.\p"
-	.string "I wish I'd seen that!$"
+    .string "奈奈美：{PLAYER}，我听说\n"
+    .string "你和{RIVAL}进行了一场战斗。\p"
+    .string "我真想看啊！$"
 
 PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp::
-	.string "Grandpa asked you to run an\n"
-	.string "errand?\p"
-	.string "Gee, that's lazy of him.\n"
-	.string "Here, this will help you.$"
+    .string "爷爷要你帮他跑趟腿？\p"
+    .string "噢，他可真懒。\n"
+    .string "给你，这个会帮到你的。$"
 
 PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
-	.string "{PLAYER} received a TOWN MAP\n"
-	.string "from DAISY.$"
+    .string "{PLAYER}从奈奈美那儿得到了城镇地图。$"
 
 PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
-	.string "You don't have space for this in\n"
-	.string "your BAG.$"
+    .string "你背包里没有空间装这个了。$"
 
 PalletTown_RivalsHouse_Text_ExplainTownMap::
-	.string "You can use the TOWN MAP to find\n"
-	.string "out where you are, or check the\l"
-	.string "names of places.$"
+    .string "你可以用城镇地图确认你的方位，\n"
+    .string "或者查看\l"
+    .string "那些地区的名字。$"
 
 PalletTown_RivalsHouse_Text_PleaseGiveMonsRest::
-	.string "DAISY: Just like people, POKéMON\n"
-	.string "are living things.\p"
-	.string "When they get tired, please give\n"
-	.string "them a rest.$"
+    .string "奈奈美：和人一样，宝可梦\n"
+    .string "是活生生的生物。\p"
+    .string "当他们疲倦的时候，\n"
+    .string "请让它们休息一下。$"
 
 PalletTown_RivalsHouse_Text_ItsBigMapOfKanto::
-	.string "It's a big map of the KANTO region.\n"
-	.string "Now this would be useful!$"
+    .string "这是关都地区的一个大地图。\n"
+    .string "它肯定会很有用的！$"
 
 PalletTown_RivalsHouse_Text_ShelvesCrammedFullOfBooks::
-	.string "The shelves are crammed full of\n"
-	.string "books on POKéMON.$"
+    .string "书架子上摆满了\n"
+    .string "关于宝可梦的读物。$"
 
 PalletTown_RivalsHouse_Text_LikeMeToGroomMon::
-	.string "DAISY: Hi, {PLAYER}!\n"
-	.string "Good timing.\p"
-	.string "I'm about to have some tea.\n"
-	.string "Would you like to join me?\p"
-	.string "Oh, but look.\n"
-	.string "Your POKéMON are a little dirty.\p"
-	.string "Would you like me to groom one?$"
+    .string "奈奈美：嗨，{PLAYER}！\n"
+    .string "来得正好。\p"
+    .string "我正打算喝点茶。\n"
+    .string "要不要来点儿？\p"
+    .string "噢，你看看。\n"
+    .string "你的宝可梦有一点脏了。\p"
+    .string "你想让我帮它们梳理一下毛发吗？$"
 
 PalletTown_RivalsHouse_Text_DontNeedAnyGrooming::
-	.string "You don't need any grooming done?\n"
-	.string "Okay, we'll just have tea.$"
+    .string "你不需要我帮忙梳理它们？\n"
+    .string "好吧，我们喝茶吧。$"
 
 PalletTown_RivalsHouse_Text_GroomWhichOne::
-	.string "Which one should I groom?$"
+    .string "需要我梳理哪一只的毛发？$"
 
 PalletTown_RivalsHouse_Text_LookingNiceInNoTime::
-	.string "DAISY: Okay, I'll get it looking\n"
-	.string "nice in no time.$"
+    .string "奈奈美：好的，\n"
+    .string "我马上让它变得漂亮。$"
 
 PalletTown_RivalsHouse_Text_ThereYouGoAllDone::
 #ifdef BUGFIX @ The localizers missed what should be a textcolor change in the localizations.
@@ -241,53 +238,48 @@ PalletTown_RivalsHouse_Text_ThereYouGoAllDone::
 	.string "It's such a cute POKéMON.$"
 
 PalletTown_RivalsHouse_Text_CantGroomAnEgg::
-	.string "Oh, sorry. I honestly can't\n"
-	.string "groom an EGG.$"
+    .string "噢，对不起。我真的\n"
+    .string "不能梳理一个蛋。$"
 
 PalletTown_RivalsHouse_Text_MayISeeFirstMon::
-	.string "DAISY: Your POKéMON grow to love\n"
-	.string "you if you raise them with love.\p"
-	.string "For example, {PLAYER}, may I see\n"
-	.string "your first POKéMON?$"
+    .string "奈奈美：如果你用爱培育你的的宝可梦，\n"
+    .string "它们会和你很亲近。\p"
+    .string "比如说，{PLAYER}，\n"
+    .string "我能看看你的第一只宝可梦吗？$"
 
 PalletTown_RivalsHouse_Text_CouldntLoveYouMore::
-	.string "It couldn't possibly love you\n"
-	.string "any more than it does now.\p"
-	.string "Your POKéMON is happy beyond\n"
-	.string "words.$"
+    .string "它非常非常喜欢你。\p"
+    .string "你的宝可梦高兴得无法形容了。$"
 
 PalletTown_RivalsHouse_Text_ItLooksVeryHappy::
-	.string "It looks very happy.\p"
-	.string "I wish {RIVAL} could see this and\n"
-	.string "learn something from it.$"
+    .string "它看起来很高兴。\p"
+    .string "我希望{RIVAL}也能看见这一幕，\n"
+    .string "然后从中学到些什么。$"
 
 PalletTown_RivalsHouse_Text_ItsQuiteFriendly::
-	.string "It's quite friendly with you.\n"
-	.string "Keep being good to it!$"
+    .string "它对你很友好。\n"
+    .string "继续好好地照顾它！$"
 
 PalletTown_RivalsHouse_Text_ItsWarmingUpToYou::
-	.string "It's warming up to you.\n"
-	.string "Trust must be growing between you.$"
+    .string "它正在跟你建立感情。\n"
+    .string "你们之间必须建立信任。$"
 
 PalletTown_RivalsHouse_Text_NotFamiliarWithYouYet::
-	.string "It's not quite familiar with you\n"
-	.string "yet.\p"
-	.string "POKéMON are all quite wary when\n"
-	.string "you first get them.$"
+    .string "它和你不是很亲密。\p"
+    .string "当你第一次得到宝可梦时，\n"
+    .string "它们通常都很警惕。$"
 
 PalletTown_RivalsHouse_Text_DontLikeWayItGlaresAtYou::
-	.string "{PLAYER}, I don't like the way it\n"
-	.string "glares at you.\p"
-	.string "Could you try being a little nicer\n"
-	.string "to it?$"
+    .string "{PLAYER}，我不喜欢它看你时\n"
+    .string "愤怒的目光。\p"
+    .string "你能对它稍微好一点吗？$"
 
 PalletTown_RivalsHouse_Text_WhyWouldMonHateYouSoMuch::
-	.string "…Um, it's not easy for me to say\n"
-	.string "this, but…\p"
-	.string "Is there some reason why your\n"
-	.string "POKéMON would hate you so much?$"
+    .string "……唔，我不好说什么，\n"
+    .string "但是……\p"
+    .string "宝可梦如此的憎恨你，\n"
+    .string "是不是有什么原因？$"
 
 PalletTown_RivalsHouse_Text_LovelyAndSweetClefairy::
-	.string "“The lovely and sweet\n"
-	.string "CLEFAIRY”$"
+    .string "“可爱又甜蜜的皮皮”$"
 

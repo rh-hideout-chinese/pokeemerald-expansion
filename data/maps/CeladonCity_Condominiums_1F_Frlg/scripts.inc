@@ -62,39 +62,36 @@ CeladonCity_Condominiums_1F_EventScript_SuiteSign::
 	end
 
 CeladonCity_Condominiums_1F_Text_Meowth::
-	.string "MEOWTH: Meow!$"
+    .string "喵喵：喵！$"
 
 CeladonCity_Condominiums_1F_Text_TryThisDrinkInstead::
-	.string "You shouldn't spend all your money\n"
-	.string "on drinks.\p"
-	.string "Try this instead.$"
+    .string "你不该把钱都花在饮料上。\p"
+    .string "试试这个。$"
 
 CeladonCity_Condominiums_1F_Text_NothingBeatsThirstLikeTea::
-	.string "Nothing beats thirst like some hot\n"
-	.string "TEA.\p"
-	.string "It really is the best.$"
+    .string "没有什么能比热茶更解渴了。\p"
+    .string "茶是最好的饮品。$"
 
 CeladonCity_Condominiums_1F_Text_MyDearMonsKeepMeCompany::
-	.string "My dear POKéMON keep me company.\n"
-	.string "MEOWTH even brings money home!$"
+    .string "我亲爱的宝可梦一直陪伴着我。\n"
+    .string "喵喵还会拾钱回来呢！$"
 
 CeladonCity_Condominiums_1F_Text_DaisyComesToBuyTea::
-	.string "Oh, hello, dearie.\n"
-	.string "Did you enjoy my TEA?\p"
-	.string "By the way, dear. Are you, by any\n"
-	.string "chance, from PALLET TOWN?\p"
-	.string "A girl from PALLET TOWN, DAISY,\n"
-	.string "she enjoys TEA every day.\p"
-	.string "She visits the CELADON DEPT. STORE\n"
-	.string "to buy some TEA.$"
+    .string "你好哦，甜心。\n"
+    .string "我的茶好喝吗？\p"
+    .string "对了亲爱的。你是不是从\n"
+    .string "真新镇来的吗？\p"
+    .string "一个从真新镇来的小女孩，叫奈奈美，\n"
+    .string "她每天都要喝茶。\p"
+    .string "她经常去玉虹百货大楼买茶叶。$"
 
 CeladonCity_Condominiums_1F_Text_Clefairy::
-	.string "CLEFAIRY: Pi pippippi!$"
+    .string "皮皮：皮 皮皮皮！$"
 
 CeladonCity_Condominiums_1F_Text_Nidoran::
-	.string "NIDORAN♀: Kya kyaoo!$"
+    .string "尼多兰：咔 咔呜！$"
 
 CeladonCity_Condominiums_1F_Text_ManagersSuite::
-	.string "CELADON MANSION\n"
-	.string "Manager's Suite$"
+    .string "玉虹大厦\n"
+    .string "经理套间$"
 

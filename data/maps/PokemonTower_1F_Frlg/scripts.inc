@@ -37,31 +37,31 @@ PokemonTower_1F_EventScript_WorkerF::
 	end
 
 PokemonTower_1F_Text_ErectedInMemoryOfDeadMons::
-	.string "POKéMON TOWER was erected in the\n"
-	.string "memory of POKéMON that died.$"
+    .string "宝可梦塔是为了\n"
+    .string "纪念死去的宝可梦而建立的。$"
 
 PokemonTower_1F_Text_ComeToPayRespectsSon::
-	.string "Did you come to pay respects?\p"
-	.string "Bless your POKéMON-loving heart,\n"
-	.string "son.$"
+    .string "你是来这里祈福的么？\p"
+    .string "孩子，\n"
+    .string "保佑你那颗爱着宝可梦的心。$"
 
 PokemonTower_1F_Text_ComeToPayRespectsGirl::
-	.string "Did you come to pay respects?\p"
-	.string "Bless your POKéMON-loving heart,\n"
-	.string "girl.$"
+    .string "你是来这里祈福的么？\p"
+    .string "孩子，\n"
+    .string "保佑你那颗爱着宝可梦的心。$"
 
 PokemonTower_1F_Text_CameToPrayForDepartedClefairy::
-	.string "I came to pray for my dearly\n"
-	.string "departed CLEFAIRY.\p"
-	.string "Sniff!\n"
-	.string "I'm awash in tears…$"
+    .string "我来为我心爱的皮皮\n"
+    .string "的灵魂送别！\p"
+    .string "呜！\n"
+    .string "我止不住眼泪…$"
 
 PokemonTower_1F_Text_GrowlitheWhyDidYouDie::
-	.string "My GROWLITHE…\n"
-	.string "Why did you die?$"
+    .string "我的卡蒂狗…\n"
+    .string "你为什么死了？$"
 
 PokemonTower_1F_Text_SenseSpiritsUpToMischief::
-	.string "I am a CHANNELER.\p"
-	.string "There are spirits up to mischief.\n"
-	.string "I sense them high in the TOWER.$"
+    .string "我是通灵师。\p"
+    .string "有些灵魂喜欢搞恶作剧。\n"
+    .string "在塔的高层，我能感觉到它们。$"
 

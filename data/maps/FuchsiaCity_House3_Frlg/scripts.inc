@@ -54,37 +54,37 @@ FuchsiaCity_House3_EventScript_CancelForgetMove::
 	end
 
 FuchsiaCity_House3_Text_WouldYouLikeToForgetMove::
-	.string "Uh…\n"
-	.string "Oh, yes, I'm the MOVE DELETER.\p"
-	.string "I can make POKéMON forget their\n"
-	.string "moves.\p"
-	.string "Would you like me to do that?$"
+    .string "呃……我想说什么来着？\n"
+    .string "我想起来了，我就是遗忘大师。\p"
+    .string "我能让宝可梦忘记\n"
+    .string "它们学会的技能。\p"
+    .string "你需要我展示一下这门绝活吗？$"
 
 FuchsiaCity_House3_Text_WhichMonShouldForgetMove::
-	.string "Which POKéMON should forget a\n"
-	.string "move?$"
+    .string "哪一只宝可梦想要\n"
+    .string "忘记技能？$"
 
 FuchsiaCity_House3_Text_WhichMoveShouldBeForgotten::
-	.string "Which move should be forgotten?$"
+    .string "要忘记哪个技能？$"
 
 FuchsiaCity_House3_Text_MonOnlyKnowsOneMove::
-	.string "{STR_VAR_1} seems to know only one\n"
-	.string "move…$"
+    .string "{STR_VAR_1}好像只会\n"
+    .string "一个技能……$"
 
 FuchsiaCity_House3_Text_MonsMoveShouldBeForgotten::
-	.string "Hm! {STR_VAR_1}'s {STR_VAR_2}?\n"
-	.string "That move should be forgotten?$"
+    .string "嗯！{STR_VAR_1}的{STR_VAR_2}吗？\n"
+    .string "要忘记这个技能？$"
 
 FuchsiaCity_House3_Text_MonHasForgottenMoveCompletely::
-	.string "It worked to perfection!\p"
-	.string "{STR_VAR_1} has forgotten\n"
-	.string "{STR_VAR_2} completely.$"
+    .string "完美搞定！\p"
+    .string "{STR_VAR_1}已经将\n"
+    .string "{STR_VAR_2}忘得一干二净了。$"
 
 FuchsiaCity_House3_Text_ComeAgainToForgetOtherMoves::
-	.string "Come again if there are other\n"
-	.string "moves to be forgotten.$"
+    .string "如果你有别的技能想要忘记\n"
+    .string "那么欢迎再次光临。$"
 
 FuchsiaCity_House3_Text_NoEggShouldKnowMoves::
-	.string "What?\n"
-	.string "No EGG should know any moves.$"
+    .string "你在想什么？\n"
+    .string "蛋怎么可能会学技能。$"
 

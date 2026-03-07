@@ -16,10 +16,10 @@ SSAnne_1F_Room4_EventScript_WomanPlayerMale::
 	end
 
 SSAnne_1F_Room4_Text_WaiterCherryPiePlease::
-	.string "Waiter, I would like a cherry pie,\n"
-	.string "please!$"
+    .string "服务员，我想要一个樱桃派，\n"
+    .string "麻烦你了！$"
 
 SSAnne_1F_Room4_Text_WaitressCherryPiePlease::
-	.string "Waitress, I would like a cherry\n"
-	.string "pie, please!$"
+    .string "女服务员，我想要个樱桃派，\n"
+    .string "麻烦你了！$"
 

@@ -44,12 +44,12 @@ Route18_EastEntrance_2F_EventScript_AlreadyTraded::
 	end
 
 Route18_EastEntrance_2F_Text_PalletTownInWest::
-	.string "Let's see what the binoculars have\n"
-	.string "to show…\p"
-	.string "PALLET TOWN is in the west.$"
+    .string "一架望远镜……\n"
+    .string "我来看看……\p"
+    .string "真新镇在西面。$"
 
 Route18_EastEntrance_2F_Text_PeopleSwimming::
-	.string "Let's see what the binoculars have\n"
-	.string "to show…\p"
-	.string "There are people swimming.$"
+    .string "一架望远镜……\n"
+    .string "我来看看……\p"
+    .string "看到了，是一个正在游泳的人。$"
 

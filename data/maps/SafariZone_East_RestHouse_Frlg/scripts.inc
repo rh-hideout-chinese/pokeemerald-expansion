@@ -14,14 +14,14 @@ SafariZone_East_RestHouse_EventScript_BaldingMan::
 	end
 
 SafariZone_East_Text_HowManyDidYouCatch::
-	.string "How many did you catch?\n"
-	.string "I'm bushed from the effort!$"
+    .string "你抓了多少？\n"
+    .string "我干得精疲力竭了！$"
 
 SafariZone_East_Text_CaughtChanseyAllWorthwhile::
-	.string "I caught a CHANSEY!\p"
-	.string "That makes this all worthwhile.$"
+    .string "我抓住了一只吉利蛋！\p"
+    .string "一切努力都是值得的。$"
 
 SafariZone_East_Text_TiredFromAllTheFun::
-	.string "Whew!\n"
-	.string "I'm tired from all the fun!$"
+    .string "哇哇！\n"
+    .string "我终于也从兴奋中疲倦下来了！$"
 

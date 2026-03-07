@@ -33,16 +33,16 @@ VermilionCity_Mart_Items::
 	end
 
 VermilionCity_Mart_Text_TeamRocketAreWickedPeople::
-	.string "There are wicked people who will\n"
-	.string "use POKéMON for criminal acts.\p"
-	.string "TEAM ROCKET traffics in rare\n"
-	.string "POKéMON, for example.\p"
-	.string "They also abandon POKéMON that\n"
-	.string "they consider unpopular or useless.\p"
-	.string "That's the sort of horrid people\n"
-	.string "they are, TEAM ROCKET.$"
+	.string "有一些邪恶的人们\n"
+	.string "用宝可梦从事犯罪活动。\p"
+	.string "比如说，火箭队\n"
+	.string "非法交易珍贵的宝可梦。\p"
+	.string "他们也遗弃那些他们认为\n"
+	.string "不受欢迎的或没用了的宝可梦。\p"
+	.string "我说的就是火箭队，\n"
+	.string "他们真是一群可怕的人。$"
 
 VermilionCity_Mart_Text_MonsGoodOrBadDependingOnTrainer::
-	.string "I think POKéMON can be good or\n"
-	.string "bad. It depends on the TRAINER.$"
+	.string "我认为宝可梦品质是好是坏。\n"
+	.string "完全取决于它的训练家。$"
 

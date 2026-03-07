@@ -2,36 +2,35 @@ Route21_North_Frlg_MapScripts::
 	.byte 0
 
 Route21_North_Text_RonaldIntro::
-	.string "You want to know if the fish are\n"
-	.string "biting?$"
+	.string "你想不想知道这儿的鱼是否咬人？$"
 
 Route21_North_Text_RonaldDefeat::
-	.string "Dang!$"
+	.string "铛！$"
 
 Route21_North_Text_RonaldPostBattle::
-	.string "I can't catch anything good.\n"
-	.string "Not one good POKéMON to be had!$"
+	.string "我什么也捉不到。\n"
+	.string "没有一只好的宝可梦！$"
 
 Route21_North_Text_WadeIntro::
-	.string "I got a big haul!\n"
-	.string "Wanna go for it?$"
+	.string "我收服了好多好多！\n"
+	.string "你想不想要呢？$"
 
 Route21_North_Text_WadeDefeat::
-	.string "Heheh, MAGIKARP just don't make\n"
-	.string "the grade, do they?$"
+	.string "呵呵，鲤鱼王不仅仅\n"
+	.string "是以等级区分的，懂吗？$"
 
 Route21_North_Text_WadePostBattle::
-	.string "I seem to only catch MAGIKARP!$"
+	.string "我只想抓鲤鱼王！$"
 
 Route21_North_Text_SpencerIntro::
-	.string "The sea cleanses my body and soul!$"
+	.string "海洋洗涤了我的身体和灵魂！$"
 
 Route21_North_Text_SpencerDefeat::
-	.string "Ayah!$"
+	.string "妈呀！$"
 
 Route21_North_Text_SpencerPostBattle::
-	.string "The sea is great and all, but I\n"
-	.string "like the mountains, too.$"
+	.string "大海是很伟大的，能包容一切，\n"
+	.string "但是我也很喜欢山。$"
 
 @ Below is the battle text for the Cue Ball that was on Route 21 in Gen 1.
 @ This trainer wasnt used in Gen 3 so their text goes unused/untranslated

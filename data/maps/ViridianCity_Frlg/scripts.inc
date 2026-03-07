@@ -233,127 +233,121 @@ ViridianCity_EventScript_DoTutorialBattle::
 	return
 
 ViridianCity_Text_CanCarryMonsAnywhere::
-	.string "Those POKé BALLS at your waist!\n"
-	.string "You have POKéMON, don't you?\p"
-	.string "It's great that you can carry and\n"
-	.string "use POKéMON anytime, anywhere.$"
+    .string "你腰上挂着的这些精灵球！\n"
+    .string "你有宝可梦，是吧？\p"
+    .string "太棒了！无论何时何地，\n"
+    .string "你都能携带并使用宝可梦。$"
 
 ViridianCity_Text_GymClosedWonderWhoLeaderIs::
-	.string "This POKéMON GYM is always closed.\p"
-	.string "I wonder who the LEADER is?$"
+    .string "这个宝可梦道馆总是关闭着。\p"
+    .string "我很想到底知道谁是馆主？$"
 
 ViridianCity_Text_ViridiansGymLeaderReturned::
-	.string "VIRIDIAN GYM's LEADER returned!$"
+    .string "常青道馆的馆主回来了！$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
-	.string "You want to know about the two\n"
-	.string "kinds of caterpillar POKéMON?$"
+    .string "你想知道两种\n"
+    .string "虫属性宝可梦的区别吗？$"
 
 ViridianCity_Text_OhOkayThen::
-	.string "Oh, okay then!$"
+    .string "噢，好吧！$"
 
 ViridianCity_Text_ExplainCaterpieWeedle::
-	.string "CATERPIE has no poison,\n"
-	.string "but WEEDLE does.\p"
-	.string "Watch that your POKéMON aren't\n"
-	.string "stabbed by WEEDLE's POISON STING.$"
+    .string "绿毛虫没有毒，\n"
+    .string "但是独角虫有毒。\p"
+    .string "当心你的宝可梦别被独角虫的\n"
+    .string "毒针给刺中了。$"
 
 ViridianCity_Text_GrandpaHasntHadCoffeeYet::
-	.string "Oh, Grandpa!\n"
-	.string "Don't be so mean!\p"
-	.string "I'm so sorry.\n"
-	.string "He hasn't had his coffee yet.$"
+    .string "噢，爷爷！\n"
+    .string "别这么任性啊！\p"
+    .string "真的很抱歉。\n"
+    .string "他还没喝咖啡。$"
 
 ViridianCity_Text_GoShoppingInPewterOccasionally::
-	.string "I go shopping in PEWTER CITY\n"
-	.string "occasionally.\p"
-	.string "I have to take the winding trail in\n"
-	.string "VIRIDIAN FOREST when I go.$"
+    .string "我有时候会去深灰市买东西。\p"
+    .string "我每次去的时候，都必须\n"
+    .string "在常青森林中走一段蜿蜒的小路。$"
 
 ViridianCity_Text_ThisIsPrivateProperty::
-	.string "I absolutely forbid you from\n"
-	.string "going through here!\p"
-	.string "This is private property!$"
+    .string "我绝不允许你通过这里！\p"
+    .string "这里是私人领地！$"
 
 ViridianCity_Text_ShowYouHowToCatchMons::
-	.string "Well, now, I've had my coffee, and\n"
-	.string "that's what I need to get going!\p"
-	.string "Hm?\n"
-	.string "What is that red box you have?\p"
-	.string "Ah, so you're working on your\n"
-	.string "POKéDEX.\p"
-	.string "Then let me give you a word of\n"
-	.string "advice.\p"
-	.string "Whenever you catch a POKéMON,\n"
-	.string "the POKéDEX automatically updates\l"
-	.string "its data.\p"
-	.string "…You don't know how to catch\n"
-	.string "a POKéMON?\p"
-	.string "I suppose I had better show you\n"
-	.string "then!$"
+    .string "刚刚我喝过咖啡了。\n"
+    .string "喝咖啡可是我每天的必修课！\p"
+    .string "嗯？\n"
+    .string "你手上拿着的那个红色盒子是什么？\p"
+    .string "噢，你在完成你的宝可梦图鉴啊。\p"
+    .string "那么让我给你一些建议吧。\p"
+    .string "宝可梦图鉴会在\n"
+    .string "你收服到宝可梦时\l"
+    .string "自动更新数据。\p"
+    .string "……你不知道该怎么收服宝可梦？\p"
+    .string "那我想我应该教你怎么做！$"
 
 ViridianCity_Text_ThatWasEducationalTakeThis::
-	.string "There! Now tell me, that was\n"
-	.string "educational, was it not?\p"
-	.string "And here, take this, too.$"
+    .string "怎么样？\n"
+    .string "是不是受益匪浅啊？\p"
+    .string "把这个也带上吧。$"
 
 ViridianCity_Text_WatchThatToLearnBasics::
-	.string "If there's something you don't\n"
-	.string "understand, watch that.\p"
-	.string "It will teach you about the basics\n"
-	.string "of being a POKéMON TRAINER.$"
+    .string "如果有什么你不懂的，\n"
+    .string "一定要仔细看它。\p"
+    .string "它将教会你如何成为\n"
+    .string "一名合格的宝可梦训练家。$"
 
 ViridianCity_Text_WeakenMonsFirstToCatch::
-	.string "Well, now, I've had my coffee, and\n"
-	.string "that's what I need to get going!\p"
-	.string "But I made it too strong.\n"
-	.string "It gave me a headache…\p"
-	.string "Incidentally, are you filling your\n"
-	.string "POKéDEX?\p"
-	.string "At first, focus on weakening the\n"
-	.string "POKéMON before trying to catch it.$"
+    .string "我已经喝过咖啡了。\n"
+    .string "喝咖啡可是我每天的必修课！\p"
+    .string "但是我泡得太浓了。\n"
+    .string "现在我头有点痛……\p"
+    .string "顺便说一下，\n"
+    .string "你完成了你的宝可梦图鉴吗？\p"
+    .string "首先，要使宝可梦变弱，\n"
+    .string "然后才能试图抓住它。$"
 
 ViridianCity_Text_HowsTeachyTVHelping::
-	.string "Well, now, I've had my coffee, and\n"
-	.string "that's what I need to get going!\p"
-	.string "But I made it too strong.\n"
-	.string "It gave me a headache…\p"
-	.string "Incidentally, is my old TEACHY TV\n"
-	.string "helping you?$"
+    .string "我刚刚喝过咖啡了。\n"
+    .string "喝咖啡可是我每天的必修课！\p"
+    .string "但是我泡得太浓了，\n"
+    .string "喝得我头都痛了……\p"
+    .string "顺便，我那台旧的教学电视机\n"
+    .string "帮到你了吗？$"
 
 ViridianCity_Text_MyGrandsonOnTheShow::
-	.string "Wahaha!\n"
-	.string "It's my grandson on the show!\p"
-	.string "Since he's the one doing the\n"
-	.string "teaching, you're bound to learn.$"
+    .string "哇哈哈！\n"
+    .string "电视上的是我孙子！\p"
+    .string "既然是他在教的话\n"
+    .string "你就得好好学。$"
 
 ViridianCity_Text_TooBusyForTeachyTV::
-	.string "Hm… You're too busy to not even\n"
-	.string "have the time for TEACHY TV…\p"
-	.string "Time is money, and neither should\n"
-	.string "be ill spent…$"
+    .string "嗯……你忙得甚至抽不出\n"
+    .string "时间来看教学电视机了……\p"
+    .string "时间就是金钱，这两者\n"
+    .string "都不应当被虚耗……$"
 
 ViridianCity_Text_CitySign::
-	.string "VIRIDIAN CITY \n"
-	.string "The Eternally Green Paradise$"
+    .string "常青市\n"
+    .string "永远的绿色天堂$"
 
 ViridianCity_Text_CatchMonsForEasierBattles::
-	.string "TRAINER TIPS\p"
-	.string "Catch POKéMON and expand your\n"
-	.string "collection.\p"
-	.string "The more you have, the easier it\n"
-	.string "is to battle.$"
+    .string "训练家贴士\p"
+    .string "收服宝可梦\n"
+    .string "增加你的收集数。\p"
+    .string "你拥有得越多，\n"
+    .string "战斗就越轻松。$"
 
 ViridianCity_Text_MovesLimitedByPP::
-	.string "TRAINER TIPS\p"
-	.string "The battle moves of POKéMON are\n"
-	.string "limited by their POWER POINTS, PP.\p"
-	.string "To replenish PP, rest your tired\n"
-	.string "POKéMON at a POKéMON CENTER.$"
+    .string "训练家贴士\p"
+    .string "宝可梦的技能受到它们的\n"
+    .string "技能点 也就是PP值的限制。\p"
+    .string "想要回复PP的话将你疲惫的\n"
+    .string "宝可梦放到宝可梦中心休息吧。$"
 
 ViridianCity_Text_GymSign::
-	.string "VIRIDIAN CITY POKéMON GYM$"
+    .string "常青市宝可梦道馆$"
 
 ViridianCity_Text_GymDoorsAreLocked::
-	.string "VIRIDIAN GYM's doors are locked…$"
+    .string "常青道馆的门锁上了……$"
 

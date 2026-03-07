@@ -73,52 +73,51 @@ CeruleanCity_BikeShop_EventScript_Bicycle::
 	end
 
 CeruleanCity_BikeShop_Text_WelcomeToBikeShop::
-	.string "Hi!\n"
-	.string "Welcome to our BIKE SHOP.\p"
-	.string "Have we got just the BIKE for\n"
-	.string "you!$"
+    .string "嗨！\n"
+    .string "欢迎来到我们的自行车行。\p"
+    .string "我们已经为你挑选了这个自行车！$"
 
 CeruleanCity_BikeShop_Text_SorryYouCantAffordIt::
-	.string "Sorry!\n"
-	.string "You can't afford it!$"
+    .string "对不起！\n"
+    .string "你付不起这个钱啊！$"
 
 CeruleanCity_BikeShop_Text_OhBikeVoucherHereYouGo::
-	.string "Oh, that's…\p"
-	.string "A BIKE VOUCHER!\p"
-	.string "Okay!\n"
-	.string "Here you go!$"
+    .string "哦，那是……\p"
+    .string "一张自行车兑换券！\p"
+    .string "好的！\n"
+    .string "给你！$"
 
 CeruleanCity_BikeShop_Text_ExchangedVoucherForBicycle::
-	.string "{PLAYER} exchanged the\n"
-	.string "BIKE VOUCHER for a BICYCLE.$"
+    .string "{PLAYER}用自行车兑换券\n"
+    .string "兑换了一辆自行车。$"
 
 CeruleanCity_BikeShop_Text_ThankYouComeAgain::
-	.string "Thank you!\n"
-	.string "Come back again sometime!$"
+    .string "谢谢！\n"
+    .string "欢迎下次光临！$"
 
 CeruleanCity_BikeShop_Text_HowDoYouLikeNewBicycle::
-	.string "How do you like your new BICYCLE?\n"
-	.string "Do you like how it rides?\p"
-	.string "You can take it out on CYCLING\n"
-	.string "ROAD and even into caves!$"
+    .string "你喜欢你的新自行车吗？\n"
+    .string "你喜欢这样骑着它吗？\p"
+    .string "你可以在单车路\n"
+    .string "甚至在洞穴里骑着它！$"
 
 CeruleanCity_BikeShop_Text_MakeRoomForBicycle::
-	.string "You better make room for your\n"
-	.string "BICYCLE!$"
+    .string "你最好留出空间\n"
+    .string "来装你的自行车！$"
 
 CeruleanCity_BikeShop_Text_CityBikeGoodEnoughForMe::
-	.string "A plain city bike is good enough\n"
-	.string "for me.\p"
-	.string "After all, you can't put a shopping\n"
-	.string "basket on a mountain bike.$"
+    .string "一辆普通的城市自行车\n"
+    .string "对我来说足够了。\p"
+    .string "毕竟，你无法把一个购物篮\n"
+    .string "挂在一辆山地车上。$"
 
 CeruleanCity_BikeShop_Text_BikesCoolButExpensive::
-	.string "These bikes are cool, but they're\n"
-	.string "way expensive!$"
+    .string "这些自行车太酷了，\n"
+    .string "但是它们都很贵！$"
 
 CeruleanCity_BikeShop_Text_WowYourBikeIsCool::
-	.string "Wow.\n"
-	.string "Your BIKE is really cool!$"
+    .string "哇。\n"
+    .string "你的自行车真的很帅！$"
 
 @ Unused
 CeruleanCity_BikeShop_Text_GermanFoldableBicyleFinallyOnMarket::
@@ -127,5 +126,5 @@ CeruleanCity_BikeShop_Text_GermanFoldableBicyleFinallyOnMarket::
 	.string "おりたたみ　じてんしゃ！$"
 
 CeruleanCity_BikeShop_Text_ShinyNewBicycle::
-	.string "A shiny new BICYCLE!$"
+    .string "一辆闪亮的新自行车！$"
 

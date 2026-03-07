@@ -2,54 +2,49 @@ SevenIsland_TanobyRuins_Frlg_MapScripts::
 	.byte 0
 
 SevenIsland_TanobyRuins_Text_BrandonIntro::
-	.string "Do you know anything about this\n"
-	.string "stone chamber?$"
+    .string "你知道关于这个\n"
+    .string "石头房间的事吗？$"
 
 SevenIsland_TanobyRuins_Text_BrandonDefeat::
-	.string "That was uncalled for.\n"
-	.string "You didn't have to be so rough.$"
+    .string "那是多余的。\n"
+    .string "你不用这么粗鲁。$"
 
 SevenIsland_TanobyRuins_Text_BrandonPostBattle::
-	.string "The TANOBY RUINS date back at\n"
-	.string "least 1,500 years.\p"
-	.string "But it's a baffling mystery as to\n"
-	.string "why it was built in the first place.$"
+    .string "阿斯卡纳遗迹可以追溯到1500年以前。\p"
+    .string "但是它为什么会被建造出来\n"
+    .string "仍然是一个谜。$"
 
 SevenIsland_TanobyRuins_Text_BenjaminIntro::
-	.string "A mystic POKéMON is said to sleep\n"
-	.string "inside here.$"
+    .string "据说有一只神秘的宝可梦\n"
+    .string "在里面沉睡。$"
 
 SevenIsland_TanobyRuins_Text_BenjaminDefeat::
-	.string "I'm not much good in battle.$"
+    .string "我不是很擅长战斗。$"
 
 SevenIsland_TanobyRuins_Text_BenjaminPostBattle::
-	.string "I hear there are other ruins like\n"
-	.string "the one here.\p"
-	.string "Might they be the resting places\n"
-	.string "of other mystic POKéMON?$"
+    .string "我听说这儿还有一些\n"
+    .string "其他的遗址。\p"
+    .string "也许它们是另一些神秘的\n"
+    .string "宝可梦的长眠之地？$"
 
 SevenIsland_TanobyRuins_Text_EdnaIntro::
-	.string "CLIFFORD is teaching me how to\n"
-	.string "paint.$"
+    .string "阿棕正在教我如何画画。$"
 
 SevenIsland_TanobyRuins_Text_EdnaDefeat::
-	.string "We might get in trouble for being\n"
-	.string "noisy here.$"
+    .string "如果我们在这儿吵吵闹闹的，\n"
+    .string "可能会陷入麻烦之中。$"
 
 SevenIsland_TanobyRuins_Text_EdnaPostBattle::
-	.string "I said that I wanted to paint an\n"
-	.string "old building.\p"
-	.string "So CLIFFORD brought me here.$"
+    .string "我说我想画一个古老的建筑。\p"
+    .string "所以阿棕就把我带到这儿来了。$"
 
 SevenIsland_TanobyRuins_Text_CliffordIntro::
-	.string "Today, in addition to our lesson,\n"
-	.string "we came to see the chamber.$"
+    .string "今天，除了我们的课程之外，\n"
+    .string "我们还要去看看那个石室。$"
 
 SevenIsland_TanobyRuins_Text_CliffordDefeat::
-	.string "My, how extraordinary.$"
+    .string "天啊，多么特别啊！$"
 
 SevenIsland_TanobyRuins_Text_CliffordPostBattle::
-	.string "Ah, so you are studying POKéMON\n"
-	.string "on your own…\p"
-	.string "Yes, you certainly are quite the\n"
-	.string "extraordinary person, indeed.$"
+    .string "啊，你是在自己学习宝可梦……\p"
+    .string "没错，你确实也是个特别的人。$"

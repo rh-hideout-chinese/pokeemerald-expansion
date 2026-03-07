@@ -30,35 +30,35 @@ PokemonMansion_2F_EventScript_Arnie::
 	end
 
 PokemonMansion_Text_PressSecretSwitch::
-	.string "A secret switch!\p"
-	.string "Press it?$"
+    .string "一个秘密的开关！\p"
+    .string "要按下它吗？$"
 
 PokemonMansion_Text_WhoWouldnt::
-	.string "Who wouldn't?$"
+    .string "谁不愿意？$"
 
 PokemonMansion_Text_NotQuiteYet::
-	.string "Not quite yet!$"
+    .string "还没到时候呢！$"
 
 PokemonMansion_1F_Text_ArnieIntro::
-	.string "I can't get out!\n"
-	.string "This old place is one big puzzle.$"
+    .string "我出不去！\n"
+    .string "这个古老的地方是一个巨大的迷宫。$"
 
 PokemonMansion_1F_Text_ArnieDefeat::
-	.string "Oh, no!\n"
-	.string "My bag of loot!$"
+    .string "不！！\n"
+    .string "这是我的战利品！$"
 
 PokemonMansion_1F_Text_ArniePostBattle::
-	.string "The switches here open and close\n"
-	.string "alternating sets of doors.$"
+    .string "拨动这里的开关可以切换门\n"
+    .string "的开关状态。$"
 
 PokemonMansion_1F_Text_NewMonDiscoveredInGuyanaJungle::
-	.string "Diary: July 5\n"
-	.string "Guyana, South America\p"
-	.string "A new POKéMON was discovered deep\n"
-	.string "in the jungle.$"
+    .string "日记：7月5日\n"
+    .string "圭亚那，南美洲\p"
+    .string "在丛林深处发现了\n"
+    .string "一只新的宝可梦。$"
 
 PokemonMansion_1F_Text_ChristenedDiscoveredMonMew::
-	.string "Diary: July 10\n"
-	.string "We christened the newly discovered\l"
-	.string "POKéMON, MEW.$"
+    .string "日记：7月10日\n"
+    .string "我们把新发现的\l"
+    .string "宝可梦称为梦幻。$"
 

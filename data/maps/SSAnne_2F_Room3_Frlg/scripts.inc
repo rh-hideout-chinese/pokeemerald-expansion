@@ -10,14 +10,14 @@ SSAnne_2F_Room3_EventScript_OldMan::
 	end
 
 SSAnne_2F_Room3_Text_SeenMonsFerryPeople::
-	.string "Ah, yes, I have seen some POKéMON\n"
-	.string "ferry people across the water!$"
+    .string "噢，没错，我见过一些宝可梦\n"
+    .string "载着人在水上穿梭！$"
 
 SSAnne_2F_Room3_Text_SomeTreesCanBeCutDown::
-	.string "Small trees can be chopped down\n"
-	.string "using the move CUT.\p"
-	.string "But remember this!\n"
-	.string "CUT is an HM technique.\p"
-	.string "Once learned, it is not so easily\n"
-	.string "discarded.$"
+    .string "小树可以用\n"
+    .string "居合斩砍倒。\p"
+    .string "但记住！\n"
+    .string "居合斩是一个秘传机的技巧。\p"
+    .string "一旦学会，\n"
+    .string "它是不能轻易被遗忘的。$"
 

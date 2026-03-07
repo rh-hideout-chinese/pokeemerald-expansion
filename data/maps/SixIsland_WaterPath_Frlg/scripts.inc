@@ -10,104 +10,101 @@ SixIsland_WaterPath_EventScript_RouteSign::
 	end
 
 SixIsland_WaterPath_Text_RoseIntro::
-	.string "I let a pleasant breeze lead me\n"
-	.string "all the way here.$"
+    .string "我被一阵令人愉快的微风\n"
+    .string "一路带到了这儿。$"
 
 SixIsland_WaterPath_Text_RoseDefeat::
-	.string "Giggle… You're so cute when you're\n"
-	.string "determined.$"
+    .string "呵呵……你做决定时的样子\n"
+    .string "真是可爱。$"
 
 SixIsland_WaterPath_Text_RosePostBattle::
-	.string "I want to go to the woods over\n"
-	.string "there, but…\p"
-	.string "There are lots of BUG POKéMON.\n"
-	.string "They scare me a little.$"
+    .string "我想去那边的森林，\n"
+    .string "但是……\p"
+    .string "那儿有许多虫属性宝可梦。\n"
+    .string "我有点儿害怕。$"
 
 SixIsland_WaterPath_Text_EdwardIntro::
-	.string "I'm practicing in secret so no one\n"
-	.string "can see me.$"
+    .string "我正在秘密地练习，\n"
+    .string "所以没有人能看见我。$"
 
 SixIsland_WaterPath_Text_EdwardDefeat::
-	.string "Nobody saw me losing, right?$"
+    .string "没有人看见我输了，对吧？$"
 
 SixIsland_WaterPath_Text_EdwardPostBattle::
-	.string "As a performer, I don't want people\n"
-	.string "to know about the effort I put in.$"
+    .string "最为一个演员，\n"
+    .string "我不想让人知道我付出的努力。$"
 
 SixIsland_WaterPath_Text_SamirIntro::
-	.string "What, you're suggesting that you're\n"
-	.string "sick of seeing SWIMMERS like me?\p"
-	.string "Aww, don't be hatin'!$"
+    .string "什么，你的意思是你讨厌\n"
+    .string "看到像我这样的游泳的人？\p"
+    .string "啊，不要这样！$"
 
 SixIsland_WaterPath_Text_SamirDefeat::
-	.string "Oh, no, no, no.$"
+    .string "噢，不，别这样。$"
 
 SixIsland_WaterPath_Text_SamirPostBattle::
-	.string "I couldn't lift the stigma of being\n"
-	.string "a SWIMMER…$"
+    .string "我无法消除一个游泳的人\n"
+    .string "的耻辱……$"
 
 SixIsland_WaterPath_Text_DeniseIntro::
-	.string "My boyfriend's always busy, so I\n"
-	.string "come swimming by myself.$"
+    .string "我男朋友总是很忙，\n"
+    .string "所以我自己出来游泳了。$"
 
 SixIsland_WaterPath_Text_DeniseDefeat::
-	.string "Awww, I knew this would happen!$"
+    .string "啊，我就知道会是这样！$"
 
 SixIsland_WaterPath_Text_DenisePostBattle::
-	.string "When I can't be with my boyfriend,\n"
-	.string "I spend time with the POKéMON he\l"
-	.string "gave me.$"
+    .string "当我不能和我男朋友在一起时，\n"
+    .string "我就和他给我的宝可梦\l"
+    .string "一起度过一个人的时光。$"
 
 SixIsland_WaterPath_Text_EarlIntro::
-	.string "Tell me, where are the mountains\n"
-	.string "around these parts?$"
+    .string "告诉我，这周围哪里有山？$"
 
 SixIsland_WaterPath_Text_EarlDefeat::
-	.string "I lost my way while I was busy\n"
-	.string "battling!$"
+    .string "当我忙于战斗时，\n"
+    .string "我迷路了！$"
 
 SixIsland_WaterPath_Text_EarlPostBattle::
-	.string "Aren't there any mountains around\n"
-	.string "these parts?$"
+    .string "这周围没有山吗？$"
 
 SixIsland_WaterPath_Text_MiuIntro::
-	.string "MIU: Hello, POKéMON!\n"
-	.string "It's time to play!$"
+    .string "美羽：你好，宝可梦！\n"
+    .string "下面是战斗的时间！$"
 
 SixIsland_WaterPath_Text_MiuDefeat::
-	.string "MIU: Oh, no!\n"
-	.string "Mommy!$"
+    .string "美羽：噢，不！\n"
+    .string "妈妈！$"
 
 SixIsland_WaterPath_Text_MiuPostBattle::
-	.string "MIU: It makes me all sad inside\n"
-	.string "when we lose…$"
+    .string "美羽：当我们输的时候\n"
+    .string "我从心底里感到悲伤……$"
 
 SixIsland_WaterPath_Text_MiuNotEnoughMons::
-	.string "MIU: MIA and I are TWINS.\n"
-	.string "We want to battle together.$"
+    .string "美羽：美绪和我是双胞胎。\n"
+    .string "我们想要一起战斗。$"
 
 SixIsland_WaterPath_Text_MiaIntro::
-	.string "MIA: Hello, POKéMON!\n"
-	.string "It's time to battle!$"
+    .string "美绪：你好，宝可梦！\n"
+    .string "下面是战斗时间！$"
 
 SixIsland_WaterPath_Text_MiaDefeat::
-	.string "MIA: You're mean!\n"
-	.string "You're bad for winning!$"
+    .string "美绪：你太狠了！\n"
+    .string "你是坏人，你赢了！$"
 
 SixIsland_WaterPath_Text_MiaPostBattle::
-	.string "MIA: Ohh…\n"
-	.string "I'm sorry, my POKéMON…$"
+    .string "美绪：噢……\n"
+    .string "对不起，我的宝可梦……$"
 
 SixIsland_WaterPath_Text_MiaNotEnoughMons::
-	.string "MIA: Oh, you only have one\n"
-	.string "POKéMON?\p"
-	.string "Don't you feel lonesome?$"
+    .string "美绪：你只有一只宝可梦？\p"
+    .string "你不觉得孤单吗？$"
 
 SixIsland_WaterPath_Text_WantedUltimateHorn::
-	.string "Wanted!\n"
-	.string "The Ultimate Horn!$"
+    .string "通缉！\n"
+    .string "最后的警报！$"
 
 SixIsland_WaterPath_Text_RouteSign::
-	.string "WATER PATH\n"
-	.string "Leads to RUIN VALLEY$"
+    .string "水之步道\n"
+    .string "通往遗迹山谷$"
 

@@ -62,18 +62,15 @@ FiveIsland_LostCave_Room10_Movement_SelphyApproach::
 	step_end
 
 FiveIsland_LostCave_Room10_Text_SelphyIntro::
-	.string "W-what do you intend to do with\n"
-	.string "me?$"
+    .string "你，你打算对我做什么？$"
 
 FiveIsland_LostCave_Room10_Text_SelphyDefeat::
-	.string "Oh… I was afraid that you meant to\n"
-	.string "harm me.$"
+    .string "噢……我好害怕，\n"
+    .string "还以为你要来侵犯我。$"
 
 FiveIsland_LostCave_Room10_Text_MayIAskYouToTakeMeHome::
-	.string "I am so glad that you happened\n"
-	.string "here.\p"
-	.string "I grew rather bored of walking,\n"
-	.string "and I am feeling fatigued.\p"
-	.string "May I ask you to take me home\n"
-	.string "from here?$"
+    .string "我真高兴你凑巧也来到了这儿。\p"
+    .string "我已经相当厌倦在这里徘徊了，\n"
+    .string "我感到很疲惫。\p"
+    .string "你能把我带回家吗？$"
 

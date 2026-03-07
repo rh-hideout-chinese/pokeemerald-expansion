@@ -32,26 +32,26 @@ PokemonMansion_1F_EventScript_Johnson::
 	end
 
 PokemonMansion_1F_Text_TedIntro::
-	.string "Who are you?\n"
-	.string "There shouldn't be anyone here.$"
+    .string "你是谁？\n"
+    .string "这里不应该有任何人。$"
 
 PokemonMansion_1F_Text_TedDefeat::
-	.string "Ouch!$"
+    .string "哎呦！$"
 
 PokemonMansion_1F_Text_TedPostBattle::
-	.string "A key? I don't know what you're\n"
-	.string "talking about.$"
+    .string "一把钥匙？我不知道\n"
+    .string "你在说什么。$"
 
 PokemonMansion_1F_Text_JohnsonIntro::
-	.string "W-w-waah! You startled me!\n"
-	.string "I thought you were a ghost.$"
+    .string "哇哇哇！你把我吓了一跳！\n"
+    .string "我以为你是鬼呢。$"
 
 PokemonMansion_1F_Text_JohnsonDefeat::
-	.string "Tch!\n"
-	.string "I can't get any wins.$"
+    .string "啊啊！\n"
+    .string "我没有得到过哪怕是一场胜利。$"
 
 PokemonMansion_1F_Text_JohnsonPostBattle::
-	.string "I was exploring here by myself,\n"
-	.string "but I feel spooked.\p"
-	.string "I ought to go soon.$"
+    .string "我一个人到这里来探索，\n"
+    .string "但我觉得很害怕。\p"
+    .string "我还是尽快离开这里吧。$"
 
