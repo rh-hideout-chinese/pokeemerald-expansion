@@ -118,49 +118,49 @@ TwoIsland_House_EventScript_SetHasBothMushrooms::
 	return
 
 TwoIsland_House_Text_TeachMonMoveForMushroom::
-	.string "I'm the POKéMON MOVE MANIAC.\p"
-	.string "I know every single move that\n"
-	.string "POKéMON learn growing up.\p"
-	.string "I'm also a mushroom maniac.\p"
-	.string "Bring me two TINYMUSHROOMS,\n"
-	.string "or one BIG MUSHROOM.\p"
-	.string "If you do that for me, I'll teach\n"
-	.string "a move to one POKéMON.$"
+    .string "我是宝可梦技能研究狂。\p"
+    .string "我知道宝可梦成长\n"
+    .string "所学的每个基本技能。\p"
+    .string "同时，我还在收集蘑菇。\p"
+    .string "给我小蘑菇。\n"
+    .string "或者一个大蘑菇。\p"
+    .string "如果你有的话，\n"
+    .string "我就教给一只宝可梦一个技能。$"
 
 TwoIsland_House_Text_WantMeToTeachMove::
-	.string "Sniff, sniff…\n"
-	.string "Hm! You smell of MUSHROOMS!\p"
-	.string "Do you want me to teach a move\n"
-	.string "to a POKéMON of yours?$"
+    .string "嗯……嗯……\n"
+    .string "没错！你的身上有蘑菇的香味！\p"
+    .string "你想让我教给你宝可梦\n"
+    .string "一个技能吗？$"
 
 TwoIsland_House_Text_TutorWhichMon::
-	.string "Which POKéMON needs tutoring?$"
+    .string "那教给那只宝可梦好呢？$"
 
 TwoIsland_House_Text_TeachWhichMove::
-	.string "Which move should I teach?$"
+    .string "教给它哪个技能好呢？$"
 
 TwoIsland_House_Text_NoMoveICanTeachThatMon::
-	.string "Sorry…\p"
-	.string "It doesn't appear as if I have a\n"
-	.string "move I can teach that POKéMON.$"
+    .string "抱歉……\p"
+    .string "我不能把这个技能\n"
+    .string "教给这只宝可梦。$"
 
 TwoIsland_House_Text_IllNeedMushroomOrTwo::
-	.string "Then, I'll need a MUSHROOM or two.\n"
-	.string "What are you going to give me?$"
+    .string "那么，我需要一个或两个的蘑菇。\n"
+    .string "你打算给我哪个？$"
 
 TwoIsland_House_Text_HandedOverTwoTinyMushrooms::
-	.string "{PLAYER} handed over two\n"
-	.string "TINYMUSHROOMS in exchange.$"
+    .string "{PLAYER}给了\n"
+    .string "两个小蘑菇。$"
 
 TwoIsland_House_Text_HandedOverOneBigMushroom::
-	.string "{PLAYER} handed over one\n"
-	.string "BIG MUSHROOM in exchange.$"
+    .string "{PLAYER}给了\n"
+    .string "一个大蘑菇。$"
 
 TwoIsland_House_Text_NeedMushroomOrTwoToLearnMove::
-	.string "If your POKéMON need to learn a\n"
-	.string "move, I need a MUSHROOM or two.$"
+    .string "如果你想让你的宝可梦学习\n"
+    .string "一个技能，就给我一个或两个蘑菇。$"
 
 TwoIsland_House_Text_CantTeachAnEgg::
-	.string "Hunh? There isn't a single move\n"
-	.string "that I can teach an EGG.$"
+    .string "哼？\n"
+    .string "我不能教给一颗蛋什么技能。$"
 

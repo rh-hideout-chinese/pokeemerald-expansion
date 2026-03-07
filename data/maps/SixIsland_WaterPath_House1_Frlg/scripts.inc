@@ -75,53 +75,53 @@ SixIsland_WaterPath_House1_EventScript_SizeRecordNonEmpty::
 	end
 
 SixIsland_WaterPath_House1_Text_LoveItNeedItHeracross::
-	.string "Hera, hera, HERACROSS!\n"
-	.string "Big and shiny, it's the bug boss!\l"
-	.string "Love it, need it, HERACROSS!$"
+    .string "赫拉，赫拉，赫拉克罗斯！\n"
+    .string "威武闪光的虫属性之王！\l"
+    .string "我爱它，我需要它！赫拉克罗斯！$"
 
 SixIsland_WaterPath_House1_Text_MayIMeasureHeracross::
-	.string "Eeeeek!\n"
-	.string "That's a HERACROSS!\p"
-	.string "Please, please, may I measure how\n"
-	.string "big it is?$"
+    .string "哎呦！\n"
+    .string "那是一只赫拉克罗斯！\p"
+    .string "快，快！\n"
+    .string "我能量量它有多大吗……$"
 
 SixIsland_WaterPath_House1_Text_ItsXInchesDeserveReward::
-	.string "Eeeek, it's {STR_VAR_2} inches!\n"
-	.string "I've never seen anything like this!\l"
-	.string "You deserve a reward!$"
+    .string "哎呦它居然有{STR_VAR_2}英寸！\n"
+    .string "我从来没见过这样大的！\l"
+    .string "这是你应得的奖励。$"
 
 SixIsland_WaterPath_House1_Text_WantToSeeBiggerOne::
-	.string "I want to see a much, much bigger\n"
-	.string "HERACROSS than that one.\p"
-	.string "Oh, how I adore them, big\n"
-	.string "HERACROSS!$"
+    .string "我想看到一只比这个\n"
+    .string "还要大一些的赫拉克罗斯。\p"
+    .string "啊，我是多么喜欢它啊！\n"
+    .string "巨大的赫拉克罗斯！$"
 
 SixIsland_WaterPath_House1_Text_ItsXInchesSameAsBefore::
-	.string "Huh? This {STR_VAR_2}-inch measurement…\n"
-	.string "Oh, boo! It's the same as before.$"
+    .string "哼？这只{STR_VAR_2}英寸的……\n"
+    .string "不是和原来那只一样吗！$"
 
 SixIsland_WaterPath_House1_Text_ItsXInchesYInchesWasBiggest::
-	.string "Oh, it's just {STR_VAR_2} inches.\n"
-	.string "The HERACROSS before was bigger.\p"
-	.string "It was {STR_VAR_3} inches, the biggest\n"
-	.string "HERACROSS you've brought me.$"
+    .string "哦，它只有{STR_VAR_2}英寸。\n"
+    .string "原来那只赫拉克罗斯比它更大。\p"
+    .string "它有{STR_VAR_3}英寸，\n"
+    .string "那是我见过的最大的赫拉克罗斯。$"
 
 SixIsland_WaterPath_House1_Text_ThisWontDo::
-	.string "Oh, no! This won't do!\p"
-	.string "HERACROSS looks much more macho\n"
-	.string "and cool, and has a lovely horn!$"
+    .string "哦，不！这不可能是赫拉克罗斯！\p"
+    .string "赫拉克罗斯看起来更有气概，\n"
+    .string "更加冷酷，还有一只可爱的触角！$"
 
 SixIsland_WaterPath_House1_Text_YourBagIsFull::
-	.string "Your BAG is full.\n"
-	.string "My reward won't fit.$"
+    .string "你的背包满了。\n"
+    .string "装不下我的奖励了。$"
 
 SixIsland_WaterPath_House1_Text_BiggestHeracrossIsXInches::
-	.string "The biggest HERACROSS that I have\n"
-	.string "ever seen measured so far is:\p"
-	.string "{STR_VAR_3} inches!$"
+    .string "目前为止，我看过的最大的赫拉克罗斯，\n"
+    .string "尺寸为：\p"
+    .string "{STR_VAR_3}英寸！$"
 
 SixIsland_WaterPath_House1_Text_BlankChartOfSomeSort::
-	.string "It's a blank chart of some sort.\p"
-	.string "It has spaces for writing in\n"
-	.string "records of some kind.$"
+    .string "那差不多是一张空白的图表。\p"
+    .string "它有空间\n"
+    .string "来写一些记录。$"
 

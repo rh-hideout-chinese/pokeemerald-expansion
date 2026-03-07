@@ -34,13 +34,13 @@ PewterCity_Mart_Items::
 	end
 
 PewterCity_Mart_Text_BoughtWeirdFishFromShadyGuy::
-	.string "A shady old guy sucked me into\n"
-	.string "buying this weird fish POKéMON!\p"
-	.string "It's totally weak and it cost ¥500!$"
+    .string "一个奸商忽悠我买下了\n"
+    .string "这只奇怪的鱼宝可梦！\p"
+    .string "它弱得可怕，竟然要500！$"
 
 PewterCity_Mart_Text_GoodThingsIfRaiseMonsDiligently::
-	.string "Good things can happen if you raise\n"
-	.string "POKéMON diligently.\p"
-	.string "Even the weak ones can surprise\n"
-	.string "you if you don't give up on them.$"
+    .string "如果你耐心地培养宝可梦，\n"
+    .string "就会产生好的结果。\p"
+    .string "如果你不放弃它们，就算是\n"
+    .string "弱一些的宝可梦也会给你带来惊喜。$"
 

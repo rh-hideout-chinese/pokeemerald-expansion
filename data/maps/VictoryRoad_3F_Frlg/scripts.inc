@@ -60,102 +60,97 @@ VictoryRoad_3F_EventScript_Tyra::
 	end
 
 Text_DoubleEdgeTeach::
-	.string "You should be proud of yourself,\n"
-	.string "having battled your way through\l"
-	.string "VICTORY ROAD so courageously.\p"
-	.string "In recognition of your feat,\n"
-	.string "I'll teach you DOUBLE-EDGE.\p"
-	.string "Would you like me to teach that\n"
-	.string "technique?$"
+    .string "你应该为自己感到骄傲，\n"
+    .string "你已经在这条冠军之路上\l"
+    .string "勇敢的杀出了属于自己的路。\p"
+    .string "作为对你成绩的认可\n"
+    .string "我会教你舍身冲撞。\p"
+    .string "你想要我教你学这个技能吗？$"
 
 Text_DoubleEdgeDeclined::
-	.string "I'll teach you the technique\n"
-	.string "anytime.$"
+    .string "我随时都能教你这个技能的。$"
 
 Text_DoubleEdgeWhichMon::
-	.string "Which POKéMON should I teach\n"
-	.string "DOUBLE-EDGE?$"
+    .string "我要教哪个宝可梦\n"
+    .string "舍身冲撞$"
 
 Text_DoubleEdgeTaught::
-	.string "Keep that drive going for the\n"
-	.string "POKéMON LEAGUE!\p"
-	.string "Take a run at them and knock 'em\n"
-	.string "out!$"
+    .string "保持那股动力，\n"
+    .string "去参加宝可梦联盟吧！\p"
+    .string "去会会他们\n"
+    .string "并将他们通通击败吧！$"
 
 VictoryRoad_3F_Text_GeorgeIntro::
-	.string "I heard rumors of a child prodigy.$"
+    .string "我听说关于一个神童的传闻。$"
 
 VictoryRoad_3F_Text_GeorgeDefeat::
-	.string "The rumors were true!$"
+    .string "传闻是真的！$"
 
 VictoryRoad_3F_Text_GeorgePostBattle::
-	.string "So, it was you who beat GIOVANNI\n"
-	.string "of TEAM ROCKET?$"
+    .string "莫非，就是你击败了\n"
+    .string "火箭队的坂木吗？$"
 
 VictoryRoad_3F_Text_AlexaIntro::
-	.string "TRAINERS live to seek stronger\n"
-	.string "opponents.$"
+    .string "训练家的人生就是\n"
+    .string "去寻找更强的对手。$"
 
 VictoryRoad_3F_Text_AlexaDefeat::
-	.string "Oh!\n"
-	.string "So strong!$"
+    .string "啊！\n"
+    .string "这么强！$"
 
 VictoryRoad_3F_Text_AlexaPostBattle::
-	.string "By fighting tough battles, you get\n"
-	.string "stronger.$"
+    .string "在艰难的战斗中，\n"
+    .string "你会变得更强。$"
 
 VictoryRoad_3F_Text_CarolineIntro::
-	.string "I'll show you just how good you\n"
-	.string "are. Not!$"
+    .string "我会让你看看你到底\n"
+    .string "有多强……还是多弱！$"
 
 VictoryRoad_3F_Text_CarolineDefeat::
-	.string "I'm furious!$"
+    .string "我很气愤！$"
 
 VictoryRoad_3F_Text_CarolinePostBattle::
-	.string "You showed me just how good\n"
-	.string "I was…$"
+    .string "你只不过证明了我有多强……$"
 
 VictoryRoad_3F_Text_ColbyIntro::
-	.string "Only the chosen can pass here!$"
+    .string "只有被选中的人可以通过这里！$"
 
 VictoryRoad_3F_Text_ColbyDefeat::
-	.string "I don't believe it!$"
+    .string "我不相信！$"
 
 VictoryRoad_3F_Text_ColbyPostBattle::
-	.string "All TRAINERS here are headed to\n"
-	.string "the POKéMON LEAGUE.\p"
-	.string "Don't let down your guard.$"
+    .string "这里所有的训练家都以\n"
+    .string "宝可梦联盟为目标。\p"
+    .string "不要放松警惕。$"
 
 VictoryRoad_3F_Text_RayIntro::
-	.string "RAY: Together, the two of us are\n"
-	.string "destined for greatness!$"
+    .string "阿新：我们俩在一起会更强大！$"
 
 VictoryRoad_3F_Text_RayDefeat::
-	.string "RAY: Ludicrous!\n"
-	.string "This can't be!$"
+    .string "阿新：真可笑！\n"
+    .string "这是不可能的！$"
 
 VictoryRoad_3F_Text_RayPostBattle::
-	.string "RAY: You've beaten us.\n"
-	.string "Greatness remains elusive…$"
+    .string "阿新：你打败了我们。\n"
+    .string "强大的人总是难以捉摸……$"
 
 VictoryRoad_3F_Text_RayNotEnoughMons::
-	.string "RAY: Together, the two of us are\n"
-	.string "striving for the pinnacle.\p"
-	.string "We need you to bring two POKéMON\n"
-	.string "into battle with us.$"
+    .string "阿新：我们俩一起着向冠军努力。\p"
+    .string "请你带上两只宝可梦\n"
+    .string "来跟我们战斗。$"
 
 VictoryRoad_3F_Text_TyraIntro::
-	.string "TYRA: We're trying to become\n"
-	.string "champions together.$"
+    .string "佳代：我们正试着一起\n"
+    .string "变成冠军。$"
 
 VictoryRoad_3F_Text_TyraDefeat::
-	.string "TYRA: Oh, but…$"
+    .string "佳代：哦，但是……$"
 
 VictoryRoad_3F_Text_TyraPostBattle::
-	.string "TYRA: You've taught me that power\n"
-	.string "can be infinite in shape and form.$"
+    .string "佳代：你教会了我，\n"
+    .string "实力有无数种形式和形态。$"
 
 VictoryRoad_3F_Text_TyraNotEnoughMons::
-	.string "TYRA: You can't battle with us if\n"
-	.string "you have only one POKéMON.$"
+    .string "佳代：如果你只有一只宝可梦，\n"
+    .string "就不能和我们战斗。$"
 

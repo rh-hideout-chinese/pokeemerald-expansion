@@ -39,51 +39,51 @@ SilphCo_8F_EventScript_Grunt2::
 	end
 
 SilphCo_8F_Text_WonderIfSilphIsFinished::
-	.string "I wonder if SILPH is finished…$"
+    .string "恐怕西尔佛已经完蛋了……$"
 
 SilphCo_8F_Text_ThanksForSavingUs::
-	.string "Thanks for saving us!$"
+    .string "谢谢你救了我们！$"
 
 SilphCo_8F_Text_Grunt1Intro::
-	.string "That's as far as you'll go!$"
+    .string "你前进的道路到此为止$"
 
 SilphCo_8F_Text_Grunt1Defeat::
-	.string "Not enough grit!$"
+    .string "如果你没有足够的勇气的话……！$"
 
 SilphCo_8F_Text_Grunt1PostBattle::
-	.string "If you don't turn back…\n"
-	.string "I'll call for backup!$"
+    .string "如果你不马上滚回去……\n"
+    .string "我要叫你好看！$"
 
 SilphCo_8F_Text_ParkerIntro::
-	.string "You're causing us problems!$"
+    .string "你给我们带来太多的麻烦了！$"
 
 SilphCo_8F_Text_ParkerDefeat::
-	.string "Huh?\n"
-	.string "I lost?$"
+    .string "嗯？\n"
+    .string "我输了？$"
 
 SilphCo_8F_Text_ParkerPostBattle::
-	.string "So, what do you think of SILPH\n"
-	.string "BUILDING's maze?$"
+    .string "那么，你有什么对西尔佛\n"
+    .string "大楼的迷宫有什么看法？$"
 
 SilphCo_8F_Text_Grunt2Intro::
-	.string "I am one of the four ROCKET\n"
-	.string "BROTHERS!$"
+    .string "我是火箭队\n"
+    .string "四兄弟之一！$"
 
 SilphCo_8F_Text_Grunt2Defeat::
-	.string "Whoo!\n"
-	.string "Oh, Brothers!$"
+    .string "哇！\n"
+    .string "啊，兄弟们！$"
 
 SilphCo_8F_Text_Grunt2PostBattle::
-	.string "I'll leave you up to my brothers.$"
+    .string "我会把你留给我的兄弟们来对付。$"
 
 SilphCo_8F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "8F$"
+    .string "西尔佛公司总部\n"
+    .string "8层$"
 
 SilphCo_8F_Text_ToRocketBossMonsAreTools::
-	.string "TEAM ROCKET's BOSS is terribly\n"
-	.string "cruel!\p"
-	.string "To him, POKéMON are just tools to\n"
-	.string "be used.\p"
-	.string "What will happen if that tyrant\n"
-	.string "takes over our company…$"
+    .string "火箭队的老大\n"
+    .string "是一个特别残忍的人！\p"
+    .string "对他而言，宝可梦只是可以\n"
+    .string "被利用的工具。\p"
+    .string "如果这家伙接管了\n"
+    .string "我们的公司就完了……$"

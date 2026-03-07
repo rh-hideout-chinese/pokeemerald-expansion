@@ -1299,359 +1299,347 @@ PalletTown_ProfessorOaksLab_EventScript_RightSignAlt::
 	end
 
 PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround::
-	.string "{RIVAL}: What, it's only {PLAYER}?\n"
-	.string "Gramps isn't around.$"
+    .string "{RIVAL}：什么，只有{PLAYER}？\n"
+    .string "爷爷不在这儿。$"
 
 PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting::
-	.string "{RIVAL}: Gramps!\n"
-	.string "I'm fed up with waiting!$"
+    .string "{RIVAL}：爷爷！\n"
+    .string "我都等不及了！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalNoFairWhatAboutMe::
-	.string "{RIVAL}: Hey! Gramps! No fair!\n"
-	.string "What about me?$"
+    .string "{RIVAL}：嘿！爷爷！这不公平！\n"
+    .string "我也要！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer::
-	.string "{RIVAL}: Heh, I don't need to be\n"
-	.string "greedy like you. I'm mature!\p"
-	.string "Go ahead and choose, {PLAYER}!$"
+    .string "{RIVAL}：哼，我没有像你一样那么急。\n"
+    .string "我成熟得很！\p"
+    .string "你先去选吧，{PLAYER}！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen::
-	.string "{RIVAL}: I'll take this one, then!$"
+    .string "{RIVAL}：那我就要这只了！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak::
-	.string "{RIVAL} received the {STR_VAR_1}\n"
-	.string "from PROF. OAK!$"
+    .string "{RIVAL}从大木博士那儿\n"
+    .string "得到了{STR_VAR_1}！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalMyMonLooksTougher::
-	.string "{RIVAL}: My POKéMON looks a lot\n"
-	.string "tougher than yours.$"
+    .string "{RIVAL}：我的宝可梦看起来\n"
+    .string "比你的厉害。$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
-	.string "{RIVAL}: Wait, {PLAYER}!\n"
-	.string "Let's check out our POKéMON!\p"
-	.string "Come on, I'll take you on!$"
+    .string "{RIVAL}：等等，{PLAYER}！\n"
+    .string "让我们检验一下各自的宝可梦！\p"
+    .string "来吧，我会打败你！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalDefeat::
-	.string "WHAT?\n"
-	.string "Unbelievable!\l"
-	.string "I picked the wrong POKéMON!$"
+    .string "什么？\n"
+    .string "难以置信！\l"
+    .string "我拿错了宝可梦！$"
 
 @ Also used for early Route 22 battle
 Text_RivalVictory::
-	.string "{RIVAL}: Yeah!\n"
-	.string "Am I great or what?$"
+    .string "{RIVAL}：耶！\n"
+    .string "我很强吧？$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon::
-	.string "{RIVAL}: Okay! I'll make my\n"
-	.string "POKéMON battle to toughen it up!\p"
-	.string "{PLAYER}! Gramps!\n"
-	.string "Smell you later!$"
+    .string "{RIVAL}：我要让我的宝可梦战斗\n"
+    .string "来使它变强！\p"
+    .string "{PLAYER}！爷爷！\n"
+    .string "回见！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGramps::
-	.string "{RIVAL}: Gramps!$"
+    .string "{RIVAL}：爷爷！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalWhatDidYouCallMeFor::
-	.string "{RIVAL}: I almost forgot!\n"
-	.string "What did you call me for?$"
+    .string "{RIVAL}：我差点忘了！\n"
+    .string "你叫我来干什么？$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps::
-	.string "{RIVAL}: All right, Gramps!\n"
-	.string "Leave it all to me!$"
+    .string "{RIVAL}：好的，爷爷！\n"
+    .string "全部交给我吧！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
-	.string "{PLAYER}, I hate to say it, but you\n"
-	.string "won't be necessary for this.\p"
-	.string "I know! I'll borrow a TOWN MAP\n"
-	.string "from my sis!\p"
-	.string "I'll tell her not to lend you one,\n"
-	.string "{PLAYER}! Hahaha!\p"
-	.string "Don't bother coming around to\n"
-	.string "my place after this!$"
+    .string "{PLAYER}，我说句不好听的话，\n"
+    .string "你没必做这么多努力。\p"
+    .string "我要去向我姐姐借张城镇地图！\p"
+    .string "我会告诉她别借给你！\n"
+    .string "{PLAYER}！哈哈！\p"
+    .string "之后不要因为这个\n"
+    .string "来我们家了！$"
 
 PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
-	.string "OAK: {RIVAL}?\n"
-	.string "Let me think…\p"
-	.string "Oh, that's right, I told you to\n"
-	.string "come! Just wait!\p"
-	.string "Here, {PLAYER}.\p"
-	.string "There are three POKéMON here.\p"
-	.string "Haha!\p"
-	.string "The POKéMON are held inside\n"
-	.string "these POKé BALLS.\p"
-	.string "When I was young, I was a serious\n"
-	.string "POKéMON TRAINER.\p"
-	.string "But now, in my old age, I have\n"
-	.string "only these three left.\p"
-	.string "You can have one.\n"
-	.string "Go on, choose!$"
+    .string "大木：{RIVAL}？\n"
+    .string "我想想……\p"
+    .string "噢，对了，是我叫你来的！\n"
+    .string "等等！\p"
+    .string "来这儿，{PLAYER}。\p"
+    .string "这儿有三只宝可梦。\p"
+    .string "哈哈！\p"
+    .string "宝可梦都在这些\n"
+    .string "精灵球里面。\p"
+    .string "我年轻的时候，\n"
+    .string "可是一个厉害的宝可梦训练家。\p"
+    .string "但是现在，我老了！\n"
+    .string "只剩下了这三只宝可梦了。\p"
+    .string "你可以从中挑一个。\n"
+    .string "去选吧！$"
 
 PalletTown_ProfessorOaksLab_Text_OakBePatientRival::
-	.string "OAK: Be patient, {RIVAL}.\n"
-	.string "You can have one, too!$"
+    .string "大木：耐心点，{RIVAL}。\n"
+    .string "你也可以选一只的！$"
 
 PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose::
-	.string "OAK: Now, {PLAYER}.\p"
-	.string "Inside those three POKé BALLS are\n"
-	.string "POKéMON.\p"
-	.string "Which one will you choose for\n"
-	.string "yourself?$"
+    .string "大木：现在，{PLAYER}。\p"
+    .string "在那三个精灵球里面\n"
+    .string "都是宝可梦。\p"
+    .string "你想要哪一只？$"
 
 PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet::
-	.string "OAK: Hey!\n"
-	.string "Don't go away yet!$"
+    .string "大木：嘿！\n"
+    .string "别急着走啊！$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander::
-	.string "Ah! CHARMANDER is your choice.\n"
-	.string "You should raise it patiently.\p"
-	.string "So, {PLAYER}, you're claiming the\n"
-	.string "FIRE POKéMON CHARMANDER?$"
+    .string "啊！你选择了小火龙。\n"
+    .string "你要耐心地培养它。\p"
+    .string "好的，{PLAYER}，你确定要获得\n"
+    .string "火属性宝可梦小火龙吗？$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle::
-	.string "Hm! SQUIRTLE is your choice.\n"
-	.string "It's one worth raising.\p"
-	.string "So, {PLAYER}, you've decided on the\n"
-	.string "WATER POKéMON SQUIRTLE?$"
+    .string "嗯！你选择了杰尼龟。\n"
+    .string "它很值得培养。\p"
+    .string "好的，{PLAYER} 你确定要选择\n"
+    .string "水属性宝可梦杰尼龟吗？$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur::
-	.string "I see! BULBASAUR is your choice.\n"
-	.string "It's very easy to raise.\p"
-	.string "So, {PLAYER}, you want to go with\n"
-	.string "the GRASS POKéMON BULBASAUR?$"
+    .string "嗯！你选择了妙蛙种子。\n"
+    .string "它非常好培养。\p"
+    .string "好的，{PLAYER}，你确定要和\n"
+    .string "草属性宝可梦妙蛙种子一起吗？$"
 
 PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic::
-	.string "This POKéMON is really quite\n"
-	.string "energetic!$"
+    .string "这只宝可梦充满了活力！$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak::
-	.string "{PLAYER} received the {STR_VAR_1}\n"
-	.string "from PROF. OAK!$"
+    .string "{PLAYER}从大木博士那儿\n"
+    .string "得到了{STR_VAR_1}！$"
 
 PalletTown_ProfessorOaksLab_Text_OakCanReachNextTownWithMon::
-	.string "OAK: If a wild POKéMON appears,\n"
-	.string "your POKéMON can battle it.\p"
-	.string "With it at your side, you should be\n"
-	.string "able to reach the next town.$"
+    .string "大木：如果野生的宝可梦出现了，\n"
+    .string "你的宝可梦能和它战斗。\p"
+    .string "有了它在你身边，\n"
+    .string "你就能抵达下一个城镇了。$"
 
 PalletTown_ProfessorOaksLab_Text_OakBattleMonForItToGrow::
-	.string "OAK: {PLAYER}, raise your young\n"
-	.string "POKéMON by making it battle.\p"
-	.string "It has to battle for it to grow.$"
+    .string "大木：{PLAYER}，好好培育你的宝可梦\n"
+    .string "让它战斗吧。\p"
+    .string "它得在战斗中成长。$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe::
-	.string "OAK: Oh, {PLAYER}!\n"
-	.string "How is my old POKéMON?\p"
-	.string "Well, it seems to be growing more\n"
-	.string "attached to you.\p"
-	.string "You must be talented as a POKéMON\n"
-	.string "TRAINER.\p"
-	.string "What's that?\n"
-	.string "You have something for me?$"
+    .string "大木：{PLAYER}！\n"
+    .string "我给你的宝可梦怎么样了？\p"
+    .string "嗯，他好像已经\n"
+    .string "离不开你了。\p"
+    .string "你一定是个天才宝可梦训练家。\p"
+    .string "你说什么？\n"
+    .string "你有东西要给我？$"
 
 PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel::
-	.string "{PLAYER} delivered OAK'S PARCEL.$"
+    .string "{PLAYER}交出了大木的包裹。$"
 
 PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered::
-	.string "Ah! \n"
-	.string "It's the custom POKé BALL!\p"
-	.string "I had it on order.\n"
-	.string "Thank you!$"
+    .string "啊！\n"
+    .string "这是我订制的精灵球！\p"
+    .string "是我订的没错。\n"
+    .string "谢谢你！$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveRequestForYouTwo::
-	.string "OAK: Oh, right!\n"
-	.string "I have a request for you two.$"
+    .string "大木：噢，对了！\n"
+    .string "我对你们两个有个请求。$"
 
 PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk::
-	.string "On the desk there is my invention,\n"
-	.string "the POKéDEX!\p"
-	.string "It automatically records data on\n"
-	.string "POKéMON you've seen or caught.\p"
-	.string "It's a high-tech encyclopedia!$"
+    .string "那桌子上的是我的发明，\n"
+    .string "宝可梦图鉴！\p"
+    .string "它能自动记录你见过或收服的\n"
+    .string "宝可梦的资料。\p"
+    .string "它是一部高科技的百科全书！$"
 
 PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou::
-	.string "OAK: {PLAYER} and {RIVAL}.\n"
-	.string "Take these with you.$"
+    .string "大木：{PLAYER}和{RIVAL}。\n"
+    .string "拿着这个吧。$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak::
-	.string "{PLAYER} received the POKéDEX\n"
-	.string "from PROF. OAK.$"
+    .string "{PLAYER}从大木博士那儿\n"
+    .string "得到了宝可梦图鉴。$"
 
 PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese::
-	.string "OAK: You can't get detailed data\n"
-	.string "on POKéMON by just seeing them.\p"
-	.string "You must catch them to obtain\n"
-	.string "complete data.\p"
-	.string "So, here are some tools for\n"
-	.string "catching wild POKéMON.$"
+    .string "大木：如果你仅仅是发现宝可梦，\n"
+    .string "你是无法得到它们的详细资料的。\p"
+    .string "你必须抓住它们\n"
+    .string "来获取完整的资料。\p"
+    .string "那么，给你一些收服\n"
+    .string "野生宝可梦的工具吧。$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls::
-	.string "{PLAYER} received five POKé BALLS.$"
+    .string "{PLAYER}得到了5个精灵球。$"
 
 PalletTown_ProfessorOaksLab_Text_OakExplainCatching::
-	.string "When a wild POKéMON appears,\n"
-	.string "it's fair game.\p"
-	.string "Just throw a POKé BALL at it and\n"
-	.string "try to catch it!\p"
-	.string "This won't always work, however.\p"
-	.string "A healthy POKéMON can escape.\n"
-	.string "You have to be lucky!$"
+    .string "当野生宝可梦出现时，\n"
+    .string "战斗就开始了。\p"
+    .string "向它扔出一个精灵球\n"
+    .string "就能试去着收服它！\p"
+    .string "但是，这不一定会成功。\p"
+    .string "精神饱满的宝可梦是能逃走的。\n"
+    .string "想要成功需要点运气！$"
 
 PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
-	.string "To make a complete guide on all\n"
-	.string "the POKéMON in the world…\p"
-	.string "That was my dream!\p"
-	.string "But, I'm too old.\n"
-	.string "I can't get the job done.\p"
-	.string "So, I want you two to fulfill my\n"
-	.string "dream for me.\p"
-	.string "Get moving, you two.\p"
-	.string "This is a great undertaking in\n"
-	.string "POKéMON history!$"
+    .string "收集齐世界上所有宝可梦的资料……\p"
+    .string "一直是我的梦想！\p"
+    .string "但是，我太老了。\n"
+    .string "我不能完成这项任务了。\p"
+    .string "所以，我希望你们俩能替我\n"
+    .string "实现我的梦想。\p"
+    .string "出发吧。\p"
+    .string "这是宝可梦史上\n"
+    .string "最伟大的事业！$"
 
 PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait::
-	.string "POKéMON around the world wait for\n"
-	.string "you, {PLAYER}!$"
+    .string "这个世界的宝可梦正等着你，{PLAYER}！$"
 
 PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex::
-	.string "Ah, {PLAYER}!\n"
-	.string "How is your POKéDEX shaping up?\p"
-	.string "{RIVAL} has already caught some\n"
-	.string "POKéMON and added to the data.\p"
-	.string "So, {PLAYER}, let's have a look at\n"
-	.string "your POKéDEX.\p"
-	.string "…What's the matter?\n"
-	.string "You've added no new data at all.\p"
-	.string "I'll give you these, so do try a\n"
-	.string "little harder.$"
+    .string "啊，{PLAYER}！\n"
+    .string "你的宝可梦图鉴完成得怎么样了？\p"
+    .string "{RIVAL}已经收服了一些宝可梦，\n"
+    .string "而且添加了一些资料。\p"
+    .string "那么，{PLAYER}，\n"
+    .string "我来看看你的宝可梦图鉴。\p"
+    .string "……怎么回事？\n"
+    .string "你还没有添加任何新的数据。\p"
+    .string "这个给你好了，\n"
+    .string "希望你更努力些。$"
 
 PalletTown_ProfessorOaksLab_Text_OakComeSeeMeSometime::
-	.string "OAK: Come see me sometime.\p"
-	.string "After all, I want to know how your\n"
-	.string "POKéDEX is coming along.$"
+    .string "大木：有空了就回来看看我。\p"
+    .string "我也想了解下，你的宝可梦图鉴工作\n"
+    .string "进展到了什么样的程度。$"
 
 PalletTown_ProfessorOaksLab_Text_BlankEncyclopedia::
-	.string "It's like an encyclopedia, but the\n"
-	.string "pages are blank.$"
+    .string "像图鉴一样的东西，\n"
+    .string "只是里面是空白的。$"
 
 PalletTown_ProfessorOaksLab_Text_ThoseArePokeBalls::
-	.string "Those are POKé BALLS.\n"
-	.string "They contain POKéMON!$"
+    .string "一些精灵球。\n"
+    .string "里面装着宝可梦！$"
 
 PalletTown_ProfessorOaksLab_Text_OaksLastMon::
-	.string "That's PROF. OAK's last POKéMON.$"
+    .string "这是大木博士最后的宝可梦。$"
 
 PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu::
-	.string "Press START to open the MENU!$"
+    .string "按开始键打开菜单！$"
 
 PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu::
-	.string "The SAVE option is on the MENU.\n"
-	.string "Use it regularly.$"
+    .string "保存选项在菜单里。\n"
+    .string "好好利用它吧。$"
 
 PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints::
-	.string "All POKéMON types have strong and\n"
-	.string "weak points against others.$"
+    .string "所有类型的宝可梦在对战时\n"
+    .string "都有它的优势和弱势。$"
 
 PalletTown_ProfessorOaksLab_Text_EmailMessage::
-	.string "There's an e-mail message here.\p"
-	.string "…\p"
-	.string "Finally!\n"
-	.string "The ultimate TRAINERS of the\l"
-	.string "POKéMON LEAGUE are ready to\l"
-	.string "take on all comers!\p"
-	.string "Bring your best POKéMON and see\n"
-	.string "how you rate as a TRAINER!\p"
-	.string "POKéMON LEAGUE HQ\n"
-	.string "INDIGO PLATEAU\p"
-	.string "PROF. OAK, please visit us!\n"
-	.string "…$"
+    .string "这儿有一封电子邮件……\p"
+    .string "终于！\n"
+    .string "宝可梦联盟最强的训练家\l"
+    .string "准备好迎接\l"
+    .string "各位的挑战了！\p"
+    .string "带上你最好的宝可梦，\n"
+    .string "看看你作为一个训练家的表现！\p"
+    .string "宝可梦联盟总部\n"
+    .string "石英高原\p"
+    .string "大木博士，请来挑战我们吧！\n"
+    .string "……$"
 
 PalletTown_ProfessorOaksLab_Text_StudyAsOaksAide::
-	.string "I study POKéMON as PROF. OAK's\n"
-	.string "AIDE.$"
+    .string "我作为大木博士的助手，\n"
+    .string "也在研究宝可梦。$"
 
 PalletTown_ProfessorOaksLab_Text_DaisyWillGroomMons::
-	.string "Hi, {PLAYER}. I bet you've become\n"
-	.string "good friends with your POKéMON.\p"
-	.string "By the way, did you know about\n"
-	.string "DAISY?\p"
-	.string "If you show DAISY your POKéMON,\n"
-	.string "she can tell how much it likes you.\p"
-	.string "Occasionally, she will even groom\n"
-	.string "a POKéMON for you.\p"
-	.string "This is a secret, so please don't\n"
-	.string "tell anyone.$"
+    .string "嗨，{PLAYER}。我相信\n"
+    .string "你和你的宝可梦相处得很好吧。\p"
+    .string "对了，你知道奈奈美吗？\p"
+    .string "如果你把你的宝可梦给娜娜妹看，\n"
+    .string "她会告诉你宝可梦喜欢你的程度，\p"
+    .string "有时候，她甚至会帮你的\n"
+    .string "宝可梦梳理毛发。\p"
+    .string "这是一个秘密喔，\n"
+    .string "请不要告诉任何人。$"
 
 PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow::
-	.string "PROF. OAK is going to have his own\n"
-	.string "radio show soon.\p"
-	.string "The program will be called PROF.\n"
-	.string "OAK's POKéMON SEMINAR.$"
+    .string "大木博士要有他自己的\n"
+    .string "广播节目了。\p"
+    .string "这个节目被叫做大木博士\n"
+    .string "的宝可梦大讲堂。$"
 
 PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons::
-	.string "PROF. OAK may not look like much,\n"
-	.string "but he's the authority on POKéMON.\p"
-	.string "Many POKéMON TRAINERS hold him in\n"
-	.string "high regard.$"
+    .string "大木博士可能长得不是很帅，\n"
+    .string "但他是宝可梦研究的权威。\p"
+    .string "宝可梦训练家都非常尊敬他。$"
 
 PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer::
-	.string "Ah, now this is excellent!\p"
-	.string "{PLAYER}, I have another important\n"
-	.string "favor to ask of you.\p"
-	.string "I need you to listen closely.$"
+    .string "啊，真是棒极了！\p"
+    .string "{PLAYER}，我有另一个重大的\n"
+    .string "事情想要请你帮忙。\p"
+    .string "你可要认真听好了。$"
 
 PalletTown_ProfessorOaksLab_Text_OakSightingsOfRareMons::
-	.string "Recently, there have been sightings\n"
-	.string "of many rare POKéMON species.\p"
-	.string "I'm talking about POKéMON that\n"
-	.string "have never been seen in KANTO.\p"
-	.string "I would love to go see things for\n"
-	.string "myself, but I'm much too old.\p"
-	.string "Since I can't do it, {PLAYER}, I'd\n"
-	.string "like you to go in my place.$"
+    .string "最近，出现了很多\n"
+    .string "珍贵的宝可梦品种。\p"
+    .string "我是在说我们在关都\n"
+    .string "从来没见过的宝可梦。\p"
+    .string "我想要自己去亲眼见识它们，\n"
+    .string "但是我太老了。\p"
+    .string "我自己无法干这件事了，{PLAYER}\n"
+    .string "我想让你去替我完成。$"
 
 PalletTown_ProfessorOaksLab_Text_RivalJustLetMeHandleEverything::
-	.string "{RIVAL}: Hey, I heard that!\p"
-	.string "Gramps, what's with favoring\n"
-	.string "{PLAYER} over me all the time?\p"
-	.string "I went and collected more POKéMON,\n"
-	.string "and faster, too.\p"
-	.string "You should just let me handle\n"
-	.string "everything.$"
+    .string "{RIVAL}：嘿，我听说了！\p"
+    .string "爷爷，为什么总是要{PLAYER}帮你\n"
+    .string "而不是我？\p"
+    .string "我用了更快的速度\n"
+    .string "收集了更多的宝可梦，\p"
+    .string "你应该让我来完成\n"
+    .string "一切事情就行了。$"
 
 PalletTown_ProfessorOaksLab_Text_OakNeedYourHelpTooNeedToSeePokedexes::
-	.string "OAK: I know, I know.\n"
-	.string "Of course I need your help, too.\p"
-	.string "Now, I need to see both your\n"
-	.string "POKéDEXES.$"
+    .string "大木：我知道，我知道。\n"
+    .string "我当然也需要你的帮助。\p"
+    .string "现在，我要看看你们俩的宝可梦图鉴。$"
 
 PalletTown_ProfessorOaksLab_Text_OakTookBothPokedexUnits::
-	.string "PROF. OAK took both POKéDEX\n"
-	.string "units.$"
+    .string "大木博士拿了二人的宝可梦图鉴。$"
 
 PalletTown_ProfessorOaksLab_Text_OakNowTheseUnitsCanRecordMoreData::
-	.string "… … …  … … …\p"
-	.string "… … …  … … …\p"
-	.string "…And that's done!\p"
-	.string "Now these units can record data on\n"
-	.string "a lot more POKéMON.$"
+    .string "…………………………\p"
+    .string "…………………………\p"
+    .string "……完成了！\p"
+    .string "现在这个机器能记录更多\n"
+    .string "宝可梦的数据了。$"
 
 PalletTown_ProfessorOaksLab_Text_PlayersPokedexWasUpgraded::
-	.string "{PLAYER}'s POKéDEX was upgraded!$"
+    .string "{PLAYER}的宝可梦图鉴升级了！$"
 
 PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex::
-	.string "Now, {PLAYER} and {RIVAL}!\p"
-	.string "This time, you really must work\n"
-	.string "towards filling your POKéDEXES.\p"
-	.string "I urge you to make them the best\n"
-	.string "and the most complete of all time!\p"
-	.string "Truly, this is a monumentally great\n"
-	.string "undertaking in POKéMON history!$"
+    .string "现在，{PLAYER}和{RIVAL}！\p"
+    .string "这次，你们真的要努力\n"
+    .string "填满你们的宝可梦图鉴。\p"
+    .string "我希望你们能把它们做成\n"
+    .string "最好的最完整的图鉴！\p"
+    .string "说真的，这在宝可梦的历史上\n"
+    .string "是一项伟大的任务！$"
 
 PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
-	.string "{RIVAL}: Gramps, calm down.\n"
-	.string "Don't get so excited.\p"
-	.string "I'll get the POKéDEX completed,\n"
-	.string "don't you worry about a thing.\p"
-	.string "I think I'll try looking around\n"
-	.string "ONE ISLAND first…\p"
-	.string "Anyways, I'm outta here!$"
+    .string "{RIVAL}：冷静点，爷爷！\n"
+    .string "可别太激动了。\p"
+    .string "我会完成宝可梦图鉴的，\n"
+    .string "你不用担心。\p"
+    .string "我想我首先要调查一之岛……\p"
+    .string "不管怎么说，我出发了！$"
 

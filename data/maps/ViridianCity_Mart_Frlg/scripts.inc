@@ -84,28 +84,28 @@ ViridianCity_Mart_EventScript_Youngster::
 	end
 
 ViridianCity_Mart_Text_YouCameFromPallet::
-	.string "Hey!\n"
-	.string "You came from PALLET TOWN?$"
+	.string "嘿！\n"
+	.string "你来自真新镇？$"
 
 ViridianCity_Mart_Text_TakeThisToProfOak::
-	.string "You know PROF. OAK, right?\p"
-	.string "His order came in.\n"
-	.string "Can I get you to take it to him?$"
+	.string "你认识大木博士，对吗？\p"
+	.string "他订的包裹到了。\n"
+	.string "你能帮我捎给他吗？$"
 
 ViridianCity_Mart_Text_ReceivedOaksParcelFromClerk::
-	.string "{PLAYER} received OAK'S PARCEL\n"
-	.string "from the POKéMON MART clerk.$"
+	.string "{PLAYER}从宝可梦商店的店员处\n"
+	.string "得到了大木的包裹。$"
 
 ViridianCity_Mart_Text_SayHiToOakForMe::
-	.string "Okay, thanks! Please say hi to\n"
-	.string "PROF. OAK for me, too.$"
+	.string "谢谢！请替我向\n"
+	.string "大木博士问好。$"
 
 ViridianCity_Mart_Text_ShopDoesGoodBusinessInAntidotes::
-	.string "This shop does good business in\n"
-	.string "ANTIDOTES, I've heard.$"
+	.string "我听说这家商店的\n"
+	.string "解毒药卖的很好。$"
 
 ViridianCity_Mart_Text_GotToBuySomePotions::
-	.string "I've got to buy some POTIONS.\p"
-	.string "You never know when your POKéMON\n"
-	.string "will need quick healing.$"
+	.string "我要买一些伤药。\p"
+	.string "你无法预见你的宝可梦\n"
+	.string "什么时候需要快速恢复。$"
 

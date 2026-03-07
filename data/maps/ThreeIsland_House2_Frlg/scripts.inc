@@ -14,19 +14,19 @@ ThreeIsland_House2_EventScript_Rocker::
 	end
 
 ThreeIsland_House2_Text_CantMakeThisSpoonBend::
-	.string "Urrrrrrrrgggghhhh…\n"
-	.string "Kwaaaaah!\p"
-	.string "…It's useless! I can't make this\n"
-	.string "spoon bend with my mind.\p"
-	.string "Maybe I really don't have any\n"
-	.string "psychic powers.$"
+	.string "嗯……………\n"
+	.string "呃……！\p"
+	.string "……不行啊！我不可能用我的意念\n"
+	.string "把这个勺子弄弯啊！\p"
+	.string "也许我根本\n"
+	.string "没有超能力。$"
 
 ThreeIsland_House2_Text_IAdmireSabrina::
-	.string "You know about a girl GYM LEADER\n"
-	.string "in SAFFRON CITY?\p"
-	.string "She uses PSYCHIC-type POKéMON,\n"
-	.string "right?\p"
-	.string "I admire her, I really do.\p"
-	.string "I've heard that she's one cool\n"
-	.string "customer and beautiful, too.$"
+	.string "你认识金黄市的\n"
+	.string "道馆馆主吗？\p"
+	.string "她擅长使用超能力属性的宝可梦，\n"
+	.string "没错吧？\p"
+	.string "我喜欢她，真的很喜欢！\p"
+	.string "我听说\n"
+	.string "她也来过这里旅游！$"
 

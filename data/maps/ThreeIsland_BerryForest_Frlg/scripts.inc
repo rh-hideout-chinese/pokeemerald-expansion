@@ -60,45 +60,45 @@ ThreeIsland_BerryForest_EventScript_BewareSign::
 	end
 
 ThreeIsland_BerryForest_Text_HelpScaryPokemon::
-	.string "LOSTELLE: Whimper… Sniff…\n"
-	.string "Oh! Please, help!\p"
-	.string "A scary POKéMON appeared there\n"
-	.string "a little while ago.\p"
-	.string "It kept scaring.\n"
-	.string "It made LOSTELLE scared.\p"
-	.string "I'm too scared to move!\n"
-	.string "But I want to go home…$"
+    .string "小迷：呜……呜呜……\n"
+    .string "哦！请救救我！\p"
+    .string "就在刚才，\n"
+    .string "一只可怕的宝可梦出现了。\p"
+    .string "它一直吓唬人。\n"
+    .string "小迷被它吓坏了了。\p"
+    .string "小迷害怕得动不了了！\n"
+    .string "但是我想回家……$"
 
 ThreeIsland_BerryForest_Text_HereItComesAgain::
-	.string "Oh! Here it comes again!\n"
-	.string "No! Go away! It's scaring me!\p"
-	.string "Waaaaaaah!\n"
-	.string "I want my daddy!$"
+    .string "哦！它又来了！\n"
+    .string "不！走开！太吓人了！\p"
+    .string "哇！\n"
+    .string "我要爸爸！$"
 
 ThreeIsland_BerryForest_Text_ThankYouHaveThis::
-	.string "Ohh! That was so scary!\n"
-	.string "Thank you!\p"
-	.string "LOSTELLE came to pick some\n"
-	.string "BERRIES.\p"
-	.string "You can have this!$"
+    .string "哦！刚才真是太吓人了！\n"
+    .string "谢谢！\p"
+    .string "小迷捡了一些\n"
+    .string "树果。\p"
+    .string "这些送给你！$"
 
 ThreeIsland_BerryForest_Text_LetsGoHome::
-	.string "What's your name?\p"
-	.string "LOSTELLE's scared, so can I go\n"
-	.string "with you to my daddy's house?\p"
-	.string "Okay!\n"
-	.string "Let's go home!$"
+    .string "你叫什么名字？\p"
+    .string "小迷很害怕，所以能让你\n"
+    .string "送我回我爸爸的屋里吗？\p"
+    .string "好！\n"
+    .string "我们一起回家吧！$"
 
 ThreeIsland_BerryForest_Text_BerryPouchIsFull::
-	.string "Your BERRY POUCH is full.\n"
-	.string "I guess you don't want this.$"
+    .string "你的树果袋满了。\n"
+    .string "看来你不想要这个了吧。$"
 
 ThreeIsland_BerryForest_Text_WelcomeToBerryForest::
-	.string "Welcome to the BERRY FOREST\p"
-	.string "Be friendly and share BERRIES with\n"
-	.string "others and POKéMON.$"
+    .string "欢迎来到树果森林\p"
+    .string "请友好地和其他人与\n"
+    .string "宝可梦分享树果。$"
 
 ThreeIsland_BerryForest_Text_BewareWildBerryLovingMons::
-	.string "Beware of wild, BERRY-loving\n"
-	.string "POKéMON!$"
+    .string "当心野生的，喜爱树果\n"
+    .string "的宝可梦！$"
 

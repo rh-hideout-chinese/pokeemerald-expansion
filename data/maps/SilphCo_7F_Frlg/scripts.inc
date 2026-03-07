@@ -233,136 +233,136 @@ SilphCo_7F_EventScript_Grunt3::
 	end
 
 SilphCo_7F_Text_HaveMonForSavingUs::
-	.string "Oh! Hi! You're not a ROCKET!\n"
-	.string "You came to save us?\l"
-	.string "Why, thank you!\p"
-	.string "I want you to have this POKéMON\n"
-	.string "for saving us.$"
+    .string "啊！你！你不是火箭队的吧！\n"
+    .string "你是来救我们吗？\l"
+    .string "呃，谢谢！\p"
+    .string "我想把这个宝可梦送给你\n"
+    .string "来表达感谢。$"
 
 SilphCo_7F_Text_ObtainedLaprasFromEmployee::
-	.string "{PLAYER} obtained a LAPRAS from\n"
-	.string "the SILPH employee!$"
+    .string "{PLAYER}从西尔佛的员工处\n"
+    .string "得到了一只拉普拉斯！$"
 
 SilphCo_7F_Text_ExplainLapras::
-	.string "It's a LAPRAS.\n"
-	.string "It's a very intelligent POKéMON.\p"
-	.string "We kept it in our lab, but it will\n"
-	.string "be much better off with you.\p"
-	.string "I think you will be a good TRAINER\n"
-	.string "for LAPRAS!\p"
-	.string "It's a good swimmer.\n"
-	.string "It'll give you a lift across water!$"
+    .string "它是一个拉普拉斯。\n"
+    .string "这是一个很聪明的宝可梦。\p"
+    .string "我们一直养在我们的实验室里，但它\n"
+    .string "在你手里会更有用。\p"
+    .string "我想你会成为一个优秀的拉普拉斯\n"
+    .string "训练家！\p"
+    .string "它是一只游泳高手。\n"
+    .string "它可以带你漫游四海！$"
 
 SilphCo_7F_Text_RocketBossWentToBoardroom::
-	.string "TEAM ROCKET's BOSS went to the\n"
-	.string "boardroom!\p"
-	.string "Is our PRESIDENT okay?\n"
-	.string "I'm worried.$"
+    .string "火箭队的老大去了\n"
+    .string "会议室！\p"
+    .string "我们的总裁还好吗？\n"
+    .string "我很担心。$"
 
 SilphCo_7F_Text_RocketsAfterMasterBall::
-	.string "TEAM ROCKET was after the MASTER\n"
-	.string "BALL, which catches any POKéMON.$"
+    .string "火箭队在找大师球，\n"
+    .string "那是能抓住任何宝可梦的精灵球。$"
 
 SilphCo_7F_Text_CanceledMasterBallProject::
-	.string "We canceled the MASTER BALL\n"
-	.string "project because of TEAM ROCKET.$"
+    .string "我们取消了大师球项目\n"
+    .string "就是因为担心火箭队。$"
 
 SilphCo_7F_Text_BadIfTeamRocketTookOver::
-	.string "It would be bad if TEAM ROCKET\n"
-	.string "took over SILPH or our POKéMON.$"
+    .string "如果火箭队接管西尔佛或者宝可梦的话\n"
+    .string "事情就难以想象了。$"
 
 SilphCo_7F_Text_WowYouChasedOffTeamRocket::
-	.string "Wow!\p"
-	.string "You chased off TEAM ROCKET all by\n"
-	.string "yourself?$"
+    .string "哇喔！\p"
+    .string "你一个人就赶走了\n"
+    .string "全部火箭队？$"
 
 SilphCo_7F_Text_ReallyDangerousHere::
-	.string "You!\n"
-	.string "It's really dangerous here!\p"
-	.string "You came to save me?\n"
-	.string "You can't!$"
+    .string "你！\n"
+    .string "这里真的很危险！\p"
+    .string "你来救我的？\n"
+    .string "你做不到的！$"
 
 SilphCo_7F_Text_ThankYouSoMuch::
-	.string "Thank you so much!$"
+    .string "太感谢你了！$"
 
 SilphCo_7F_Text_Grunt3Intro::
-	.string "Uh-oh!\n"
-	.string "I smell a little mouse!$"
+    .string "嗯，哦！\n"
+    .string "我闻到了一只小老鼠的味道！$"
 
 SilphCo_7F_Text_Grunt3Defeat::
-	.string "Lights out!$"
+    .string "看不见了！$"
 
 SilphCo_7F_Text_Grunt3PostBattle::
-	.string "You won't find my BOSS by just\n"
-	.string "scurrying around!$"
+    .string "你到处乱窜是不会找到\n"
+    .string "我们的老大的！$"
 
 SilphCo_7F_Text_JoshuaIntro::
-	.string "Heheh!\p"
-	.string "You mistook me for a SILPH worker?$"
+    .string "呵呵呵！\p"
+    .string "你当我是西尔佛的员工？$"
 
 SilphCo_7F_Text_JoshuaDefeat::
-	.string "I'm done!$"
+    .string "我完成了！$"
 
 SilphCo_7F_Text_JoshuaPostBattle::
-	.string "Despite your age, you are a\n"
-	.string "skilled TRAINER!$"
+    .string "尽管你如此年轻，你也是一个\n"
+    .string "技术高超的训练家！$"
 
 SilphCo_7F_Text_Grunt1Intro::
-	.string "I am one of the four ROCKET\n"
-	.string "BROTHERS!$"
+    .string "我是火箭队\n"
+    .string "四兄弟之一！$"
 
 SilphCo_7F_Text_Grunt1Defeat::
-	.string "Aack!\n"
-	.string "Brothers, I lost!$"
+    .string "哎咳！\n"
+    .string "哥哥，我输了！$"
 
 SilphCo_7F_Text_Grunt1PostBattle::
-	.string "Doesn't matter.\n"
-	.string "My brothers will repay the favor!$"
+    .string "没关系。\n"
+    .string "我的哥哥们会好好回报你的！$"
 
 SilphCo_7F_Text_Grunt2Intro::
-	.string "A child intruder?\n"
-	.string "That must be you!$"
+    .string "一个少年入侵者？\n"
+    .string "那一定就是你！$"
 
 SilphCo_7F_Text_Grunt2Defeat::
-	.string "Fine!\n"
-	.string "I lost!$"
+    .string "好吧！\n"
+    .string "我输了！$"
 
 SilphCo_7F_Text_Grunt2PostBattle::
-	.string "Go on home before my BOSS gets\n"
-	.string "ticked off!$"
+    .string "在把我们的老大惹火之前\n"
+    .string "赶快回家吧！$"
 
 SilphCo_7F_Text_RivalWhatKeptYou::
-	.string "{RIVAL}: What kept you, {PLAYER}?$"
+    .string "{RIVAL}：你来的可真慢，{PLAYER}？$"
 
 SilphCo_7F_Text_RivalIntro::
-	.string "{RIVAL}: Hahaha! I thought you'd\n"
-	.string "turn up if I waited here!\p"
-	.string "I guess TEAM ROCKET slowed you\n"
-	.string "down! Not that I care!\p"
-	.string "I saw you in SAFFRON, so I decided\n"
-	.string "to see if you got better!$"
+    .string "{RIVAL}：哈哈哈！我等在这儿\n"
+    .string "还以为会让你感动万分呢！\p"
+    .string "我猜火箭队拖慢了你\n"
+    .string "的脚步？我才不会管那些呢！\p"
+    .string "我在金黄市看到了你，所以我决定\n"
+    .string "来看看你是否有所成长了！$"
 
 SilphCo_7F_Text_RivalDefeat::
-	.string "Oh, man!\n"
-	.string "So, you are ready for BOSS\l"
-	.string "ROCKET!$"
+    .string "哎呀哎呀！\n"
+    .string "那么，看来你准备好面对\l"
+    .string "火箭队的老大了啊！$"
 
 SilphCo_7F_Text_RivalPostBattle::
-	.string "Well, {PLAYER}!\n"
-	.string "I'm moving on up and ahead!\p"
-	.string "By checking my POKéDEX, I'm\n"
-	.string "starting to see what's strong and\l"
-	.string "how they evolve!\p"
-	.string "Am I a genius or what?\p"
-	.string "I'm going to the POKéMON LEAGUE to\n"
-	.string "boot out the ELITE FOUR.\p"
-	.string "I'll become the world's most\n"
-	.string "powerful TRAINER!\p"
-	.string "{PLAYER}, well, good luck to you!\n"
-	.string "Don't sweat it!\l"
-	.string "Smell ya!$"
+    .string "好，{PLAYER}！\n"
+    .string "那我先走一步了！\p"
+    .string "只要查询宝可梦图鉴，我\n"
+    .string "就能知道哪个宝可梦比较强以及\l"
+    .string "它们是怎么进化的！\p"
+    .string "哈哈我真是个天才啊\p"
+    .string "我准备去宝可梦联盟把\n"
+    .string "四天王消灭掉。\p"
+    .string "我将会成为世界上\n"
+    .string "最强大的训练家！\p"
+    .string "{PLAYER}，嗯，祝你好运！\n"
+    .string "别翻白眼哦！\l"
+    .string "哈哈！$"
 
 SilphCo_7F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "7F$"
+    .string "西尔佛公司总部\n"
+    .string "7层$"
 

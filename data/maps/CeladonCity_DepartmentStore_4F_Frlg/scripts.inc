@@ -36,20 +36,18 @@ CeladonCity_DepartmentStore_4F_Items::
 	end
 
 CeladonCity_DepartmentStore_4F_Text_GettingPokeDollAsPresent::
-	.string "I'm getting a present for my\n"
-	.string "girlfriend.\p"
-	.string "I guess a POKé DOLL will be it.\n"
-	.string "It's the popular thing.$"
+	.string "我在为我女朋友挑礼物。\p"
+	.string "我觉得皮皮玩偶不错。\n"
+	.string "这东西很流行。$"
 
 CeladonCity_DepartmentStore_4F_Text_CanRunAwayWithPokeDoll::
-	.string "I heard something useful.\p"
-	.string "If a wild POKéMON appears, you can\n"
-	.string "distract it with a POKé DOLL.\p"
-	.string "You can run away while the wild\n"
-	.string "POKéMON is distracted.$"
+    .string "告诉你个有用的信息。\p"
+    .string "如果野生的宝可梦出现，你能\n"
+    .string "用皮皮玩偶转移它的注意力。\p"
+    .string "你就能趁机逃离和它的战斗了。$"
 
 CeladonCity_DepartmentStore_4F_Text_FloorSign::
-	.string "Express yourself with gifts!\n"
-	.string "4F: WISE MAN GIFTS\p"
-	.string "Evolution Special!\n"
-	.string "Element STONES on sale now!$"
+	.string "请尽情挑选礼物！\n"
+	.string "四楼：神秘的礼物\p"
+	.string "进化专场！\n"
+	.string "进化石特价热卖中！$"

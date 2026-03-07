@@ -6,156 +6,155 @@ Route19_EventScript_RouteSign::
 	end
 
 Route19_Text_RichardIntro::
-	.string "I have to exercise and warm up\n"
-	.string "before going out for a swim.$"
+    .string "在出去游泳前\n"
+    .string "我必须先热身。$"
 
 Route19_Text_RichardDefeat::
-	.string "All warmed up!$"
+    .string "热身好了！$"
 
 Route19_Text_RichardPostBattle::
-	.string "Thanks, kid!\n"
-	.string "I'm ready for a swim.$"
+    .string "谢谢你，孩子！\n"
+    .string "我准备好去游泳了。$"
 
 Route19_Text_ReeceIntro::
-	.string "Wait! Slow down!\n"
-	.string "You'll have a heart attack!$"
+    .string "等等！慢慢来！\n"
+    .string "你的心脏会受不了的！$"
 
 Route19_Text_ReeceDefeat::
-	.string "Ooh!\n"
-	.string "That's chilly!$"
+    .string "噢！\n"
+    .string "真冷！$"
 
 Route19_Text_ReecePostBattle::
-	.string "Watch out for TENTACOOL.\n"
-	.string "They sting so painfully.$"
+    .string "注意玛瑙水母。\n"
+    .string "被蛰到会很疼。$"
 
 Route19_Text_MatthewIntro::
-	.string "I love swimming!\n"
-	.string "What about you?$"
+    .string "我喜欢游泳！\n"
+    .string "你呢？$"
 
 Route19_Text_MatthewDefeat::
-	.string "Belly flop!$"
+    .string "失败了！$"
 
 Route19_Text_MatthewPostBattle::
-	.string "I can beat even marine POKéMON\n"
-	.string "at swimming.$"
+    .string "在海里畅游之时即便是遇到\n"
+    .string "海中的宝可梦我也毫无惧色。$"
 
 Route19_Text_DouglasIntro::
-	.string "What's beyond the horizon?$"
+    .string "地平线外是什么？$"
 
 Route19_Text_DouglasDefeat::
-	.string "Glub!$"
+    .string "坏了！$"
 
 Route19_Text_DouglasPostBattle::
-	.string "I see a couple of islands over\n"
-	.string "yonder!$"
+    .string "我看见远处环绕着\n"
+    .string "一些小岛！$"
 
 Route19_Text_DavidIntro::
-	.string "I tried diving for POKéMON, but it\n"
-	.string "was a no-go.$"
+    .string "我试着和宝可梦一起潜水，\n"
+    .string "但是失败了。$"
 
 Route19_Text_DavidDefeat::
-	.string "Help!$"
+    .string "救命！$"
 
 Route19_Text_DavidPostBattle::
-	.string "I guess you have to fish for sea\n"
-	.string "POKéMON.$"
+    .string "我想你必须得钓上\n"
+    .string "海里的宝可梦。$"
 
 Route19_Text_TonyIntro::
-	.string "I look at the sea to forget all\n"
-	.string "the bad things that happened.$"
+    .string "我凝视着大海，就为忘掉\n"
+    .string "所有不愉快的事情。$"
 
 Route19_Text_TonyDefeat::
-	.string "Ooh!\n"
-	.string "Traumatic!$"
+    .string "噢！\n"
+    .string "受伤了！$"
 
 Route19_Text_TonyPostBattle::
-	.string "I'm looking at the sea to forget\n"
-	.string "the bad thing that happened!$"
+    .string "我正凝视着大海，\n"
+    .string "这样就会忘掉所有的不快！$"
 
 Route19_Text_AnyaIntro::
-	.string "Oh, I just love your ride!\n"
-	.string "Can I have it if I win?$"
+    .string "我好喜欢你的坐骑啊！\n"
+    .string "如果我赢了能把它送给我吗？$"
 
 Route19_Text_AnyaDefeat::
-	.string "Oh! I lost!$"
+    .string "呃！我输了！$"
 
 Route19_Text_AnyaPostBattle::
-	.string "It's still a long way to go to\n"
-	.string "SEAFOAM ISLANDS…\p"
-	.string "I want to go back to FUCHSIA…$"
+    .string "去双子岛\n"
+    .string "还有老远的一大段路啊……\p"
+    .string "我还是回浅红算了……$"
 
 Route19_Text_AliceIntro::
-	.string "Swimming's great!\n"
-	.string "Sunburns aren't!$"
+    .string "游泳最棒！\n"
+    .string "太阳什么的最讨厌了！$"
 
 Route19_Text_AliceDefeat::
-	.string "Shocker!$"
+    .string "我震惊了！$"
 
 Route19_Text_AlicePostBattle::
-	.string "My boyfriend wanted to swim to\n"
-	.string "SEAFOAM ISLANDS.$"
+    .string "我男朋友想要游去\n"
+    .string "双子岛。$"
 
 Route19_Text_AxleIntro::
-	.string "Ahoy, there!\n"
-	.string "These waters are treacherous!$"
+    .string "喂，小子！\n"
+    .string "这儿的水流很急啊！$"
 
 Route19_Text_AxleDefeat::
-	.string "Ooh!\n"
-	.string "Dangerous!$"
+    .string "喂！\n"
+    .string "危险！$"
 
 Route19_Text_AxlePostBattle::
-	.string "M-my legs! They cramped up!\n"
-	.string "Glub, glub…$"
+    .string "我，我的腿！抽筋了！\n"
+    .string "糟了……$"
 
 Route19_Text_ConnieIntro::
-	.string "I swam here with my friends…\n"
-	.string "I'm tired…$"
+    .string "我和我的朋友一路游了过来……\n"
+    .string "好累……$"
 
 Route19_Text_ConnieDefeat::
-	.string "I'm exhausted…$"
+    .string "我一点力气也没了……$"
 
 Route19_Text_ConniePostBattle::
-	.string "If I were to ride a POKéMON on\n"
-	.string "the sea, I'd like a LAPRAS.\p"
-	.string "LAPRAS is so big, I bet it\n"
-	.string "would keep me dry on water.$"
+    .string "如果我要在海上骑一只宝可梦航行，\n"
+    .string "那就是拉普拉斯啦。\p"
+    .string "拉普拉斯好大的，\n"
+    .string "能让我在海上不沾一点儿水。$"
 
 Route19_Text_RouteSign::
-	.string "SEA ROUTE 19\n"
-	.string "FUCHSIA CITY - SEAFOAM ISLANDS$"
+    .string "19号航道\n"
+    .string "浅红市-双子岛$"
 
 Route19_Text_LiaIntro::
-	.string "LIA: I'm looking after my brother.\n"
-	.string "He just became a TRAINER.$"
+    .string "真奈：我照顾着我的弟弟。\n"
+    .string "他才刚成为一名训练家。$"
 
 Route19_Text_LiaDefeat::
-	.string "LIA: That's no way to treat my\n"
-	.string "little brother!$"
+    .string "真奈：对我的弟弟一点\n"
+    .string "办法都没有！$"
 
 Route19_Text_LiaPostBattle::
-	.string "LIA: Do you have a younger\n"
-	.string "brother?\p"
-	.string "I hope you're teaching him all\n"
-	.string "sorts of things.$"
+    .string "真奈：你也有弟弟吗？\p"
+    .string "我希望你能教会他\n"
+    .string "各种各样的东西。$"
 
 Route19_Text_LiaNotEnoughMons::
-	.string "LIA: I want to battle together\n"
-	.string "with my little brother.\p"
-	.string "Don't you have two POKéMON?$"
+    .string "真奈：我想和我的弟弟\n"
+    .string "一起战斗。\p"
+    .string "你没有带着两只宝可梦吗？$"
 
 Route19_Text_LucIntro::
-	.string "LUC: My big sis taught me how\n"
-	.string "to swim and train POKéMON.$"
+    .string "阿弘：我姐姐教会了我\n"
+    .string "如何游泳和训练宝可梦。$"
 
 Route19_Text_LucDefeat::
-	.string "LUC: Oh, wow!\n"
-	.string "Someone tougher than my big sis!$"
+    .string "阿弘：哇，天哪！\n"
+    .string "有人比我的姐姐还要厉害！$"
 
 Route19_Text_LucPostBattle::
-	.string "LUC: My big sis is strong and nice.\n"
-	.string "I think she's awesome!$"
+    .string "阿弘：我的姐姐又强又漂亮。\n"
+    .string "我觉得她太棒了！$"
 
 Route19_Text_LucNotEnoughMons::
-	.string "LUC: I don't want to if I can't\n"
-	.string "battle you with my big sis.\p"
-	.string "Don't you have two POKéMON?$"
+    .string "阿弘：我不想和你单独战斗，\n"
+    .string "我要和我姐姐一起。\p"
+    .string "你没有带着两只宝可梦吗？$"

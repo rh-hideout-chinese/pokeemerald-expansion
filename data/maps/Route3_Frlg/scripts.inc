@@ -10,106 +10,103 @@ Route3_EventScript_RouteSign::
 	end
 
 Route3_Text_TunnelFromCeruleanTiring::
-	.string "Whew… I better take a rest…\n"
-	.string "Groan…\p"
-	.string "That tunnel from CERULEAN takes a\n"
-	.string "lot out of you!$"
+    .string "呼……我最好小睡一下……\n"
+    .string "呃……\p"
+    .string "那条从华蓝过来的隧道\n"
+    .string "省了你们很多事！$"
 
 Route3_Text_ColtonIntro::
-	.string "Hey!\n"
-	.string "I saw you in VIRIDIAN FOREST!$"
+    .string "嘿！\n"
+    .string "我在常青森林见过你！$"
 
 Route3_Text_ColtonDefeat::
-	.string "You beat me again!$"
+    .string "你又打败了我！$"
 
 Route3_Text_ColtonPostBattle::
-	.string "There are other kinds of POKéMON\n"
-	.string "than the ones you find in forests.$"
+    .string "除了你在森林里看到的那些宝可梦以外，\n"
+    .string "还有很多其它的宝可梦。$"
 
 Route3_Text_BenIntro::
-	.string "Hi!\n"
-	.string "I like shorts!\p"
-	.string "They're delightfully comfy and\n"
-	.string "easy to wear!$"
+    .string "嗨！\n"
+    .string "我喜欢短裤！\p"
+    .string "短裤穿着很舒服让人心情很愉快，\n"
+    .string "而且穿起来很方便！$"
 
 Route3_Text_BenDefeat::
-	.string "I don't believe it!$"
+    .string "不敢相信！$"
 
 Route3_Text_BenPostBattle::
-	.string "Are you using a POKéMON CENTER's\n"
-	.string "PC for storing your POKéMON?\p"
-	.string "Each BOX can hold up to\n"
-	.string "30 POKéMON.$"
+    .string "你用过宝可梦中心的电脑\n"
+    .string "来存放宝可梦吗？\p"
+    .string "每个盒子最多可以存放30个宝可梦。$"
 
 Route3_Text_JaniceIntro::
-	.string "Excuse me!\n"
-	.string "You looked at me, didn't you?$"
+    .string "不好意思！\n"
+    .string "你在盯着我看，我没说错吧？$"
 
 Route3_Text_JaniceDefeat::
-	.string "You're mean!$"
+    .string "你可真厉害！$"
 
 Route3_Text_JanicePostBattle::
-	.string "You shouldn't be staring if you\n"
-	.string "don't want to battle!$"
+    .string "如果你不想战斗的话，\n"
+    .string "就不该盯着我看哦！$"
 
 Route3_Text_GregIntro::
-	.string "Are you a TRAINER?\n"
-	.string "Let's get with it right away!$"
+    .string "你是一个训练家吗？\n"
+    .string "让我们马上对战吧！$"
 
 Route3_Text_GregDefeat::
-	.string "If I had new POKéMON, I would've\n"
-	.string "won!$"
+    .string "要不是因为我没新的宝可梦，\n"
+    .string "我就赢了！$"
 
 Route3_Text_GregPostBattle::
-	.string "If a POKéMON BOX on the PC gets\n"
-	.string "full, just switch to another BOX.$"
+    .string "如果电脑里的一个宝可梦寄存箱满了，\n"
+    .string "就切换到另一个盒子去。$"
 
 Route3_Text_SallyIntro::
-	.string "That look you gave me…\n"
-	.string "It's so intriguing!$"
+    .string "似乎你总在让着我……\n"
+    .string "这真是太有趣了！$"
 
 Route3_Text_SallyDefeat::
-	.string "Be nice!$"
+    .string "做人要厚道啊！$"
 
 Route3_Text_SallyPostBattle::
-	.string "You can avoid battles by not\n"
-	.string "letting TRAINERS see you.$"
+    .string "你可以躲开训练家不让他们看到你，\n"
+    .string "以此来避开战斗。$"
 
 Route3_Text_CalvinIntro::
-	.string "Hey! You're not wearing shorts!\n"
-	.string "What's wrong with you?$"
+    .string "嘿！你没有短裤！\n"
+    .string "为什么？$"
 
 Route3_Text_CalvinDefeat::
-	.string "Lost!\n"
-	.string "Lost! Lost!$"
+    .string "输了！\n"
+    .string "输了！输了！$"
 
 Route3_Text_CalvinPostBattle::
-	.string "I always wear shorts, even in\n"
-	.string "winter. That's my policy.$"
+    .string "我总是穿短裤，在冬天也一样。\n"
+    .string "这是我做人的原则。$"
 
 Route3_Text_JamesIntro::
-	.string "I'll battle you with the POKéMON\n"
-	.string "I just caught.$"
+    .string "我要用刚收服的宝可梦\n"
+    .string "和你对战。$"
 
 Route3_Text_JamesDefeat::
-	.string "Done like dinner!$"
+    .string "平淡无奇！$"
 
 Route3_Text_JamesPostBattle::
-	.string "Trained POKéMON are stronger than\n"
-	.string "the wild ones.$"
+    .string "训练过的宝可梦会比野生的更强。$"
 
 Route3_Text_RobinIntro::
-	.string "Eek!\n"
-	.string "Did you touch me?$"
+    .string "呀！\n"
+    .string "你刚才碰到了我的身体？$"
 
 Route3_Text_RobinDefeat::
-	.string "That's it?$"
+    .string "结束了？$"
 
 Route3_Text_RobinPostBattle::
-	.string "ROUTE 4 is at the foot of\n"
-	.string "MT. MOON.$"
+    .string "4号道路在月见山脚下。$"
 
 Route3_Text_RouteSign::
-	.string "ROUTE 3\n"
-	.string "MT. MOON AHEAD$"
+    .string "3号道路\n"
+    .string "往前走是月见山$"
 

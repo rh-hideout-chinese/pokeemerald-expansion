@@ -17,35 +17,35 @@ PokemonTower_4F_EventScript_Jody::
 	end
 
 PokemonTower_4F_Text_PaulaIntro::
-	.string "Ghost! No!\n"
-	.string "Kwaaah!$"
+    .string "鬼！不！\n"
+    .string "咔哇哇哇哇哈！$"
 
 PokemonTower_4F_Text_PaulaDefeat::
-	.string "Where is the ghost?$"
+    .string "鬼在哪？$"
 
 PokemonTower_4F_Text_PaulaPostBattle::
-	.string "I must have been dreaming…$"
+    .string "我刚刚一定在做梦……$"
 
 PokemonTower_4F_Text_LaurelIntro::
-	.string "Be cursed with me!\n"
-	.string "Kwaaah!$"
+    .string "让我诅咒你吧！\n"
+    .string "咔哇哇哇哇哈！$"
 
 PokemonTower_4F_Text_LaurelDefeat::
-	.string "What!$"
+    .string "什么！$"
 
 PokemonTower_4F_Text_LaurelPostBattle::
-	.string "We can't determine the identity of\n"
-	.string "the ghosts…$"
+    .string "我们不能确定幽灵\n"
+    .string "的真面目……$"
 
 PokemonTower_4F_Text_JodyIntro::
-	.string "Huhuhu…\n"
-	.string "Beat me not!$"
+    .string "呼呼呼……\n"
+    .string "不要打我！$"
 
 PokemonTower_4F_Text_JodyDefeat::
-	.string "Huh?\n"
-	.string "Who? What?$"
+    .string "嘿？\n"
+    .string "谁？什么？$"
 
 PokemonTower_4F_Text_JodyPostBattle::
-	.string "May the departed POKéMON rest in\n"
-	.string "peace…$"
+    .string "让死去的宝可梦\n"
+    .string "安息吧……$"
 

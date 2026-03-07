@@ -12,25 +12,25 @@ SSAnne_B1F_Room4_EventScript_Duncan::
 	end
 
 SSAnne_B1F_Room4_Text_LeonardIntro::
-	.string "You know what they say about\n"
-	.string "sailors and battling!$"
+    .string "你知道他们是怎样\n"
+    .string "评价水手的战斗的！$"
 
 SSAnne_B1F_Room4_Text_LeonardDefeat::
-	.string "Right!\n"
-	.string "Good battle, mate!$"
+    .string "很好！\n"
+    .string "精彩的战斗，伙计！$"
 
 SSAnne_B1F_Room4_Text_LeonardPostBattle::
-	.string "Hahaha!\n"
-	.string "Want to be a sailor, mate?$"
+    .string "哈哈哈！\n"
+    .string "你想成为一名水手吗，伙计？$"
 
 SSAnne_B1F_Room4_Text_DuncanIntro::
-	.string "Come on, then!\n"
-	.string "My sailor's pride is at stake!$"
+    .string "那就来吧！\n"
+    .string "赌上我身为水手的尊严！$"
 
 SSAnne_B1F_Room4_Text_DuncanDefeat::
-	.string "Your spirit sank me!$"
+    .string "你的精神让我沉没了！$"
 
 SSAnne_B1F_Room4_Text_DuncanPostBattle::
-	.string "Did you see the FISHING GURU in\n"
-	.string "VERMILION CITY?$"
+    .string "你见过枯叶市的\n"
+    .string "钓鱼大师了吗？$"
 

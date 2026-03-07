@@ -51,29 +51,27 @@ ThreeIsland_DunsparceTunnel_EventScript_ProspectorAlreadyGaveNugget::
 	end
 
 ThreeIsland_DunsparceTunnel_Text_ProspectingForGold::
-	.string "Hey, there!\n"
-	.string "How's it going?\p"
-	.string "What am I doing here, you ask?\n"
-	.string "Why, I'm prospecting for gold!\p"
-	.string "When I strike it rich, I'm buying\n"
-	.string "a house in KANTO.$"
+	.string "嗨，那边的！\n"
+	.string "你们怎么样？\p"
+	.string "你问我在这里做什么？\n"
+	.string "我在挖金矿！\p"
+	.string "等到我挖成了富翁，\n"
+	.string "我要在关都买一栋房子。$"
 
 ThreeIsland_DunsparceTunnel_Text_StruckGoldThisIsForYou::
-	.string "Hey, there! How's it going?\n"
-	.string "Did you hear? I've struck gold!\p"
-	.string "You remembered that I was\n"
-	.string "prospecting, didn't you?\p"
-	.string "You can't begin to imagine just\n"
-	.string "how happy I am.\p"
-	.string "So, I'll show you!\n"
-	.string "This is for you!$"
+	.string "嗨！你们怎么样？\n"
+	.string "你听见了吗？ 我挖到了金子！\p"
+	.string "你还记得我曾经在这里挖矿吗？\p"
+	.string "你无法想象我是多么的快乐！\p"
+	.string "所以，我给你看！\n"
+	.string "这个给你！$"
 
 ThreeIsland_DunsparceTunnel_Text_ThatsANugget::
-	.string "That's a NUGGET!\p"
-	.string "I can't give you any nuggets of\n"
-	.string "wisdom, so that'll have to do!$"
+	.string "这是一块金珠\p"
+	.string "我无法给你我的一部分智慧，\n"
+	.string "那我就分你我的一部分金块吧$"
 
 ThreeIsland_DunsparceTunnel_Text_WhoopsBagCrammedFull::
-	.string "Whoops, your BAG is crammed full!\n"
-	.string "I'll give this to you later.$"
+	.string "噢，你的背包都被填满了！\n"
+	.string "我以后再给你吧。$"
 

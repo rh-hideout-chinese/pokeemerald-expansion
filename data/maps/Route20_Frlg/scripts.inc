@@ -32,122 +32,120 @@ Route20_EventScript_SeafoamIslandsSign::
 	end
 
 Route20_Text_BarryIntro::
-	.string "The water is shallow here.\n"
-	.string "There are many people swimming.$"
+    .string "这儿的水很浅。\n"
+    .string "有很多人在这儿游泳。$"
 
 Route20_Text_BarryDefeat::
-	.string "Splash!$"
+    .string "扑通！$"
 
 Route20_Text_BarryPostBattle::
-	.string "I wish I could ride my POKéMON.\n"
-	.string "I bet you're not tired.$"
+    .string "我希望能骑着我的宝可梦。\n"
+    .string "你应该还不算太累。$"
 
 Route20_Text_ShirleyIntro::
-	.string "SEAFOAM is a quiet getaway.\n"
-	.string "I'm vacationing here.$"
+    .string "双子岛是一个安静的度假场所。\n"
+    .string "我就是正在这儿休假。$"
 
 Route20_Text_ShirleyDefeat::
-	.string "Quit it!$"
+    .string "停下来！$"
 
 Route20_Text_ShirleyPostBattle::
-	.string "There's a huge cavern underneath\n"
-	.string "this island.$"
+    .string "这座岛下有个巨大的洞穴。$"
 
 Route20_Text_TiffanyIntro::
-	.string "I love floating with the fishes\n"
-	.string "here among the waves.$"
+    .string "我喜欢和鱼儿们一起\n"
+    .string "飘游在波浪之中。$"
 
 Route20_Text_TiffanyDefeat::
-	.string "Yowch!$"
+    .string "哟！$"
 
 Route20_Text_TiffanyPostBattle::
-	.string "Want to float with me?$"
+    .string "想和我一起飘游吗？$"
 
 Route20_Text_IreneIntro::
-	.string "Are you on vacation, too?$"
+    .string "你也在度假吗？$"
 
 Route20_Text_IreneDefeat::
-	.string "No mercy at all!$"
+    .string "不会放过你！$"
 
 Route20_Text_IrenePostBattle::
-	.string "SEAFOAM used to be a single island\n"
-	.string "in the distant past.$"
+    .string "在很久以前，\n"
+    .string "双子岛是一座独立的小岛。$"
 
 Route20_Text_DeanIntro::
-	.string "Check out my buff physique!$"
+    .string "检查一下我充满肌肉的体格！$"
 
 Route20_Text_DeanDefeat::
-	.string "Wimpy!$"
+    .string "太没用了！$"
 
 Route20_Text_DeanPostBattle::
-	.string "I should've been buffing up my\n"
-	.string "POKéMON, not me!$"
+    .string "我应该让宝可梦的体格变强壮，\n"
+    .string "而不是我的！$"
 
 Route20_Text_DarrinIntro::
-	.string "Why are you riding a POKéMON?\n"
-	.string "Can't you swim?$"
+    .string "你为什么骑着宝可梦？\n"
+    .string "你不会游泳吗？$"
 
 Route20_Text_DarrinDefeat::
-	.string "Ouch!\n"
-	.string "Torpedoed!$"
+    .string "哎哟！\n"
+    .string "完了！$"
 
 Route20_Text_DarrinPostBattle::
-	.string "Riding a POKéMON sure looks fun!$"
+    .string "骑着宝可梦看起来确实很有趣！$"
 
 Route20_Text_RogerIntro::
-	.string "I rode my bird POKéMON here.$"
+    .string "我乘着我的鸟系宝可梦来这。$"
 
 Route20_Text_RogerDefeat::
-	.string "Oh, no!\n"
-	.string "Now what am I to do?$"
+    .string "噢，不！\n"
+    .string "现在我该怎么办？$"
 
 Route20_Text_RogerPostBattle::
-	.string "My birds are exhausted.\n"
-	.string "They can't FLY me back!$"
+    .string "我的宝可梦筋疲力尽了。\n"
+    .string "它们不能带我飞翔回去了！$"
 
 Route20_Text_NoraIntro::
-	.string "My boyfriend gave me big pearls.$"
+    .string "我的男朋友给了我大颗的珍珠。$"
 
 Route20_Text_NoraDefeat::
-	.string "Oh, no!\n"
-	.string "My pearls were in them!$"
+    .string "噢，不！\n"
+    .string "我的珍珠还在里面！$"
 
 Route20_Text_NoraPostBattle::
-	.string "Will my pearls grow bigger inside\n"
-	.string "CLOYSTER?$"
+    .string "我的珍珠放在刺甲贝\n"
+    .string "里面会变大吗？$"
 
 Route20_Text_MissyIntro::
-	.string "I swam here from CINNABAR ISLAND.\n"
-	.string "It wasn't easy, I tell you.$"
+    .string "我从红莲镇游过来的。\n"
+    .string "跟你讲，这可不轻松。$"
 
 Route20_Text_MissyDefeat::
-	.string "I'm so disappointed!$"
+    .string "我太失望了！$"
 
 Route20_Text_MissyPostBattle::
-	.string "POKéMON have taken over an\n"
-	.string "abandoned mansion on CINNABAR.\p"
-	.string "They call it the POKéMON MANSION\n"
-	.string "now.$"
+    .string "在红莲，宝可梦占据了\n"
+    .string "那所被遗弃的大厦。\p"
+    .string "那儿现在叫做宝可梦屋。$"
 
 Route20_Text_MelissaIntro::
-	.string "CINNABAR, in the west, has a LAB\n"
-	.string "for POKéMON.\p"
-	.string "My daddy works there.$"
+    .string "在红莲西方，\n"
+    .string "有一个宝可梦的研究所。\p"
+    .string "我的爸爸在那儿工作。$"
 
 Route20_Text_MelissaDefeat::
-	.string "Wait!\n"
-	.string "You're supposed to wait!$"
+    .string "等等！\n"
+    .string "你给我站住！$"
 
 Route20_Text_MelissaPostBattle::
-	.string "CINNABAR is a volcanic island.\p"
-	.string "I heard it rose out of the sea\n"
-	.string "when a volcano erupted.$"
+    .string "红莲是一个火山岛。\p"
+    .string "我听说在某一次火山喷发时，\n"
+    .string "它从海上生成了。$"
 
 Route20_Text_SeafoamIslands::
-	.string "SEAFOAM ISLANDS$"
+    .string "双子岛$"
 
 Route20_Text_MistyTrainsHere::
-	.string "Strong TRAINERS and WATER POKéMON\n"
-	.string "are common sights in these parts.\p"
-	.string "They say that MISTY of the\n"
-	.string "CERULEAN GYM trains here.$"
+    .string "在这儿经常能看到\n"
+    .string "强大的训练家和强大的水属性宝可梦。\p"
+    .string "据说华蓝道馆的小霞\n"
+    .string "也在这儿训练。$"

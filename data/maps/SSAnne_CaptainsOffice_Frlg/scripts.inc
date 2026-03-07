@@ -47,55 +47,50 @@ SSAnne_CaptainsOffice_EventScript_Book::
 	end
 
 SSAnne_CaptainsOffice_Text_CaptainIFeelSeasick::
-	.string "CAPTAIN: Ooargh…\n"
-	.string "I feel hideous…\l"
-	.string "Urrp! Seasick…$"
+    .string "船长 呕……\n"
+    .string "我很不舒服……\l"
+    .string "呕！好晕啊……$"
 
 SSAnne_CaptainsOffice_Text_RubbedCaptainsBack::
-	.string "{PLAYER} rubbed the CAPTAIN's\n"
-	.string "back!\p"
-	.string "Rub-rub…\n"
-	.string "Rub-rub…$"
+    .string "{PLAYER}揉了揉船长的背！\p"
+    .string "揉揉……\n"
+    .string "揉揉……$"
 
 SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut::
-	.string "CAPTAIN: Whew! Thank you!\n"
-	.string "I'm feeling much better now.\p"
-	.string "You want to see my hidden CUT\n"
-	.string "technique?\p"
-	.string "I could show you my prized CUT\n"
-	.string "technique if I weren't so ill…\p"
-	.string "I know! You can have this!\n"
-	.string "This HIDDEN MACHINE!\p"
-	.string "Teach CUT to your POKéMON, and\n"
-	.string "you can see it CUT anytime!$"
+    .string "船长：唔！谢谢你！\n"
+    .string "我现在好多了。\p"
+    .string "你想看我的秘传技居合斩吗？\p"
+    .string "如果我不是那么虚弱的话倒是可以让你\n"
+    .string "见识下我独步天下的居合斩技术……\p"
+    .string "我想起来了！给你这个！\n"
+    .string "这个秘传学习机！\p"
+    .string "把居合斩教给你的宝可梦，\n"
+    .string "你就能让它随时表演居合斩给你看了！$"
 
 SSAnne_CaptainsOffice_Text_ObtainedHM01FromCaptain::
-	.string "{PLAYER} obtained HM01\n"
-	.string "from the CAPTAIN!$"
+    .string "{PLAYER}从船长那里\n"
+    .string "获得了HM01！$"
 
 SSAnne_CaptainsOffice_Text_ExplainCut::
-	.string "Using CUT, you can chop down\n"
-	.string "small trees.\p"
-	.string "Why not try it with the trees\n"
-	.string "around VERMILION CITY?$"
+    .string "使用居合斩，你就能砍掉小树。\p"
+    .string "可以找枯叶市周围的树试试哦！$"
 
 SSAnne_CaptainsOffice_Text_SSAnneWillSetSailSoon::
-	.string "CAPTAIN: …Whew!\p"
-	.string "Now that I'm not sick anymore,\n"
-	.string "I guess it's time.\p"
-	.string "The S.S. ANNE will set sail soon!\p"
-	.string "Farewell, until our return to\n"
-	.string "VERMILION CITY!$"
+    .string "船长 ……唔！\p"
+    .string "我现在好了，\n"
+    .string "我想时间也差不多到了。\p"
+    .string "圣特安努号马上就要启航了！\p"
+    .string "下次回枯叶市时我们再见！$"
 
 SSAnne_CaptainsOffice_Text_YouHaveNoRoomForThis::
-	.string "Oh, no!\n"
-	.string "You have no room for this!$"
+    .string "哦，不！\n"
+    .string "你已经没有多余的空间了！$"
 
 SSAnne_CaptainsOffice_Text_YuckShouldntHaveLooked::
-	.string "Yuck!\n"
-	.string "Shouldn't have looked!$"
+    .string "真恶心！\n"
+    .string "早知就不应该看！$"
 
 SSAnne_CaptainsOffice_Text_HowToConquerSeasickness::
-	.string "How to Conquer Seasickness…\n"
-	.string "The CAPTAIN's reading this!$"
+    .string "怎么样才能克服晕船……\n"
+    .string "船长正在阅读中！$"
 

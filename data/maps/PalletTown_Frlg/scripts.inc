@@ -449,71 +449,68 @@ PalletTown_EventScript_SignLadyStartShowSign::
 	end
 
 PalletTown_Text_OakDontGoOut::
-	.string "OAK: Hey! Wait!\n"
-	.string "Don't go out!$"
+    .string "大木：嘿，等等！\n"
+    .string "别急着出去！$"
 
 PalletTown_Text_OakGrassUnsafeNeedMon::
-	.string "OAK: It's unsafe!\n"
-	.string "Wild POKéMON live in tall grass!\p"
-	.string "You need your own POKéMON for\n"
-	.string "your protection.\p"
-	.string "I know!\n"
-	.string "Here, come with me!$"
+    .string "大木：太危险了！\n"
+    .string "有野生的宝可梦生活在草丛里！\p"
+    .string "你需要拥有自己的宝可梦\n"
+    .string "来保护你自己。\p"
+    .string "我知道了！\n"
+    .string "这边走，跟我来一下吧！$"
 
 PalletTown_Text_RaisingMonsToo::
-	.string "I'm raising POKéMON, too.\p"
-	.string "When they get strong, they can\n"
-	.string "protect me.$"
+    .string "我也在培育宝可梦。\p"
+    .string "等当它们变得强大了，\n"
+    .string "它们就能保护我了。$"
 
 PalletTown_Text_CanStoreItemsAndMonsInPC::
-	.string "Technology is incredible!\p"
-	.string "You can now store and recall items\n"
-	.string "and POKéMON as data via PC.$"
+    .string "科学力量真是神奇！\p"
+    .string "通过电脑你可以像管理数据一样\n"
+    .string "存取物品和宝可梦。$"
 
 PalletTown_Text_OakPokemonResearchLab::
-	.string "OAK POKéMON RESEARCH LAB$"
+    .string "大木宝可梦研究所$"
 
 PalletTown_Text_PlayersHouse::
-	.string "{PLAYER}'s house$"
+    .string "{PLAYER}的家$"
 
 PalletTown_Text_RivalsHouse::
-	.string "{RIVAL}'s house$"
+    .string "{RIVAL}的家$"
 
 PalletTown_Text_TownSign::
-	.string "PALLET TOWN\n"
-	.string "Shades of your journey await!$"
+    .string "真新镇\n"
+    .string "在此揭开你的旅程！$"
 
 PalletTown_Text_OakLetMeSeePokedex::
-	.string "OAK: Ah, {PLAYER}!\n"
-	.string "You're back, are you?\p"
-	.string "How much have you filled in your\n"
-	.string "POKéDEX?\p"
-	.string "May I see it?\p"
-	.string "Let's see…$"
+    .string "大木：啊，{PLAYER}！\n"
+    .string "你回来啦？\p"
+    .string "宝可梦图鉴完成得怎么样了？\p"
+    .string "能让我看看吗？\p"
+    .string "那我瞧瞧……$"
 
 PalletTown_Text_CaughtXPuttingInHonestEffort::
-	.string "You've caught {STR_VAR_2}…\p"
-	.string "Hm, it looks as if you're putting\n"
-	.string "in an honest effort.\p"
-	.string "When you manage to fill it some\n"
-	.string "more, come show me, please.$"
+    .string "你已经抓到了{STR_VAR_2}种……\p"
+    .string "嗯，看得出来，\n"
+    .string "你的确付出了你的努力。\p"
+    .string "等你完成得多一些的时候，\n"
+    .string "再拿来给我看看吧。$"
 
 PalletTown_Text_CaughtXImpressiveFollowMe::
-	.string "You've caught… {STR_VAR_2}!?\n"
-	.string "Now, this is impressive!\p"
-	.string "There's something I wanted to ask\n"
-	.string "of you, {PLAYER}.\p"
-	.string "Come.\n"
-	.string "Follow me.$"
+    .string "你抓到了……{STR_VAR_2}种！？\n"
+    .string "真是难以置信！\p"
+    .string "我有个请求，{PLAYER}。\p"
+    .string "跟我来。$"
 
 PalletTown_Text_OakYouEnjoyingTraveling::
-	.string "OAK: Ah, {PLAYER}!\n"
-	.string "You seem to be enjoying traveling.\p"
-	.string "Knowing you, {PLAYER}, I can easily\n"
-	.string "imagine you going out to even more\l"
-	.string "exotic locales.\p"
-	.string "Good for you, good for you.\n"
-	.string "Hohoho.$"
+    .string "大木：啊，{PLAYER}！\n"
+    .string "你好像很喜欢旅行啊。\p"
+    .string "{PLAYER}，\n"
+    .string "我猜想你一定会到\l"
+    .string "更奇异地地方去冒险。\p"
+    .string "好极了，好极了。\n"
+    .string "呵呵呵。$"
 
 @ For the NPC in Pallet Town that talks about the Trainer Tips sign
 PalletTown_Text_HmmIsThatRight::

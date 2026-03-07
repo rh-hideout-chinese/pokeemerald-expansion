@@ -44,95 +44,95 @@ FiveIsland_ResortGorgeous_EventScript_SelphysHouseSign::
 	end
 
 FiveIsland_ResortGorgeous_Text_DaisyIntro::
-	.string "With these hands, I will create\n"
-	.string "my victory!$"
+    .string "用这双手，\n"
+    .string "我要创造我的胜利！$"
 
 FiveIsland_ResortGorgeous_Text_DaisyDefeat::
-	.string "The shame of this…\n"
-	.string "I'm red-faced…$"
+    .string "真是羞愧死了……\n"
+    .string "我脸红了……$"
 
 FiveIsland_ResortGorgeous_Text_DaisyPostBattle::
-	.string "Uh-oh, my paint tubes have\n"
-	.string "scattered everywhere!$"
+    .string "噢，我的涂料管\n"
+    .string "散乱得到处都是！$"
 
 FiveIsland_ResortGorgeous_Text_CelinaIntro::
-	.string "Excuse me!\n"
-	.string "I'm trying to paint.\l"
-	.string "Please keep out of my sight!$"
+    .string "不好意思！\n"
+    .string "我正忙着画画。\l"
+    .string "请你别挡我的视线！$"
 
 FiveIsland_ResortGorgeous_Text_CelinaDefeat::
-	.string "This loss…\n"
-	.string "I feel like I'm whiting out…$"
+    .string "输了……\n"
+    .string "我觉得我出局了……$"
 
 FiveIsland_ResortGorgeous_Text_CelinaPostBattle::
-	.string "GILLIAN?\n"
-	.string "Please tilt your head slightly…\l"
-	.string "There! That's the look I want!$"
+    .string "雪野？\n"
+    .string "请稍微倾斜一下你的头部……\l"
+    .string "好了！这就是我想要的姿势！$"
 
 FiveIsland_ResortGorgeous_Text_RaynaIntro::
-	.string "Hmm…\n"
-	.string "The angle, it is not quite there…$"
+    .string "唔……\n"
+    .string "这鱼钓的，这儿真不安静……$"
 
 FiveIsland_ResortGorgeous_Text_RaynaDefeat::
-	.string "Oh…\n"
-	.string "My feelings, they are blue…$"
+    .string "呃……\n"
+    .string "我的感觉，太烦闷了……$"
 
 FiveIsland_ResortGorgeous_Text_RaynaPostBattle::
-	.string "The sky and the sea…\n"
-	.string "They are so fickle.\p"
-	.string "Their changing expressions make\n"
-	.string "them difficult to capture.$"
+    .string "天空和海洋……\n"
+    .string "它们都是变幻无常的。\p"
+    .string "它们的这种特性\n"
+    .string "使得人们很难征服它们。$"
 
 FiveIsland_ResortGorgeous_Text_JackiIntro::
-	.string "I am visiting my friend's retreat,\n"
-	.string "if you must know.$"
+    .string "如果你一定要知道，\n"
+    .string "我正打算拜访我朋友隐居的地方。$"
 
 FiveIsland_ResortGorgeous_Text_JackiDefeat::
-	.string "Oh, my, so strong.$"
+    .string "噢，太强大了。$"
 
 FiveIsland_ResortGorgeous_Text_JackiPostBattle::
-	.string "I find it pleasurable to leisurely\n"
-	.string "battle in the gentle sea breeze.$"
+    .string "在海边和煦的微风之中，\n"
+    .string "来一场从容的战斗真是令人惬意。$"
 
 FiveIsland_ResortGorgeous_Text_GillianIntro::
-	.string "I'm thinking of having a pool\n"
-	.string "made specially for POKéMON.$"
+    .string "我正在想着\n"
+    .string "专门为宝可梦建一个游泳池。$"
 
 FiveIsland_ResortGorgeous_Text_GillianDefeat::
-	.string "Oh, my goodness gracious!$"
+    .string "噢，我的天啊！$"
 
 FiveIsland_ResortGorgeous_Text_GillianPostBattle::
-	.string "A pool would be nice, but I must\n"
-	.string "say, a sun-room may be sublime.$"
+    .string "一个游泳池是很好，但是我要说，\n"
+    .string "一个日光浴室也许更令人赞叹。$"
 
 FiveIsland_ResortGorgeous_Text_DestinIntro::
-	.string "I'm a good runner.\n"
-	.string "I'm really fast!$"
+    .string "我很擅长跑步。\n"
+    .string "我速度可是很快的！$"
 
 FiveIsland_ResortGorgeous_Text_DestinDefeat::
-	.string "Oops!\n"
-	.string "I rushed things!$"
+    .string "哎哟！\n"
+    .string "我撞到东西了！$"
 
 FiveIsland_ResortGorgeous_Text_DestinPostBattle::
-	.string "When I run with the wind, it feels\n"
-	.string "like I could fly!$"
+    .string "当我迎着风奔跑时，\n"
+    .string "我感觉我能飞起来！$"
 
 FiveIsland_ResortGorgeous_Text_TobyIntro::
-	.string "I say, this marine life here at\n"
-	.string "this resort agrees with me.$"
+    .string "我发现这个度假胜地之中\n"
+    .string "这些海上生物跟我很合拍。$"
 
 FiveIsland_ResortGorgeous_Text_TobyDefeat::
-	.string "That's a shocker!\n"
-	.string "You must be joking.$"
+    .string "这太震惊了！\n"
+    .string "你一定在开玩笑。$"
 
 FiveIsland_ResortGorgeous_Text_TobyPostBattle::
-	.string "Getting so serious over this…\n"
-	.string "How nonsensical.$"
+    .string "变得这么严重……\n"
+    .string "多么荒谬啊。$"
 
 FiveIsland_ResortGorgeous_Text_SelphyThanksYouMayGoNow::
-	.string "SELPHY: Thank you.\p"
-	.string "You may go now.$"
+    .string "秋穗：谢谢你。\p"
+    .string "你可以走了。$"
 
 FiveIsland_ResortGorgeous_Text_SelphysHouse::
-	.string "SELPHY'S HOUSE$"
+    .string "秋穗的家$"
 

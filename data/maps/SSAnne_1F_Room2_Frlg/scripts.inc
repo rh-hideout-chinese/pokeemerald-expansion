@@ -16,33 +16,32 @@ SSAnne_1F_Room2_EventScript_Tyler::
 	end
 
 SSAnne_1F_Room2_Text_TylerIntro::
-	.string "I love POKéMON!\n"
-	.string "Do you?$"
+    .string "我爱宝可梦！\n"
+    .string "你呢？$"
 
 SSAnne_1F_Room2_Text_TylerDefeat::
-	.string "Wow! \n"
-	.string "You're great!$"
+    .string "哇！\n"
+    .string "你真棒！$"
 
 SSAnne_1F_Room2_Text_TylerPostBattle::
-	.string "Listen, listen!\n"
-	.string "Let me be your friend, okay?\p"
-	.string "Then we can trade POKéMON and\n"
-	.string "do stuff.$"
+    .string "听着，听着！\n"
+    .string "让我做你的朋友好吗？\p"
+    .string "然后我们就可以交换宝可梦，\n"
+    .string "以及做各种各样的事情。$"
 
 SSAnne_1F_Room2_Text_AnnIntro::
-	.string "I collected these POKéMON\n"
-	.string "from all around the world!$"
+    .string "我从世界各地收集到了\n"
+    .string "这些宝可梦！$"
 
 SSAnne_1F_Room2_Text_AnnDefeat::
-	.string "Oh, no!\n"
-	.string "I went around the world for these!$"
+    .string "哦，不！\n"
+    .string "我可是为了它们才环游世界！$"
 
 SSAnne_1F_Room2_Text_AnnPostBattle::
-	.string "You hurt my poor POKéMON!\p"
-	.string "I demand that you heal them at a\n"
-	.string "POKéMON CENTER!$"
+    .string "你伤害了我可怜的宝可梦！\p"
+    .string "我要求你在宝可梦中心\n"
+    .string "治疗他们！$"
 
 SSAnne_1F_Room2_Text_CruisingAroundWorld::
-	.string "We are cruising around the world,\n"
-	.string "my children and I.$"
+    .string "我和我的孩子在周游世界。$"
 

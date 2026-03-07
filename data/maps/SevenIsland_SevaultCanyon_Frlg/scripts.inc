@@ -6,132 +6,130 @@ SevenIsland_SevaultCanyon_EventScript_RouteSign::
 	end
 
 SevenIsland_SevaultCanyon_Text_CyndyIntro::
-	.string "My conditioning's in top form!$"
+    .string "我现在是最佳状态！$"
 
 SevenIsland_SevaultCanyon_Text_CyndyDefeat::
-	.string "Huh?\n"
-	.string "Something's not right…$"
+    .string "呃？\n"
+    .string "有些环节出问题了……$"
 
 SevenIsland_SevaultCanyon_Text_CyndyPostBattle::
-	.string "The way I am now, I may have to\n"
-	.string "hold off on TRAINER TOWER…$"
+    .string "我现在在的这条路，\n"
+    .string "可能离训练家之塔越来越远了……$"
 
 SevenIsland_SevaultCanyon_Text_EvanIntro::
-	.string "It doesn't matter if you happen to\n"
-	.string "have the strongest POKéMON…\p"
-	.string "It doesn't mean a thing if you don't\n"
-	.string "know how to use them properly!$"
+    .string "如果你偶然拥有了最强的宝可梦，\n"
+    .string "那也不要紧……\p"
+    .string "若你不能正确地使用它们，\n"
+    .string "那你仍然一无是处！$"
 
 SevenIsland_SevaultCanyon_Text_EvanDefeat::
-	.string "You're a master at this.$"
+    .string "你是这儿的主人！$"
 
 SevenIsland_SevaultCanyon_Text_EvanPostBattle::
-	.string "You see them every so often,\n"
-	.string "TRAINERS with awesome POKéMON\l"
-	.string "who have no idea what to do.\p"
-	.string "Before training POKéMON, TRAINERS\n"
-	.string "themselves need to grow up.$"
+    .string "你一定是经常见到，\n"
+    .string "训练家拥有强大的宝可梦\l"
+    .string "却不知道如何使用。\p"
+    .string "所以在训练宝可梦之前，\n"
+    .string "训练家首先自己要成长。$"
 
 SevenIsland_SevaultCanyon_Text_JacksonIntro::
-	.string "I work to protect the environment.\n"
-	.string "In turn, nature protects me!$"
+    .string "我致力于保护自然环境。\n"
+    .string "相应地，大自然也会保护我！$"
 
 SevenIsland_SevaultCanyon_Text_JacksonDefeat::
-	.string "Whoa! You're tough!\n"
-	.string "How about protecting me?$"
+    .string "哇！你很强！\n"
+    .string "做我的保镖怎么样？$"
 
 SevenIsland_SevaultCanyon_Text_JacksonPostBattle::
-	.string "From far out among the stars, our\n"
-	.string "planet is just a drop of water.\p"
-	.string "But we want to protect that drop\n"
-	.string "of water for everyone.$"
+    .string "在众多星系之中，\n"
+    .string "我们的就如一滴水那么小。\p"
+    .string "但是我们想为了每个人\n"
+    .string "去保护这滴水。$"
 
 SevenIsland_SevaultCanyon_Text_KatelynIntro::
-	.string "Those shoes you have are pretty\n"
-	.string "snazzy.$"
+    .string "你穿的那双鞋可真漂亮。$"
 
 SevenIsland_SevaultCanyon_Text_KatelynDefeat::
-	.string "You're hot stuff in spite of your\n"
-	.string "cute looks.$"
+    .string "在你可爱的外表下\n"
+    .string "隐藏着一颗炽热的心。$"
 
 SevenIsland_SevaultCanyon_Text_KatelynPostBattle::
-	.string "Your mom bought those snazzy\n"
-	.string "RUNNING SHOES for you?\p"
-	.string "She must adore you.$"
+    .string "你妈妈给你买了这双\n"
+    .string "漂亮的跑步鞋？\p"
+    .string "她一定很爱你。$"
 
 SevenIsland_SevaultCanyon_Text_LeroyIntro::
-	.string "You look strong.\n"
-	.string "Let me battle you, please!$"
+    .string "你看起来很强大。\n"
+    .string "请让我和你战斗吧！$"
 
 SevenIsland_SevaultCanyon_Text_LeroyDefeat::
-	.string "I knew it!\n"
-	.string "You're as tough as I thought!$"
+    .string "我知道！\n"
+    .string "你和我想像的一样强！$"
 
 SevenIsland_SevaultCanyon_Text_LeroyPostBattle::
-	.string "The way you battle has given me\n"
-	.string "a lot of useful data.\p"
-	.string "Thanks so much!$"
+    .string "你战斗的方式\n"
+    .string "给了我许多启发。\p"
+    .string "太感谢了！$"
 
 SevenIsland_SevaultCanyon_Text_MichelleIntro::
-	.string "I was given the best possible\n"
-	.string "education to become this strong.\p"
-	.string "I don't want to lose to anyone!$"
+    .string "我受到了最好的教育，\n"
+    .string "就是为了变得像今天这样强大。\p"
+    .string "我不想输给任何人！$"
 
 SevenIsland_SevaultCanyon_Text_MichelleDefeat::
-	.string "Thank you. I feel like I've been\n"
-	.string "set free by losing to you.$"
+    .string "谢谢你。输给你\n"
+    .string "使我好像解脱了一样。$"
 
 SevenIsland_SevaultCanyon_Text_MichellePostBattle::
-	.string "For some reason, I get furious\n"
-	.string "over the slightest thing.\p"
-	.string "I'll calm myself by breathing\n"
-	.string "deeply.$"
+    .string "有的时候，\n"
+    .string "我会因为一些小事感到愤怒。\p"
+    .string "我要深呼吸是我自己\n"
+    .string "镇定下来。$"
 
 SevenIsland_SevaultCanyon_Text_LexIntro::
-	.string "LEX: My darling NYA, together\n"
-	.string "we could win!$"
+    .string "阿力：我亲爱的阿雪，\n"
+    .string "一起战斗我们就能赢！$"
 
 SevenIsland_SevaultCanyon_Text_LexDefeat::
-	.string "LEX: I seem to have been too\n"
-	.string "careless…$"
+    .string "阿力：我刚刚好像太不小心了……$"
 
 SevenIsland_SevaultCanyon_Text_LexPostBattle::
-	.string "LEX: I think it was a good\n"
-	.string "experience for NYA.\p"
-	.string "You have my gratitude.$"
+    .string "阿力：我想这对于阿雪来说\n"
+    .string "是一次好的经历。\p"
+    .string "谢谢你。$"
 
 SevenIsland_SevaultCanyon_Text_LexNotEnoughMons::
-	.string "LEX: May I ask you to battle the\n"
-	.string "both of us at the same time?$"
+    .string "阿力：你能同时和我们\n"
+    .string "两个人战斗吗？$"
 
 SevenIsland_SevaultCanyon_Text_NyaIntro::
-	.string "NYA: I'll do my best so I won't\n"
-	.string "drag down my mentor, LEX!$"
+    .string "阿雪：我要尽我最大的努力，\n"
+    .string "我不会拖我师父阿力的后腿的！$"
 
 SevenIsland_SevaultCanyon_Text_NyaDefeat::
-	.string "NYA: Oh, no…\n"
-	.string "I'm so sorry, I…$"
+    .string "阿雪：噢，不……\n"
+    .string "对不起，我……$"
 
 SevenIsland_SevaultCanyon_Text_NyaPostBattle::
-	.string "NYA: I think I'm going to need\n"
-	.string "much more seasoning and tutoring\l"
-	.string "under LEX…\p"
-	.string "…So, LEX, please, may I stay with\n"
-	.string "you like this?$"
+    .string "阿雪：我想我需要更多\n"
+    .string "来自阿力的\l"
+    .string "调教和指导……\p"
+    .string "……所以，阿力，拜托了，\n"
+    .string "我可以继续和你呆在一起吗？$"
 
 SevenIsland_SevaultCanyon_Text_NyaNotEnoughMons::
-	.string "NYA: I'm sorry, but may we battle\n"
-	.string "in two-on-two style?$"
+    .string "阿雪：不好意思，\n"
+    .string "我们能来一场2对2的战斗吗？$"
 
 SevenIsland_SevaultCanyon_Text_RouteSign::
-	.string "SEVAULT CANYON\n"
-	.string "TANOBY RUINS AHEAD$"
+    .string "七宝溪谷\n"
+    .string "前方是阿斯卡纳遗迹$"
 
 SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly::
-	.string "Training by oneself is certainly\n"
-	.string "not a bad thing.\p"
-	.string "But it's also not bad to aim for\n"
-	.string "the top with a partner.\p"
-	.string "Even BRUNO…\n"
-	.string "He trained with a fellow by the\l"
-	.string "name of BRAWLY before.$"
+    .string "一个人单独训练\n"
+    .string "当然很好。\p"
+    .string "但是和一个伙伴一起\n"
+    .string "到达顶峰也并不坏。\p"
+    .string "甚至是希巴……\n"
+    .string "他之前和一个叫做藤树\l"
+    .string "的小伙子一起训练。$"

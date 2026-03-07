@@ -231,52 +231,50 @@ PokemonTower_7F_Movement_Grunt3ExitLeft::
 	step_end
 
 PokemonTower_7F_Text_Grunt1Intro::
-	.string "What do you want?\n"
-	.string "Why are you here?$"
+    .string "你想干什么？\n"
+    .string "在这里干嘛？$"
 
 PokemonTower_7F_Text_Grunt1Defeat::
-	.string "I give up!$"
+    .string "我放弃了！$"
 
 PokemonTower_7F_Text_Grunt1PostBattle::
-	.string "I'm not going to forget this!$"
+    .string "我永远不会忘记这件事！$"
 
 PokemonTower_7F_Text_Grunt2Intro::
-	.string "This old guy marched right up to\n"
-	.string "our HIDEOUT.\p"
-	.string "Then, he starts ranting about how\n"
-	.string "TEAM ROCKET's abusing POKéMON.\p"
-	.string "So, we're just talking it over as\n"
-	.string "adults.$"
+    .string "这老家伙直接走进我们的秘密基地。\p"
+    .string "然后，他开始咆哮\n"
+    .string "火箭队如何虐待宝可梦。\p"
+    .string "所以，我们只是给他来了一场\n"
+    .string "成年人的谈话。$"
 
 PokemonTower_7F_Text_Grunt2Defeat::
-	.string "Please!\n"
-	.string "No more!$"
+    .string "拜托了！\n"
+    .string "不要再说了！$"
 
 PokemonTower_7F_Text_Grunt2PostBattle::
-	.string "POKéMON are only good for making\n"
-	.string "money. Why not use them?\p"
-	.string "You stay out of our business!$"
+    .string "宝可梦唯一的好处就是赚钱。\n"
+    .string "为什么不去利用他们呢？\p"
+    .string "你离我们远点儿！$"
 
 PokemonTower_7F_Text_Grunt3Intro::
-	.string "You're not saving anyone, kid!$"
+    .string "你救不了任何人的，小子！$"
 
 PokemonTower_7F_Text_Grunt3Defeat::
-	.string "Don't fight us ROCKETS!$"
+    .string "不要和我们火箭队作对！$"
 
 PokemonTower_7F_Text_Grunt3PostBattle::
-	.string "You're not getting away with this!$"
+    .string "你会为此而后悔的！$"
 
 PokemonTower_7F_Text_MrFujiThankYouFollowMe::
-	.string "MR. FUJI: Heh?\n"
-	.string "You came to save me?\p"
-	.string "Thank you. But, I came here of my\n"
-	.string "own free will.\p"
-	.string "I came to calm the spirit of\n"
-	.string "CUBONE's mother.\p"
-	.string "I think MAROWAK's spirit has\n"
-	.string "finally left us.\p"
-	.string "I must thank you for your kind\n"
-	.string "concern.\p"
-	.string "Follow me to my home, POKéMON\n"
-	.string "HOUSE, at the foot of this tower.$"
+    .string "富士老人：嗯？\n"
+    .string "你是来救我的么？\p"
+    .string "谢谢。但是，\n"
+    .string "我来这里是自愿的。\p"
+    .string "我打算来安抚卡拉卡拉\n"
+    .string "母亲不安的灵魂。\p"
+    .string "我想嘎啦嘎啦的灵魂\n"
+    .string "终于离开了我们。\p"
+    .string "十分感谢你的好心。\p"
+    .string "跟我回一趟我的家吧，宝可梦之家，\n"
+    .string "就在这座塔底下的。$"
 

@@ -17,38 +17,38 @@ PokemonTower_3F_EventScript_Hope::
 	end
 
 PokemonTower_3F_Text_HopeIntro::
-	.string "Urrg… Awaa…\n"
-	.string "Huhu… Graa…$"
+    .string "呃……哇……\n"
+    .string "呼呼……嘎嘎……$"
 
 PokemonTower_3F_Text_HopeDefeat::
-	.string "Hwa!\n"
-	.string "I'm saved!$"
+    .string "哗！\n"
+    .string "得救了！$"
 
 PokemonTower_3F_Text_HopePostBattle::
-	.string "The ghosts can be identified by\n"
-	.string "the SILPH SCOPE.$"
+    .string "用西尔佛观测镜\n"
+    .string "可以看清鬼的真面目！$"
 
 PokemonTower_3F_Text_CarlyIntro::
-	.string "Kekeke…\n"
-	.string "Kwaaah!$"
+    .string "呵呵呵……\n"
+    .string "咔哇哇哇哇哈！$"
 
 PokemonTower_3F_Text_CarlyDefeat::
-	.string "Hmm?\n"
-	.string "What am I doing?$"
+    .string "嗯？\n"
+    .string "我在做什么？$"
 
 PokemonTower_3F_Text_CarlyPostBattle::
-	.string "Sorry!\n"
-	.string "I was possessed!$"
+    .string "抱歉！\n"
+    .string "我刚才有些失态！$"
 
 PokemonTower_3F_Text_PatriciaIntro::
-	.string "Be gone!\n"
-	.string "Malevolent spirit!$"
+    .string "滚！\n"
+    .string "邪恶的幽灵！$"
 
 PokemonTower_3F_Text_PatriciaDefeat::
-	.string "Whew!\n"
-	.string "The spirit left!$"
+    .string "呃！\n"
+    .string "幽灵终于消失了！！$"
 
 PokemonTower_3F_Text_PatriciaPostBattle::
-	.string "The others above…\n"
-	.string "They must have been possessed.$"
+    .string "上面的人……\n"
+    .string "他们一定被鬼迷心窍了。$"
 

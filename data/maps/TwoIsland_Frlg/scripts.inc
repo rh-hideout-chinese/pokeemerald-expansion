@@ -216,88 +216,84 @@ TwoIsland_EventScript_FastCurrentSign::
 	end
 
 TwoIsland_Text_IslandSign::
-	.string "TWO ISLAND\n"
-	.string "Boon Island for Two$"
+    .string "二之岛\n"
+    .string "又叫友谊岛$"
 
 TwoIsland_Text_JoyfulGameCornerSign::
-	.string "Skip & Chomp!\n"
-	.string "Joyful GAME CORNER$"
+    .string "跳绳和树果！\n"
+    .string "欢乐的游戏厅$"
 
 TwoIsland_Text_DangerFastCurrent::
-	.string "DANGER! FAST CURRENT!\n"
-	.string "Fishing and surfing prohibited!$"
+    .string "危险！水流湍急！\n"
+    .string "禁止钓鱼和冲浪！$"
 
 TwoIsland_Text_WelcomeToShopMerchandiseLimited::
-	.string "Oh!\n"
-	.string "Hello, welcome to my shop!\p"
-	.string "We've only opened up recently.\p"
-	.string "Our merchandise is limited, but I\n"
-	.string "hope we can serve your needs.$"
+    .string "啊！\n"
+    .string "你好，欢迎来我的小店！\p"
+    .string "小店最近才开张。\p"
+    .string "买的东西还不多，\n"
+    .string "希望能有你需要的。$"
 
 TwoIsland_Text_AddedMerchandiseForLostelle::
-	.string "I can't tell you how grateful I am\n"
-	.string "for your rescue of LOSTELLE.\p"
-	.string "Thanks to your feat, the people of\n"
-	.string "THREE ISLAND have changed their\l"
-	.string "attitudes about KANTO people.\p"
-	.string "And, I'm from KANTO, you see.\p"
-	.string "The people of THREE ISLAND\n"
-	.string "helped me add to my merchandise.$"
+    .string "我不知道该怎么感谢你才好，\n"
+    .string "你救了小迷。\p"
+    .string "多亏了你的壮举，\n"
+    .string "让三之岛的人改变了\l"
+    .string "对关都人的看法。\p"
+    .string "你要知道，我就一个是关都人。\p"
+    .string "三之岛的人们帮我\n"
+    .string "添置了很多新货品。$"
 
 TwoIsland_Text_HopeYouGiveItYourBest::
-	.string "Hi! I'm giving it my best here.\n"
-	.string "I hope you do too, {PLAYER}.$"
+    .string "嗨！我拿出了最好的东西在这里卖。\n"
+    .string "希望{PLAYER}你也拿出最好的状态来买。$"
 
 TwoIsland_Text_BringingItemsFromDistantLands::
-	.string "Oh, hello, {PLAYER}!\n"
-	.string "Welcome!\p"
-	.string "I've started bringing in items from\n"
-	.string "distant lands.\p"
-	.string "I've got some rare items in, too.\n"
-	.string "Please have a look!$"
+    .string "嗨，你好，{PLAYER}！\n"
+    .string "欢迎光临！\p"
+    .string "我从远方的岛上\n"
+    .string "运来新货品了。\p"
+    .string "我现在也开始卖些稀有物品了。\n"
+    .string "请随便看看！$"
 
 TwoIsland_Text_FellowMovedFromCeladonCity::
-	.string "That fellow there, he moved here\n"
-	.string "from CELADON CITY.\p"
-	.string "He started up a shop with his\n"
-	.string "younger brother.\p"
-	.string "You have to wonder if he knew what\n"
-	.string "he was getting into.$"
+    .string "那边那个小伙子，\n"
+    .string "他是从玉虹市过来的。\p"
+    .string "他和他弟弟开了个店。\p"
+    .string "你也许会怀疑他到底\n"
+    .string "懂不懂怎么开店。$"
 
 TwoIsland_Text_ShopkeepersBrotherWorksGameCorner::
-	.string "The shopkeeper's brother took\n"
-	.string "a job at the GAME CORNER.\p"
-	.string "He's trying to pull together money\n"
-	.string "so they can buy more merchandise.$"
+    .string "店主的弟弟在游戏厅找了个工作。\p"
+    .string "他想多攒点钱，\n"
+    .string "这样就能进更多货了。$"
 
 TwoIsland_Text_BrunoCameToIslandWhileBack::
-	.string "Listen, listen.\n"
-	.string "Did you know?\p"
-	.string "A famous TRAINER came to the\n"
-	.string "ISLAND a little while back.\p"
-	.string "He's one of the ELITE FOUR.\n"
-	.string "His name is BRUNO.\p"
-	.string "He went away disappointed when he\n"
-	.string "found out that they were all sold\l"
-	.string "out of Rage Candybars.$"
+    .string "喂，喂。\n"
+    .string "你知道吗？\p"
+    .string "有个著名的训练家\n"
+    .string "来岛上没多久就走了。\p"
+    .string "据说他叫希巴。\n"
+    .string "还是四天王之一。\p"
+    .string "他得知兄弟俩的愤怒馒头\n"
+    .string "卖完后就失望地离开了。$"
 
 TwoIsland_Text_BuyRareItemsHere::
-	.string "The discerning TRAINER knows to\n"
-	.string "buy rare items here!$"
+    .string "有眼光的顾客\n"
+    .string "都会来这里买稀有物品！$"
 
 TwoIsland_Text_OldWomanLivesOutOnCape::
-	.string "There's an old woman who lives in\n"
-	.string "a cottage out on the cape.\p"
-	.string "She gives the eye to POKéMON.\n"
-	.string "It's a bit unnerving.$"
+    .string "远方的小屋里住着个老太太。\p"
+    .string "她能用她的眼睛对宝可梦做出判断。\n"
+    .string "这有点令人不安呢。$"
 
 TwoIsland_Text_HaveYouTriedJumpingGame::
-	.string "Boing! Boing!\n"
-	.string "Have you tried the jumping game?\p"
-	.string "The POKéMON you can enter…\n"
-	.string "Boing!\p"
-	.string "Some go boing!\p"
-	.string "And some go boooooooing!\p"
-	.string "Did you know that?\n"
-	.string "Boing!$"
+    .string "卟卟卟！卟卟卟！\n"
+    .string "你试过越野赛吗？\p"
+    .string "能参加的宝可梦是……\n"
+    .string "卟卟卟！\p"
+    .string "有些速度慢，卟卟卟！\p"
+    .string "有些速度超级快，卟卟卟卟卟卟！\p"
+    .string "你听懂了吗？\n"
+    .string "卟卟卟！$"
 

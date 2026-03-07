@@ -17,81 +17,79 @@ Route4_EventScript_RouteSign::
 	end
 
 Route4_Text_TrippedOverGeodude::
-	.string "Ouch! I tripped over a rocky\n"
-	.string "POKéMON, GEODUDE!$"
+    .string "哎哟！我被一只岩石宝可梦绊倒了，\n"
+    .string "是小拳石啊！$"
 
 Route4_Text_CrissyIntro::
-	.string "I came to MT. MOON in search of\n"
-	.string "mushroom POKéMON.$"
+    .string "我来月见山寻找蘑菇宝可梦。$"
 
 Route4_Text_CrissyDefeat::
-	.string "After all I did to catch them!$"
+    .string "这次我一定要抓到它们！$"
 
 Route4_Text_CrissyPostBattle::
-	.string "There might not be any more\n"
-	.string "mushrooms here.\p"
-	.string "I think I got them all.$"
+    .string "这里应该已经没有蘑菇了。\p"
+    .string "可能已经都被我采光了。$"
 
 Route4_Text_MtMoonEntrance::
-	.string "MT. MOON\n"
-	.string "Tunnel Entrance$"
+    .string "月见山\n"
+    .string "山洞的入口$"
 
 Route4_Text_RouteSign::
-	.string "ROUTE 4\n"
-	.string "MT. MOON - CERULEAN CITY$"
+    .string "4号道路\n"
+    .string "月见山-华蓝市$"
 
 Text_MegaPunchTeach::
-	.string "A punch of roaring ferocity!\p"
-	.string "Packed with destructive power!\p"
-	.string "When the chips are down,\n"
-	.string "MEGA PUNCH is the ultimate attack!\l"
-	.string "You agree, yes?\p"
-	.string "Now!\n"
-	.string "Let me teach it to your POKéMON!$"
+    .string "一声巨响！\p"
+    .string "伴随着毁灭性的力量！\p"
+    .string "在关键时刻，\n"
+    .string "百万吨重拳就是最强悍的攻击！\l"
+    .string "你也这么认为吧？\p"
+    .string "现在！\n"
+    .string "让我教你的宝可梦学会这个技能！$"
 
 Text_MegaPunchDeclined::
-	.string "You'll be back when you understand\n"
-	.string "the worth of MEGA PUNCH.$"
+    .string "当你知道百万吨重拳价值的时候，\n"
+    .string "你一定会回来的。$"
 
 Text_MegaPunchWhichMon::
-	.string "Fine!\n"
-	.string "Which POKéMON will learn it?$"
+    .string "很好！\n"
+    .string "想要让哪只宝可梦学习？$"
 
 Text_MegaPunchTaught::
-	.string "Now, we are comrades in the way of\n"
-	.string "punching!\p"
-	.string "You should go before you're seen\n"
-	.string "by the misguided fool who trains\l"
-	.string "only his silly kicking over there.$"
+    .string "现在，\n"
+    .string "我们算是同一流派的人了！\p"
+    .string "你得快点走，\n"
+    .string "小心被在那边那个只知道\l"
+    .string "一味训练攻击力的傻瓜发现。$"
 
 Text_MegaKickTeach::
-	.string "A kick of brutal ferocity!\p"
-	.string "Packed with destructive power!\p"
-	.string "When you get right down to it,\n"
-	.string "MEGA KICK is the ultimate attack!\l"
-	.string "Don't you agree?\p"
-	.string "Okay!\n"
-	.string "I'll teach it to your POKéMON!$"
+    .string "一次凶狠的踢击！\p"
+    .string "伴随着毁灭性的力量！\p"
+    .string "你若能善用百万吨重踢时，\n"
+    .string "它会成为最强悍的攻击！\l"
+    .string "你也这么认为吧？\p"
+    .string "好的！\n"
+    .string "让我教你的宝可梦使用这个技能！$"
 
 Text_MegaKickDeclined::
-	.string "You'll come crawling back when you\n"
-	.string "realize the value of MEGA KICK.$"
+    .string "当你意识到百万吨重踢的价值时，\n"
+    .string "你一定会回来的。$"
 
 Text_MegaKickWhichMon::
-	.string "All right!\n"
-	.string "Which POKéMON wants to learn it?$"
+    .string "很好！\n"
+    .string "想要让哪只宝可梦学习？$"
 
 Text_MegaKickTaught::
-	.string "Now, we are soul mates in the way\n"
-	.string "of kicking!\p"
-	.string "You should run before you're seen\n"
-	.string "by the deluded nitwit who trains\l"
-	.string "only simple punching over there.$"
+    .string "现在，\n"
+    .string "我们算是同一流派的人了！\p"
+    .string "你得快点走，\n"
+    .string "小心被在那边那个只知道\l"
+    .string "一味训练攻击力的傻瓜发现。$"
 
 Route4_Text_PeopleLikeAndRespectBrock::
-	.string "Oh, wow, that's the BOULDERBADGE!\n"
-	.string "You got it from BROCK, didn't you?\p"
-	.string "BROCK is cool. He's not just tough.\n"
-	.string "People like and respect him.\p"
-	.string "I want to become a GYM LEADER\n"
-	.string "like him.$"
+    .string "哇，那是灰色徽章！\n"
+    .string "你从小刚那里得到的，没错吧？\p"
+    .string "小刚不仅冷静，还很坚强。\n"
+    .string "人们都很喜欢他，尊敬他。\p"
+    .string "我想成为像他一样的\n"
+    .string "道馆馆主。$"

@@ -139,114 +139,112 @@ FuchsiaCity_EventScript_OmanyteSign::
 	end
 
 FuchsiaCity_Text_DidYouTrySafariGame::
-	.string "Did you try the SAFARI GAME?\p"
-	.string "There are some rare POKéMON that\n"
-	.string "can only be caught there.$"
+    .string "你试过原野区游戏吗？\p"
+    .string "有一些稀有的宝可梦\n"
+    .string "只能在那里抓到。$"
 
 FuchsiaCity_Text_SafariZoneZooInFront::
-	.string "The SAFARI ZONE has a zoo in front\n"
-	.string "of the entrance.\p"
-	.string "Out back is the SAFARI GAME for\n"
-	.string "catching POKéMON.$"
+    .string "野生原野区在入口前面\n"
+    .string "有一个园子。\p"
+    .string "后面就是收服宝可梦\n"
+    .string "的原野区游戏。$"
 
 FuchsiaCity_Text_WheresSara::
-	.string "ERIK: Where's SARA?\n"
-	.string "I said I'd meet her here.$"
+    .string "阿初：敦子在哪里？\n"
+    .string "说了在这里等她的。$"
 
 FuchsiaCity_Text_ItemBallInThere::
-	.string "That item ball in there…\n"
-	.string "Were you wanting that?\p"
-	.string "Me, too!\n"
-	.string "…Huh? That's a POKéMON?$"
+    .string "那里放着个精灵球……\n"
+    .string "你想要吗？\p"
+    .string "我也是！\n"
+    .string "……嗯？那是一只宝可梦？$"
 
 FuchsiaCity_Text_CitySign::
-	.string "FUCHSIA CITY\n"
-	.string "Behold! It's Passion Pink!$"
+    .string "浅红市\n"
+    .string "浅红，是浅红亮丽的石竹花！$"
 
 FuchsiaCity_Text_SafariZoneSign::
-	.string "POKéMON PARADISE\n"
-	.string "SAFARI ZONE$"
+    .string "宝可梦的乐园\n"
+    .string "野生原野区$"
 
 FuchsiaCity_Text_SafariGameSign::
-	.string "SAFARI GAME\n"
-	.string "POKéMON-U-CATCH!$"
+    .string "原野区游戏\n"
+    .string "收服宝可梦吧！$"
 
 FuchsiaCity_Text_WardensHomeSign::
-	.string "SAFARI ZONE\n"
-	.string "WARDEN'S HOME$"
+    .string "野生原野区\n"
+    .string "园长的家$"
 
 FuchsiaCity_Text_SafariZoneOfficeSign::
-	.string "POKéMON PARADISE!\n"
-	.string "Welcome to the SAFARI ZONE!\l"
-	.string "SAFARI ZONE OFFICE$"
+    .string "宝可梦的乐园！\n"
+    .string "欢迎来到野生原野区！\l"
+    .string "原野区办公室$"
 
 FuchsiaCity_Text_GymSign::
-	.string "FUCHSIA CITY POKéMON GYM\n"
-	.string "LEADER: KOGA\l"
-	.string "The Poisonous Ninja Master$"
+    .string "浅红市宝可梦道馆\n"
+    .string "馆主：阿桔\l"
+    .string "剧毒的忍者之王$"
 
 FuchsiaCity_Text_ChanseySign::
-	.string "Name: CHANSEY\n"
-	.string "Catching one is all up to chance.$"
+    .string "名字 吉利蛋\n"
+    .string "抓到的话说明你运气很好。$"
 
 FuchsiaCity_Text_VoltorbSign::
-	.string "Name: VOLTORB\n"
-	.string "The very image of a POKé BALL.$"
+    .string "名字 霹雳电球\n"
+    .string "外观很像一个精灵球。$"
 
 FuchsiaCity_Text_KangaskhanSign::
-	.string "Name: KANGASKHAN\p"
-	.string "A maternal POKéMON that raises its\n"
-	.string "young in a pouch on its belly.$"
+    .string "名字 袋兽\p"
+    .string "母亲般的宝可梦，用肚子上的\n"
+    .string "口袋来养育自己的小孩。$"
 
 FuchsiaCity_Text_SlowpokeSign::
-	.string "Name: SLOWPOKE\n"
-	.string "Friendly and very slow moving.$"
+    .string "名字 呆呆兽\n"
+    .string "很友好，但是行动缓慢。$"
 
 FuchsiaCity_Text_LaprasSign::
-	.string "Name: LAPRAS\n"
-	.string "AKA the king of the seas.$"
+    .string "名字 拉普拉斯\n"
+    .string "又被称为海上的王者。$"
 
 FuchsiaCity_Text_OmanyteSign::
-	.string "Name: OMANYTE\n"
-	.string "An extremely rare POKéMON that was\l"
-	.string "regenerated from a fossil.$"
+    .string "名字 菊石兽\n"
+    .string "从化石中再生的\l"
+    .string "极其稀有的宝可梦。$"
 
 FuchsiaCity_Text_KabutoSign::
-	.string "Name: KABUTO\n"
-	.string "An extremely rare POKéMON that was\l"
-	.string "regenerated from a fossil.$"
+    .string "名字 化石盔\n"
+    .string "从化石中再生的\l"
+    .string "极其稀有的宝可梦。$"
 
 @ Unused. May have been meant to be the placeholder text for the zoo mons, similar to RB's "!" text
 FuchsiaCity_Text_Ellipsis::
-	.string "……$"
+    .string "……$"
 
 Text_SubstituteTeach::
-	.string "Aww, I wish I was a KANGASKHAN\n"
-	.string "baby.\p"
-	.string "I'd love to be a substitute for the\n"
-	.string "baby…\p"
-	.string "And snuggle in the mother\n"
-	.string "KANGASKHAN's belly pouch.\p"
-	.string "But only POKéMON can use the\n"
-	.string "technique SUBSTITUTE…\p"
-	.string "Want me to teach SUBSTITUTE to\n"
-	.string "one of your POKéMON?$"
+    .string "啊 我多么希望自己是\n"
+    .string "袋兽的孩子。\p"
+    .string "我甚至愿意替代这个孩子……\p"
+    .string "依偎在母亲\n"
+    .string "袋兽的袋子里。\p"
+    .string "但是只有宝可梦能使用\n"
+    .string "技能替身……\p"
+    .string "让我教给你的宝可梦\n"
+    .string "替身吧？$"
 
 Text_SubstituteDeclined::
-	.string "Oh, really?\n"
-	.string "SUBSTITUTE seems so fun…$"
+    .string "哦，真的吗？\n"
+    .string "替身其实很有趣呢……$"
 
 Text_SubstituteWhichMon::
-	.string "Which POKéMON wants to learn\n"
-	.string "SUBSTITUTE?$"
+    .string "哪只宝可梦想要\n"
+    .string "学会替身？$"
 
 Text_SubstituteTaught::
-	.string "Boy, what I'd give to crawl inside\n"
-	.string "a KANGASKHAN belly pouch…$"
+    .string "孩子，我需要什么才能爬进\n"
+    .string "袋兽的袋子里呢……$"
 
 FuchsiaCity_Text_MyFatherIsGymLeader::
-	.string "My father is the GYM LEADER of\n"
-	.string "this town.\p"
-	.string "I'm training to use POISON POKéMON\n"
-	.string "as well as my father.$"
+    .string "我父亲是这座城市道馆的馆主。\p"
+    .string "我日复一日的特训，就是为了成为\n"
+    .string "父亲那样的毒属性宝可梦高手。$"
 
