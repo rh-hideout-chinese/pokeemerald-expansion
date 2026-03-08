@@ -843,134 +843,134 @@ PewterCity_Movement_WalkInPlaceLeft::
 	step_end
 
 Text_DreamEaterTeach::
-	.string "Yawn!\n"
-	.string "I must have dozed off in the sun.\p"
-	.string "I had this weird dream about\n"
-	.string "a DROWZEE eating my dream.\p"
-	.string "And…\n"
-	.string "I learned how to eat dreams…\p"
-	.string "Oogh, this is too spooky!\p"
-	.string "Let me teach it to a POKéMON so\n"
-	.string "I can forget about it!$"
+    .string "哈欠！\n"
+    .string "在这种阳光下我肯定会打起瞌睡。\p"
+    .string "然后我做了一个一只\n"
+    .string "催眠貘正在吞食我做的梦的怪梦。\p"
+    .string "在那之后……\n"
+    .string "我学会了如何食梦……\p"
+    .string "噢，真是太恐怖了！\p"
+    .string "让我把它教给一只宝可梦吧\n"
+    .string "这样我才能赶快忘了它！$"
 
 Text_DreamEaterDeclined::
-	.string "…Snore…$"
+    .string "……呼……$"
 
 Text_DreamEaterWhichMon::
-	.string "Which POKéMON wants to learn\n"
-	.string "DREAM EATER?$"
+    .string "哪一只宝可梦想要学会\n"
+    .string "食梦呢？$"
 
 Text_DreamEaterTaught::
-	.string "…ZZZ…\n"
-	.string "I…can't eat…anymore…$"
+    .string "……ZZZ……\n"
+    .string "我……实在是……吃不下了……$"
 
 PewterCity_Text_ClefairyCameFromMoon::
-	.string "CLEFAIRY came from the moon.\n"
-	.string "That's what the rumor is.\p"
-	.string "They appeared after MOON STONES\n"
-	.string "fell on MT. MOON.$"
+    .string "有这样一个传说，\n"
+    .string "说皮皮来自月亮。\p"
+    .string "在那之后月之石\n"
+    .string "才出现在了月见山。$"
 
 PewterCity_Text_BrockOnlySeriousTrainerHere::
-	.string "There aren't many serious POKéMON\n"
-	.string "TRAINERS here.\p"
-	.string "They're all like BUG CATCHERS,\n"
-	.string "you know, just hobbyists.\p"
-	.string "But PEWTER GYM's BROCK isn't like\n"
-	.string "that, not one bit.$"
+    .string "这里没有那种很严肃的\n"
+    .string "宝可梦训练家。\p"
+    .string "他们都打扮得像个捉虫少年，\n"
+    .string "你懂的，就是一种癖好。\p"
+    .string "可深灰道馆的小刚并不像这样打扮。\n"
+    .string "不像，一点都不像。$"
 
 PewterCity_Text_DidYouCheckOutMuseum::
-	.string "Did you check out the MUSEUM?$"
+    .string "你去博物馆看过了吗？$"
 
 PewterCity_Text_WerentThoseFossilsAmazing::
-	.string "Weren't those fossils from MT. MOON\n"
-	.string "amazing?$"
+    .string "不觉得这些来自月见山的化石\n"
+    .string "很令人吃惊吗？$"
 
 PewterCity_Text_ReallyYouHaveToGo::
-	.string "Really?\n"
-	.string "You absolutely have to go!$"
+    .string "真的？\n"
+    .string "你必须得去一次看看！$"
 
 PewterCity_Text_ThisIsTheMuseum::
-	.string "This is it, the MUSEUM.\p"
-	.string "You have to pay to get in, but it's\n"
-	.string "worth it. See you around!$"
+    .string "博物馆就在这里了。\p"
+    .string "虽然你必须花钱买了票才能进去，\n"
+    .string "但是里面非常值得一看。回头见！$"
 
 PewterCity_Text_DoYouKnowWhatImDoing::
-	.string "Psssst!\n"
-	.string "Do you know what I'm doing?$"
+    .string "嘘！\n"
+    .string "你知道我正在做什么吗？$"
 
 PewterCity_Text_ThatsRightItsHardWork::
-	.string "That's right!\n"
-	.string "It's hard work!$"
+    .string "没错！\n"
+    .string "这事做起来可不轻松！$"
 
 PewterCity_Text_SprayingRepelToKeepWildMonsOut::
-	.string "I'm spraying REPEL to keep wild\n"
-	.string "POKéMON out of my garden!$"
+    .string "我正在喷除虫喷雾使那些野生的\n"
+    .string "宝可梦远离我的花园！$"
 
 PewterCity_Text_BrocksLookingForChallengersFollowMe::
-	.string "You're a TRAINER, right?\p"
-	.string "BROCK's looking for new\n"
-	.string "challengers. Follow me!$"
+    .string "你是一个训练家，对吗？\p"
+    .string "小刚正在寻找新的挑战者\n"
+    .string "跟我来！$"
 
 PewterCity_Text_GoTakeOnBrock::
-	.string "If you have the right stuff,\n"
-	.string "go take on BROCK!$"
+    .string "如果你有了正确的信念，\n"
+    .string "就应该去打倒小刚！$"
 
 PewterCity_Text_TrainerTipsEarningEXP::
-	.string "TRAINER TIPS\p"
-	.string "All POKéMON that appear in battle,\n"
-	.string "however briefly, earn EXP Points.$"
+    .string "训练家贴士\p"
+    .string "在战斗中出场过的宝可梦，\n"
+    .string "哪怕是只打了瓶酱油都会获得经验值。$"
 
 PewterCity_Text_CallPoliceIfInfoOnThieves::
-	.string "NOTICE!\p"
-	.string "Thieves have been stealing POKéMON\n"
-	.string "fossils from MT. MOON.\p"
-	.string "Please call the PEWTER POLICE if\n"
-	.string "you have any information.$"
+    .string "通知\p"
+    .string "有些小偷正在对月见山的\n"
+    .string "宝可梦化石下手。\p"
+    .string "如果你有任何线索\n"
+    .string "请马上通知深灰警察局。$"
 
 PewterCity_Text_MuseumOfScience::
-	.string "PEWTER MUSEUM OF SCIENCE$"
+    .string "深灰科学博物馆$"
 
 PewterCity_Text_GymSign::
-	.string "PEWTER CITY POKéMON GYM\n"
-	.string "LEADER: BROCK\l"
-	.string "The Rock-Solid POKéMON TRAINER!$"
+    .string "深灰市宝可梦道馆\n"
+    .string "馆主：小刚\l"
+    .string "有如磐石般坚硬的宝可梦训练家！$"
 
 PewterCity_Text_CitySign::
-	.string "PEWTER CITY\n"
-	.string "A Stone Gray City$"
+    .string "深灰市\n"
+    .string "灰色的岩石之城$"
 
 PewterCity_Text_OhPlayer::
-	.string "Oh, {PLAYER}{KUN}!$"
+    .string "噢，{PLAYER}{KUN}！$"
 
 PewterCity_Text_AskedToDeliverThis::
-	.string "I'm glad I caught up to you.\n"
-	.string "I'm PROF. OAK's AIDE.\p"
-	.string "I've been asked to deliver this,\n"
-	.string "so here you go.$"
+    .string "能够赶上你真高兴。\n"
+    .string "我是大木博士的助手。\p"
+    .string "给。\n"
+    .string "我被叮嘱要把这件东西带给你。$"
 
 PewterCity_Text_ReceivedRunningShoesFromAide::
-	.string "{PLAYER} received the\n"
-	.string "RUNNING SHOES from the AIDE.$"
+    .string "{PLAYER}从助手那里\n"
+    .string "获得了跑步鞋。$"
 
 PewterCity_Text_SwitchedShoesWithRunningShoes::
-	.string "{PLAYER} switched shoes with the\n"
-	.string "RUNNING SHOES.$"
+    .string "{PLAYER}换上了\n"
+    .string "跑步鞋。$"
 
 PewterCity_Text_ExplainRunningShoes::
-	.string "Press the B Button to run.\n"
-	.string "But only where there's room to run!$"
+    .string "现在开始按B键就可以跑步了。\n"
+    .string "但是只能在空旷的地方跑哦！$"
 
 PewterCity_Text_MustBeGoingBackToLab::
-	.string "Well, I must be going back to\n"
-	.string "the LAB.\p"
-	.string "Bye-bye!$"
+    .string "那么，我必须回\n"
+    .string "研究所去了。\p"
+    .string "再见啦！$"
 
 PewterCity_Text_RunningShoesLetterFromMom::
-	.string "There's a letter attached…\p"
-	.string "Dear {PLAYER},\p"
-	.string "Here is a pair of RUNNING SHOES\n"
-	.string "for my beloved challenger.\p"
-	.string "Remember, I'll always cheer for\n"
-	.string "you! Don't ever give up!\p"
-	.string "From Mom$"
+    .string "是一封信……\p"
+    .string "亲爱的{PLAYER}，\p"
+    .string "这双跑步鞋\n"
+    .string "是给我心爱的挑战者的。\p"
+    .string "我一直都会祝福你。\n"
+    .string "记住，永远不要中途就放弃了！\p"
+    .string "妈妈$"
 

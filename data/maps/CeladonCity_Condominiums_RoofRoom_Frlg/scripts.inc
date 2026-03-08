@@ -104,54 +104,51 @@ CeladonCity_Condominiums_RoofRoom_EventScript_ExitBlackboard::
 	end
 
 CeladonCity_Condominiums_RoofRoom_Text_TheresNothingIDontKnow::
-	.string "There is nothing that I don't know,\n"
-	.string "like I wrote on the blackboard.\p"
-	.string "I know about the world of POKéMON\n"
-	.string "in your GAME BOY ADVANCE!\p"
-	.string "Get together with your friends and\n"
-	.string "enjoy trading POKéMON!$"
+    .string "就像我在黑板上写的那样，\n"
+    .string "我无所不知。\p"
+    .string "我了解在GAME BOY ADVANCE中的\n"
+    .string "宝可梦世界！\p"
+    .string "和你的朋友们一起玩吧，\n"
+    .string "祝你们交换宝可梦愉快！$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ObtainedAnEevee::
-	.string "{PLAYER} obtained an EEVEE!$"
+    .string "{PLAYER}获得了伊布！$"
 
 CeladonCity_Condominiums_RoofRoom_Text_BoxIsFull::
 	.string "ポケモンが　いっぱいだ\n"
 	.string "ボックスを　かえて　きなさい$"
 
 CeladonCity_Condominiums_RoofRoom_Text_WirelessAdapterLecture::
-	.string "POKéMON Lecture\p"
-	.string "Playing with the Wireless Adapter$"
+    .string "宝可梦讲座\p"
+    .string "用无线适配器游戏$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ReadWhichHeading::
-	.string "Which heading do you want to read?$"
+    .string "你想了解哪部分？$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ExplainWirelessClub::
-	.string "The POKéMON WIRELESS CLUB is\n"
-	.string "upstairs at any POKéMON CENTER.\p"
-	.string "Visit one to link up with friend(s)\n"
-	.string "using your Wireless Adapter.$"
+    .string "宝可梦无线俱乐部\n"
+    .string "在宝可梦中心的上层。\p"
+    .string "去那里通过无线适配器\n"
+    .string "和你的朋友通讯。$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ExplainDirectCorner::
-	.string "To link only with a friend, go to\n"
-	.string "the DIRECT CORNER.\p"
-	.string "It is the right counter at the\n"
-	.string "POKéMON WIRELESS CLUB.\p"
-	.string "Go into the TRADE CORNER or the\n"
-	.string "COLOSSEUM with your friend.$"
+    .string "和单个朋友通讯，\n"
+    .string "就去直连房间。\p"
+    .string "宝可梦无线俱乐部右边的柜台就是。\p"
+    .string "和你的朋友一起进入\n"
+    .string "通信房间或者大竞技场。$"
 
 CeladonCity_Condominiums_RoofRoom_Text_ExplainUnionRoom::
-	.string "To link and communicate with\n"
-	.string "anyone, go to the UNION ROOM.\p"
-	.string "It is the left counter at the\n"
-	.string "POKéMON WIRELESS CLUB.\p"
-	.string "Go to the UNION ROOM and enjoy\n"
-	.string "meeting other TRAINERS.$"
+    .string "如果要和任意其他人通讯，\n"
+    .string "就去联合房间。\p"
+    .string "宝可梦无线俱乐部左边的柜台就是。\p"
+    .string "去联合房间尽情享受和其他训练家\n"
+    .string "通讯的乐趣吧！$"
 
 CeladonCity_Condominiums_RoofRoom_Text_PamphletOnTMs::
-	.string "It's a pamphlet on TMs.\p"
-	.string "… …\p"
-	.string "There are fifty TMs in all.\p"
-	.string "There are also seven HMs that\n"
-	.string "can be used repeatedly.\p"
-	.string "SILPH CO.$"
+    .string "是本关于技能学习机的小册子。\p"
+    .string "…… ……\p"
+    .string "一共有50种技能机器。\p"
+    .string "还有7种能反复使用的秘传机器。\p"
+    .string "西尔佛公司。$"
 

@@ -10,11 +10,11 @@ OneIsland_House1_EventScript_OldWoman::
 	end
 
 OneIsland_House1_Text_GazeUponVolcanoOnSunnyDays::
-	.string "On sunny days, I step out and gaze\n"
-	.string "upon the volcano.\p"
-	.string "That's my daily routine.$"
+    .string "在晴天的日子，\n"
+    .string "我会去好好地观察火山。\p"
+    .string "这是我日常做的事。$"
 
 OneIsland_House1_Text_LastTimeMtEmberErupted::
-	.string "Let me think… When was the last\n"
-	.string "time MT. EMBER erupted?$"
+    .string "让我想想……上一次\n"
+    .string "灯火山爆发是什么时候？$"
 

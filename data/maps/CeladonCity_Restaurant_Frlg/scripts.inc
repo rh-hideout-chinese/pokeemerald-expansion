@@ -40,39 +40,37 @@ CeladonCity_Restaurant_EventScript_FatMan::
 	end
 
 CeladonCity_Restaurant_Text_TakingBreakRightNow::
-	.string "Hi!\p"
-	.string "Sorry, but we're taking a break\n"
-	.string "right now.$"
+    .string "嗨！\p"
+    .string "抱歉，我们正在休息呢。$"
 
 CeladonCity_Restaurant_Text_OftenGoToDrugstore::
-	.string "My POKéMON are weak, so I often\n"
-	.string "have to go to the DRUGSTORE.$"
+    .string "我的宝可梦比较弱，\n"
+    .string "所以我常去药店。$"
 
 CeladonCity_Restaurant_Text_PsstBasementUnderGameCorner::
-	.string "Psst! There's a basement under the\n"
-	.string "GAME CORNER, I hear.$"
+    .string "嘿！我听说这个\n"
+    .string "游戏厅下面有个地下室。$"
 
 CeladonCity_Restaurant_Text_ManLostItAllAtSlots::
-	.string "Munch…\p"
-	.string "The man at that table lost it all\n"
-	.string "at the slots.$"
+    .string "吧唧吧唧……\p"
+    .string "那边桌子上那个人，\n"
+    .string "把家当全输在老虎机上了。$"
 
 CeladonCity_Restaurant_Text_TakeThisImBusted::
-	.string "Go ahead! Laugh!\n"
-	.string "I'm flat-out busted!\p"
-	.string "No more slots for me!\n"
-	.string "I'm going straight!\p"
-	.string "Here!\n"
-	.string "I won't be needing this anymore!$"
+    .string "去吧！哈哈！\n"
+    .string "我破产了！\p"
+    .string "没法再玩老虎机了！\n"
+    .string "我要走了！\p"
+    .string "给你！\n"
+    .string "我再也用不着它了！$"
 
 CeladonCity_Restaurant_Text_ReceivedCoinCaseFromMan::
-	.string "{PLAYER} received a COIN CASE\n"
-	.string "from the man.$"
+    .string "{PLAYER}获得了一个代币盒。$"
 
 CeladonCity_Restaurant_Text_MakeRoomForThis::
-	.string "Make room for this!$"
+    .string "把包包腾出点地方来！$"
 
 CeladonCity_Restaurant_Text_ThoughtIdWinItBack::
-	.string "I always thought I was going to\n"
-	.string "win it back…$"
+    .string "我总想着\n"
+    .string "要把输的都赢回来……$"
 

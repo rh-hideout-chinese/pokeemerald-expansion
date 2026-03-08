@@ -239,26 +239,24 @@ SixIsland_DottedHole_SapphireRoom_EventScript_BrailleMessage::
 	end
 
 SixIsland_DottedHole_SapphireRoom_Text_FoundSapphire::
-	.string "{PLAYER} found a SAPPHIRE!$"
+    .string "{PLAYER}发现了一个蓝宝石！$"
 
 SixIsland_DottedHole_SapphireRoom_Text_IWasRightInTailingYou::
-	.string "Fufu… Fufufufu…\n"
-	.string "I guessed right.\p"
-	.string "I was right in tailing you!$"
+    .string "呋呋……呋呋呋呋……\n"
+    .string "我猜对了。\p"
+    .string "尾随着你是对的！$"
 
 SixIsland_DottedHole_SapphireRoom_Text_SellToTeamRocketTellPassword::
-	.string "I knew that there was a SAPPHIRE\n"
-	.string "here, so it belongs to me!\p"
-	.string "I'll sell it to TEAM ROCKET for\n"
-	.string "serious money.\p"
-	.string "…D-don't glare at me like that!\p"
-	.string "If you want it back, why don't you\n"
-	.string "go get it after I sell it?\p"
-	.string "I'll even tell you one of the\n"
-	.string "passwords to TEAM ROCKET's\l"
-	.string "WAREHOUSE.\p"
-	.string "The WAREHOUSE password I know is\n"
-	.string "“Yes, nah, CHANSEY.”\p"
-	.string "I'm done.\n"
-	.string "Don't think badly of me!$"
+    .string "我知道这里有蓝宝石，\n"
+    .string "因此它是我的了！\p"
+    .string "我把它卖给火箭队换钱。\p"
+    .string "……不要像那样盯着我！\p"
+    .string "如果你想要要回来的话，为什么\n"
+    .string "不等到我卖了以后再去要呢？\p"
+    .string "我会告诉你火箭队的\n"
+    .string "仓库的一条密码的。\p"
+    .string "我知道仓库的密码是\n"
+    .string "“大大小小 小小大大。”\p"
+    .string "就这样吧。\n"
+    .string "别把我当成大坏人！$"
 

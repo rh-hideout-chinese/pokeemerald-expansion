@@ -110,13 +110,13 @@ Route18_EastEntrance_1F_Movement_WalkRight::
 	step_end
 
 Route18_EastEntrance_1F_Text_NeedBicycleForCyclingRoad::
-	.string "You need a BICYCLE to go out on\n"
-	.string "CYCLING ROAD!$"
+    .string "你需要一辆自行车来在\n"
+    .string "单车路前进。$"
 
 Route18_EastEntrance_1F_Text_CyclingRoadAllUphillFromHere::
-	.string "CYCLING ROAD is all uphill from\n"
-	.string "here.$"
+    .string "单车路从这里开始都是\n"
+    .string "上坡路了。$"
 
 Route18_EastEntrance_1F_Text_ExcuseMe::
-	.string "Excuse me!$"
+    .string "抱歉！$"
 

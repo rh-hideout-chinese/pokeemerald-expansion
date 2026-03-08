@@ -6,164 +6,157 @@ Route8_EventScript_UndergroundPathSign::
 	end
 
 Route8_Text_AidanIntro::
-	.string "You look good at POKéMON, but how\n"
-	.string "is your chemistry grade?$"
+    .string "你看起来对宝可梦很擅长，\n"
+    .string "但是你的化学成绩怎么样？$"
 
 Route8_Text_AidanDefeat::
-	.string "Ow!\n"
-	.string "Meltdown!$"
+    .string "啊！\n"
+    .string "都倒下了！$"
 
 Route8_Text_AidanPostBattle::
-	.string "I am better at school than this!$"
+    .string "我的学习成绩比这个要好！$"
 
 Route8_Text_StanIntro::
-	.string "All right!\n"
-	.string "Let's play a game!$"
+    .string "很好！\n"
+    .string "我们来玩个游戏吧！$"
 
 Route8_Text_StanDefeat::
-	.string "Drat!\n"
-	.string "Came up short!$"
+    .string "可恶！\n"
+    .string "来吧！$"
 
 Route8_Text_StanPostBattle::
-	.string "Things didn't work today.$"
+    .string "今天也没有事情可做。$"
 
 Route8_Text_GlennIntro::
-	.string "You should be informed.\n"
-	.string "You need strategy to win at this!$"
+    .string "你应该更灵通一些。\n"
+    .string "想赢的话你得制定战术！$"
 
 Route8_Text_GlennDefeat::
-	.string "It's not logical!$"
+    .string "这不可能！$"
 
 Route8_Text_GlennPostBattle::
-	.string "Go with GRIMER first…and…\n"
-	.string "…and…then…$"
+    .string "首先跟着臭泥走……接着……\n"
+    .string "……接下来……然后……$"
 
 Route8_Text_PaigeIntro::
-	.string "I like NIDORAN, so I collect them!$"
+    .string "我喜欢尼多家族，所以我在收集它们！$"
 
 Route8_Text_PaigeDefeat::
-	.string "Why?\n"
-	.string "Why??$"
+    .string "为什么？\n"
+    .string "为什么？？$"
 
 Route8_Text_PaigePostBattle::
-	.string "When POKéMON grow up, they get\n"
-	.string "ugly! They shouldn't evolve.$"
+    .string "宝可梦一进化，就完全不可爱了！\n"
+    .string "所以还是不要进化的好。$"
 
 Route8_Text_LeslieIntro::
-	.string "School is fun, but so are POKéMON.$"
+    .string "学习很有趣，宝可梦也是如此。$"
 
 Route8_Text_LeslieDefeat::
-	.string "You made it clear to me that\n"
-	.string "I should stick with school.$"
+    .string "你让我清楚地明白\n"
+    .string "我应该继续坚持学习。$"
 
 Route8_Text_LesliePostBattle::
-	.string "I was planning on getting some\n"
-	.string "fresh air for a change, but…\p"
-	.string "We're stuck here because of the\n"
-	.string "gates at SAFFRON.$"
+    .string "我曾准备以一个新的面貌做出\n"
+    .string "一些改变，但是……\p"
+    .string "我们被卡在金黄的门口了。$"
 
 Route8_Text_AndreaIntro::
-	.string "MEOWTH is so cute, meow, meow,\n"
-	.string "meow!$"
+    .string "喵喵太可爱了，\n"
+    .string "喵，喵，喵！$"
 
 Route8_Text_AndreaDefeat::
-	.string "Meeeeyow!$"
+    .string "喵呜！$"
 
 Route8_Text_AndreaPostBattle::
-	.string "I think PIDGEY and RATTATA are\n"
-	.string "cute, too!$"
+    .string "我认为波波和小拉达也很可爱！$"
 
 Route8_Text_MeganIntro::
-	.string "We must look silly standing here\n"
-	.string "like this.$"
+    .string "我们像这样傻站在这儿\n"
+    .string "一定显得很可笑。$"
 
 Route8_Text_MeganDefeat::
-	.string "Look what you did to my poor, cute\n"
-	.string "POKéMON!$"
+    .string "看你对我的可怜的，娇小的\n"
+    .string "宝可梦做了什么！$"
 
 Route8_Text_MeganPostBattle::
-	.string "SAFFRON's gatekeeper won't let us\n"
-	.string "go through.\p"
-	.string "I know he's doing his job, but I\n"
-	.string "think he's mean.$"
+    .string "金黄的门卫\n"
+    .string "不让我们通过。\p"
+    .string "虽然我知道这是他的职责，\n"
+    .string "不过这也太小气了。$"
 
 Route8_Text_RichIntro::
-	.string "I'm a rambling, gaming dude!$"
+    .string "我是一个混乱又顽劣的家伙！$"
 
 Route8_Text_RichDefeat::
-	.string "Missed the big chance!$"
+    .string "我丢失了一个重大机会！$"
 
 Route8_Text_RichPostBattle::
-	.string "Playing games and POKéMON are like\n"
-	.string "eating peanuts! I just can't stop!$"
+    .string "一边赌博一边喂宝可梦吃东西！\n"
+    .string "生活真是太美好了！$"
 
 Route8_Text_JuliaIntro::
-	.string "What's a cute, round, and fluffy\n"
-	.string "POKéMON?$"
+    .string "小小的，圆圆的，毛绒绒的\n"
+    .string "是哪种宝可梦？$"
 
 Route8_Text_JuliaDefeat::
-	.string "Stop!\p"
-	.string "Don't be so mean to my CLEFAIRY!$"
+    .string "停下！\p"
+    .string "不要对我的皮皮这么无情！$"
 
 Route8_Text_JuliaPostBattle::
-	.string "I read that CLEFAIRY evolves when\n"
-	.string "it's exposed to a MOON STONE.\p"
-	.string "I read that in a POKéMON JOURNAL.\n"
-	.string "I wonder if it's true?$"
+    .string "我在宝可梦特刊上读到，\p"
+    .string "皮皮是靠月之石进化的。\n"
+    .string "这是真的吗？$"
 
 Route8_Text_UndergroundPathSign::
-	.string "UNDERGROUND PATH\n"
-	.string "CELADON CITY - LAVENDER TOWN$"
+    .string "地下通道\n"
+    .string "玉虹市-紫苑镇$"
 
 Route8_Text_EliIntro::
-	.string "ELI: Twin power is fantastic.\n"
-	.string "Did you know?$"
+    .string "莉娜：双胞胎的力量是很强大的，\n"
+    .string "你知道吗？$"
 
 Route8_Text_EliDefeat::
-	.string "ELI: But…\n"
-	.string "We used our twin power…$"
+    .string "莉娜但是……\n"
+    .string "这种力量已经用过了……$"
 
 Route8_Text_EliPostBattle::
-	.string "ELI: I caught my POKéMON with\n"
-	.string "ANNE!$"
+    .string "莉娜 我和卡娜一起抓住了我的宝可梦！$"
 
 Route8_Text_EliNotEnoughMons::
-	.string "ELI: We can't battle if you don't\n"
-	.string "have two POKéMON.$"
+    .string "莉娜如果你没有两只宝可梦，\n"
+    .string "就不能和我们战斗。$"
 
 Route8_Text_AnneIntro::
-	.string "ANNE: We'll shock you with our twin\n"
-	.string "power!$"
+    .string "卡娜 我们要用两个人的力量把你击垮！$"
 
 Route8_Text_AnneDefeat::
-	.string "ANNE: Our twin power…$"
+    .string "卡娜我们双胞胎的力量……$"
 
 Route8_Text_AnnePostBattle::
-	.string "ANNE: I'm raising POKéMON with\n"
-	.string "ELI.$"
+    .string "卡娜 我和莉娜一起培育宝可梦。$"
 
 Route8_Text_AnneNotEnoughMons::
-	.string "ANNE: Hi, hi! Let's battle!\n"
-	.string "But bring two POKéMON.$"
+    .string "卡娜嗨！和我们战斗吧！\n"
+    .string "但是要带两只宝可梦喔。$"
 
 Route8_Text_RicardoIntro::
-	.string "My bike's acting up, man.$"
+    .string "老兄，我的自行车出毛病了。$"
 
 Route8_Text_RicardoDefeat::
-	.string "Aww, man.\n"
-	.string "I'm not into this.$"
+    .string "啊。\n"
+    .string "我进不去这里面。$"
 
 Route8_Text_RicardoPostBattle::
-	.string "I got grass caught up in my\n"
-	.string "spokes, man.$"
+    .string "草卷入我自行车的辐条里面了。$"
 
 Route8_Text_JarenIntro::
-	.string "Clear the way, or I'll run you\n"
-	.string "down!$"
+    .string "给我让道，\n"
+    .string "否则我把你压扁！$"
 
 Route8_Text_JarenDefeat::
-	.string "You for real, kid?$"
+    .string "你是来真的吗，小子？$"
 
 Route8_Text_JarenPostBattle::
-	.string "Don't think you're all special and\n"
-	.string "all just because of this.$"
+    .string "不要认为你有多么特殊，\n"
+    .string "没什么了不起的。$"

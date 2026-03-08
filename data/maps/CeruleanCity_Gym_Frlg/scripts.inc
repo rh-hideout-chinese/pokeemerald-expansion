@@ -70,94 +70,91 @@ CeruleanCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 CeruleanCity_Gym_Text_MistyIntro::
-	.string "Hi, you're a new face!\p"
-	.string "Only those TRAINERS who have a\n"
-	.string "policy about POKéMON can turn pro.\p"
-	.string "What is your approach when you\n"
-	.string "catch and train POKéMON?\p"
-	.string "My policy is an all-out offensive\n"
-	.string "with WATER-type POKéMON!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+    .string "嗨，你是个新人啊！\p"
+    .string "只有那些懂战术的训练家\n"
+    .string "能在这儿出现。\p"
+    .string "你收服和训练宝可梦时\n"
+    .string "会讲究战术吗？\p"
+    .string "我的战术就是用\n"
+    .string "我的水属性宝可梦全力地猛攻！{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 CeruleanCity_Gym_Text_ExplainTM03::
-	.string "TM03 teaches WATER PULSE.\p"
-	.string "Use it on an aquatic POKéMON!$"
+    .string "TM03是水波动。\p"
+    .string "把它用在一只水属性宝可梦身上吧！$"
 
 CeruleanCity_Gym_Text_ExplainCascadeBadge::
-	.string "The CASCADEBADGE makes all\n"
-	.string "POKéMON up to Lv. 30 obey.\p"
-	.string "That includes even outsiders you\n"
-	.string "got in trades.\p"
-	.string "There's more. You can now use CUT\n"
-	.string "anytime, even out of battle.\p"
-	.string "You can CUT down small trees to\n"
-	.string "open new pathways.\p"
-	.string "You can also have my favorite TM.$"
+    .string "蓝色徽章能让所有的\n"
+    .string "30级以下的宝可梦听你的话。\p"
+    .string "包括那些从别人那儿交换得到的。\p"
+    .string "而且你可以随时使用居合斩。\n"
+    .string "甚至是没在战斗的时候。\p"
+    .string "你可以居合斩一些小树\n"
+    .string "去开辟新的道路。\p"
+    .string "你也能得到我最喜欢的技能。$"
 
 CeruleanCity_Gym_Text_ReceivedTM03FromMisty::
-	.string "{PLAYER} received TM03\n"
-	.string "from MISTY.$"
+    .string "{PLAYER}从小霞那儿得到了TM03。$"
 
 CeruleanCity_Gym_Text_BetterMakeRoomForThis::
-	.string "You better make room for this!$"
+    .string "你最好为这个准备一些空间！$"
 
 CeruleanCity_Gym_Text_MistyDefeat::
-	.string "Wow!\n"
-	.string "You're too much!\p"
-	.string "All right!\p"
-	.string "You can have the CASCADEBADGE to\n"
-	.string "show you beat me.$"
+    .string "哇！\n"
+    .string "你很厉害！\p"
+    .string "很好！\p"
+    .string "这个蓝色徽章你拿着，\n"
+    .string "来证明你打败过我的证明。$"
 
 CeruleanCity_Gym_Text_DianaIntro::
-	.string "What? You?\n"
-	.string "I'm more than good enough for you!\p"
-	.string "MISTY won't have to be bothered.$"
+    .string "什么？你？\n"
+    .string "我比你强多了！\p"
+    .string "不能随便去打扰小霞。$"
 
 CeruleanCity_Gym_Text_DianaDefeat::
-	.string "You overwhelmed me!$"
+    .string "你打败了我！$"
 
 CeruleanCity_Gym_Text_DianaPostBattle::
-	.string "You have to face other TRAINERS\n"
-	.string "to see how good you really are.$"
+    .string "你必须面对其他的训练家，\n"
+    .string "看看你到底有多强大。$"
 
 CeruleanCity_Gym_Text_LuisIntro::
-	.string "Splash!\p"
-	.string "I'm first up!\n"
-	.string "Let's do it!$"
+    .string "哈！\p"
+    .string "我是第一个！\n"
+    .string "我们开始吧！$"
 
 CeruleanCity_Gym_Text_LuisDefeat::
-	.string "That can't be!$"
+    .string "不可能！$"
 
 CeruleanCity_Gym_Text_LuisPostBattle::
-	.string "MISTY is a TRAINER who's going to\n"
-	.string "keep improving.\p"
-	.string "She won't lose to someone like you!$"
+    .string "小霞总是不断地提升着自己。\p"
+    .string "她是不会输给像你这样的人的。$"
 
 CeruleanCity_Gym_Text_GymGuyAdvice::
-	.string "Yo!\n"
-	.string "Champ in the making!\p"
-	.string "Let me give you some advice!\p"
-	.string "The LEADER, MISTY, is a pro who\n"
-	.string "uses WATER-type POKéMON.\p"
-	.string "You can drain all their water with\n"
-	.string "GRASS-type POKéMON.\p"
-	.string "Or, you might use ELECTRIC-type\n"
-	.string "POKéMON and zap them!$"
+    .string "哟！\n"
+    .string "未来的冠军！\p"
+    .string "给你一些建议吧！\p"
+    .string "这个馆主小霞，\n"
+    .string "使用的是水属性宝可梦。\p"
+    .string "你可以用草属性宝可梦\n"
+    .string "吸收它们的水份。\p"
+    .string "或者你也可以用电属性\n"
+    .string "宝可梦电击它们！$"
 
 CeruleanCity_Gym_Text_WeMakePrettyGoodTeam::
-	.string "You beat MISTY!\n"
-	.string "See, what'd I tell ya?\p"
-	.string "You and me, kid, we make a pretty\n"
-	.string "darn-good team!$"
+    .string "你战胜了小霞！\n"
+    .string "看吧，我说什么来着？\p"
+    .string "你和我，小子，\n"
+    .string "我们组成了一个强大之极的队伍！$"
 
 CeruleanCity_Gym_Text_GymStatue::
-	.string "CERULEAN POKéMON GYM\n"
-	.string "LEADER: MISTY\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}$"
+    .string "华蓝宝可梦道馆\n"
+    .string "馆主：小霞\p"
+    .string "优胜训练家：\n"
+    .string "{RIVAL}$"
 
 CeruleanCity_Gym_Text_GymStatuePlayerWon::
-	.string "CERULEAN POKéMON GYM\n"
-	.string "LEADER: MISTY\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}, {PLAYER}$"
+    .string "华蓝宝可梦道馆\n"
+    .string "馆主：小霞\p"
+    .string "优胜训练家：\n"
+    .string "{RIVAL} {PLAYER}$"
 

@@ -39,34 +39,34 @@ Route2_EastBuilding_EventScript_Rocker::
 	end
 
 Route2_EastBuilding_Text_GiveHM05IfSeen10Mons::
-	.string "Hi! Remember me?\n"
-	.string "I'm one of PROF. OAK's AIDES.\p"
-	.string "If your POKéDEX has complete data\n"
-	.string "on ten species, I'm supposed to\l"
-	.string "give you a reward.\p"
-	.string "PROF. OAK entrusted me with\n"
-	.string "HM05 for you.\p"
-	.string "So, {PLAYER}, let me ask you.\p"
-	.string "Have you gathered data on at least\n"
-	.string "ten kinds of POKéMON?$"
+    .string "嗨！还记得我吗？\n"
+    .string "我是一个大木博士的助手。\p"
+    .string "如果你的宝可梦图鉴收集了十个\n"
+    .string "数据，我会给你\l"
+    .string "一个小奖品。\p"
+    .string "大木博士委托我带\n"
+    .string "HM05给你。\p"
+    .string "{PLAYER}，我问问你。\p"
+    .string "你收集了十个不同\n"
+    .string "的宝可梦数据了吗？$"
 
 Route2_EastBuilding_Text_GreatHereYouGo::
-	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of POKéMON!\p"
-	.string "Congratulations!\n"
-	.string "Here you go!$"
+    .string "太好了！你已经拥有了\n"
+    .string "{STR_VAR_3}种宝可梦的数据！\p"
+    .string "恭喜你！\n"
+    .string "它是你的了！$"
 
 Route2_EastBuilding_Text_ReceivedHM05FromAide::
-	.string "{PLAYER} received HM05\n"
-	.string "from the AIDE.$"
+    .string "{PLAYER}从助手那里\n"
+    .string "得到了HM05。$"
 
 Route2_EastBuilding_Text_ExplainHM05::
-	.string "HM05 contains the hidden move\n"
-	.string "FLASH.\p"
-	.string "FLASH lights up even the darkest\n"
-	.string "of caves and dungeons.$"
+    .string "HM05包含了隐藏技能\n"
+    .string "闪光。\p"
+    .string "闪光能照亮黑暗的洞穴\n"
+    .string "和隧道。$"
 
 Route2_EastBuilding_Text_CanGetThroughRockTunnel::
-	.string "Once a POKéMON learns FLASH, you\n"
-	.string "can get through ROCK TUNNEL.$"
+    .string "一旦有宝可梦学会了闪光，\n"
+    .string "你就能通过岩山隧道了。$"
 

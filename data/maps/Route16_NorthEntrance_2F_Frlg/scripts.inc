@@ -51,49 +51,49 @@ Route16_NorthEntrance_2F_EventScript_GetAideRequestInfo::
 	return
 
 Route16_NorthEntrance_2F_Text_OnBikeRideWithGirlfriend::
-	.string "I'm on a relaxing ride on my new\n"
-	.string "bike with my girlfriend.$"
+    .string "我正在和我的女友\n"
+    .string "一起飙车放松呢！$"
 
 Route16_NorthEntrance_2F_Text_RidingTogetherOnNewBikes::
-	.string "We're going riding together on our\n"
-	.string "new bikes.$"
+    .string "我们将会骑着我们的\n"
+    .string "新自行车一起飞驶。$"
 
 Route16_NorthEntrance_2F_Text_ItsCeladonDeptStore::
-	.string "Let's see what the binoculars have\n"
-	.string "to show…\p"
-	.string "It's the CELADON DEPT. STORE!$"
+    .string "一架望远镜……\n"
+    .string "我来看看……\p"
+    .string "那是玉虹百货大楼！$"
 
 Route16_NorthEntrance_2F_Text_LongPathOverWater::
-	.string "Let's see what the binoculars have\n"
-	.string "to show…\p"
-	.string "There's a long path over water far\n"
-	.string "away.$"
+    .string "一家望远镜……\n"
+    .string "我来看看……\p"
+    .string "在水上有一条\n"
+    .string "通往远方的路。$"
 
 Route16_NorthEntrance_2F_Text_GiveAmuletCoinIfCaught40::
-	.string "Hi! Remember me?\n"
-	.string "I'm one of PROF. OAK's AIDES.\p"
-	.string "If your POKéDEX has complete data\n"
-	.string "on 40 species, I'm supposed to\l"
-	.string "give you a reward.\p"
-	.string "PROF. OAK entrusted me with an\n"
-	.string "AMULET COIN for you.\p"
-	.string "So, {PLAYER}, let me ask you.\p"
-	.string "Have you gathered data on at least\n"
-	.string "40 kinds of POKéMON?$"
+    .string "嗨，还记得我吗？\n"
+    .string "我是大木博士的助手之一。\p"
+    .string "如果你的宝可梦图鉴已经收集了\n"
+    .string "40种数据 我就会\l"
+    .string "给你奖励。\p"
+    .string "大木博士拜托我把\n"
+    .string "护符金币给你。\p"
+    .string "那么，{PLAYER}让我来问问你。\p"
+    .string "你至少已经取得了\n"
+    .string "40种宝可梦了吗？$"
 
 Route16_NorthEntrance_2F_Text_GreatHereYouGo::
-	.string "Great! You have caught or owned\n"
-	.string "{STR_VAR_3} kinds of POKéMON!\p"
-	.string "Congratulations!\n"
-	.string "Here you go!$"
+    .string "太棒了！你已经拥有了\n"
+    .string "{STR_VAR_3}多种宝可梦了！\p"
+    .string "恭喜！\n"
+    .string "奖励，拿去吧！$"
 
 Route16_NorthEntrance_2F_Text_ReceivedAmuletCoinFromAide::
-	.string "{PLAYER} received the AMULET COIN\n"
-	.string "from the AIDE.$"
+    .string "{PLAYER}从助手那儿得到了\n"
+    .string "护符金币。$"
 
 Route16_NorthEntrance_2F_Text_ExplainAmuletCoin::
-	.string "An AMULET COIN is an item to be\n"
-	.string "held by a POKéMON.\p"
-	.string "If the POKéMON appears in a winning\n"
-	.string "battle, you will earn more money.$"
+    .string "护符金币是一个\n"
+    .string "由宝可梦携带的道具。\p"
+    .string "如果这只宝可梦赢得了战斗，\n"
+    .string "你将会得到更多钱！$"
 

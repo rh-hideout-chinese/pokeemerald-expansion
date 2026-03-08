@@ -45,49 +45,49 @@ SilphCo_9F_EventScript_Grunt2::
 	end
 
 SilphCo_9F_Text_YouShouldTakeQuickNap::
-	.string "You look tired.\n"
-	.string "You should take a quick nap.$"
+    .string "你看起来很累。\n"
+    .string "你应该快去休息一下。$"
 
 SilphCo_9F_Text_DontGiveUp::
-	.string "Don't give up!$"
+    .string "不要放弃！$"
 
 SilphCo_9F_Text_ThankYouSoMuch::
-	.string "Thank you so much.$"
+    .string "太感谢你了。$"
 
 SilphCo_9F_Text_Grunt1Intro::
-	.string "Your POKéMON seem to adore you,\n"
-	.string "kid!$"
+    .string "你的宝可梦看起来很喜欢你，\n"
+    .string "孩子！$"
 
 SilphCo_9F_Text_Grunt1Defeat::
-	.string "Ghaaah!$"
+    .string "嘎哈哈哈！$"
 
 SilphCo_9F_Text_Grunt1PostBattle::
-	.string "If I had started as a TRAINER at\n"
-	.string "your age…$"
+    .string "要是我在你的年龄就已经\n"
+    .string "成为一个训练家的话……$"
 
 SilphCo_9F_Text_EdIntro::
-	.string "Your POKéMON have weak points!\n"
-	.string "I can nail them!$"
+    .string "你的宝可梦有弱点！\n"
+    .string "我能感觉到这些弱点！$"
 
 SilphCo_9F_Text_EdDefeat::
-	.string "You hammered me!$"
+    .string "你彻底打败了我！$"
 
 SilphCo_9F_Text_EdPostBattle::
-	.string "Exploiting weak spots does work.\n"
-	.string "Think about type advantages.$"
+    .string "利用对方的弱点做出对策。\n"
+    .string "想想属性优势。$"
 
 SilphCo_9F_Text_Grunt2Intro::
-	.string "I am one of the four ROCKET\n"
-	.string "BROTHERS!$"
+    .string "我是火箭队\n"
+    .string "四兄弟之一！$"
 
 SilphCo_9F_Text_Grunt2Defeat::
-	.string "Warg!\n"
-	.string "Brothers, I lost!$"
+    .string "哇\n"
+    .string "兄弟们，我输了！$"
 
 SilphCo_9F_Text_Grunt2PostBattle::
-	.string "My brothers will avenge me!$"
+    .string "我的兄弟们会为我报仇的！$"
 
 SilphCo_9F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "9F$"
+    .string "西尔佛公司总部\n"
+    .string "9层$"
 

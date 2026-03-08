@@ -82,101 +82,93 @@ FiveIsland_MemorialPillar_EventScript_MemorialLemonadeAlreadyPlaced::
 	end
 
 FiveIsland_MemorialPillar_Text_MiloIntro::
-	.string "I'm the eldest of the BIRD\n"
-	.string "BROTHERS.\p"
-	.string "The best thing about birds…\n"
-	.string "It has to be the beak.$"
+    .string "我是驯鸟师兄弟中年纪最大的。\p"
+    .string "鸟系宝可梦最吸引人的地方……\n"
+    .string "当然是它们的喙。$"
 
 FiveIsland_MemorialPillar_Text_MiloDefeat::
-	.string "Oh, so sharp!$"
+    .string "噢，太突然了！$"
 
 FiveIsland_MemorialPillar_Text_MiloPostBattle::
-	.string "You can fly to FOUR ISLAND from\n"
-	.string "here.$"
+    .string "从这儿你可以飞去四之岛。$"
 
 FiveIsland_MemorialPillar_Text_ChazIntro::
-	.string "I'm the middle kid of the BIRD\n"
-	.string "BROTHERS.\p"
-	.string "The best thing about birds…\n"
-	.string "It has to be the wings.$"
+    .string "我是驯鸟师兄弟中的老二。\p"
+    .string "鸟系宝可梦吸引人的地方……\n"
+    .string "当然是它们的翅膀。$"
 
 FiveIsland_MemorialPillar_Text_ChazDefeat::
-	.string "Flap, flap!$"
+    .string "啪，砰！$"
 
 FiveIsland_MemorialPillar_Text_ChazPostBattle::
-	.string "There was a really somber guy\n"
-	.string "over that way.$"
+    .string "那条路上有一个阴沉的家伙。$"
 
 FiveIsland_MemorialPillar_Text_HaroldIntro::
-	.string "I'm the youngest of the BIRD\n"
-	.string "BROTHERS.\p"
-	.string "The best thing about birds…\n"
-	.string "It has to be the down.$"
+    .string "我是驯鸟师兄弟中年龄最小的。\p"
+    .string "鸟系宝可梦最吸引人的地方……\n"
+    .string "当然是它们的羽毛。$"
 
 FiveIsland_MemorialPillar_Text_HaroldDefeat::
-	.string "Down is so comfy…\n"
-	.string "It makes me drowsy…$"
+    .string "羽毛太舒服了……\n"
+    .string "它让我想美美地睡过去……$"
 
 FiveIsland_MemorialPillar_Text_HaroldPostBattle::
-	.string "It fills me with happiness when\n"
-	.string "bird POKéMON beg playfully…$"
+    .string "当鸟系宝可梦缠着我跟它们\n"
+    .string "玩耍时，我心中就充满了快乐……$"
 
 FiveIsland_MemorialPillar_Text_ScrubScrub::
-	.string "Scrub, scrub…$"
+    .string "刷，刷……$"
 
 FiveIsland_MemorialPillar_Text_YourMonsLookHealthy::
-	.string "Hello…\n"
-	.string "Your POKéMON look healthy…$"
+    .string "你好……\n"
+    .string "你的宝可梦看起来很健康……$"
 
 FiveIsland_MemorialPillar_Text_ThisIsWhereIBuriedMyOnix::
-	.string "This is where I buried my ONIX…\n"
-	.string "It was named TECTONIX…$"
+    .string "这是埋葬我的大岩蛇的地方……\n"
+    .string "它叫做阿岩……$"
 
 FiveIsland_MemorialPillar_Text_HereLiesTectonixLemonadeOffering::
-	.string "“Here lies TECTONIX” is engraved\n"
-	.string "on a boulder.\p"
-	.string "There is a LEMONADE placed as an\n"
-	.string "offering in front of the grave.$"
+    .string "碑上刻着：\n"
+    .string "“阿岩长眠于此”。\p"
+    .string "坟墓的前面放着\n"
+    .string "一罐果汁牛奶作为祭品。$"
 
 FiveIsland_MemorialPillar_Text_LeaveAnotherLemonadeOffering::
-	.string "Would you like to leave another\n"
-	.string "LEMONADE as an offering?$"
+    .string "你也想留下一罐果汁牛奶\n"
+    .string "作为祭品吗？$"
 
 FiveIsland_MemorialPillar_Text_PlacedCanOfLemonade::
-	.string "{PLAYER} placed a can of LEMONADE\n"
-	.string "in front of the grave.$"
+    .string "{PLAYER}在坟墓前面\n"
+    .string "放了一罐果汁牛奶。$"
 
 FiveIsland_MemorialPillar_Text_ThankYouPleaseTakeThis::
-	.string "Th-thank you…\p"
-	.string "That was my TECTONIX's favorite\n"
-	.string "drink…\p"
-	.string "I don't even know you, but your\n"
-	.string "act of kindness…\p"
-	.string "It's uplifted me a little.\p"
-	.string "Can you please take this as my\n"
-	.string "thanks?$"
+    .string "谢谢你……\p"
+    .string "那是我的阿岩最爱喝的饮料……\p"
+    .string "我不知道你是谁，但是\n"
+    .string "你的仁慈感动了我……\p"
+    .string "我现在振作一些了。\p"
+    .string "作为我的谢意，\n"
+    .string "你能收下这个吗？$"
 
 FiveIsland_MemorialPillar_Text_BeGoodToYourMonsToo::
-	.string "Please be good to your POKéMON,\n"
-	.string "too.$"
+    .string "请你也好好对待你自己的宝可梦。$"
 
 FiveIsland_MemorialPillar_Text_DontHaveRoomForIt::
-	.string "If you don't have room for it,\n"
-	.string "I'll hold it for you till next time.$"
+    .string "如果你没有空间装这个了，\n"
+    .string "我会下次给你的。$"
 
 FiveIsland_MemorialPillar_Text_StillHaveThingAsMyThanks::
-	.string "Oh, it's you from that time…\p"
-	.string "I still have that thing I wanted\n"
-	.string "you to have as my thanks.$"
+    .string "噢，你是上次的那个孩子……\p"
+    .string "我仍然拿着想给你\n"
+    .string "作为谢礼的礼物。$"
 
 FiveIsland_MemorialPillar_Text_ScrubScrubTectonix::
-	.string "Scrub, scrub…\p"
-	.string "… … …\n"
-	.string "TECTONIX…$"
+    .string "呲，呲……\p"
+    .string "…………\n"
+    .string "阿岩……$"
 
 FiveIsland_MemorialPillar_Text_HereLiesTectonix::
-	.string "Boulders and rocks are neatly piled\n"
-	.string "up as a cairn.\p"
-	.string "“Here lies TECTONIX” is engraved\n"
-	.string "on a boulder.$"
+    .string "这个碑是一些很干净的石块做成的。\p"
+    .string "碑上刻着：\n"
+    .string "“阿岩长眠于此”。$"
 

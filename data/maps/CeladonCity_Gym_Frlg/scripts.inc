@@ -84,154 +84,144 @@ CeladonCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 CeladonCity_Gym_Text_ErikaIntro::
-	.string "Hello…\n"
-	.string "Lovely weather, isn't it?\l"
-	.string "It's so pleasant…\p"
-	.string "…Oh, dear…\n"
-	.string "I must have dozed off. Welcome.\p"
-	.string "My name is ERIKA.\n"
-	.string "I am the LEADER of CELADON GYM.\p"
-	.string "I am a student of the art of\n"
-	.string "flower arranging.\p"
-	.string "My POKéMON are solely of the\n"
-	.string "GRASS type.\p"
-	.string "…Oh, I'm sorry, I had no idea that\n"
-	.string "you wished to challenge me.\p"
-	.string "Very well, but I shall not lose.{PLAY_BGM MUS_RG_ENCOUNTER_GYM_LEADER}$"
+    .string "你好……\n"
+    .string "真是个好天气，对吧？\l"
+    .string "太舒服了……\p"
+    .string "……啊，亲爱的……\n"
+    .string "我刚才一定是睡着了，欢迎你。\p"
+    .string "我是莉佳。\n"
+    .string "玉虹的道馆馆主。\p"
+    .string "我还是一名花道师。\p"
+    .string "所以我的宝可梦全是草属性的。\p"
+    .string "……啊，不好意思，我没注意到\n"
+    .string "你是来挑战我的。\p"
+    .string "来吧，不过我是不会输的。{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 CeladonCity_Gym_Text_ErikaDefeat::
-	.string "Oh!\n"
-	.string "I concede defeat.\l"
-	.string "You are remarkably strong.\p"
-	.string "I must confer on you the\n"
-	.string "RAINBOWBADGE.$"
+    .string "啊！\n"
+    .string "我认输了。\l"
+    .string "你真是太强了。\p"
+    .string "我必须授予你彩虹徽章。$"
 
 CeladonCity_Gym_Text_ErikaPostBattle::
-	.string "You are cataloging POKéMON?\n"
-	.string "I must say I'm impressed.\p"
-	.string "I would never collect POKéMON if\n"
-	.string "they were unattractive.$"
+    .string "你在收集宝可梦？\n"
+    .string "真是一项了不起的工程啊！\p"
+    .string "我从不收集不可爱的宝可梦。$"
 
 CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
-	.string "The RAINBOWBADGE will make\n"
-	.string "POKéMON up to Lv. 50 obey.\p"
-	.string "It also allows POKéMON to use\n"
-	.string "STRENGTH in and out of battle.\p"
-	.string "Please also take this with you.$"
+    .string "彩虹徽章可以让50级以下的\n"
+    .string "宝可梦听从你的指挥。\p"
+    .string "它也可以让你的宝可梦在战斗中\n"
+    .string "和战斗外都能使用怪力。\p"
+    .string "也请你收下这个。$"
 
 CeladonCity_Gym_Text_ReceivedTM19FromErika::
-	.string "{PLAYER} received TM19\n"
-	.string "from ERIKA.$"
+    .string "{PLAYER}从莉佳那里获得了TM19。$"
 
 CeladonCity_Gym_Text_ExplainTM19::
-	.string "TM19 contains GIGA DRAIN.\p"
-	.string "Half the damage it inflicts is\n"
-	.string "drained to heal your POKéMON.\p"
-	.string "Wouldn't you agree that it's a\n"
-	.string "wonderful move?$"
+    .string "TM19是终极吸取。\p"
+    .string "这个技能造成伤害的一半\n"
+    .string "会被你的宝可梦吸收过来回复体力。\p"
+    .string "难道你不认为\n"
+    .string "这是个非常棒的技能吗？$"
 
 CeladonCity_Gym_Text_ShouldMakeRoomForThis::
-	.string "You should make room for this.$"
+    .string "你的背包满了。$"
 
 CeladonCity_Gym_Text_KayIntro::
-	.string "I should tell you about this GYM.\p"
-	.string "Only real ladies are allowed in\n"
-	.string "here!$"
+    .string "我要给你介绍一下这个道馆。\p"
+    .string "只有真正的淑女才被允许进入！$"
 
 CeladonCity_Gym_Text_KayDefeat::
-	.string "You're too rough!$"
+    .string "你太粗鲁了！$"
 
 CeladonCity_Gym_Text_KayPostBattle::
-	.string "Bleaah!\n"
-	.string "I hope ERIKA wipes you out!$"
+    .string "啊啊！\n"
+    .string "我真希望莉佳好好教训你一下！$"
 
 CeladonCity_Gym_Text_BridgetIntro::
-	.string "Oh, welcome.\n"
-	.string "I was getting bored.$"
+    .string "唔，你好。\n"
+    .string "我正无聊呢。$"
 
 CeladonCity_Gym_Text_BridgetDefeat::
-	.string "My makeup!$"
+    .string "我化的妆！$"
 
 CeladonCity_Gym_Text_BridgetPostBattle::
-	.string "GRASS-type POKéMON are tough\n"
-	.string "against the WATER type.\p"
-	.string "They also have an edge on ROCK-\n"
-	.string "and GROUND-type POKéMON.$"
+    .string "草属性宝可梦对水属性很有优势。\p"
+    .string "它们对岩石属性和地面属性宝可梦\n"
+    .string "也是强大的存在。$"
 
 CeladonCity_Gym_Text_TinaIntro::
-	.string "…Weren't you peeking in here\n"
-	.string "earlier?$"
+    .string "……你之前是在偷看这里吗？$"
 
 CeladonCity_Gym_Text_TinaDefeat::
-	.string "You're an eye-opener!$"
+    .string "你让我大开眼界！$"
 
 CeladonCity_Gym_Text_TinaPostBattle::
-	.string "Oh, you were looking at ERIKA…\n"
-	.string "You weren't looking at me…$"
+    .string "啊，你是在看莉佳……\n"
+    .string "不是看我……$"
 
 CeladonCity_Gym_Text_TamiaIntro::
-	.string "Look, look!\n"
-	.string "See my POKéMON!\p"
-	.string "I like the GRASS type.\n"
-	.string "I like how they're easy to raise.$"
+    .string "喂，喂！\n"
+    .string "看看我的宝可梦！\p"
+    .string "我喜欢草属性。\n"
+    .string "它们培育起来很容易。$"
 
 CeladonCity_Gym_Text_TamiaDefeat::
-	.string "No!$"
+    .string "不！$"
 
 CeladonCity_Gym_Text_TamiaPostBattle::
-	.string "We only use GRASS-type POKéMON at\n"
-	.string "our GYM.\p"
-	.string "Why? We also use them for making\n"
-	.string "flower arrangements!$"
+    .string "我们在道馆里只使用草属性宝可梦。\p"
+    .string "至于为什么嘛，\n"
+    .string "我们也用它们来插花的！$"
 
 CeladonCity_Gym_Text_LisaIntro::
-	.string "Oh, hey!\p"
-	.string "We don't like BUG- or FIRE-type\n"
-	.string "POKéMON in here!$"
+    .string "嘿，你好！\p"
+    .string "我们不欢迎虫属性和火属性宝可梦！$"
 
 CeladonCity_Gym_Text_LisaDefeat::
-	.string "Oh!\n"
-	.string "You!$"
+    .string "啊！\n"
+    .string "你！$"
 
 CeladonCity_Gym_Text_LisaPostBattle::
-	.string "Our LEADER ERIKA might be quiet,\n"
-	.string "but she's famous around here.$"
+    .string "我们的馆主莉佳很文静，\n"
+    .string "她在这一带可非常出名。$"
 
 CeladonCity_Gym_Text_LoriIntro::
-	.string "Pleased to meet you.\n"
-	.string "My hobby is POKéMON training.$"
+    .string "很高兴见到你。\n"
+    .string "我的兴趣是训练宝可梦。$"
 
 CeladonCity_Gym_Text_LoriDefeat::
-	.string "Oh!\n"
-	.string "Splendid!$"
+    .string "啊！\n"
+    .string "棒极了！$"
 
 CeladonCity_Gym_Text_LoriPostBattle::
-	.string "I have a blind date coming up.\n"
-	.string "I have to learn to be polite,\l"
-	.string "especially if I have to battle.$"
+    .string "我马上要去相亲。\n"
+    .string "所以必须得保持礼貌，\l"
+    .string "特别是要对战的时候。$"
 
 CeladonCity_Gym_Text_MaryIntro::
-	.string "Welcome to CELADON GYM!\p"
-	.string "You'd better not underestimate\n"
-	.string "the nice ladies here.$"
+    .string "欢迎来到玉虹道馆！\p"
+    .string "你最好不要\n"
+    .string "小瞧了这里的小姐们。$"
 
 CeladonCity_Gym_Text_MaryDefeat::
-	.string "Oh!\n"
-	.string "Beaten!$"
+    .string "啊！\n"
+    .string "输了！$"
 
 CeladonCity_Gym_Text_MaryPostBattle::
-	.string "I didn't bring my best POKéMON.\n"
-	.string "Wait until next time!$"
+    .string "我没带上我最厉害的宝可梦。\n"
+    .string "下次等着瞧！$"
 
 CeladonCity_Gym_Text_GymStatue::
-	.string "CELADON POKéMON GYM\n"
-	.string "LEADER: ERIKA\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}$"
+    .string "玉虹宝可梦道馆\n"
+    .string "馆主：莉佳\p"
+    .string "获胜训练家：\n"
+    .string "{RIVAL}$"
 
 CeladonCity_Gym_Text_GymStatuePlayerWon::
-	.string "CELADON POKéMON GYM\n"
-	.string "LEADER: ERIKA\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}, {PLAYER}$"
+    .string "玉虹宝可梦道馆\n"
+    .string "馆主：莉佳\p"
+    .string "获胜训练家：\n"
+    .string "{RIVAL}，{PLAYER}$"
 

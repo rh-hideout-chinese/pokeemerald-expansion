@@ -52,44 +52,44 @@ CeladonCity_Condominiums_3F_EventScript_Computer3::
 	end
 
 CeladonCity_Condominiums_3F_Text_ImTheProgrammer::
-	.string "Me?\n"
-	.string "I'm the programmer!$"
+    .string "我？\n"
+    .string "我是程序员！$"
 
 CeladonCity_Condominiums_3F_Text_ImTheGraphicArtist::
-	.string "I'm the graphic artist!\n"
-	.string "I drew you!$"
+    .string "我是做平面设计的！\n"
+    .string "你就是我画出来的哦！$"
 
 CeladonCity_Condominiums_3F_Text_IWroteTheStory::
-	.string "I wrote the story!\n"
-	.string "Isn't ERIKA cute?\p"
-	.string "I like MISTY a lot, too!\n"
-	.string "Oh, and SABRINA, I like her!$"
+    .string "我写了这个故事！\n"
+    .string "莉佳很可爱吧？\p"
+    .string "我也很喜欢小霞！\n"
+    .string "啊，还有娜姿，我很喜欢！$"
 
 CeladonCity_Condominiums_3F_Text_ImGameDesignerShowMeFinishedPokedex::
-	.string "Is that right?\p"
-	.string "I'm the game designer!\p"
-	.string "Filling up your POKéDEX is tough,\n"
-	.string "but don't quit!\p"
-	.string "When you finish, come tell me!$"
+    .string "程序运行正常吗？\p"
+    .string "我是游戏设计师！\p"
+    .string "集齐宝可梦图鉴非常困难，\n"
+    .string "但别放弃！\p"
+    .string "如果你完成了图鉴，就来找我吧！$"
 
 CeladonCity_Condominiums_3F_Text_CompletedPokedexCongratulations::
-	.string "Wow! Excellent!\n"
-	.string "You completed your POKéDEX!\l"
-	.string "Congratulations!\l"
-	.string "…$"
+    .string "哇噢！棒极了！\n"
+    .string "你完成了宝可梦图鉴！\l"
+    .string "祝贺你！\l"
+    .string "……$"
 
 CeladonCity_Condominiums_3F_Text_ItsTheGameProgram::
-	.string "It's the game program! Messing with\n"
-	.string "it could bug out the game!$"
+    .string "这是游戏程序！弄乱了的话\n"
+    .string "游戏会出故障的！$"
 
 CeladonCity_Condominiums_3F_Text_SomeonesPlayingGame::
-	.string "Someone's playing a game instead of\n"
-	.string "working!$"
+    .string "有些人是在玩游戏，\n"
+    .string "没在工作！$"
 
 CeladonCity_Condominiums_3F_Text_ItsScriptBetterNotLookAtEnding::
-	.string "It's the script!\n"
-	.string "Better not look at the ending!$"
+    .string "这是脚本！\n"
+    .string "可别偷看结局哦！$"
 
 CeladonCity_Condominiums_3F_Text_GameFreakDevelopmentRoom::
-	.string "GAME FREAK Development Room$"
+    .string "GAME FREAK开发室$"
 

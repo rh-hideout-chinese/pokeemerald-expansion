@@ -27,21 +27,21 @@ ThreeIsland_PokemonCenter_1F_EventScript_Rocker::
 	end
 
 ThreeIsland_PokemonCenter_1F_Text_PCNetworkCanLinkWithKanto::
-	.string "Hey, did you hear the news?\p"
-	.string "The PC network here can now link\n"
-	.string "with PCs in KANTO.\p"
-	.string "I don't know how that came about,\n"
-	.string "but it's fantastic!$"
+	.string "嘿！你听新闻了吗？\p"
+	.string "这里的电脑网络\n"
+	.string "已经可以和关都的电脑连接了！\p"
+	.string "我不知道怎么明白原理，\n"
+	.string "但听起来真的很棒！$"
 
 ThreeIsland_PokemonCenter_1F_Text_ImpossibleToSurfBetweenIslands::
-	.string "It's impossible to SURF between the\n"
-	.string "islands around these parts.\p"
-	.string "The tides are too fast and\n"
-	.string "treacherous.$"
+	.string "在三个小岛中间\n"
+	.string "不能使用冲浪。\p"
+	.string "水流速度很快\n"
+	.string "而且并非一直都是往一个方向流……$"
 
 ThreeIsland_PokemonCenter_1F_Text_AlwaysBerriesInBerryForest::
-	.string "Let's crush BERRIES!\n"
-	.string "…That'd be wasting BERRIES?\p"
-	.string "You can always find some BERRIES\n"
-	.string "on the ground in BERRY FOREST.$"
+	.string "让我们碾碎树果吧！\n"
+	.string "……你说那会浪费树果？\p"
+	.string "在树果森林的路面上\n"
+	.string "你经常会找到树果！$"
 

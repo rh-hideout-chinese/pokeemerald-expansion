@@ -281,84 +281,84 @@ CeladonCity_DepartmentStore_Roof_EventScript_ExitVendingMachine::
 	end
 
 CeladonCity_DepartmentStore_Roof_Text_ImThirstyGiveHerDrink::
-	.string "I'm thirsty!\n"
-	.string "I want something to drink!\p"
-	.string "{FONT_NORMAL}Give her a drink?$"
+	.string "我渴！\n"
+	.string "我要饮料嘛！\p"
+	.string "{FONT_NORMAL}给她一杯喝的吗？$"
 
 CeladonCity_DepartmentStore_Roof_Text_GiveWhichDrink::
-	.string "Give her which drink?$"
+	.string "给她一杯喝的吗？$"
 
 CeladonCity_DepartmentStore_Roof_Text_YayFreshWaterHaveThis::
-	.string "Yay!\p"
-	.string "FRESH WATER!\p"
-	.string "Thank you!\n"
-	.string "You can have this from me!$"
+    .string "太好了！\p"
+    .string "是美味之水！\p"
+    .string "谢谢你！\n"
+    .string "给你这个！$"
 
 Text_ReceivedItemFromLittleGirl::
-	.string "{PLAYER} received a {STR_VAR_2}\n"
-	.string "from the little girl.$"
+    .string "{PLAYER}从小女孩那里\n"
+    .string "获得了一个{STR_VAR_2}。$"
 
 CeladonCity_DepartmentStore_Roof_Text_ExplainTM16::
-	.string "TM16 contains LIGHT SCREEN.\p"
-	.string "It's a move that weakens the power\n"
-	.string "of special attacks by your foe.$"
+    .string "TM16是光墙。\p"
+    .string "这个技能可以\n"
+    .string "削弱你对手的特殊攻击。$"
 
 CeladonCity_DepartmentStore_Roof_Text_YaySodaPopHaveThis::
-	.string "Yay!\p"
-	.string "SODA POP!\p"
-	.string "Thank you!\n"
-	.string "You can have this from me!$"
+    .string "太好了！\p"
+    .string "是劲爽汽水！\p"
+    .string "谢谢你！\n"
+    .string "给你这个！$"
 
 CeladonCity_DepartmentStore_Roof_Text_ExplainTM20::
-	.string "TM20 contains SAFEGUARD.\p"
-	.string "It's a move that prevents status\n"
-	.string "problems among your POKéMON.$"
+    .string "TM20是神秘护身。\p"
+    .string "这个技能可以\n"
+    .string "使你的宝可梦免受状态效果影响。$"
 
 CeladonCity_DepartmentStore_Roof_Text_YayLemonadeHaveThis::
-	.string "Yay!\p"
-	.string "LEMONADE!\p"
-	.string "Thank you!\n"
-	.string "You can have this from me!$"
+    .string "太好了！\p"
+    .string "是果汁牛奶！\p"
+    .string "谢谢你！\n"
+    .string "给你这个！$"
 
 CeladonCity_DepartmentStore_Roof_Text_ExplainTM33::
-	.string "TM33 contains REFLECT.\p"
-	.string "It's a move that weakens the power\n"
-	.string "of physical attacks by your foe.$"
+    .string "TM33是反射壁。\p"
+    .string "这个技能可以\n"
+    .string "削弱你对手的物理攻击。$"
 
 CeladonCity_DepartmentStore_Roof_Text_DontHaveSpaceForThis::
-	.string "You don't have space for this!$"
+    .string "你的包包满了！$"
 
 CeladonCity_DepartmentStore_Roof_Text_ImNotThirstyAfterAll::
-	.string "No, thank you!\n"
-	.string "I'm not thirsty after all!$"
+    .string "不用了，谢谢！\n"
+    .string "我一点不渴了！$"
 
 CeladonCity_DepartmentStore_Roof_Text_MySisterIsImmature::
-	.string "My sister is a TRAINER, believe it\n"
-	.string "or not.\p"
-	.string "But, she's so immature, she drives\n"
-	.string "me nuts!$"
+    .string "信不信由你，\n"
+    .string "我妹妹也是一个训练家。\p"
+    .string "不过，她太任性了，\n"
+    .string "都快把我逼疯了！$"
 
 CeladonCity_DepartmentStore_Roof_Text_ImThirstyIWantDrink::
-	.string "I'm thirsty!\n"
-	.string "I want something to drink!$"
+    .string "我渴！\n"
+    .string "我要喝饮料嘛！$"
 
 CeladonCity_DepartmentStore_Roof_Text_FloorSign::
-	.string "ROOFTOP SQUARE:\n"
-	.string "VENDING MACHINES$"
+    .string "天台：\n"
+    .string "自动售货机$"
 
 CeladonCity_DepartmentStore_Roof_Text_VendingMachineWhatDoesItHave::
-	.string "A vending machine!\n"
-	.string "What does it have?$"
+    .string "一台自动售货机！\n"
+    .string "想买点什么？$"
 
 CeladonCity_DepartmentStore_Roof_Text_NotEnoughMoney::
-	.string "Oops, not enough money!$"
+    .string "不好意思，钱不够！$"
 
 CeladonCity_DepartmentStore_Roof_Text_DrinkCanPoppedOut::
-	.string "A can of {STR_VAR_1} popped out!$"
+    .string "一罐{STR_VAR_1}的饮料出来了！$"
 
 CeladonCity_DepartmentStore_Roof_Text_NoMoreRoomForStuff::
-	.string "There's no more room for stuff!$"
+    .string "你的背包满了！$"
 
 CeladonCity_DepartmentStore_Roof_Text_NotThirsty::
-	.string "Not thirsty!$"
+    .string "不渴了！$"
 

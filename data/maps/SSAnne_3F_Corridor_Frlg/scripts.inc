@@ -6,8 +6,7 @@ SSAnne_3F_Corridor_EventScript_Sailor::
 	end
 
 SSAnne_3F_Corridor_Text_CaptainTeachesCutToMons::
-	.string "Our CAPTAIN is a sword master.\n"
-	.string "He's awesome at using CUT.\p"
-	.string "They say he even teaches CUT\n"
-	.string "to POKéMON!$"
+    .string "我们的船长是剑道大师。\n"
+    .string "他的居合斩非常厉害。\p"
+    .string "据说他还能教宝可梦居合斩！$"
 

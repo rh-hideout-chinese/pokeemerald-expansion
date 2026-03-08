@@ -14,18 +14,16 @@ CeladonCity_House1_EventScript_Rocket2::
 	end
 
 CeladonCity_House1_Text_SlotsReelInTheDough::
-	.string "Hehehe!\p"
-	.string "The slots just reel in the dough,\n"
-	.string "big-time!$"
+	.string "呵呵呵！\p"
+	.string "老虎机就是个吸钱机，\n"
+	.string "最棒的吸钱机！$"
 
 CeladonCity_House1_Text_ShippedMonsAsSlotPrizes::
-	.string "CHIEF!\p"
-	.string "We just shipped two thousand\n"
-	.string "more POKéMON as slot prizes\l"
-	.string "again today!$"
+	.string "队长！\p"
+	.string "我们今天刚又运来了2000个宝可梦\n"
+	.string "作为老虎机的奖品！$"
 
 CeladonCity_House1_Text_DontTouchGameCornerPoster::
-	.string "Don't touch the poster at the GAME\n"
-	.string "CORNER!\p"
-	.string "There's no secret switch behind it!$"
+	.string "千万别去碰游戏厅的海报！\p"
+	.string "那后面没有什么秘密机关！$"
 

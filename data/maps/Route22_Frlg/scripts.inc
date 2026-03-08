@@ -234,27 +234,27 @@ Route22_EventScript_LeagueGateSign::
 	end
 
 Route22_Text_EarlyRivalIntro::
-	.string "{RIVAL}: Hey! {PLAYER}!\p"
-	.string "You're off to the POKéMON LEAGUE?\n"
-	.string "Forget about it!\p"
-	.string "You probably don't have any\n"
-	.string "BADGES, do you?\p"
-	.string "The guard won't let you through\n"
-	.string "without them.\p"
-	.string "By the way, did your POKéMON get\n"
-	.string "any stronger?$"
+	.string "{RIVAL}：喂！{PLAYER}！\p"
+	.string "你想要到宝可梦联盟里去？\n"
+	.string "得了吧！\p"
+	.string "你得到的徽章\n"
+	.string "还不够吧？\p"
+	.string "这样的话，\n"
+	.string "守卫是不会让你通过的。\p"
+	.string "顺便问一句，\n"
+	.string "你的宝可梦变强了吗？$"
 
 Route22_Text_EarlyRivalDefeat::
-	.string "Awww!\n"
-	.string "You just lucked out!$"
+	.string "啊啊！\n"
+	.string "你只是运气好罢了！$"
 
 Route22_Text_EarlyRivalPostBattle::
-	.string "I heard the POKéMON LEAGUE is\n"
-	.string "crawling with tough TRAINERS.\p"
-	.string "I have to figure out how to get\n"
-	.string "past them.\p"
-	.string "You should quit dawdling and get a\n"
-	.string "move on!$"
+	.string "我听说宝可梦联盟遍布\n"
+	.string "很厉害的训练家。\p"
+	.string "我必须想想该怎样\n"
+	.string "战胜他们。\p"
+	.string "你不能这样磨磨蹭蹭了，\n"
+	.string "继续前进吧！$"
 
 @ Translated in RB as "{RIVAL}: What? Why do I have 2 POKéMON? You should catch some more too!"
 Route22_Text_RivalShouldCatchSomeMons::
@@ -265,26 +265,25 @@ Route22_Text_RivalShouldCatchSomeMons::
 	.string "つかまえれば　いい　じゃん！$"
 
 Route22_Text_LateRivalIntro::
-	.string "{RIVAL}: What? {PLAYER}!\n"
-	.string "What a surprise to see you here!\p"
-	.string "So you're going to the POKéMON\n"
-	.string "LEAGUE?\p"
-	.string "You collected all the BADGES, too?\n"
-	.string "That's cool!\p"
-	.string "Then I'll whip you, {PLAYER}, as a\n"
-	.string "warm-up for the POKéMON LEAGUE!\p"
-	.string "Come on!$"
+	.string "{RIVAL}：什么？{PLAYER}！\n"
+	.string "在这儿碰到你真是令我惊讶！\p"
+	.string "你是打算去宝可梦联盟吗？\p"
+	.string "你也收集齐了全部徽章？\n"
+	.string "真是太好了！\p"
+	.string "作为去宝可梦联盟之前的热身！\n"
+	.string "我要先击败你，{PLAYER}\p"
+	.string "来吧！$"
 
 Route22_Text_LateRivalDefeat::
-	.string "What!?\p"
-	.string "I was just careless, you!$"
+	.string "什么！？\p"
+	.string "我太大意了！$"
 
 Route22_Text_LateRivalPostBattle::
-	.string "That loosened me up.\n"
-	.string "I'm ready for the POKéMON LEAGUE!\p"
-	.string "{PLAYER}, you need more practice.\p"
-	.string "But hey, you know that!\n"
-	.string "I'm out of here. Smell ya!$"
+	.string "这下我放松多了。\n"
+	.string "已经为宝可梦联盟做好了充分准备！\p"
+	.string "{PLAYER}，你还得再练习练习。\p"
+	.string "不过，你自己应该很清楚吧！\n"
+	.string "我走了，回见！$"
 
 @ Translated in RB as "{RIVAL}: Hahaha! {PLAYER}! That's your best? You're nowhere near as good as me, pal! Go train some more! You loser!"
 Route22_Text_LateRivalVictory::
@@ -296,6 +295,6 @@ Route22_Text_LateRivalVictory::
 	.string "あははーッ！$"
 
 Route22_Text_LeagueGateSign::
-	.string "POKéMON LEAGUE\n"
-	.string "Front Gate$"
+	.string "宝可梦联盟\n"
+	.string "正门$"
 

@@ -24,22 +24,20 @@ VermilionCity_House3_EventScript_Letter::
 	end
 
 VermilionCity_House3_Text_PidgeyFlyLetterToSaffron::
-	.string "I'm getting my PIDGEY to fly a\n"
-	.string "letter to SAFFRON in the north.$"
+    .string "我正让我的波波飞去北边的金黄\n"
+    .string "送一封信。$"
 
 VermilionCity_House3_Text_Pidgey::
-	.string "PIDGEY: Kurukkoo!$"
+    .string "波波：咕噜咕！$"
 
 VermilionCity_House3_Text_DearPippiLetter::
-	.string "Dear PIPPI,\n"
-	.string "I hope to see you soon.\p"
-	.string "I heard SAFFRON has problems with\n"
-	.string "TEAM ROCKET.\p"
-	.string "VERMILION appears to be safe.$"
+    .string "亲爱的比比，\n"
+    .string "希望能很快见到你。\p"
+    .string "我听说火箭队在金黄制造麻烦。\p"
+    .string "枯叶似乎还安全。$"
 
 VermilionCity_House3_Text_SendMyPidgeyToUnionRoom::
-	.string "I want to exchange MAIL with all\n"
-	.string "sorts of people.\p"
-	.string "I send my PIDGEY to a UNION ROOM\n"
-	.string "to exchange MAIL for me.$"
+    .string "我想和各种各样的人通信。\p"
+    .string "我常把波波派去联合房间\n"
+    .string "替我传递信件。$"
 

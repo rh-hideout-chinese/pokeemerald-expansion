@@ -96,162 +96,162 @@ SaffronCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 SaffronCity_Gym_Text_SabrinaIntro::
-	.string "I had a vision of your arrival.\p"
-	.string "I have had psychic powers since\n"
-	.string "I was a child.\p"
-	.string "It started when a spoon I\n"
-	.string "carelessly tossed, bent.\p"
-	.string "I dislike battling, but if you wish,\n"
-	.string "I will show you my powers!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+    .string "我能预感到你的到来。\p"
+    .string "当我还是个小女孩的时候，\n"
+    .string "我拥有了超能力。\p"
+    .string "那个早上我拿起汤勺\n"
+    .string "使它弯曲了过来。\p"
+    .string "虽然我厌恶暴力，但如果你是认真的，\n"
+    .string "我是不会手下留情的！{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 SaffronCity_Gym_Text_SabrinaDefeat::
-	.string "This loss shocks me!\n"
-	.string "But, a loss is a loss.\p"
-	.string "I admit, I didn't work hard enough\n"
-	.string "to win.\p"
-	.string "Your victory has earned you the\n"
-	.string "MARSHBADGE.$"
+    .string "真是惊讶，我竟然输了！\n"
+    .string "不过，输了就是输了。\p"
+    .string "我承认，\n"
+    .string "我没有用尽全力来取得胜利。\p"
+    .string "为了嘉奖你的胜利，\n"
+    .string "给予你这枚金黄徽章。$"
 
 SaffronCity_Gym_Text_SabrinaPostBattle::
-	.string "Psychic power isn't something that\n"
-	.string "only a few people have.\p"
-	.string "Everyone has psychic power.\n"
-	.string "People just don't realize it.$"
+    .string "超能力并不只是\n"
+    .string "少数人的特异功能。\p"
+    .string "每个人都拥有超能力。\n"
+    .string "只是人们没有意识到这一点罢了。$"
 
 SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis::
-	.string "The MARSHBADGE makes POKéMON up\n"
-	.string "to Lv. 70 obey you.\p"
-	.string "Stronger POKéMON will become wild,\n"
-	.string "ignoring your orders in battle.\p"
-	.string "Just don't raise your POKéMON too\n"
-	.string "much to avoid that problem.\p"
-	.string "Wait, please take this TM with you.$"
+    .string "金黄徽章能让\n"
+    .string "70级以下的宝可梦听从你的命令。\p"
+    .string "强大的宝可梦会更具有野性，\n"
+    .string "会在战斗中无视你的命令。\p"
+    .string "为了避免这个问题，就不要把\n"
+    .string "你的宝可梦训练得过于强大。\p"
+    .string "等等，这个TM是给你的。$"
 
 SaffronCity_Gym_Text_ReceivedTM04FromSabrina::
-	.string "{PLAYER} received TM04 from\n"
-	.string "SABRINA.$"
+    .string "{PLAYER}从娜姿那里\n"
+    .string "得到了TM04。$"
 
 SaffronCity_Gym_Text_ExplainTM04::
-	.string "TM04 is CALM MIND.\p"
-	.string "It makes the POKéMON concentrate\n"
-	.string "to raise both SP. ATK and SP. DEF.$"
+    .string "TM04是冥想。\p"
+    .string "它能让宝可梦集中起精力\n"
+    .string "把它们的特攻和特防一起提升。$"
 
 SaffronCity_Gym_Text_BagFullOfOtherItems::
-	.string "Your BAG is full of other items.$"
+    .string "你的背包装满了其它道具。$"
 
 SaffronCity_Gym_Text_AmandaIntro::
-	.string "SABRINA is far younger than I,\n"
-	.string "but she has earned my respect.$"
+    .string "娜姿比我更年轻。\n"
+    .string "但是我依然尊敬她。$"
 
 SaffronCity_Gym_Text_AmandaDefeat::
-	.string "Not good enough!$"
+    .string "做得还不够好！$"
 
 SaffronCity_Gym_Text_AmandaPostBattle::
-	.string "In a battle of equals, the one\n"
-	.string "with the stronger will wins.\p"
-	.string "If you wish to beat SABRINA, focus\n"
-	.string "and will yourself to victory.$"
+    .string "在普通的战斗中，\n"
+    .string "更强的那只将会成为赢家。\p"
+    .string "如果你想打败娜姿，\n"
+    .string "就集中精神祈祷你能够胜利吧。$"
 
 SaffronCity_Gym_Text_JohanIntro::
-	.string "Does our unseen power scare you?$"
+    .string "我们隐藏的力量吓到你了吗？$"
 
 SaffronCity_Gym_Text_JohanDefeat::
-	.string "I never foresaw this!$"
+    .string "我根本没料到这种事！$"
 
 SaffronCity_Gym_Text_JohanPostBattle::
-	.string "PSYCHIC POKéMON fear only ghosts\n"
-	.string "and bugs!$"
+    .string "超能力属性宝可梦只害怕\n"
+    .string "幽灵和虫子们！$"
 
 SaffronCity_Gym_Text_StacyIntro::
-	.string "POKéMON take on the appearance of\n"
-	.string "their TRAINERS.\p"
-	.string "Your POKéMON must be tough, then!$"
+    .string "从宝可梦身上看得出它们训练家\n"
+    .string "的样子。\p"
+    .string "你的宝可梦一定是强大的那种！$"
 
 SaffronCity_Gym_Text_StacyDefeat::
-	.string "I knew it!$"
+    .string "我知道！$"
 
 SaffronCity_Gym_Text_StacyPostBattle::
-	.string "I have much to learn still…\p"
-	.string "I must master PSYCHIC and teach it\n"
-	.string "to my POKéMON…$"
+    .string "我还有得学呢……\p"
+    .string "我必须掌握好超能力，然后教给\n"
+    .string "我的宝可梦……$"
 
 SaffronCity_Gym_Text_TyronIntro::
-	.string "You understand, don't you?\p"
-	.string "That power alone isn't enough to\n"
-	.string "win in the world of POKéMON?$"
+    .string "你明白了吗？\p"
+    .string "只靠蛮力并不足以在\n"
+    .string "宝可梦的世界中获胜？$"
 
 SaffronCity_Gym_Text_TyronDefeat::
-	.string "I don't believe this!$"
+    .string "我不相信！$"
 
 SaffronCity_Gym_Text_TyronPostBattle::
-	.string "SABRINA just wiped out the KARATE\n"
-	.string "MASTER next door.$"
+    .string "娜姿轻松地打败了\n"
+    .string "隔壁的空手大王。$"
 
 SaffronCity_Gym_Text_TashaIntro::
-	.string "You and I, our POKéMON shall\n"
-	.string "battle!$"
+    .string "你和我，我们的宝可梦必须\n"
+    .string "战上一场！$"
 
 SaffronCity_Gym_Text_TashaDefeat::
-	.string "I lost after all!$"
+    .string "最终还是我败了！$"
 
 SaffronCity_Gym_Text_TashaPostBattle::
-	.string "I knew that this was going to take\n"
-	.string "place.$"
+    .string "我早就知道会\n"
+    .string "结果会是这样。$"
 
 SaffronCity_Gym_Text_CameronIntro::
-	.string "SABRINA is young, but she's also\n"
-	.string "our highly skilled LEADER.\p"
-	.string "You won't reach her easily!$"
+    .string "虽然娜姿很年轻，但她也是\n"
+    .string "我们本领高强的领袖。\p"
+    .string "你要超越她很难！$"
 
 SaffronCity_Gym_Text_CameronDefeat::
-	.string "Ow!\n"
-	.string "Down and out!$"
+    .string "噢！\n"
+    .string "出局了！$"
 
 SaffronCity_Gym_Text_CameronPostBattle::
-	.string "There used to be two POKéMON GYMS\n"
-	.string "in SAFFRON.\p"
-	.string "The FIGHTING DOJO next door lost\n"
-	.string "its GYM status, though.\p"
-	.string "We simply creamed them when we\n"
-	.string "decided to have just one GYM.$"
+    .string "在金黄曾经有两个\n"
+    .string "宝可梦道馆。\p"
+    .string "不过隔壁的格斗道场\n"
+    .string "不再是道馆了。\p"
+    .string "当我们决定只保留一个道馆时，\n"
+    .string "我们就把它们简单地合并了。$"
 
 SaffronCity_Gym_Text_PrestonIntro::
-	.string "SAFFRON POKéMON GYM is famous for\n"
-	.string "training psychics.\p"
-	.string "You want to see SABRINA, don't\n"
-	.string "you? I can tell!$"
+    .string "金黄宝可梦道馆以\n"
+    .string "超能力训练而闻名。\p"
+    .string "你想见娜姿，对吗？\n"
+    .string "我已经预感到了！$"
 
 SaffronCity_Gym_Text_PrestonDefeat::
-	.string "Arrrgh!$"
+    .string "哇啊！$"
 
 SaffronCity_Gym_Text_PrestonPostBattle::
-	.string "That's right! I used telepathy to\n"
-	.string "read your mind!$"
+    .string "我用读心术了解了你的想法！\n"
+    .string "没错！$"
 
 SaffronCity_Gym_Text_GymGuyAdvice::
-	.string "Yo!\n"
-	.string "Champ in the making!\p"
-	.string "SABRINA's POKéMON use psychic\n"
-	.string "power instead of force.\p"
-	.string "FIGHTING POKéMON are especially\n"
-	.string "weak against PSYCHIC POKéMON.\p"
-	.string "They'll get destroyed before they\n"
-	.string "can even aim a punch!$"
+    .string "唷！\n"
+    .string "未来的冠军！\p"
+    .string "娜姿的宝可梦用超能力\n"
+    .string "来对抗暴力。\p"
+    .string "超能力属性宝可梦对\n"
+    .string "格斗属性宝可梦效果拔群。\p"
+    .string "甚至在它们还没打出一拳之前，\n"
+    .string "就被撂翻在地了。$"
 
 SaffronCity_Gym_Text_GymGuyPostVictory::
-	.string "Psychic power, huh?\p"
-	.string "If I had that, I'd make a bundle\n"
-	.string "at the slots!$"
+    .string "超能力的力量，哈？\p"
+    .string "如果我也有，我就能把力量\n"
+    .string "萃集在一起。$"
 
 SaffronCity_Gym_Text_GymStatue::
-	.string "SAFFRON POKéMON GYM\n"
-	.string "LEADER: SABRINA\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}$"
+    .string "金黄宝可梦道馆\n"
+    .string "馆主：娜姿\p"
+    .string "优胜训练家：\n"
+    .string "{RIVAL}$"
 
 SaffronCity_Gym_Text_GymStatuePlayerWon::
-	.string "SAFFRON POKéMON GYM\n"
-	.string "LEADER: SABRINA\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}, {PLAYER}$"
+    .string "金黄宝可梦道馆\n"
+    .string "馆主：娜姿\p"
+    .string "优胜训练家：\n"
+    .string "{RIVAL}，{PLAYER}$"
 
