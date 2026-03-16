@@ -706,6 +706,9 @@ struct BattleStruct
     u8 magicCoatActive:1;
     u8 magicBounceActive:1;
     u8 moveBouncer;
+    u8 dancerSavedAttacker:3;
+    u8 dancerSavedTarget:3;
+    u8 padding:2;
 };
 
 struct AiBattleData
