@@ -35,36 +35,36 @@ SilphCo_3F_EventScript_Grunt::
 	end
 
 SilphCo_3F_Text_WhatAmIToDo::
-	.string "I work for SILPH CO.\n"
-	.string "What am I to do?$"
+    .string "我是西尔佛公司的员工。\n"
+    .string "我该做什么好呢？$"
 
 SilphCo_3F_Text_YouAndYourMonsSavedUs::
-	.string "{PLAYER}!\n"
-	.string "You and your POKéMON saved us!$"
+    .string "{PLAYER}！\n"
+    .string "你和你的宝可梦救了我们！$"
 
 SilphCo_3F_Text_GruntIntro::
-	.string "Quit messing with us, kid!$"
+    .string "不要给我们添乱了，小孩！$"
 
 SilphCo_3F_Text_GruntDefeat::
-	.string "I give up!$"
+    .string "我放弃！$"
 
 SilphCo_3F_Text_GruntPostBattle::
-	.string "A hint? You can open doors with\n"
-	.string "a CARD KEY!$"
+    .string "一个提示？你可以用一个卡片钥匙\n"
+    .string "来打开门！$"
 
 SilphCo_3F_Text_JoseIntro::
-	.string "I support TEAM ROCKET more than\n"
-	.string "I support SILPH CO.!$"
+    .string "比起火箭队我\n"
+    .string "更支持西尔佛公司！$"
 
 SilphCo_3F_Text_JoseDefeat::
-	.string "You really got me!$"
+    .string "你真的打败我了！$"
 
 SilphCo_3F_Text_JosePostBattle::
-	.string "Humph…\p"
-	.string "TEAM ROCKET said that if I helped\n"
-	.string "them, they'd let me study POKéMON.$"
+    .string "哼……\p"
+    .string "火箭队说，如果我帮助\n"
+    .string "他们，他们就会让我研究宝可梦。$"
 
 SilphCo_3F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "3F$"
+    .string "西尔佛公司总部\n"
+    .string "3层$"
 

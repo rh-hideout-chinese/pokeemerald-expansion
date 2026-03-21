@@ -6,95 +6,93 @@ SevenIsland_SevaultCanyon_Entrance_EventScript_RouteSign::
 	end
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahIntro::
-	.string "Kyahaha!\n"
-	.string "I'll flick you away effortlessly!$"
+    .string "哈哈！\n"
+    .string "我可以毫不费力地把你轰走！$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahDefeat::
-	.string "Tch!\n"
-	.string "Too strong for me!$"
+    .string "哎哟！\n"
+    .string "对我来说太强大了！$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MiahPostBattle::
-	.string "What's that?\n"
-	.string "I don't act the way I look?\p"
-	.string "Heh, that's a part of my strategy!$"
+    .string "那是什么？\n"
+    .string "我没有展现出我应有的实力吗？\p"
+    .string "嘿，那是我的战术！$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonIntro::
-	.string "Howdy!\n"
-	.string "Are you a member of my fan club?$"
+    .string "嗨！\n"
+    .string "你是我的后援会的成员吗？$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonDefeat::
-	.string "Oh, so you're not a fan…\p"
-	.string "Well, I can change that.\n"
-	.string "Let me sing for you!$"
+    .string "噢，这么说你不是我的粉丝……\p"
+    .string "好吧，我可以改变你。\n"
+    .string "让我给你唱首歌吧！$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MasonPostBattle::
-	.string "Lalalah…\n"
-	.string "My POKéMON, I send them out,\l"
-	.string "all the girls scream and shout!$"
+    .string "啦啦……\n"
+    .string "我的宝可梦，我把它们送出去了，\l"
+    .string "所有的女孩都在尖叫、呐喊。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasIntro::
-	.string "This island is too spread out…\n"
-	.string "It's not easy patrolling the place.$"
+    .string "这座岛太宽广了……\n"
+    .string "这个地方不容易巡查啊。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasDefeat::
-	.string "Uh-huh…$"
+    .string "啊哈……$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_NicolasPostBattle::
-	.string "TRAINERS like you from cities,\n"
-	.string "they sure are tough.\p"
-	.string "You'll be headed for the TOWER,\n"
-	.string "won't you?$"
+    .string "他们是像你这样来自\n"
+    .string "城市的训练家，当然很强。\p"
+    .string "你要前往塔，\n"
+    .string "是吗？$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelineIntro::
-	.string "I punish people who abuse\n"
-	.string "POKéMON!$"
+    .string "虐待宝可梦的人，\n"
+    .string "我要好好地惩罚他们。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelineDefeat::
-	.string "You don't seem to be a problem\n"
-	.string "TRAINER.$"
+    .string "你看起来不像是一个问题训练家。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_MadelinePostBattle::
-	.string "If you treat your POKéMON with\n"
-	.string "kindness, they'll understand.$"
+    .string "如果你友好地对待你的宝可梦，\n"
+    .string "他们能体会到的。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveIntro::
-	.string "EVE: I'll team up with JON and\n"
-	.string "battle together.$"
+    .string "阿夕：我要和阿高合作，\n"
+    .string "一起战斗。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveDefeat::
-	.string "EVE: Me and JON, we lost.\n"
-	.string "Ehehe.$"
+    .string "阿夕：我和阿高，我们输了。\n"
+    .string "呵呵。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EvePostBattle::
-	.string "EVE: I'm going to work harder with\n"
-	.string "JON.$"
+    .string "阿夕：我要和阿高一起更加努力。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveNotEnoughMons::
-	.string "EVE: I want to team up with JON\n"
-	.string "when I battle you.\p"
-	.string "Come back with two POKéMON, okay?$"
+    .string "阿夕：我想和阿高一起\n"
+    .string "跟你战斗。\p"
+    .string "带着两只宝可梦来，好吗？$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonIntro::
-	.string "JON: When I'm with EVE, it feels\n"
-	.string "like we could never lose.$"
+    .string "阿高：当我和阿夕一起时，\n"
+    .string "我觉得我们永远不会输。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonDefeat::
-	.string "JON: When I'm with EVE,\n"
-	.string "it doesn't feel like I've lost!$"
+    .string "阿高：当我和阿夕一起时，\n"
+    .string "我没想过我会输的啊！$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonPostBattle::
-	.string "JON: When I'm with EVE, I feel\n"
-	.string "giddy whether I win or lose.\p"
-	.string "It's magical!$"
+    .string "阿高：当我和阿夕一起时，我对\n"
+    .string "我是否会赢感到很疑惑。\p"
+    .string "真是不可思议！$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonNotEnoughMons::
-	.string "JON: If it's with EVE, I'll be\n"
-	.string "happy to battle with you.\p"
-	.string "So, I'd like to make it a\n"
-	.string "two-on-two battle, if I may.$"
+    .string "阿高：如果是和阿夕一起，\n"
+    .string "我会很高兴和你战斗。\p"
+    .string "所以说如果可以的话，\n"
+    .string "我想来一场2对2的战斗。$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_RouteSign::
-	.string "SEVAULT CANYON ENTRANCE\p"
-	.string "TRAINERS are asked to refrain from\n"
-	.string "damaging plants in the CANYON.$"
+    .string "七宝溪谷入口\p"
+    .string "训练家禁止\n"
+    .string "毁坏溪谷的植物。$"
 

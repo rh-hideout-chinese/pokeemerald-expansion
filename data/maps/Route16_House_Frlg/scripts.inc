@@ -35,23 +35,23 @@ Route16_House_EventScript_Fearow::
 	end
 
 Route16_House_Text_FoundMySecretRetreat::
-	.string "Oh, dear.\n"
-	.string "You've found my secret retreat.\p"
-	.string "Please don't tell anyone I'm here.\n"
-	.string "I'll make it up to you with this!$"
+    .string "哦，天哪。\n"
+    .string "你发现了我的秘密藏身处！\p"
+    .string "请不要告诉任何人我在这里！\n"
+    .string "如果你答应的话这个就给你！$"
 
 Route16_House_Text_ReceivedHM02FromGirl::
-	.string "{PLAYER} received HM02\n"
-	.string "from the girl.$"
+    .string "{PLAYER}从女孩那儿\n"
+    .string "获得了HM02。$"
 
 Route16_House_Text_ExplainHM02::
-	.string "HM02 is FLY.\n"
-	.string "It's a wonderfully convenient move.\p"
-	.string "Please, put it to good use.$"
+    .string "HM02是技能飞翔。\n"
+    .string "这是一个极为的方便技能。\p"
+    .string "请好好利用它吧。$"
 
 Route16_House_Text_DontHaveAnyRoomForThis::
-	.string "You don't have any room for this.$"
+    .string "你身上没有足够的空间存放它了。$"
 
 Route16_House_Text_Fearow::
-	.string "FEAROW: Kyueen!$"
+    .string "大嘴雀：法露$"
 

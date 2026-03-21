@@ -15,18 +15,18 @@ Route11_EastEntrance_1F_Text_BagIsFull::
 	.string "いっぱい　みたい　だね$"
 
 Route11_EastEntrance_1F_Text_ManInLavenderRatesNames::
-	.string "Don't you think it's hard to think\n"
-	.string "up good names for POKéMON?\p"
-	.string "Especially if you've caught a\n"
-	.string "whole bunch?\p"
-	.string "In LAVENDER TOWN, there's a man\n"
-	.string "who rates POKéMON nicknames.\p"
-	.string "He can even help you rename your\n"
-	.string "POKéMON, too.$"
+    .string "难道你不认为\n"
+    .string "给宝可梦取一个好名字很难吗？\p"
+    .string "尤其是当你\n"
+    .string "已经有了一个队伍的时候。\p"
+    .string "在紫苑镇 有一个\n"
+    .string "给宝可梦取名字的男人。\p"
+    .string "他甚至也可以帮你\n"
+    .string "给宝可梦重新起名。$"
 
 Route11_EastEntrance_1F_Text_RockTunnelToReachLavender::
-	.string "If you're aiming to reach LAVENDER\n"
-	.string "TOWN, take ROCK TUNNEL.\p"
-	.string "You can get to ROCK TUNNEL from\n"
-	.string "CERULEAN CITY.$"
+    .string "如果你想去紫苑\n"
+    .string "镇 就穿过岩山隧道吧。\p"
+    .string "你可以从华蓝市到达\n"
+    .string "岩山隧道。$"
 

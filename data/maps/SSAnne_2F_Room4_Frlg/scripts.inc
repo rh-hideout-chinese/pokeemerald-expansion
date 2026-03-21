@@ -12,24 +12,24 @@ SSAnne_2F_Room4_EventScript_Dawn::
 	end
 
 SSAnne_2F_Room4_Text_LamarIntro::
-	.string "Which do you find more worthy,\n"
-	.string "a strong or a rare POKéMON?$"
+    .string "你认为哪个更有价值，\n"
+    .string "强大的还是罕见的宝可梦？$"
 
 SSAnne_2F_Room4_Text_LamarDefeat::
-	.string "I must salute you!$"
+    .string "我必须问问你！$"
 
 SSAnne_2F_Room4_Text_LamarPostBattle::
-	.string "Personally, I prefer strong and\n"
-	.string "rare POKéMON.$"
+    .string "就我个人而言，我更喜欢\n"
+    .string "强大和罕见的宝可梦。$"
 
 SSAnne_2F_Room4_Text_DawnIntro::
-	.string "I don't believe I saw you at the\n"
-	.string "party?$"
+    .string "我该不会曾在聚会上\n"
+    .string "遇到过你吧？$"
 
 SSAnne_2F_Room4_Text_DawnDefeat::
-	.string "Take it easy!$"
+    .string "别着急！$"
 
 SSAnne_2F_Room4_Text_DawnPostBattle::
-	.string "Oh, I adore your strong POKéMON!\n"
-	.string "Oh, how I envy you for them!$"
+    .string "哦，我非常喜欢你强大的宝可梦！\n"
+    .string "哦，我为他们而嫉妒你！$"
 

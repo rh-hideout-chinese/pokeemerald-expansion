@@ -173,139 +173,132 @@ FiveIsland_RocketWarehouse_Movement_AdminWalkToSwitch::
 	step_end
 
 FiveIsland_RocketWarehouse_Text_ManyMonsLockedInPen::
-	.string "There are many POKéMON locked\n"
-	.string "away in the pen…$"
+    .string "有很多宝可梦被锁在围栏里……$"
 
 FiveIsland_RocketWarehouse_Text_PenUnlockedMonsFled::
-	.string "The pen door is unlocked.\n"
-	.string "The POKéMON appear to have fled.$"
+    .string "因为围栏的大门没上锁。\n"
+    .string "宝可梦逃跑了。$"
 
 FiveIsland_RocketWarehouse_Text_Grunt2Intro::
-	.string "Did you come here knowing it's\n"
-	.string "TEAM ROCKET's WAREHOUSE?$"
+    .string "你敢来这里是因为知道\n"
+    .string "这里是火箭队的仓库吗？$"
 
 FiveIsland_RocketWarehouse_Text_Grunt2Defeat::
-	.string "What do you think you're doing?!$"
+    .string "你清楚自己在做什么吗？！$"
 
 FiveIsland_RocketWarehouse_Text_Grunt2PostBattle::
-	.string "TEAM ROCKET broke up?\n"
-	.string "What planet are you from?$"
+    .string "你说火箭队解散了？\n"
+    .string "你来自哪个星球？$"
 
 FiveIsland_RocketWarehouse_Text_Grunt1Intro::
-	.string "Oh, now your POKéMON look strong.\n"
-	.string "You're willing to sell them?\p"
-	.string "Oh?\n"
-	.string "You wanted to battle?$"
+    .string "哦，你的宝可梦现在看起来很强。\n"
+    .string "愿意卖掉它们吗？\p"
+    .string "哦？\n"
+    .string "想要打一场？$"
 
 FiveIsland_RocketWarehouse_Text_Grunt1Defeat::
-	.string "Oh, but…\n"
-	.string "Too much!$"
+    .string "哦，但是……\n"
+    .string "太多了！$"
 
 FiveIsland_RocketWarehouse_Text_Grunt1PostBattle::
-	.string "We can give you a great price.\n"
-	.string "Sell us your POKéMON!$"
+    .string "我们会给你开一个好价钱。\n"
+    .string "把宝可梦卖给我们吧！$"
 
 FiveIsland_RocketWarehouse_Text_Grunt3Intro::
-	.string "I got word about you from the\n"
-	.string "others.\p"
-	.string "But there's no way a kid like you'd\n"
-	.string "know our BOSS GIOVANNI!$"
+    .string "我从别人那听说过关于你的事情。\p"
+    .string "但是像你这样的孩子不可能\n"
+    .string "了解我们的坂木老大！$"
 
 FiveIsland_RocketWarehouse_Text_Grunt3Defeat::
-	.string "Don't…you…dare…laugh…$"
+    .string "你…不…准…笑…$"
 
 FiveIsland_RocketWarehouse_Text_Grunt3PostBattle::
-	.string "Don't mess in the doings of adults,\n"
-	.string "you jumped-up pip-squeak!$"
+    .string "不要掺和到大人的事情中来，\n"
+    .string "你这只上窜下跳的小老鼠！$"
 
 FiveIsland_RocketWarehouse_Text_Admin1Intro::
-	.string "I don't know or care if what I'm\n"
-	.string "doing is right or wrong…\p"
-	.string "I just put my faith in GIOVANNI\n"
-	.string "and do as I am told.$"
+    .string "我不知道我做的是对还是错……\p"
+    .string "我只是信任坂木\n"
+    .string "并且按照命令行事。$"
 
 FiveIsland_RocketWarehouse_Text_Admin1Defeat::
-	.string "I…\n"
-	.string "I'm shattered…$"
+    .string "我……\n"
+    .string "我被击垮了……$"
 
 FiveIsland_RocketWarehouse_Text_Admin1PostBattle::
-	.string "You're doing things according to\n"
-	.string "your beliefs and morals.\p"
-	.string "I understand now…$"
+    .string "你在按照你的信仰和道德行事。\p"
+    .string "我现在明白了……$"
 
 FiveIsland_RocketWarehouse_Text_MadeItSoYouCanComeBackThrough::
-	.string "I've made it so you can come back\n"
-	.string "in through there.\p"
-	.string "Why don't you go get rested and\n"
-	.string "refreshed for what lies ahead?\p"
-	.string "The ADMIN after me outranks me\n"
-	.string "thoroughly as a TRAINER.\p"
-	.string "You'd better steel yourself for one\n"
-	.string "harsh challenge.$"
+    .string "我做到了，因此你能从那回来。\p"
+    .string "你休息恢复下之后\n"
+    .string "准备继续前进吧。\p"
+    .string "干部们成为训练家要比我晚，\n"
+    .string "但现在却完全超越了我。\p"
+    .string "你最好好好锻炼自己\n"
+    .string "来迎接严厉的挑战。$"
 
 FiveIsland_RocketWarehouse_Text_Admin2Intro::
-	.string "That's quite enough of you \n"
-	.string "playing the hero, kid.\p"
-	.string "Spreading lies about how TEAM\n"
-	.string "ROCKET has disbanded…\p"
-	.string "It's such an obvious attempt to\n"
-	.string "cause confusion in our ranks.\p"
-	.string "Fortunately, we're not so ignorant\n"
-	.string "to fall for the lies of a child!\p"
-	.string "And now, I'll show you how scary\n"
-	.string "an angry adult can be!$"
+    .string "小朋友，\n"
+    .string "扮英雄的游戏结束了。\p"
+    .string "散播关于火箭队\n"
+    .string "如何解散的谎言……\p"
+    .string "这是一个明显的想要\n"
+    .string "扰乱我们的队伍的计划。\p"
+    .string "幸好，我们不会无知到因为\n"
+    .string "一个孩子的谎言而就此沦落！\p"
+    .string "而现在，我会让你见识一下\n"
+    .string "生气的大人有多可怕！$"
 
 FiveIsland_RocketWarehouse_Text_Admin2Defeat::
-	.string "Urgh…\n"
-	.string "You were too strong…\p"
-	.string "…\n"
-	.string "Th-that's GIOVANNI's BADGE!\p"
-	.string "So it's true?\n"
-	.string "TEAM ROCKET really has disbanded?$"
+    .string "呃……\n"
+    .string "你太强了……\p"
+    .string "……\n"
+    .string "那-那是坂木的徽章！\p"
+    .string "传言是真的吗？\n"
+    .string "火箭队真的解散了？$"
 
 FiveIsland_RocketWarehouse_Text_Admin2PostBattle::
-	.string "We will abandon this WAREHOUSE…\p"
-	.string "But don't think this is over.\n"
-	.string "I won't let this be the end.\p"
-	.string "I will find GIOVANNI.\n"
-	.string "And I will resurrect TEAM ROCKET!\l"
-	.string "I will…\p"
-	.string "Until then, farewell!$"
+    .string "我们将放弃这个仓库……\p"
+    .string "但不要认为已经结束了。\n"
+    .string "我不会善罢甘休的。\p"
+    .string "我会找到坂木。\n"
+    .string "并且复活火箭队！\l"
+    .string "我要…\p"
+    .string "就这样，再会！$"
 
 FiveIsland_RocketWarehouse_Text_ReportWithGraphsAndText::
-	.string "A report with graphs and text is on\n"
-	.string "the PC monitor.\p"
-	.string "“The Influence of Magnetic Waves\n"
-	.string "on POKéMON Evolution”…\p"
-	.string "… … … … … …\p"
-	.string "It's too difficult to understand…$"
+    .string "电脑屏幕上有\n"
+    .string "图表和文字的报告。\p"
+    .string "“电波对宝可梦进化的影响”\p"
+    .string "…… …… ……\p"
+    .string "这太难懂了……$"
 
 FiveIsland_RocketWarehouse_Text_GideonIntro::
-	.string "I almost managed to sell the\n"
-	.string "SAPPHIRE for huge money…\p"
-	.string "Then, you just had to come along\n"
-	.string "and blow the whole deal apart!\p"
-	.string "Fufu… Fufufufu…\n"
-	.string "There's no forgiveness for you!$"
+    .string "我差一点就能把蓝宝石卖了\n"
+    .string "赚到大笔大笔的钱……\p"
+    .string "你却过来毁了整个交易！\p"
+    .string "呋呋……呋呋呋呋……\n"
+    .string "绝不能饶恕你！$"
 
 FiveIsland_RocketWarehouse_Text_GideonDefeat::
-	.string "Gah! Darn!\n"
-	.string "Darn! Darn!$"
+    .string "噶！该死！\n"
+    .string "混蛋！真气人！$"
 
 FiveIsland_RocketWarehouse_Text_GideonPostBattle::
-	.string "If I can't sell it, it's worthless!\n"
-	.string "Go ahead, take it!$"
+    .string "如果我卖不了它，它就没价值了！\n"
+    .string "来吧，拿着它吧！$"
 
 FiveIsland_RocketWarehouse_Text_GetLostLeaveMeBe::
-	.string "What do you want now?\n"
-	.string "Go on, get lost, leave me be.$"
+    .string "你现在想要什么？\n"
+    .string "走开，滚远点，让我一个人呆着。$"
 
 FiveIsland_RocketWarehouse_Text_GiovannisKidHasRedHair::
-	.string "What, you again?\p"
-	.string "You… You're not GIOVANNI's kid,\n"
-	.string "are you?\p"
-	.string "No, that can't be right!\n"
-	.string "GIOVANNI's kid has red hair.\p"
-	.string "You don't have any reasons for\n"
-	.string "bugging me. Leave me alone!$"
+    .string "什么，又是你？\p"
+    .string "你……你莫非是坂木的孩子？\n"
+    .string "我没认错吧？\p"
+    .string "不，我认错了。\n"
+    .string "坂木的孩子是红头发。\p"
+    .string "那你别来烦我了。\n"
+    .string "让我单独呆一会儿！$"
 

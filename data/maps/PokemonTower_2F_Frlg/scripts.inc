@@ -101,32 +101,32 @@ PokemonTower_2F_Movement_RivalExitDown::
 	step_end
 
 PokemonTower_2F_Text_RivalIntro::
-	.string "{RIVAL}: Hey, {PLAYER}!\n"
-	.string "What brings you here?\l"
-	.string "Is your POKéMON dead?\p"
-	.string "Hey! It's alive!\p"
-	.string "I can at least make them faint!\n"
-	.string "Let's go!$"
+    .string "{RIVAL}：嘿，{PLAYER}！\n"
+    .string "什么风把你吹来的？\l"
+    .string "你的宝可梦死了吗？\p"
+    .string "嘿！还活着嘛！\p"
+    .string "我至少还可以把它们打到晕！\n"
+    .string "开战吧！$"
 
 PokemonTower_2F_Text_RivalDefeat::
-	.string "What?\n"
-	.string "You stinker!\p"
-	.string "I took it easy on you, too!$"
+    .string "什么？\n"
+    .string "你这个讨厌鬼！\p"
+    .string "我刚才对你手下留情了！$"
 
 PokemonTower_2F_Text_RivalPostBattle::
-	.string "How's your POKéDEX coming?\n"
-	.string "I just caught a CUBONE!\p"
-	.string "I can't find the bigger MAROWAK.\n"
-	.string "Where could they be?\p"
-	.string "I bet there aren't any left!\p"
-	.string "Well, I better get going.\n"
-	.string "I've got a lot to accomplish,\l"
-	.string "unlike you.\p"
-	.string "Smell ya later!$"
+    .string "你的宝可梦图鉴收集得怎么样了？\n"
+    .string "我刚抓住了一只卡拉卡拉！\p"
+    .string "我找不到进化后的嘎啦嘎啦。\n"
+    .string "它们在哪儿呢？\p"
+    .string "这里肯定是没有了！\p"
+    .string "嗯，我得走了。\n"
+    .string "我可不像你，\l"
+    .string "我还有很多事情要做。\p"
+    .string "再见$"
 
 PokemonTower_2F_Text_SilphScopeCouldUnmaskGhosts::
-	.string "Even we could not identify the\n"
-	.string "wayward ghosts.\p"
-	.string "A SILPH SCOPE might be able to\n"
-	.string "unmask them.$"
+    .string "我们无法确认\n"
+    .string "幽灵的真面目！\p"
+    .string "用西尔佛观测镜的话\n"
+    .string "也许就能看清了！$"
 

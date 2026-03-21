@@ -56,56 +56,55 @@ FiveIsland_Meadow_Text_DoorNeedsTwoPasswords::
 	.string "パスワードが　2つ　いるようだ$"
 
 FiveIsland_Meadow_Text_EnteredPasswordAnotherNeeded::
-	.string "{PLAYER} entered a password.\p"
-	.string "“GOLDEEN need log.”\p"
-	.string "… …  … …  … …\p"
-	.string "Another password is needed to\n"
-	.string "open the door…$"
+    .string "{PLAYER}输入了一段密码。\p"
+    .string "“多多少少 少少多多”\p"
+    .string "…………………………\p"
+    .string "开门还需要\n"
+    .string "另一段密码……$"
 
 FiveIsland_Meadow_Text_EnteredPasswordDoorOpened::
-	.string "{PLAYER} entered two passwords.\p"
-	.string "“GOLDEEN need log.”\n"
-	.string "“Yes, nah, CHANSEY.”\p"
-	.string "… …  … …  … …\p"
-	.string "The WAREHOUSE's door opened!$"
+    .string "{PLAYER}输入了两段密码。\p"
+    .string "“多多少少 少少多多”\n"
+    .string "“大大小小 小小大大”\p"
+    .string "…… …… ……\p"
+    .string "仓库的门打开了！$"
 
 FiveIsland_Meadow_Text_WarehouseDoorAlreadyOpen::
-	.string "The WAREHOUSE's door is already\n"
-	.string "open.$"
+    .string "仓库的门已经打开了。$"
 
 FiveIsland_Meadow_Text_Rocket1Intro::
-	.string "This area's strictly off-limits!\n"
-	.string "Out, out!$"
+    .string "这个地方禁止入内！\n"
+    .string "出去，出去！$"
 
 FiveIsland_Meadow_Text_Rocket1Defeat::
-	.string "Is this for real?$"
+    .string "这是真的吗？$"
 
 FiveIsland_Meadow_Text_Rocket1PostBattle::
-	.string "You don't have any business here!\n"
-	.string "Go home!$"
+    .string "这儿什么都没有！\n"
+    .string "回家吧！$"
 
 FiveIsland_Meadow_Text_Rocket2Intro::
-	.string "There's nothing past here except\n"
-	.string "our WAREHOUSE.\p"
-	.string "So what brings you here?$"
+    .string "除了我们仓库的人\n"
+    .string "再没有任何人来过这儿。\p"
+    .string "谁把你带来的？$"
 
 FiveIsland_Meadow_Text_Rocket2Defeat::
-	.string "That wasn't supposed to happen…$"
+    .string "不希望发生的事出现了……$"
 
 FiveIsland_Meadow_Text_Rocket2PostBattle::
-	.string "You're wanting to know what's inside\n"
-	.string "this WAREHOUSE?\p"
-	.string "It's better you didn't know.\n"
-	.string "For your own sake, I mean.$"
+    .string "你很想知道这仓库\n"
+    .string "里面是什么？\p"
+    .string "你最好别知道。\n"
+    .string "这是为了你自己好。$"
 
 FiveIsland_Meadow_Text_Rocket3Intro::
-	.string "You'd be wasting time even if you\n"
-	.string "were to get by me.$"
+    .string "就算你能通过我这一关，\n"
+    .string "你还是在浪费你的时间。$"
 
 FiveIsland_Meadow_Text_Rocket3Defeat::
-	.string "Oh, that makes me furious!$"
+    .string "噢，我愤怒了！$"
 
 FiveIsland_Meadow_Text_Rocket3PostBattle::
-	.string "You won't be able to get in without\n"
-	.string "the passwords anyway.$"
+    .string "不管怎样，\n"
+    .string "没有密码你就不能进去。$"
 

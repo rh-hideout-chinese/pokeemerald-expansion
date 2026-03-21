@@ -7,87 +7,85 @@ SixIsland_OutcastIsland_EventScript_Rocket::
 	end
 
 SixIsland_OutcastIsland_Text_RocketIntro::
-	.string "There're no rare POKéMON around\n"
-	.string "these parts! Not a one!\p"
-	.string "That burns me up, man.\n"
-	.string "I'll take it out on you!$"
+    .string "这个地区没有什么珍贵的宝可梦！\n"
+    .string "一直也没有！\p"
+    .string "我受够了。\n"
+    .string "我要把它从你身边带走！$"
 
 SixIsland_OutcastIsland_Text_RocketDefeat::
-	.string "…Huh?$"
+    .string "……嗯？$"
 
 SixIsland_OutcastIsland_Text_RocketPostBattle::
-	.string "So listen, you haven't seen any\n"
-	.string "rare POKéMON, have you?$"
+    .string "听着，\n"
+    .string "你没有看见任何珍贵的宝可梦，是吧？$"
 
 SixIsland_OutcastIsland_Text_TylorIntro::
-	.string "I'm having no luck at all.\n"
-	.string "A battle'd be a change of pace!$"
+    .string "我一点也没有好运气。\n"
+    .string "一场战斗没准能改变现状。$"
 
 SixIsland_OutcastIsland_Text_TylorDefeat::
-	.string "Nope, no luck at all…$"
+    .string "不，还是没有好运气……$"
 
 SixIsland_OutcastIsland_Text_TylorPostBattle::
-	.string "I can't very well go home without\n"
-	.string "catching something, though.$"
+    .string "没收服珍贵的宝可梦前，\n"
+    .string "我不甘心就这样回去。$"
 
 SixIsland_OutcastIsland_Text_MymoIntro::
-	.string "Gasp… Gasp…\p"
-	.string "I swam here from SIX ISLE PORT\n"
-	.string "in one go.$"
+    .string "呼……呼……\p"
+    .string "我一口气从六之岛港口\n"
+    .string "游到了这儿。$"
 
 SixIsland_OutcastIsland_Text_MymoDefeat::
-	.string "Gasp…\n"
-	.string "Gasp…$"
+    .string "呼……\n"
+    .string "呼……$"
 
 SixIsland_OutcastIsland_Text_MymoPostBattle::
-	.string "I'm only at the halfway point…\n"
-	.string "I'm beat…$"
+    .string "我只是游了一部分的路程……\n"
+    .string "我被打败了……$"
 
 SixIsland_OutcastIsland_Text_NicoleIntro::
-	.string "It's not so easy sending POKéMON\n"
-	.string "out while swimming, you know?$"
+    .string "在游泳时把宝可梦放出去\n"
+    .string "不是那么简单的，你知道吗？$"
 
 SixIsland_OutcastIsland_Text_NicoleDefeat::
-	.string "I didn't lose to you at swimming.\n"
-	.string "This doesn't bother me.$"
+    .string "我在游泳上没有输给你。\n"
+    .string "所以我并不为这个困扰。$"
 
 SixIsland_OutcastIsland_Text_NicolePostBattle::
-	.string "Are you headed for the island up\n"
-	.string "past here?\p"
-	.string "I didn't see anything interesting\n"
-	.string "there.$"
+    .string "你是为了前往上面的岛屿\n"
+    .string "而路过这儿吗？\p"
+    .string "我在那儿没有见到\n"
+    .string "任何有趣的东西。$"
 
 SixIsland_OutcastIsland_Text_AvaIntro::
-	.string "AVA: Let's have a two-on-two\n"
-	.string "marine battle!$"
+    .string "美香：我们来一场2对2的\n"
+    .string "水中战斗吧！$"
 
 SixIsland_OutcastIsland_Text_AvaDefeat::
-	.string "AVA: Oh, you're amazing!\n"
-	.string "Even better, you're on your own!$"
+    .string "美香：噢，你太令人惊讶了！\n"
+    .string "更厉害的是，你只是一个人！$"
 
 SixIsland_OutcastIsland_Text_AvaPostBattle::
-	.string "AVA: You know, I do prefer the\n"
-	.string "sea over any pool.$"
+    .string "美香：我喜欢大海胜过\n"
+    .string "喜欢任何水池。$"
 
 SixIsland_OutcastIsland_Text_AvaNotEnoughMons::
-	.string "AVA: You're challenging us to\n"
-	.string "a battle?\p"
-	.string "You'll need at least two POKéMON\n"
-	.string "if you want to do that.$"
+    .string "美香：你是在挑战我们吗？\p"
+    .string "如果你想要战斗，\n"
+    .string "你至少需要两只宝可梦。$"
 
 SixIsland_OutcastIsland_Text_GebIntro::
-	.string "GEB: Big Sister, help!\n"
-	.string "Please battle with me!$"
+    .string "阿雅：姐姐，快来帮我！\n"
+    .string "请和我并肩作战！$"
 
 SixIsland_OutcastIsland_Text_GebDefeat::
-	.string "GEB: Wow, Big Sister, this person's\n"
-	.string "really good!$"
+    .string "阿雅：哇，姐姐，这个人\n"
+    .string "可真是厉害！$"
 
 SixIsland_OutcastIsland_Text_GebPostBattle::
-	.string "GEB: I'm hanging onto my sister\n"
-	.string "because I can't touch the bottom.$"
+    .string "阿雅：我骑在我姐姐肩膀上，\n"
+    .string "因为我够不着底部。$"
 
 SixIsland_OutcastIsland_Text_GebNotEnoughMons::
-	.string "GEB: Please battle against me and\n"
-	.string "my sister!\p"
-	.string "…Oh, you don't have two POKéMON?$"
+    .string "阿雅：请跟我和我姐姐战斗吧！\p"
+    .string "……噢，你没有带着两只宝可梦吗？$"

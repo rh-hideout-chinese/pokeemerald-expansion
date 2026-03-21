@@ -121,58 +121,58 @@ RocketHideout_B4F_EventScript_RemoveBarrier::
 	return
 
 RocketHideout_B4F_Text_GiovanniIntro::
-	.string "So! I must say, I am impressed you\n"
-	.string "got here.\p"
-	.string "TEAM ROCKET captures POKéMON from\n"
-	.string "around the world.\p"
-	.string "They're important tools for keeping\n"
-	.string "our criminal enterprise going.\p"
-	.string "I am the leader, GIOVANNI!\p"
-	.string "For your insolence, you will feel a\n"
-	.string "world of pain!$"
+    .string "首先，我想我必须承认，我对你\n"
+    .string "能来到这里很是惊讶。\p"
+    .string "火箭队从世界各地\n"
+    .string "收服宝可梦。\p"
+    .string "它们是让我们的犯罪事业\n"
+    .string "持续下去的重要工具。\p"
+    .string "而我就是他们的老大，坂木！\p"
+    .string "你的嚣张到此为止了，\n"
+    .string "你将会承受到整个世界的痛苦！$"
 
 RocketHideout_B4F_Text_GiovanniDefeat::
-	.string "WHAT!\n"
-	.string "This can't be!$"
+    .string "什么！\n"
+    .string "这不可能！$"
 
 RocketHideout_B4F_Text_GiovanniPostBattle::
-	.string "I see that you raise POKéMON with\n"
-	.string "utmost care.\p"
-	.string "A child like you would never\n"
-	.string "understand what I hope to achieve.\p"
-	.string "I shall step aside this time!\p"
-	.string "I hope we meet again…$"
+    .string "我看到你养育的宝可梦\n"
+    .string "是被你悉心照顾的。\p"
+    .string "像你这样的孩子永远不会\n"
+    .string "理解我所希望达到的目的。\p"
+    .string "这一次我先选择撤退！\p"
+    .string "我希望我们能再次见面……$"
 
 RocketHideout_B4F_Text_Grunt2Intro::
-	.string "I know you!\n"
-	.string "You ruined our plans at MT. MOON!$"
+    .string "我认识你！\n"
+    .string "是你毁了我们在月见山的计划！$"
 
 RocketHideout_B4F_Text_Grunt2Defeat::
-	.string "Burned again!$"
+    .string "又被毁了！$"
 
 RocketHideout_B4F_Text_Grunt2PostBattle::
-	.string "Do you have something against TEAM\n"
-	.string "ROCKET?$"
+    .string "你对火箭队有\n"
+    .string "特殊的感情吗？$"
 
 RocketHideout_B4F_Text_Grunt3Intro::
-	.string "How can you not see the beauty of\n"
-	.string "our evil?$"
+    .string "难道你看不懂\n"
+    .string "我们的邪恶的美学吗？$"
 
 RocketHideout_B4F_Text_Grunt3Defeat::
-	.string "Ayaya!$"
+    .string "啊呀！$"
 
 RocketHideout_B4F_Text_Grunt3PostBattle::
-	.string "BOSS!\n"
-	.string "I'm sorry I failed you!$"
+    .string "老大！\n"
+    .string "对不起我让你失望了！$"
 
 RocketHideout_B4F_Text_Grunt1Intro::
-	.string "The elevator doesn't work?\n"
-	.string "Who has the LIFT KEY?$"
+    .string "电梯不运行？\n"
+    .string "谁有电梯的钥匙呀？$"
 
 RocketHideout_B4F_Text_Grunt1Defeat::
-	.string "No!$"
+    .string "不！$"
 
 RocketHideout_B4F_Text_Grunt1PostBattle::
-	.string "Oh, no!\n"
-	.string "I dropped the LIFT KEY!$"
+    .string "哦，不！\n"
+    .string "我把电梯的钥匙给弄丢了！$"
 

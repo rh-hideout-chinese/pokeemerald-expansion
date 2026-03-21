@@ -133,96 +133,95 @@ SilphCo_11F_EventScript_Grunt2::
 	end
 
 SilphCo_11F_Text_ThanksForSavingMeDearBoy::
-	.string "PRESIDENT: Oh, dear boy!\n"
-	.string "Thank you for saving SILPH.\p"
-	.string "I will never forget you saved us in\n"
-	.string "our moment of peril.\p"
-	.string "I have to thank you in some way.\p"
-	.string "Because I am rich, I can give you\n"
-	.string "anything.\p"
-	.string "Here, maybe this will do.$"
+    .string "总裁：哦，勇敢的少年！\n"
+    .string "谢谢你救了西尔佛。\p"
+    .string "我永远不会忘记，你在我们危险的时候\n"
+    .string "救了我们。\p"
+    .string "我必须想办法来感谢你。\p"
+    .string "我很富有，我可以给你\n"
+    .string "任何东西。\p"
+    .string "来拿着，这个或许有用。$"
 
 SilphCo_11F_Text_ThanksForSavingMeDearGirl::
-	.string "PRESIDENT: Oh, dear girl!\n"
-	.string "Thank you for saving SILPH.\p"
-	.string "I will never forget you saved us in\n"
-	.string "our moment of peril.\p"
-	.string "I have to thank you in some way.\p"
-	.string "Because I am rich, I can give you\n"
-	.string "anything.\p"
-	.string "Here, maybe this will do.$"
+    .string "总裁：哦，亲爱的少女！\n"
+    .string "谢谢你救了西尔佛。\p"
+    .string "我永远不会忘记，你在我们危险的时候\n"
+    .string "救了我们。\p"
+    .string "我要想办法来感谢你。\p"
+    .string "我很富有，我可以给你\n"
+    .string "任何东西。\p"
+    .string "来拿着，这个或许有用。$"
 
 SilphCo_11F_Text_ObtainedMasterBallFromPresident::
-	.string "{PLAYER} obtained a MASTER BALL\n"
-	.string "from the PRESIDENT!$"
+    .string "{PLAYER}从总裁那里\n"
+    .string "得到了一个大师球！$"
 
 SilphCo_11F_Text_ThatsOurSecretPrototype::
-	.string "PRESIDENT: You can't buy that\n"
-	.string "anywhere.\p"
-	.string "It's our secret prototype MASTER\n"
-	.string "BALL.\p"
-	.string "It will catch any POKéMON without\n"
-	.string "fail!\p"
-	.string "You should be quiet about using it,\n"
-	.string "though.$"
+    .string "总裁：你在任何地方\n"
+    .string "都买不到它。\p"
+    .string "这是我们秘密制作的试验品\n"
+    .string "大师球。\p"
+    .string "它将能成功收服任何\n"
+    .string "宝可梦！\p"
+    .string "不过你在使用它时\n"
+    .string "可不要声张。$"
 
 SilphCo_11F_Text_YouHaveNoRoomForThis::
-	.string "You have no room for this.$"
+    .string "你的背包里没有空间了。$"
 
 SilphCo_11F_Text_ThanksForRescuingUs::
-	.string "SECRETARY: Thank you for rescuing\n"
-	.string "all of us.\p"
-	.string "We, from the PRESIDENT down,\n"
-	.string "are indebted to you.$"
+    .string "秘书：谢谢你救了我们所有人\p"
+    .string "我们全公司上下，包括总裁，\n"
+    .string "都欠了你一个天大的人情。$"
 
 SilphCo_11F_Text_GiovanniIntro::
-	.string "Ah, {PLAYER}!\n"
-	.string "So we meet again!\p"
-	.string "The PRESIDENT and I are discussing\n"
-	.string "a vital business proposition.\p"
-	.string "Keep your nose out of grown-up\n"
-	.string "matters…\p"
-	.string "Or, experience a world of pain!$"
+    .string "啊，{PLAYER}！\n"
+    .string "我们又见面了！\p"
+    .string "总裁和我正在讨论\n"
+    .string "一个重要的商业计划。\p"
+    .string "你还是别太关心\n"
+    .string "大人的事为好……\p"
+    .string "知道这些可是相当痛苦的呢！$"
 
 SilphCo_11F_Text_GiovanniDefeat::
-	.string "Arrgh!!\n"
-	.string "I lost again!?$"
+    .string "呃！！\n"
+    .string "我又输了！？$"
 
 SilphCo_11F_Text_GiovanniPostBattle::
-	.string "Blast it all!\n"
-	.string "You ruined our plans for SILPH!\p"
-	.string "But, TEAM ROCKET will never fall!\p"
-	.string "{PLAYER}! Never forget that all\n"
-	.string "POKéMON exist for TEAM ROCKET!\p"
-	.string "I must go, but I shall return!$"
+    .string "该死！\n"
+    .string "你毁了我们在西尔佛的计划！\p"
+    .string "但是，火箭队不会倒下的！\p"
+    .string "{PLAYER}！永远不要忘记所有\n"
+    .string "宝可梦都是为火箭队存在的！\p"
+    .string "我得走了，但我会回来的！$"
 
 SilphCo_11F_Text_Grunt2Intro::
-	.string "Stop right there!\n"
-	.string "Don't you move!$"
+    .string "给我站住！\n"
+    .string "你敢再走一步！$"
 
 SilphCo_11F_Text_Grunt2Defeat::
-	.string "Don't…\n"
-	.string "Please!$"
+    .string "不要……\n"
+    .string "求你了！$"
 
 SilphCo_11F_Text_Grunt2PostBattle::
-	.string "So, you want to see my BOSS?$"
+    .string "那么，你想要见我的老大？$"
 
 SilphCo_11F_Text_Grunt1Intro::
-	.string "Halt! Do you have an appointment\n"
-	.string "with my BOSS?$"
+    .string "站住！你和我的老大\n"
+    .string "预约过吗？$"
 
 SilphCo_11F_Text_Grunt1Defeat::
-	.string "Gaah!\n"
-	.string "Demolished!$"
+    .string "哇哇哇！\n"
+    .string "不好了！$"
 
 SilphCo_11F_Text_Grunt1PostBattle::
-	.string "Watch your step…\n"
-	.string "My BOSS likes his POKéMON tough!$"
+    .string "走路给我小心点……\n"
+    .string "我的老大喜欢强大的宝可梦！$"
 
 SilphCo_11F_Text_MonitorHasMonsOnIt::
-	.string "The monitor has POKéMON on it!$"
+    .string "显示屏上有宝可梦！$"
 
 SilphCo_11F_Text_FloorSign::
-	.string "SILPH CO. HEAD OFFICE\n"
-	.string "11F$"
+    .string "西尔佛公司总部\n"
+    .string "11层$"
 

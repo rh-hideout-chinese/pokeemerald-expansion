@@ -10,103 +10,98 @@ ThreeIsland_BondBridge_EventScript_BondBridgeSign::
 	end
 
 ThreeIsland_BondBridge_Text_NikkiIntro::
-	.string "The salty tang of the sea…\n"
-	.string "It tickles my heart.$"
+    .string "大海的咸湿气息……\n"
+    .string "冲击着我的心灵。$"
 
 ThreeIsland_BondBridge_Text_NikkiDefeat::
-	.string "…Sniff, sniff…\n"
-	.string "Something smells unpleasant…$"
+    .string "闻啊，闻啊……\n"
+    .string "我闻到了不愉快的气息……$"
 
 ThreeIsland_BondBridge_Text_NikkiPostBattle::
-	.string "Perhaps that reek is your sweaty\n"
-	.string "POKéMON's body odor…$"
+    .string "也许那难闻的气味是\n"
+    .string "你的宝可梦身体的气味……$"
 
 ThreeIsland_BondBridge_Text_VioletIntro::
-	.string "Where are you off to in such\n"
-	.string "a hurry?$"
+    .string "你这么急是要去哪儿？$"
 
 ThreeIsland_BondBridge_Text_VioletDefeat::
-	.string "You're raising some wonderful\n"
-	.string "POKéMON.$"
+    .string "你培育了一些很棒的宝可梦。$"
 
 ThreeIsland_BondBridge_Text_VioletPostBattle::
-	.string "If you keep going this way, you'll\n"
-	.string "eventually reach BERRY FOREST.$"
+    .string "如果你沿着这条路一直走，\n"
+    .string "你最终将到达树果森林。$"
 
 ThreeIsland_BondBridge_Text_AmiraIntro::
-	.string "My mommy said that I can't swim\n"
-	.string "without my float ring.$"
+    .string "我妈妈让我\n"
+    .string "只能带着游泳圈游泳。$"
 
 ThreeIsland_BondBridge_Text_AmiraDefeat::
-	.string "Waaah!\n"
-	.string "Waaah!$"
+    .string "哇！\n"
+    .string "哇！$"
 
 ThreeIsland_BondBridge_Text_AmiraPostBattle::
-	.string "This year, I'm going to finally\n"
-	.string "learn how to swim!$"
+    .string "今年我一定要学会\n"
+    .string "如何游泳！$"
 
 ThreeIsland_BondBridge_Text_AlexisIntro::
-	.string "Yay, yay!\n"
-	.string "POKéMON!$"
+    .string "耶，呀！\n"
+    .string "宝可梦！$"
 
 ThreeIsland_BondBridge_Text_AlexisDefeat::
-	.string "What happens now?$"
+    .string "发生了什么？$"
 
 ThreeIsland_BondBridge_Text_AlexisPostBattle::
-	.string "Did I just win?\n"
-	.string "Or did I lose?$"
+    .string "我刚刚赢了吗？\n"
+    .string "还是输了？$"
 
 ThreeIsland_BondBridge_Text_TishaIntro::
-	.string "Oh, no, don't come here!\n"
-	.string "Please, stay away from me!$"
+    .string "噢，不，不要来这儿！\n"
+    .string "拜托了，离我远一点！$"
 
 ThreeIsland_BondBridge_Text_TishaDefeat::
-	.string "Okay, you've won!\n"
-	.string "Now will you please go away?$"
+    .string "好的，你赢了！\n"
+    .string "现在能离开了吧？$"
 
 ThreeIsland_BondBridge_Text_TishaPostBattle::
-	.string "A POKéMON bit through my \n"
-	.string "swimsuit.\p"
-	.string "I can't get out of the water!$"
+    .string "有一只宝可梦咬坏了我的泳衣。\p"
+    .string "我现在不能从水中出来了！$"
 
 ThreeIsland_BondBridge_Text_JoyIntro::
-	.string "JOY: We'll teach you what our\n"
-	.string "favorite POKéMON is!$"
+    .string "由井：我们要告诉你\n"
+    .string "我们最喜爱的宝可梦是什么！$"
 
 ThreeIsland_BondBridge_Text_JoyDefeat::
-	.string "JOY: Ohh…\n"
-	.string "MEG!$"
+    .string "由井：噢……\n"
+    .string "理子！$"
 
 ThreeIsland_BondBridge_Text_JoyPostBattle::
-	.string "JOY: Wasn't that fun?\n"
-	.string "I hope we can battle again!$"
+    .string "由井：那很有趣吧？\n"
+    .string "我希望我们能再次战斗！$"
 
 ThreeIsland_BondBridge_Text_JoyNotEnoughMons::
-	.string "JOY: I really want to battle with\n"
-	.string "MEG.\p"
-	.string "One POKéMON isn't enough.$"
+    .string "由井：我真的想和理子一起战斗。\p"
+    .string "一只宝可梦是不够的。$"
 
 ThreeIsland_BondBridge_Text_MegIntro::
-	.string "MEG: We'll show you our favorite\n"
-	.string "POKéMON.$"
+    .string "理子：我们将向你展示\n"
+    .string "我们最喜爱的宝可梦。$"
 
 ThreeIsland_BondBridge_Text_MegDefeat::
-	.string "MEG: Ohh…\n"
-	.string "JOY!$"
+    .string "理子：噢……\n"
+    .string "由井！$"
 
 ThreeIsland_BondBridge_Text_MegPostBattle::
-	.string "MEG: JOY, wasn't that fun?$"
+    .string "理子：由井，那很有趣吧？$"
 
 ThreeIsland_BondBridge_Text_MegNotEnoughMons::
-	.string "MEG: I want to battle together\n"
-	.string "with JOY.\p"
-	.string "One POKéMON isn't enough.$"
+    .string "理子：我想和由井一起战斗。\p"
+    .string "一只宝可梦是不够的。$"
 
 ThreeIsland_BondBridge_Text_BerryForestAhead::
-	.string "BERRY FOREST AHEAD$"
+    .string "前方是树果森林$"
 
 ThreeIsland_BondBridge_Text_BondBridgeSign::
-	.string "BOND BRIDGE\n"
-	.string "Please be quiet when crossing.\p"
-	.string "BERRY FOREST AHEAD$"
+    .string "索桥\n"
+    .string "当你经过时请保持安静。\p"
+    .string "前方是树果森林$"
 

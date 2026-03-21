@@ -18,27 +18,27 @@ FuchsiaCity_SafariZone_Office_EventScript_Worker4::
 	end
 
 FuchsiaCity_SafariZone_Office_Text_NicknamedWardenSlowpoke::
-	.string "We nicknamed the WARDEN\n"
-	.string "“SLOWPOKE.”\p"
-	.string "You know, he has that vacant look\n"
-	.string "like a SLOWPOKE.$"
+    .string "我们给园长起了个外号叫\n"
+    .string "“呆呆兽”。\p"
+    .string "你想象一下，他发起呆来的样子，\n"
+    .string "像极了一只呆呆兽。$"
 
 FuchsiaCity_SafariZone_Office_Text_WardenIsVeryKnowledgeable::
-	.string "WARDEN SLOWPOKE is very\n"
-	.string "knowledgeable about POKéMON.\p"
-	.string "He even has some fossils of rare,\n"
-	.string "extinct POKéMON.$"
+    .string "呆呆兽园长对\n"
+    .string "宝可梦非常了解。\p"
+    .string "他甚至还收藏了那些灭绝了的\n"
+    .string "珍贵的宝可梦的化石。$"
 
 FuchsiaCity_SafariZone_Office_Text_CouldntUnderstandWarden::
-	.string "WARDEN SLOWPOKE came in, but\n"
-	.string "I couldn't understand him.\p"
-	.string "I think he's got a speech problem!$"
+    .string "呆呆兽园长来了这儿一趟，\n"
+    .string "但是我完全听不懂他在说什么。\p"
+    .string "我觉得他的语言神经出了毛病！$"
 
 FuchsiaCity_SafariZone_Office_Text_PrizeInSafariZone::
-	.string "WARDEN SLOWPOKE is running a\n"
-	.string "promotion campaign right now.\p"
-	.string "Try to get to the farthest corner\n"
-	.string "of the SAFARI ZONE.\p"
-	.string "If you can make it, you'll win a\n"
-	.string "very convenient prize.$"
+    .string "呆呆兽园长正在举办\n"
+    .string "一场宣传活动。\p"
+    .string "努力向野生原野区\n"
+    .string "最深处进发。\p"
+    .string "如果你能抵达终点，\n"
+    .string "你没准会得到一件非常棒的奖品哦。$"
 

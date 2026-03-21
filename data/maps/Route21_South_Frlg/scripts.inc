@@ -2,89 +2,88 @@ Route21_South_Frlg_MapScripts::
 	.byte 0
 
 Route21_South_Text_JackIntro::
-	.string "I caught my POKéMON at sea.$"
+	.string "我在海里获得了我的宝可梦。$"
 
 Route21_South_Text_JackDefeat::
-	.string "Diver!!\n"
-	.string "Down!!$"
+	.string "潜水者！！\n"
+	.string "下去！$"
 
 Route21_South_Text_JackPostBattle::
-	.string "Where'd you catch your POKéMON?$"
+	.string "你在哪儿获得你的宝可梦？$"
 
 Route21_South_Text_JeromeIntro::
-	.string "Right now, I'm in a triathlon meet.$"
+	.string "现在，我在参加三项全能的竞赛。$"
 
 Route21_South_Text_JeromeDefeat::
-	.string "Pant…\n"
-	.string "Pant… Pant…$"
+	.string "呼……\n"
+	.string "呼……呼……$"
 
 Route21_South_Text_JeromePostBattle::
-	.string "I'm beat! But, I still have the\n"
-	.string "bike race and marathon left!$"
+	.string "我输了！但是，我仍然可以\n"
+	.string "进行自行车和马拉松的比赛！$"
 
 Route21_South_Text_RolandIntro::
-	.string "Ahh!\n"
-	.string "Feel the sun and the wind!$"
+	.string "啊！\n"
+	.string "去感受风和阳光！$"
 
 Route21_South_Text_RolandDefeat::
-	.string "Yow!\n"
-	.string "I lost!$"
+	.string "啊！\n"
+	.string "我输了！$"
 
 Route21_South_Text_RolandPostBattle::
-	.string "I'm sunburnt to a crisp!$"
+	.string "我被晒黑了！$"
 
 Route21_South_Text_ClaudeIntro::
-	.string "Hey, don't scare away the fish!$"
+	.string "嘿，不要把鱼吓走了！$"
 
 Route21_South_Text_ClaudeDefeat::
-	.string "Sorry! I'm just so frustrated from\n"
-	.string "not catching anything.$"
+	.string "对不起！我刚刚太沮丧了，\n"
+	.string "因为我没有收服到任何东西。$"
 
 Route21_South_Text_ClaudePostBattle::
-	.string "Sheesh, I haven't caught a thing.\n"
-	.string "Could this place actually be a\l"
-	.string "giant pool or something?$"
+	.string "我什么也没有收服。\n"
+	.string "难道这个地方实际上只是\l"
+	.string "一个大水池或是其他什么鬼地方吗？$"
 
 Route21_South_Text_NolanIntro::
-	.string "Keep me company till I get a hit.$"
+	.string "陪着我直到我游不动了为止。$"
 
 Route21_South_Text_NolanDefeat::
-	.string "That burned some time.$"
+	.string "真有些浪费时间。$"
 
 Route21_South_Text_NolanPostBattle::
-	.string "Oh wait!\n"
-	.string "I got a bite! Yeah!$"
+	.string "噢，等等！\n"
+	.string "我钓到一竿，耶！$"
 
 Route21_North_Text_LilIntro::
-	.string "LIL: Huh? A battle?\n"
-	.string "IAN, can't you do it alone?$"
+	.string "千沙：呃？战斗？\n"
+	.string "阿胜，你不能一个人去做吗？$"
 
 Route21_North_Text_LilDefeat::
-	.string "LIL: Oh, see?\n"
-	.string "We lost. Happy now?$"
+	.string "千沙：哼，看到了么？\n"
+	.string "我们失败了。现在高兴了？$"
 
 Route21_North_Text_LilPostBattle::
-	.string "LIL: I'm tired.\n"
-	.string "Can't we go home already?$"
+	.string "千沙：我累了。\n"
+	.string "现在还不能回家吗？$"
 
 Route21_North_Text_LilNotEnoughMons::
-	.string "LIL: Huh? A battle?\n"
-	.string "I can't be bothered to do it alone.\l"
-	.string "Bring two POKéMON, won't you?$"
+	.string "千沙：呃？战斗？\n"
+	.string "我不能一个人战斗。\l"
+	.string "带来两只宝可梦吧？$"
 
 Route21_North_Text_IanIntro::
-	.string "IAN: My sis doesn't get enough\n"
-	.string "exercise, so I made her come.$"
+	.string "阿胜：我姐姐练习的太少了，\n"
+	.string "所以我把她带到了这里。$"
 
 Route21_North_Text_IanDefeat::
-	.string "IAN: Awww, Sis!\n"
-	.string "Get it together!$"
+	.string "阿胜：啊，妹妹！\n"
+	.string "一起战斗吧！$"
 
 Route21_North_Text_IanPostBattle::
-	.string "IAN: Come on, Sis!\p"
-	.string "You're not going to lose weight\n"
-	.string "like this!$"
+	.string "阿胜：加油，妹妹！\p"
+	.string "你这样是不会减肥的！$"
 
 Route21_North_Text_IanNotEnoughMons::
-	.string "IAN: We want a two-on-two battle.\n"
-	.string "So can you bring two POKéMON?$"
+	.string "阿胜：我们希望来一场2对2的战斗。\n"
+	.string "所以你能带两只宝可梦来吗？$"

@@ -25,18 +25,16 @@ LavenderTown_House1_EventScript_Cubone::
 	end
 
 LavenderTown_House1_Text_Cubone::
-	.string "CUBONE: Kyarugoo!$"
+    .string "卡拉卡拉：咔咕！$"
 
 LavenderTown_House1_Text_RocketsKilledCubonesMother::
-	.string "Those horrible ROCKETS!\n"
-	.string "They deserve no mercy!\p"
-	.string "That poor CUBONE's mother…\p"
-	.string "It was killed trying to escape from\n"
-	.string "TEAM ROCKET.$"
+    .string "那恐怖的火箭队！\n"
+    .string "绝不能饶恕他们！\p"
+    .string "那可怜的卡拉卡拉的妈妈……\p"
+    .string "在从火箭队手中逃跑时\n"
+    .string "被杀了。$"
 
 LavenderTown_House1_Text_GhostOfPokemonTowerIsGone::
-	.string "The ghost of POKéMON TOWER is\n"
-	.string "gone!\p"
-	.string "Someone must have soothed its\n"
-	.string "restless spirit!$"
+    .string "宝可梦塔的幽灵走了！\p"
+    .string "肯定有人安抚了它们不安的灵魂！$"
 

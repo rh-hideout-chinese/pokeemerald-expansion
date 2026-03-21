@@ -97,102 +97,101 @@ Route24_Movement_WalkDown::
 	step_end
 
 Route24_Text_JustEarnedFabulousPrize::
-	.string "Congratulations! You beat our\n"
-	.string "five contest TRAINERS!\p"
-	.string "You just earned a fabulous prize!$"
+    .string "祝贺你！你战胜了\n"
+    .string "我们五个训练家！\p"
+    .string "你获得了一份神秘大礼！$"
 
 Route24_Text_ReceivedNuggetFromMysteryTrainer::
-	.string "{PLAYER} received a NUGGET\n"
-	.string "from the mystery TRAINER!$"
+    .string "{PLAYER}从谜之训练家那儿\n"
+    .string "获得了一个金珠！$"
 
 Route24_Text_YouDontHaveAnyRoom::
-	.string "You don't have any room!$"
+    .string "你没有退路了！$"
 
 Route24_Text_JoinTeamRocket::
-	.string "By the way, how would you like to\n"
-	.string "join TEAM ROCKET?\p"
-	.string "We're a group of professional\n"
-	.string "criminals specializing in POKéMON!\p"
-	.string "Want to join?\p"
-	.string "Are you sure?\p"
-	.string "Come on, join us!\p"
-	.string "I'm telling you to join!\p"
-	.string "…Okay, you need convincing!\p"
-	.string "I'll make you an offer you can't\n"
-	.string "refuse!$"
+    .string "顺便问问，\n"
+    .string "你想加入火箭队吗？\p"
+    .string "我们是以抢夺宝可梦为主的\n"
+    .string "专业犯罪组织。\p"
+    .string "想加入吗？\p"
+    .string "你确定？\p"
+    .string "来吧，加入我们吧！\p"
+    .string "我是叫你加入我们！\p"
+    .string "好吧，看来得给你来点硬的！\p"
+    .string "我要让你无法拒绝！$"
 
 Route24_Text_RocketDefeat::
-	.string "Arrgh!\n"
-	.string "You are good!$"
+    .string "啊！\n"
+    .string "你太强了！$"
 
 Route24_Text_YoudBecomeTopRocketLeader::
-	.string "With your ability, you'd become\n"
-	.string "a top leader in TEAM ROCKET.\p"
-	.string "Come on, think of the opportunity!\n"
-	.string "Don't let this chance go to waste.$"
+    .string "以你的能力，\n"
+    .string "你能成为火箭队的高级干部。\p"
+    .string "瞧瞧，多么好的机会！\n"
+    .string "浪费掉真是太可惜了。$"
 
 Route24_Text_ShaneIntro::
-	.string "I saw your feat from the grass!$"
+    .string "我看见了你草地上的壮举！$"
 
 Route24_Text_ShaneDefeat::
-	.string "I thought not!$"
+    .string "我想不通！$"
 
 Route24_Text_ShanePostBattle::
-	.string "I hid because the people on the\n"
-	.string "bridge frightened me.$"
+    .string "我藏着是因为\n"
+    .string "我害怕桥上的人们。$"
 
 Route24_Text_EthanIntro::
-	.string "Okay! I'm No. 5!\n"
-	.string "I'll stomp you!$"
+    .string "嗯！我是5号！\n"
+    .string "我要把你踏在脚下！$"
 
 Route24_Text_EthanDefeat::
-	.string "Whoa!\n"
-	.string "Too much!$"
+    .string "哇！\n"
+    .string "真厉害！$"
 
 Route24_Text_EthanPostBattle::
-	.string "I did my best. I have no regrets!$"
+    .string "我尽力了，我不后悔！$"
 
 Route24_Text_ReliIntro::
-	.string "I'm No. 4!\n"
-	.string "Getting tired?$"
+    .string "我是4号！\n"
+    .string "感觉累了吗？$"
 
 Route24_Text_ReliDefeat::
-	.string "I lost, too!$"
+    .string "我也失败了！$"
 
 Route24_Text_ReliPostBattle::
-	.string "I did my best, so I've no regrets!$"
+    .string "我尽力了，我不后悔！$"
 
 Route24_Text_TimmyIntro::
-	.string "Here's No. 3!\n"
-	.string "I won't be easy!$"
+    .string "3号在这儿！\n"
+    .string "我可没那么容易搞定！$"
 
 Route24_Text_TimmyDefeat::
-	.string "Ow!\n"
-	.string "Stomped flat!$"
+    .string "啊！\n"
+    .string "被牵制住了！$"
 
 Route24_Text_TimmyPostBattle::
-	.string "I did my best. I have no regrets!$"
+    .string "我尽力了，我不后悔！$"
 
 Route24_Text_AliIntro::
-	.string "I'm second!\n"
-	.string "Now it's serious!$"
+    .string "我是2号！\n"
+    .string "现在要认真了！$"
 
 Route24_Text_AliDefeat::
-	.string "How could I lose?$"
+    .string "我是怎么输的？$"
 
 Route24_Text_AliPostBattle::
-	.string "I did my best. I have no regrets!$"
+    .string "我尽力了，我不后悔！$"
 
 Route24_Text_CaleIntro::
-	.string "People call this the NUGGET\n"
-	.string "BRIDGE!\p"
-	.string "Beat us five TRAINERS and win\n"
-	.string "a fabulous prize!\p"
-	.string "Think you got what it takes?$"
+    .string "人们把这里称作\n"
+    .string "金珠大桥！\p"
+    .string "战胜我们五个训练家就可以\n"
+    .string "获得一份神秘大礼！\p"
+    .string "你能得到它吗？$"
 
 Route24_Text_CaleDefeat::
-	.string "Whoo!\n"
-	.string "Good stuff!$"
+    .string "呼！\n"
+    .string "好家伙！$"
 
 Route24_Text_CalePostBattle::
-	.string "I did my best. I have no regrets!$"
+    .string "我尽力了。我不后悔！$"

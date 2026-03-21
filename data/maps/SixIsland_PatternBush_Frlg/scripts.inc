@@ -78,158 +78,149 @@ SixIsland_PatternBush_EventScript_Layton::
 	end
 
 SixIsland_PatternBush_Text_BethanyIntro::
-	.string "I'm curious, how do you raise your\n"
-	.string "POKéMON?$"
+    .string "我很好奇，\n"
+    .string "你是如何养育宝可梦的？$"
 
 SixIsland_PatternBush_Text_BethanyDefeat::
-	.string "You raise your POKéMON with a\n"
-	.string "whole lot of love!$"
+    .string "你用了全身心的爱来\n"
+    .string "养育你的宝可梦！$"
 
 SixIsland_PatternBush_Text_BethanyPostBattle::
-	.string "In the same way your mother raised\n"
-	.string "you full of love, you should raise\l"
-	.string "your POKéMON.$"
+    .string "要像你妈妈充满着爱养育你那样，\n"
+    .string "养育好你的宝可梦。$"
 
 SixIsland_PatternBush_Text_AllisonIntro::
-	.string "I'm working to preserve the natural\n"
-	.string "ecology of POKéMON here.$"
+    .string "我为了维护宝可梦的自然\n"
+    .string "生态环境在这里努力工作。$"
 
 SixIsland_PatternBush_Text_AllisonDefeat::
-	.string "Oh, for someone so young, you are\n"
-	.string "tremendous!$"
+    .string "作为一个如此年轻的人，\n"
+    .string "你真是太棒了！$"
 
 SixIsland_PatternBush_Text_AllisonPostBattle::
-	.string "I'm not saying that you shouldn't\n"
-	.string "catch POKéMON.\p"
-	.string "I just want people to raise their\n"
-	.string "POKéMON responsibly.$"
+    .string "我没有不准许人们收服宝可梦。\p"
+    .string "我只是希望人们能好好培育它们。$"
 
 SixIsland_PatternBush_Text_GarretIntro::
-	.string "I caught a BUG POKéMON that lives\n"
-	.string "only around here!$"
+    .string "我收服了一只\n"
+    .string "只生活在这周围的虫属性宝可梦！$"
 
 SixIsland_PatternBush_Text_GarretDefeat::
-	.string "Heheh…\n"
-	.string "Isn't my POKéMON awesome?$"
+    .string "哈哈……\n"
+    .string "我的宝可梦是不是很棒？$"
 
 SixIsland_PatternBush_Text_GarretPostBattle::
-	.string "There's a girl near the BUSH who\n"
-	.string "measures HERACROSS for TRAINERS.$"
+    .string "树林旁边的有个女孩\n"
+    .string "替训练家测量他们的的赫拉克罗斯。$"
 
 SixIsland_PatternBush_Text_JonahIntro::
-	.string "You know, it just doesn't feel right\n"
-	.string "if I don't use BUG POKéMON.$"
+    .string "你知道么，如果我不使用虫属性宝可梦，\n"
+    .string "我就感觉浑身不对劲。$"
 
 SixIsland_PatternBush_Text_JonahDefeat::
-	.string "It's okay, losing is a fun part of\n"
-	.string "POKéMON's appeal, too.$"
+    .string "无所谓啦，战败也是\n"
+    .string "宝可梦的吸引力之一。$"
 
 SixIsland_PatternBush_Text_JonahPostBattle::
-	.string "By the way, “appeal” is a weird\n"
-	.string "word, if you think about it.\p"
-	.string "Like, is it like an orange peel?\n"
-	.string "Or like a ringing bell?$"
+    .string "顺便说一下，“吸引力”\n"
+    .string "像是一个奇怪的单词。\p"
+    .string "就像是，它像一个橘子皮？\n"
+    .string "或者像一个电铃？$"
 
 SixIsland_PatternBush_Text_VanceIntro::
-	.string "Yeah, yeah, yeah!\n"
-	.string "Look at all the BUG POKéMON!$"
+    .string "看看瞧瞧！\n"
+    .string "看看这些虫属性宝可梦！$"
 
 SixIsland_PatternBush_Text_VanceDefeat::
-	.string "I got beat while I was still busy\n"
-	.string "celebrating!$"
+    .string "当我忙于庆祝时，\n"
+    .string "我被袭击了！$"
 
 SixIsland_PatternBush_Text_VancePostBattle::
-	.string "I'm going to bring my little brother\n"
-	.string "here next time.$"
+    .string "我下次会把我弟弟带到这儿来。$"
 
 SixIsland_PatternBush_Text_NashIntro::
-	.string "Look, look! There are funny\n"
-	.string "patterns on the ground.$"
+    .string "快看！\n"
+    .string "地上有一些有趣的花纹。$"
 
 SixIsland_PatternBush_Text_NashDefeat::
-	.string "Super awesome!$"
+    .string "超级棒！$"
 
 SixIsland_PatternBush_Text_NashPostBattle::
-	.string "The funny patterns on the ground…\p"
-	.string "They look like the patterns on my\n"
-	.string "grandpa's clothes.$"
+    .string "地上这些有趣的花纹……\p"
+    .string "和我奶奶衣服上的很像。$"
 
 SixIsland_PatternBush_Text_CordellIntro::
-	.string "I bet you think I'm just some guy,\n"
-	.string "don't you, eh?$"
+    .string "我打赌，你认为我只是一个路人，\n"
+    .string "对吗？嗯？$"
 
 SixIsland_PatternBush_Text_CordellDefeat::
-	.string "I bet you think I'm weak,\n"
-	.string "don't you, eh?$"
+    .string "我打赌，你认为我很弱，\n"
+    .string "对吗？嗯？$"
 
 SixIsland_PatternBush_Text_CordellPostBattle::
-	.string "Ayup, you townies come around all\n"
-	.string "so dandy with a hat that flashy…\p"
-	.string "How about giving me that?$"
+    .string "你们城里人都穿得\n"
+    .string "那么奢华还戴个花哨的帽子……\p"
+    .string "把那个给我如何？$"
 
 SixIsland_PatternBush_Text_DaliaIntro::
-	.string "Take a deep breath.\n"
-	.string "Isn't the air delicious?$"
+    .string "请深呼吸。\n"
+    .string "空气很是清新怡人吧？$"
 
 SixIsland_PatternBush_Text_DaliaDefeat::
-	.string "If you'd like, I can teach you how\n"
-	.string "to breathe properly.$"
+    .string "如果你喜欢，\n"
+    .string "我能教你怎样正确地呼吸。$"
 
 SixIsland_PatternBush_Text_DaliaPostBattle::
-	.string "First, exhale.\n"
-	.string "Blow everything out.\p"
-	.string "When you can't exhale anymore,\n"
-	.string "inhale the clean air!\p"
-	.string "Isn't it refreshing?$"
+    .string "首先，呼气。\n"
+    .string "把所有的废气吐出。\p"
+    .string "当你呼气到极限的时候，\n"
+    .string "吸入新鲜空气！\p"
+    .string "是不是有一种焕然一新的感觉？$"
 
 SixIsland_PatternBush_Text_JoanaIntro::
-	.string "I love BUG POKéMON.\n"
-	.string "That's why I'm here all the time.\p"
-	.string "Am I the only girl like that?$"
+    .string "我喜欢虫属性宝可梦。\n"
+    .string "所以我一直都在这儿。\p"
+    .string "我就是这样一个独一无二的女孩吗？$"
 
 SixIsland_PatternBush_Text_JoanaDefeat::
-	.string "I lost, but I'm still laughing.\n"
-	.string "Am I the only girl like that?$"
+    .string "我输了，但我依然很开心。\n"
+    .string "我是唯一会这样的女孩吗？$"
 
 SixIsland_PatternBush_Text_JoanaPostBattle::
-	.string "I'm going to keep on collecting\n"
-	.string "BUG POKéMON.\p"
-	.string "Am I the only girl like that?$"
+    .string "我将继续收集虫属性宝可梦。\p"
+    .string "我是唯一会这样的女孩吗？$"
 
 SixIsland_PatternBush_Text_RileyIntro::
-	.string "This is a good spot.\n"
-	.string "I'll pitch my tent here.$"
+    .string "这是一个不错的地方。\n"
+    .string "我要在这里扎营。$"
 
 SixIsland_PatternBush_Text_RileyDefeat::
-	.string "Wimped out…$"
+    .string "我真是没用……$"
 
 SixIsland_PatternBush_Text_RileyPostBattle::
-	.string "I'm going to observe the night sky\n"
-	.string "here.$"
+    .string "我要在这里观察夜晚的星空。$"
 
 SixIsland_PatternBush_Text_MarcyIntro::
-	.string "Oh, yuck!\n"
-	.string "I think a bug stung me!$"
+    .string "啊，讨厌！\n"
+    .string "我感觉有个虫子蜇了我！$"
 
 SixIsland_PatternBush_Text_MarcyDefeat::
-	.string "It wasn't a bug.\n"
-	.string "I cut my shin on some grass.$"
+    .string "那不是虫子。\n"
+    .string "是我的小腿被草割伤了。$"
 
 SixIsland_PatternBush_Text_MarcyPostBattle::
-	.string "A little cut like that…\n"
-	.string "A little spit's enough to cure it!$"
+    .string "这样的小伤口……\n"
+    .string "我弄一点唾沫就能治好它！$"
 
 SixIsland_PatternBush_Text_LaytonIntro::
-	.string "Have you noticed something odd\n"
-	.string "about these parts?$"
+    .string "这周围有些奇怪，\n"
+    .string "你注意到了吗？$"
 
 SixIsland_PatternBush_Text_LaytonDefeat::
-	.string "Have you taken a good look around\n"
-	.string "your feet?$"
+    .string "你好好观察过你周围了吗？$"
 
 SixIsland_PatternBush_Text_LaytonPostBattle::
-	.string "There are places here in PATTERN\n"
-	.string "BUSH where grass won't grow.\p"
-	.string "What could be the cause of such\n"
-	.string "a phenomenon?$"
+    .string "在标志之林周围有个\n"
+    .string "寸草不生的地方\p"
+    .string "是东西什么造成了这种现象？$"
 

@@ -19,13 +19,13 @@ SafariZone_Center_EventScript_AreaSign::
 	end
 
 SafariZone_Center_Text_RestHouse::
-	.string "REST HOUSE$"
+    .string "休息屋$"
 
 SafariZone_Center_Text_PressStartToCheckTime::
-	.string "TRAINER TIPS\p"
-	.string "Press START to check\n"
-	.string "remaining time.$"
+    .string "训练家贴士\p"
+    .string "按开始检查\n"
+    .string "剩下的时间。$"
 
 SafariZone_Center_Text_CenterArea::
-	.string "CENTER AREA$"
+    .string "中部栖息地$"
 

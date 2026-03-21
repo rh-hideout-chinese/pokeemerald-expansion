@@ -33,36 +33,35 @@ VermilionCity_House1_EventScript_NoRoomForOldRod::
 	end
 
 VermilionCity_House1_Text_ImFishingGuruDoYouLikeToFish::
-	.string "I'm the FISHING GURU!\p"
-	.string "I simply looove fishing!\n"
-	.string "I can't bear to go without.\p"
-	.string "Tell me, do you like to fish?$"
+    .string "我是钓鱼大师！\p"
+    .string "我相当喜欢钓鱼。\n"
+    .string "不钓鱼的日子我一天也受不了。\p"
+    .string "告诉我，你喜欢钓鱼吗？$"
 
 VermilionCity_House1_Text_TakeThisAndFish::
-	.string "Grand! I like your style.\n"
-	.string "I think we can be friends.\p"
-	.string "Take this and fish, young friend!$"
+    .string "好极了，我喜欢你的风格。\n"
+    .string "我想我们能成为朋友。\p"
+    .string "拿着这个享受垂钓吧，朋友！$"
 
 VermilionCity_House1_Text_ReceivedOldRodFromFishingGuru::
-	.string "{PLAYER} received an OLD ROD from\n"
-	.string "the FISHING GURU.$"
+    .string "{PLAYER}从钓鱼大师那儿得到了破钓竿。$"
 
 VermilionCity_House1_Text_FishingIsAWayOfLife::
-	.string "Fishing is a way of life!\n"
-	.string "It is like the finest poetry.\p"
-	.string "From the seas to rivers, go out\n"
-	.string "and land the big one, my friend.$"
+    .string "钓鱼是一种生活方式！\n"
+    .string "就像是最美的诗歌。\p"
+    .string "从海洋到河流，\n"
+    .string "去钓上最大的那条，我的朋友。$"
 
 VermilionCity_House1_Text_OhThatsSoDisappointing::
-	.string "Oh…\n"
-	.string "That's so disappointing…$"
+    .string "噢……\n"
+    .string "那太失望了……$"
 
 VermilionCity_House1_Text_HowAreTheFishBiting::
-	.string "Hello there, {PLAYER}!\p"
-	.string "How are the fish biting?$"
+    .string "嘿，{PLAYER}！\p"
+    .string "鱼儿是如何咬钩的？$"
 
 VermilionCity_House1_Text_NoRoomForNiceGift::
-	.string "Oh, no!\p"
-	.string "I had a nice gift for you, but you\n"
-	.string "have no room for it!$"
+    .string "噢，不！\p"
+    .string "我有个好的礼物要送给你，\n"
+    .string "可惜你的背包满了！$"
 

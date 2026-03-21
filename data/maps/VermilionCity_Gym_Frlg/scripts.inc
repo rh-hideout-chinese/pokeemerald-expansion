@@ -286,136 +286,130 @@ VermilionCity_Gym_EventScript_GymStatuePostVictory::
 	end
 
 VermilionCity_Gym_Text_LtSurgeIntro::
-	.string "Hey, kid! What do you think you're\n"
-	.string "doing here?\p"
-	.string "You won't live long in combat!\n"
-	.string "Not with your puny power!\p"
-	.string "I tell you, kid, electric POKéMON\n"
-	.string "saved me during the war!\p"
-	.string "They zapped my enemies into\n"
-	.string "paralysis!\p"
-	.string "The same as I'll do to you!{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
+    .string "嘿，小子，\n"
+    .string "你在这儿发什么呆呢？\p"
+    .string "打起仗来你可活不长的！\n"
+    .string "瞧你那可怜的力量！\p"
+    .string "我告诉你，小子，\n"
+    .string "电属性宝可梦在战争中救过我！\p"
+    .string "它们把我的敌人电得麻痹了！\p"
+    .string "我也要把你电成这样！{PLAY_BGM}{MUS_RG_ENCOUNTER_GYM_LEADER}$"
 
 VermilionCity_Gym_Text_LtSurgePostBattle::
-	.string "A little word of advice, kid!\p"
-	.string "Electricity is sure powerful!\p"
-	.string "But, it's useless against GROUND-\n"
-	.string "type POKéMON!$"
+    .string "给你一点忠告，小朋友！\p"
+    .string "电流是很强大的力量！\p"
+    .string "但是，若是对地面属性的宝可梦\n"
+    .string "它就毫无用处！$"
 
 VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis::
-	.string "The THUNDERBADGE cranks up your\n"
-	.string "POKéMON's SPEED!\p"
-	.string "It also lets your POKéMON FLY\n"
-	.string "lightning-quick anytime, kid!\p"
-	.string "You're special, kid!\n"
-	.string "Take this!$"
+    .string "橘色徽章能提升你宝可梦的速度！\p"
+    .string "能让你的宝可梦飞翔得\n"
+    .string "像闪电一样快，\p"
+    .string "你很特别啊，小子！\n"
+    .string "拿着这个吧！$"
 
 VermilionCity_Gym_Text_ReceivedTM34FromLtSurge::
-	.string "{PLAYER} received TM34\n"
-	.string "from LT. SURGE.$"
+    .string "{PLAYER}从马志士那儿得到了TM34。$"
 
 VermilionCity_Gym_Text_ExplainTM34::
-	.string "TM34 contains SHOCK WAVE!\p"
-	.string "Teach it to an ELECTRIC POKéMON!$"
+    .string "TM34是电击波！\p"
+    .string "把它教给一只电属性宝可梦！$"
 
 VermilionCity_Gym_Text_MakeRoomInYourBag::
-	.string "Yo, kid, make room in your BAG!$"
+    .string "哟，小子，把你的背包里腾出空间来！$"
 
 VermilionCity_Gym_Text_LtSurgeDefeat::
-	.string "Now that's a shocker!\p"
-	.string "You're the real deal, kid!\p"
-	.string "Fine, then, take the THUNDERBADGE!$"
+    .string "真是令人吃惊！\p"
+    .string "你有两下子嘛，小子！\p"
+    .string "好吧，拿着这个橘色徽章！$"
 
 VermilionCity_Gym_Text_TuckerIntro::
-	.string "When I was in the Army, LT. SURGE\n"
-	.string "was my strict CO.\p"
-	.string "He was a hard taskmaster.$"
+    .string "当我在军队的时候，马志士\n"
+    .string "是一个严厉的长官。\p"
+    .string "他完成任务时总是很卖力。$"
 
 VermilionCity_Gym_Text_TuckerDefeat::
-	.string "Stop!\n"
-	.string "You're very good!$"
+    .string "停止！\n"
+    .string "你太厉害了！$"
 
 VermilionCity_Gym_Text_TuckerPostBattle::
-	.string "It's not easy opening that door.\p"
-	.string "LT. SURGE was always famous for\n"
-	.string "his cautious nature in the Army.$"
+    .string "想打开这扇门可没那么容易。\p"
+    .string "马志士以前在军队里\n"
+    .string "以他的谨慎而出名。$"
 
 VermilionCity_Gym_Text_BailyIntro::
-	.string "I'm a lightweight, but I'm good\n"
-	.string "with electricity!\p"
-	.string "That's why I joined this GYM.$"
+    .string "虽然我体重很轻，\n"
+    .string "但是我擅长使用电！\p"
+    .string "所以我加入了这个道馆。$"
 
 VermilionCity_Gym_Text_BailyDefeat::
-	.string "Fried!$"
+    .string "醉了！$"
 
 VermilionCity_Gym_Text_BailyPostBattle::
-	.string "Okay, I'll talk!\p"
-	.string "LT. SURGE said he hid door\n"
-	.string "switches inside something.$"
+    .string "好了，我说我说！\p"
+    .string "马志士说过他把开关\n"
+    .string "藏在什么东西里了。$"
 
 VermilionCity_Gym_Text_DwayneIntro::
-	.string "This is no place for kids!\n"
-	.string "Not even if you're good!$"
+    .string "这里不是小孩子该来的地方！\n"
+    .string "即使你很厉害也不行！$"
 
 VermilionCity_Gym_Text_DwayneDefeat::
-	.string "Wow!\n"
-	.string "Surprised me!$"
+    .string "哇！\n"
+    .string "你竟然这么厉害！$"
 
 VermilionCity_Gym_Text_DwaynePostBattle::
-	.string "LT. SURGE installed the traps in\n"
-	.string "the GYM himself.\p"
-	.string "He set up double locks everywhere.\n"
-	.string "Let me give you a hint.\p"
-	.string "When you open the first lock, the\n"
-	.string "second lock is right next to it.$"
+    .string "训练馆的机关是马志士亲自安装的。\p"
+    .string "他做的机关都是双层的。\n"
+    .string "我给你点提示吧。\p"
+    .string "如果你找到了打开第一道电锁的开关，\n"
+    .string "第二道电锁的开关就在它的附近。$"
 
 VermilionCity_Gym_Text_GymGuyAdvice::
-	.string "Yo!\n"
-	.string "Champ in the making!\p"
-	.string "LT. SURGE has a nickname.\p"
-	.string "People refer to him as the\n"
-	.string "Lightning American!\p"
-	.string "He's an expert on electric\n"
-	.string "POKéMON.\p"
-	.string "BIRD/WATER-type POKéMON match\n"
-	.string "poorly against the ELECTRIC type.\p"
-	.string "Beware of paralysis, too.\p"
-	.string "LT. SURGE is very cautious.\p"
-	.string "He's locked himself in, so it won't\n"
-	.string "be easy getting to him.$"
+    .string "嗨！\n"
+    .string "未来的冠军！\p"
+    .string "马志士有一个外号。\p"
+    .string "人们把他称作“闪电般的美国人”！\p"
+    .string "他是电属性宝可梦的专家。\p"
+    .string "飞行属性和水属性的宝可梦\n"
+    .string "遇着电属性的会很不利。\p"
+    .string "你也要提防别被麻痹了。\p"
+    .string "马志士是非常谨慎小心的。\p"
+    .string "他把自己锁在了里面，\n"
+    .string "所以你想要跟他对战可不容易。$"
 
 VermilionCity_Gym_Text_GymGuyPostVictory::
-	.string "Whew!\n"
-	.string "That match was electric!$"
+    .string "唔！\n"
+    .string "这场对战真带劲！$"
 
 VermilionCity_Gym_Text_GymStatue::
-	.string "VERMILION POKéMON GYM\n"
-	.string "LEADER: LT. SURGE\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}$"
+    .string "枯叶宝可梦道馆\n"
+    .string "馆主：马志士\p"
+    .string "获胜训练家：\n"
+    .string "{RIVAL}$"
 
 VermilionCity_Gym_Text_GymStatuePlayerWon::
-	.string "VERMILION POKéMON GYM\n"
-	.string "LEADER: LT. SURGE\p"
-	.string "WINNING TRAINERS:\n"
-	.string "{RIVAL}, {PLAYER}$"
+    .string "枯叶宝可梦道馆\n"
+    .string "馆主：马志士\p"
+    .string "获胜训练家：\n"
+    .string "{RIVAL}、{PLAYER}$"
 
 VermilionCity_Gym_Text_NopeOnlyTrashHere::
-	.string "Nope!\n"
-	.string "There's only trash here.$"
+    .string "什么也没有！\n"
+    .string "里面只有一些垃圾。$"
 
 VermilionCity_Gym_Text_SwitchUnderTrashFirstLockOpened::
-	.string "Hey! There's a switch under the\n"
-	.string "trash! Turn it on!\p"
-	.string "The first electric lock opened!$"
+    .string "嘿！垃圾下面有个开关！\n"
+    .string "打开它！\p"
+    .string "第一道电锁打开了！$"
 
 VermilionCity_Gym_Text_SecondLockOpened::
-	.string "The second electric lock opened!\n"
-	.string "The motorized door opened!$"
+    .string "第二道电锁打开了！\n"
+    .string "门开了！$"
 
 VermilionCity_Gym_Text_OnlyTrashLocksWereReset::
-	.string "Nope!\n"
-	.string "There's only trash here.\p"
-	.string "Hey!\n"
-	.string "The electric locks were reset!$"
+    .string "什么也没有！\n"
+    .string "里边只是一些垃圾。\p"
+    .string "嘿！\n"
+    .string "电锁重置了！$"
 

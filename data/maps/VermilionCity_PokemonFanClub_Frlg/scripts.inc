@@ -119,98 +119,94 @@ VermilionCity_PokemonFanClub_EventScript_RulesSign2::
 	end
 
 VermilionCity_PokemonFanClub_Text_AdmirePikachusTail::
-	.string "Won't you admire my PIKACHU's\n"
-	.string "adorable tail?$"
+    .string "你不喜欢我的皮卡丘的\n"
+    .string "讨人爱的尾巴吗？$"
 
 VermilionCity_PokemonFanClub_Text_PikachuTwiceAsCute::
-	.string "Humph!\p"
-	.string "My PIKACHU is twice as cute as\n"
-	.string "that one!$"
+    .string "哼！\p"
+    .string "我的皮卡丘有\n"
+    .string "你那一只两倍的可爱！$"
 
 VermilionCity_PokemonFanClub_Text_AdoreMySeel::
-	.string "I just adore my SEEL!\n"
-	.string "It's so lovable!\p"
-	.string "It squeals, “Kyuuuh,” when I\n"
-	.string "hug it!$"
+    .string "我非常喜欢我的小海狮！\n"
+    .string "它太可爱啦！\p"
+    .string "当我抱着它时，\n"
+    .string "它会叫着，“咕呜。”$"
 
 VermilionCity_PokemonFanClub_Text_SeelFarMoreAttractive::
-	.string "Oh, dear!\p"
-	.string "My SEEL is far more attractive.\n"
-	.string "By double, I would say.$"
+    .string "噢，天哪！\p"
+    .string "我的小海狮太有吸引力了。\n"
+    .string "我不得不说。$"
 
 VermilionCity_PokemonFanClub_Text_Pikachu::
-	.string "PIKACHU: Chu! Pikachu!$"
+    .string "皮卡丘：丘！皮卡丘！$"
 
 VermilionCity_PokemonFanClub_Text_Seel::
-	.string "SEEL: Kyuoo!$"
+    .string "小海狮：咕呜！$"
 
 VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons::
-	.string "I chair the POKéMON Fan Club!\p"
-	.string "I raise more than a hundred\n"
-	.string "POKéMON!\p"
-	.string "I'm very fussy when it comes to\n"
-	.string "POKéMON! I surely am!\p"
-	.string "So…\p"
-	.string "Did you come visit to hear about\n"
-	.string "my POKéMON?$"
+    .string "我经营着宝可梦同好会！\p"
+    .string "我培养着100多只宝可梦！\p"
+    .string "当谈到宝可梦时我会变得很激动！\n"
+    .string "真的是这样！\p"
+    .string "所以……\p"
+    .string "你是来听我的宝可梦的故事的吗？$"
 
 VermilionCity_PokemonFanClub_Text_ChairmansStory::
-	.string "Good!\n"
-	.string "Then listen up!\p"
-	.string "My favorite RAPIDASH…\p"
-	.string "It's…cute…lovely…smart… \n"
-	.string "plus…amazing…you think so?…\l"
-	.string "oh yes…it's…stunning…\l"
-	.string "kindly…love it!\p"
-	.string "Hug it…when…sleeping…warm\n"
-	.string "and cuddly…spectacular…\l"
-	.string "ravishing…\l"
-	.string "…Oops! Look at the time!\l"
-	.string "I kept you too long!\p"
-	.string "Thanks for hearing me out!\n"
-	.string "I want you to have this!$"
+    .string "好！\n"
+    .string "听好了！\p"
+    .string "我最喜爱的烈焰马……\p"
+    .string "它真是漂亮……可爱……聪明……\n"
+    .string "异乎寻常……你这样认为吗？\l"
+    .string "对……它很出色……\l"
+    .string "友好……好喜欢它！\p"
+    .string "抱着它……睡觉时……\n"
+    .string "感到温暖……亲切……\l"
+    .string "迷人……\l"
+    .string "……哎！看这时间！\l"
+    .string "我让你呆太久了！\p"
+    .string "谢谢你一直在听我说！\n"
+    .string "我要给你这个！$"
 
 VermilionCity_PokemonFanClub_Text_ReceivedBikeVoucherFromChairman::
-	.string "{PLAYER} received a BIKE VOUCHER\n"
-	.string "from the CHAIRMAN.$"
+    .string "{PLAYER}从主席那里\n"
+    .string "得到了自行车兑换券。$"
 
 VermilionCity_PokemonFanClub_Text_ExplainBikeVoucher::
-	.string "Take that BIKE VOUCHER to the\n"
-	.string "BIKE SHOP in CERULEAN CITY.\p"
-	.string "Exchange that for a BICYCLE\n"
-	.string "free of charge!\p"
-	.string "Don't worry, my favorite FEAROW\n"
-	.string "will FLY me anywhere I need to go.\p"
-	.string "So, I have no need for a BICYCLE.\p"
-	.string "I hope you like cycling!$"
+    .string "拿着这个自行车兑换券去\n"
+    .string "华蓝市的自行车行。\p"
+    .string "可以免费换到一辆自行车！\p"
+    .string "别担心，我的大嘴雀\n"
+    .string "会带我飞翔到任何我想去的地方。\p"
+    .string "所以，我不需要自行车。\p"
+    .string "我希望你喜欢骑车！$"
 
 VermilionCity_PokemonFanClub_Text_ComeBackToHearStory::
-	.string "Oh. Come back when you want to\n"
-	.string "hear my story!$"
+    .string "噢。当你想听我的故事时\n"
+    .string "就再回来吧！$"
 
 VermilionCity_PokemonFanClub_Text_DidntComeToSeeAboutMonsAgain::
-	.string "Hello, {PLAYER}!\p"
-	.string "Did you come see me about my\n"
-	.string "POKéMON again?\p"
-	.string "No?\n"
-	.string "Too bad!$"
+    .string "你好，{PLAYER}！\p"
+    .string "你是再来听我讲我的\n"
+    .string "宝可梦的吗？\p"
+    .string "不是？\n"
+    .string "太糟糕了！$"
 
 VermilionCity_PokemonFanClub_Text_MakeRoomForThis::
-	.string "Make room for this!$"
+    .string "要腾出空间来放这个！$"
 
 VermilionCity_PokemonFanClub_Text_ChairmanVeryVocalAboutPokemon::
-	.string "Our CHAIRMAN is very vocal about\n"
-	.string "POKéMON.$"
+    .string "我们的主席在说到\n"
+    .string "宝可梦时口才特别好。$"
 
 VermilionCity_PokemonFanClub_Text_ListenPolitelyToOtherTrainers::
-	.string "Let's all listen politely to other\n"
-	.string "TRAINERS!$"
+    .string "我们都很耐心地听其他\n"
+    .string "训练家说话！$"
 
 VermilionCity_PokemonFanClub_Text_SomeoneBragsBragBack::
-	.string "If someone brags, brag right back!$"
+    .string "当有人在晒的时侯，给他晒回去！$"
 
 VermilionCity_PokemonFanClub_Text_ChairmanReallyAdoresHisMons::
-	.string "Our CHAIRMAN really does adore his\n"
-	.string "POKéMON.\p"
-	.string "But the person who is most liked by\n"
-	.string "POKéMON is DAISY, I think.$"
+    .string "我们的主席真的很喜欢他的宝可梦。\p"
+    .string "但是我觉得更喜欢\n"
+    .string "宝可梦的人是奈奈美。$"
