@@ -141,6 +141,20 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
 };
 
 // Functions
+void AIDebugTimerStart()
+{
+    // Set delay timer to count how long it takes for AI to choose action/move
+    gBattleStruct->aiDelayTimer = gMain.vblankCounter1;
+    CycleCountStart();
+}
+
+void AIDebugTimerEnd()
+{
+    // We add to existing to compound multiple calls
+    gBattleStruct->aiDelayFrames += gMain.vblankCounter1 - gBattleStruct->aiDelayTimer;
+    gBattleStruct->aiDelayCycles += CycleCountEnd();
+}
+
 void BattleAI_SetupItems(void)
 {
     u8 *data = (u8 *)gBattleHistory;
@@ -370,6 +384,9 @@ void ComputeBattlerDecisions(enum BattlerId battler)
 
         gAiLogicData->aiCalcInProgress = TRUE;
 
+        if (DEBUG_AI_DELAY_TIMER)
+            AIDebugTimerStart();
+
         // Setup battler and prediction data
         BattleAI_SetupAIData(0xF, battler);
         SetupAIPredictionData(battler, SWITCH_MID_BATTLE_OPTIONAL);
@@ -388,6 +405,9 @@ void ComputeBattlerDecisions(enum BattlerId battler)
         if (isAiBattler)
             BattlerChooseNonMoveAction();
         ModifySwitchAfterMoveScoring(battler);
+
+        if (DEBUG_AI_DELAY_TIMER)
+            AIDebugTimerEnd();
 
         gAiLogicData->aiCalcInProgress = FALSE;
     }
@@ -707,8 +727,10 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
     if (!(gBattleTypeFlags & BATTLE_TYPE_HAS_AI) && !IsWildMonSmart())
         return;
 
-    // Set delay timer to count how long it takes for AI to choose action/move
-    gBattleStruct->aiDelayTimer = gMain.vblankCounter1;
+       gAiLogicData->aiCalcInProgress = TRUE;
+    
+    if (DEBUG_AI_DELAY_TIMER)
+        AIDebugTimerStart();
 
     aiData->weatherHasEffect = HasWeatherEffect();
     weather = AI_GetWeather();
@@ -716,9 +738,6 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
     // get/assume all battler data and simulate AI damage
     battlersCount = gBattlersCount;
 
-    gAiLogicData->aiCalcInProgress = TRUE;
-    if (DEBUG_AI_DELAY_TIMER)
-        CycleCountStart();
     for (enum BattlerId battlerAtk = 0; battlerAtk < battlersCount; battlerAtk++)
     {
         if (!IsBattlerAlive(battlerAtk))
@@ -749,8 +768,8 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
     }
 
     if (DEBUG_AI_DELAY_TIMER)
-        // We add to existing to compound multiple calls
-        gBattleStruct->aiDelayCycles += CycleCountEnd();
+        AIDebugTimerEnd();
+        
     gAiLogicData->aiCalcInProgress = FALSE;
 }
 
@@ -2321,7 +2340,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         //TODO
         break;
     case EFFECT_LOCK_ON:
-        if (gBattleMons[battlerDef].volatiles.lockOn
+        if (gBattleMons[battlerAtk].volatiles.battlerWithSureHit == battlerDef + 1
           || aiData->abilities[battlerAtk] == ABILITY_NO_GUARD
           || aiData->abilities[battlerDef] == ABILITY_NO_GUARD
           || DoesPartnerHaveSameMoveEffect(BATTLE_PARTNER(battlerAtk), battlerDef, move, aiData->partnerMove))
@@ -4696,7 +4715,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
     case EFFECT_OHKO:
         if (GetActiveGimmick(battlerDef) == GIMMICK_DYNAMAX)
             break;
-        else if (gBattleMons[battlerAtk].volatiles.lockOn)
+        else if (gBattleMons[battlerAtk].volatiles.battlerWithSureHit == battlerDef + 1)
             ADJUST_SCORE(BEST_EFFECT);
         break;
     case EFFECT_MEAN_LOOK:
