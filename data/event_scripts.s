@@ -1062,7 +1062,7 @@ EventScript_AfterWhiteOutHeal::
 	lockall
 	msgbox gText_FirstShouldRestoreMonsHealth
 	call EventScript_PkmnCenterNurse_TakeAndHealPkmn
-	call_if_unset FLAG_DEFEATED_RUSTBORO_GYM, EventScript_AfterWhiteOutHealMsgPreRoxanne
+	call_if_unset FLAG_DEFEATED_RUSTBORO_GYM, EventScript_AfterWhiteOutHealMsgPreFirstBoss
 	call_if_set FLAG_DEFEATED_RUSTBORO_GYM, EventScript_AfterWhiteOutHealMsg
 	applymovement VAR_LAST_TALKED, Movement_PkmnCenterNurse_Bow
 	waitmovement 0
@@ -1070,7 +1070,7 @@ EventScript_AfterWhiteOutHeal::
 	releaseall
 	end
 
-EventScript_AfterWhiteOutHealMsgPreRoxanne::
+EventScript_AfterWhiteOutHealMsgPreFirstBoss::
 	msgbox gText_MonsHealedShouldBuyPotions
 	return
 
@@ -1080,6 +1080,7 @@ EventScript_AfterWhiteOutHealMsg::
 
 EventScript_AfterWhiteOutMomHeal::
 	lockall
+	textcolor NPC_TEXT_COLOR_FEMALE
 	applymovement LOCALID_PLAYERS_HOUSE_1F_MOM, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
 	msgbox gText_HadQuiteAnExperienceTakeRest
@@ -1429,7 +1430,7 @@ gText_HadQuiteAnExperienceTakeRest::
 gText_MomExplainHPGetPotions::
 	.string "妈妈：太好了！你和你的\n"
 	.string "宝可梦状态看起来很好。\p"
-	.string "我刚刚收到小田卷博士\n"
+	.string "我刚刚收到{STR_VAR_1}\n"
 	.string "发来的消息。\p"
 	.string "他说宝可梦的精力\n"
 	.string "是用体力来衡量的。\p"
