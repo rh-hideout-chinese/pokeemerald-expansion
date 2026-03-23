@@ -4,6 +4,7 @@
 #include "constants/moves.h"
 #include "constants/trainers.h"
 #include "constants/battle.h"
+#include "constants/pokeball.h"
 #include "difficulty.h"
 #include "debug.h"
 
@@ -62,11 +63,11 @@ struct TrainerMon
     const u8 *ev;
     u32 iv;
     enum Move moves[MAX_MON_MOVES];
-    u16 species;
-    u16 heldItem;
+    enum Species species;
+    enum Item heldItem;
     enum Ability ability;
     u8 lvl;
-    u8 ball;
+    enum PokeBall ball:8;
     u8 friendship;
     u8 nature:5;
     bool8 gender:2;

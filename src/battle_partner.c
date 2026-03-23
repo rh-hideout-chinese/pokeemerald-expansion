@@ -12,7 +12,6 @@
 #include "constants/abilities.h"
 #include "constants/battle_ai.h"
 
-#include "data/partner_parties.h"
 #if !TESTING
 const struct Trainer gBattlePartners[DIFFICULTY_COUNT][PARTNER_COUNT] =
 {
@@ -103,7 +102,8 @@ void FillPartnerParty(u16 trainerId)
             SetMonData(&gPlayerParty[i + 3], MON_DATA_FRIENDSHIP, &(partyData[i].friendship));
             if (partyData[i].ball < POKEBALL_COUNT)
             {
-                SetMonData(&gPlayerParty[i + 3], MON_DATA_POKEBALL, &partyData[i].ball);
+                enum PokeBall ball = partyData[i].ball;
+                SetMonData(&gPlayerParty[i + 3], MON_DATA_POKEBALL, &ball);
             }
             if (partyData[i].nickname != NULL)
             {

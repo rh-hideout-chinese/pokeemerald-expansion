@@ -98,9 +98,9 @@ static void PrintContestantMonName(u8);
 static void PrintContestantMonNameWithColor(u8, u8);
 static u8 CreateJudgeSprite(void);
 static u8 CreateJudgeSpeechBubbleSprite(void);
-static u8 CreateContestantSprite(u16, bool8, u32, u32);
+static u8 CreateContestantSprite(enum Species, bool8, u32, u32);
 static void PrintContestMoveDescription(enum Move move);
-static u16 SanitizeSpecies(u16);
+static enum Species SanitizeSpecies(enum Species);
 static void ContestClearGeneralTextWindow(void);
 static enum Move GetChosenMove(u8);
 static void GetAllChosenMoves(void);
@@ -361,29 +361,29 @@ EWRAM_DATA u8 gCurContestWinnerSaveIdx = 0;
 COMMON_DATA rng_value_t gContestRngValue = {0};
 
 //Text
-const u8 gText_LinkStandby4[] = COMPOUND_STRING("正在等待连接！");
+const u8 gText_LinkStandby4[] = _("正在等待连接！");
 
-const u8 gText_AppealNumWhichMoveWillBePlayed[] = COMPOUND_STRING("第{STR_VAR_1}回合的表演！\n要使用哪个招式呢？");
-const u8 gText_AppealNumButItCantParticipate[] = COMPOUND_STRING("第{STR_VAR_1}回合的表演！\n但是无法参加！");
-const u8 gText_MonAppealedWithMove[] = COMPOUND_STRING("{STR_VAR_1}使用了\n{STR_VAR_2}进行表演！");
-const u8 gText_MonWasWatchingOthers[] = COMPOUND_STRING("{STR_VAR_1}在观察\n其他的宝可梦！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_AllOutOfAppealTime[] = COMPOUND_STRING("表演时间结束！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_JudgeLookedAtMonExpectantly[] = COMPOUND_STRING("评委满怀期待地\n看着{STR_VAR_1}！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_AppealComboWentOverWell[] = COMPOUND_STRING("前后演出的招式组合\n得到了大家的喜爱！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_AppealComboWentOverVeryWell[] = COMPOUND_STRING("前后演出的招式组合\n很受大家喜欢！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_AppealComboWentOverExcellently[] = COMPOUND_STRING("前后演出的招式组合\n特别受大家喜欢！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_MonWasTooNervousToMove[] = COMPOUND_STRING("{STR_VAR_1}因为紧张\n无法使用招式表演了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_CouldntImproveItsCondition[] = COMPOUND_STRING("但是它并没能提升自己的气势……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_BadConditionResultedInWeakAppeal[] = COMPOUND_STRING("它因为气势不行表演得一点也不好……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_MonWasUnaffected[] = COMPOUND_STRING("{STR_VAR_1}完全不为所动！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_RepeatedAppeal[] = COMPOUND_STRING("{STR_VAR_1}因为重复表演，让大家失望了。{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_MonsXWentOverGreat[] = COMPOUND_STRING("{STR_VAR_1}的{STR_VAR_3}表演\n受到了大家的热烈欢迎！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_MonsXDidntGoOverWell[] = COMPOUND_STRING("{STR_VAR_1}的{STR_VAR_3}表演\n在这里不受欢迎……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_MonsXGotTheCrowdGoing[] = COMPOUND_STRING("{STR_VAR_1}的{STR_VAR_3}表演\n让整个会场沸腾了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_MonCantAppealNextTurn[] = COMPOUND_STRING("{STR_VAR_1}无法参加下一次的表演了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_AttractedCrowdsAttention[] = COMPOUND_STRING("吸引了观众们的注意！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_CrowdContinuesToWatchMon[] = COMPOUND_STRING("观众们一直持续关注着{STR_VAR_3}！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
-const u8 gText_MonsMoveIsIgnored[] = COMPOUND_STRING("{STR_VAR_1}的{STR_VAR_2}被完全无视了……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AppealNumWhichMoveWillBePlayed[] = _("第{STR_VAR_1}回合的表演！\n要使用哪个招式呢？");
+const u8 gText_AppealNumButItCantParticipate[] = _("第{STR_VAR_1}回合的表演！\n但是无法参加！");
+const u8 gText_MonAppealedWithMove[] = _("{STR_VAR_1}使用了\n{STR_VAR_2}进行表演！");
+const u8 gText_MonWasWatchingOthers[] = _("{STR_VAR_1}在观察\n其他的宝可梦！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AllOutOfAppealTime[] = _("表演时间结束！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_JudgeLookedAtMonExpectantly[] = _("评委满怀期待地\n看着{STR_VAR_1}！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AppealComboWentOverWell[] = _("前后演出的招式组合\n得到了大家的喜爱！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AppealComboWentOverVeryWell[] = _("前后演出的招式组合\n很受大家喜欢！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AppealComboWentOverExcellently[] = _("前后演出的招式组合\n特别受大家喜欢！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonWasTooNervousToMove[] = _("{STR_VAR_1}因为紧张\n无法使用招式表演了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_CouldntImproveItsCondition[] = _("但是它并没能提升自己的气势……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_BadConditionResultedInWeakAppeal[] = _("它因为气势不行表演得一点也不好……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonWasUnaffected[] = _("{STR_VAR_1}完全不为所动！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_RepeatedAppeal[] = _("{STR_VAR_1}因为重复表演，让大家失望了。{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonsXWentOverGreat[] = _("{STR_VAR_1}的{STR_VAR_3}表演\n受到了大家的热烈欢迎！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonsXDidntGoOverWell[] = _("{STR_VAR_1}的{STR_VAR_3}表演\n在这里不受欢迎……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonsXGotTheCrowdGoing[] = _("{STR_VAR_1}的{STR_VAR_3}表演\n让整个会场沸腾了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonCantAppealNextTurn[] = _("{STR_VAR_1}无法参加下一次的表演了！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_AttractedCrowdsAttention[] = _("吸引了观众们的注意！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_CrowdContinuesToWatchMon[] = _("观众们一直持续关注着{STR_VAR_3}！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
+const u8 gText_MonsMoveIsIgnored[] = _("{STR_VAR_1}的{STR_VAR_2}被完全无视了……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
 
 static const u8 sSliderHeartYPositions[CONTESTANT_COUNT] =
 {
@@ -3150,7 +3150,7 @@ static u8 CreateJudgeSpeechBubbleSprite(void)
     return spriteId;
 }
 
-static u8 CreateContestantSprite(u16 species, bool8 isShiny, u32 personality, u32 index)
+static u8 CreateContestantSprite(enum Species species, bool8 isShiny, u32 personality, u32 index)
 {
     u8 spriteId;
     species = SanitizeSpecies(species);
@@ -3176,7 +3176,7 @@ static u8 CreateContestantSprite(u16 species, bool8 isShiny, u32 personality, u3
     return spriteId;
 }
 
-bool8 IsSpeciesNotUnown(u16 species)
+bool8 IsSpeciesNotUnown(enum Species species)
 {
     if (species == SPECIES_UNOWN)
         return FALSE;
@@ -5310,7 +5310,7 @@ static u16 SanitizeMove(enum Move move)
     return move;
 }
 
-static u16 SanitizeSpecies(u16 species)
+static enum Species SanitizeSpecies(enum Species species)
 {
     assertf(species < NUM_SPECIES, "invalid species: %d", species)
     {
@@ -5323,7 +5323,7 @@ static u16 SanitizeSpecies(u16 species)
 static void SetMoveSpecificAnimData(u8 contestant)
 {
     enum Move move = SanitizeMove(eContestantStatus[contestant].currMove);
-    u16 species = SanitizeSpecies(gContestMons[contestant].species);
+    enum Species species = SanitizeSpecies(gContestMons[contestant].species);
     u8 targetContestant;
 
     memset(&gContestResources->moveAnim->species, 0, 20);
