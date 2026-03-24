@@ -9,7 +9,7 @@
 3. 执行下面的命令以安装需要的依赖
 
    ```bash
-   pacman -S mingw-w64-x86_64-arm-none-eabi-toolchain mingw-w64-x86_64-toolchain mingw-w64-x86_64-libpng mingw-w64-x86_64-python make
+   pacman -S mingw-w64-x86_64-arm-none-eabi-toolchain mingw-w64-x86_64-toolchain mingw-w64-x86_64-libpng mingw-w64-x86_64-freeimage mingw-w64-x86_64-python make
    ```
 
 ## 编译

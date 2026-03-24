@@ -76,7 +76,7 @@
 4. 执行下面的命令以安装编译pokeemerald-expansion的依赖项：
 
     ```bash
-    sudo apt install build-essential binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi git libpng-dev python3
+    sudo apt install build-essential binutils-arm-none-eabi gcc-arm-none-eabi libnewlib-arm-none-eabi git libpng-dev libfreeimage-dev python3
     ```
 
 ## 在WSL1中设置源码存放位置

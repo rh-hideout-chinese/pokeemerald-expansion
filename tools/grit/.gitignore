@@ -1,0 +1,6 @@
+.vs/
+.vscode/
+build/
+*.o
+*.exe
+grit
