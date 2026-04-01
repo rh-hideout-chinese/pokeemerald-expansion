@@ -3,6 +3,7 @@ ApricornTreeScript::
 	faceplayer
 	message ApricornTree_Text_Intro
 	waitmessage
+	waitbuttonpress
 	special ObjectEventInteractionGetApricornTreeData
 	goto_if_gt VAR_0x8005, 0, ApricornTree_EventScript_WantToPick
 	message ApricornTree_Text_Empty
@@ -66,8 +67,8 @@ ApricornTree_Text_Empty:
 	.string "树上没有球果……$"
 
 ApricornTree_Text_WantToPick:
-	.string "……是{STR_VAR_2}{STR_VAR_1}！\p"
-	.string "要摘下这颗\n"
+	.string "……是{STR_VAR_2}{STR_VAR_1}！\n"
+	.string "要摘下这颗\l"
 	.string "{STR_VAR_1}吗？$"
 
 ApricornTree_Text_PickedTheApricorn:
@@ -81,9 +82,9 @@ ApricornTree_Text_PutAwayApricorn:
 
 ApricornTree_Text_PocketFull:
 	.string "背包的{STR_VAR_3}口袋已经满了。\p"
-	.string "{PLAYER}只好放弃了\p"
+	.string "{PLAYER}只好放弃了\n"
 	.string "{STR_VAR_1}……$"
 
 ApricornTree_Text_ApricornLeftUnpicked:
-	.string "{PLAYER}放弃了\p"
+	.string "{PLAYER}放弃了\n"
 	.string "{STR_VAR_1}……$"
