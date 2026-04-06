@@ -6,7 +6,7 @@ static const struct MenuAction MultichoiceList_BrineyOnDewford[] =
     {gText_Exit},
 };
 
-const u8 gText_Info2[] = _("INFO");
+const u8 gText_Info2[] = _("听说明");
 
 static const struct MenuAction MultichoiceList_EnterInfo[] =
 {
@@ -33,9 +33,9 @@ static const struct MenuAction MultichoiceList_ContestType[] =
     {gText_Exit},
 };
 
-const u8 gText_Decoration2[] = _("DECORATION");
-const u8 gText_PackUp[] = _("PACK UP");
-const u8 gText_Registry[] = _("REGISTRY");
+const u8 gText_Decoration2[] = _("装饰");
+const u8 gText_PackUp[] = _("收回");
+const u8 gText_Registry[] = _("名单");
 
 static const struct MenuAction MultichoiceList_BasePCWithRegistry[] =
 {
@@ -294,7 +294,7 @@ static const struct MenuAction MultichoiceList_HowsFishing[] =
     {COMPOUND_STRING("不太好")},
 };
 
-const u8 gText_LilycoveCity[] = _("LILYCOVE CITY");
+const u8 gText_LilycoveCity[] = _("水静市");
 
 static const struct MenuAction MultichoiceList_SSTidalSlateportWithBF[] =
 {
@@ -332,10 +332,10 @@ static const struct MenuAction MultichoiceList_Floors[] =
     {gText_Exit},
 };
 
-const u8 gText_RedShard[] = _("RED SHARD");
-const u8 gText_YellowShard[] = _("YELLOW SHARD");
-const u8 gText_BlueShard[] = _("BLUE SHARD");
-const u8 gText_GreenShard[] = _("GREEN SHARD");
+const u8 gText_RedShard[] = _("红色碎片");
+const u8 gText_YellowShard[] = _("黄色碎片");
+const u8 gText_BlueShard[] = _("蓝色碎片");
+const u8 gText_GreenShard[] = _("绿色碎片");
 
 static const struct MenuAction MultichoiceList_ShardsR[] =
 {
@@ -444,12 +444,12 @@ static const struct MenuAction MultichoiceList_ShardsRYBG[] =
     {gText_Exit},
 };
 
-const u8 gText_Opponent[] = _("OPPONENT");
-const u8 gText_Tourney_Tree[] = _("TOURNEY TREE");
-const u8 gText_ReadyToStart[] = _("READY TO START");
-const u8 gText_Record2[] = _("RECORD");
-const u8 gText_Rest[] = _("REST");
-const u8 gText_Retire[] = _("RETIRE");
+const u8 gText_Opponent[] = _("对手");
+const u8 gText_Tourney_Tree[] = _("比赛进程表");
+const u8 gText_ReadyToStart[] = _("准备开始");
+const u8 gText_Record2[] = _("记录");
+const u8 gText_Rest[] = _("暂停");
+const u8 gText_Retire[] = _("结束");
 
 static const struct MenuAction MultichoiceList_TourneyWithRecord[] =
 {
@@ -476,9 +476,9 @@ static const struct MenuAction MultichoiceList_Tent[] =
     {COMPOUND_STRING("蓝帐篷")},
 };
 
-const u8 gText_TradeCenter[] = _("TRADE CENTER");
-const u8 gText_Colosseum[] = _("COLOSSEUM");
-const u8 gText_RecordCorner[] = _("RECORD CORNER");
+const u8 gText_TradeCenter[] = _("交换中心");
+const u8 gText_Colosseum[] = _("竞技场");
+const u8 gText_RecordCorner[] = _("联机俱乐部");
 
 static const struct MenuAction MultichoiceList_LinkServicesNoBerry[] =
 {
@@ -504,7 +504,7 @@ static const struct MenuAction MultichoiceList_BattleMode[] =
     {gText_Exit},
 };
 
-const u8 gText_BerryCrush3[] = _("BERRY CRUSH");
+const u8 gText_BerryCrush3[] = _("树果混合");
 
 static const struct MenuAction MultichoiceList_LinkServicesNoRecord[] =
 {
@@ -655,10 +655,10 @@ static const struct MenuAction MultichoiceList_FrontierPassInfo[] =
     {gText_Exit},
 };
 
-const u8 gText_BattleRules[] = _("BATTLE RULES");
-const u8 gText_JudgeMind[] = _("JUDGE: MIND");
-const u8 gText_JudgeSkill[] = _("JUDGE: SKILL");
-const u8 gText_JudgeBody[] = _("JUDGE: BODY");
+const u8 gText_BattleRules[] = _("对战规则");
+const u8 gText_JudgeMind[] = _("判定：心");
+const u8 gText_JudgeSkill[] = _("判定：技");
+const u8 gText_JudgeBody[] = _("判定：体");
 
 static const struct MenuAction MultichoiceList_BattleArenaRules[] =
 {
@@ -686,10 +686,10 @@ static const struct MenuAction MultichoiceList_BattleDomeRules[] =
     {gText_Exit},
 };
 
-const u8 gText_BasicRules[] = _("BASIC RULES");
-const u8 gText_SwapPartners[] = _("SWAP: PARTNER");
-const u8 gText_SwapNumber[] = _("SWAP: NUMBER");
-const u8 gText_SwapNotes[] = _("SWAP: NOTES");
+const u8 gText_BasicRules[] = _("基本规则");
+const u8 gText_SwapPartners[] = _("交换：对象");
+const u8 gText_SwapNumber[] = _("交换：数量");
+const u8 gText_SwapNotes[] = _("交换：备注");
 
 static const struct MenuAction MultichoiceList_BattleFactoryRules[] =
 {
@@ -728,7 +728,7 @@ static const struct MenuAction MultichoiceList_BattlePikeRules[] =
     {gText_Exit},
 };
 
-const u8 gText_GoOn[] = _("GO ON");
+const u8 gText_GoOn[] = _("继续");
 
 static const struct MenuAction MultichoiceList_GoOnRecordRestRetire[] =
 {
@@ -1304,23 +1304,23 @@ const u8 *const gStdStrings[] =
     [STDSTRING_SMART] = gText_Smart,
     [STDSTRING_TOUGH] = gText_Tough,
     [STDSTRING_NORMAL] = gText_Normal,
-    [STDSTRING_SUPER] = COMPOUND_STRING("SUPER"),
-    [STDSTRING_HYPER] = COMPOUND_STRING("HYPER"),
-    [STDSTRING_MASTER] = COMPOUND_STRING("MASTER"),
-    [STDSTRING_COOL2] = COMPOUND_STRING("COOL"),
-    [STDSTRING_BEAUTY2] = COMPOUND_STRING("BEAUTY"),
-    [STDSTRING_CUTE2] = COMPOUND_STRING("CUTE"),
-    [STDSTRING_SMART2] = COMPOUND_STRING("SMART"),
-    [STDSTRING_TOUGH2] = COMPOUND_STRING("TOUGH"),
-    [STDSTRING_ITEMS] = COMPOUND_STRING("ITEMS"),
-    [STDSTRING_KEYITEMS] = COMPOUND_STRING("KEY ITEMS"),
-    [STDSTRING_POKEBALLS] = COMPOUND_STRING("POKé BALLS"),
-    [STDSTRING_TMHMS] = COMPOUND_STRING("TMs & HMs"),
-    [STDSTRING_BERRIES] = COMPOUND_STRING("BERRIES"),
-    [STDSTRING_SINGLE] = COMPOUND_STRING("SINGLE"),
-    [STDSTRING_DOUBLE] = COMPOUND_STRING("DOUBLE"),
-    [STDSTRING_MULTI] = COMPOUND_STRING("MULTI"),
-    [STDSTRING_MULTI_LINK] = COMPOUND_STRING("MULTI-LINK"),
+    [STDSTRING_SUPER] = COMPOUND_STRING("高手级"),
+    [STDSTRING_HYPER] = COMPOUND_STRING("究极级"),
+    [STDSTRING_MASTER] = COMPOUND_STRING("大师级"),
+    [STDSTRING_COOL2] = COMPOUND_STRING("帅气"),
+    [STDSTRING_BEAUTY2] = COMPOUND_STRING("美丽"),
+    [STDSTRING_CUTE2] = COMPOUND_STRING("可爱"),
+    [STDSTRING_SMART2] = COMPOUND_STRING("聪明"),
+    [STDSTRING_TOUGH2] = COMPOUND_STRING("强壮"),
+    [STDSTRING_ITEMS] = COMPOUND_STRING("道  具"),
+    [STDSTRING_KEYITEMS] = COMPOUND_STRING("重要物品"),
+    [STDSTRING_POKEBALLS] = COMPOUND_STRING("精 灵 球"),
+    [STDSTRING_TMHMS] = COMPOUND_STRING("招式学习器"),
+    [STDSTRING_BERRIES] = COMPOUND_STRING("树  果"),
+    [STDSTRING_SINGLE] = COMPOUND_STRING("单人"),
+    [STDSTRING_DOUBLE] = COMPOUND_STRING("双人"),
+    [STDSTRING_MULTI] = COMPOUND_STRING("多人"),
+    [STDSTRING_MULTI_LINK] = COMPOUND_STRING("多人连线"),
     [STDSTRING_BATTLE_TOWER] = gText_BattleTower2,
     [STDSTRING_BATTLE_DOME] = gText_BattleDome,
     [STDSTRING_BATTLE_FACTORY] = gText_BattleFactory,
@@ -1415,8 +1415,8 @@ static const u8 *const sSeagallopDestStrings[] = {
     [SEAGALLOP_ONE_ISLAND]     = gText_OneIsland,
     [SEAGALLOP_TWO_ISLAND]     = gText_TwoIsland,
     [SEAGALLOP_THREE_ISLAND]   = gText_ThreeIsland,
-    [SEAGALLOP_FOUR_ISLAND]    = COMPOUND_STRING("FOUR ISLAND"),
-    [SEAGALLOP_FIVE_ISLAND]    = COMPOUND_STRING("FIVE ISLAND"),
-    [SEAGALLOP_SIX_ISLAND]     = COMPOUND_STRING("SIX ISLAND"),
-    [SEAGALLOP_SEVEN_ISLAND]   = COMPOUND_STRING("SEVEN ISLAND"),
+    [SEAGALLOP_FOUR_ISLAND]    = COMPOUND_STRING("第4岛"),
+    [SEAGALLOP_FIVE_ISLAND]    = COMPOUND_STRING("第5岛"),
+    [SEAGALLOP_SIX_ISLAND]     = COMPOUND_STRING("第6岛"),
+    [SEAGALLOP_SEVEN_ISLAND]   = COMPOUND_STRING("第7岛"),
 };

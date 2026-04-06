@@ -8,8 +8,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DESK,
         .price = 0,
-        .description = DecorDesc_SMALL_DESK,
+        .description = COMPOUND_STRING(
+            "无"),
         .tiles = DecorGfx_SMALL_DESK,
+        .icon = {gItemIcon_QuestionMark, gItemIconPalette_QuestionMark},
     },
 
     [DECOR_SMALL_DESK] =
@@ -20,8 +22,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DESK,
         .price = 3000,
-        .description = DecorDesc_SMALL_DESK,
+        .description = COMPOUND_STRING(
+            "单人尺寸的小型\n桌子"),
         .tiles = DecorGfx_SMALL_DESK,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_POKEMON_DESK] =
@@ -32,8 +36,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DESK,
         .price = 3000,
-        .description = DecorDesc_POKEMON_DESK,
+        .description = COMPOUND_STRING(
+            "有著精灵球外形的\n小型桌子"),
         .tiles = DecorGfx_POKEMON_DESK,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_HEAVY_DESK] =
@@ -44,8 +50,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x2,
         .category = DECORCAT_DESK,
         .price = 6000,
-        .description = DecorDesc_HEAVY_DESK,
+        .description = COMPOUND_STRING(
+            "用铁做成的大型\n桌子，上面可放置\n东西"),
         .tiles = DecorGfx_HEAVY_DESK,
+        .icon = {gDecorIcon_HeavyDesk, gDecorIconPalette_HeavyDesk},
     },
 
     [DECOR_RAGGED_DESK] =
@@ -56,8 +64,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x2,
         .category = DECORCAT_DESK,
         .price = 6000,
-        .description = DecorDesc_RAGGED_DESK,
+        .description = COMPOUND_STRING(
+            "用木头做成的大型\n桌子，上面可放置\n东西"),
         .tiles = DecorGfx_RAGGED_DESK,
+        .icon = {gDecorIcon_RaggedDesk, gDecorIconPalette_RaggedDesk},
     },
 
     [DECOR_COMFORT_DESK] =
@@ -68,8 +78,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x2,
         .category = DECORCAT_DESK,
         .price = 6000,
-        .description = DecorDesc_COMFORT_DESK,
+        .description = COMPOUND_STRING(
+            "用叶子做成的大型\n桌子，上面可放置\n东西"),
         .tiles = DecorGfx_COMFORT_DESK,
+        .icon = {gDecorIcon_ComfortDesk, gDecorIconPalette_ComfortDesk},
     },
 
     [DECOR_PRETTY_DESK] =
@@ -80,8 +92,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_DESK,
         .price = 9000,
-        .description = DecorDesc_PRETTY_DESK,
+        .description = COMPOUND_STRING(
+            "用玻璃做成的巨大\n桌子，可放置许多\n东西"),
         .tiles = DecorGfx_PRETTY_DESK,
+        .icon = {gDecorIcon_PrettyDesk, gDecorIconPalette_PrettyDesk},
     },
 
     [DECOR_BRICK_DESK] =
@@ -92,8 +106,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_DESK,
         .price = 9000,
-        .description = DecorDesc_BRICK_DESK,
+        .description = COMPOUND_STRING(
+            "用砖块做成的巨大\n桌子，可放置许多\n东西"),
         .tiles = DecorGfx_BRICK_DESK,
+        .icon = {gDecorIcon_BrickDesk, gDecorIconPalette_BrickDesk},
     },
 
     [DECOR_CAMP_DESK] =
@@ -104,8 +120,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_DESK,
         .price = 9000,
-        .description = DecorDesc_CAMP_DESK,
+        .description = COMPOUND_STRING(
+            "用圆木做成的巨大\n桌子，可放置许多\n东西"),
         .tiles = DecorGfx_CAMP_DESK,
+        .icon = {gDecorIcon_CampDesk, gDecorIconPalette_CampDesk},
     },
 
     [DECOR_HARD_DESK] =
@@ -116,8 +134,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_DESK,
         .price = 9000,
-        .description = DecorDesc_HARD_DESK,
+        .description = COMPOUND_STRING(
+            "用石头做成的巨大\n桌子，可放置许多\n东西"),
         .tiles = DecorGfx_HARD_DESK,
+        .icon = {gDecorIcon_HardDesk, gDecorIconPalette_HardDesk},
     },
 
     [DECOR_SMALL_CHAIR] =
@@ -128,8 +148,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_SMALL_CHAIR,
+        .description = COMPOUND_STRING(
+            "只能一个人坐的\n小椅子"),
         .tiles = DecorGfx_SMALL_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_POKEMON_CHAIR] =
@@ -140,8 +162,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_POKEMON_CHAIR,
+        .description = COMPOUND_STRING(
+            "有着精灵球模样的\n小型椅子"),
         .tiles = DecorGfx_POKEMON_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_HEAVY_CHAIR] =
@@ -152,8 +176,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_HEAVY_CHAIR,
+        .description = COMPOUND_STRING(
+            "用铁做成的小型\n椅子"),
         .tiles = DecorGfx_HEAVY_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_PRETTY_CHAIR] =
@@ -164,8 +190,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_PRETTY_CHAIR,
+        .description = COMPOUND_STRING(
+            "用木头做成的小型\n椅子"),
         .tiles = DecorGfx_PRETTY_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_COMFORT_CHAIR] =
@@ -176,8 +204,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_COMFORT_CHAIR,
+        .description = COMPOUND_STRING(
+            "用叶子做成的小型\n椅子"),
         .tiles = DecorGfx_COMFORT_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_RAGGED_CHAIR] =
@@ -188,8 +218,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_RAGGED_CHAIR,
+        .description = COMPOUND_STRING(
+            "用玻璃做成的小型\n椅子"),
         .tiles = DecorGfx_RAGGED_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_BRICK_CHAIR] =
@@ -200,8 +232,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_BRICK_CHAIR,
+        .description = COMPOUND_STRING(
+            "用砖块做成的小型\n椅子"),
         .tiles = DecorGfx_BRICK_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_CAMP_CHAIR] =
@@ -212,8 +246,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_CAMP_CHAIR,
+        .description = COMPOUND_STRING(
+            "用圆木做成的小型\n椅子"),
         .tiles = DecorGfx_CAMP_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_HARD_CHAIR] =
@@ -224,8 +260,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CHAIR,
         .price = 2000,
-        .description = DecorDesc_HARD_CHAIR,
+        .description = COMPOUND_STRING(
+            "用石头做成的小型\n椅子"),
         .tiles = DecorGfx_HARD_CHAIR,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_RED_PLANT] =
@@ -236,8 +274,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_PLANT,
         .price = 3000,
-        .description = DecorDesc_RED_PLANT,
+        .description = COMPOUND_STRING(
+            "种着鲜红花朵的\n盆栽"),
         .tiles = DecorGfx_RED_PLANT,
+        .icon = {gDecorIcon_RedPlant, gDecorIconPalette_RedPlant},
     },
 
     [DECOR_TROPICAL_PLANT] =
@@ -248,8 +288,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_PLANT,
         .price = 3000,
-        .description = DecorDesc_TROPICAL_PLANT,
+        .description = COMPOUND_STRING(
+            "种着南国花朵的\n盆栽"),
         .tiles = DecorGfx_TROPICAL_PLANT,
+        .icon = {gDecorIcon_TropicalPlant, gDecorIconPalette_TropicalPlant},
     },
 
     [DECOR_PRETTY_FLOWERS] =
@@ -260,8 +302,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_PLANT,
         .price = 3000,
-        .description = DecorDesc_PRETTY_FLOWERS,
+        .description = COMPOUND_STRING(
+            "种着可爱花朵的\n盆栽"),
         .tiles = DecorGfx_PRETTY_FLOWERS,
+        .icon = {gDecorIcon_PrettyFlowers, gDecorIconPalette_PrettyFlowers},
     },
 
     [DECOR_COLORFUL_PLANT] =
@@ -272,8 +316,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x2,
         .category = DECORCAT_PLANT,
         .price = 5000,
-        .description = DecorDesc_COLORFUL_PLANT,
+        .description = COMPOUND_STRING(
+            "栽着各式各样花朵\n的大型盆栽"),
         .tiles = DecorGfx_COLORFUL_PLANT,
+        .icon = {gDecorIcon_ColorfulPlant, gDecorIconPalette_ColorfulPlant},
     },
 
     [DECOR_BIG_PLANT] =
@@ -284,8 +330,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x2,
         .category = DECORCAT_PLANT,
         .price = 5000,
-        .description = DecorDesc_BIG_PLANT,
+        .description = COMPOUND_STRING(
+            "种著像雨伞般树木\n的大型盆栽"),
         .tiles = DecorGfx_BIG_PLANT,
+        .icon = {gDecorIcon_BigPlant, gDecorIconPalette_BigPlant},
     },
 
     [DECOR_GORGEOUS_PLANT] =
@@ -296,8 +344,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x2,
         .category = DECORCAT_PLANT,
         .price = 5000,
-        .description = DecorDesc_GORGEOUS_PLANT,
+        .description = COMPOUND_STRING(
+            "种著高大树木的\n大型盆栽"),
         .tiles = DecorGfx_GORGEOUS_PLANT,
+        .icon = {gDecorIcon_GorgeousPlant, gDecorIconPalette_GorgeousPlant},
     },
 
     [DECOR_RED_BRICK] =
@@ -308,8 +358,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 500,
-        .description = DecorDesc_RED_BRICK,
+        .description = COMPOUND_STRING(
+            "红色的砖块，\n上面可放置东西"),
         .tiles = DecorGfx_RED_BRICK,
+        .icon = {gDecorIcon_RedBrick, gDecorIconPalette_RedBrick},
     },
 
     [DECOR_YELLOW_BRICK] =
@@ -320,8 +372,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 500,
-        .description = DecorDesc_YELLOW_BRICK,
+        .description = COMPOUND_STRING(
+            "黄色的砖块，\n上面可放置东西"),
         .tiles = DecorGfx_YELLOW_BRICK,
+        .icon = {gDecorIcon_YellowBrick, gDecorIconPalette_YellowBrick},
     },
 
     [DECOR_BLUE_BRICK] =
@@ -332,8 +386,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 500,
-        .description = DecorDesc_BLUE_BRICK,
+        .description = COMPOUND_STRING(
+            "蓝色的砖块，\n上面可放置东西"),
         .tiles = DecorGfx_BLUE_BRICK,
+        .icon = {gDecorIcon_BlueBrick, gDecorIconPalette_BlueBrick},
     },
 
     [DECOR_RED_BALLOON] =
@@ -344,8 +400,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 500,
-        .description = DecorDesc_RED_BALLOON,
+        .description = COMPOUND_STRING(
+            "装有水的红色气球\n，踩上去就会破掉"),
         .tiles = DecorGfx_RED_BALLOON,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_BLUE_BALLOON] =
@@ -356,8 +414,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 500,
-        .description = DecorDesc_BLUE_BALLOON,
+        .description = COMPOUND_STRING(
+            "装有水的蓝色气球\n，踩上去就会破掉"),
         .tiles = DecorGfx_BLUE_BALLOON,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_YELLOW_BALLOON] =
@@ -368,8 +428,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 500,
-        .description = DecorDesc_YELLOW_BALLOON,
+        .description = COMPOUND_STRING(
+            "装有水的黄色气球\n，踩上去就会破掉"),
         .tiles = DecorGfx_YELLOW_BALLOON,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_RED_TENT] =
@@ -380,8 +442,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_ORNAMENT,
         .price = 10000,
-        .description = DecorDesc_RED_TENT,
+        .description = COMPOUND_STRING(
+            "大型的红色账篷，\n可以进入里面"),
         .tiles = DecorGfx_RED_TENT,
+        .icon = {gDecorIcon_RedTent, gDecorIconPalette_RedTent},
     },
 
     [DECOR_BLUE_TENT] =
@@ -392,8 +456,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_ORNAMENT,
         .price = 10000,
-        .description = DecorDesc_BLUE_TENT,
+        .description = COMPOUND_STRING(
+            "大型的蓝色账篷，\n可以进入里面"),
         .tiles = DecorGfx_BLUE_TENT,
+        .icon = {gDecorIcon_BlueTent, gDecorIconPalette_BlueTent},
     },
 
     [DECOR_SOLID_BOARD] =
@@ -404,8 +470,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 3000,
-        .description = DecorDesc_SOLID_BOARD,
+        .description = COMPOUND_STRING(
+            "放在洞穴的上方\n的话就可以走到\n对面去"),
         .tiles = DecorGfx_SOLID_BOARD,
+        .icon = {gDecorIcon_SolidBoard, gDecorIconPalette_SolidBoard},
     },
 
     [DECOR_SLIDE] =
@@ -416,8 +484,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x4,
         .category = DECORCAT_ORNAMENT,
         .price = 8000,
-        .description = DecorDesc_SLIDE,
+        .description = COMPOUND_STRING(
+            "从台子上方可以\n滑下来"),
         .tiles = DecorGfx_SLIDE,
+        .icon = {gDecorIcon_Slide, gDecorIconPalette_Slide},
     },
 
     [DECOR_FENCE_LENGTH] =
@@ -428,8 +498,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 500,
-        .description = DecorDesc_FENCE_LENGTH,
+        .description = COMPOUND_STRING(
+            "小型的栅栏，\n无法加以通过"),
         .tiles = DecorGfx_FENCE_LENGTH,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_FENCE_WIDTH] =
@@ -440,8 +512,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 500,
-        .description = DecorDesc_FENCE_WIDTH,
+        .description = COMPOUND_STRING(
+            "小型的栅栏，\n无法加以通过"),
         .tiles = DecorGfx_FENCE_WIDTH,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_TIRE] =
@@ -452,8 +526,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x2,
         .category = DECORCAT_ORNAMENT,
         .price = 800,
-        .description = DecorDesc_TIRE,
+        .description = COMPOUND_STRING(
+            "老旧的大型轮胎，\n上面可放置东西"),
         .tiles = DecorGfx_TIRE,
+        .icon = {gDecorIcon_Tire, gDecorIconPalette_Tire},
     },
 
     [DECOR_STAND] =
@@ -464,8 +540,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_4x2,
         .category = DECORCAT_ORNAMENT,
         .price = 7000,
-        .description = DecorDesc_STAND,
+        .description = COMPOUND_STRING(
+            "踩著阶梯就可以\n爬到台上"),
         .tiles = DecorGfx_STAND,
+        .icon = {gDecorIcon_Stand, gDecorIconPalette_Stand},
     },
 
     [DECOR_MUD_BALL] =
@@ -476,8 +554,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 200,
-        .description = DecorDesc_MUD_BALL,
+        .description = COMPOUND_STRING(
+            "圆形的泥巴丸子，\n一踩上去就会破掉"),
         .tiles = DecorGfx_MUD_BALL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_BREAKABLE_DOOR] =
@@ -488,8 +568,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 3000,
-        .description = DecorDesc_BREAKABLE_DOOR,
+        .description = COMPOUND_STRING(
+            "可以穿越通过的\n奇怪门板"),
         .tiles = DecorGfx_BREAKABLE_DOOR,
+        .icon = {gDecorIcon_BreakableDoor, gDecorIconPalette_BreakableDoor},
     },
 
     [DECOR_SAND_ORNAMENT] =
@@ -500,8 +582,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 3000,
-        .description = DecorDesc_SAND_ORNAMENT,
+        .description = COMPOUND_STRING(
+            "一碰触就会崩塌的\n摆饰物品"),
         .tiles = DecorGfx_SAND_ORNAMENT,
+        .icon = {gDecorIcon_SandOrnament, gDecorIconPalette_SandOrnament},
     },
 
     [DECOR_SILVER_SHIELD] =
@@ -512,8 +596,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 0,
-        .description = DecorDesc_SILVER_SHIELD,
+        .description = COMPOUND_STRING(
+            "在对战塔战胜\n50人的纪念奖牌"),
         .tiles = DecorGfx_SILVER_SHIELD,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_GOLD_SHIELD] =
@@ -524,8 +610,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 0,
-        .description = DecorDesc_GOLD_SHIELD,
+        .description = COMPOUND_STRING(
+            "在对战塔战胜\n100人的纪念奖牌"),
         .tiles = DecorGfx_GOLD_SHIELD,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_GLASS_ORNAMENT] =
@@ -536,8 +624,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_ORNAMENT,
         .price = 0,
-        .description = DecorDesc_GLASS_ORNAMENT,
+        .description = COMPOUND_STRING(
+            "以玻璃依照美术馆\n里的知名雕刻模仿\n制作而成的东西"),
         .tiles = DecorGfx_GLASS_ORNAMENT,
+        .icon = {gDecorIcon_GlassOrnament, gDecorIconPalette_GlassOrnament},
     },
 
     [DECOR_TV] =
@@ -548,8 +638,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 3000,
-        .description = DecorDesc_TV,
+        .description = COMPOUND_STRING(
+            "灰色的小型玩具\n电视机"),
         .tiles = DecorGfx_TV,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_ROUND_TV] =
@@ -560,8 +652,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 4000,
-        .description = DecorDesc_ROUND_TV,
+        .description = COMPOUND_STRING(
+            "以橡实果的样子\n所制作的玩具\n电视机"),
         .tiles = DecorGfx_ROUND_TV,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_CUTE_TV] =
@@ -572,8 +666,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_ORNAMENT,
         .price = 4000,
-        .description = DecorDesc_CUTE_TV,
+        .description = COMPOUND_STRING(
+            "以向尾喵的样子\n所制作的玩具\n电视机"),
         .tiles = DecorGfx_CUTE_TV,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_GLITTER_MAT] =
@@ -584,8 +680,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 2000,
-        .description = DecorDesc_GLITTER_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去之后会\n闪亮亮的神奇地毯"),
         .tiles = DecorGfx_GLITTER_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_JUMP_MAT] =
@@ -596,8 +694,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 2000,
-        .description = DecorDesc_JUMP_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去之后会\n跳跃的恶作剧地毯"),
         .tiles = DecorGfx_JUMP_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SPIN_MAT] =
@@ -608,8 +708,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 2000,
-        .description = DecorDesc_SPIN_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去之后会\n旋转的恶作剧地毯"),
         .tiles = DecorGfx_SPIN_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_C_LOW_NOTE_MAT] =
@@ -620,8 +722,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 500,
-        .description = DecorDesc_C_LOW_NOTE_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去后会发出\n低音Do声的地毯"),
         .tiles = DecorGfx_C_LOW_NOTE_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_D_NOTE_MAT] =
@@ -632,8 +736,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 500,
-        .description = DecorDesc_D_NOTE_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去后会发出\nRe声的地毯"),
         .tiles = DecorGfx_D_NOTE_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_E_NOTE_MAT] =
@@ -644,8 +750,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 500,
-        .description = DecorDesc_E_NOTE_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去后会发出\nMi声的地毯"),
         .tiles = DecorGfx_E_NOTE_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_F_NOTE_MAT] =
@@ -656,8 +764,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 500,
-        .description = DecorDesc_F_NOTE_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去后会发出\nFa声的地毯"),
         .tiles = DecorGfx_F_NOTE_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_G_NOTE_MAT] =
@@ -668,8 +778,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 500,
-        .description = DecorDesc_G_NOTE_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去后会发出\nSo声的地毯"),
         .tiles = DecorGfx_G_NOTE_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_A_NOTE_MAT] =
@@ -680,8 +792,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 500,
-        .description = DecorDesc_A_NOTE_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去后会发出\nLa声的地毯"),
         .tiles = DecorGfx_A_NOTE_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_B_NOTE_MAT] =
@@ -692,8 +806,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 500,
-        .description = DecorDesc_B_NOTE_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去后会发出Ti声的地毯"),
         .tiles = DecorGfx_B_NOTE_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_C_HIGH_NOTE_MAT] =
@@ -704,8 +820,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_MAT,
         .price = 500,
-        .description = DecorDesc_C_HIGH_NOTE_MAT,
+        .description = COMPOUND_STRING(
+            "踩上去后会发出\n高音Do声的地毯"),
         .tiles = DecorGfx_C_HIGH_NOTE_MAT,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SURF_MAT] =
@@ -716,8 +834,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_MAT,
         .price = 4000,
-        .description = DecorDesc_SURF_MAT,
+        .description = COMPOUND_STRING(
+            "以冲浪形象制作的\n地毯，上面可放置\n东西"),
         .tiles = DecorGfx_SURF_MAT,
+        .icon = {gDecorIcon_SurfMat, gDecorIconPalette_SurfMat},
     },
 
     [DECOR_THUNDER_MAT] =
@@ -728,8 +848,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_MAT,
         .price = 4000,
-        .description = DecorDesc_THUNDER_MAT,
+        .description = COMPOUND_STRING(
+            "以打雷形象制作的\n地毯，上面可放置\n东西"),
         .tiles = DecorGfx_THUNDER_MAT,
+        .icon = {gDecorIcon_ThunderMat, gDecorIconPalette_ThunderMat},
     },
 
     [DECOR_FIRE_BLAST_MAT] =
@@ -740,8 +862,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_MAT,
         .price = 4000,
-        .description = DecorDesc_FIRE_BLAST_MAT,
+        .description = COMPOUND_STRING(
+            "以大字爆炎形象\n制作的地毯，上面\n可放置东西"),
         .tiles = DecorGfx_FIRE_BLAST_MAT,
+        .icon = {gDecorIcon_FireBlastMat, gDecorIconPalette_FireBlastMat},
     },
 
     [DECOR_POWDER_SNOW_MAT] =
@@ -752,8 +876,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_MAT,
         .price = 4000,
-        .description = DecorDesc_POWDER_SNOW_MAT,
+        .description = COMPOUND_STRING(
+            "以细雪形象制作的\n地毯，上面可放置\n东西"),
         .tiles = DecorGfx_POWDER_SNOW_MAT,
+        .icon = {gDecorIcon_PowderSnowMat, gDecorIconPalette_PowderSnowMat},
     },
 
     [DECOR_ATTRACT_MAT] =
@@ -764,8 +890,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_MAT,
         .price = 4000,
-        .description = DecorDesc_ATTRACT_MAT,
+        .description = COMPOUND_STRING(
+            "以迷人形象制作的\n地毯，上面可放置\n东西"),
         .tiles = DecorGfx_ATTRACT_MAT,
+        .icon = {gDecorIcon_AttractMat, gDecorIconPalette_AttractMat},
     },
 
     [DECOR_FISSURE_MAT] =
@@ -776,8 +904,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_MAT,
         .price = 4000,
-        .description = DecorDesc_FISSURE_MAT,
+        .description = COMPOUND_STRING(
+            "以地裂形象制作的\n地毯，上面可放置\n东西"),
         .tiles = DecorGfx_FISSURE_MAT,
+        .icon = {gDecorIcon_FissureMat, gDecorIconPalette_FissureMat},
     },
 
     [DECOR_SPIKES_MAT] =
@@ -788,8 +918,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_3x3,
         .category = DECORCAT_MAT,
         .price = 4000,
-        .description = DecorDesc_SPIKES_MAT,
+        .description = COMPOUND_STRING(
+            "以撒菱形象制作的\n地毯，上面可放置\n东西"),
         .tiles = DecorGfx_SPIKES_MAT,
+        .icon = {gDecorIcon_SpikesMat, gDecorIconPalette_SpikesMat},
     },
 
     [DECOR_BALL_POSTER] =
@@ -800,8 +932,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_POSTER,
         .price = 1000,
-        .description = DecorDesc_BALL_POSTER,
+        .description = COMPOUND_STRING(
+            "印有精灵球的\n小张海报"),
         .tiles = DecorGfx_BALL_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_GREEN_POSTER] =
@@ -812,8 +946,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_POSTER,
         .price = 1000,
-        .description = DecorDesc_GREEN_POSTER,
+        .description = COMPOUND_STRING(
+            "印有木守宫的\n小张海报"),
         .tiles = DecorGfx_GREEN_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_RED_POSTER] =
@@ -824,8 +960,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_POSTER,
         .price = 1000,
-        .description = DecorDesc_RED_POSTER,
+        .description = COMPOUND_STRING(
+            "印有火稚鸡的\n小张海报"),
         .tiles = DecorGfx_RED_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_BLUE_POSTER] =
@@ -836,8 +974,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_POSTER,
         .price = 1000,
-        .description = DecorDesc_BLUE_POSTER,
+        .description = COMPOUND_STRING(
+            "印有水跃鱼的\n小张海报"),
         .tiles = DecorGfx_BLUE_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_CUTE_POSTER] =
@@ -848,8 +988,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_POSTER,
         .price = 1000,
-        .description = DecorDesc_CUTE_POSTER,
+        .description = COMPOUND_STRING(
+            "印有露力丽的\n小张海报"),
         .tiles = DecorGfx_CUTE_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_PIKA_POSTER] =
@@ -860,8 +1002,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x1,
         .category = DECORCAT_POSTER,
         .price = 1500,
-        .description = DecorDesc_PIKA_POSTER,
+        .description = COMPOUND_STRING(
+            "印有皮卡丘和皮丘\n的大张海报"),
         .tiles = DecorGfx_PIKA_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_LONG_POSTER] =
@@ -872,8 +1016,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x1,
         .category = DECORCAT_POSTER,
         .price = 1500,
-        .description = DecorDesc_LONG_POSTER,
+        .description = COMPOUND_STRING(
+            "印有饭匙蛇的\n大张海报"),
         .tiles = DecorGfx_LONG_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SEA_POSTER] =
@@ -884,8 +1030,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x1,
         .category = DECORCAT_POSTER,
         .price = 1500,
-        .description = DecorDesc_SEA_POSTER,
+        .description = COMPOUND_STRING(
+            "印有古空棘鱼的\n大张海报"),
         .tiles = DecorGfx_SEA_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SKY_POSTER] =
@@ -896,8 +1044,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x1,
         .category = DECORCAT_POSTER,
         .price = 1500,
-        .description = DecorDesc_SKY_POSTER,
+        .description = COMPOUND_STRING(
+            "印有长翅鸥的\n大张海报"),
         .tiles = DecorGfx_SKY_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_KISS_POSTER] =
@@ -908,8 +1058,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_2x1,
         .category = DECORCAT_POSTER,
         .price = 1500,
-        .description = DecorDesc_KISS_POSTER,
+        .description = COMPOUND_STRING(
+            "印有迷唇娃的\n大张海报"),
         .tiles = DecorGfx_KISS_POSTER,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_PICHU_DOLL] =
@@ -920,8 +1072,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_PICHU_DOLL,
+        .description = COMPOUND_STRING(
+            "皮丘玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_PICHU_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_PIKACHU_DOLL] =
@@ -932,8 +1086,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_PIKACHU_DOLL,
+        .description = COMPOUND_STRING(
+            "皮卡丘玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_PIKACHU_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_MARILL_DOLL] =
@@ -944,8 +1100,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_MARILL_DOLL,
+        .description = COMPOUND_STRING(
+            "玛力露玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_MARILL_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_TOGEPI_DOLL] =
@@ -956,8 +1114,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_TOGEPI_DOLL,
+        .description = COMPOUND_STRING(
+            "波克比玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_TOGEPI_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_CYNDAQUIL_DOLL] =
@@ -968,8 +1128,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_CYNDAQUIL_DOLL,
+        .description = COMPOUND_STRING(
+            "火球鼠玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_CYNDAQUIL_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_CHIKORITA_DOLL] =
@@ -980,8 +1142,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_CHIKORITA_DOLL,
+        .description = COMPOUND_STRING(
+            "菊草叶玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_CHIKORITA_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_TOTODILE_DOLL] =
@@ -992,8 +1156,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_TOTODILE_DOLL,
+        .description = COMPOUND_STRING(
+            "小锯鳄玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_TOTODILE_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_JIGGLYPUFF_DOLL] =
@@ -1004,8 +1170,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_JIGGLYPUFF_DOLL,
+        .description = COMPOUND_STRING(
+            "胖丁玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_JIGGLYPUFF_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_MEOWTH_DOLL] =
@@ -1016,8 +1184,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_MEOWTH_DOLL,
+        .description = COMPOUND_STRING(
+            "喵喵玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_MEOWTH_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_CLEFAIRY_DOLL] =
@@ -1028,8 +1198,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_CLEFAIRY_DOLL,
+        .description = COMPOUND_STRING(
+            "皮皮玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_CLEFAIRY_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_DITTO_DOLL] =
@@ -1040,8 +1212,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_DITTO_DOLL,
+        .description = COMPOUND_STRING(
+            "百变怪玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_DITTO_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SMOOCHUM_DOLL] =
@@ -1052,8 +1226,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_SMOOCHUM_DOLL,
+        .description = COMPOUND_STRING(
+            "迷唇娃玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_SMOOCHUM_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_TREECKO_DOLL] =
@@ -1064,8 +1240,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_TREECKO_DOLL,
+        .description = COMPOUND_STRING(
+            "木守宫玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_TREECKO_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_TORCHIC_DOLL] =
@@ -1076,8 +1254,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_TORCHIC_DOLL,
+        .description = COMPOUND_STRING(
+            "火稚鸡玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_TORCHIC_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_MUDKIP_DOLL] =
@@ -1088,8 +1268,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_MUDKIP_DOLL,
+        .description = COMPOUND_STRING(
+            "水跃鱼玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_MUDKIP_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_DUSKULL_DOLL] =
@@ -1100,8 +1282,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_DUSKULL_DOLL,
+        .description = COMPOUND_STRING(
+            "夜巡灵玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_DUSKULL_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_WYNAUT_DOLL] =
@@ -1112,8 +1296,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_WYNAUT_DOLL,
+        .description = COMPOUND_STRING(
+            "小果然玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_WYNAUT_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_BALTOY_DOLL] =
@@ -1124,8 +1310,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_BALTOY_DOLL,
+        .description = COMPOUND_STRING(
+            "天秤偶玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_BALTOY_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_KECLEON_DOLL] =
@@ -1136,8 +1324,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_KECLEON_DOLL,
+        .description = COMPOUND_STRING(
+            "变隐龙玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_KECLEON_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_AZURILL_DOLL] =
@@ -1148,8 +1338,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_AZURILL_DOLL,
+        .description = COMPOUND_STRING(
+            "露力丽玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_AZURILL_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SKITTY_DOLL] =
@@ -1160,8 +1352,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_SKITTY_DOLL,
+        .description = COMPOUND_STRING(
+            "向尾喵玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_SKITTY_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SWABLU_DOLL] =
@@ -1172,8 +1366,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_SWABLU_DOLL,
+        .description = COMPOUND_STRING(
+            "青绵鸟玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_SWABLU_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_GULPIN_DOLL] =
@@ -1184,8 +1380,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_GULPIN_DOLL,
+        .description = COMPOUND_STRING(
+            "溶食兽玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_GULPIN_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_LOTAD_DOLL] =
@@ -1196,8 +1394,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_LOTAD_DOLL,
+        .description = COMPOUND_STRING(
+            "莲叶童子玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_LOTAD_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SEEDOT_DOLL] =
@@ -1208,8 +1408,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_DOLL,
         .price = 3000,
-        .description = DecorDesc_SEEDOT_DOLL,
+        .description = COMPOUND_STRING(
+            "橡实果玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_SEEDOT_DOLL,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_PIKA_CUSHION] =
@@ -1220,8 +1422,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_PIKA_CUSHION,
+        .description = COMPOUND_STRING(
+            "皮卡丘垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_PIKA_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_ROUND_CUSHION] =
@@ -1232,8 +1436,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_ROUND_CUSHION,
+        .description = COMPOUND_STRING(
+            "玛力露丽垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_ROUND_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_KISS_CUSHION] =
@@ -1244,8 +1450,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_KISS_CUSHION,
+        .description = COMPOUND_STRING(
+            "迷唇娃垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_KISS_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_ZIGZAG_CUSHION] =
@@ -1256,8 +1464,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_ZIGZAG_CUSHION,
+        .description = COMPOUND_STRING(
+            "蛇纹熊垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_ZIGZAG_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SPIN_CUSHION] =
@@ -1268,8 +1478,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_SPIN_CUSHION,
+        .description = COMPOUND_STRING(
+            "晃晃斑垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_SPIN_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_DIAMOND_CUSHION] =
@@ -1280,8 +1492,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_DIAMOND_CUSHION,
+        .description = COMPOUND_STRING(
+            "勾魂眼垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_DIAMOND_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_BALL_CUSHION] =
@@ -1292,8 +1506,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_BALL_CUSHION,
+        .description = COMPOUND_STRING(
+            "精灵球垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_BALL_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_GRASS_CUSHION] =
@@ -1304,8 +1520,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_GRASS_CUSHION,
+        .description = COMPOUND_STRING(
+            "草标志垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_GRASS_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_FIRE_CUSHION] =
@@ -1316,8 +1534,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_FIRE_CUSHION,
+        .description = COMPOUND_STRING(
+            "火标志垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_FIRE_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_WATER_CUSHION] =
@@ -1328,8 +1548,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x1,
         .category = DECORCAT_CUSHION,
         .price = 2000,
-        .description = DecorDesc_WATER_CUSHION,
+        .description = COMPOUND_STRING(
+            "水标志垫子，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_WATER_CUSHION,
+        .icon = {NULL, NULL},
     },
 
     [DECOR_SNORLAX_DOLL] =
@@ -1340,8 +1562,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_SNORLAX_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_SNORLAX_DOLL,
+        .icon = {gDecorIcon_SnorlaxDoll, gDecorIconPalette_SnorlaxDoll},
     },
 
     [DECOR_RHYDON_DOLL] =
@@ -1352,8 +1576,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_RHYDON_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_RHYDON_DOLL,
+        .icon = {gDecorIcon_RhydonDoll, gDecorIconPalette_RhydonDoll},
     },
 
     [DECOR_LAPRAS_DOLL] =
@@ -1364,8 +1590,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_LAPRAS_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_LAPRAS_DOLL,
+        .icon = {gDecorIcon_LaprasDoll, gDecorIconPalette_LaprasDoll},
     },
 
     [DECOR_VENUSAUR_DOLL] =
@@ -1376,8 +1604,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_VENUSAUR_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_VENUSAUR_DOLL,
+        .icon = {gDecorIcon_VenusaurDoll, gDecorIconPalette_VenusaurDoll},
     },
 
     [DECOR_CHARIZARD_DOLL] =
@@ -1388,8 +1618,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_CHARIZARD_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_CHARIZARD_DOLL,
+        .icon = {gDecorIcon_CharizardDoll, gDecorIconPalette_CharizardDoll},
     },
 
     [DECOR_BLASTOISE_DOLL] =
@@ -1400,8 +1632,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_BLASTOISE_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_BLASTOISE_DOLL,
+        .icon = {gDecorIcon_BlastoiseDoll, gDecorIconPalette_BlastoiseDoll},
     },
 
     [DECOR_WAILMER_DOLL] =
@@ -1412,8 +1646,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_WAILMER_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_WAILMER_DOLL,
+        .icon = {gDecorIcon_WailmerDoll, gDecorIconPalette_WailmerDoll},
     },
 
     [DECOR_REGIROCK_DOLL] =
@@ -1424,8 +1660,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_REGIROCK_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_REGIROCK_DOLL,
+        .icon = {gDecorIcon_RegirockDoll, gDecorIconPalette_RegirockDoll},
     },
 
     [DECOR_REGICE_DOLL] =
@@ -1436,8 +1674,10 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_REGICE_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_REGICE_DOLL,
+        .icon = {gDecorIcon_RegiceDoll, gDecorIconPalette_RegiceDoll},
     },
 
     [DECOR_REGISTEEL_DOLL] =
@@ -1448,7 +1688,9 @@ const struct Decoration gDecorations[] =
         .shape = DECORSHAPE_1x2,
         .category = DECORCAT_DOLL,
         .price = 10000,
-        .description = DecorDesc_REGISTEEL_DOLL,
+        .description = COMPOUND_STRING(
+            "巨大玩偶，\n要放置在地毯\n和桌子上"),
         .tiles = DecorGfx_REGISTEEL_DOLL,
+        .icon = {gDecorIcon_RegisteelDoll, gDecorIconPalette_RegisteelDoll},
     }
 };

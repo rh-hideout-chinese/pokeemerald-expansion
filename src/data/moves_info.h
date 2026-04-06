@@ -11,9 +11,9 @@
 // The Gen. 4+ contest data comes from urpg's contest movedex.
 
 #if B_BINDING_TURNS >= GEN_5
-#define BINDING_TURNS "4 or 5"
+#define BINDING_TURNS "4~5"
 #else
-#define BINDING_TURNS "2 to 5"
+#define BINDING_TURNS "2~5"
 #endif
 
 // Shared Move Description entries
@@ -21,95 +21,6 @@
 const u8 gNotDoneYetDescription[] = _(
     "该招式效果尚未完成，\n"
     "目前还不能使用。");
-
-static const u8 sNullDescription[] = _("");
-
-static const u8 sMegaDrainDescription[] = _(
-    "可以回复给予对手\n"
-    "伤害的一半HP");
-
-static const u8 sHyperBeamDescription[] = _(
-    "使出强力的攻击，但是\n"
-    "下一回合自己将无法动弹。");
-
-static const u8 sRevengeDescription[] = _(
-    "如果受到对手的招式攻击，\n"
-    "就能给予对手2倍的伤害。");
-
-static const u8 sPluckDescription[] = _(
-    "当对手携带树果时，\n"
-    "可以食用并获得其效果。");
-
-static const u8 sHealingWishDescription[] = _(
-    "虽然自己陷入昏厥，但后备\n"
-    "上场宝可梦会治愈并回复HP。");
-
-static const u8 sWringOutDescription[] = _(
-    "对手的HP越多，\n"
-    "威力越大。");
-
-static const u8 sUTurnDescription[] = _(
-    "在攻击之后急速返回，\n"
-    "和后备宝可梦进行替换。");
-
-static const u8 sStormThrowDescription[] = _(
-    "攻击必定会击中要害。");
-
-static const u8 sCircleThrowDescription[] = _(
-    "强制拉后备宝可梦上场。\n"
-    "结束与野生宝可梦的战斗。");
-
-static const u8 sChipAwayDescription[] = _(
-    "无视对手的能力变化，\n"
-    "直接给予伤害。");
-
-static const u8 sHeavySlamDescription[] = _(
-    "自己比对手越重，\n"
-    "威力越大。");
-
-static const u8 sPsyshockDescription[] = _(
-    "将念波实体化攻击对手。\n"
-    "给予物理伤害。");
-
-static const u8 sLavaPlumeDescription[] = _(
-    "用熊熊烈火攻击自己\n"
-    "所有宝可梦。有时造成灼伤。");
-
-static const u8 sShadowForceDescription[] = _(
-    "第1回合消失踪影，\n"
-    "第2回合攻击对手。");
-
-static const u8 sFalseSwipeDescription[] = _(
-    "对手至少会留下1HP，\n"
-    "如此般手下留情地攻击。");
-
-static const u8 sDrainingKissDescription[] = _(
-    "回复给予对手伤害的\n"
-    "一半以上的HP。");
-
-static const u8 sCloseCombatDescription[] = _(
-    "强力攻击，但是自己的\n"
-    "防御和特防会降低。");
-
-static const u8 sHyperspaceHoleDescription[] = _(
-    "使用虫洞进行攻击。\n"
-    "无法躲避。");
-
-static const u8 sSuckerPunchDescription[] = _(
-    "能比对手先攻击。对手招式\n"
-    "如果不是攻击招式则会失败。");
-
-static const u8 sFeintDescription[] = _(
-    "能够攻击使用守住类招式的\n"
-    "对手。解除其守护效果。");
-
-static const u8 sProtectDescription[] = _(
-    "完全抵挡对手的攻击。\n"
-	"连续使出则容易失败。");
-
-static const u8 sGMaxOneBlowDescription[] = _(
-    "超极巨化武道熊师的攻击，\n"
-    "是能无视极巨防壁的一击。");
 
 const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 {
@@ -1734,7 +1645,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HYPER_BEAM] =
     {
         .name = COMPOUND_STRING("破坏光线"),
-        .description = sHyperBeamDescription,
+        .description = COMPOUND_STRING(
+			"使出强力的攻击，但是\n"
+			"下一回合自己将无法动弹。"),
         .effect = EFFECT_HIT,
         .power = 150,
         .type = TYPE_NORMAL,
@@ -1956,7 +1869,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_MEGA_DRAIN] =
     {
         .name = COMPOUND_STRING("超级吸取"),
-        .description = sMegaDrainDescription,
+        .description = COMPOUND_STRING(
+			"可以回复给予对手\n"
+			"伤害的一半HP。"),
         .effect = EFFECT_ABSORB,
         .power = 40,
         .type = TYPE_GRASS,
@@ -4853,7 +4768,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_PROTECT] =
     {
         .name = COMPOUND_STRING("守住"),
-        .description = sProtectDescription,
+        .description = COMPOUND_STRING(
+			"完全抵挡对手的攻击。\n"
+			"连续使出则容易失败。"),
         .effect = EFFECT_PROTECT,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -4935,8 +4852,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("出奇一击"),
         .description = COMPOUND_STRING(
-            "悄悄地靠近对手，趁其不备\n"
-            "进行殴打。攻击必定会命中。"),
+			"能够攻击使用守住类招式的\n"
+			"对手。解除其守护效果。"),
         .effect = EFFECT_HIT,
         .power = 60,
         .type = TYPE_DARK,
@@ -5250,7 +5167,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_DETECT] =
     {
         .name = COMPOUND_STRING("看穿"),
-        .description = sProtectDescription,
+        .description = COMPOUND_STRING(
+			"完全抵挡对手的攻击。\n"
+			"连续使出则容易失败。"),
         .effect = EFFECT_PROTECT,
         .power = 0,
         .type = TYPE_FIGHTING,
@@ -5492,7 +5411,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_FALSE_SWIPE] =
     {
         .name = COMPOUND_STRING("点到为止"),
-        .description = sFalseSwipeDescription,
+        .description = COMPOUND_STRING(
+			"对手至少会留下1HP，\n"
+			"如此般手下留情地攻击。"),
         .effect = EFFECT_FALSE_SWIPE,
         .power = 40,
         .type = TYPE_NORMAL,
@@ -6432,12 +6353,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .category = DAMAGE_CATEGORY_PHYSICAL,
         .makesContact = TRUE,
         .bitingMove = TRUE,
-            .additionalEffects = ADDITIONAL_EFFECTS({
-        #if B_UPDATED_MOVE_DATA >= GEN_4
-            .moveEffect = MOVE_EFFECT_DEF_MINUS_1,
-        #else
-            .moveEffect = MOVE_EFFECT_SP_DEF_MINUS_1,
-        #endif
+        .additionalEffects = ADDITIONAL_EFFECTS({
+            .moveEffect = B_UPDATED_MOVE_DATA >= GEN_4 ? MOVE_EFFECT_DEF_MINUS_1 : MOVE_EFFECT_SP_DEF_MINUS_1,
             .chance = 20,
         }),
         .contestEffect = CONTEST_EFFECT_BADLY_STARTLE_FRONT_MON,
@@ -6730,7 +6647,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .description = COMPOUND_STRING(
 			"在3回合内大吵大闹攻击。\n"
 			"在此期间谁都不能入眠。"),
-        .effect = EFFECT_UPROAR,
+        .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 90 : 50,
         .type = TYPE_NORMAL,
         .accuracy = 100,
@@ -7418,7 +7335,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_REVENGE] =
     {
         .name = COMPOUND_STRING("报复"),
-        .description = sRevengeDescription,
+        .description = COMPOUND_STRING(
+			"如果受到对手的招式攻击，\n"
+			"就能给予对手2倍的伤害。"),
         .effect = EFFECT_REVENGE,
         .power = 60,
         .type = TYPE_FIGHTING,
@@ -9522,7 +9441,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HEALING_WISH] =
     {
         .name = COMPOUND_STRING("治愈之愿"),
-        .description = sHealingWishDescription,
+        .description = COMPOUND_STRING(
+			"虽然自己陷入昏厥，但后备\n"
+			"上场宝可梦会治愈并回复HP。"),
         .effect = EFFECT_HEALING_WISH,
         .power = 0,
         .type = TYPE_PSYCHIC,
@@ -9587,7 +9508,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_FEINT] =
     {
         .name = COMPOUND_STRING("佯攻"),
-        .description = sFeintDescription,
+        .description = COMPOUND_STRING(
+			"能够攻击到使用守住类招式\n"
+			"的对手。解除其守护效果。"),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 30 : 50,
         .type = TYPE_NORMAL,
@@ -9614,7 +9537,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_PLUCK] =
     {
         .name = COMPOUND_STRING("啄食"),
-        .description = sPluckDescription,
+        .description = COMPOUND_STRING(
+			"当对手携带树果时，\n"
+			"可以食用并获得其效果。"),
         .effect = EFFECT_HIT,
         .power = 60,
         .type = TYPE_FLYING,
@@ -9715,7 +9640,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_U_TURN] =
     {
         .name = COMPOUND_STRING("急速折返"),
-        .description = sUTurnDescription,
+        .description = COMPOUND_STRING(
+			"在攻击之后急速返回，\n"
+			"和后备宝可梦进行替换。"),
         .effect = EFFECT_HIT_ESCAPE,
         .power = 70,
         .type = TYPE_BUG,
@@ -9735,7 +9662,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CLOSE_COMBAT] =
     {
         .name = COMPOUND_STRING("近身战"),
-        .description = sCloseCombatDescription,
+        .description = COMPOUND_STRING(
+			"强力攻击，但是自己的\n"
+			"防御和特防会降低。"),
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_FIGHTING,
@@ -9923,7 +9852,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_WRING_OUT] =
     {
         .name = COMPOUND_STRING("绞紧"),
-        .description = sWringOutDescription,
+        .description = COMPOUND_STRING(
+			"对手的HP越多，\n"
+			"威力越大。"),
         .effect = EFFECT_POWER_BASED_ON_TARGET_HP,
         .power = 120,
         .type = TYPE_NORMAL,
@@ -10193,7 +10124,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SUCKER_PUNCH] =
     {
         .name = COMPOUND_STRING("突袭"),
-        .description = sSuckerPunchDescription,
+        .description = COMPOUND_STRING(
+			"能比对手先攻击。对手招式\n"
+			"如果不是攻击招式则会失败。"),
         .effect = EFFECT_SUCKER_PUNCH,
         .power = B_UPDATED_MOVE_DATA >= GEN_7 ? 70 : 80,
         .type = TYPE_DARK,
@@ -10682,7 +10615,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_DRAIN_PUNCH] =
     {
         .name = COMPOUND_STRING("吸取拳"),
-        .description = sMegaDrainDescription,
+        .description = COMPOUND_STRING(
+			"可以回复给予对手\n"
+			"伤害的一半HP。"),
         .effect = EFFECT_ABSORB,
         .power = B_UPDATED_MOVE_DATA >= GEN_5 ? 75 : 60,
         .type = TYPE_FIGHTING,
@@ -10852,7 +10787,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_GIGA_IMPACT] =
     {
         .name = COMPOUND_STRING("终极冲击"),
-        .description = sHyperBeamDescription,
+        .description = COMPOUND_STRING(
+			"使出强力的攻击，但是\n"
+			"下一回合自己将无法动弹。"),
         .effect = EFFECT_HIT,
         .power = 150,
         .type = TYPE_NORMAL,
@@ -10924,7 +10861,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_AVALANCHE] =
     {
         .name = COMPOUND_STRING("雪崩"),
-        .description = sRevengeDescription,
+        .description = COMPOUND_STRING(
+			"如果受到对手的招式攻击，\n"
+			"就能给予对手2倍的伤害。"),
         .effect = EFFECT_REVENGE,
         .power = 60,
         .type = TYPE_ICE,
@@ -11351,7 +11290,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_LAVA_PLUME] =
     {
         .name = COMPOUND_STRING("喷烟"),
-        .description = sLavaPlumeDescription,
+        .description = COMPOUND_STRING(
+			"用熊熊烈火攻击周围\n"
+			"所有宝可梦。有时造成灼伤。"),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_FIRE,
@@ -11421,7 +11362,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_ROCK_WRECKER] =
     {
         .name = COMPOUND_STRING("岩石炮"),
-        .description = sHyperBeamDescription,
+        .description = COMPOUND_STRING(
+			"使出强力的攻击，但是\n"
+			"下一回合自己将无法动弹。"),
         .effect = EFFECT_HIT,
         .power = 150,
         .type = TYPE_ROCK,
@@ -11703,7 +11646,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_BUG_BITE] =
     {
         .name = COMPOUND_STRING("虫咬"),
-        .description = sPluckDescription,
+        .description = COMPOUND_STRING(
+			"当对手携带树果时，\n"
+			"可以食用并获得其效果。"),
         .effect = EFFECT_HIT,
         .power = 60,
         .type = TYPE_BUG,
@@ -11963,7 +11908,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_LUNAR_DANCE] =
     {
         .name = COMPOUND_STRING("新月舞"),
-        .description = sHealingWishDescription,
+        .description = COMPOUND_STRING(
+			"虽然自己陷入昏厥，但后备\n"
+			"上场宝可梦会治愈并回复HP。"),
         .effect = EFFECT_LUNAR_DANCE,
         .power = 0,
         .type = TYPE_PSYCHIC,
@@ -11987,7 +11934,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CRUSH_GRIP] =
     {
         .name = COMPOUND_STRING("捏碎"),
-        .description = sWringOutDescription,
+        .description = COMPOUND_STRING(
+			"对手的HP越多，\n"
+			"威力越大。"),
         .effect = EFFECT_POWER_BASED_ON_TARGET_HP,
         .power = 120,
         .type = TYPE_NORMAL,
@@ -12109,7 +12058,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SHADOW_FORCE] =
     {
         .name = COMPOUND_STRING("暗影潜袭"),
-        .description = sShadowForceDescription,
+        .description = COMPOUND_STRING(
+			"第1回合消失踪影，\n"
+			"第2回合攻击对手。"),
         .effect = EFFECT_SEMI_INVULNERABLE,
         .power = 120,
         .type = TYPE_GHOST,
@@ -12259,7 +12210,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_PSYSHOCK] =
     {
         .name = COMPOUND_STRING("精神冲击"),
-        .description = sPsyshockDescription,
+        .description = COMPOUND_STRING(
+			"将念波实体化攻击对手。\n"
+			"给予物理伤害。"),
         .effect = EFFECT_PSYSHOCK,
         .power = 80,
         .type = TYPE_PSYCHIC,
@@ -12423,7 +12376,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_STORM_THROW] =
     {
         .name = COMPOUND_STRING("山岚摔"),
-        .description = sStormThrowDescription,
+        .description = COMPOUND_STRING(
+			"攻击必定会击中要害。"),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 40,
         .type = TYPE_FIGHTING,
@@ -12519,7 +12473,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HEAVY_SLAM] =
     {
         .name = COMPOUND_STRING("重磅冲撞"),
-        .description = sHeavySlamDescription,
+        .description = COMPOUND_STRING(
+			"自己比对手越重，\n"
+			"威力越大。"),
         .effect = EFFECT_HEAT_CRASH,
         .power = 1,
         .type = TYPE_STEEL,
@@ -12856,7 +12812,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CHIP_AWAY] =
     {
         .name = COMPOUND_STRING("逐步击破"),
-        .description = sChipAwayDescription,
+        .description = COMPOUND_STRING(
+			"无视对手的能力变化，\n"
+			"直接给予伤害。"),
         .effect = EFFECT_HIT,
         .power = 70,
         .type = TYPE_NORMAL,
@@ -13125,7 +13083,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_CIRCLE_THROW] =
     {
         .name = COMPOUND_STRING("巴投"),
-        .description = sCircleThrowDescription,
+        .description = COMPOUND_STRING(
+			"强制拉后备宝可梦上场。\n"
+			"结束与野生宝可梦的战斗。"),
         .effect = EFFECT_HIT_SWITCH_TARGET,
         .power = 60,
         .type = TYPE_FIGHTING,
@@ -13404,7 +13364,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_VOLT_SWITCH] =
     {
         .name = COMPOUND_STRING("伏特替换"),
-        .description = sUTurnDescription,
+        .description = COMPOUND_STRING(
+			"在攻击之后急速返回，\n"
+			"和后备宝可梦进行替换。"),
         .effect = EFFECT_HIT_ESCAPE,
         .power = 70,
         .type = TYPE_ELECTRIC,
@@ -13474,7 +13436,8 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_FROST_BREATH] =
     {
         .name = COMPOUND_STRING("冰息"),
-        .description = sStormThrowDescription,
+        .description = COMPOUND_STRING(
+			"攻击必定会击中要害。"),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 60 : 40,
         .type = TYPE_ICE,
@@ -13494,7 +13457,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_DRAGON_TAIL] =
     {
         .name = COMPOUND_STRING("龙尾"),
-        .description = sCircleThrowDescription,
+        .description = COMPOUND_STRING(
+			"强制拉后备宝可梦上场。\n"
+			"结束与野生宝可梦的战斗。"),
         .effect = EFFECT_HIT_SWITCH_TARGET,
         .power = 60,
         .type = TYPE_DRAGON,
@@ -13661,7 +13626,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HORN_LEECH] =
     {
         .name = COMPOUND_STRING("木角"),
-        .description = sMegaDrainDescription,
+        .description = COMPOUND_STRING(
+			"可以回复给予对手\n"
+			"伤害的一半HP。"),
         .effect = EFFECT_ABSORB,
         .power = 75,
         .type = TYPE_GRASS,
@@ -13683,7 +13650,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SACRED_SWORD] =
     {
         .name = COMPOUND_STRING("圣剑"),
-        .description = sChipAwayDescription,
+        .description = COMPOUND_STRING(
+			"无视对手的能力变化，\n"
+			"直接给予伤害。"),
         .effect = EFFECT_HIT,
         .power = 90,
         .type = TYPE_FIGHTING,
@@ -13732,7 +13701,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HEAT_CRASH] =
     {
         .name = COMPOUND_STRING("高温重压"),
-        .description = sHeavySlamDescription,
+        .description = COMPOUND_STRING(
+			"自己比对手越重，\n"
+			"威力越大。"),
         .effect = EFFECT_HEAT_CRASH,
         .power = 1,
         .type = TYPE_FIRE,
@@ -13855,7 +13826,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_PSYSTRIKE] =
     {
         .name = COMPOUND_STRING("精神击破"),
-        .description = sPsyshockDescription,
+        .description = COMPOUND_STRING(
+			"将念波实体化攻击对手。\n"
+			"给予物理伤害。"),
         .effect = EFFECT_PSYSHOCK,
         .power = 100,
         .type = TYPE_PSYCHIC,
@@ -13973,7 +13946,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_SEARING_SHOT] =
     {
         .name = COMPOUND_STRING("火焰弹"),
-        .description = sLavaPlumeDescription,
+        .description = COMPOUND_STRING(
+			"用熊熊烈火攻击周围\n"
+			"所有宝可梦。有时造成灼伤。"),
         .effect = EFFECT_HIT,
         .power = 100,
         .type = TYPE_FIRE,
@@ -14516,7 +14491,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_PHANTOM_FORCE] =
     {
         .name = COMPOUND_STRING("潜灵奇袭"),
-        .description = sShadowForceDescription,
+        .description = COMPOUND_STRING(
+			"第1回合消失踪影，\n"
+			"第2回合攻击对手。"),
         .effect = EFFECT_SEMI_INVULNERABLE,
         .power = 90,
         .type = TYPE_GHOST,
@@ -14784,7 +14761,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_DRAINING_KISS] =
     {
         .name = COMPOUND_STRING("吸取之吻"),
-        .description = sDrainingKissDescription,
+        .description = COMPOUND_STRING(
+			"回复给予对手伤害的\n"
+			"一半以上的HP。"),
         .effect = EFFECT_ABSORB,
         .power = 50,
         .type = TYPE_FAIRY,
@@ -15182,7 +15161,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HYPERSPACE_HOLE] =
     {
         .name = COMPOUND_STRING("异次元洞"),
-        .description = sHyperspaceHoleDescription,
+        .description = COMPOUND_STRING(
+			"通过异次元洞突然出现攻击。\n"
+			"还可以无视守住。"),
         .effect = EFFECT_HIT,
         .power = 80,
         .type = TYPE_PSYCHIC,
@@ -15613,7 +15594,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HOLD_BACK] =
     {
         .name = COMPOUND_STRING("手下留情"),
-        .description = sFalseSwipeDescription,
+        .description = COMPOUND_STRING(
+			"对手至少会留下1HP，\n"
+			"如此般手下留情地攻击。"),
         .effect = EFFECT_FALSE_SWIPE,
         .power = 40,
         .type = TYPE_NORMAL,
@@ -15687,7 +15670,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_OBLIVION_WING] =
     {
         .name = COMPOUND_STRING("归天之翼"),
-        .description = sDrainingKissDescription,
+        .description = COMPOUND_STRING(
+			"回复给予对手伤害的\n"
+			"一半以上的HP。"),
         .effect = EFFECT_ABSORB,
         .power = 80,
         .type = TYPE_FLYING,
@@ -15850,7 +15835,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_DRAGON_ASCENT] =
     {
         .name = COMPOUND_STRING("画龙点睛"),
-        .description = sCloseCombatDescription,
+        .description = COMPOUND_STRING(
+			"强力攻击，但是自己的\n"
+			"防御和特防会降低。"),
         .effect = EFFECT_HIT,
         .power = 120,
         .type = TYPE_FLYING,
@@ -15875,7 +15862,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HYPERSPACE_FURY] =
     {
         .name = COMPOUND_STRING("异次元猛攻"),
-        .description = sHyperspaceHoleDescription,
+        .description = COMPOUND_STRING(
+			"用许多手臂无视守住连续攻击，\n"
+			"自己的防御会降低。"),
         .effect = EFFECT_HYPERSPACE_FURY,
         .power = 100,
         .type = TYPE_DARK,
@@ -17222,7 +17211,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("光子喷涌"),
         .description = COMPOUND_STRING(
-			"用光柱来攻击。用攻击特攻\n"
+			"用光柱来攻击。用物攻特攻\n"
 			"数值更高的一项造成伤害。"),
         .effect = EFFECT_PHOTON_GEYSER,
         .power = 100,
@@ -18546,7 +18535,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("臂贝武器"),
         .description = COMPOUND_STRING(
-			"用攻击特攻数值更高的一项\n"
+			"用物攻特攻数值更高的一项\n"
 			"攻击。有时会让对手中毒。"),
         .effect = EFFECT_SHELL_SIDE_ARM,
         .power = 90,
@@ -21015,7 +21004,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_THUNDERCLAP] =
     {
         .name = COMPOUND_STRING("迅雷"),
-        .description = sSuckerPunchDescription,
+        .description = COMPOUND_STRING(
+			"能比对手先攻击。对手招式\n"
+			"如果不是攻击招式则会失败。"),
         .effect = EFFECT_SUCKER_PUNCH,
         .power = 70,
         .type = TYPE_ELECTRIC,
@@ -21033,7 +21024,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_MIGHTY_CLEAVE] =
     {
         .name = COMPOUND_STRING("强刃攻击"),
-        .description = sFeintDescription,
+        .description = COMPOUND_STRING(
+			"能够攻击使用守住类招式的\n"
+			"对手。解除其守护效果。"),
         .effect = EFFECT_HIT,
         .power = 95,
         .type = TYPE_ROCK,
@@ -21070,7 +21063,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_HARD_PRESS] =
     {
         .name = COMPOUND_STRING("硬压"),
-        .description = sWringOutDescription,
+        .description = COMPOUND_STRING(
+			"对手的HP越多，\n"
+			"威力越大。"),
         .effect = EFFECT_POWER_BASED_ON_TARGET_HP,
         .power = 100,
         .type = TYPE_STEEL,
@@ -21732,7 +21727,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     },
     [MOVE_GUARDIAN_OF_ALOLA] =
     {
-        .name = COMPOUND_STRING("巨人卫士・阿罗拉"),
+        .name = COMPOUND_STRING("巨人卫士阿罗拉"),
         .description = COMPOUND_STRING(
             "土地神宝可梦以Z力量攻击。\n"
             "对手的剩余HP会减少很多。"),
@@ -21818,7 +21813,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_MAX_GUARD] =
     {
         .name = COMPOUND_STRING("极巨防壁"),
-        .description = sProtectDescription,
+        .description = COMPOUND_STRING(
+			"完全抵挡对手的攻击。\n"
+			"连续使出则容易失败。"),
         .effect = EFFECT_PROTECT,
         .power = 0,
         .type = TYPE_NORMAL,
@@ -22830,7 +22827,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_G_MAX_ONE_BLOW] =
     {
         .name = COMPOUND_STRING("超极巨夺命一击"),
-        .description = sGMaxOneBlowDescription,    //ANIM TODO
+        .description = COMPOUND_STRING(
+            "G-max Urshifu attack.\n"
+            "Ignores Max Guard."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
         .type = TYPE_DARK,
@@ -22846,6 +22845,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     [MOVE_G_MAX_RAPID_FLOW] =
     {
         .name = COMPOUND_STRING("超极巨流水连击"),
+        .description = COMPOUND_STRING(
+            "G-max Urshifu attack.\n"
+            "Ignores Max Guard."),    //ANIM TODO
         .effect = EFFECT_MAX_MOVE,
         .power = 10,
         .type = TYPE_WATER,
