@@ -145,15 +145,19 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
 void AIDebugTimerStart()
 {
     // Set delay timer to count how long it takes for AI to choose action/move
-    gBattleStruct->aiDelayTimer = gMain.vblankCounter1;
-    CycleCountStart();
+    if ((TESTING && gBattleTurnCounter == 0) || DEBUG_AI_DELAY_TIMER)
+        gBattleStruct->aiDelayTimer = gMain.vblankCounter1;
+    if (!TESTING && DEBUG_AI_DELAY_TIMER)
+        CycleCountStart();
 }
 
 void AIDebugTimerEnd()
 {
     // We add to existing to compound multiple calls
-    gBattleStruct->aiDelayFrames += gMain.vblankCounter1 - gBattleStruct->aiDelayTimer;
-    gBattleStruct->aiDelayCycles += CycleCountEnd();
+    if ((TESTING && gBattleTurnCounter == 0) || DEBUG_AI_DELAY_TIMER)
+        gBattleStruct->aiDelayFrames += gMain.vblankCounter1 - gBattleStruct->aiDelayTimer;
+    if (!TESTING && DEBUG_AI_DELAY_TIMER)
+        gBattleStruct->aiDelayCycles += CycleCountEnd();
 }
 
 void BattleAI_SetupAIData(u8 defaultScoreMoves, enum BattlerId battler)
@@ -389,8 +393,7 @@ void ComputeAiBattlerDecisions(enum BattlerId battler)
 
     gAiLogicData->aiCalcInProgress = TRUE;
 
-        if (DEBUG_AI_DELAY_TIMER)
-            AIDebugTimerStart();
+        AIDebugTimerStart();
 
     // Setup battler data
     BattleAI_SetupAIData(0xF, battler);
@@ -411,8 +414,7 @@ void ComputeAiBattlerDecisions(enum BattlerId battler)
     BattlerChooseNonMoveAction();
     ModifySwitchAfterMoveScoring(battler);
 
-        if (DEBUG_AI_DELAY_TIMER)
-            AIDebugTimerEnd();
+        AIDebugTimerEnd();
 
     gAiLogicData->aiCalcInProgress = FALSE;
 }
@@ -747,9 +749,8 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
         return;
 
        gAiLogicData->aiCalcInProgress = TRUE;
-
-    if (DEBUG_AI_DELAY_TIMER)
-        AIDebugTimerStart();
+    
+    AIDebugTimerStart();
 
     aiData->weatherHasEffect = HasWeatherEffect();
     u32 weather = AI_GetWeather();
@@ -787,9 +788,8 @@ void SetAiLogicDataForTurn(struct AiLogicData *aiData)
         SetupAIPredictionData(battler, SWITCH_MID_BATTLE_OPTIONAL);
     }
 
-    if (DEBUG_AI_DELAY_TIMER)
-        AIDebugTimerEnd();
-
+    AIDebugTimerEnd();
+        
     gAiLogicData->aiCalcInProgress = FALSE;
 }
 

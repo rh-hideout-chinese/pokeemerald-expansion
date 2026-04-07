@@ -1607,6 +1607,8 @@ static enum CancelerResult CancelerCharging(struct BattleCalcValues *cv)
             gBattleScripting.animTurn = 1;
             gBattleScripting.animTargetsHit = 0;
             gProtectStructs[cv->battlerAtk].chargingTurn = FALSE;
+            if (gBattleMoveEffects[GetMoveEffect(cv->move)].semiInvulnerableEffect)
+                gBattleMons[cv->battlerAtk].volatiles.semiInvulnerable = STATE_NONE;
             result = CANCELER_RESULT_SUCCESS;
         }
         else if (cv->holdEffects[cv->battlerAtk] == HOLD_EFFECT_POWER_HERB)
@@ -1614,6 +1616,8 @@ static enum CancelerResult CancelerCharging(struct BattleCalcValues *cv)
             gBattleScripting.animTurn = 1;
             gBattleScripting.animTargetsHit = 0;
             gProtectStructs[cv->battlerAtk].chargingTurn = FALSE;
+            if (gBattleMoveEffects[GetMoveEffect(cv->move)].semiInvulnerableEffect)
+                gBattleMons[cv->battlerAtk].volatiles.semiInvulnerable = STATE_NONE;
             gLastUsedItem = gBattleMons[cv->battlerAtk].item;
             BattleScriptCall(BattleScript_PowerHerbActivation);
             result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
@@ -1969,14 +1973,16 @@ static enum CancelerResult CancelerNotFullyProtected(struct BattleCalcValues *cv
 
 static bool32 IsMoveParentalBondAffected(struct BattleCalcValues *cv)
 {
+    enum BattleMoveEffects effect = GetMoveEffect(cv->move);
+
     if (cv->abilities[cv->battlerAtk] != ABILITY_PARENTAL_BOND
      || gBattleStruct->numSpreadTargets > 1
      || IsMoveParentalBondBanned(cv->move)
      || GetMoveCategory(cv->move) == DAMAGE_CATEGORY_STATUS
-     || GetMoveEffect(cv->move) == EFFECT_SEMI_INVULNERABLE
-     || GetMoveEffect(cv->move) == EFFECT_TWO_TURNS_ATTACK
+     || gBattleMoveEffects[effect].twoTurnEffect
+     || effect == EFFECT_OHKO
      || GetActiveGimmick(cv->battlerAtk) == GIMMICK_Z_MOVE
-     || (GetMoveEffect(cv->move) == EFFECT_PRESENT && gBattleStruct->presentBasePower == 0)
+     || (effect == EFFECT_PRESENT && gBattleStruct->presentBasePower == 0)
      || cv->move == MOVE_STRUGGLE)
         return FALSE;
     return TRUE;
