@@ -576,7 +576,7 @@ static const struct WindowTemplate sSummaryTemplate[] =
     },
     [PSS_LABEL_WINDOW_PROMPT_RELEARN] = {
         .bg = 0,
-        .tilemapLeft = 18,
+        .tilemapLeft = 16,
         .tilemapTop = 2,
         .width = 13,
         .height = 2,
