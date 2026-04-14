@@ -203,11 +203,11 @@ const u8 gText_ReturnToVar1[] = _("返回{STR_VAR_1}。");
 
 const u8 *const gPocketNamesStringsTable[] =
 {
-    [POCKET_ITEMS] =    COMPOUND_STRING("道  具"),
-    [POCKET_POKE_BALLS] =    COMPOUND_STRING("精 灵 球"),
-    [POCKET_TM_HM]  =    COMPOUND_STRING("招式学习器"),
-    [POCKET_BERRIES] =  COMPOUND_STRING("树  果"),
-    [POCKET_KEY_ITEMS] = COMPOUND_STRING("重要物品")
+    [POCKET_ITEMS]      = COMPOUND_STRING("道  具"),
+    [POCKET_POKE_BALLS] = COMPOUND_STRING("精 灵 球"),
+    [POCKET_TM_HM]      = COMPOUND_STRING("招式学习器"),
+    [POCKET_BERRIES]    = COMPOUND_STRING("树  果"),
+    [POCKET_KEY_ITEMS]  = COMPOUND_STRING("重要物品")
 };
 
 const u8 gText_NumberItem_TMBerry[] = _("{NO}{STR_VAR_1}{CLEAR 0x03}{STR_VAR_2}");
