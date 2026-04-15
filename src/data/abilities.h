@@ -281,7 +281,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("出场时，复制对手的特性"),
         .aiRating = 6,
         .cantBeCopied = TRUE,
-        .cantBeTraced = TRUE,
+        .cantBeTraced = TRUE, //B_UPDATED_ABILITY_DATA >= GEN_4
     },
 
     [ABILITY_HUGE_POWER] =
@@ -452,7 +452,8 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("受天气影响改变形态"),
         .aiRating = 6,
         .cantBeCopied = TRUE,
-        .cantBeTraced = TRUE,
+        .cantBeTraced = B_UPDATED_ABILITY_DATA >= GEN_4,
+        .failsOnImposter = B_UPDATED_ABILITY_DATA >= GEN_5,
     },
 
     [ABILITY_STICKY_HOLD] =
@@ -908,6 +909,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
+        .failsOnImposter = B_UPDATED_ABILITY_DATA >= GEN_5,
     },
 
     [ABILITY_FLOWER_GIFT] =
@@ -916,7 +918,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("晴天时提升我方攻击和特防"),
         .aiRating = 4,
         .cantBeCopied = TRUE,
-        .cantBeTraced = TRUE,
+        .cantBeTraced = B_UPDATED_ABILITY_DATA >= GEN_5,
         .breakable = TRUE,
     },
 
@@ -1208,9 +1210,11 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("HP一半以下时改变样子"),
         .aiRating = -1,
         .cantBeCopied = TRUE,
-        .cantBeSwapped = TRUE,
+        .cantBeSwapped = B_UPDATED_ABILITY_DATA >= GEN_7,
         .cantBeTraced = TRUE,
         .cantBeSuppressed = B_UPDATED_ABILITY_DATA >= GEN_7,
+        .cantBeOverwritten = B_UPDATED_ABILITY_DATA >= GEN_7,
+        .failsOnImposter = TRUE,
     },
 
     [ABILITY_VICTORY_STAR] =
@@ -1326,6 +1330,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
     },
 
     [ABILITY_GALE_WINGS] =
@@ -1397,6 +1402,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("暗黑气场"),
         .description = COMPOUND_STRING("全体的恶属性招式变强"),
         .aiRating = 6,
+        .breakable = B_UPDATED_ABILITY_DATA < GEN_8,
     },
 
     [ABILITY_FAIRY_AURA] =
@@ -1404,6 +1410,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("妖精气场"),
         .description = COMPOUND_STRING("全体的妖精属性招式变强"),
         .aiRating = 6,
+        .breakable = B_UPDATED_ABILITY_DATA < GEN_8,
     },
 
     [ABILITY_AURA_BREAK] =
@@ -1480,6 +1487,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
     },
 
     [ABILITY_STAKEOUT] =
@@ -1563,6 +1571,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
     },
 
     [ABILITY_DISGUISE] =
@@ -1589,6 +1598,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
     },
 
     [ABILITY_POWER_CONSTRUCT] =
@@ -1601,6 +1611,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
     },
 
     [ABILITY_CORROSION] =
@@ -1716,6 +1727,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeTraced = TRUE,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
+        .failsOnImposter = TRUE,
     },
 
     [ABILITY_ELECTRIC_SURGE] =
@@ -1828,8 +1840,9 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("一口导弹"),
         .description = COMPOUND_STRING("冲浪潜水时会吐出猎物攻击"),
         .aiRating = 3,
-        .cantBeCopied = B_UPDATED_MOVE_FLAGS <= GEN_8,
-        .cantBeSwapped = B_UPDATED_MOVE_FLAGS <= GEN_8,
+        .cantBeSwapped = B_UPDATED_ABILITY_DATA < GEN_9,
+        .cantBeCopied = B_UPDATED_ABILITY_DATA < GEN_9,
+        .cantBeTraced = B_UPDATED_ABILITY_DATA < GEN_9,
         .cantBeSuppressed = TRUE,
         .cantBeOverwritten = TRUE,
         .failsOnImposter = TRUE,
@@ -2219,6 +2232,9 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("绯红脉动"),
         .description = COMPOUND_STRING("造成晴天，在晴天下提升攻击"),
         .aiRating = 8,
+        .cantBeSwapped = TRUE,
+        .cantBeCopied = TRUE,
+        .cantBeOverwritten = TRUE,
     },
 
     [ABILITY_HADRON_ENGINE] =
@@ -2226,6 +2242,9 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("强子引擎"),
         .description = COMPOUND_STRING("生成电场，在电场上提升特攻"),
         .aiRating = 8,
+        .cantBeSwapped = TRUE,
+        .cantBeCopied = TRUE,
+        .cantBeOverwritten = TRUE,
     },
 
     [ABILITY_OPPORTUNIST] =
