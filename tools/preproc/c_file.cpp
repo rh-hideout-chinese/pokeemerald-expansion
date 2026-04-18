@@ -281,10 +281,10 @@ int ExtractData(const std::unique_ptr<unsigned char[]>& buffer, int offset, int 
 
 void CFile::TryConvertIncbin()
 {
-    std::string idents[6] = { "INCBIN_S8", "INCBIN_U8", "INCBIN_S16", "INCBIN_U16", "INCBIN_S32", "INCBIN_U32" };
+    std::string idents[3] = { "INCBIN_U8", "INCBIN_U16", "INCBIN_U32" };
     int incbinType = -1;
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 3; i++)
     {
         if (CheckIdentifier(idents[i]))
         {
@@ -296,8 +296,7 @@ void CFile::TryConvertIncbin()
     if (incbinType == -1)
         return;
 
-    int size = 1 << (incbinType / 2);
-    bool isSigned = ((incbinType % 2) == 0);
+    int size = 1 << incbinType;
 
     long oldPos = m_pos;
     long oldLineNum = m_lineNum;
@@ -364,11 +363,7 @@ void CFile::TryConvertIncbin()
         {
             int data = ExtractData(buffer, offset, size);
             offset += size;
-
-            if (isSigned)
-                std::printf("%d,", data);
-            else
-                std::printf("%uu,", data);
+            std::printf("%uu,", data);
         }
 
         SkipWhitespace();
