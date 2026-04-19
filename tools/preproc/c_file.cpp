@@ -18,6 +18,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#include <cctype>
 #include <cstdio>
 #include <cstdarg>
 #include <stdexcept>
@@ -32,7 +33,7 @@
 #include "string_parser.h"
 #include "io.h"
 
-CFile::CFile(const char * filenameCStr, bool isStdin)
+CFile::CFile(const char * filenameCStr, bool isStdin, const char * graphicsRootCStr)
 {
     if (isStdin)
         m_filename = std::string{"<stdin>/"}.append(filenameCStr);
@@ -44,6 +45,9 @@ CFile::CFile(const char * filenameCStr, bool isStdin)
     m_pos = 0;
     m_lineNum = 1;
     m_isStdin = isStdin;
+    m_graphicsRoot = graphicsRootCStr;
+    if (m_graphicsRoot.empty()) m_graphicsRoot = "./";
+    if (m_graphicsRoot[m_graphicsRoot.length() - 1] != '/') m_graphicsRoot.push_back('/');
 }
 
 CFile::CFile(CFile&& other) : m_filename(std::move(other.m_filename))
@@ -94,6 +98,7 @@ void CFile::Preproc()
         {
             TryConvertString();
             TryConvertIncbin();
+            TryConvertIncgfx();
 
             if (m_pos >= m_size)
                 break;
@@ -237,6 +242,37 @@ bool CFile::CheckIdentifier(const std::string& ident)
     return (i == ident.length());
 }
 
+std::string CFile::ReadString()
+{
+    if (m_buffer[m_pos] != '"')
+        RaiseError("expected '\"'");
+    m_pos++;
+
+    long startPos = m_pos;
+
+    while (m_buffer[m_pos] != '"')
+    {
+        if (m_buffer[m_pos] == 0)
+        {
+            if (m_pos >= m_size)
+                RaiseError("unexpected EOF in string");
+            else
+                RaiseError("unexpected null character in string");
+        }
+
+        if (m_buffer[m_pos] == '\r' || m_buffer[m_pos] == '\n')
+            RaiseError("unexpected end of line character in string");
+
+        if (m_buffer[m_pos] == '\\')
+            RaiseError("unexpected escape in string");
+
+        m_pos++;
+    }
+    m_pos++;
+
+    return std::string(&m_buffer[startPos], m_pos - 1 - startPos);
+}
+
 std::unique_ptr<unsigned char[]> CFile::ReadWholeFile(const std::string& path, int& size)
 {
     FILE* fp = std::fopen(path.c_str(), "rb");
@@ -281,10 +317,10 @@ int ExtractData(const std::unique_ptr<unsigned char[]>& buffer, int offset, int 
 
 void CFile::TryConvertIncbin()
 {
-    std::string idents[6] = { "INCBIN_S8", "INCBIN_U8", "INCBIN_S16", "INCBIN_U16", "INCBIN_S32", "INCBIN_U32" };
+    std::string idents[3] = { "INCBIN_U8", "INCBIN_U16", "INCBIN_U32" };
     int incbinType = -1;
 
-    for (int i = 0; i < 6; i++)
+    for (int i = 0; i < 3; i++)
     {
         if (CheckIdentifier(idents[i]))
         {
@@ -296,8 +332,7 @@ void CFile::TryConvertIncbin()
     if (incbinType == -1)
         return;
 
-    int size = 1 << (incbinType / 2);
-    bool isSigned = ((incbinType % 2) == 0);
+    int size = 1 << incbinType;
 
     long oldPos = m_pos;
     long oldLineNum = m_lineNum;
@@ -320,36 +355,7 @@ void CFile::TryConvertIncbin()
     while (true)
     {
         SkipWhitespace();
-
-        if (m_buffer[m_pos] != '"')
-            RaiseError("expected double quote");
-
-        m_pos++;
-
-        int startPos = m_pos;
-
-        while (m_buffer[m_pos] != '"')
-        {
-            if (m_buffer[m_pos] == 0)
-            {
-                if (m_pos >= m_size)
-                    RaiseError("unexpected EOF in path string");
-                else
-                    RaiseError("unexpected null character in path string");
-            }
-
-            if (m_buffer[m_pos] == '\r' || m_buffer[m_pos] == '\n')
-                RaiseError("unexpected end of line character in path string");
-
-            if (m_buffer[m_pos] == '\\')
-                RaiseError("unexpected escape in path string");
-
-            m_pos++;
-        }
-
-        std::string path(&m_buffer[startPos], m_pos - startPos);
-
-        m_pos++;
+        auto path = ReadString();
 
         int fileSize;
         std::unique_ptr<unsigned char[]> buffer = ReadWholeFile(path, fileSize);
@@ -364,11 +370,7 @@ void CFile::TryConvertIncbin()
         {
             int data = ExtractData(buffer, offset, size);
             offset += size;
-
-            if (isSigned)
-                std::printf("%d,", data);
-            else
-                std::printf("%uu,", data);
+            std::printf("%uu,", data);
         }
 
         SkipWhitespace();
@@ -383,6 +385,108 @@ void CFile::TryConvertIncbin()
         RaiseError("expected ')'");
 
     m_pos++;
+
+    std::printf("}");
+}
+
+void CFile::TryConvertIncgfx()
+{
+    if (!CheckIdentifier("INCGFX_"))
+        return;
+
+    std::string idents[3] = { "INCGFX_U8", "INCGFX_U16", "INCGFX_U32" };
+    int incgfxType = -1;
+
+    for (int i = 0; i < 3; i++)
+    {
+        if (CheckIdentifier(idents[i]))
+        {
+            incgfxType = i;
+            break;
+        }
+    }
+
+    if (incgfxType == -1)
+        return;
+
+    int size = 1 << incgfxType;
+
+    long oldPos = m_pos;
+    long oldLineNum = m_lineNum;
+
+    m_pos += idents[incgfxType].length();
+
+    SkipWhitespace();
+    if (m_buffer[m_pos] != '(')
+    {
+        m_pos = oldPos;
+        m_lineNum = oldLineNum;
+        return;
+    }
+    m_pos++;
+
+    SkipWhitespace();
+    auto source = ReadString();
+
+    SkipWhitespace();
+    if (m_buffer[m_pos] != ',')
+        RaiseError("expected ','");
+    m_pos++;
+
+    SkipWhitespace();
+    auto extensions = ReadString();
+
+    SkipWhitespace();
+    std::string arguments;
+    if (m_buffer[m_pos] == ',')
+    {
+        m_pos++;
+        SkipWhitespace();
+        arguments = ReadString();
+
+        SkipWhitespace();
+        if (m_buffer[m_pos] != ')')
+            RaiseError("expected ')'");
+        m_pos++;
+    }
+    else if (m_buffer[m_pos] == ')')
+    {
+        m_pos++;
+    }
+    else
+    {
+        RaiseError("exected ')' or ','");
+    }
+
+    // WARNING: This must stay in-sync with 'tools/scaninc/source_file.cpp'.
+    std::string arguments_as_path;
+    for (auto c : arguments)
+    {
+        if (std::isalnum(c))
+            arguments_as_path += c;
+        else
+            arguments_as_path += '_';
+    }
+
+    // WARNING: This must stay in-sync with 'tools/scaninc/scaninc.cpp'.
+    auto converted = m_graphicsRoot + source + arguments_as_path + extensions;
+
+    int fileSize;
+    std::unique_ptr<unsigned char[]> buffer = ReadWholeFile(converted, fileSize);
+
+    if ((fileSize % size) != 0)
+        RaiseError("Size %d doesn't evenly divide file size %d.\n", size, fileSize);
+
+    std::printf("{");
+
+    int count = fileSize / size;
+    int offset = 0;
+    for (int i = 0; i < count; i++)
+    {
+        int data = ExtractData(buffer, offset, size);
+        offset += size;
+        std::printf("%uu,", data);
+    }
 
     std::printf("}");
 }

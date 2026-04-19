@@ -181,11 +181,11 @@ static EWRAM_DATA struct {
     bool8 showContestInfo;
 } sMoveRelearnerMenuState = {0};
 
-static const u16 sUI_Pal[] = INCBIN_U16("graphics/interface/ui_learn_move.gbapal");
+static const u16 sUI_Pal[] = INCGFX_U16("graphics/interface/ui_learn_move.png", ".gbapal");
 
 // The arrow sprites in this spritesheet aren't used. The scroll-arrow system provides its own
 // arrow sprites.
-static const u8 sUI_Tiles[] = INCBIN_U8("graphics/interface/ui_learn_move.4bpp");
+static const u8 sUI_Tiles[] = INCGFX_U8("graphics/interface/ui_learn_move.png", ".4bpp");
 
 static const struct OamData sHeartSpriteOamData =
 {
