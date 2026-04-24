@@ -38,6 +38,7 @@ static u32 GetSwitchinHazardsDamage(enum BattlerId battler);
 static u32 GetSwitchinSingleUseItemHealing(enum BattlerId battler, enum BattlerId opposingBattler, s32 currentHP);
 static bool32 AI_CanSwitchinAbilityTrapOpponent(enum Ability ability, enum BattlerId opposingBattler);
 static u32 GetTypeMatchupAgainstTypes(enum BattlerId opposingBattler, enum Type defType1, enum Type defType2);
+static enum Ability GetPartyMonAbilityForSwitchCalc(enum BattlerId battler, u32 monIndex, struct Pokemon *mon);
 static u32 GetBattlerTypeMatchup(enum BattlerId opposingBattler, enum BattlerId battler);
 static u32 GetSwitchinHitsToKO(s32 damageTaken, enum BattlerId battler, const struct IncomingHealInfo *healInfo, u32 originalHp);
 static void GetIncomingHealInfo(enum BattlerId battler, struct IncomingHealInfo *healInfo);
@@ -52,10 +53,29 @@ static bool32 CanIntimidateLowerOpponentAtk(enum BattlerId battler, enum Battler
 static bool32 ShouldSwitchIfIntimidateBenefit(enum BattlerId battler);
 static bool32 DoesMostSuitableSwitchinBenefitFromWish(enum BattlerId battler);
 
+static enum Ability GetPartyMonAbilityForSwitchCalc(enum BattlerId battler, u32 monIndex, struct Pokemon *mon)
+{
+    enum Ability ability = GetMonAbility(mon);
+
+#if TESTING
+    if (gTestRunnerEnabled)
+    {
+        enum BattleTrainer trainer = !IsPartnerMonFromSameTrainer(battler) ? battler : GetBattlerSide(battler);
+        u32 forcedAbility = TestRunner_Battle_GetForcedAbility(trainer, monIndex);
+        if (forcedAbility != 0)
+            ability = forcedAbility;
+    }
+#endif
+
+    return ability;
+}
+
 static void InitializeSwitchinCandidate(enum BattlerId switchinBattler, u32 monIndex, struct Pokemon *mon)
 {
     u32 storeCurrBattlerPartyIndex = gBattlerPartyIndexes[switchinBattler]; // Rage Fist fix
     PokemonToBattleMon(mon, &gBattleMons[switchinBattler]);
+    gBattlerPartyIndexes[switchinBattler] = monIndex;
+    CopyMonAbilityAndTypesToBattleMon(switchinBattler, mon);
     // Setup switchin battler data
     gAiThinkingStruct->saved[switchinBattler].saved = TRUE;
     SetBattlerAiData(switchinBattler, gAiLogicData);
@@ -738,7 +758,7 @@ static bool32 FindMonThatAbsorbsOpponentsMove(enum BattlerId battler)
         if (IsAceMon(battler, monIndex))
             continue;
 
-        monAbility = GetMonAbility(&party[monIndex]);
+        monAbility = GetPartyMonAbilityForSwitchCalc(battler, monIndex, &party[monIndex]);
 
         for (u32 absorbingAbilityIndex = 0; absorbingAbilityIndex < numAbsorbingAbilities; absorbingAbilityIndex++)
         {
@@ -799,7 +819,7 @@ static bool32 ShouldSwitchIfTrapperInParty(enum BattlerId battler)
         if (IsAceMon(battler, monIndex))
             continue;
 
-        monAbility = GetMonAbility(&party[monIndex]);
+        monAbility = GetPartyMonAbilityForSwitchCalc(battler, monIndex, &party[monIndex]);
 
         if (AI_CanSwitchinAbilityTrapOpponent(monAbility, opposingBattler) || (AI_CanSwitchinAbilityTrapOpponent(gAiLogicData->abilities[opposingBattler], opposingBattler) && monAbility == ABILITY_TRACE))
         {
@@ -1259,7 +1279,7 @@ static bool32 FindMonWithFlagsAndSuperEffective(enum BattlerId battler, u16 flag
             continue;
 
         species = GetMonData(&party[monIndex], MON_DATA_SPECIES_OR_EGG);
-        monAbility = GetMonAbility(&party[monIndex]);
+        monAbility = GetPartyMonAbilityForSwitchCalc(battler, monIndex, &party[monIndex]);
         typeMultiplier = CalcPartyMonTypeEffectivenessMultiplier(gLastLandedMoves[battler], species, monAbility);
         UpdateMoveResultFlags(typeMultiplier, &moveFlags);
         if (moveFlags & flags)
