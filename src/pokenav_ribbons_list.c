@@ -72,10 +72,10 @@ static const LoopedTask sMonRibbonListLoopTaskFuncs[] =
     BuildBoxMonRibbonList
 };
 
-static const u16 sMonRibbonListFramePal[] = INCGFX_U16("graphics/pokenav/ribbons/list_bg.png", ".gbapal");
-static const u32 sMonRibbonListFrameTiles[] = INCGFX_U32("graphics/pokenav/ribbons/list_bg.png", ".4bpp.lz");
-static const u32 sMonRibbonListFrameTilemap[] = INCGFX_U32("graphics/pokenav/ribbons/list_bg.bin", ".lz");
-static const u16 sMonRibbonListUi_Pal[] = INCGFX_U16("graphics/pokenav/ribbons/list_ui.pal", ".gbapal");
+static const u16 sMonRibbonListFramePal[] = INCBIN_U16("graphics/pokenav/ribbons/list_bg.gbapal");
+static const u32 sMonRibbonListFrameTiles[] = INCBIN_U32("graphics/pokenav/ribbons/list_bg.4bpp.lz");
+static const u32 sMonRibbonListFrameTilemap[] = INCBIN_U32("graphics/pokenav/ribbons/list_bg.bin.lz");
+static const u16 sMonRibbonListUi_Pal[] = INCBIN_U16("graphics/pokenav/ribbons/list_ui.gbapal");
 
 static const struct BgTemplate sMonRibbonListBgTemplates[] =
 {
