@@ -131,7 +131,7 @@ u8 GetChineseFontWidthFunc(u16 ChineseChar, u8 fontId)
 }
 
 //汉字小字字库
-ALIGNED(4) const u16 gFontSmallChineseGlyphs [] = INCBIN_U16("graphics/fonts/chinese_small.latfont");
+ALIGNED(4) const u16 gFontSmallChineseGlyphs [] = INCGFX_U16("graphics/fonts/chinese_small.png", ".latfont");
 
 //汉字大字字库
-ALIGNED(4) const u16 gFontNormalChineseGlyphs [] = INCBIN_U16("graphics/fonts/chinese_normal.latfont");
+ALIGNED(4) const u16 gFontNormalChineseGlyphs [] = INCGFX_U16("graphics/fonts/chinese_normal.png", ".latfont");

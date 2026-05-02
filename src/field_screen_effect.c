@@ -62,7 +62,7 @@ static void ForceStairsMovement(u32, s16*, s16*);
 
 static const u8 sText_PlayerScurriedToCenter[] = _("{PLAYER}一边保护着\n精疲力尽动弹不得的宝可梦，\n一边急匆匆地回到宝可梦中心。\p");
 static const u8 sText_PlayerScurriedBackHome[] = _("{PLAYER}一边保护着\n精疲力尽动弹不得的宝可梦，\n一边急匆匆地回到自己家。\p");
-static const u8 sText_PlayerRegroupCenter[] = _("{PLAYER}为了重新制定战略\n而逃进了宝可梦中心……\p");ß
+static const u8 sText_PlayerRegroupCenter[] = _("{PLAYER}为了重新制定战略\n而逃进了宝可梦中心……\p");
 static const u8 sText_PlayerRegroupHome[] = _("{PLAYER}为了重新制定战略\n而回到了自己家……\p");
 
 // data[0] is used universally by tasks in this file as a state for switches
