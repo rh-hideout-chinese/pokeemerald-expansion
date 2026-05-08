@@ -1167,7 +1167,7 @@ static enum CancelerResult CancelerMoveFailure(struct BattleCalcValues *cv)
             battleScript = BattleScript_PokemonCantUseTheMove;
         break;
     case EFFECT_AURORA_VEIL:
-        if (!(gBattleWeather & B_WEATHER_ICY_ANY && HasWeatherEffect()))
+        if (!(GetWeather() & B_WEATHER_ICY_ANY))
             battleScript = BattleScript_ButItFailed;
         break;
     case EFFECT_CLANGOROUS_SOUL:
@@ -1558,11 +1558,14 @@ static enum CancelerResult CancelerProtean(struct BattleCalcValues *cv)
 
 static bool32 CanTwoTurnMoveFireThisTurn(struct BattleCalcValues *cv)
 {
-    if (gBattleMoveEffects[cv->moveEffect].semiInvulnerableEffect
-     || cv->moveEffect == EFFECT_GEOMANCY
-     || !(GetAttackerWeather(cv->holdEffects[cv->battlerAtk], cv->abilities[cv->battlerAtk], GetWeather()) & GetMoveTwoTurnAttackWeather(cv->move)))
+    if (cv->moveEffect == EFFECT_GEOMANCY || gBattleMoveEffects[cv->moveEffect].semiInvulnerableEffect)
         return FALSE;
-    return TRUE;
+
+    u32 weather = GetWeather();
+    u32 attackerWeather = GetAttackerWeather(cv->holdEffects[cv->battlerAtk], cv->abilities[cv->battlerAtk], weather);
+    u32 isMoveWeatherAffected = GetMoveTwoTurnAttackWeather(cv->move);
+
+    return (attackerWeather & isMoveWeatherAffected) || (weather & isMoveWeatherAffected);
 }
 
 static enum CancelerResult HandleSkyDropResult(struct BattleCalcValues *cv)
@@ -1857,10 +1860,8 @@ static enum CancelerResult CancelerTargetFailure(struct BattleCalcValues *cv)
 
     while (gBattleStruct->eventState.atkCancelerBattler < MAX_BATTLERS_COUNT)
     {
-        if (IsDoubleBattle())
-            cv->battlerDef = GetTargetBySlot(cv->battlerAtk, gBattleStruct->eventState.atkCancelerBattler);
-        else
-            cv->battlerDef = gBattleStruct->eventState.atkCancelerBattler;
+        cv->battlerDef = GetTargetBySlot(cv->battlerAtk, gBattleStruct->eventState.atkCancelerBattler);
+
         gBattleStruct->eventState.atkCancelerBattler++;
 
         if (ShouldSkipFailureCheckOnBattler(cv->battlerAtk, cv->battlerDef, FALSE))
@@ -3286,7 +3287,8 @@ static enum MoveEndResult MoveEndMoveBlock(struct BattleCalcValues *cv)
         }
         else if (cv->abilities[cv->battlerDef] == ABILITY_STICKY_HOLD)
         {
-            BattleScriptCall(BattleScript_NoItemSteal);
+            BattleScriptCall(BattleScript_StickyHoldActivatesRet);
+            gBattlerAbility = cv->battlerDef;
             gLastUsedAbility = gBattleMons[cv->battlerDef].ability;
             RecordAbilityBattle(cv->battlerDef, gLastUsedAbility);
             result = MOVEEND_RESULT_RUN_SCRIPT;
@@ -4249,10 +4251,7 @@ static enum MoveResult StatChangeCanAnyChange(struct BattleCalcValues *cv)
 
     for (enum BattlerId battler = 0; battler < gBattlersCount; battler++)
     {
-        if (IsDoubleBattle())
-            cv->battlerDef = GetTargetBySlot(cv->battlerAtk, battler);
-        else
-            cv->battlerDef = battler;
+        cv->battlerDef = GetTargetBySlot(cv->battlerAtk, battler);
 
         if (ShouldSkipStatChangeOnBattler(cv->battlerAtk, cv->battlerDef))
             continue;
@@ -4505,10 +4504,7 @@ static enum MoveResult StatChangeTryChange(struct BattleCalcValues *cv)
 
     while (gBattleStruct->statChangeBattler < gBattlersCount)
     {
-        if (IsDoubleBattle())
-            cv->battlerDef = GetTargetBySlot(cv->battlerAtk, gBattleStruct->statChangeBattler);
-        else
-            cv->battlerDef = gBattleStruct->statChangeBattler;
+        cv->battlerDef = GetTargetBySlot(cv->battlerAtk, gBattleStruct->statChangeBattler);
 
         if (gBattleStruct->moveResultFlags[cv->battlerDef] & MOVE_RESULT_MISSED)
         {
