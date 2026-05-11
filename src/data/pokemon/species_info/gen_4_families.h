@@ -4494,22 +4494,22 @@ const struct SpeciesInfo gSpeciesInfoGen4[] =
 			"新的超级进化的样子。\n"
 			"它会以音速四处飞行，\n"
 			"用翅膀上骇人的爪子撕裂敌人。"),
-        //.frontPic = gMonBackPic_CircledQuestionMark,
-        //.frontPicSize = MON_COORDS_SIZE(40, 40),
-        //.frontPicYOffset = 12,
-        //.frontAnimFrames = sAnims_SingleFramePlaceHolder,
+        .frontPic = gMonFrontPic_GarchompMegaZ,
+        .frontPicSize = MON_COORDS_SIZE(64, 64),
+        .frontPicYOffset = 0,
+        .frontAnimFrames = sAnims_SingleFramePlaceHolder,
         //.frontAnimId = ANIM_V_SQUISH_AND_BOUNCE,
-        //.backPic = gMonBackPic_CircledQuestionMark,
-        //.backPicSize = MON_COORDS_SIZE(40, 40),
-        //.backPicYOffset = 12,
+        .backPic = gMonBackPic_GarchompMegaZ,
+        .backPicSize = MON_COORDS_SIZE(64, 64),
+        .backPicYOffset = 0,
         //.backAnimId = BACK_ANIM_NONE,
-        //.palette = gMonPalette_CircledQuestionMark,
-        //.shinyPalette = gMonShinyPalette_CircledQuestionMark,
+        .palette = gMonPalette_GarchompMegaZ,
+        .shinyPalette = gMonShinyPalette_GarchompMegaZ,
         .iconSprite = gMonIcon_GarchompMegaZ,
         .iconPalIndex = 0,
         .pokemonJumpType = PKMN_JUMP_TYPE_NONE,
         FOOTPRINT(Garchomp)
-        //SHADOW(-1, 0, SHADOW_SIZE_M)
+        SHADOW(4, 11, SHADOW_SIZE_XL_BATTLE_ONLY)
         .isMegaEvolution = TRUE,
         .levelUpLearnset = sGarchompLevelUpLearnset,
         .teachableLearnset = sGarchompTeachableLearnset,
