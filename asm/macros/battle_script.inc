@@ -3,9 +3,8 @@
 	.byte B_SCR_OP_ATTACKCANCELER
 	.endm
 
-	.macro accuracycheck failInstr:req
+	.macro accuracycheck
 	.byte B_SCR_OP_ACCURACYCHECK
-	.4byte \failInstr
 	.endm
 
 	.macro printattackstring
@@ -937,16 +936,6 @@
 	.byte B_SCR_OP_SELECTFIRSTVALIDTARGET
 	.endm
 
-	.macro setfutureattack
-	.byte B_SCR_OP_SETFUTUREATTACK
-	.endm
-
-	.macro trydobeatup endInstr:req, failInstr:req
-	.byte B_SCR_OP_TRYDOBEATUP
-	.4byte \endInstr
-	.4byte \failInstr
-	.endm
-
 	.macro setsemiinvulnerablebit clear=FALSE
 	.byte B_SCR_OP_SETSEMIINVULNERABLEBIT
 	.byte \clear
@@ -1249,17 +1238,6 @@
 	.4byte \failInstr
 	.endm
 
-	.macro setpledge jumpInstr:req
-	callnative BS_SetPledge
-	.4byte \jumpInstr
-	.endm
-
-	.macro setpledgestatus battler:req, sidestatus:req
-	callnative BS_SetPledgeStatus
-	.byte \battler
-	.4byte \sidestatus
-	.endm
-
 	.macro setzeffect
 	callnative BS_SetZEffect
 	.endm
@@ -1507,7 +1485,7 @@
 
 	.macro setmoveresultflags flags:req
 	callnative BS_SetMoveResultFlags
-	.2byte \flags
+	.4byte \flags
 	.endm
 
 	.macro clearspecialstatuses
@@ -1516,12 +1494,12 @@
 
 	.macro clearmoveresultflags flags:req
 	callnative BS_ClearMoveResultFlags
-	.2byte \flags
+	.4byte \flags
 	.endm
 
 	.macro jumpifmoveresultflags flags:req failInstr:req
 	callnative BS_JumpIfMoveResultFlags
-	.2byte \flags
+	.4byte \flags
 	.4byte \failInstr
 	.endm
 
