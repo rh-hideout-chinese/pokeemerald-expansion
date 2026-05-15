@@ -66,6 +66,7 @@ static bool32 IsPowderMoveBlocked(struct BattleContext *ctx);
 const u8 *AbsorbedByDrainHpAbility(enum BattlerId battlerDef);
 const u8 *AbsorbedByStatIncreaseAbility(enum BattlerId battlerDef, enum Ability abilityDef, enum Stat statId, u32 statAmount);
 const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef);
+static bool32 IsCriticalHit(struct BattleContext *ctx);
 
 ARM_FUNC NOINLINE static uq4_12_t PercentToUQ4_12(u32 percent);
 ARM_FUNC NOINLINE static uq4_12_t PercentToUQ4_12_Floored(u32 percent);
@@ -7878,6 +7879,8 @@ s32 DoFixedDamageMoveCalc(struct BattleContext *ctx)
 
 static inline s32 DoMoveDamageCalc(struct BattleContext *ctx)
 {
+    ctx->typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(ctx);
+
     if (ctx->typeEffectivenessModifier == UQ_4_12(0.0))
         return 0;
 
@@ -7885,60 +7888,40 @@ static inline s32 DoMoveDamageCalc(struct BattleContext *ctx)
     if (dmg != INT32_MAX)
         return dmg;
 
+    ctx->isCrit = IsCriticalHit(ctx);
     return DoMoveDamageCalcVars(ctx);
-}
-
-static inline s32 DoFutureSightAttackDamageCalcVars(struct BattleContext *ctx)
-{
-    s32 dmg;
-    u32 userFinalAttack;
-    u32 targetFinalDefense;
-    enum BattlerId battlerAtk = ctx->battlerAtk;
-    enum BattlerId battlerDef = ctx->battlerDef;
-    enum Move move = ctx->move;
-    enum Type moveType = ctx->moveType;
-
-    struct Pokemon *party = GetBattlerParty(battlerAtk);
-    struct Pokemon *partyMon = &party[gBattleStruct->futureSight[battlerDef].partyIndex];
-    u32 partyMonLevel = GetMonData(partyMon, MON_DATA_LEVEL);
-    u32 partyMonSpecies = GetMonData(partyMon, MON_DATA_SPECIES);
-    gBattleMovePower = GetMovePower(move);
-
-    if (IsBattleMovePhysical(move))
-        userFinalAttack = GetMonData(partyMon, MON_DATA_ATK);
-    else
-        userFinalAttack = GetMonData(partyMon, MON_DATA_SPATK);
-
-    targetFinalDefense = CalcDefenseStat(ctx);
-    dmg = CalculateBaseDamage(gBattleMovePower, userFinalAttack, partyMonLevel, targetFinalDefense);
-
-    DAMAGE_APPLY_MODIFIER(GetCriticalModifier(ctx->isCrit));
-
-    if (ctx->randomFactor)
-    {
-        dmg *= DMG_ROLL_PERCENT_HI - RandomUniform(RNG_DAMAGE_MODIFIER, 0, DMG_ROLL_PERCENT_HI - DMG_ROLL_PERCENT_LO);
-        dmg /= 100;
-    }
-
-    // Same type attack bonus
-    if (GetSpeciesType(partyMonSpecies, 0) == moveType || GetSpeciesType(partyMonSpecies, 1) == moveType)
-        DAMAGE_APPLY_MODIFIER(UQ_4_12(1.5));
-    else
-        DAMAGE_APPLY_MODIFIER(UQ_4_12(1.0));
-    DAMAGE_APPLY_MODIFIER(ctx->typeEffectivenessModifier);
-
-    if (dmg == 0)
-        dmg = 1;
-
-    return dmg;
 }
 
 static inline s32 DoFutureSightAttackDamageCalc(struct BattleContext *ctx)
 {
+    struct Pokemon *party = GetBattlerParty(ctx->battlerAtk);
+    struct Pokemon *partyMon = &party[gBattleStruct->futureSight[ctx->battlerDef].partyIndex];
+    struct BattlePokemon *savedBattleMons = AllocSaveBattleMons();
+
+    bool32 vesselOrRuin = gBattleMons[ctx->battlerAtk].volatiles.vesselOfRuin;
+    bool32 tabletsOfRuin = gBattleMons[ctx->battlerAtk].volatiles.tabletsOfRuin;
+    bool32 swordOfRuin = gBattleMons[ctx->battlerAtk].volatiles.swordOfRuin;
+    bool32 beadsOfRuin = gBattleMons[ctx->battlerAtk].volatiles.beadsOfRuin;
+
+    PokemonToBattleMon(partyMon , &gBattleMons[ctx->battlerAtk]);
+
+    gBattleMons[ctx->battlerAtk].volatiles.vesselOfRuin = vesselOrRuin;
+    gBattleMons[ctx->battlerAtk].volatiles.tabletsOfRuin = tabletsOfRuin;
+    gBattleMons[ctx->battlerAtk].volatiles.swordOfRuin = swordOfRuin;
+    gBattleMons[ctx->battlerAtk].volatiles.beadsOfRuin = beadsOfRuin;
+
+    ctx->abilityAtk = ABILITY_NONE;
+    ctx->holdEffectAtk = HOLD_EFFECT_NONE;
+    ctx->typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(ctx);
+    ctx->isCrit = IsCriticalHit(ctx);
+
     if (ctx->typeEffectivenessModifier == UQ_4_12(0.0))
         return 0;
 
-    return DoFutureSightAttackDamageCalcVars(ctx);
+    s32 dmg = DoMoveDamageCalc(ctx);
+
+    FreeRestoreBattleMons(savedBattleMons);
+    return dmg;
 }
 
 bool32 IsFutureSightAttackerInParty(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
@@ -8218,9 +8201,6 @@ s32 CalculateMoveDamage(struct BattleContext *ctx)
     ctx->abilityDef = GetBattlerAbility(ctx->battlerDef);
     ctx->holdEffectAtk = GetBattlerHoldEffect(ctx->battlerAtk);
     ctx->holdEffectDef = GetBattlerHoldEffect(ctx->battlerDef);
-
-    ctx->typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(ctx);
-    ctx->isCrit = IsCriticalHit(ctx);
 
     if (IsFutureSightAttackerInParty(ctx->battlerAtk, ctx->battlerDef, ctx->move))
         damage = DoFutureSightAttackDamageCalc(ctx);

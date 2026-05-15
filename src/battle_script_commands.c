@@ -8809,10 +8809,10 @@ static void Cmd_trysetencore(void)
         }
     }
 
-    if ((IsMoveEncoreBanned(gLastMoves[gBattlerTarget]))
-     || i == MAX_MON_MOVES
-     || gLastMoves[gBattlerTarget] == MOVE_NONE
+    if (gLastMoves[gBattlerTarget] == MOVE_NONE
      || gLastMoves[gBattlerTarget] == MOVE_UNAVAILABLE
+     || IsMoveEncoreBanned(gLastMoves[gBattlerTarget])
+     || i == MAX_MON_MOVES
      || gBattleMons[gBattlerTarget].pp[i] == 0
      || gBattleMons[gBattlerTarget].volatiles.encoredMove != MOVE_NONE
      || GetMoveEffect(gChosenMoveByBattler[gBattlerTarget]) == EFFECT_SHELL_TRAP)
@@ -13274,9 +13274,30 @@ void BS_JumpIfIntimidateAbilityPrevented(void)
         }
         break;
     case ABILITY_GUARD_DOG:
-        hasAbility = TRUE;
-        gBattlescriptCurrInstr = BattleScript_IntimidateInReverse;
+    {
+        bool32 blockedByFlowerVeil = FALSE;
+        u32 flowerVeilBattler = IsFlowerVeilProtected(gBattlerTarget);
+
+        if (flowerVeilBattler)
+        {
+            flowerVeilBattler--;
+            if (gBattleMons[flowerVeilBattler].speed > gBattleMons[gBattlerTarget].speed)
+                blockedByFlowerVeil = TRUE;
+        }
+
+        if (!(gSideTimers[GetBattlerSide(gBattlerTarget)].mistTimer)
+         && CompareStat(gBattlerTarget, STAT_ATK, MIN_STAT_STAGE, CMP_GREATER_THAN, ability)
+         && !blockedByFlowerVeil)
+        {
+            hasAbility = TRUE;
+            gBattlescriptCurrInstr = BattleScript_IntimidateInReverse;
+        }
+        else
+        {
+            gBattlescriptCurrInstr = cmd->nextInstr;
+        }
         break;
+    }
     default:
         gBattlescriptCurrInstr = cmd->nextInstr;
         break;
