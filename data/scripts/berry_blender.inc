@@ -211,7 +211,6 @@ BerryBlender_EventScript_DoBerryBlending:
 	copyvar VAR_0x8004, NUM_OPPONENTS
 	fadescreen FADE_TO_BLACK
 	special DoBerryBlending
-	waitstate
 	releaseall
 	end
 
@@ -476,7 +475,6 @@ BerryBlender_EventScript_TryDoLinkBlender:
 	message BerryBlender_Text_SearchingForFriends
 	waitmessage
 	special TryBerryBlenderLinkup
-	waitstate
 	goto_if_eq VAR_RESULT, LINKUP_SUCCESS, BerryBlender_EventScript_SpawnLinkPartners
 	goto_if_eq VAR_RESULT, LINKUP_SOMEONE_NOT_READY, BerryBlender_EventScript_CloseLinkNotReady
 	goto_if_eq VAR_RESULT, LINKUP_DIFF_SELECTIONS, BerryBlender_EventScript_CloseLinkDifferentSelections
@@ -507,7 +505,6 @@ BerryBlender_EventScript_DoLinkBerryBlending:
 	removeobject 238
 	removeobject 237
 	special DoBerryBlending
-	waitstate
 	releaseall
 	end
 
@@ -600,12 +597,10 @@ BerryBlender_EventScript_TryJoinGroup:
 
 BerryBlender_EventScript_TryBecomeLinkLeader:
 	special TryBecomeLinkLeader
-	waitstate
 	return
 
 BerryBlender_EventScript_TryJoinLinkGroup:
 	special TryJoinLinkGroup
-	waitstate
 	return
 
 BerryBlender_EventScript_LinkLeaderDecided:

@@ -3075,6 +3075,20 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
 
     switch (caseID)
     {
+    case ABILITYEFFECT_ON_FORM_CHANGE:
+        switch (gLastUsedAbility)
+        {
+        case ABILITY_TERAFORM_ZERO:
+            if (gBattleWeather != WEATHER_NONE || gFieldStatuses & STATUS_FIELD_TERRAIN_ANY)
+            {
+                BattleScriptCall(BattleScript_ActivateTeraformZero);
+                effect++;
+            }
+            break;
+        default:
+            break;
+        }
+        break;
     case ABILITYEFFECT_ON_SWITCHIN:
         gBattleScripting.battler = battler;
         switch (gLastUsedAbility)
@@ -3460,13 +3474,6 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             if (shouldAbilityTrigger)
             {
                 BattleScriptCall(BattleScript_AnnounceAirLockCloudNine);
-                effect++;
-            }
-            break;
-        case ABILITY_TERAFORM_ZERO:
-            if (shouldAbilityTrigger && gBattleMons[battler].species == SPECIES_TERAPAGOS_STELLAR)
-            {
-                BattleScriptCall(BattleScript_ActivateTeraformZero);
                 effect++;
             }
             break;
@@ -4309,11 +4316,13 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             }
             break;
         case ABILITY_TOXIC_DEBRIS:
+        {
+            enum BattlerId toxicSpikesTarget = BATTLE_OPPOSITE(gBattlerTarget);
             if (!gBattleStruct->isSkyBattle
              && !gBattleStruct->unableToUseMove
              && IsBattleMovePhysical(gCurrentMove)
              && IsBattlerTurnDamaged(gBattlerTarget, EXCLUDING_SUBSTITUTES)
-             && (gSideTimers[GetBattlerSide(gBattlerAttacker)].toxicSpikesAmount != 2))
+             && (gSideTimers[GetBattlerSide(toxicSpikesTarget)].toxicSpikesAmount != 2))
             {
                 SaveBattlerTarget(gBattlerTarget);
                 SaveBattlerAttacker(gBattlerAttacker);
@@ -4323,6 +4332,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
                 effect++;
             }
             break;
+        }
         default:
             break;
         }
@@ -4375,14 +4385,18 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
             break;
         case ABILITY_POISON_PUPPETEER:
             if (IsRestrictedAbility(gBattlerAttacker, ABILITY_POISON_PUPPETEER)
-             && gBattleStruct->poisonPuppeteerConfusion == TRUE
-             && CanBeConfused(gBattlerTarget))
+             && gSpecialStatuses[gBattlerTarget].poisonPuppeteer)
             {
-                gBattleStruct->poisonPuppeteerConfusion = FALSE;
-                gBattleScripting.moveEffect = MOVE_EFFECT_CONFUSION;
-                PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
-                BattleScriptCall(BattleScript_AbilityStatusEffect);
-                effect++;
+                gSpecialStatuses[gBattlerTarget].poisonPuppeteer = FALSE;
+                if (CanBeConfused(gBattlerTarget))
+                {
+                    gBattleScripting.battler = gBattlerAttacker;
+                    gEffectBattler = gBattlerTarget;
+                    gBattleScripting.moveEffect = MOVE_EFFECT_CONFUSION;
+                    PREPARE_ABILITY_BUFFER(gBattleTextBuff1, gLastUsedAbility);
+                    BattleScriptCall(BattleScript_AbilityStatusEffect);
+                    effect++;
+                }
             }
             break;
         default:
@@ -6382,7 +6396,8 @@ static inline u32 CalcMoveBasePower(struct BattleContext *ctx)
             basePower *= 2;
         break;
     case EFFECT_WEATHER_BALL:
-        if (ctx->weather & B_WEATHER_ANY)
+        if (ctx->weather & B_WEATHER_ANY
+         && !((ctx->weather & (B_WEATHER_SUN | B_WEATHER_RAIN)) && ctx->holdEffectAtk == HOLD_EFFECT_UTILITY_UMBRELLA))
             basePower *= 2;
         break;
     case EFFECT_PURSUIT:
@@ -8905,7 +8920,7 @@ bool32 TryClearIllusion(enum BattlerId battler, enum Ability ability)
 {
     if (gBattleStruct->illusion[battler].state != ILLUSION_ON)
         return FALSE;
-    if (ability == ABILITY_ILLUSION && IsBattlerAlive(battler))
+    if (ability == ABILITY_ILLUSION && !IsBattlerTurnDamaged(battler, EXCLUDING_SUBSTITUTES))
         return FALSE;
 
     gBattleScripting.battler = battler;
@@ -10149,8 +10164,8 @@ bool32 TryTriggerSymbiosis(enum BattlerId battler, u32 ally)
 bool32 TrySymbiosis(enum BattlerId battler, enum Item itemId, bool32 moveEnd)
 {
     if (!gBattleStruct->itemLost[B_SIDE_PLAYER][gBattlerPartyIndexes[battler]].stolen
-        && GetBattlerHoldEffect(battler) != HOLD_EFFECT_EJECT_BUTTON
-        && GetBattlerHoldEffect(battler) != HOLD_EFFECT_EJECT_PACK
+        && GetItemHoldEffect(itemId) != HOLD_EFFECT_EJECT_BUTTON
+        && GetItemHoldEffect(itemId) != HOLD_EFFECT_EJECT_PACK
         && (GetConfig(B_SYMBIOSIS_GEMS) < GEN_7 || !(gSpecialStatuses[battler].gemBoost))
         && GetMoveEffect(gCurrentMove) != EFFECT_FLING //Fling and damage-reducing berries are handled separately.
         && !gSpecialStatuses[battler].berryReduced

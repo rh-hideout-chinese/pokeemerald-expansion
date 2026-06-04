@@ -68,6 +68,7 @@ BattleScript_TeraFormChange::
 	printstring STRINGID_PKMNTERASTALLIZEDINTO
 	waitmessage B_WAIT_TIME_LONG
 	switchinabilities BS_ATTACKER
+	abilityonformchange BS_ATTACKER
 	end3
 
 BattleScript_LowerAtkSpAtk::
@@ -222,9 +223,9 @@ BattleScript_SyrupBombActivates::
 
 BattleScript_SyrupBombEndTurn::
 	flushtextbox
-	playanimation BS_ATTACKER, B_ANIM_SYRUP_BOMB_SPEED_DROP
+	playanimation BS_TARGET, B_ANIM_SYRUP_BOMB_SPEED_DROP
 	setstatchanger STAT_SPEED, 1, TRUE
-	statbuffchange BS_ATTACKER, STAT_CHANGE_CHECK_PREVENTION | STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_SyrupBombTurnDmgEnd
+	statbuffchange BS_TARGET, STAT_CHANGE_CHECK_PREVENTION | STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_NOT_PROTECT_AFFECTED, BattleScript_SyrupBombTurnDmgEnd
 	printfromtable gStatDownStringIds
 	waitmessage B_WAIT_TIME_LONG
 BattleScript_SyrupBombTurnDmgEnd:
