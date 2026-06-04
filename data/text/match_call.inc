@@ -622,89 +622,223 @@ MatchCall_Text_Mom2::
 MatchCall_Text_Mom3::
     .string "妈妈：{PLAYER}……\n别为我和家里担心。\p穿着这双跑步鞋\n直到它们彻底磨破吧！$"
 
-MatchCall_Text_Roxanne_Preparing::
-    .string "杜娟：哦，您好，{PLAYER}！\p在上次见面以后\n我一直在努力修炼。\p我还需要一点点时间\n来重新开张道馆。\p当我准备好了之后，请来我的道馆\n再战一场吧！$"
+MatchCall_Text_Roxanne1::
+	.string "ROXANNE: Oh, hello, {PLAYER}!\p"
+	.string "I've been hard at work retraining\n"
+	.string "since we met.\p"
+	.string "I will still need some more time\n"
+	.string "before I can reopen the GYM.\p"
+	.string "But when I do, please visit my GYM\n"
+	.string "for a rematch!$"
 
-MatchCall_Text_Roxanne_PreparingPostGame::
-    .string "杜娟：是{PLAYER}吗？\n恭喜您啊！\l我听说您的事了！\p我吗，我还再需要一点时间\n开重新开张道馆。\p一切就绪以后，请来我的道馆\n让我们再战一场吧！$"
+MatchCall_Text_Roxanne2::
+	.string "ROXANNE: Is this {PLAYER}?\n"
+	.string "Congratulations!\l"
+	.string "I've been hearing about you!\p"
+	.string "As for me, I need some more time\n"
+	.string "before I can reopen the GYM.\p"
+	.string "But when I do, please visit my GYM\n"
+	.string "for a rematch!$"
 
-MatchCall_Text_Roxanne_RematchReady::
-    .string "杜娟：{PLAYER}！\n我的道馆已经准备好了！\p随时欢迎你再来\n卡那兹市！$"
+MatchCall_Text_Roxanne3::
+	.string "ROXANNE: {PLAYER}!\n"
+	.string "My GYM is ready!\p"
+	.string "Please visit RUSTBORO whenever\n"
+	.string "you can!$"
 
-MatchCall_Text_Roxanne_PostRematch::
-    .string "杜娟：我们在卡那兹市道馆进行过的\n那场对战，{PLAYER}，\l是我引以为豪的回忆。$"
+MatchCall_Text_Roxanne4::
+	.string "ROXANNE: At the RUSTBORO GYM,\n"
+	.string "the fact that we battled, {PLAYER},\l"
+	.string "is a matter of pride.$"
 
-MatchCall_Text_Brawly_Preparing::
-    .string "藤树：嘿，你好，{PLAYER}{KUN}！\p我在我们上次的对战中\n又学到了不少东西。\p我打算重新修行训练，\n然后重新开张道馆。\p不过在那之前\n我还需要点时间准备。\p如果我能重新开张道馆，\n我希望你能和我们比试比试。$"
+MatchCall_Text_Brawly1::
+	.string "BRAWLY: Hey, there, {PLAYER}{KUN}!\p"
+	.string "I learned a lot from the battle we\n"
+	.string "had together.\p"
+	.string "I intend to do my training over,\n"
+	.string "then reopen the GYM.\p"
+	.string "It's going to take some time before\n"
+	.string "I'm ready to run the GYM again.\p"
+	.string "But if I can reopen the GYM,\n"
+	.string "I want you to challenge us again.$"
 
-MatchCall_Text_Brawly_PreparingPostGame::
-    .string "藤树：嘿，{PLAYER}{KUN}！\n恭喜你！\p你的英勇事迹都已经随着\n潮风传到这里了！\p看来我还需要继续\n训练才行啊。\p我想还要些时间准备\n之后才能重开道馆。\p但如果道馆重开了，\n希望你能再来挑战。$"
+MatchCall_Text_Brawly2::
+	.string "BRAWLY: Hey, {PLAYER}{KUN}!\n"
+	.string "Congratulations!\p"
+	.string "Word about your exploits arrived\n"
+	.string "on tidal winds!\p"
+	.string "It appears as if I need to work on\n"
+	.string "my training some more.\p"
+	.string "It's going to take some time before\n"
+	.string "I'm ready to run the GYM again.\p"
+	.string "But if I can reopen the GYM,\n"
+	.string "I want you to challenge us again.$"
 
-MatchCall_Text_Brawly_RematchReady::
-    .string "藤树：嘿，{PLAYER}{KUN}！\n我的道馆已经准备好应战了！\p欢迎随时来武斗镇再战！$"
+MatchCall_Text_Brawly3::
+	.string "BRAWLY: Hey, {PLAYER}{KUN}!\n"
+	.string "My GYM's ready for action!\p"
+	.string "Come back to DEWFORD anytime\n"
+	.string "for another challenge!$"
 
-MatchCall_Text_Brawly_PostRematch::
-    .string "藤树：{PLAYER}{KUN}，\n和你对战真是永远都不会腻！$"
+MatchCall_Text_Brawly4::
+	.string "BRAWLY: {PLAYER}{KUN}, I don't think\n"
+	.string "I'll ever get bored of battling you!$"
 
-MatchCall_Text_Wattson_Preparing::
-    .string "铁旋：哦，是你啊！\p你走后，\n我重新开始了修炼。\p我还需要那么一丁点时间\n才能重新开张道馆。\p你就等着吧！\n哇哈哈哈哈！$"
+MatchCall_Text_Wattson1::
+	.string "WATTSON: Oh, it's you!\p"
+	.string "After you left, I've been redoing\n"
+	.string "my training from scratch.\p"
+	.string "I'd say I could use a wee bit more\n"
+	.string "time to reopen my GYM.\p"
+	.string "You'll have to wait till then!\n"
+	.string "Wahahahaha!$"
 
-MatchCall_Text_Wattson_PreparingPostGame::
-    .string "铁旋：哇哈哈哈哈！\p你真的做到了，对吧？\n我听说过你的事了！\p看上去我还要再多\n训练一下。\p我还需要一点点\n时间来重新开张道馆。\p你就等着吧！\n哇哈哈哈！$"
+MatchCall_Text_Wattson2::
+	.string "WATTSON: Wahahahaha!\p"
+	.string "You've really done it, haven't you?\n"
+	.string "I've been getting word about you!\p"
+	.string "It seems I need to retrain some\n"
+	.string "more still.\p"
+	.string "I'd say I could use a wee bit more\n"
+	.string "time to reopen my GYM.\p"
+	.string "You'll have to wait till then!\n"
+	.string "Wahahahaha!$"
 
-MatchCall_Text_Wattson_RematchReady::
-    .string "铁旋：哦，是你啊！\n我的道馆已经准备好了！\p来紫堇市吧，随时欢迎！\n哇哈哈哈哈！$"
+MatchCall_Text_Wattson3::
+	.string "WATTSON: Oh, it's you!\n"
+	.string "My GYM's ready!\p"
+	.string "Visit MAUVILLE anytime!\n"
+	.string "Wahahahaha!$"
 
-MatchCall_Text_Wattson_PostRematch::
-    .string "铁旋：哇哈哈哈哈！\p和你的对战总是充满着\n电击般的震撼！$"
+MatchCall_Text_Wattson4::
+	.string "WATTSON: Wahahaha!\p"
+	.string "A battle with you is always charged\n"
+	.string "with shocking power!$"
 
-MatchCall_Text_Flannery_Preparing::
-    .string "亚莎：{PLAYER}……\p当我们对战之后，\n我才意识到我自己的不成熟。\p但我不会就此止步！\p我要重新进行训练，\n重新开张道馆。\p到那时候，{PLAYER}，\n请务必再来挑战。$"
+MatchCall_Text_Flannery1::
+	.string "FLANNERY: {PLAYER}…\p"
+	.string "When we battled, I learned exactly\n"
+	.string "how immature I was.\p"
+	.string "But I'm not done yet!\p"
+	.string "I'm going to redo my training and\n"
+	.string "reopen the GYM.\p"
+	.string "When the time comes, {PLAYER},\n"
+	.string "please challenge us again.$"
 
-MatchCall_Text_Flannery_PreparingPostGame::
-    .string "亚莎：你好，{PLAYER}？\n恭喜你！\p你成功的消息如同火山热浪\n似的传到了我们这里！\p我们的训练进展得\n十分顺利。\p当道馆就绪之后，\n看看你的对战寻呼列表，\l我的名字旁边会有标记。$"
+MatchCall_Text_Flannery2::
+	.string "FLANNERY: Hello, {PLAYER}?\n"
+	.string "Congratulations!\p"
+	.string "Word of your success has reached\n"
+	.string "us like the heat of a volcano!\p"
+	.string "Our training is coming along very\n"
+	.string "well here.\p"
+	.string "When the GYM's ready, a mark will\n"
+	.string "appear beside my name in the\l"
+	.string "MATCH CALL list.$"
 
-MatchCall_Text_Flannery_RematchReady::
-    .string "亚莎：哦，{PLAYER}？\n我们的道馆已经准备好了！\p来釜炎镇泡泡温泉\n顺便挑战一下道馆吧！$"
+MatchCall_Text_Flannery3::
+	.string "FLANNERY: Oh, {PLAYER}?\n"
+	.string "Our GYM's ready!\p"
+	.string "Come to LAVARIDGE for a soak\n"
+	.string "in the hot spring and a challenge!$"
 
-MatchCall_Text_Flannery_PostRematch::
-    .string "亚莎：{PLAYER}……\n我相信你每次都能在训练中\l不断变得更强。$"
+MatchCall_Text_Flannery4::
+	.string "FLANNERY: {PLAYER}…\n"
+	.string "I'm positive that you keep getting\l"
+	.string "better at training every time.$"
 
-MatchCall_Text_Winona_Preparing::
-    .string "娜琪：你好，{PLAYER}！\p多亏了我们的那次对战，\n我认识到了自己的弱点所在！\p当我重新开张道馆之后，\n我不会再输了！$"
+MatchCall_Text_Winona1::
+	.string "WINONA: Hello, {PLAYER}!\p"
+	.string "Thanks to our battle, I've come\n"
+	.string "to understand my weak points!\p"
+	.string "When I reopen the GYM, I won't go\n"
+	.string "down in defeat again!$"
 
-MatchCall_Text_Winona_PreparingPostGame::
-    .string "娜琪：你做到了，{PLAYER}！\p关于你成为新冠军的消息\n已经传到了茵郁市！\p不过……下一次你我再战，\n结果一定会有所不同。$"
+MatchCall_Text_Winona2::
+	.string "WINONA: You've done it, {PLAYER}!\p"
+	.string "News about the new CHAMPION\n"
+	.string "has reached us in FORTREE!\p"
+	.string "But… The next time we battle,\n"
+	.string "it's not going to end the same way.$"
 
-MatchCall_Text_Winona_RematchReady::
-    .string "娜琪：是{PLAYER}吗？\n我们的道馆重新开张了！\p我们在茵郁市等你！$"
+MatchCall_Text_Winona3::
+	.string "WINONA: Is this {PLAYER}?\n"
+	.string "Our GYM is back in operation!\p"
+	.string "We're waiting for you in FORTREE!$"
 
-MatchCall_Text_Winona_PostRematch::
-    .string "娜琪：{PLAYER}……\n虽然我输了，\l但我的羽翼永远不会折断。\p对，就像你从未放弃追逐\n你的梦想一样。$"
+MatchCall_Text_Winona4::
+	.string "WINONA: {PLAYER}…\n"
+	.string "Though I have lost, my wings will\l"
+	.string "never break.\p"
+	.string "Yes, in exactly the same way that\n"
+	.string "you never lost sight of your dream.$"
 
-MatchCall_Text_TateLiza_Preparing::
-    .string "小枫：哦！你是……\n小南：{PLAYER}！\p小枫：我们在重新训练……\n小南：为了能重开道馆！\p小枫：当我们的道馆就绪之后……\n小南：当我们的道馆就绪之后……\p小枫：我们名字旁会有一个标志……\n小南：就在对战寻呼的列表上！$"
+MatchCall_Text_TateLiza1::
+	.string "TATE: Oh! You're…\n"
+	.string "LIZA: {PLAYER}!\p"
+	.string "TATE: We're in training again…\n"
+	.string "LIZA: So we can reopen our GYM!\p"
+	.string "TATE: When our GYM is ready…\n"
+	.string "LIZA: When our GYM is ready…\p"
+	.string "TATE: A mark'll appear by our name…\n"
+	.string "LIZA: On the MATCH CALL list.$"
 
-MatchCall_Text_TateLiza_PreparingPostGame::
-    .string "小枫：{PLAYER}，祝贺你！\n小南：{PLAYER}，祝贺你！\p小枫：我们两个……\n小南：仍在训练！\p小枫：不过，再给我们一点时间……\n小南：当我们的道馆就绪之后……\p小枫：我们名字旁会有一个标志……\n小南：就在对战寻呼的列表上！$"
+MatchCall_Text_TateLiza2::
+	.string "TATE: {PLAYER}, congratulations!\n"
+	.string "LIZA: {PLAYER}, congratulations!\p"
+	.string "TATE: The two of us are…\n"
+	.string "LIZA: Still in training!\p"
+	.string "TATE: We need some more time, but…\n"
+	.string "LIZA: When our GYM is ready…\p"
+	.string "TATE: A mark'll appear by our name…\n"
+	.string "LIZA: On the MATCH CALL list.$"
 
-MatchCall_Text_TateLiza_RematchReady::
-    .string "小枫：{PLAYER}！\n小南：{PLAYER}！\p小枫：我们的道馆已经好了！\n小南：我们的道馆已经好了！\p小枫：请随时来……\n小南：绿岭市看看！$"
+MatchCall_Text_TateLiza3::
+	.string "TATE: {PLAYER}!\n"
+	.string "LIZA: {PLAYER}!\p"
+	.string "TATE: Our GYM is ready!\n"
+	.string "LIZA: Our GYM is ready!\p"
+	.string "TATE: Please come visit…\n"
+	.string "LIZA: MOSSDEEP anytime!$"
 
-MatchCall_Text_TateLiza_PostRematch::
-    .string "小枫：{PLAYER}，我们之间的对战……\n小南：真是无比珍贵的经历。\p小枫：真期待能和你……\n小南：再战一场！$"
+MatchCall_Text_TateLiza4::
+	.string "TATE: {PLAYER}, the battle we had…\n"
+	.string "LIZA: Is an invaluable experience.\p"
+	.string "TATE: It would be nice if…\n"
+	.string "LIZA: We could all battle again!$"
 
-MatchCall_Text_Juan_Preparing::
-    .string "亚当：嗯……\n{PLAYER}{KUN}……是你吗？\p我们的对战——\n这让我想起了第一次\l遇到米可利时候的情景。\p或许你真的是一位能够超越\n米可利的天才训练家呢！$"
+MatchCall_Text_Juan1::
+	.string "JUAN: Hmm…\n"
+	.string "{PLAYER}{KUN}… Was it?\p"
+	.string "Our battle together--it brought\n"
+	.string "to me memories of when I first\l"
+	.string "encountered WALLACE.\p"
+	.string "Perhaps you are a genius who may\n"
+	.string "yet surpass WALLACE!$"
 
-MatchCall_Text_Juan_PreparingPostGame::
-    .string "亚当：呵呵……{PLAYER}{KUN}……\n你终于达成了目标。\p我的识人眼光\n果然没错……\p如今的你已登顶荣耀之巅，\n我期待与你重逢的时刻。$"
+MatchCall_Text_Juan2::
+	.string "JUAN: Fufu… {PLAYER}{KUN}…\n"
+	.string "You've finally achieved your goal.\p"
+	.string "My eye for appraising talent wasn't\n"
+	.string "mistaken…\p"
+	.string "I wish for another chance to meet\n"
+	.string "you, for you have scaled the peak\l"
+	.string "of power and prestige.$"
 
-MatchCall_Text_Juan_RematchReady::
-    .string "亚当：呵呵……{PLAYER}{KUN}……\p我们的琉璃市道馆\n终于重新开张了。\p若想见我，\n随时欢迎来访。$"
+MatchCall_Text_Juan3::
+	.string "JUAN: Hoho… {PLAYER}{KUN}…\p"
+	.string "Our SOOTOPOLIS GYM has finally\n"
+	.string "reopened.\p"
+	.string "If you wish to see me, you are\n"
+	.string "welcome to visit anytime.$"
 
-MatchCall_Text_Juan_PostRematch::
-    .string "亚当：{PLAYER}{KUN}……\p如同最为悦耳的乐章，\n我们的对战拨动了我心中\l的灵感之弦……\p每当我闭上双眼，\n都仿佛能看到你乘着旋律翱翔……$"
+MatchCall_Text_Juan4::
+	.string "JUAN: {PLAYER}{KUN}…\p"
+	.string "Like the finest music, the battles\n"
+	.string "we wage together strike chords\l"
+	.string "of inspiration in my heart…\p"
+	.string "When I close my eyes, I see visions\n"
+	.string "of you soaring with the melody…$"
 
 MatchCall_Text_Sidney::
     .string "花月：哟，{PLAYER}！\p如果你想跟我再战一场，\n你可以随时来宝可梦联盟找我。\p我会等你的！\n等你来战！$"
@@ -874,17 +1008,30 @@ MatchCall_Text_Norman4::
 MatchCall_Text_Norman5::
     .string "爸爸：哦，{PLAYER}！\p什么？熔岩标志？\n我不清楚那是什么。\p但是从名字来看，\n可能和火山有关！$"
 
-MatchCall_Text_Norman_Preparing::
-    .string "爸爸：嘿呀！喝哈！呜哇！\p……哦？{PLAYER}！\p你打给我的时候\n我正在和宝可梦特训！$"
+MatchCall_Text_Norman6::
+	.string "DAD: Hiyah! Haah! Dwah!\p"
+	.string "…Oh? {PLAYER}!\p"
+	.string "You caught me right in the middle\n"
+	.string "of a POKéMON training session!$"
 
-MatchCall_Text_Norman_PreparingPostGame::
-    .string "爸爸：{PLAYER}！\p想不到你真的成为了\n宝可梦联盟冠军……\p好！\n我也不会认输！$"
+MatchCall_Text_Norman7::
+	.string "DAD: {PLAYER}!\p"
+	.string "Who would've thought you'd become\n"
+	.string "the POKéMON LEAGUE CHAMPION…\p"
+	.string "Okay!\n"
+	.string "I won't be left behind!$"
 
-MatchCall_Text_Norman_RematchReady::
-    .string "爸爸：嗯？{PLAYER}？\n来得正好！\p这次，\n换我来挑战你。\p我在橙华市道馆等你。\n随时奉陪！$"
+MatchCall_Text_Norman8::
+	.string "DAD: Hm? {PLAYER}?\n"
+	.string "What good timing!\p"
+	.string "This time, I'm going to challenge\n"
+	.string "you to battle.\p"
+	.string "I'm waiting in the PETALBURG GYM.\n"
+	.string "Accept my challenge anytime!$"
 
-MatchCall_Text_Norman_PostRematch::
-    .string "爸爸：……真令我惊叹，{PLAYER}。\n你究竟能飞多高呢？$"
+MatchCall_Text_Norman9::
+	.string "DAD: …You amaze me, {PLAYER}.\n"
+	.string "How much higher will you soar?$"
 
 MatchCall_Text_Steven1::
     .string "大吾：嗨，{PLAYER}{KUN}！\p你去过紫堇市了吗？\p记得去自行车商店\n弄一辆音速自行车。\p然后去彻底探索一下\n石之洞窟吧。\p你在那里\n会有新发现的。$"
