@@ -622,88 +622,88 @@ MatchCall_Text_Mom2::
 MatchCall_Text_Mom3::
     .string "妈妈：{PLAYER}……\n别为我和家里担心。\p穿着这双跑步鞋\n直到它们彻底磨破吧！$"
 
-MatchCall_Text_Roxanne1::
+MatchCall_Text_Roxanne_Preparing::
     .string "杜娟：哦，您好，{PLAYER}！\p在上次见面以后\n我一直在努力修炼。\p我还需要一点点时间\n来重新开张道馆。\p当我准备好了之后，请来我的道馆\n再战一场吧！$"
 
-MatchCall_Text_Roxanne2::
+MatchCall_Text_Roxanne_PreparingPostGame::
     .string "杜娟：是{PLAYER}吗？\n恭喜您啊！\l我听说您的事了！\p我吗，我还再需要一点时间\n开重新开张道馆。\p一切就绪以后，请来我的道馆\n让我们再战一场吧！$"
 
-MatchCall_Text_Roxanne3::
+MatchCall_Text_Roxanne_RematchReady::
     .string "杜娟：{PLAYER}！\n我的道馆已经准备好了！\p随时欢迎你再来\n卡那兹市！$"
 
-MatchCall_Text_Roxanne4::
+MatchCall_Text_Roxanne_PostRematch::
     .string "杜娟：我们在卡那兹市道馆进行过的\n那场对战，{PLAYER}，\l是我引以为豪的回忆。$"
 
-MatchCall_Text_Brawly1::
+MatchCall_Text_Brawly_Preparing::
     .string "藤树：嘿，你好，{PLAYER}{KUN}！\p我在我们上次的对战中\n又学到了不少东西。\p我打算重新修行训练，\n然后重新开张道馆。\p不过在那之前\n我还需要点时间准备。\p如果我能重新开张道馆，\n我希望你能和我们比试比试。$"
 
-MatchCall_Text_Brawly2::
+MatchCall_Text_Brawly_PreparingPostGame::
     .string "藤树：嘿，{PLAYER}{KUN}！\n恭喜你！\p你的英勇事迹都已经随着\n潮风传到这里了！\p看来我还需要继续\n训练才行啊。\p我想还要些时间准备\n之后才能重开道馆。\p但如果道馆重开了，\n希望你能再来挑战。$"
 
-MatchCall_Text_Brawly3::
+MatchCall_Text_Brawly_RematchReady::
     .string "藤树：嘿，{PLAYER}{KUN}！\n我的道馆已经准备好应战了！\p欢迎随时来武斗镇再战！$"
 
-MatchCall_Text_Brawly4::
+MatchCall_Text_Brawly_PostRematch::
     .string "藤树：{PLAYER}{KUN}，\n和你对战真是永远都不会腻！$"
 
-MatchCall_Text_Wattson1::
+MatchCall_Text_Wattson_Preparing::
     .string "铁旋：哦，是你啊！\p你走后，\n我重新开始了修炼。\p我还需要那么一丁点时间\n才能重新开张道馆。\p你就等着吧！\n哇哈哈哈哈！$"
 
-MatchCall_Text_Wattson2::
+MatchCall_Text_Wattson_PreparingPostGame::
     .string "铁旋：哇哈哈哈哈！\p你真的做到了，对吧？\n我听说过你的事了！\p看上去我还要再多\n训练一下。\p我还需要一点点\n时间来重新开张道馆。\p你就等着吧！\n哇哈哈哈！$"
 
-MatchCall_Text_Wattson3::
+MatchCall_Text_Wattson_RematchReady::
     .string "铁旋：哦，是你啊！\n我的道馆已经准备好了！\p来紫堇市吧，随时欢迎！\n哇哈哈哈哈！$"
 
-MatchCall_Text_Wattson4::
+MatchCall_Text_Wattson_PostRematch::
     .string "铁旋：哇哈哈哈哈！\p和你的对战总是充满着\n电击般的震撼！$"
 
-MatchCall_Text_Flannery1::
+MatchCall_Text_Flannery_Preparing::
     .string "亚莎：{PLAYER}……\p当我们对战之后，\n我才意识到我自己的不成熟。\p但我不会就此止步！\p我要重新进行训练，\n重新开张道馆。\p到那时候，{PLAYER}，\n请务必再来挑战。$"
 
-MatchCall_Text_Flannery2::
+MatchCall_Text_Flannery_PreparingPostGame::
     .string "亚莎：你好，{PLAYER}？\n恭喜你！\p你成功的消息如同火山热浪\n似的传到了我们这里！\p我们的训练进展得\n十分顺利。\p当道馆就绪之后，\n看看你的对战寻呼列表，\l我的名字旁边会有标记。$"
 
-MatchCall_Text_Flannery3::
+MatchCall_Text_Flannery_RematchReady::
     .string "亚莎：哦，{PLAYER}？\n我们的道馆已经准备好了！\p来釜炎镇泡泡温泉\n顺便挑战一下道馆吧！$"
 
-MatchCall_Text_Flannery4::
+MatchCall_Text_Flannery_PostRematch::
     .string "亚莎：{PLAYER}……\n我相信你每次都能在训练中\l不断变得更强。$"
 
-MatchCall_Text_Winona1::
+MatchCall_Text_Winona_Preparing::
     .string "娜琪：你好，{PLAYER}！\p多亏了我们的那次对战，\n我认识到了自己的弱点所在！\p当我重新开张道馆之后，\n我不会再输了！$"
 
-MatchCall_Text_Winona2::
+MatchCall_Text_Winona_PreparingPostGame::
     .string "娜琪：你做到了，{PLAYER}！\p关于你成为新冠军的消息\n已经传到了茵郁市！\p不过……下一次你我再战，\n结果一定会有所不同。$"
 
-MatchCall_Text_Winona3::
+MatchCall_Text_Winona_RematchReady::
     .string "娜琪：是{PLAYER}吗？\n我们的道馆重新开张了！\p我们在茵郁市等你！$"
 
-MatchCall_Text_Winona4::
+MatchCall_Text_Winona_PostRematch::
     .string "娜琪：{PLAYER}……\n虽然我输了，\l但我的羽翼永远不会折断。\p对，就像你从未放弃追逐\n你的梦想一样。$"
 
-MatchCall_Text_TateLiza1::
+MatchCall_Text_TateLiza_Preparing::
     .string "小枫：哦！你是……\n小南：{PLAYER}！\p小枫：我们在重新训练……\n小南：为了能重开道馆！\p小枫：当我们的道馆就绪之后……\n小南：当我们的道馆就绪之后……\p小枫：我们名字旁会有一个标志……\n小南：就在对战寻呼的列表上！$"
 
-MatchCall_Text_TateLiza2::
+MatchCall_Text_TateLiza_PreparingPostGame::
     .string "小枫：{PLAYER}，祝贺你！\n小南：{PLAYER}，祝贺你！\p小枫：我们两个……\n小南：仍在训练！\p小枫：不过，再给我们一点时间……\n小南：当我们的道馆就绪之后……\p小枫：我们名字旁会有一个标志……\n小南：就在对战寻呼的列表上！$"
 
-MatchCall_Text_TateLiza3::
+MatchCall_Text_TateLiza_RematchReady::
     .string "小枫：{PLAYER}！\n小南：{PLAYER}！\p小枫：我们的道馆已经好了！\n小南：我们的道馆已经好了！\p小枫：请随时来……\n小南：绿岭市看看！$"
 
-MatchCall_Text_TateLiza4::
+MatchCall_Text_TateLiza_PostRematch::
     .string "小枫：{PLAYER}，我们之间的对战……\n小南：真是无比珍贵的经历。\p小枫：真期待能和你……\n小南：再战一场！$"
 
-MatchCall_Text_Juan1::
+MatchCall_Text_Juan_Preparing::
     .string "亚当：嗯……\n{PLAYER}{KUN}……是你吗？\p我们的对战——\n这让我想起了第一次\l遇到米可利时候的情景。\p或许你真的是一位能够超越\n米可利的天才训练家呢！$"
 
-MatchCall_Text_Juan2::
+MatchCall_Text_Juan_PreparingPostGame::
     .string "亚当：呵呵……{PLAYER}{KUN}……\n你终于达成了目标。\p我的识人眼光\n果然没错……\p如今的你已登顶荣耀之巅，\n我期待与你重逢的时刻。$"
 
-MatchCall_Text_Juan3::
+MatchCall_Text_Juan_RematchReady::
     .string "亚当：呵呵……{PLAYER}{KUN}……\p我们的琉璃市道馆\n终于重新开张了。\p若想见我，\n随时欢迎来访。$"
 
-MatchCall_Text_Juan4::
+MatchCall_Text_Juan_PostRematch::
     .string "亚当：{PLAYER}{KUN}……\p如同最为悦耳的乐章，\n我们的对战拨动了我心中\l的灵感之弦……\p每当我闭上双眼，\n都仿佛能看到你乘着旋律翱翔……$"
 
 MatchCall_Text_Sidney::
@@ -874,16 +874,16 @@ MatchCall_Text_Norman4::
 MatchCall_Text_Norman5::
     .string "爸爸：哦，{PLAYER}！\p什么？熔岩标志？\n我不清楚那是什么。\p但是从名字来看，\n可能和火山有关！$"
 
-MatchCall_Text_Norman6::
+MatchCall_Text_Norman_Preparing::
     .string "爸爸：嘿呀！喝哈！呜哇！\p……哦？{PLAYER}！\p你打给我的时候\n我正在和宝可梦特训！$"
 
-MatchCall_Text_Norman7::
+MatchCall_Text_Norman_PreparingPostGame::
     .string "爸爸：{PLAYER}！\p想不到你真的成为了\n宝可梦联盟冠军……\p好！\n我也不会认输！$"
 
-MatchCall_Text_Norman8::
+MatchCall_Text_Norman_RematchReady::
     .string "爸爸：嗯？{PLAYER}？\n来得正好！\p这次，\n换我来挑战你。\p我在橙华市道馆等你。\n随时奉陪！$"
 
-MatchCall_Text_Norman9::
+MatchCall_Text_Norman_PostRematch::
     .string "爸爸：……真令我惊叹，{PLAYER}。\n你究竟能飞多高呢？$"
 
 MatchCall_Text_Steven1::
