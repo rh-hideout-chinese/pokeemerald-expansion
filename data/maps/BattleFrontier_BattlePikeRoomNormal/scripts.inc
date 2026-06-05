@@ -683,7 +683,7 @@ BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedHypnosis:
     .string "奇鲁莉安使出了催眠术！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedThunderWave:
-    .string "奇鲁莉安使出了电击波！$"
+    .string "奇鲁莉安使出了电磁波！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_KirliaUsedWillOWisp:
     .string "奇鲁莉安使出了磷火！$"

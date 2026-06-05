@@ -417,25 +417,25 @@ BattlePyramid_Text_ZeroTrainersRemaining2::
     .string "真不幸！\p后面已经没有训练家\n可以和你一起对战了。$"
 
 BattlePyramid_Text_SevenTrainersRemaining3::
-    .string "真是场精彩的对战！\p这层还有7位训练家\n你能打败他们吧？$"
+    .string "真是场精彩的对战！\p这层还有7位训练家，\n你能打败他们吧？$"
 
 BattlePyramid_Text_SixTrainersRemaining3::
-    .string "真是场精彩的对战！\p这层还有6位训练家\n你能打败他们吧？$"
+    .string "真是场精彩的对战！\p这层还有6位训练家，\n你能打败他们吧？$"
 
 BattlePyramid_Text_FiveTrainersRemaining3::
-    .string "真是场精彩的对战！\p这层还有5位训练家\n你能打败他们吧？$"
+    .string "真是场精彩的对战！\p这层还有5位训练家，\n你能打败他们吧？$"
 
 BattlePyramid_Text_FourTrainersRemaining3::
-    .string "真是场精彩的对战！\p这层还有4位训练家\n你能打败他们吧？$"
+    .string "真是场精彩的对战！\p这层还有4位训练家，\n你能打败他们吧？$"
 
 BattlePyramid_Text_ThreeTrainersRemaining3::
     .string "真是场精彩的对战！\p这层还有3位训练家\n你能打败他们吧？$"
 
 BattlePyramid_Text_TwoTrainersRemaining3::
-    .string "真是场精彩的对战！\p这层还有2位训练家\n你能打败他们吧？$"
+    .string "真是场精彩的对战！\p这层还有2位训练家，\n你能打败他们吧？$"
 
 BattlePyramid_Text_OneTrainersRemaining3::
-    .string "真是场精彩的对战！\p这层还有1位训练家\n你能打败他吧？$"
+    .string "真是场精彩的对战！\p这层还有1位训练家，\n你能打败他吧？$"
 
 BattlePyramid_Text_ZeroTrainersRemaining3::
     .string "真是场精彩的对战！\p你已经打败了这层\n所有的训练家。$"
