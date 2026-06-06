@@ -285,7 +285,7 @@ BattlePyramid_Text_OneItemRemaining3::
     .string "你的包包还能放下几个道具？\p我估计，在这一层可能只剩\n1个道具了。$"
 
 BattlePyramid_Text_ZeroItemsRemaining3::
-    .string "你的包包还能放下几个道具？\p我估计，这一层已经没有\n道具可以找了。$"
+    .string "你的包包还能放下几个道具？\p我估计，这一层已经没有\n道具可以找了。\l你多保重！$"
 
 BattlePyramid_Text_EightItemsRemaining4::
     .string "你真强！\n给你个提示吧！\p在地面上有\n8个道具哦！$"
