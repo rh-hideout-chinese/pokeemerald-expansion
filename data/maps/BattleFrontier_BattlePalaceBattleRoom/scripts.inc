@@ -495,7 +495,7 @@ BattleFrontier_BattlePalaceBattleRoom_Text_LetsSeeFrontierPass:
     .string "唉，真是的，明明刚才还在\n保持着的威严形象呢……\p来吧！\n给我您的开拓通行证吧！$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_ReceivedSpiritsSymbol:
-    .string "开拓通行证上浮现出了\n精神象征！$"
+    .string "精神象征被印在了\n开拓通行证上！$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserAwaitNextTime:
     .string "郁金：你的宝可梦的眼中\n没有丝毫的迷茫，\p我会满怀期待地等候\n下一次我们的再会。$"
@@ -513,7 +513,7 @@ BattleFrontier_BattlePalaceBattleRoom_Text_HurryWithFrontierPass:
     .string "唉，真是的，明明应该再保持\n点风度的……\p嘎啊，来！\n把您的开拓通行证拿来吧！$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpiritsSymbolTookGoldenShine:
-    .string "精神象征\n亮起了金光！$"
+    .string "精神象征闪耀着\n金色的光芒！$"
 
 BattleFrontier_BattlePalaceBattleRoom_Text_SpenserComeSeeMeAgain:
     .string "郁金：哇哈哈哈！\p记得常来！\n我和我的伙伴会等着你的！$"

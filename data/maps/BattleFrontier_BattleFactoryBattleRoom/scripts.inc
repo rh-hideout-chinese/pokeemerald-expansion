@@ -252,7 +252,7 @@ BattleFrontier_BattleFactoryBattleRoom_Text_NolandLetsSeeFrontierPass:
     .string "达拉：做得漂亮！\n拿出你的开拓通行证。$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_ReceivedKnowledgeSymbol:
-    .string "知识象征被刻在了\n开拓通行证上！$"
+    .string "知识象征被印在了\n开拓通行证上！$"
 
 BattleFrontier_BattleFactoryBattleRoom_Text_NextTimeNoHoldsBarred:
     .string "哈……\n你真是个聪明的人……\p下次，我会全力以赴的。\n毫不留情，明白吗？\p继续学习吧！$"

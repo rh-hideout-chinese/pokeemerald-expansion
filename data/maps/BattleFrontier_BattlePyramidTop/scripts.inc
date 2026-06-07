@@ -220,7 +220,7 @@ BattleFrontier_BattlePyramidTop_Text_PlayerConqueredPyramid:
     .string "金字塔的新任征服者。\n让众人铭记{PLAYER}这个名字吧！$"
 
 BattleFrontier_BattlePyramidTop_Text_ChiefBeatYouHere:
-    .string "很荣幸能在这里见到你！\p很可惜，\n你以分毫之差屈居第二抵达这里。\p我们的首领已经率先\n征服了金字塔。\p不过，年轻的探险家，\n你是一位训练家！\p用实力从法老手中夺取巅峰的荣耀吧！\p当你准备好时，\n请再度迈出这勇气的一步！$"
+    .string "很荣幸能在这里见到你！\p很可惜，\n你以分毫之差屈居第二抵达这里。\p我们的首领已经率先\n征服了金字塔。\p不过，年轻的探险家，\n你是一位训练家！\p用实力从首领手中夺取巅峰的荣耀吧！\p当你准备好时，\n请再度迈出这勇敢的一步！$"
 
 BattleFrontier_BattlePyramidTop_Text_ExplorationsAreGrandestAdventure:
     .string "年轻的冒险家……\p你不觉得探索才是最为\n伟大的冒险吗？\p凭借你的智慧！\p你的实力！\p你的宝可梦！\p还有最重要的，你的勇气！\n唯有它将指引你走遍未知的世界……$"
@@ -235,13 +235,13 @@ BattleFrontier_BattlePyramidTop_Text_BrandonFrontierPassPlease:
     .string "神代：哈哈哈！壮阔！\n何等壮阔！\p做得好！这是属于你的荣耀！\n拿出你的开拓通行证吧！$"
 
 BattleFrontier_BattlePyramidTop_Text_ReceivedBraveSymbol:
-    .string "英勇象征浮现在\n开拓通行证上。$"
+    .string "英勇象征被印在了\n开拓通行证上！$"
 
 BattleFrontier_BattlePyramidTop_Text_LookForwardToNextMeeting:
     .string "年轻的探险家！\n期待我们的下一次再会！$"
 
 BattleFrontier_BattlePyramidTop_Text_BrandonYouveReturned:
-    .string "神代：……你终于回来了，\n年轻的探险家……\p你对冒险的热情似乎源于\n你的内心深处……\p对……你简直就像是\n年轻时期的我自己\p…… ……啊……\p激情！\p危机！\p绝境！\p那些在生死边缘探寻生命意义的\n日子又在此重现了……$"
+    .string "神代：……你终于回来了，\n年轻的探险家……\p你对冒险的热情似乎源于\n你的内心深处……\p对……你简直就像是\n年轻时期的我自己……\p……啊……\p激情！\p危机！\p绝境！\p那些在生死边缘探寻生命意义的\n日子又在此重现了……$"
 
 BattleFrontier_BattlePyramidTop_Text_MyCourageIsOffMeter:
     .string "现在！\p我已感受到澎湃的勇气\n即将满溢！$"
@@ -256,7 +256,7 @@ BattleFrontier_BattlePyramidTop_Text_BraveSymbolTookGoldenShine:
     .string "英勇象征闪耀着\n金色的光芒！$"
 
 BattleFrontier_BattlePyramidTop_Text_FarewellForNow:
-    .string "啊，没错！\n看来我要学东西还有很多！\p愿我们再次相逢！\n让我们暂别吧，年轻的探险家！$"
+    .string "啊，没错！\n看来我要学的东西还有很多！\p愿我们再次相逢！\n让我们暂别吧，年轻的探险家！$"
 
 BattleFrontier_BattlePyramidTop_Text_StepForwardWhenReady:
     .string "当你准备好时，\n请带着勇气向前迈进吧！$"
