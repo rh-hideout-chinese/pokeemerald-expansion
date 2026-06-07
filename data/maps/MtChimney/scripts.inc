@@ -471,7 +471,7 @@ MtChimney_EventScript_MachineOff::
 	end
 
 MtChimney_EventScript_MachineOn::
-	msgbox MtChimney_Text_MetoriteFittedOnMachine, MSGBOX_DEFAULT
+	msgbox MtChimney_Text_MeteoriteFittedOnMachine, MSGBOX_DEFAULT
 	releaseall
 	end
 
@@ -634,7 +634,7 @@ MtChimney_Text_YouveNotGotTheMoney:
 MtChimney_Text_OhFineThen:
     .string "啊，那就算了。$"
 
-MtChimney_Text_MetoriteFittedOnMachine:
+MtChimney_Text_MeteoriteFittedOnMachine:
     .string "一个奇异的机器上面\n安装了一块陨石……\p这台机器似乎能储存\n陨石的能量。$"
 
 MtChimney_Text_RemoveTheMeteorite:

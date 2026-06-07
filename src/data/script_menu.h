@@ -216,9 +216,9 @@ static const struct MenuAction MultichoiceList_Mechadoll5_Q3[] =
 
 static const struct MenuAction MultichoiceList_VendingMachine[] =
 {
-    {COMPOUND_STRING("美味之水{CLEAR_TO 0x48}¥200")},
-    {COMPOUND_STRING("劲爽汽水{CLEAR_TO 0x48}¥300")},
-    {COMPOUND_STRING("果汁牛奶{CLEAR_TO 0x48}¥350")},
+    {COMPOUND_STRING("美味之水{CLEAR_TO 72}¥200")},
+    {COMPOUND_STRING("劲爽汽水{CLEAR_TO 72}¥300")},
+    {COMPOUND_STRING("果汁牛奶{CLEAR_TO 72}¥350")},
     {gText_Exit},
 };
 
@@ -273,11 +273,11 @@ static const struct MenuAction MultichoiceList_GameCornerDolls[] =
 
 static const struct MenuAction MultichoiceList_GameCornerTMs[] =
 {
-    {COMPOUND_STRING("TM32{CLEAR_TO 0x48}1500代币")},
-    {COMPOUND_STRING("TM29{CLEAR_TO 0x48}3500代币")},
-    {COMPOUND_STRING("TM35{CLEAR_TO 0x48}4000代币")},
-    {COMPOUND_STRING("TM24{CLEAR_TO 0x48}4000代币")},
-    {COMPOUND_STRING("TM13{CLEAR_TO 0x48}4000代币")},
+    {COMPOUND_STRING("TM32{CLEAR_TO 72}1500代币")},
+    {COMPOUND_STRING("TM29{CLEAR_TO 72}3500代币")},
+    {COMPOUND_STRING("TM35{CLEAR_TO 72}4000代币")},
+    {COMPOUND_STRING("TM24{CLEAR_TO 72}4000代币")},
+    {COMPOUND_STRING("TM13{CLEAR_TO 72}4000代币")},
     {gText_Exit},
 };
 
@@ -817,7 +817,7 @@ static const struct MenuAction MultichoiceList_BerryPlot[] =
 };
 
 static const struct MenuAction sMultichoiceList_BikeShop[] = {
-    {COMPOUND_STRING("自行车{CLEAR_TO 0x49}{FONT_SMALL}¥1,000,000")},
+    {COMPOUND_STRING("自行车{CLEAR_TO 73}{FONT_SMALL}¥1,000,000")},
     {COMPOUND_STRING("不买了")}
 };
 
@@ -909,36 +909,36 @@ const u8 sText_NoThanks[] = _("不用了");
 
 static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = {
 #if defined(FIRERED)
-    {COMPOUND_STRING("凯西{CLEAR_TO 0x55}{FONT_SMALL} 180 枚")},
-    {COMPOUND_STRING("皮皮{CLEAR_TO 0x55}{FONT_SMALL} 500 枚")},
-    {COMPOUND_STRING("迷你龙{CLEAR_TO 0x4B}{FONT_SMALL} 2800 枚")},
-    {COMPOUND_STRING("飞天螳螂{CLEAR_TO 0x4B}{FONT_SMALL} 5500 枚")},
-    {COMPOUND_STRING("多边兽{CLEAR_TO 0x4B}{FONT_SMALL} 9999 枚")},
+    {COMPOUND_STRING("凯西{CLEAR_TO 85}{FONT_SMALL} 180 枚")},
+    {COMPOUND_STRING("皮皮{CLEAR_TO 85}{FONT_SMALL} 500 枚")},
+    {COMPOUND_STRING("迷你龙{CLEAR_TO 75}{FONT_SMALL} 2800 枚")},
+    {COMPOUND_STRING("飞天螳螂{CLEAR_TO 75}{FONT_SMALL} 5500 枚")},
+    {COMPOUND_STRING("多边兽{CLEAR_TO 75}{FONT_SMALL} 9999 枚")},
 #else
-    {COMPOUND_STRING("凯西{CLEAR_TO 0x55}{FONT_SMALL} 120 枚")},
-    {COMPOUND_STRING("皮皮{CLEAR_TO 0x55}{FONT_SMALL} 750 枚")},
-    {COMPOUND_STRING("凯罗斯{CLEAR_TO 0x4B}{FONT_SMALL} 2500 枚")},
-    {COMPOUND_STRING("迷你龙{CLEAR_TO 0x4B}{FONT_SMALL} 4600 枚")},
-    {COMPOUND_STRING("多边兽{CLEAR_TO 0x4B}{FONT_SMALL} 6500 枚")},
+    {COMPOUND_STRING("凯西{CLEAR_TO 85}{FONT_SMALL} 120 枚")},
+    {COMPOUND_STRING("皮皮{CLEAR_TO 85}{FONT_SMALL} 750 枚")},
+    {COMPOUND_STRING("凯罗斯{CLEAR_TO 75}{FONT_SMALL} 2500 枚")},
+    {COMPOUND_STRING("迷你龙{CLEAR_TO 75}{FONT_SMALL} 4600 枚")},
+    {COMPOUND_STRING("多边兽{CLEAR_TO 75}{FONT_SMALL} 6500 枚")},
 #endif
     {sText_NoThanks}
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerTMPrizes[] = {
-    {COMPOUND_STRING("招式学习器13{CLEAR_TO 0x48}{FONT_SMALL}4000 枚")},
-    {COMPOUND_STRING("招式学习器23{CLEAR_TO 0x48}{FONT_SMALL}3500 枚")},
-    {COMPOUND_STRING("招式学习器24{CLEAR_TO 0x48}{FONT_SMALL}4000 枚")},
-    {COMPOUND_STRING("招式学习器30{CLEAR_TO 0x48}{FONT_SMALL}4500 枚")},
-    {COMPOUND_STRING("招式学习器35{CLEAR_TO 0x48}{FONT_SMALL}4000 枚")},
+    {COMPOUND_STRING("招式学习器13{CLEAR_TO 72}{FONT_SMALL}4000 枚")},
+    {COMPOUND_STRING("招式学习器23{CLEAR_TO 72}{FONT_SMALL}3500 枚")},
+    {COMPOUND_STRING("招式学习器24{CLEAR_TO 72}{FONT_SMALL}4000 枚")},
+    {COMPOUND_STRING("招式学习器30{CLEAR_TO 72}{FONT_SMALL}4500 枚")},
+    {COMPOUND_STRING("招式学习器35{CLEAR_TO 72}{FONT_SMALL}4000 枚")},
     {sText_NoThanks}
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerBattleItemPrizes[] = {
-    {COMPOUND_STRING("烟雾球{CLEAR_TO 0x5A}{FONT_SMALL}800 枚")},
-    {COMPOUND_STRING("奇迹种子{CLEAR_TO 0x50}{FONT_SMALL}1000 枚")},
-    {COMPOUND_STRING("木炭{CLEAR_TO 0x50}{FONT_SMALL}1000 枚")},
-    {COMPOUND_STRING("神秘水滴{CLEAR_TO 0x50}{FONT_SMALL}1000 枚")},
-    {COMPOUND_STRING("黄色玻璃哨{CLEAR_TO 0x50}{FONT_SMALL}1600 枚")},
+    {COMPOUND_STRING("烟雾球{CLEAR_TO 90}{FONT_SMALL}800 枚")},
+    {COMPOUND_STRING("奇迹种子{CLEAR_TO 80}{FONT_SMALL}1000 枚")},
+    {COMPOUND_STRING("木炭{CLEAR_TO 80}{FONT_SMALL}1000 枚")},
+    {COMPOUND_STRING("神秘水滴{CLEAR_TO 80}{FONT_SMALL}1000 枚")},
+    {COMPOUND_STRING("黄色玻璃哨{CLEAR_TO 80}{FONT_SMALL}1600 枚")},
     {sText_NoThanks}
 };
 
@@ -952,8 +952,8 @@ static const struct MenuAction sMultichoiceList_DeptStoreElevator[] = {
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerCoinPurchaseCounter[] = {
-    {COMPOUND_STRING("{FONT_SMALL} 50枚代币{CLEAR_TO 0x45}¥1,000")},
-    {COMPOUND_STRING("{FONT_SMALL}500枚代币{CLEAR_TO 0x40}¥10,000")},
+    {COMPOUND_STRING("{FONT_SMALL} 50枚代币{CLEAR_TO 69}¥1,000")},
+    {COMPOUND_STRING("{FONT_SMALL}500枚代币{CLEAR_TO 64}¥10,000")},
     {gText_Exit}
 };
 
@@ -965,9 +965,9 @@ static const struct MenuAction sMultichoiceList_LinkedDirectUnion[] = {
 };
 
 static const struct MenuAction sMultichoiceList_CeladonVendingMachine[] = {
-    {COMPOUND_STRING("美味之水{CLEAR_TO 0x57}{FONT_SMALL}¥200")},
-    {COMPOUND_STRING("劲爽汽水{CLEAR_TO 0x57}{FONT_SMALL}¥300")},
-    {COMPOUND_STRING("果汁牛奶{CLEAR_TO 0x57}{FONT_SMALL}¥350")},
+    {COMPOUND_STRING("美味之水{CLEAR_TO 87}{FONT_SMALL}¥200")},
+    {COMPOUND_STRING("劲爽汽水{CLEAR_TO 87}{FONT_SMALL}¥300")},
+    {COMPOUND_STRING("果汁牛奶{CLEAR_TO 87}{FONT_SMALL}¥350")},
     {gText_Exit}
 };
 

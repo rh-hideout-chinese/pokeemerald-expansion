@@ -66,7 +66,7 @@ static void ResetParadoxTerrainStat(enum BattlerId battler);
 static bool32 CanBattlerFormChange(enum BattlerId battler, enum FormChanges method);
 static bool32 IsPowderMoveBlocked(struct DamageContext *ctx);
 const u8 *AbsorbedByDrainHpAbility(enum BattlerId battlerDef);
-const u8 *AbsorbedByStatIncreaseAbility(enum BattlerId battlerDef, enum Ability abilityDef, enum Stat statId, u32 statAmount);
+const u8 *AbsorbedByStatIncreaseAbility(struct DamageContext *ctx, enum Stat statId, u32 statAmount);
 const u8 *AbsorbedByFlashFire(enum BattlerId battlerDef);
 static bool32 IsCriticalHit(struct DamageContext *ctx);
 
@@ -448,6 +448,7 @@ void HandleAction_UseMove(void)
 
     gBattleStruct->eventState.atkCanceler = 0;
     ClearDamageCalcResults();
+    ClearBothStatChangeQueues();
     gMultiHitCounter = 0;
     gBattleCommunication[MISS_TYPE] = 0;
     gBattlerTarget = gBattleStruct->moveTarget[gBattlerAttacker];
@@ -1240,13 +1241,19 @@ void UpdateSentPokesToOpponentValue(enum BattlerId battler)
 
 void BattleScriptPush(const u8 *bsPtr)
 {
-    assertf(gBattleResources->battleScriptsStack->size < UINT8_MAX, "attempted to push a battle script, but battleScriptsStack is full!");
+    assertf(gBattleResources->battleScriptsStack->size < ARRAY_COUNT(gBattleResources->battleScriptsStack->ptr), "attempted to push a battle script, but battleScriptsStack is full!")
+    {
+        return;
+    }
     gBattleResources->battleScriptsStack->ptr[gBattleResources->battleScriptsStack->size++] = bsPtr;
 }
 
 void BattleScriptPushCursor(void)
 {
-    assertf(gBattleResources->battleScriptsStack->size < UINT8_MAX, "attempted to push cursor, but battleScriptsStack is full!");
+    assertf(gBattleResources->battleScriptsStack->size < ARRAY_COUNT(gBattleResources->battleScriptsStack->ptr), "attempted to push cursor, but battleScriptsStack is full!")
+    {
+        return;
+    }
     gBattleResources->battleScriptsStack->ptr[gBattleResources->battleScriptsStack->size++] = gBattlescriptCurrInstr;
 }
 
@@ -2255,27 +2262,27 @@ bool32 CanAbilityAbsorbMove(struct DamageContext *ctx)
         break;
     case ABILITY_MOTOR_DRIVE:
         if (ctx->moveType == TYPE_ELECTRIC)
-            battleScript = AbsorbedByStatIncreaseAbility(ctx->battlerDef, ctx->abilities[ctx->battlerDef], STAT_SPEED, 1);
+            battleScript = AbsorbedByStatIncreaseAbility(ctx, STAT_SPEED, 1);
         break;
     case ABILITY_LIGHTNING_ROD:
         if (GetConfig(B_REDIRECT_ABILITY_IMMUNITY) >= GEN_5 && ctx->moveType == TYPE_ELECTRIC)
-            battleScript = AbsorbedByStatIncreaseAbility(ctx->battlerDef, ctx->abilities[ctx->battlerDef], STAT_SPATK, 1);
+            battleScript = AbsorbedByStatIncreaseAbility(ctx, STAT_SPATK, 1);
         break;
     case ABILITY_STORM_DRAIN:
         if (GetConfig(B_REDIRECT_ABILITY_IMMUNITY) >= GEN_5 && ctx->moveType == TYPE_WATER)
-            battleScript = AbsorbedByStatIncreaseAbility(ctx->battlerDef, ctx->abilities[ctx->battlerDef], STAT_SPATK, 1);
+            battleScript = AbsorbedByStatIncreaseAbility(ctx, STAT_SPATK, 1);
         break;
     case ABILITY_SAP_SIPPER:
         if (ctx->moveType == TYPE_GRASS)
-            battleScript = AbsorbedByStatIncreaseAbility(ctx->battlerDef, ctx->abilities[ctx->battlerDef], STAT_ATK, 1);
+            battleScript = AbsorbedByStatIncreaseAbility(ctx, STAT_ATK, 1);
         break;
     case ABILITY_WELL_BAKED_BODY:
         if (ctx->moveType == TYPE_FIRE)
-            battleScript = AbsorbedByStatIncreaseAbility(ctx->battlerDef, ctx->abilities[ctx->battlerDef], STAT_DEF, 2);
+            battleScript = AbsorbedByStatIncreaseAbility(ctx, STAT_DEF, 2);
         break;
     case ABILITY_WIND_RIDER:
         if (IsWindMove(ctx->move))
-            battleScript = AbsorbedByStatIncreaseAbility(ctx->battlerDef, ctx->abilities[ctx->battlerDef], STAT_ATK, 1);
+            battleScript = AbsorbedByStatIncreaseAbility(ctx, STAT_ATK, 1);
         break;
     case ABILITY_FLASH_FIRE:
         if (ctx->moveType == TYPE_FIRE && (B_FLASH_FIRE_FROZEN >= GEN_5 || !(gBattleMons[ctx->battlerDef].status1 & STATUS1_FREEZE)))
@@ -2327,15 +2334,16 @@ const u8 *AbsorbedByDrainHpAbility(enum BattlerId battlerDef)
     }
 }
 
-const u8 *AbsorbedByStatIncreaseAbility(enum BattlerId battlerDef, enum Ability abilityDef, enum Stat statId, u32 statAmount)
+const u8 *AbsorbedByStatIncreaseAbility(struct DamageContext *ctx, enum Stat statId, u32 statAmount)
 {
-    if (!CompareStat(battlerDef, statId, MAX_STAT_STAGE, CMP_LESS_THAN, abilityDef))
+    if (!CompareStat(ctx->battlerDef, statId, MAX_STAT_STAGE, CMP_LESS_THAN, ctx->abilities[ctx->battlerDef]))
     {
         return BattleScript_AbilityProtectedTarget;
     }
     else
     {
-        SetStatChange(battlerDef, statId, statAmount);
+        if (ctx->runScript)
+            SetStatChange(ctx->battlerDef, statId, statAmount);
         return BattleScript_MoveStatDrain;
     }
 }
@@ -5487,10 +5495,9 @@ void ClearVariousBattlerFlags(enum BattlerId battler)
     gBattleMons[battler].volatiles.grudge = FALSE;
 }
 
-void HandleAction_RunBattleScript(void) // identical to RunBattleScriptCommands
+void HandleAction_RunBattleScript(void)
 {
-    if (gBattleControllerExecFlags == 0)
-        gBattleScriptingCommandsTable[*gBattlescriptCurrInstr]();
+    RunBattleScriptCommands();
 }
 
 u32 SetRandomTarget(enum BattlerId battlerAtk)
@@ -6175,7 +6182,7 @@ static inline u32 CalcMoveBasePower(struct DamageContext *ctx)
             basePower *= 2;
         break;
     case EFFECT_WEATHER_BALL:
-        if (GetAttackerWeather(ctx->holdEffects[ctx->battlerAtk], ctx->abilities[ctx->battlerAtk], ctx->weather) & B_WEATHER_ANY)
+        if (GetAttackerWeather(ctx->holdEffects[ctx->battlerAtk], ctx->abilities[ctx->battlerAtk], ctx->weather) & (B_WEATHER_ANY & ~B_WEATHER_STRONG_WINDS))
             basePower *= 2;
         break;
     case EFFECT_PURSUIT:

@@ -151,9 +151,9 @@ static const u8 sText_EVO_DEFEAT_THREE_WITH_ITEM[] = _("击败3只携带{STR_VAR
 static const u8 sText_EVO_NONE[] = _("{STR_VAR_1}没有进化形态。");
 
 static const u8 sText_FORMS_Buttons_PE[] = _("{A_BUTTON}形态模式  {START_BUTTON}进化模式");
-static const u8 sText_FORMS_Buttons_Decapped_PE[] = _("{START_BUTTON}进化");
+static const u8 sText_FORMS_Buttons_Decapped_PE[] = _("{A_BUTTON}形态模式  {START_BUTTON}进化");
 static const u8 sText_FORMS_Buttons_Submenu_PE[] = _("{DPAD_NONE}形态   {A_BUTTON}确认   {START_BUTTON}进化");
-static const u8 sText_FORMS_Buttons_Submenu_Decapped_PE[] = _("{START_BUTTON}进化");
+static const u8 sText_FORMS_Buttons_Submenu_Decapped_PE[] = _("{DPAD_NONE}形态   {A_BUTTON}确认   {START_BUTTON}进化");
 static const u8 sText_FORMS_NONE[] = _("{STR_VAR_1}没有其他形态。");
 static const u8 sText_PlusSymbol[] = _("+");
 
