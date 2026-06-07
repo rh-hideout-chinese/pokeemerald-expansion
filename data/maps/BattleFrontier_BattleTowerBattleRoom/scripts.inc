@@ -490,7 +490,7 @@ BattleFrontier_BattleTowerBattleRoom_Text_AnabelTalentShallBeRecognized:
     .string "莉拉：呵呵呵，干得好……\p拿来你的开拓通行证吧……\n我认可你的才能了。$"
 
 BattleFrontier_BattleTowerBattleRoom_Text_ReceivedAbilitySymbol:
-    .string "能力象征浮现在\n开拓通行证上面！$"
+    .string "能力象征被印在了\n开拓通行证上！$"
 
 BattleFrontier_BattleTowerBattleRoom_Text_UntilNextTime:
     .string "…… …… ……\p你对自己在宝可梦对战方面的\n才能充满自信，对吗？\p那就继续战斗，\n继续取胜吧。\p我在这里等着你，\n等着下一次见面……$"
@@ -505,7 +505,7 @@ BattleFrontier_BattleTowerBattleRoom_Text_AnabelCongratsYourPassPlease:
     .string "莉拉：呵呵，恭喜你……\n你的开拓通行证……$"
 
 BattleFrontier_BattleTowerBattleRoom_Text_AbilitySymbolTookGoldenShine:
-    .string "能力象征闪着\n金黄色的光辉！$"
+    .string "能力象征闪耀着\n金色的光芒！$"
 
 BattleFrontier_BattleTowerBattleRoom_Text_WishICouldBattleYouAgain:
     .string "真是令人愉悦啊……\p以前从来没有\n这么酣畅淋漓地对战过……\p希望以后还能和你对战……$"

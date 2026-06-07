@@ -1023,7 +1023,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_SeeYourFrontierPass:
     .string "石南：规矩就是规矩！\n拿出你的开拓通行证吧。$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_ReceivedTacticsSymbol:
-    .string "开拓通行证上竟然\n浮现出战术象征！$"
+    .string "战术象征被印在了\n开拓通行证上！$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WontUnderestimateYouNextTime:
     .string "…… …… ……\p我太过低估你了，\n下一次我不会犯同样的错误……$"
@@ -1044,7 +1044,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_NeverLostWhenPowerUnleashed:
     .string "石南：你是一个非凡的人！\p我从未遇到在我释放出全部实力后\n还能打败我的人，从来没有过！\p是的，你拥有非凡的实力！\n好了，把你的开拓通行证给我吧。$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_TacticsSymbolTookGoldenShine:
-    .string "战术象征\n亮起了金光！$"
+    .string "战术象征闪耀着\n金色的光芒！$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_LookForwardToNextEncounter:
     .string "你真的很强。但最重要的是，\n你拥有独一无二的魅力！\p我可以看到你的身体中\n蕴藏着成为我这样的明星的潜力。\p我很期待我们\n下一次的相遇！$"

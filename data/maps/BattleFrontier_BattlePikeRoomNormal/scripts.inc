@@ -731,7 +731,7 @@ BattleFrontier_BattlePikeRoomNormal_Text_LucyShowMeFrontierPass:
     .string "小蓟：…… …… ……\n让我看看你的开拓通行证……$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_ReceivedLuckSymbol:
-    .string "运气象征被刻在了\n开拓通行证上！$"
+    .string "运气象征被印在了\n开拓通行证上！$"
 
 BattleFrontier_BattlePikeRoomNormal_Text_AllThereIsDisappear:
     .string "……仅此而已……\n快消失吧……$"

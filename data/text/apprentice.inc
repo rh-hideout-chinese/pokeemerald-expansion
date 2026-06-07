@@ -284,7 +284,7 @@ gText_ApprenticeItemAlreadyRecommended2::
 	.string "有人已经教过我关于\n{STR_VAR_1}的事了。\p我想要我的宝可梦携带\n不同类型的道具。\p或者你觉得{STR_VAR_2}不需要\n携带任何东西？$"
 
 gText_ApprenticeWhatHeldItem3::
-	.string "你好，{PLAYER}……\n很抱歉打扰你，但我还有件事想问。\p我觉得自己不够强，\n法独自赢比赛，\l所以想让我的{STR_VAR_1}携带道具。\p但不知道什么才好。\p{PLAYER}，拜托，\n你能替我决定吗？$"
+	.string "你好，{PLAYER}……\n很抱歉打扰你，但我还有件事想问。\p我觉得自己不够强，\n无法独自赢比赛，\l所以想让我的{STR_VAR_1}携带道具。\p但不知道什么才好。\p{PLAYER}，拜托，\n你能替我决定吗？$"
 
 gText_ApprenticeHoldNothing3::
 	.string "像我这样的人的宝可梦\n不带道具更好？$"

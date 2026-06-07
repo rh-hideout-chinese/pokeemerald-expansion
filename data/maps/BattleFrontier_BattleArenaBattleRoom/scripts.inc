@@ -556,7 +556,7 @@ BattleFrontier_BattleArenaBattleRoom_Text_GretaYoureToughAfterAll:
     .string "哦，等一下！\n你还挺强的！\p我喜欢你！\n把你的开拓通行证给我吧！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_ReceivedGutsSymbol:
-    .string "毅力象征被刻在了\n开拓通行证上！$"
+    .string "毅力象征被印在了\n开拓通行证上！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_GoingToBeFunNextTime:
     .string "哈……\p下次会更有趣！\n我期待着！$"
