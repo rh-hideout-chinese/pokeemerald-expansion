@@ -427,7 +427,7 @@ AI_SINGLE_BATTLE_TEST("First Impression is preferred on the first turn of the sp
 
 AI_SINGLE_BATTLE_TEST("First Impression is not chosen if it's blocked by certain abilities")
 {
-    u16 species;
+    enum Species species;
     enum Ability ability;
 
     PARAMETRIZE { species = SPECIES_BRUXISH; ability = ABILITY_DAZZLING; }
@@ -1275,7 +1275,7 @@ AI_DOUBLE_BATTLE_TEST("AI can use Acupressure on its ally")
 
 AI_SINGLE_BATTLE_TEST("AI's comparison of damaging moves correctly reads moveset indexes for effects")
 {
-    u32 move = MOVE_NONE;
+    enum Move move = MOVE_NONE;
     PARAMETRIZE { move = MOVE_TACKLE; }
     PARAMETRIZE { move = MOVE_DUAL_CHOP; }
     GIVEN {
