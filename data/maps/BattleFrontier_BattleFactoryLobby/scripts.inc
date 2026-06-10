@@ -323,7 +323,7 @@ BattleFrontier_BattleFactoryLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattleFactoryLobby_Text_WelcomeForSingleBattle:
-    .string "训练家的智慧\n将在此接受考验！\p欢迎来到对战工厂！\p我是您的交换式对战\n单打锦标赛的向导。$"
+    .string "训练家的智慧\n将在此接受考验！\p欢迎来到对战工厂！\p我是您的交换式对战\n单打锦标赛向导。$"
 
 BattleFrontier_BattleFactoryLobby_Text_TakeSinglesChallenge:
     .string "要挑战交换式对战\n单打锦标赛吗？$"
@@ -380,7 +380,7 @@ BattleFrontier_BattleFactoryLobby_Text_ReceivedPrizeItem:
     .string "{PLAYER}得到了奖品\n{STR_VAR_1}。$"
 
 BattleFrontier_BattleFactoryLobby_Text_WelcomeForDoubleBattle:
-    .string "训练家的智慧\n将在此接受考验！\p欢迎来到对战工厂！\p我是您的交换式对战\n双打锦标赛的向导。$"
+    .string "训练家的智慧\n将在此接受考验！\p欢迎来到对战工厂！\p我是您的交换式对战\n双打锦标赛向导。$"
 
 BattleFrontier_BattleFactoryLobby_Text_TakeDoublesChallenge:
     .string "要挑战交换式对战\n双打锦标赛吗？$"

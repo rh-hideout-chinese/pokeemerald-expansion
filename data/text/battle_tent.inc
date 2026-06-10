@@ -100,7 +100,7 @@ VerdanturfTown_BattleTentLobby_Text_PresentYouWithPrize::
     .string "为纪念您取得3连胜，\n特此为您颁发这份奖品。$"
 
 SlateportCity_BattleTentLobby_Text_WelcomeToBattleTent::
-    .string "欢迎来到对战帐篷\n凯那市分址！\p我是您的交换式对战\n锦标赛的向导。$"
+    .string "欢迎来到对战帐篷\n凯那市分址！\p我是您的交换式对战\n锦标赛向导。$"
 
 SlateportCity_BattleTentLobby_Text_TakeChallenge::
     .string "要挑战交换式对战\n锦标赛吗？$"

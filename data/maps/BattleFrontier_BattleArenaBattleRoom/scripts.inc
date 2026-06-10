@@ -532,7 +532,7 @@ BattleFrontier_BattleArenaBattleRoom_Text_RecordLastBattle:
     .string "您要把您上次的对战记录在您的\n开拓通行证吗？$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_NowFaceTycoon:
-    .string "尊敬的挑战者！\p您的实力十分惊人！\p希望您能见见我们的首领，\n竞技场主将！$"
+    .string "尊敬的挑战者！\p您的实力十分惊人！\p希望您能见见我们的大将，\n竞技场主将！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_PreparedForTycoon:
     .string "同竞技场主将的对战！\n准备好了吗？$"
@@ -541,16 +541,16 @@ BattleFrontier_BattleArenaBattleRoom_Text_MakeWayForGreta:
     .string "裁判：竞技场主将！\n给黄瓜香让路！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_GretaYoureChallenger:
-    .string "黄瓜香：嘿！\n你好！\p……等等，你就是挑战者？$"
+    .string "黄瓜香：嗨哟！\n你好！\p……等等，你就是挑战者？$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_IsThatRight:
     .string "没有搞错吗？哈……\n哈哈……$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_YouLookWeakTakeThingsEasy:
-    .string "我不知道该怎么说，不过……\n说真的，你看起来也实在太弱了。\l你确定你招架得住吗？\p哈……\p那么，好吧！\n我们慢慢来！$"
+    .string "但该怎么说呢……\n老实说，我觉得你好像非常弱哎。\l你确定你招架得住吗？\p哈……\p那么，好吧！\n我们慢慢来！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_IgniteMyPassionForBattle:
-    .string "好！看你能不能点燃我的\n战斗激情！$"
+    .string "好！看你能不能点燃\n我的斗志！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_GretaYoureToughAfterAll:
     .string "哦，等一下！\n你还挺强的！\p我喜欢你！\n把你的开拓通行证给我吧！$"
@@ -559,10 +559,10 @@ BattleFrontier_BattleArenaBattleRoom_Text_ReceivedGutsSymbol:
     .string "毅力象征被印在了\n开拓通行证上！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_GoingToBeFunNextTime:
-    .string "哈……\p下次会更有趣！\n我期待着！$"
+    .string "哈……\p下次会更有趣！\n我很期待！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_GretaLookingForwardToSeeingAgain:
-    .string "黄瓜香：嘿！你好！\n你最后赢得了我对你的考验！\p我一直害怕等待你！\n我真的期待能\l再见到你！$"
+    .string "黄瓜香：嗨哟！你好！\n你终于赢得了我对你的考验！\p你来得还真慢，让我好担心啊！\n我很期待能\l再见到你喔！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_SoAreYouReady:
     .string "…… ……\n那么，你准备好了吗？$"
@@ -580,4 +580,4 @@ BattleFrontier_BattleArenaBattleRoom_Text_GutsSymbolTookGoldenShine:
     .string "毅力象征闪耀着\n金色的光芒！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_IfWeBattleAgainWontLose:
-    .string "啊啊！\n气死我了！\p如果下次再交手，我一定不会输！\n你给我记好了！再见！$"
+    .string "啊！好气啊！\n真不甘心！\p如果下次再交手，\n到时候我绝对不会输的！\n你要记好了！再见！$"

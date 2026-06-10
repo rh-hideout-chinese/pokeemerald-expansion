@@ -321,7 +321,7 @@ BattleFrontier_ReceptionGate_Text_ScottGreatToSeeYouHere:
     .string "亚希达：能在这里见到你真是太好了，\n真的！\p希望你慢慢探索\n这里的每个角落。\p当然，也希望你能在这里\n体验到最纯粹的对战精髓。\p我在这儿也有房间，\n有空记得随时来坐坐。$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFacilities:
-    .string "我是对战开拓区的\n各个设施的向导。$"
+    .string "我是您的对战开拓区的\n各个设施的向导。$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich2:
     .string "您想了解哪个设施呢？$"
@@ -354,7 +354,7 @@ BattleFrontier_ReceptionGate_Text_ExchangeCornerInfo:
     .string "兑换服务区位于对战塔附近。\p可以用在对战开拓区得到的对战点数\n兑换精美的奖品。$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToRules:
-    .string "我是对战开拓区各个设施中\n各项通用基本规则的向导。$"
+    .string "我是您的对战开拓区各个设施中\n各项通用基本规则的向导。$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhat:
     .string "您想了解什么内容呢？$"
@@ -375,7 +375,7 @@ BattleFrontier_ReceptionGate_Text_HoldItemsInfo:
     .string "在对战开拓区参加挑战时，\n宝可梦不能携带相同的道具。\p请确保所有参加挑战的宝可梦\n都携带了不同的道具。$"
 
 BattleFrontier_ReceptionGate_Text_YourGuideToFrontierPass:
-    .string "我是开拓通行证的向导。$"
+    .string "我是您的开拓通行证向导。$"
 
 BattleFrontier_ReceptionGate_Text_LearnAboutWhich1:
     .string "您想了解什么内容呢？$"

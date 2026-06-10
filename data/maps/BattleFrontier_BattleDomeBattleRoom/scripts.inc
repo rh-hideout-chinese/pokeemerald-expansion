@@ -987,7 +987,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_CurrentChampAimingToRetainTitle:
     .string "现任冠军\n正力争卫冕！\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FormerChampHasReturned:
-    .string "前任冠军\n再次归来！\p$"
+    .string "上届冠军\n再次归来！\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FormerToughnessReturned:
     .string "昔日强悍\n再次重现！\p$"
@@ -996,7 +996,7 @@ BattleFrontier_BattleDomeBattleRoom_Text_WillDoExpectedAdvanceToFinals:
     .string "这位训练家会如期\n晋级决赛吗？\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_WillFormerChampRegainGlory:
-    .string "前任冠军能否成功\n东山再起？\p$"
+    .string "上届冠军是否能成功\n重铸荣光？\p$"
 
 BattleFrontier_BattleDomeBattleRoom_Text_FeelGlowOfTrueMaster:
     .string "感受真正王者的耀眼光芒吧！$"
