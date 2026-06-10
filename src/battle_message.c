@@ -1508,7 +1508,7 @@ const u8 *const gRoundsStringTable[DOME_ROUNDS_COUNT] =
 const u8 gText_TheGreatNewHope[] = _("伟大的崭新希望！\p");
 const u8 gText_WillChampionshipDreamComeTrue[] = _("冠军之梦能否成真？！\p");
 const u8 gText_AFormerChampion[] = _("前冠军！\p");
-const u8 gText_ThePreviousChampion[] = _("前冠军！\p");
+const u8 gText_ThePreviousChampion[] = _("上届冠军！\p");
 const u8 gText_TheUnbeatenChampion[] = _("不败冠军！\p");
 const u8 gText_PlayerMon1Name[] = _("{B_PLAYER_MON1_NAME}");
 const u8 gText_Vs[] = _("VS");
@@ -1544,7 +1544,7 @@ const u8 *const gRefereeStringsTable[] =
     [B_MSG_REF_JUDGE_BODY]         = COMPOUND_STRING("裁判：判定准则其三，体！\n是否保留了足够的体力！\p"),
     [B_MSG_REF_PLAYER_WON]         = COMPOUND_STRING("裁判：判定结果：{B_BUFF1}比{B_BUFF2}！\n胜者是{B_PLAYER_NAME}的{B_PLAYER_MON1_NAME}！\p"),
     [B_MSG_REF_OPPONENT_WON]       = COMPOUND_STRING("裁判：判定结果：{B_BUFF1}比{B_BUFF2}！\n胜者是{B_TRAINER1_NAME}的{B_OPPONENT_MON1_NAME}！\p"),
-    [B_MSG_REF_DRAW]               = COMPOUND_STRING("裁判：判定结果：3比3！\n双方打成了平手！"),
+    [B_MSG_REF_DRAW]               = COMPOUND_STRING("裁判：判定结果：3比3！\n双方打成了平手！\p"),
     [B_MSG_REF_COMMENCE_BATTLE]    = COMPOUND_STRING("裁判：{B_PLAYER_MON1_NAME} VS {B_OPPONENT_MON1_NAME}！\n战斗开始！"),
 };
 

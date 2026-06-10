@@ -500,7 +500,7 @@ BattleFrontier_BattleDomeLobby_Text_OkayToSaveBeforeChallenge2:
     .string "在带您进入对战巨蛋前，\n需要先写入记录，可以吗？$"
 
 BattleFrontier_BattleDomeLobby_Text_WelcomeDoubleBattle:
-    .string "训练家的战略\n将在此接受考验！\p欢迎来到对战巨蛋！\p我是双打对战\n锦标赛的向导。$"
+    .string "训练家的战略\n将在此接受考验！\p欢迎来到对战巨蛋！\p我是您的双打对战\n锦标赛向导。$"
 
 BattleFrontier_BattleDomeLobby_Text_TakeDoublesChallenge:
     .string "要挑战双打对战锦标赛吗？$"

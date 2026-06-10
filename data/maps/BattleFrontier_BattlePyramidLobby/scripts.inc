@@ -527,7 +527,7 @@ BattleFrontier_BattlePyramidLobby_EventScript_ExitRules::
 	end
 
 BattleFrontier_BattlePyramidLobby_Text_WelcomeToBattlePyramid:
-    .string "训练家的勇气\n将在此接受考验！\p欢迎来到\n对战金字塔！\p我是您探索式对战的向导。$"
+    .string "训练家的勇气\n将在此接受考验！\p欢迎来到\n对战金字塔！\p我是您的探索式对战向导。$"
 
 BattleFrontier_BattlePyramidLobby_Text_EmbarkOnChallenge:
     .string "有勇气挑战探索式对战吗？$"

@@ -417,7 +417,7 @@ BattleFrontier_BattleArenaLobby_Text_AwaitAnotherChallenge2:
     .string "随时恭候您再次挑战！$"
 
 BattleFrontier_BattleArenaLobby_Text_LookingForwardToArrivalSaveGame:
-    .string "我们一直恭候您的到来。\p在带您去战斗大厅之前，\n我需要先写入记录，\l请稍候。$"
+    .string "我们一直恭候您的到来。\p在带您去战斗竞技场之前，\n我需要先写入记录，\l请稍候。$"
 
 BattleFrontier_BattleArenaLobby_Text_RecordLastMatch:
     .string "要将您在对战竞技场的最后一场比赛\n记录到开拓通行证上吗？$"
@@ -426,7 +426,7 @@ BattleFrontier_BattleArenaLobby_Text_BadIdeaToNotAttack:
     .string "我被裁判判负了……\p看来只防守而不进攻是\n行不通的……$"
 
 BattleFrontier_BattleArenaLobby_Text_LandingHitsWorked:
-    .string "我被判定获胜了！\p持续攻击对手的宝可梦\n这招果然行得通！$"
+    .string "我被判定获胜了！\p攻击持续命中对手的宝可梦\n这招果然行得通！$"
 
 BattleFrontier_BattleArenaLobby_Text_MatchWasDeclaredDraw:
     .string "我们的比赛被判为平局。\p时间到的时候，我和我对手的宝可梦\n剩下了相同的体力。$"
