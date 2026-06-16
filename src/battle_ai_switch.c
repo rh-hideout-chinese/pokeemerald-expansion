@@ -2891,7 +2891,7 @@ static void SetBattlerVolatilesForSwitchin(enum BattlerId battler, u32 weather, 
             gBattleMons[battler].volatiles.chargeTimer = 2;
         break;
     case ABILITY_SUPREME_OVERLORD:
-        gBattleMons[battler].volatiles.supremeOverlordCounter = min(5, GetBattlerSideFaintCounter(battler));
+        gBattleMons[battler].volatiles.supremeOverlordCounter = min(5, gBattleStruct->faintCounter[GetBattlerTrainer(battler)]);
         break;
     default:
         break;
