@@ -288,7 +288,7 @@ BattleFrontier_OutsideEast_Text_GoRackUpSomeWinsForDaddy:
     .string "去吧，小甜心！\n为了爸爸取得胜利吧！\p你和你妈妈一样，\n绝对能够主导对战！$"
 
 BattleFrontier_OutsideEast_Text_HeardPrettyGirlAtBattleArena:
-    .string "这一路过来可真不容易！\n但我可是听说对战竞技场的\l有个无比漂亮的女孩。\p除了她，你知道我还\n找到了什么？\p一大群满身汗臭的\n粗野的武术家！$"
+    .string "这一路过来可真不容易！\n但我可是听说对战竞技场\l有个无比漂亮的女孩。\p结果你知道我只\n找到了什么吗？\p一大群满身汗臭的\n粗野武术家！$"
 
 BattleFrontier_OutsideEast_Text_SometimesImportantOldManInThere:
     .string "有时候能看到这位看上去\n明显是大人物的老人到这儿来，\p他的宝可梦真强，\n但他本人看起来很和善。$"

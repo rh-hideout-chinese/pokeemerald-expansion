@@ -749,19 +749,19 @@ gText_ApprenticeMoveThanks12::
 	.string "如果{STR_VAR_1}是最好的，\n我会照你说的做！\p嗯，{PLAYER}，我必须自由漫游，\n但别忘了我。\p再见，我聪明的朋友！$"
 
 gText_ApprenticeWhichMove13::
-	.string "咳！咳！哦，{PLAYER}{KUN}……\p我得了重感冒……\p我想为我的宝可梦\n想个很酷的招式。\p它让我大受启发，让我哭了，\n现在我的鼻子流个不停……\p所以，事已至此，\n我需要你替我决定，{PLAYER}{KUN}。\p当我赢了比赛时，\n该说什么？$"
+	.string "咳！咳！哦，{PLAYER}{KUN}……\p我得了重感冒……\p我想为我的宝可梦\n想个招式。\p但是现在我的鼻子\n流个不停……\p所以，事已至此，\n我需要你替我决定，{PLAYER}{KUN}。\p{STR_VAR_2}和{STR_VAR_3}之间\n为我的{STR_VAR_1}做出选择，你会选哪个？$"
 
 gText_ApprenticeMoveThanks13::
 	.string "{STR_VAR_1}\p…… …… ……这不错。\p不，太震撼了！\l它让我热泪盈眶！\p但尽管我流泪流鼻涕，\n我会用那句台词的！\p我已经没有问题了，\n{PLAYER}{KUN}。\p从现在起，我们是劲敌了！\p感谢你所做的一切！$"
 
 gText_ApprenticeWhichMove14::
-	.string "呃……嗯……\n{PLAYER}{KUN}……？\p拜托，别那样看着我。\p我很紧张……\p我……我再次需要你的建议。\p虽然这是我最后一次……\p真的很不好意思问，\p但如果我赢了比赛，\n该说什么？$"
+	.string "呃……嗯……\n{PLAYER}{KUN}……？\p拜托，别那样看着我。\p我很紧张……\p我……我再次需要你的建议。\p虽然这是我最后一次……\p真的很不好意思问，\p对我的{STR_VAR_1}而言，\n{STR_VAR_2}和{STR_VAR_3}哪个更好？$"
 
 gText_ApprenticeMoveThanks14::
 	.string "{STR_VAR_1}\p哦……好的！\p我会试着说那个！\p我可能会紧张得说不出来……\p谢谢你，{PLAYER}{KUN}。\p我现在得说再见了。\p{PLAYER}{KUN}，\n我会遵守你所有的教导，\l尽我所能做到最好。$"
 
 gText_ApprenticeWhichMove15::
-	.string "嗯？你似乎是{PLAYER}{KUN}……\n但你真的存在吗？\p也许是个聪明的{PLAYER}玩偶？\p哦，不不不，别担心！\p如果你是真的，请原谅\n我的无礼。\p不必这么生气。我只想要\n更多你的好建议。\p是关于一句话的。\p更准确地说，如果我赢了比赛，\n该说什么？$"
+	.string "嗯？你似乎是{PLAYER}{KUN}……\n真的是本人吗？\p或许只是个出名的\n{PLAYER}模仿者？\p哦，不不，\n别生气嘛！\p如果你是本人，\n请原谅我的无礼。\p顺便问一下，\n我想听听你的建议。\p是关于我的{STR_VAR_1}的。\p对它来说，使用哪个招式会更好呢？\n是{STR_VAR_2}还是{STR_VAR_3}？$"
 
 gText_ApprenticeMoveThanks15::
 	.string "{STR_VAR_1}\p…… …… …… …… …… ……\p当我赢了比赛时……\p{STR_VAR_1}\p……你是认真的吗？\p明白了。如果你是认真的，那好吧。\p谢谢你的时间。\p我确实希望即使我也能\n好好利用那句台词。\p我似乎已经没什么建议需要了。\p我相信是时候告别你，\n独自出发了。\p谢谢你，我的导师！\p我为我的怀疑道歉！$"
