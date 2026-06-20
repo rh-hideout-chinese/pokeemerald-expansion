@@ -2441,16 +2441,16 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("一般招式变为龙属性并强化"),
     },
 
-    [ABILITY_313] =
+    [ABILITY_EELEVATE] =
     {
-        .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .name = _("鳗鳗高升"),
+        .description = COMPOUND_STRING("飘浮，打倒对手最高项提升"),
     },
 
     [ABILITY_314] =
     {
         .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .description = COMPOUND_STRING("无特殊效果。"),
     },
 
     [ABILITY_MEGA_SOL] =
@@ -2459,16 +2459,16 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("使用招式时天气视作晴天"),
     },
 
-    [ABILITY_316] =
+    [ABILITY_FIRE_MANE] =
     {
-        .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .name = _("火焰鬃毛"),
+        .description = COMPOUND_STRING("电属性的招式威力会提高"),
     },
 
     [ABILITY_317] =
     {
         .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .description = COMPOUND_STRING("无特殊效果。"),
     },
 
     [ABILITY_SPICY_SPRAY] =

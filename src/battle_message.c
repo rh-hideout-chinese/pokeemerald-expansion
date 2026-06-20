@@ -69,7 +69,7 @@ EWRAM_DATA struct BattleMsgData *gBattleMsgDataPtr = NULL;
 
 static const u8 sText_EmptyString4[] = _("");
 
-const u8 gText_PkmnShroudedInMist[] = _("{B_ATK_TEAM1}被\n白雾包围了！");
+const u8 gText_PkmnShroudedInMist[] = _("{B_ATK_NAME_WITH_PREFIX}被\n白雾包围了！");
 const u8 gText_PkmnGettingPumped[] = _("{B_DEF_NAME_WITH_PREFIX}\n现在干劲十足！");
 const u8 gText_PkmnsXPreventsSwitching[] = _("因{B_BUFF1}的{B_LAST_ABILITY}\n而无法进行替换！\p");
 const u8 gText_StatSharply[] = _("大幅");
@@ -589,12 +589,12 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_SLOWSTARTENTERS]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n无法拿出平时的水平！"),
     [STRINGID_SLOWSTARTEND]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n恢复了平时的水平！"),
     [STRINGID_SOLARPOWERHPDROP]                     = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}因{B_ATK_ABILITY}\n削减了体力！"),  // Not in Gen 5+
-    [STRINGID_AFTERMATHDMG]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n受伤了！"),
+    [STRINGID_PKMNWASHURT]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n受伤了！"),
     [STRINGID_ANTICIPATIONACTIVATES]                = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n发抖了！"),
     [STRINGID_FOREWARNACTIVATES]                    = COMPOUND_STRING("因{B_SCR_ABILITY}，{B_SCR_NAME_WITH_PREFIX2}察觉到了\n{B_EFF_NAME_WITH_PREFIX2}的{B_BUFF1}！"),
     [STRINGID_ICEBODYHPGAIN]                        = COMPOUND_STRING("因为{B_ATK_ABILITY}，\n{B_ATK_NAME_WITH_PREFIX}回复了少许HP。"), //don't think this message is displayed anymore
     [STRINGID_SNOWWARNINGHAIL]                      = COMPOUND_STRING("开始下冰雹了！"),
-    [STRINGID_FRISKACTIVATES]                       = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}察觉到了\n{B_SCR_NAME_WITH_PREFIX2}的{B_LAST_ITEM}！"),
+    [STRINGID_FRISKACTIVATES]                       = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}察觉到了\n{B_SCR_NAME_WITH_PREFIX2}的{B_LAST_ITEM}！"),
     [STRINGID_UNNERVEENTERS]                        = COMPOUND_STRING("{B_EFF_TEAM1}因太紧张\n而无法食用树果！"),
     [STRINGID_HARVESTBERRY]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n收获了{B_LAST_ITEM}！"),
     [STRINGID_PROTEANTYPECHANGE]                    = COMPOUND_STRING("因为{B_ATK_ABILITY}，\n{B_ATK_NAME_WITH_PREFIX}变成了{B_BUFF1}属性！"),
@@ -849,6 +849,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_BLOCKEDBYSLEEPCLAUSE]                 = COMPOUND_STRING("因为催眠条款，\n{B_DEF_NAME_WITH_PREFIX2}不会被催眠！"),
     [STRINGID_SUPEREFFECTIVETWOFOES]                = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}效果绝佳！"),
     [STRINGID_NOTVERYEFFECTIVETWOFOES]              = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}效果不好。"),
+    [STRINGID_ITDOESNTAFFECTTWOFOES]                = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}没有效果……"),
     [STRINGID_SENDCAUGHTMONPARTYORBOX]              = COMPOUND_STRING("要将{B_DEF_NAME}加入到同行宝可梦里吗？"),
     [STRINGID_PKMNSENTTOPCAFTERCATCH]               = gText_PkmnSentToPCAfterCatch,
     [STRINGID_PKMNDYNAMAXED]                        = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}极巨化了！\n变得巨大无比！"),//原作无对应文本，个人翻译
@@ -883,11 +884,23 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PARTYCUREDFREEZE]                     = COMPOUND_STRING("{B_BUFF1}\n治愈了冰冻状态！"),
     [STRINGID_PARTYCUREDFROSTBITE]                  = COMPOUND_STRING("{B_BUFF1}\n治愈了冻伤！"),
     [STRINGID_PKMNATKNOTLOWERED]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}的\n攻击不会降低！"),
+    [STRINGID_VICTORYCATCH]                         = COMPOUND_STRING("{B_DEF_NAME}变得虚弱了！\n现在是使用精灵球的好机会！"),
+    [STRINGID_CANTUSEMOVE]                          = COMPOUND_STRING("无法使出这个招式！\p"),
     [STRINGID_REFLECTWOREOFF]                       = COMPOUND_STRING("{B_DEF_TEAM1}的反射壁消失了！"),
     [STRINGID_LIGHTSCREENWOREOFF]                   = COMPOUND_STRING("{B_DEF_TEAM1}的光墙消失了！"),
     [STRINGID_AURORAVEILWOREOFF]                    = COMPOUND_STRING("{B_DEF_TEAM1}的极光幕消失了！"),
-    [STRINGID_STICKYWEBDISAPPEAREDFROMYOU]          = COMPOUND_STRING("脚下的黏黏网\n消失不见了！"),
-    [STRINGID_VICTORYCATCH]                         = COMPOUND_STRING("{B_DEF_NAME}变得虚弱了！\n现在是使用精灵球的好机会！"),
+    [STRINGID_MOSTLYINEFFECTIVE]                    = COMPOUND_STRING("效果相当不好。"),
+    [STRINGID_EXTREMELYEFFECTIVE]                   = COMPOUND_STRING("效果无比绝佳！！"),
+    [STRINGID_NOTVERYEFFECTIVEONDEF]                = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}\n效果不好。"),
+    [STRINGID_SUPEREFFECTIVEONDEF]                  = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}\n效果绝佳！"),
+    [STRINGID_MOSTLYINEFFECTIVEONDEF]               = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}\n效果相当不好。"),
+    [STRINGID_EXTREMELYEFFECTIVEONDEF]              = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}\n效果无比绝佳！！"),
+    [STRINGID_EXTREMELYEFFECTIVETWOFOES]            = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}效果无比绝佳！"),
+    [STRINGID_MOSTLYINEFFECTIVETWOFOES]             = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}效果相当不好。"),
+    [STRINGID_CRITICALHITONDEF]                     = COMPOUND_STRING("击中了\n{B_DEF_NAME_WITH_PREFIX2}的要害！"),
+    [STRINGID_S]                                    = COMPOUND_STRING(""),
+    [STRINGID_LOSTSOMEOFITSHP]                      = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}的生命\n被少量削减了！"),
+    [STRINGID_BELCHCANTUSE]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n因没有吃树果而无法使出招式！\p"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1065,8 +1078,8 @@ const u16 gProtectLikeUsedStringIds[] =
 
 const u16 gBrokeProtectionStringIds[] =
 {
-    [B_MSG_FEINT]           = STRINGID_FELLFORFEINT,
-    [B_MSG_HYPERSPACE_FURY] = STRINGID_BROKETHROUGHPROTECTION,
+    [B_MSG_FEINT]                 = STRINGID_FELLFORFEINT,
+    [B_MSG_BROKE_THROUGH_PROTECT] = STRINGID_BROKETHROUGHPROTECTION,
 };
 
 const u16 gReflectLightScreenSafeguardStringIds[] =
@@ -1437,7 +1450,7 @@ const u16 gPartyCureStatusStringIds[] =
 
 const u16 gHurtByStringIds[] =
 {
-    [B_MSG_HURT] = STRINGID_AFTERMATHDMG,
+    [B_MSG_HURT] = STRINGID_PKMNWASHURT,
     [B_MSG_HURT_BY_ITEM] = STRINGID_PKMNHURTSWITH,
 };
 
