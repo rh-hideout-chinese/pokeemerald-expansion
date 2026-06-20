@@ -2441,10 +2441,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Normal moves turn Dragon."),
     },
 
-    [ABILITY_313] =
+    [ABILITY_EELEVATE] =
     {
-        .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .name = _("Eelevate"),
+        .description = COMPOUND_STRING("Unimplemented."),
     },
 
     [ABILITY_314] =
@@ -2459,10 +2459,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("Acts like under sun."),
     },
 
-    [ABILITY_316] =
+    [ABILITY_FIRE_MANE] =
     {
-        .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .name = _("Fire Mane"),
+        .description = COMPOUND_STRING("Unimplemented."),
     },
 
     [ABILITY_317] =
