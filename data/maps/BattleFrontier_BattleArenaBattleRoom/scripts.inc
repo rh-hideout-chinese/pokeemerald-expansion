@@ -580,4 +580,4 @@ BattleFrontier_BattleArenaBattleRoom_Text_GutsSymbolTookGoldenShine:
     .string "毅力象征闪耀着\n金色的光芒！$"
 
 BattleFrontier_BattleArenaBattleRoom_Text_IfWeBattleAgainWontLose:
-    .string "啊！好气啊！\n真不甘心！\p如果下次再交手，\n到时候我绝对不会输的！\n你要记好了！再见！$"
+    .string "啊！好气啊！\n真不甘心！\p如果下次再交手，\n到时候我绝对不会输的！\l你要记好了！再见！$"
