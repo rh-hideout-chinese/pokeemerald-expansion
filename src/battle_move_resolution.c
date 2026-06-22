@@ -1339,12 +1339,14 @@ static enum CancelerResult CancelerMoveEffectFailureTarget(struct BattleCalcValu
 {
     const u8 *battleScript = NULL;
     u32 numAffectedTargets = 0;
+    enum MoveTarget moveTarget = GetBattlerMoveTargetType(cv->battlerAtk, cv->move);
 
     while (gBattleStruct->eventState.atkCancelerBattler < gBattlersCount)
     {
         enum BattlerId battlerDef = gBattleStruct->eventState.atkCancelerBattler++;
 
-        if (ShouldSkipFailureCheckOnBattler(cv->battlerAtk, battlerDef, TRUE))
+        bool32 checkUserFailure = (battlerDef == cv->battlerAtk && moveTarget == TARGET_USER_AND_ALLY);
+        if (!checkUserFailure && ShouldSkipFailureCheckOnBattler(cv->battlerAtk, battlerDef, TRUE))
             continue;
 
         switch (cv->moveEffect)
@@ -3753,6 +3755,7 @@ static bool32 TryEjectButton(enum BattlerId battlerAtk, u32 ejectButtonBattler)
 {
     if (!IsBattlerTurnDamaged(ejectButtonBattler, EXCLUDING_SUBSTITUTES)
      || HasAnyBattlerQueuedSwitch()
+     || IsPursuitTargetSet()
      || gBattleMons[ejectButtonBattler].volatiles.semiInvulnerable == STATE_SKY_DROP_ATTACKER
      || gBattleMons[ejectButtonBattler].volatiles.semiInvulnerable == STATE_SKY_DROP_TARGET
      || !CanBattlerSwitch(ejectButtonBattler))
@@ -4064,6 +4067,7 @@ static inline bool32 TryEjectPack(enum BattlerId battlerAtk, enum BattlerId ejec
 {
     if (!gBattleMons[ejectPackBattler].volatiles.tryEjectPack
      || HasAnyBattlerQueuedSwitch()
+     || IsPursuitTargetSet()
      || gBattleMons[ejectPackBattler].volatiles.semiInvulnerable == STATE_SKY_DROP_ATTACKER
      || gBattleMons[ejectPackBattler].volatiles.semiInvulnerable == STATE_SKY_DROP_TARGET
      || !CanBattlerSwitch(ejectPackBattler)

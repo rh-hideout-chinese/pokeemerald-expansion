@@ -1085,13 +1085,13 @@ static u32 Debug_GenerateListTrainerMenu(const struct DebugMenuOption *items)
             break;
         case 2:
             if (trainer2Id == TRAINER_NONE)
-                StringCopy(gStringVar1, COMPOUND_STRING("None"));
+                StringCopy(gStringVar1, COMPOUND_STRING("无"));
             else
                 ConvertIntToDecimalStringN(gStringVar1, trainer2Id, STR_CONV_MODE_LEADING_ZEROS, 3);
             break;
         case 3:
             if (partnerId == PARTNER_NONE)
-                StringCopy(gStringVar1, COMPOUND_STRING("None"));
+                StringCopy(gStringVar1, COMPOUND_STRING("无"));
             else
                 ConvertIntToDecimalStringN(gStringVar1, partnerId, STR_CONV_MODE_LEADING_ZEROS, 3);
             break;
@@ -1855,7 +1855,7 @@ static void Debug_Display_LocalTrainer(u32 localId, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     u8 *end;
     if (trainerID == TRAINER_NONE)
-        end = StringCopy(gStringVar1, COMPOUND_STRING("Not a Trainer"));
+        end = StringCopy(gStringVar1, COMPOUND_STRING("不是训练家"));
     else
         end = StringCopy(gStringVar1, GetTrainerNameFromId(trainerID));
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
@@ -1979,7 +1979,7 @@ static void Debug_Display_TrainerID(u32 trainerID, u32 selection, u32 digit, u8 
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     u8 *end;
     if (trainerID == TRAINER_NONE || trainerID == TRAINER_PARTNER(PARTNER_NONE))
-        end = StringCopy(gStringVar1, COMPOUND_STRING("None"));
+        end = StringCopy(gStringVar1, COMPOUND_STRING("无"));
     else
         end = StringCopy(gStringVar1, GetTrainerNameFromId(trainerID));
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
@@ -2628,13 +2628,13 @@ static void Debug_Display_ItemInfo(enum Item itemId, u32 digit, u8 windowId)
     }
     else if (CheckIfItemIsTMHMOrEvolutionStone(itemId) == 1)
     {
-        end = StringCopy(end, COMPOUND_STRING(" None"));
+        end = StringCopy(end, COMPOUND_STRING(" 无"));
     }
 
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
     ConvertIntToDecimalStringN(gStringVar3, itemId, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEMS);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Item ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("道具ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -2678,7 +2678,7 @@ static void Debug_Display_ItemQuantity(u32 quantity, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     ConvertIntToDecimalStringN(gStringVar1, quantity, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEM_QUANTITY);
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Quantity:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("数量:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -2774,7 +2774,7 @@ static void Debug_Display_SpeciesInfo(enum Species species, u32 number, u32 digi
     if (!IsSpeciesEnabled(species))
     {
         species = SPECIES_NONE;
-        end = StringCopy(gStringVar1, COMPOUND_STRING("Species Disabled"));
+        end = StringCopy(gStringVar1, COMPOUND_STRING("该宝可梦已禁用"));
     }
     else
     {
@@ -2783,7 +2783,7 @@ static void Debug_Display_SpeciesInfo(enum Species species, u32 number, u32 digi
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
     ConvertIntToDecimalStringN(gStringVar3, number, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEMS);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Species: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("宝可梦: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -2918,7 +2918,7 @@ static void Debug_Display_Level(u32 level, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     ConvertIntToDecimalStringN(gStringVar1, level, STR_CONV_MODE_LEADING_ZEROS, 3);
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Level:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("等级:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3033,10 +3033,10 @@ static void Debug_Display_Nature(u32 natureId, u32 digit, u8 windowId)
     ConvertIntToDecimalStringN(gStringVar3, natureId, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
     if (natureId == 0)
-        StringCopy(gStringVar1, COMPOUND_STRING("Random"));
+        StringCopy(gStringVar1, COMPOUND_STRING("随机"));
     else
         StringCopy(gStringVar1, gNaturesInfo[natureId - 1].name);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Nature ID: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("性格ID: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3073,7 +3073,7 @@ static void Debug_Display_Ability(u32 abilityNum, u32 digit, u8 windowId)//(u32 
     StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
     u8 *end = StringCopy(gStringVar1, gAbilitiesInfo[abilityId].name);
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Ability Num: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("特性编号: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3126,7 +3126,7 @@ static void Debug_Display_TeraType(u32 typeId, u32 digit, u8 windowId)
     ConvertIntToDecimalStringN(gStringVar3, typeId, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
     StringCopy(gStringVar1, gTypesInfo[typeId].name);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Tera Type: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("太晶属性: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3185,7 +3185,7 @@ static void Debug_Display_DynamaxLevel(u32 level, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     ConvertIntToDecimalStringN(gStringVar1, level, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Dmax Lvl:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("极巨化等级:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3231,7 +3231,7 @@ static void DebugAction_Give_Pokemon_SelectTeraType(u8 taskId)
 
 static void Debug_Display_GigantamaxFactor(u32 input, u8 windowId)
 {
-    Debug_Display_TrueFalse(input, windowId, COMPOUND_STRING("Gmax Factor:{CLEAR_TO 90}\n   {STR_VAR_2}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{CLEAR_TO 90}"));
+    Debug_Display_TrueFalse(input, windowId, COMPOUND_STRING("超极巨化因子:{CLEAR_TO 90}\n   {STR_VAR_2}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{CLEAR_TO 90}"));
 }
 
 static void DebugAction_Give_Pokemon_SelectDynamaxLevel(u8 taskId)
@@ -3352,7 +3352,7 @@ static void Debug_Display_MoveInfo(enum Move moveId, u32 iteration, u32 digit, u
     // Doesn't expand placeholdes so a 4th dynamic value can be shown.
     u8 *end;
     if (moveId == MOVES_COUNT)
-        end = StringCopy(gStringVar1, COMPOUND_STRING("Default"));
+        end = StringCopy(gStringVar1, COMPOUND_STRING("默认"));
     else
         end = StringCopy(gStringVar1, GetMoveName(moveId));
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
@@ -3585,7 +3585,7 @@ static void Debug_Display_DecorationInfo(enum Item itemId, u32 digit, u8 windowI
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
     ConvertIntToDecimalStringN(gStringVar3, itemId, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEMS);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Decor ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("装饰物品ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -4743,7 +4743,7 @@ static void Debug_Display_FriendshipInfo(s32 oldFriendship, s32 newFriendship, u
     ConvertIntToDecimalStringN(gStringVar1, oldFriendship, STR_CONV_MODE_LEADING_ZEROS, 3);
     ConvertIntToDecimalStringN(gStringVar2, newFriendship, STR_CONV_MODE_LEADING_ZEROS, 3);
     StringCopy(gStringVar3, gText_DigitIndicator[digit]);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Friendship:\n{STR_VAR_1} {RIGHT_ARROW} {STR_VAR_2}\n\n{STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("亲密度:\n{STR_VAR_1} {RIGHT_ARROW} {STR_VAR_2}\n\n{STR_VAR_3}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -4802,13 +4802,13 @@ static void Debug_Display_PokerusDaysLeftInfo(s32 daysLeft, s32 strain, u32 digi
     ConvertIntToDecimalStringN(gStringVar1, daysLeft, STR_CONV_MODE_LEADING_ZEROS, 2);
 
     if (daysLeft == 0 && strain)
-        StringCopy(gStringVar2, COMPOUND_STRING("Inactive"));
+        StringCopy(gStringVar2, COMPOUND_STRING("已免疫宝可病毒"));
     else if (daysLeft == 0)
-        StringCopy(gStringVar2, COMPOUND_STRING("No Pokerus"));
+        StringCopy(gStringVar2, COMPOUND_STRING("未感染宝可病毒"));
     else
         StringCopy(gStringVar2, COMPOUND_STRING(""));
     StringCopy(gStringVar3, gText_DigitIndicator[digit]);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Days Left:\n{STR_VAR_1}\n{STR_VAR_2}{CLEAR_TO 90}\n{STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("剩余天数:\n{STR_VAR_1}\n{STR_VAR_2}{CLEAR_TO 90}\n{STR_VAR_3}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -4838,7 +4838,7 @@ static void Debug_Display_PokerusStrainInfo(s32 strain, u32 digit, u8 windowId)
 {
     ConvertIntToDecimalStringN(gStringVar1, strain, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringCopy(gStringVar3, gText_DigitIndicator[digit]);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Strain:\n{STR_VAR_1}\n\n{STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("病毒株:\n{STR_VAR_1}\n\n{STR_VAR_3}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
