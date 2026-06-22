@@ -42,6 +42,7 @@
 #include "pokemon_icon.h"
 #include "pokemon_storage_system.h"
 #include "random.h"
+#include "random_mon_generation.h"
 #include "region_map.h"
 #include "rtc.h"
 #include "script.h"
@@ -63,6 +64,7 @@
 #include "constants/flags.h"
 #include "constants/items.h"
 #include "constants/map_groups.h"
+#include "constants/random_mon_generation.h"
 #include "constants/rgb.h"
 #include "constants/script_commands.h"
 #include "constants/songs.h"
@@ -196,6 +198,7 @@ enum DebugMenuTypes
 #define DEBUG_NUMBER_DIGITS_ITEM_QUANTITY 3
 #define DEBUG_NUMBER_DIGITS_LOCALID 2
 #define DEBUG_NUMBER_DIGITS_TRAINERS MAX_DIGITS(TRAINERS_COUNT)
+#define DEBUG_NUMBER_DIGITS_RANDOMISER_OPTIONS 2
 #define DEBUG_NUMBER_DIGITS_OUTBREAKS 2
 
 #define DEBUG_NUMBER_ICON_X 210
@@ -283,6 +286,10 @@ static void DebugAction_Util_Weather(u8 taskId);
 static void DebugAction_Util_Weather_SelectId(u8 taskId);
 static void DebugAction_Util_WatchCredits(u8 taskId);
 static void DebugAction_Util_CheatStart(u8 taskId);
+static void DebugAction_Util_Species_Randomizer(u8 taskId);
+static void DebugAction_Util_Item_Randomizer(u8 taskId);
+static void DebugAction_Util_Randomizer_SelectId(u8 taskId);
+static void Debug_Display_RandomizerOptionsId(u32 optionsID, u32 digit, u8 windowId);
 
 static void DebugAction_TimeMenu_ChangeTimeOfDay(u8 taskId);
 static void DebugAction_TimeMenu_ChangeWeekdays(u8 taskId);
@@ -608,18 +615,20 @@ static const struct DebugMenuOption sDebugMenu_Actions_FollowerNPCMenu[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_Utilities[] =
 {
-    { COMPOUND_STRING("飞往地图…"),       DebugAction_Util_Fly },
-    { COMPOUND_STRING("瞬移到地图…"), DebugAction_Util_Warp_Warp },
-    { COMPOUND_STRING("设定天气…"),      DebugAction_Util_Weather },
-    { COMPOUND_STRING("字体测试…"),        DebugAction_ExecuteScript, Debug_EventScript_FontTest },
-    { COMPOUND_STRING("时间功能…"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
-    { COMPOUND_STRING("观看通关动画…"),    DebugAction_Util_WatchCredits },
-    { COMPOUND_STRING("开始作弊"),       DebugAction_Util_CheatStart },
-    { COMPOUND_STRING("树果相关功能…"),  DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
-    { COMPOUND_STRING("EWRAM计数…"),   DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
-    { COMPOUND_STRING("NPC跟随…"),     DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
-    { COMPOUND_STRING("满充教程"),    DebugAction_ExecuteScript, Debug_EventScript_WallyTutorial },
-    { COMPOUND_STRING("大吾双打"),      DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
+    { COMPOUND_STRING("飞往地图…"),               DebugAction_Util_Fly },
+    { COMPOUND_STRING("瞬移到地图…"),         DebugAction_Util_Warp_Warp },
+    { COMPOUND_STRING("设定天气…"),              DebugAction_Util_Weather },
+    { COMPOUND_STRING("字体测试…"),                DebugAction_ExecuteScript, Debug_EventScript_FontTest },
+    { COMPOUND_STRING("时间功能…"),           DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
+    { COMPOUND_STRING("观看通关动画…"),            DebugAction_Util_WatchCredits },
+    { COMPOUND_STRING("开始作弊"),               DebugAction_Util_CheatStart },
+    { COMPOUND_STRING("树果相关功能…"),          DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
+    { COMPOUND_STRING("EWRAM计数…"),           DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
+    { COMPOUND_STRING("NPC跟随…"),             DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
+    { COMPOUND_STRING("测试宝可梦随机"),   DebugAction_Util_Species_Randomizer },
+    { COMPOUND_STRING("测试道具随机"),      DebugAction_Util_Item_Randomizer },
+    { COMPOUND_STRING("满充教程"),            DebugAction_ExecuteScript, Debug_EventScript_WallyTutorial },
+    { COMPOUND_STRING("大吾双打"),              DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
     { NULL }
 };
 
@@ -845,6 +854,17 @@ static const struct WindowTemplate sDebugMenuWindowTemplateSound =
     .tilemapTop = 1,
     .width = DEBUG_MENU_WIDTH_SOUND,
     .height = DEBUG_MENU_HEIGHT_SOUND,
+    .paletteNum = 15,
+    .baseBlock = 1,
+};
+
+static const struct WindowTemplate sDebugMenuWindowTemplateFullScreen =
+{
+    .bg = 0,
+    .tilemapLeft = 1,
+    .tilemapTop = 1,
+    .width = 28,
+    .height = 18,
     .paletteNum = 15,
     .baseBlock = 1,
 };
@@ -1170,13 +1190,13 @@ static u32 Debug_GenerateListTrainerMenu(const struct DebugMenuOption *items)
             break;
         case 2:
             if (trainer2Id == TRAINER_NONE)
-                StringCopy(gStringVar1, COMPOUND_STRING("None"));
+                StringCopy(gStringVar1, COMPOUND_STRING("无"));
             else
                 ConvertIntToDecimalStringN(gStringVar1, trainer2Id, STR_CONV_MODE_LEADING_ZEROS, 3);
             break;
         case 3:
             if (partnerId == PARTNER_NONE)
-                StringCopy(gStringVar1, COMPOUND_STRING("None"));
+                StringCopy(gStringVar1, COMPOUND_STRING("无"));
             else
                 ConvertIntToDecimalStringN(gStringVar1, partnerId, STR_CONV_MODE_LEADING_ZEROS, 3);
             break;
@@ -1957,6 +1977,217 @@ void DebugMenu_CalculateTimeOfDay(struct ScriptContext *ctx)
     }
 }
 
+#define tRandomizerOption data[6]
+#define tArgCounter data[7]
+#define tArg1 data[8]
+#define tArg2 data[9]
+#define tType data[10]
+
+#define SPECIES_RANDOMIZER 0
+#define ITEM_RANDOMIZER 1
+
+static void DebugAction_Util_Randomizer_RefreshValues(u8 taskId)
+{
+    const u8 *str;
+    u32 x;
+    u32 font;
+    const struct FilterFuncArgs args = {
+        .arg1 = gTasks[taskId].tArg1,
+        .arg2 = gTasks[taskId].tArg2
+    };
+
+    for (u32 i = 0; i < 27; i++)
+    {
+        if (gTasks[taskId].tType == SPECIES_RANDOMIZER)
+        {
+            u32 species = GetRandomSpecies(gTasks[taskId].tRandomizerOption, &args);
+            str = GetSpeciesName(species);
+            x = (i % 3) * 72 + 16;
+            font = FONT_NORMAL;
+        }
+        else
+        {
+            u32 item = GetRandomItem(gTasks[taskId].tRandomizerOption, &args);
+            str = GetItemName(item);
+            x = (i % 3) * 80;
+            font = FONT_NARROW;
+        }
+        u32 y = (i / 3) * 16;
+        AddTextPrinterParameterized(gTasks[taskId].tSubWindowId, font, str, x, y, 0, NULL);
+    }
+}
+
+static void DebugAction_Util_Randomizer_Wait(u8 taskId)
+{
+    if (JOY_NEW(A_BUTTON))
+    {
+        FillWindowPixelBuffer(gTasks[taskId].tSubWindowId, PIXEL_FILL(1));
+        DebugAction_Util_Randomizer_RefreshValues(taskId);
+    }
+
+    if (JOY_NEW(B_BUTTON))
+    {
+        Debug_RemoveCallbackMenu();
+        DebugAction_OpenSubMenu(taskId, sDebugMenu_Actions_Utilities);
+    }
+}
+
+static void DebugAction_Util_Randomizer_ShowValues(u8 taskId)
+{
+
+    ClearStdWindowAndFrame(gTasks[taskId].tWindowId, TRUE);
+    RemoveWindow(gTasks[taskId].tWindowId);
+
+    ClearStdWindowAndFrame(gTasks[taskId].tSubWindowId, TRUE);
+    RemoveWindow(gTasks[taskId].tSubWindowId);
+
+    gTasks[taskId].tSubWindowId = AddWindow(&sDebugMenuWindowTemplateFullScreen);
+    DrawStdWindowFrame(gTasks[taskId].tSubWindowId, FALSE);
+    CopyWindowToVram(gTasks[taskId].tSubWindowId, COPYWIN_FULL);
+
+    DebugAction_Util_Randomizer_RefreshValues(taskId);
+    gTasks[taskId].func = DebugAction_Util_Randomizer_Wait;
+}
+
+static void Debug_Display_RandomizerArg(u32 value, u32 index, u32 digit, u8 windowId)
+{
+    ConvertIntToDecimalStringN(gStringVar1, index + 1, STR_CONV_MODE_LEADING_ZEROS, 1);
+    ConvertIntToDecimalStringN(gStringVar2, value, STR_CONV_MODE_LEADING_ZEROS, 5);
+    StringCopy(gStringVar3, gText_DigitIndicator[digit]);
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("参数{STR_VAR_1}: {STR_VAR_2}\n{CLEAR_TO 90}\n\n{STR_VAR_3}{CLEAR_TO 90}"));
+    AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
+}
+
+static void DebugAction_Util_Randomizer_SelectArg(u8 taskId)
+{
+    if (JOY_NEW(DPAD_ANY))
+    {
+        PlaySE(SE_SELECT);
+        Debug_HandleInput_Numeric(taskId, 0, 0xFFFF, 5);
+        Debug_Display_RandomizerArg(gTasks[taskId].tInput, gTasks[taskId].tInput, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+    }
+
+    if (JOY_NEW(A_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        gTasks[taskId].tArgCounter += 1;
+        if (gTasks[taskId].tArgCounter == 2)
+        {
+            gTasks[taskId].func = DebugAction_Util_Randomizer_ShowValues;
+        }
+        else
+        {
+            if (gTasks[taskId].tArgCounter == 1)
+                gTasks[taskId].tArg1 = gTasks[taskId].tInput;
+            else if (gTasks[taskId].tArgCounter == 2)
+                gTasks[taskId].tArg2 = gTasks[taskId].tInput;
+            gTasks[taskId].tInput = 0;
+            gTasks[taskId].tDigit = 0;
+            gTasks[taskId].func = DebugAction_Util_Randomizer_SelectArg;
+            Debug_Display_RandomizerArg(gTasks[taskId].tInput, gTasks[taskId].tArgCounter, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+        }
+    }
+
+    if (JOY_NEW(B_BUTTON))
+    {
+        if (gTasks[taskId].tArgCounter == 0)
+        {
+            gTasks[taskId].func = DebugAction_Util_Randomizer_SelectId;
+            Debug_Display_RandomizerOptionsId(gTasks[taskId].tInput, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+        }
+        else
+        {
+            gTasks[taskId].tArgCounter -= 1;
+            gTasks[taskId].tInput = 0;
+            gTasks[taskId].tDigit = 0;
+            Debug_Display_RandomizerArg(gTasks[taskId].tInput, gTasks[taskId].tArgCounter, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+        }
+    }
+}
+
+static void Debug_Display_RandomizerOptionsId(u32 optionsID, u32 digit, u8 windowId)
+{
+    ConvertIntToDecimalStringN(gStringVar1, optionsID, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_RANDOMISER_OPTIONS);
+    StringCopy(gStringVar3, gText_DigitIndicator[digit]);
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("选项ID: {STR_VAR_1}\n{CLEAR_TO 90}\n\n{STR_VAR_3}{CLEAR_TO 90}"));
+    AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
+}
+
+static void DebugAction_Util_Randomizer_SelectId(u8 taskId)
+{
+    if (JOY_NEW(DPAD_ANY))
+    {
+        PlaySE(SE_SELECT);
+        u32 max;
+        if (gTasks[taskId].tType == SPECIES_RANDOMIZER)
+            max = RANDOM_SPECIES_OPTIONS_COUNT - 1;
+        else
+            max = RANDOM_ITEM_OPTIONS_COUNT - 1;
+        Debug_HandleInput_Numeric(taskId, 0, max, DEBUG_NUMBER_DIGITS_RANDOMISER_OPTIONS);
+        Debug_Display_RandomizerOptionsId(gTasks[taskId].tInput, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+    }
+
+    if (JOY_NEW(A_BUTTON))
+    {
+        PlaySE(SE_SELECT);
+        gTasks[taskId].tRandomizerOption = gTasks[taskId].tInput;
+        gTasks[taskId].tArgCounter = 0;
+        gTasks[taskId].tInput = 0;
+        gTasks[taskId].tDigit = 0;
+        gTasks[taskId].func = DebugAction_Util_Randomizer_SelectArg;
+        Debug_Display_RandomizerArg(gTasks[taskId].tInput, gTasks[taskId].tArgCounter, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+    }
+
+    if (JOY_NEW(B_BUTTON))
+    {
+        Debug_RemoveCallbackMenu();
+        DebugAction_OpenSubMenu(taskId, sDebugMenu_Actions_Utilities);
+    }
+}
+
+static void DebugAction_Util_Species_Randomizer(u8 taskId)
+{
+    ClearStdWindowAndFrame(gTasks[taskId].tWindowId, TRUE);
+    RemoveWindow(gTasks[taskId].tWindowId);
+    u8 windowId = DebugNativeStep_CreateDebugWindow();
+
+    gTasks[taskId].func = DebugAction_Util_Randomizer_SelectId;
+    gTasks[taskId].tSubWindowId = windowId;
+    gTasks[taskId].tInput = 0;
+    gTasks[taskId].tDigit = 0;
+    gTasks[taskId].tRandomizerOption = 0;
+    gTasks[taskId].tArgCounter = 0;
+    gTasks[taskId].tArg1 = 0;
+    gTasks[taskId].tArg2 = 0;
+    gTasks[taskId].tType = SPECIES_RANDOMIZER;
+
+    Debug_Display_RandomizerOptionsId(gTasks[taskId].tInput, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+}
+
+static void DebugAction_Util_Item_Randomizer(u8 taskId)
+{
+    ClearStdWindowAndFrame(gTasks[taskId].tWindowId, TRUE);
+    RemoveWindow(gTasks[taskId].tWindowId);
+    u8 windowId = DebugNativeStep_CreateDebugWindow();
+
+    gTasks[taskId].func = DebugAction_Util_Randomizer_SelectId;
+    gTasks[taskId].tSubWindowId = windowId;
+    gTasks[taskId].tInput = 0;
+    gTasks[taskId].tDigit = 0;
+    gTasks[taskId].tRandomizerOption = 0;
+    gTasks[taskId].tArgCounter = 0;
+    gTasks[taskId].tArg1 = 0;
+    gTasks[taskId].tArg2 = 0;
+    gTasks[taskId].tType = ITEM_RANDOMIZER;
+
+    Debug_Display_RandomizerOptionsId(gTasks[taskId].tInput, gTasks[taskId].tDigit, gTasks[taskId].tSubWindowId);
+}
+
+#undef tRandomizerOption
+#undef tArgCounter
+#undef tArg1
+#undef tArg2
+#undef tType
 
 // *******************************
 // Actions Trainers
@@ -2007,7 +2238,7 @@ static void Debug_Display_LocalTrainer(u32 localId, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     u8 *end;
     if (trainerID == TRAINER_NONE)
-        end = StringCopy(gStringVar1, COMPOUND_STRING("Not a Trainer"));
+        end = StringCopy(gStringVar1, COMPOUND_STRING("不是训练家"));
     else
         end = StringCopy(gStringVar1, GetTrainerNameFromId(trainerID));
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
@@ -2129,7 +2360,7 @@ static void Debug_Display_TrainerID(u32 trainerID, u32 selection, u32 digit, u8 
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     u8 *end;
     if (trainerID == TRAINER_NONE || trainerID == TRAINER_PARTNER(PARTNER_NONE))
-        end = StringCopy(gStringVar1, COMPOUND_STRING("None"));
+        end = StringCopy(gStringVar1, COMPOUND_STRING("无"));
     else
         end = StringCopy(gStringVar1, GetTrainerNameFromId(trainerID));
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
@@ -2297,11 +2528,13 @@ static void DebugAction_Trainers_TryBattle(u8 taskId)
     gBattleTypeFlags = BATTLE_TYPE_TRAINER;
     TRAINER_BATTLE_PARAM.opponentA = trainer1Id;
     TRAINER_BATTLE_PARAM.opponentB = 0xFFFF;
+    CreateNPCTrainerPartyFromTrainer(gParties[B_TRAINER_OPPONENT_A], GetTrainerStructFromId(trainer1Id));
     if (sDebugMenuListData->data[5] || partnerId != PARTNER_NONE || trainer2Id != TRAINER_NONE)
         gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
     if (trainer2Id != TRAINER_NONE)
     {
         TRAINER_BATTLE_PARAM.opponentB = trainer2Id;
+        CreateNPCTrainerPartyFromTrainer(gParties[B_TRAINER_OPPONENT_B], GetTrainerStructFromId(trainer2Id));
         gBattleTypeFlags |= BATTLE_TYPE_TWO_OPPONENTS;
     }
     if (partnerId != PARTNER_NONE)
@@ -2623,7 +2856,7 @@ static void Debug_Display_Probability(u32 probability, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     ConvertIntToDecimalStringN(gStringVar1, probability, STR_CONV_MODE_LEADING_ZEROS, 3);
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Probability:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("概率:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -2677,7 +2910,7 @@ static void Debug_Display_OutbreakDaysLeft(u32 daysLeft, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     ConvertIntToDecimalStringN(gStringVar1, daysLeft, STR_CONV_MODE_LEADING_ZEROS, 3);
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Days Left:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("剩余天数:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3192,13 +3425,13 @@ static void Debug_Display_ItemInfo(enum Item itemId, u32 digit, u8 windowId)
     }
     else if (CheckIfItemIsTMHMOrEvolutionStone(itemId) == 1)
     {
-        end = StringCopy(end, COMPOUND_STRING(" None"));
+        end = StringCopy(end, COMPOUND_STRING("无"));
     }
 
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
     ConvertIntToDecimalStringN(gStringVar3, itemId, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEMS);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Item ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("道具ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3242,7 +3475,7 @@ static void Debug_Display_ItemQuantity(u32 quantity, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     ConvertIntToDecimalStringN(gStringVar1, quantity, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEM_QUANTITY);
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Quantity:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("数量:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3336,7 +3569,7 @@ static void Debug_Display_SpeciesInfo(enum Species species, u32 number, u32 digi
     if (!IsSpeciesEnabled(species))
     {
         species = SPECIES_NONE;
-        end = StringCopy(gStringVar1, COMPOUND_STRING("Species Disabled"));
+        end = StringCopy(gStringVar1, COMPOUND_STRING("该宝可梦已禁用"));
     }
     else
     {
@@ -3345,7 +3578,7 @@ static void Debug_Display_SpeciesInfo(enum Species species, u32 number, u32 digi
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
     ConvertIntToDecimalStringN(gStringVar3, number, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEMS);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Species: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("宝可梦: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3480,7 +3713,7 @@ static void Debug_Display_Level(u32 level, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     ConvertIntToDecimalStringN(gStringVar1, level, STR_CONV_MODE_LEADING_ZEROS, 3);
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Level:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("等级:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3595,10 +3828,10 @@ static void Debug_Display_Nature(u32 natureId, u32 digit, u8 windowId)
     ConvertIntToDecimalStringN(gStringVar3, natureId, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
     if (natureId == 0)
-        StringCopy(gStringVar1, COMPOUND_STRING("Random"));
+        StringCopy(gStringVar1, COMPOUND_STRING("随机"));
     else
         StringCopy(gStringVar1, gNaturesInfo[natureId - 1].name);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Nature ID: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("性格ID: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3635,7 +3868,7 @@ static void Debug_Display_Ability(u32 abilityNum, u32 digit, u8 windowId)//(u32 
     StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
     u8 *end = StringCopy(gStringVar1, gAbilitiesInfo[abilityId].name);
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Ability Num: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("特性编号: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3688,7 +3921,7 @@ static void Debug_Display_TeraType(u32 typeId, u32 digit, u8 windowId)
     ConvertIntToDecimalStringN(gStringVar3, typeId, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringCopyPadded(gStringVar3, gStringVar3, CHAR_SPACE, 15);
     StringCopy(gStringVar1, gTypesInfo[typeId].name);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Tera Type: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("太晶属性: {STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3747,7 +3980,7 @@ static void Debug_Display_DynamaxLevel(u32 level, u32 digit, u8 windowId)
     StringCopy(gStringVar2, gText_DigitIndicator[digit]);
     ConvertIntToDecimalStringN(gStringVar1, level, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Dmax Lvl:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("极巨化等级:{CLEAR_TO 90}\n{STR_VAR_1}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -3793,7 +4026,7 @@ static void DebugAction_Give_Pokemon_SelectTeraType(u8 taskId)
 
 static void Debug_Display_GigantamaxFactor(u32 input, u8 windowId)
 {
-    Debug_Display_TrueFalse(input, windowId, COMPOUND_STRING("Gmax Factor:{CLEAR_TO 90}\n   {STR_VAR_2}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{CLEAR_TO 90}"));
+    Debug_Display_TrueFalse(input, windowId, COMPOUND_STRING("超极巨化因子:{CLEAR_TO 90}\n   {STR_VAR_2}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{CLEAR_TO 90}"));
 }
 
 static void DebugAction_Give_Pokemon_SelectDynamaxLevel(u8 taskId)
@@ -3914,7 +4147,7 @@ static void Debug_Display_MoveInfo(enum Move moveId, u32 iteration, u32 digit, u
     // Doesn't expand placeholdes so a 4th dynamic value can be shown.
     u8 *end;
     if (moveId == MOVES_COUNT)
-        end = StringCopy(gStringVar1, COMPOUND_STRING("Default"));
+        end = StringCopy(gStringVar1, COMPOUND_STRING("默认"));
     else
         end = StringCopy(gStringVar1, GetMoveName(moveId));
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
@@ -4145,7 +4378,7 @@ static void Debug_Display_DecorationInfo(enum Item itemId, u32 digit, u8 windowI
     WrapFontIdToFit(gStringVar1, end, DEBUG_MENU_FONT, WindowWidthPx(windowId));
     StringCopyPadded(gStringVar1, gStringVar1, CHAR_SPACE, 15);
     ConvertIntToDecimalStringN(gStringVar3, itemId, STR_CONV_MODE_LEADING_ZEROS, DEBUG_NUMBER_DIGITS_ITEMS);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Decor ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("装饰物品ID: {STR_VAR_3}\n{STR_VAR_1}{CLEAR_TO 90}\n\n{STR_VAR_2}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -5308,7 +5541,7 @@ static void Debug_Display_FriendshipInfo(s32 oldFriendship, s32 newFriendship, u
     ConvertIntToDecimalStringN(gStringVar1, oldFriendship, STR_CONV_MODE_LEADING_ZEROS, 3);
     ConvertIntToDecimalStringN(gStringVar2, newFriendship, STR_CONV_MODE_LEADING_ZEROS, 3);
     StringCopy(gStringVar3, gText_DigitIndicator[digit]);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Friendship:\n{STR_VAR_1} {RIGHT_ARROW} {STR_VAR_2}\n\n{STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("亲密度:\n{STR_VAR_1} {RIGHT_ARROW} {STR_VAR_2}\n\n{STR_VAR_3}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -5367,13 +5600,13 @@ static void Debug_Display_PokerusDaysLeftInfo(s32 daysLeft, s32 strain, u32 digi
     ConvertIntToDecimalStringN(gStringVar1, daysLeft, STR_CONV_MODE_LEADING_ZEROS, 2);
 
     if (daysLeft == 0 && strain)
-        StringCopy(gStringVar2, COMPOUND_STRING("Inactive"));
+        StringCopy(gStringVar2, COMPOUND_STRING("已免疫宝可病毒"));
     else if (daysLeft == 0)
-        StringCopy(gStringVar2, COMPOUND_STRING("No Pokerus"));
+        StringCopy(gStringVar2, COMPOUND_STRING("未感染宝可病毒"));
     else
         StringCopy(gStringVar2, COMPOUND_STRING(""));
     StringCopy(gStringVar3, gText_DigitIndicator[digit]);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Days Left:\n{STR_VAR_1}\n{STR_VAR_2}{CLEAR_TO 90}\n{STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("剩余天数:\n{STR_VAR_1}\n{STR_VAR_2}{CLEAR_TO 90}\n{STR_VAR_3}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -5403,7 +5636,7 @@ static void Debug_Display_PokerusStrainInfo(s32 strain, u32 digit, u8 windowId)
 {
     ConvertIntToDecimalStringN(gStringVar1, strain, STR_CONV_MODE_LEADING_ZEROS, 2);
     StringCopy(gStringVar3, gText_DigitIndicator[digit]);
-    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("Strain:\n{STR_VAR_1}\n\n{STR_VAR_3}"));
+    StringExpandPlaceholders(gStringVar4, COMPOUND_STRING("病毒株:\n{STR_VAR_1}\n\n{STR_VAR_3}"));
     AddTextPrinterParameterized(windowId, DEBUG_MENU_FONT, gStringVar4, 0, 0, 0, NULL);
 }
 
@@ -5506,7 +5739,7 @@ const struct Trainer* GetDebugAiTrainer(void)
 static void DebugAction_Party_SetParty(u8 taskId)
 {
     ZeroPlayerPartyMons();
-    CreateNPCTrainerPartyFromTrainer(gParties[B_TRAINER_PLAYER], &sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_PLAYER], TRUE, BATTLE_TYPE_TRAINER);
+    CreateNPCTrainerPartyFromTrainer(gParties[B_TRAINER_PLAYER], &sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_PLAYER]);
     ScriptContext_Enable();
     Debug_DestroyMenu_Full(taskId);
 }
@@ -5515,8 +5748,9 @@ static void DebugAction_Party_BattleSingle(u8 taskId)
 {
     ZeroPlayerPartyMons();
     ZeroEnemyPartyMons();
-    CreateNPCTrainerPartyFromTrainer(gParties[B_TRAINER_PLAYER], &sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_PLAYER], TRUE, BATTLE_TYPE_TRAINER);
-    CreateNPCTrainerPartyFromTrainer(gParties[B_TRAINER_OPPONENT_A], GetDebugAiTrainer(), FALSE, BATTLE_TYPE_TRAINER);
+
+    CreateNPCTrainerPartyFromTrainer(gParties[B_TRAINER_PLAYER], &sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_PLAYER]);
+    CreateNPCTrainerPartyFromTrainer(gParties[B_TRAINER_OPPONENT_A], GetDebugAiTrainer());
 
     gBattleTypeFlags = BATTLE_TYPE_TRAINER;
     if (sDebugTrainers[DIFFICULTY_NORMAL][DEBUG_TRAINER_AI].battleType == TRAINER_BATTLE_TYPE_DOUBLES)
