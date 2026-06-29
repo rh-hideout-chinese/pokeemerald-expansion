@@ -1382,7 +1382,7 @@ SootopolisCity_Text_GymSign:
     .string "琉璃市宝可梦道馆\n馆主：亚当\p“娇艳欲滴的\n道馆馆主！”$"
 
 SootopolisCity_Text_CitySign:
-    .string "这里是琉璃市。\p“历史沉睡的神秘城市。”$"
+    .string "这里是琉璃市。\n“历史沉睡的神秘城市。”$"
 
 SootopolisCity_Text_DoorIsClosed:
     .string "这扇门上着锁。$"

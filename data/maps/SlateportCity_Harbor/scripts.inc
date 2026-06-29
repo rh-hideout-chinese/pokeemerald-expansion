@@ -414,7 +414,7 @@ SlateportCity_Harbor_Text_AbnormalWeather:
     .string "要让船安全航行，\n我们就得事先了解天气变化！\p说到天气，我从天气研究所的\n一个人哪儿听说，\p他们接到了来自很多地方的\n关于天气反常的报告！\p你该去天气研究所\n了解一下情况！$"
 
 SlateportCity_Harbor_Text_SubTooSmallForMe:
-    .string "我也想跟着楠木馆长\n去海底勘探，\p但潜水艇对我来说太小了。\p如果我挤进去，\n船长就没地方了……$"
+    .string "我也想跟着楠木馆长\n去海底勘探，\p但潜水艇对我来说太小了。\p如果我挤进去，\n馆长就没地方了……$"
 
 SlateportCity_Harbor_Text_SameThugsTriedToRobAtMuseum:
     .string "楠木馆长：那些恶棍……\p他们和上次在博物馆抢得文的物品\n的人是一伙儿的。$"

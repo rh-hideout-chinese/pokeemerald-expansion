@@ -520,10 +520,10 @@ gTVHoennTreasureInvestigatorsText00::
 	.string "丰缘寻宝调查团！\p嗨伙计们！\n最近找到什么秘密道具了吗？\p我们将继续调查来自各地\n关于秘密道具的目击报告！\p先看这封信：\n“发现{STR_VAR_1}！”$"
 
 gTVHoennTreasureInvestigatorsText01::
-	.string "哇，我们得好好看看这封信！\p……亲爱的调查团：\n祝你们好。\p我最近在{STR_VAR_3}附近\n看到{STR_VAR_2}。\p这位训练家找到了{STR_VAR_1}\n让我好羡慕。\p……干得漂亮，{STR_VAR_2}！\p观众们，快打开探宝器\n开始寻宝吧！\p期待收到你们的精彩发现！$"
+	.string "哇，我们得好好看看这封信！\n让我来读给你听。\p……亲爱的调查团：\n祝你们好。\p我最近在{STR_VAR_3}附近\n看到{STR_VAR_2}。\p这位训练家找到了{STR_VAR_1}\n让我好羡慕。\p……干得漂亮，{STR_VAR_2}！\p观众们，快打开探宝器\n开始寻宝吧！\p期待收到你们的精彩发现！$"
 
 gTVHoennTreasureInvestigatorsText02::
-	.string "哇，我们得好好看看这封信！\p……亲爱的调查团：\n祝你们好。\p我最近在渡轮上\n看到{STR_VAR_2}。\p这位训练家找到了{STR_VAR_1}\n让我好羡慕。\p……干得漂亮，{STR_VAR_2}！\p观众们，快打开探宝器\n开始寻宝吧！\p期待收到你们的精彩发现！$"
+	.string "哇，我们得好好看看这封信！\n让我来读给你听。\p……亲爱的调查团：\n祝你们好。\p我最近在渡轮上\n看到{STR_VAR_2}。\p这位训练家找到了{STR_VAR_1}\n让我好羡慕。\p……干得漂亮，{STR_VAR_2}！\p观众们，快打开探宝器\n开始寻宝吧！\p期待收到你们的精彩发现！$"
 
 gTVFindThatGamerText00::
 	.string "寻找游戏高手！\p嗨，各位玩家！\n你的{STR_VAR_2}转得怎么样啦？\p和往常一样，我们将聚焦\n光顾游戏城的稀有训练家！\p今天的头号玩家是……\n{STR_VAR_1}！$"

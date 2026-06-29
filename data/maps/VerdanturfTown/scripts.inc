@@ -71,7 +71,7 @@ VerdanturfTown_Text_AirCleanHere:
     .string "因风向关系，\n火山灰永远吹不到这里，\p所以这里空气非常清新。\n住在这里，就算是体弱多病的人\l也可能有奇迹般的好转。$"
 
 VerdanturfTown_Text_MakeBattleTentDebut:
-    .string "我和宝可梦最近连胜不断，\n决定在绿荫镇的对战帐篷首秀！$"
+    .string "我和宝可梦最近连胜不断，\n决定在绿茵镇的对战帐篷首秀！$"
 
 VerdanturfTown_Text_GuyTryingToBustThroughCave:
     .string "你看到友好商店旁边的\n洞窟了吗？\p里面有个人在努力打碎岩石\n来打通隧道。\p要是隧道能打通就太好了……\n这样我们去卡那兹市就更容易了。$"
