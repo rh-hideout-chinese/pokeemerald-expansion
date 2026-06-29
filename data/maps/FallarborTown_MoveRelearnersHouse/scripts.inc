@@ -70,7 +70,7 @@ FallarborTown_MoveRelearnersHouse_Text_TeachWhichMove:
     .string "要学习哪个招式？$"
 
 FallarborTown_MoveRelearnersHouse_Text_DontHaveMoveToTeachPokemon:
-    .string "抱歉……\p我看来没有能够教给\n这只宝可梦的招式。$"
+    .string "抱歉……\p看来我没有招式能\n教给这只宝可梦。$"
 
 FallarborTown_MoveRelearnersHouse_Text_HandedOverHeartScale:
     .string "{PLAYER}将1个心之鳞片\n作为谢礼送给了对方！$"

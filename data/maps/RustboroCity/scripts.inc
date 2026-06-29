@@ -1142,7 +1142,7 @@ RustboroCity_Text_CuttersHouse:
     .string "居合劈大叔的家$"
 
 RustboroCity_Text_DevelopedNewPokenavFeature:
-    .string "我最近一直在为宝可导航的\n开发新功能……\p结果非常成功！\p{PLAYER}，能让我看看社长\n给你的宝可导航吗？$"
+    .string "我最近一直在为宝可导航\n开发新功能……\p结果非常成功！\p{PLAYER}，能让我看看社长\n给你的宝可导航吗？$"
 
 RustboroCity_Text_AddedMatchCallPleaseCallMrStone:
     .string "好了，{PLAYER}！\p我给你的宝可导航\n加了个对战寻呼的功能。\p你现在可以用对战寻呼与登记到你\n宝可导航里的人聊天了。\p{PLAYER}，我们的社长兹伏奇已经\n登记到你的宝可导航里了，\p试试看吧，\n给我们社长打个电话。$"

@@ -1092,7 +1092,7 @@ SlateportCity_Text_OceanicMuseumSign:
     .string "“无垠的大海哺育了\n世间一切的生命。”\p海洋科学博物馆$"
 
 SlateportCity_Text_CitySign:
-    .string "这里是凯那市。\n“人类与宝可梦交流的港泊。”$"
+    .string "这里是凯那市。\n“人类与宝可梦及自然交流的港泊。”$"
 
 SlateportCity_Text_MarketSign:
     .string "凯那市市场\n“我们有其他地方买不到的商品！”$"
