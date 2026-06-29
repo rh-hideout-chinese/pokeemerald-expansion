@@ -9,6 +9,7 @@
 #include "data.h"
 #include "decompress.h"
 #include "graphics.h"
+#include "image_processing_effects.h"
 #include "link.h"
 #include "m4a.h"
 #include "main.h"
@@ -41,6 +42,7 @@
 #include "constants/items.h"
 #include "constants/moves.h"
 #include "constants/rgb.h"
+#include "constants/script_menu.h"
 #include "constants/songs.h"
 
 // This file's functions.
@@ -385,6 +387,17 @@ const u8 gText_AttractedCrowdsAttention[] = _("吸引了观众们的注意！{PA
 const u8 gText_CrowdContinuesToWatchMon[] = _("观众们一直持续关注着{STR_VAR_3}！{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
 const u8 gText_MonsMoveIsIgnored[] = _("{STR_VAR_1}的{STR_VAR_2}被完全无视了……{PAUSE 15}{PAUSE 15}{PAUSE 15}{PAUSE 15}");
 
+static const u32 sPictureFrameTiles_Cool[]     = INCGFX_U32("graphics/picture_frame/cool.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Beauty[]   = INCGFX_U32("graphics/picture_frame/beauty.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Cute[]     = INCGFX_U32("graphics/picture_frame/cute.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Smart[]    = INCGFX_U32("graphics/picture_frame/smart.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Tough[]    = INCGFX_U32("graphics/picture_frame/tough.png", ".4bpp.smol");
+static const u32 sPictureFrameTilemap_Cool[]   = INCGFX_U32("graphics/picture_frame/cool_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Beauty[] = INCGFX_U32("graphics/picture_frame/beauty_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Cute[]   = INCGFX_U32("graphics/picture_frame/cute_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Smart[]  = INCGFX_U32("graphics/picture_frame/smart_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Tough[]  = INCGFX_U32("graphics/picture_frame/tough_map.bin", ".smolTM");
+
 static const u8 sSliderHeartYPositions[CONTESTANT_COUNT] =
 {
     36, 76, 116, 156
@@ -681,8 +694,17 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .condition = COMPOUND_STRING("帅气"),
         .generic = COMPOUND_STRING("帅气"),
         .negativeTrait = COMPOUND_STRING("扑通扑通"),
+        .ribbon = MON_DATA_COOL_RIBBON,
+        .imageEffect = IMAGE_EFFECT_OUTLINE_COLORED,
+        .paintingTiles = sPictureFrameTiles_Cool,
+        .paintingTilemap = sPictureFrameTilemap_Cool,
         .palette = 13,
         .tile = 0x4040,
+        .resultsTilemap = gContestResultsTitle_Cool_Tilemap,
+        .stdString = STDSTRING_COOL,
+        .text = gText_Cool,
+        .tvShowState = CONTESTLIVE_STATE_COOL,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_COOL,
     },
 
     [CONTEST_CATEGORY_BEAUTY] =
@@ -691,8 +713,17 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .condition = COMPOUND_STRING("美丽"),
         .generic = COMPOUND_STRING("美丽招式"),
         .negativeTrait = COMPOUND_STRING("慌慌张张"),
+        .ribbon = MON_DATA_BEAUTY_RIBBON,
+        .imageEffect = IMAGE_EFFECT_SHIMMER,
+        .paintingTiles = sPictureFrameTiles_Beauty,
+        .paintingTilemap = sPictureFrameTilemap_Beauty,
         .palette = 14,
         .tile = 0x4045,
+        .resultsTilemap = gContestResultsTitle_Beauty_Tilemap,
+        .stdString = STDSTRING_BEAUTY,
+        .text = gText_Beauty,
+        .tvShowState = CONTESTLIVE_STATE_BEAUTIFUL,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_BEAUTIFUL,
     },
 
     [CONTEST_CATEGORY_CUTE] =
@@ -701,8 +732,17 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .condition = COMPOUND_STRING("可爱"),
         .generic = COMPOUND_STRING("可爱招式"),
         .negativeTrait = COMPOUND_STRING("散散漫漫"),
+        .ribbon = MON_DATA_CUTE_RIBBON,
+        .imageEffect = IMAGE_EFFECT_POINTILLISM,
+        .paintingTiles = sPictureFrameTiles_Cute,
+        .paintingTilemap = sPictureFrameTilemap_Cute,
         .palette = 14,
         .tile = 0x404A,
+        .resultsTilemap = gContestResultsTitle_Cute_Tilemap,
+        .stdString = STDSTRING_CUTE,
+        .text = gText_Cute,
+        .tvShowState = CONTESTLIVE_STATE_CUTE,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_CUTE,
     },
 
     [CONTEST_CATEGORY_SMART] =
@@ -711,8 +751,17 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .condition = COMPOUND_STRING("聪明"),
         .generic = COMPOUND_STRING("聪明招式"),
         .negativeTrait = COMPOUND_STRING("犹犹豫豫"),
+        .ribbon = MON_DATA_SMART_RIBBON,
+        .imageEffect = IMAGE_EFFECT_CHARCOAL,
+        .paintingTiles = sPictureFrameTiles_Smart,
+        .paintingTilemap = sPictureFrameTilemap_Smart,
         .palette = 15,
         .tile = 0x406A,
+        .resultsTilemap = gContestResultsTitle_Smart_Tilemap,
+        .stdString = STDSTRING_SMART,
+        .text = gText_Smart,
+        .tvShowState = CONTESTLIVE_STATE_SMART,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_SMART,
     },
 
     [CONTEST_CATEGORY_TOUGH] =
@@ -721,8 +770,17 @@ const struct ContestCategory gContestCategoryInfo[CONTEST_CATEGORIES_COUNT + 1] 
         .condition = COMPOUND_STRING("强壮"),
         .generic = COMPOUND_STRING("强壮招式"),
         .negativeTrait = COMPOUND_STRING("战战栗栗"),
+        .ribbon = MON_DATA_TOUGH_RIBBON,
+        .imageEffect = IMAGE_EFFECT_GRAYSCALE_LIGHT,
+        .paintingTiles = sPictureFrameTiles_Tough,
+        .paintingTilemap = sPictureFrameTilemap_Tough,
         .palette = 13,
         .tile = 0x408A,
+        .resultsTilemap = gContestResultsTitle_Tough_Tilemap,
+        .stdString = STDSTRING_TOUGH,
+        .text = gText_Tough,
+        .tvShowState = CONTESTLIVE_STATE_TOUGH,
+        .tvShowStateExciting = CONTESTLIVE_STATE_VERY_TOUGH,
     },
 
     [CONTEST_CATEGORIES_COUNT] =
