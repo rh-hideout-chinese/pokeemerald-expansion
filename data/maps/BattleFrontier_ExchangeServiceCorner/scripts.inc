@@ -391,34 +391,34 @@ BattleFrontier_ExchangeServiceCorner_Text_KissPosterDesc::
     .string "一幅有迷唇娃\n图案的大海报。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KissCushionDesc::
-    .string "一个迷唇娃垫子。\n要放置在地毯和桌子上。$"
+    .string "一个迷唇娃垫子。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_SmoochumDollDesc::
-    .string "一个迷唇娃玩偶。\n要放置在地毯和桌子上。$"
+    .string "一个迷唇娃玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TogepiDollDesc::
-    .string "一个波克比玩偶。\n要放置在地毯和桌子上。$"
+    .string "一个波克比玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_MeowthDollDesc::
-    .string "一个喵喵玩偶。\n要放置在地毯和桌子上。$"
+    .string "一个喵喵玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ClefairyDollDesc::
-    .string "一个皮皮玩偶。\n要放置在地毯和桌子上。$"
+    .string "一个皮皮玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_DittoDollDesc::
-    .string "一个百变怪玩偶。\n要放置在地毯和桌子上。$"
+    .string "一个百变怪玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_CyndaquilDollDesc::
-    .string "一个火球鼠。\n要放置在地毯和桌子上。$"
+    .string "一个火球鼠玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChikoritaDollDesc::
-    .string "一个菊草叶。\n要放置在地毯和桌子上。$"
+    .string "一个菊草叶玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_TotodileDollDesc::
-    .string "一个小锯鳄。\n要放置在地毯和桌子上。$"
+    .string "一个小锯鳄玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_LargeDollDesc::
-    .string "一个巨大的玩偶。\n要放置在地毯和桌子上。$"
+    .string "一个巨大的玩偶。\n要放置在地毯或桌子上。$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ProteinDesc::
     .string "提升宝可梦的攻击\n能力。$"

@@ -312,7 +312,7 @@ BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou:
     .string "只要有你在身边，我会无往不利。$"
 
 BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome:
-    .string "哦哦，亲爱的，你太棒了！\p哦哦，我再也等不及了！\p我们马上去挑战\n多人对战间吧！\p如果我们一起去对战塔，\n我们之间爱的力量一定会\l使我们战胜所有人。\p啊，亲爱的，在我们两人面前，\n一切都像推倒多米诺一样！$"
+    .string "哦哦，亲爱的，你太棒了！\p哦哦，我再也等不及了！\p我们马上去挑战\n多人对战间吧！\p如果我们一起去对战沙龙，\n我们之间爱的力量一定会\l使我们战胜所有人。\p啊，亲爱的，在我们两人面前，\n一切都像推倒多米诺一样！$"
 
 BattleFrontier_OutsideEast_Text_FrontierNotExclusivelyForToughTrainers:
     .string "对战开拓区并不是\n强大的训练家专属的，\p似乎很多拥有特别能力的人\n也在被邀请的行列。\p那个亚希达……\p他建造这个地方一定有着\n远大的目标……$"
