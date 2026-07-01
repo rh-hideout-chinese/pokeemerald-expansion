@@ -398,6 +398,17 @@ static const u32 sPictureFrameTilemap_Cute[]   = INCGFX_U32("graphics/picture_fr
 static const u32 sPictureFrameTilemap_Smart[]  = INCGFX_U32("graphics/picture_frame/smart_map.bin", ".smolTM");
 static const u32 sPictureFrameTilemap_Tough[]  = INCGFX_U32("graphics/picture_frame/tough_map.bin", ".smolTM");
 
+static const u32 sPictureFrameTiles_Cool[]     = INCGFX_U32("graphics/picture_frame/cool.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Beauty[]   = INCGFX_U32("graphics/picture_frame/beauty.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Cute[]     = INCGFX_U32("graphics/picture_frame/cute.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Smart[]    = INCGFX_U32("graphics/picture_frame/smart.png", ".4bpp.smol");
+static const u32 sPictureFrameTiles_Tough[]    = INCGFX_U32("graphics/picture_frame/tough.png", ".4bpp.smol");
+static const u32 sPictureFrameTilemap_Cool[]   = INCGFX_U32("graphics/picture_frame/cool_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Beauty[] = INCGFX_U32("graphics/picture_frame/beauty_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Cute[]   = INCGFX_U32("graphics/picture_frame/cute_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Smart[]  = INCGFX_U32("graphics/picture_frame/smart_map.bin", ".smolTM");
+static const u32 sPictureFrameTilemap_Tough[]  = INCGFX_U32("graphics/picture_frame/tough_map.bin", ".smolTM");
+
 static const u8 sSliderHeartYPositions[CONTESTANT_COUNT] =
 {
     36, 76, 116, 156

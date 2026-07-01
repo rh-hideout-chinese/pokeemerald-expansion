@@ -43,7 +43,6 @@
 #include "pokemon_storage_system.h"
 #include "random.h"
 #include "random_mon_generation.h"
-#include "random_mon_generation.h"
 #include "region_map.h"
 #include "rtc.h"
 #include "script.h"
@@ -601,20 +600,20 @@ static const struct DebugMenuOption sDebugMenu_Actions_FollowerNPCMenu[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_Utilities[] =
 {
-    { COMPOUND_STRING("飞往地图…"),                       DebugAction_Util_Fly },
-    { COMPOUND_STRING("瞬移到地图…"),                 DebugAction_Util_Warp_Warp },
-    { COMPOUND_STRING("设定天气…"),                      DebugAction_Util_Weather },
-    { COMPOUND_STRING("字体测试…"),                        DebugAction_ExecuteScript, Debug_EventScript_FontTest },
-    { COMPOUND_STRING("时间功能…"),                   DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
-    { COMPOUND_STRING("观看通关动画…"),                    DebugAction_Util_WatchCredits },
-    { COMPOUND_STRING("开始作弊"),                       DebugAction_Util_CheatStart },
-    { COMPOUND_STRING("树果相关功能…"),                  DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
-    { COMPOUND_STRING("EWRAM计数…"),                   DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
-    { COMPOUND_STRING("NPC跟随…"),                     DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
-    { COMPOUND_STRING("测试宝可梦随机"),   DebugAction_Util_Species_Randomizer },
-    { COMPOUND_STRING("测试道具随机"),      DebugAction_Util_Item_Randomizer },
-    { COMPOUND_STRING("满充教程"),                    DebugAction_ExecuteScript, Debug_EventScript_WallyTutorial },
-    { COMPOUND_STRING("大吾双打"),                      DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
+    { COMPOUND_STRING("飞往地图…"),                               DebugAction_Util_Fly },
+    { COMPOUND_STRING("瞬移到地图…"),                         DebugAction_Util_Warp_Warp },
+    { COMPOUND_STRING("设定天气…"),                              DebugAction_Util_Weather },
+    { COMPOUND_STRING("字体测试…"),                                DebugAction_ExecuteScript, Debug_EventScript_FontTest },
+    { COMPOUND_STRING("时间功能…"),                           DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
+    { COMPOUND_STRING("观看通关动画…"),                            DebugAction_Util_WatchCredits },
+    { COMPOUND_STRING("开始作弊"),                               DebugAction_Util_CheatStart },
+    { COMPOUND_STRING("树果相关功能…"),                          DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
+    { COMPOUND_STRING("EWRAM计数…"),                           DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
+    { COMPOUND_STRING("NPC跟随…"),                             DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
+    { COMPOUND_STRING("测试宝可梦随机"),                        DebugAction_Util_Species_Randomizer },
+    { COMPOUND_STRING("测试道具随机"),                          DebugAction_Util_Item_Randomizer },
+    { COMPOUND_STRING("满充教程"),                            DebugAction_ExecuteScript, Debug_EventScript_WallyTutorial },
+    { COMPOUND_STRING("大吾双打"),                              DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
     { NULL }
 };
 

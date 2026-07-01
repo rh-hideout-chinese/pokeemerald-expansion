@@ -705,6 +705,29 @@ static const u8 sText_DexEmptyString[] = _("");
 static const u8 sText_DexSearchDontSpecify[] = _("不指定");
 static const u8 sText_DexSearchTypeNone[] = _("无");
 
+static const u8 sText_UnkHeight[] = _("{CLEAR_TO 12}??'??”");
+static const u8 sText_UnkHeightMetric[] = _("???.? m");
+static const u8 sText_UnkWeight[] = _("????.? lbs.");
+static const u8 sText_UnkWeightMetric[] = _("???.? kg.");
+static const u8 sText_PokedexRegistration[] = _("POKéDEX registration completed.");
+static const u8 sText_HTHeight[] = _("HT");
+static const u8 sText_WTWeight[] = _("WT");
+static const u8 sText_SearchingPleaseWait[] = _("Searching…\nPlease wait.");
+static const u8 sText_SearchCompleted[] = _("Search completed.");
+static const u8 sText_NoMatchingPkmnWereFound[] = _("No matching POKéMON were found.");
+static const u8 sText_SearchForPkmnBasedOnParameters[] = _("Search for POKéMON based on\nselected parameters.");
+static const u8 sText_SwitchPokedexListings[] = _("Switch POKéDEX listings.");
+static const u8 sText_ReturnToPokedex[] = _("Return to the POKéDEX.");
+static const u8 sText_SelectPokedexMode[] = _("Select the POKéDEX mode.");
+static const u8 sText_SelectPokedexListingMode[] = _("Select the POKéDEX listing mode.");
+static const u8 sText_ListByFirstLetter[] = _("List by the first letter in the name.\nSpotted POKéMON only.");
+static const u8 sText_ListByBodyColor[] = _("List by body color.\nSpotted POKéMON only.");
+static const u8 sText_ListByType[] = _("List by type.\nOwned POKéMON only.");
+static const u8 sText_ExecuteSearchSwitch[] = _("Execute search/switch.");
+static const u8 sText_DexEmptyString[] = _("");
+static const u8 sText_DexSearchDontSpecify[] = _("DON'T SPECIFY.");
+static const u8 sText_DexSearchTypeNone[] = _("NONE");
+
 ALIGNED(4) static const u8 sExpandedPlaceholder_PokedexDescription[] = _("");
 
 static const u16 sSizeScreenSilhouette_Pal[] = INCGFX_U16("graphics/pokedex/size_silhouette.pal", ".gbapal");
