@@ -201,7 +201,7 @@ BattleFrontier_Lounge2_Text_DoubleBattleAdvice3::
     .string "当你熟悉了这里的\n双打对战之后，\l就去试着挑战其他地方的\l双打对战吧。$"
 
 BattleFrontier_Lounge2_Text_MultiBattleAdvice::
-    .string "对战塔里聚集了\n各种各样的训练家。\p想想吧——你可能会遇到\n你的朋友或粉丝！\l要好好注意周围啊！$"
+    .string "对战沙龙里聚集了\n各种各样的训练家。\p想想吧——你可能会遇到\n你的朋友或粉丝！\l要好好注意周围啊！$"
 
 BattleFrontier_Lounge2_Text_LinkMultiBattleAdvice::
     .string "如果遇到了朋友，\n就去多人连线对战间吧。\p有一个很厉害的朋友在旁边的话，\n就有可能碰上很强的对手！$"
