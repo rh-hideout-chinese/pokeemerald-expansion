@@ -2154,8 +2154,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .cantBeCopied = TRUE,
         .cantBeSwapped = TRUE,
         .cantBeTraced = TRUE,
-        .cantBeSuppressed = TRUE,
-        .cantBeOverwritten = TRUE,
     },
 
     [ABILITY_ELECTROMORPHOSIS] =
@@ -2232,9 +2230,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("绯红脉动"),
         .description = COMPOUND_STRING("造成晴天，在晴天下提升攻击"),
         .aiRating = 8,
-        .cantBeSwapped = TRUE,
-        .cantBeCopied = TRUE,
-        .cantBeOverwritten = TRUE,
     },
 
     [ABILITY_HADRON_ENGINE] =
@@ -2242,9 +2237,6 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("强子引擎"),
         .description = COMPOUND_STRING("生成电场，在电场上提升特攻"),
         .aiRating = 8,
-        .cantBeSwapped = TRUE,
-        .cantBeCopied = TRUE,
-        .cantBeOverwritten = TRUE,
     },
 
     [ABILITY_OPPORTUNIST] =
