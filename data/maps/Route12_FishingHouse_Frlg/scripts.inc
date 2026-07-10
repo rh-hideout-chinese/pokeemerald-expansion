@@ -60,19 +60,19 @@ Route12_FishingHouse_EventScript_NotMagikarp::
 
 Route12_FishingHouse_EventScript_NotRecordMagikarp::
 	goto_if_unset FLAG_GOT_RECORD_SETTING_MAGIKARP, Route12_FishingHouse_EventScript_NewRecordMagikarp
-	msgbox Route12_FishingHouse_Text_HmmXInchesDoesntMeasureUp
+	msgbox Route12_FishingHouse_Text_HmmXSizeDoesntMeasureUp
 	release
 	end
 
 Route12_FishingHouse_EventScript_TieRecordMagikarp::
 	goto_if_unset FLAG_GOT_RECORD_SETTING_MAGIKARP, Route12_FishingHouse_EventScript_NewRecordMagikarp
-	msgbox Route12_FishingHouse_Text_HuhXInchesSameSizeAsLast
+	msgbox Route12_FishingHouse_Text_HuhXSizeSameSizeAsLast
 	release
 	end
 
 Route12_FishingHouse_EventScript_NewRecordMagikarp::
 	setflag FLAG_GOT_RECORD_SETTING_MAGIKARP
-	msgbox Route12_FishingHouse_Text_WhoaXInchesTakeThis
+	msgbox Route12_FishingHouse_Text_WhoaXSizeTakeThis
 	giveitem ITEM_NET_BALL
 	goto_if_eq VAR_RESULT, FALSE, Route12_FishingHouse_EventScript_NoRoomForNetBall
 	msgbox Route12_FishingHouse_Text_LookForwardToGreaterRecords
@@ -93,7 +93,7 @@ Route12_FishingHouse_EventScript_MagikarpRecordSign::
 
 Route12_FishingHouse_EventScript_MagikarpRecordSignRecordSet::
 	special GetMagikarpSizeRecordInfo
-	msgbox Route12_FishingHouse_Text_MostGiganticMagikarpXInches
+	msgbox Route12_FishingHouse_Text_MostGiganticMagikarpXSize
 	releaseall
 	end
 
@@ -185,4 +185,3 @@ Route12_FishingHouse_Text_BlankChartOfSomeSort::
     .string "一张空白的图表。\p"
     .string "空白的地方可以\n"
     .string "做一些记录。$"
-

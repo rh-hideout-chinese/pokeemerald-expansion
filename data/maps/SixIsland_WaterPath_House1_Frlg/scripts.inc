@@ -36,19 +36,19 @@ SixIsland_WaterPath_House1_EventScript_ShownNonHeracross::
 
 SixIsland_WaterPath_House1_EventScript_ShownSmallHeracross::
 	goto_if_unset FLAG_GOT_NEST_BALL_FROM_WATER_PATH_HOUSE_1, SixIsland_WaterPath_House1_EventScript_ShownBigHeracross
-	msgbox SixIsland_WaterPath_House1_Text_ItsXInchesYInchesWasBiggest
+	msgbox SixIsland_WaterPath_House1_Text_ItsXSizeYSizeWasBiggest
 	release
 	end
 
 SixIsland_WaterPath_House1_EventScript_ShownTiedHeracross::
 	goto_if_unset FLAG_GOT_NEST_BALL_FROM_WATER_PATH_HOUSE_1, SixIsland_WaterPath_House1_EventScript_ShownBigHeracross
-	msgbox SixIsland_WaterPath_House1_Text_ItsXInchesSameAsBefore
+	msgbox SixIsland_WaterPath_House1_Text_ItsXSizeSameAsBefore
 	release
 	end
 
 SixIsland_WaterPath_House1_EventScript_ShownBigHeracross::
 	setflag FLAG_GOT_NEST_BALL_FROM_WATER_PATH_HOUSE_1
-	msgbox SixIsland_WaterPath_House1_Text_ItsXInchesDeserveReward
+	msgbox SixIsland_WaterPath_House1_Text_ItsXSizeDeserveReward
 	giveitem ITEM_NEST_BALL
 	goto_if_eq VAR_RESULT, FALSE, SixIsland_WaterPath_House1_EventScript_NoRoomForNestBall
 	msgbox SixIsland_WaterPath_House1_Text_WantToSeeBiggerOne
@@ -69,7 +69,7 @@ SixIsland_WaterPath_House1_EventScript_SizeRecord::
 
 SixIsland_WaterPath_House1_EventScript_SizeRecordNonEmpty::
 	special GetHeracrossSizeRecordInfo
-	msgbox SixIsland_WaterPath_House1_Text_BiggestHeracrossIsXInches
+	msgbox SixIsland_WaterPath_House1_Text_BiggestHeracrossIsXSize
 	releaseall
 	end
 
@@ -123,4 +123,3 @@ SixIsland_WaterPath_House1_Text_BlankChartOfSomeSort::
     .string "那差不多是一张空白的图表。\p"
     .string "它有空间\n"
     .string "来写一些记录。$"
-
