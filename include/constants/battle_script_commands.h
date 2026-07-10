@@ -167,7 +167,6 @@ enum BattleScriptOpcode
     B_SCR_OP_SETSTICKYWEB,
     B_SCR_OP_SELECTFIRSTVALIDTARGET,
     B_SCR_OP_SETSEMIINVULNERABLEBIT,
-    B_SCR_OP_TRYMEMENTO,
     B_SCR_OP_SETFORCEDTARGET,
     B_SCR_OP_CURESTATUSWITHMOVE,
     B_SCR_OP_SETTORMENT,
@@ -214,6 +213,7 @@ enum BattleScriptOpcode
     B_SCR_OP_TRYMOVESTATCHANGES,
     B_SCR_OP_TRYSTATCHANGES,
     B_SCR_OP_TRYBATTLERSTATCHANGE,
+    B_SCR_OP_JUMPIFTERRAIN,
 
     // Expansion users, please don't use any of the unused commands.
     // They are reserved for expansion usage.
@@ -379,12 +379,6 @@ enum TriggerOnFieldStatus
     ON_ANY,
     ON_TERRAIN,
     ON_WEATHER,
-};
-
-enum HealthUpdate
-{
-    PASSIVE_HP_UPDATE,
-    MOVE_DAMAGE_HP_UPDATE,
 };
 
 enum FlungItem

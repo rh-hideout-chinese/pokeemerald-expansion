@@ -2371,14 +2371,9 @@ bool8 ScrCmd_hidemoneybox(struct ScriptContext *ctx)
 
 bool8 ScrCmd_updatemoneybox(struct ScriptContext *ctx)
 {
-    u8 ignore = ScriptReadByte(ctx);
+    Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
 
-    if (!ignore)
-    {
-        Script_RequestEffects(SCREFF_V1 | SCREFF_HARDWARE);
-
-        ChangeAmountInMoneyBox(GetMoney(&gSaveBlock1Ptr->money));
-    }
+    ChangeAmountInMoneyBox(GetMoney(&gSaveBlock1Ptr->money));
     return FALSE;
 }
 
@@ -2412,7 +2407,7 @@ bool8 ScrCmd_updatecoinsbox(struct ScriptContext *ctx)
 bool8 ScrCmd_trainerbattle(struct ScriptContext *ctx)
 {
     Script_RequestEffects(SCREFF_V1 | SCREFF_TRAINERBATTLE);
-    
+
     ConfigureTrainerBattle(ctx);
     return FALSE;
 }
@@ -2726,7 +2721,7 @@ void NativeFunc_SetMetatileInRange(struct ScriptContext *ctx)
     bool8 hasCollision = ScriptReadByte(ctx);
     u8 elevation = ScriptReadByte(ctx);
     u32 temp;
-    
+
     if (xmin > xmax)
         SWAP(xmin, xmax, temp);
 
