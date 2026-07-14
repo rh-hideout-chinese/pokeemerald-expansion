@@ -44,7 +44,7 @@ static bool32 AI_IsDoubleSpreadMove(enum BattlerId battlerAtk, enum Move move)
     u32 numOfTargets = 0;
     enum MoveTarget moveTargetType = AI_GetBattlerMoveTargetType(battlerAtk, move);
 
-    if (!IsSpreadMove(moveTargetType))
+    if (!IsDoubleBattle() || !IsSpreadMove(moveTargetType))
         return FALSE;
 
     for (enum BattlerId battlerDef = 0; battlerDef < MAX_BATTLERS_COUNT; battlerDef++)
@@ -712,12 +712,33 @@ static inline void CalcDynamicMoveDamage(struct DamageContext *ctx, struct Simul
         maximum = minimum = median = random;
         gBattleStruct->beatUpSlot = 0;
     }
-    else if (strikeCount > 1 && effect != EFFECT_TRIPLE_KICK)
+    else if (strikeCount > 1)
     {
-        median *= strikeCount;
-        minimum *= strikeCount;
-        maximum *= strikeCount;
-        random *= strikeCount;
+        bool32 multiplyDamage = FALSE;
+        if (IsDoubleBattle() && AI_GetBattlerMoveTargetType(ctx->battlerAtk, ctx->move) == TARGET_SMART)
+        {
+            struct DamageContext partnerCtx = {0};
+            partnerCtx = *ctx;
+            partnerCtx.battlerDef = BATTLE_PARTNER(ctx->battlerDef);
+            partnerCtx.typeEffectivenessModifier = CalcTypeEffectivenessMultiplier(&partnerCtx);
+
+            if (IsBattlerAlive(partnerCtx.battlerDef) && !IsDamageMoveUnusable(&partnerCtx) && CalculateMoveDamageVars(&partnerCtx) > 0) // Checks if any damage can be done
+                gAiLogicData->dragonDartsHitsBothTarget |= 1u << ctx->battlerAtk;
+            else
+                multiplyDamage = TRUE;
+        }
+        else if (effect != EFFECT_TRIPLE_KICK)
+        {
+            multiplyDamage = TRUE;
+        }
+
+        if (multiplyDamage)
+        {
+            median *= strikeCount;
+            minimum *= strikeCount;
+            maximum *= strikeCount;
+            random *= strikeCount;
+        }
     }
     else if (IsMultiHitMove(ctx->move))
     {
@@ -1005,11 +1026,6 @@ static bool32 AI_IsMoveEffectInPlus(enum BattlerId battlerAtk, enum BattlerId ba
 
     switch (GetMoveEffect(move))
     {
-    case EFFECT_ABSORB:
-    case EFFECT_DREAM_EATER:
-        if (!IsBattlerAtMaxHp(battlerAtk) || (!aiIsFaster && GetMoveCategory(GetIncomingMove(battlerAtk, battlerDef, gAiLogicData)) != DAMAGE_CATEGORY_STATUS))
-            return TRUE;
-        break;
     case EFFECT_FELL_STINGER:
         if (BattlerStatCanRise(battlerAtk, abilityAtk, STAT_ATK) && noOfHitsToKo == 1)
             return TRUE;
@@ -1022,7 +1038,9 @@ static bool32 AI_IsMoveEffectInPlus(enum BattlerId battlerAtk, enum BattlerId ba
         break;
     }
 
-    // check ADDITIONAL_EFFECTS
+    u32 isAttackerAtMaxHp = IsBattlerAtMaxHp(battlerAtk);
+    enum DamageCategory moveCategory = GetMoveCategory(GetIncomingMove(battlerAtk, battlerDef, gAiLogicData));
+
     u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
     for (u32 effectIndex = 0; effectIndex < additionalEffectCount; effectIndex++)
     {
@@ -1032,6 +1050,10 @@ static bool32 AI_IsMoveEffectInPlus(enum BattlerId battlerAtk, enum BattlerId ba
         {
             switch (additionalEffect->moveEffect)
             {
+            case MOVE_EFFECT_ABSORB:
+                if (!isAttackerAtMaxHp || (!aiIsFaster && moveCategory != DAMAGE_CATEGORY_STATUS))
+                    return TRUE;
+                break;
             case MOVE_EFFECT_STAT_PLUS:
             case MOVE_EFFECT_STAT_MINUS:
                 for (enum Stat i = STAT_ATK; i < NUM_BATTLE_STATS; i++)
@@ -1159,10 +1181,6 @@ static bool32 AI_IsMoveEffectInMinus(enum BattlerId battlerAtk, enum BattlerId b
                 return TRUE;
         }
         break;
-    case EFFECT_ABSORB:
-        if (abilityDef == ABILITY_LIQUID_OOZE)
-            return TRUE;
-        break;
     case EFFECT_DREAM_EATER:
         if (abilityDef == ABILITY_LIQUID_OOZE && GetConfig(B_DREAM_EATER_LIQUID_OOZE) >= GEN_5)
             return TRUE;
@@ -1175,6 +1193,10 @@ static bool32 AI_IsMoveEffectInMinus(enum BattlerId battlerAtk, enum BattlerId b
             const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(move, effectIndex);
             switch (additionalEffect->moveEffect)
             {
+            case MOVE_EFFECT_ABSORB:
+                if (abilityDef == ABILITY_LIQUID_OOZE)
+                    return TRUE;
+                break;
             case MOVE_EFFECT_STAT_PLUS:
             case MOVE_EFFECT_STAT_MINUS:
                 for (enum Stat i = STAT_ATK; i < NUM_BATTLE_STATS; i++)
@@ -1402,12 +1424,26 @@ s32 AI_WhoStrikesFirst(enum BattlerId battlerAI, enum BattlerId battler, enum Mo
     return AI_IS_SLOWER;
 }
 
+static bool32 DragonDartsHitsBothTargets(u32 battlerAtk, u32 battlerDef, u32 move)
+{
+    if (AI_GetBattlerMoveTargetType(battlerAtk, move) != TARGET_SMART)
+        return FALSE;
+    if (gAiLogicData->dragonDartsHitsBothTarget & 1u << battlerAtk)
+        return TRUE;
+    return FALSE;
+}
+
 bool32 CanEndureHit(enum BattlerId battler, enum BattlerId battlerTarget, enum Move move)
 {
-    if (!AI_BattlerAtMaxHp(battlerTarget) || IsMultiHitMove(move) || gAiLogicData->abilities[battler]  == ABILITY_PARENTAL_BOND)
+    if (!AI_BattlerAtMaxHp(battlerTarget) || IsMultiHitMove(move))
         return FALSE;
-    if (GetMoveStrikeCount(move) > 1 && !(AI_GetBattlerMoveTargetType(battler, move) == TARGET_SMART && !HasTwoOpponents(battler)))
+
+    if (gAiLogicData->abilities[battler] == ABILITY_PARENTAL_BOND && AI_IsDoubleSpreadMove(battler, move))
         return FALSE;
+
+    if (GetMoveStrikeCount(move) > 1 && !DragonDartsHitsBothTargets(battler, battlerTarget, move))
+        return FALSE;
+
     if (gAiLogicData->holdEffects[battlerTarget] == HOLD_EFFECT_FOCUS_SASH)
         return TRUE;
 
@@ -3324,8 +3360,10 @@ bool32 BattlerWillFaintFromWeather(enum BattlerId battler, enum Ability ability)
 
 bool32 BattlerWillFaintFromSecondaryDamage(enum BattlerId battler, enum Ability ability)
 {
-    if (GetBattlerSecondaryDamage(battler) != 0
-      && gBattleMons[battler].hp <= max(1, gBattleMons[battler].maxHP / 16))
+    u32 secondaryDamage = GetBattlerSecondaryDamage(battler);
+
+    if (secondaryDamage != 0
+      && gBattleMons[battler].hp <= secondaryDamage)
         return TRUE;
     return FALSE;
 }
@@ -3652,16 +3690,28 @@ bool32 ShouldTryToFlinch(enum BattlerId battlerAtk, enum BattlerId battlerDef, e
     return FALSE;   // don't try to flinch
 }
 
-bool32 ShouldTrap(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
+bool32 ShouldTrap(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, enum AIConsiderWrapDamage considerWrapDamage)
 {
+    bool32 shouldTrap = FALSE;
+    bool32 wrapState = gBattleMons[battlerDef].volatiles.wrapped;
+
     if (AI_CanBattlerEscape(battlerDef))
         return FALSE;
 
     if (IsBattlerTrapped(battlerAtk, battlerDef))
         return FALSE;
 
+    // Consider Wrap Damage when trying to trap with Wrap
+    if (considerWrapDamage == CONSIDER_WRAP_DAMAGE)
+        gBattleMons[battlerDef].volatiles.wrapped = TRUE;
+
     if (BattlerWillFaintFromSecondaryDamage(battlerDef, gAiLogicData->abilities[battlerDef]))
-        return TRUE;    // battler is taking secondary damage with low HP
+        shouldTrap = TRUE;    // battler is taking secondary damage with low HP
+
+    gBattleMons[battlerDef].volatiles.wrapped = wrapState;
+
+    if (shouldTrap)
+        return TRUE;
 
     if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_STALL)
     {
@@ -3827,14 +3877,15 @@ static inline bool32 ShouldDrainHPToWithstandHit(enum BattlerId battlerAtk, enum
     return FALSE;
 }
 
-bool32 ShouldAbsorb(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
+bool32 ShouldAbsorb(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, u32 absorbPercentage)
 {
     u32 maxHP = gBattleMons[battlerAtk].maxHP;
     u32 currHP = gBattleMons[battlerAtk].hp;
-    u32 healAmount = (AI_GetDamage(battlerAtk, battlerDef, gAiThinkingStruct->movesetIndex, AI_ATTACKING, gAiLogicData) * GetMoveAbsorbPercentage(move) / 100);
+    u32 healAmount = (AI_GetDamage(battlerAtk, battlerDef, gAiThinkingStruct->movesetIndex, AI_ATTACKING, gAiLogicData) * absorbPercentage / 100);
     healAmount = GetDrainedBigRootHp(battlerAtk, healAmount);
     enum Move predictedMove = GetPredictedMove(battlerAtk, battlerDef, gAiLogicData);
     bool32 aiIsFaster = AI_IsFaster(battlerAtk, battlerDef, move, predictedMove, CONSIDER_PRIORITY);
+
     if (healAmount == 0)
         healAmount = 1;
     if (healAmount + currHP > maxHP)

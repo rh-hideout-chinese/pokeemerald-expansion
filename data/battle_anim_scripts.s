@@ -3497,19 +3497,19 @@ gBattleAnimMove_SeedFlare::
 	delay 30
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 40, 1
 	createsprite gSeedFlareGreenWavesTemplate, ANIM_ATTACKER, 40, 10, 2304, 96, 1
-	call CreateRazorLeafCutters
+	create_razor_leaf_cutters target_both=FALSE
 	delay 2
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	createsprite gSeedFlareGreenWavesTemplate, ANIM_ATTACKER, 40, 90, 2048, 96, 1
 	delay 8
 	createsprite gSeedFlareGreenWavesTemplate, ANIM_ATTACKER, 40, 50, 2560, 96, 1
-	call CreateRazorLeafCutters
+	create_razor_leaf_cutters target_both=FALSE
 	delay 2
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	createsprite gSeedFlareGreenWavesTemplate, ANIM_ATTACKER, 40, 20, 2304, 96, 1
 	delay 8
 	createsprite gSeedFlareGreenWavesTemplate, ANIM_ATTACKER, 40, 70, 1984, 96, 1
-	call CreateRazorLeafCutters
+	create_razor_leaf_cutters target_both=FALSE
 	delay 2
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	delay 8
@@ -9518,8 +9518,8 @@ SolarBladeSunRays:
 gBattleAnimMove_Leafage::
 	monbg ANIM_DEF_PARTNER
 	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-	call CreateRazorLeafCutters
-	create_razor_leaf_cutter_sprite ANIM_TARGET, 3, initial_x=20, initial_y=-10, target_x=20, target_y=0, duration=22, wave_amplitude=0, target_both=1
+	create_razor_leaf_cutters target_both=FALSE
+	create_razor_leaf_cutter_sprite ANIM_TARGET, 3, initial_x=20, initial_y=-10, target_x=20, target_y=0, duration=22, wave_amplitude=0, target_both=0
 	delay 20
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	createsprite gLeafageImpactTemplate, ANIM_ATTACKER, 2, 0, 0, 1, 2
@@ -13800,17 +13800,17 @@ gBattleAnimMove_CorrosiveGas::
 	loopsewithpan SE_M_FLAME_WHEEL2, SOUND_PAN_ATTACKER, 8, 3
 	delay 0
 	blend_color_cycle selector=F_PAL_ATTACKER, delay=1, num_blends=2, initial_blend_y=0, target_blend_y=15, color=RGB(15, 15, 6)@;Garbage green
-	createsprite gSpriteTemplate_CorrosiveGasSmoke, ANIM_ATTACKER, 122, 3, -14, 18, 46
+	createsprite gSmokeBallEscapeCloudSpriteTemplate, ANIM_ATTACKER, 122, 3, -14, 18, 46
 	delay 0
-	createsprite gSpriteTemplate_CorrosiveGasSmoke, ANIM_ATTACKER, 121, 3, 14, -14, 46
+	createsprite gSmokeBallEscapeCloudSpriteTemplate, ANIM_ATTACKER, 121, 3, 14, -14, 46
 	delay 0
-	createsprite gSpriteTemplate_CorrosiveGasSmoke, ANIM_ATTACKER, 120, 3, -12, -10, 46
+	createsprite gSmokeBallEscapeCloudSpriteTemplate, ANIM_ATTACKER, 120, 3, -12, -10, 46
 	delay 0
-	createsprite gSpriteTemplate_CorrosiveGasSmoke, ANIM_ATTACKER, 119, 3, 14, 14, 46
+	createsprite gSmokeBallEscapeCloudSpriteTemplate, ANIM_ATTACKER, 119, 3, 14, 14, 46
 	delay 0
-	createsprite gSpriteTemplate_CorrosiveGasSmoke, ANIM_ATTACKER, 118, 3, 0, 0, 46
+	createsprite gSmokeBallEscapeCloudSpriteTemplate, ANIM_ATTACKER, 118, 3, 0, 0, 46
 	delay 0
-	createsprite gSpriteTemplate_CorrosiveGasSmoke, ANIM_ATTACKER, 123, 3, 4, 4, 30
+	createsprite gSmokeBallEscapeCloudSpriteTemplate, ANIM_ATTACKER, 123, 3, 4, 4, 30
 	waitforvisualfinish
 	playsewithpan SE_M_TOXIC, SOUND_PAN_TARGET
 	blend_color_cycle selector=(F_PAL_BG | F_PAL_TARGET | F_PAL_ATK_PARTNER | F_PAL_DEF_PARTNER), delay=1, num_blends=2, initial_blend_y=0, target_blend_y=14, color=RGB(15, 15, 6)@;Garbage green
@@ -25129,7 +25129,7 @@ gBattleAnimMove_RazorLeaf::
 	call CreateRazorLeaves
 	delay 60
 	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-	call CreateRazorLeafCutters
+	create_razor_leaf_cutters target_both=TRUE
 	delay 20
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 2, 0, 8, 1
@@ -25159,11 +25159,6 @@ CreateRazorLeaves:
 	create_razor_leaf_particle_sprite ANIM_ATTACKER, 2, upward_delta_x=2, upward_delta_y=-6, upward_duration=11
 	delay 2
 	create_razor_leaf_particle_sprite ANIM_ATTACKER, 2, upward_delta_x=-3, upward_delta_y=-5, upward_duration=8
-	return
-
-CreateRazorLeafCutters:
-	create_razor_leaf_cutter_sprite ANIM_TARGET, 3, initial_x=20, initial_y=-10, target_x=20, target_y=0, duration=22, wave_amplitude=20, target_both=1
-	create_razor_leaf_cutter_sprite ANIM_TARGET, 3, initial_x=20, initial_y=-10, target_x=20, target_y=0, duration=22, wave_amplitude=-20, target_both=1
 	return
 
 gBattleAnimMove_NaturePower::
@@ -27893,8 +27888,7 @@ gBattleAnimMove_MagicalLeaf::
 	call CreateRazorLeaves
 	delay 60
 	playsewithpan SE_M_RAZOR_WIND2, SOUND_PAN_ATTACKER
-	create_razor_leaf_cutter_sprite ANIM_TARGET, 3, initial_x=20, initial_y=-10, target_x=20, target_y=0, duration=32, wave_amplitude=20, target_both=0
-	create_razor_leaf_cutter_sprite ANIM_TARGET, 3, initial_x=20, initial_y=-10, target_x=20, target_y=0, duration=32, wave_amplitude=-20, target_both=0
+	create_razor_leaf_cutters target_both=FALSE
 	delay 30
 	playsewithpan SE_M_RAZOR_WIND, SOUND_PAN_TARGET
 	create_basic_hitsplat_sprite ANIM_TARGET, 4, x=-10, y=-4, relative_to=ANIM_TARGET, animation=2

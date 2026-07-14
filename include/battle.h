@@ -119,14 +119,15 @@ struct SpecialStatus
     u8 poisonPuppeteer:1;
     u8 attackerInParty:1; // Fututre Sight / Doom Desire
     u8 abilityRedirected:1;
-    u8 restoredBattlerSprite: 1;
+    u8 restoredBattlerSprite:1;
     // End of byte
     u8 faintedHasReplacement:1;
     u8 afterYou:1;
     u8 damagedByAttack:1;
     u8 dancerUsedMove:1;
     u8 criticalHit:1;
-    u8 padding:3;
+    u8 berryReducedMessagePrinted:1;
+    u8 padding:2;
     // End of byte
     u8 gemParam:7;
     u8 gemBoost:1;
@@ -254,7 +255,8 @@ struct AiLogicData
     u32 shouldSwitch:4; // Stores result of ShouldSwitch, which decides whether a mon should be switched out
     u32 shouldConsiderFinalGambit:1; // Determines whether AI should consider Final Gambit this turn
     u32 switchInCalc:1; // Indicates if we're doing switch in calcs, this is purely for Retaliate damage calcs
-    u32 padding2:19;
+    u32 dragonDartsHitsBothTarget:4;
+    u32 padding2:15;
 };
 
 struct AiThinkingStruct
