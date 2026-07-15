@@ -2462,7 +2462,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_FIRE_MANE] =
     {
         .name = _("火焰鬃毛"),
-        .description = COMPOUND_STRING("电属性的招式威力会提高"),
+        .description = COMPOUND_STRING("火属性的招式威力会提高"),
     },
 
     [ABILITY_317] =
