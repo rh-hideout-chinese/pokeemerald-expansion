@@ -2423,49 +2423,49 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_PIERCING_DRILL] =
     {
-        .name = _("Piercing Drill"),
-        .description = COMPOUND_STRING("Contact evades protection."),
+        .name = _("贯穿钻"),
+        .description = COMPOUND_STRING("接触招式可以无视守护效果"),
     },
 
     [ABILITY_DRAGONIZE] =
     {
-        .name = _("Dragonize"),
-        .description = COMPOUND_STRING("Normal moves turn Dragon."),
+        .name = _("龙皮肤"),
+        .description = COMPOUND_STRING("一般招式变为龙属性并强化"),
     },
 
     [ABILITY_EELEVATE] =
     {
-        .name = _("Eelevate"),
-        .description = COMPOUND_STRING("Unimplemented."),
+        .name = _("鳗鳗高升"),
+        .description = COMPOUND_STRING("飘浮，打倒对手最高项提升"),
     },
 
     [ABILITY_314] =
     {
         .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .description = COMPOUND_STRING("无特殊效果。"),
     },
 
     [ABILITY_MEGA_SOL] =
     {
-        .name = _("Mega Sol"),
-        .description = COMPOUND_STRING("Acts like under sun."),
+        .name = _("超级日光"),
+        .description = COMPOUND_STRING("使用招式时天气视作晴天"),
     },
 
     [ABILITY_FIRE_MANE] =
     {
-        .name = _("Fire Mane"),
-        .description = COMPOUND_STRING("Unimplemented."),
+        .name = _("火焰鬃毛"),
+        .description = COMPOUND_STRING("火属性的招式威力会提高"),
     },
 
     [ABILITY_317] =
     {
         .name = _("-------"),
-        .description = COMPOUND_STRING("No special ability."),
+        .description = COMPOUND_STRING("无特殊效果。"),
     },
 
     [ABILITY_SPICY_SPRAY] =
     {
-        .name = _("Spicy Spray"),
-        .description = COMPOUND_STRING("Burns the foe when damaged."),
+        .name = _("辣椒喷发"),
+        .description = COMPOUND_STRING("受攻击时使对手灼伤"),
     },
 };
