@@ -225,7 +225,7 @@ BattleFrontier_ScottsHouse_Text_ExplainBattlePoints:
     .string "亚希达：你可以在开拓通行证上\n查看你对战点数的数量。\p你在对战开拓区获得的胜利越多，\n收集的对战点数就越多。\p这些对战点数随你所用，\n比如用来兑换道具什么的。$"
 
 BattleFrontier_ScottsHouse_Text_ExpectingGreatThings:
-    .string "期待你的更加精彩的表现！$"
+    .string "期待你的精彩表现！$"
 
 BattleFrontier_ScottsHouse_Text_WhyIGoSeekingTrainers:
     .string "亚希达：每个训练家都是一个独特的人，\n他们都过着自己的生活。\p但当他们进行对战的时候，\n他们是谁并不重要。\p他们都是一样的！\p我喜欢这样纯粹的对战，\n大家都是平等的。\p因此我环游各地，\n寻找重视对战的训练家，\l邀请他们来到这个地方。$"
@@ -255,7 +255,7 @@ BattleFrontier_ScottsHouse_Text_Beat100TrainersInARow:
     .string "亚希达：啊天哪，我听说你的战绩了！\n横扫对战塔，取得100连胜？\p简直精彩绝伦！\n这是属于你的！$"
 
 BattleFrontier_ScottsHouse_Text_ExpectingToHearEvenGreaterThings:
-    .string "期待你更精彩的表现！$"
+    .string "我期待以后听到你\n更加精彩的表现！$"
 
 BattleFrontier_ScottsHouse_Text_ComeBackForThisLater:
     .string "哦，你装的东西太多了，\n收拾收拾再来吧。$"
