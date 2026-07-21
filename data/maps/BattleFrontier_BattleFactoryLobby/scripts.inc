@@ -423,7 +423,7 @@ BattleFrontier_BattleFactoryLobby_Text_ReadWhichHeading:
     .string "要读哪一部分的说明？$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainBasicRules:
-    .string "在交换式对战中，\n您只能用3只宝可梦。\p无论是租借还是交换得到的，\n您的队伍中里不能出现2只\l或以上相同种类的宝可梦。$"
+    .string "在交换式对战中，\n您只能用3只宝可梦。\p无论是租借还是交换得到的，\n您的队伍中不能出现2只\l或以上相同种类的宝可梦。$"
 
 BattleFrontier_BattleFactoryLobby_Text_ExplainSwapPartnerRules:
     .string "您只能与刚击败过的训练家\n交换宝可梦。\p您只能交换到该训练家\n所使用的宝可梦。$"
