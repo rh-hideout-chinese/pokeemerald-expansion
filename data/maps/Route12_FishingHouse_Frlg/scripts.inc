@@ -60,19 +60,19 @@ Route12_FishingHouse_EventScript_NotMagikarp::
 
 Route12_FishingHouse_EventScript_NotRecordMagikarp::
 	goto_if_unset FLAG_GOT_RECORD_SETTING_MAGIKARP, Route12_FishingHouse_EventScript_NewRecordMagikarp
-	msgbox Route12_FishingHouse_Text_HmmXInchesDoesntMeasureUp
+	msgbox Route12_FishingHouse_Text_HmmXSizeDoesntMeasureUp
 	release
 	end
 
 Route12_FishingHouse_EventScript_TieRecordMagikarp::
 	goto_if_unset FLAG_GOT_RECORD_SETTING_MAGIKARP, Route12_FishingHouse_EventScript_NewRecordMagikarp
-	msgbox Route12_FishingHouse_Text_HuhXInchesSameSizeAsLast
+	msgbox Route12_FishingHouse_Text_HuhXSizeSameSizeAsLast
 	release
 	end
 
 Route12_FishingHouse_EventScript_NewRecordMagikarp::
 	setflag FLAG_GOT_RECORD_SETTING_MAGIKARP
-	msgbox Route12_FishingHouse_Text_WhoaXInchesTakeThis
+	msgbox Route12_FishingHouse_Text_WhoaXSizeTakeThis
 	giveitem ITEM_NET_BALL
 	goto_if_eq VAR_RESULT, FALSE, Route12_FishingHouse_EventScript_NoRoomForNetBall
 	msgbox Route12_FishingHouse_Text_LookForwardToGreaterRecords
@@ -93,7 +93,7 @@ Route12_FishingHouse_EventScript_MagikarpRecordSign::
 
 Route12_FishingHouse_EventScript_MagikarpRecordSignRecordSet::
 	special GetMagikarpSizeRecordInfo
-	msgbox Route12_FishingHouse_Text_MostGiganticMagikarpXInches
+	msgbox Route12_FishingHouse_Text_MostGiganticMagikarpXSize
 	releaseall
 	end
 
@@ -143,9 +143,9 @@ Route12_FishingHouse_Text_OhMagikarpAllowMeToSee::
     .string "给我看看 那只鲤鱼王够不够大\p"
     .string "给我看看 快！$"
 
-Route12_FishingHouse_Text_WhoaXInchesTakeThis::
+Route12_FishingHouse_Text_WhoaXSizeTakeThis::
     .string "……哇！\n"
-    .string "{STR_VAR_2}英寸！\p"
+    .string "{STR_VAR_2}！\p"
     .string "在捕鱼方面\n"
     .string "你的技能好棒啊！\p"
     .string "我坚信，\n"
@@ -155,17 +155,17 @@ Route12_FishingHouse_Text_LookForwardToGreaterRecords::
     .string "我希望能从你这儿\n"
     .string "看到更好的记录。$"
 
-Route12_FishingHouse_Text_HuhXInchesSameSizeAsLast::
+Route12_FishingHouse_Text_HuhXSizeSameSizeAsLast::
     .string "哼？\n"
-    .string "{STR_VAR_2}英寸？\p"
+    .string "{STR_VAR_2}？\p"
     .string "这和我以前看到过的\n"
     .string "是一个尺寸。$"
 
-Route12_FishingHouse_Text_HmmXInchesDoesntMeasureUp::
+Route12_FishingHouse_Text_HmmXSizeDoesntMeasureUp::
     .string "呃……\n"
-    .string "这条只有{STR_VAR_2}英寸。\p"
-    .string "它和你以前买的那条\n"
-    .string "{STR_VAR_3}英寸的，完全比不了……$"
+    .string "这条只有{STR_VAR_2}。\p"
+    .string "它和你以前带来的那条\n"
+    .string "{STR_VAR_3}的，完全比不了……$"
 
 Route12_FishingHouse_Text_DoesntLookLikeMagikarp::
     .string "呃……这看起来不像是\n"
@@ -176,13 +176,12 @@ Route12_FishingHouse_Text_NoRoomForGift::
     .string "我要给你一件礼物，\n"
     .string "但你身上没有足够的空间来放。$"
 
-Route12_FishingHouse_Text_MostGiganticMagikarpXInches::
+Route12_FishingHouse_Text_MostGiganticMagikarpXSize::
     .string "我曾见过的\n"
-    .string "最大的鲤鱼王它有……\p"
-    .string "{STR_VAR_3}英尺！$"
+    .string "最大的鲤鱼王……\p"
+    .string "{STR_VAR_3}！$"
 
 Route12_FishingHouse_Text_BlankChartOfSomeSort::
     .string "一张空白的图表。\p"
     .string "空白的地方可以\n"
     .string "做一些记录。$"
-

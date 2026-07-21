@@ -36,19 +36,19 @@ SixIsland_WaterPath_House1_EventScript_ShownNonHeracross::
 
 SixIsland_WaterPath_House1_EventScript_ShownSmallHeracross::
 	goto_if_unset FLAG_GOT_NEST_BALL_FROM_WATER_PATH_HOUSE_1, SixIsland_WaterPath_House1_EventScript_ShownBigHeracross
-	msgbox SixIsland_WaterPath_House1_Text_ItsXInchesYInchesWasBiggest
+	msgbox SixIsland_WaterPath_House1_Text_ItsXSizeYSizeWasBiggest
 	release
 	end
 
 SixIsland_WaterPath_House1_EventScript_ShownTiedHeracross::
 	goto_if_unset FLAG_GOT_NEST_BALL_FROM_WATER_PATH_HOUSE_1, SixIsland_WaterPath_House1_EventScript_ShownBigHeracross
-	msgbox SixIsland_WaterPath_House1_Text_ItsXInchesSameAsBefore
+	msgbox SixIsland_WaterPath_House1_Text_ItsXSizeSameAsBefore
 	release
 	end
 
 SixIsland_WaterPath_House1_EventScript_ShownBigHeracross::
 	setflag FLAG_GOT_NEST_BALL_FROM_WATER_PATH_HOUSE_1
-	msgbox SixIsland_WaterPath_House1_Text_ItsXInchesDeserveReward
+	msgbox SixIsland_WaterPath_House1_Text_ItsXSizeDeserveReward
 	giveitem ITEM_NEST_BALL
 	goto_if_eq VAR_RESULT, FALSE, SixIsland_WaterPath_House1_EventScript_NoRoomForNestBall
 	msgbox SixIsland_WaterPath_House1_Text_WantToSeeBiggerOne
@@ -69,7 +69,7 @@ SixIsland_WaterPath_House1_EventScript_SizeRecord::
 
 SixIsland_WaterPath_House1_EventScript_SizeRecordNonEmpty::
 	special GetHeracrossSizeRecordInfo
-	msgbox SixIsland_WaterPath_House1_Text_BiggestHeracrossIsXInches
+	msgbox SixIsland_WaterPath_House1_Text_BiggestHeracrossIsXSize
 	releaseall
 	end
 
@@ -84,8 +84,8 @@ SixIsland_WaterPath_House1_Text_MayIMeasureHeracross::
     .string "快，快！\n"
     .string "我能量量它有多大吗……$"
 
-SixIsland_WaterPath_House1_Text_ItsXInchesDeserveReward::
-    .string "哎呦它居然有{STR_VAR_2}英寸！\n"
+SixIsland_WaterPath_House1_Text_ItsXSizeDeserveReward::
+    .string "哎呦它居然有{STR_VAR_2}！\n"
     .string "我从来没见过这样大的！\l"
     .string "这是你应得的奖励。$"
 
@@ -95,14 +95,14 @@ SixIsland_WaterPath_House1_Text_WantToSeeBiggerOne::
     .string "啊，我是多么喜欢它啊！\n"
     .string "巨大的赫拉克罗斯！$"
 
-SixIsland_WaterPath_House1_Text_ItsXInchesSameAsBefore::
-    .string "哼？这只{STR_VAR_2}英寸的……\n"
+SixIsland_WaterPath_House1_Text_ItsXSizeSameAsBefore::
+    .string "哼？这只{STR_VAR_2}的……\n"
     .string "不是和原来那只一样吗！$"
 
-SixIsland_WaterPath_House1_Text_ItsXInchesYInchesWasBiggest::
-    .string "哦，它只有{STR_VAR_2}英寸。\n"
+SixIsland_WaterPath_House1_Text_ItsXSizeYSizeWasBiggest::
+    .string "哦，它只有{STR_VAR_2}。\n"
     .string "原来那只赫拉克罗斯比它更大。\p"
-    .string "它有{STR_VAR_3}英寸，\n"
+    .string "它有{STR_VAR_3}，\n"
     .string "那是我见过的最大的赫拉克罗斯。$"
 
 SixIsland_WaterPath_House1_Text_ThisWontDo::
@@ -114,13 +114,12 @@ SixIsland_WaterPath_House1_Text_YourBagIsFull::
     .string "你的背包满了。\n"
     .string "装不下我的奖励了。$"
 
-SixIsland_WaterPath_House1_Text_BiggestHeracrossIsXInches::
+SixIsland_WaterPath_House1_Text_BiggestHeracrossIsXSize::
     .string "目前为止，我看过的最大的赫拉克罗斯，\n"
     .string "尺寸为：\p"
-    .string "{STR_VAR_3}英寸！$"
+    .string "{STR_VAR_3}！$"
 
 SixIsland_WaterPath_House1_Text_BlankChartOfSomeSort::
     .string "那差不多是一张空白的图表。\p"
     .string "它有空间\n"
     .string "来写一些记录。$"
-
