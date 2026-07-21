@@ -344,7 +344,7 @@ BattleFrontier_Lounge7_Text_SeismicTossDesc::
     .string "给予对手\n与自己等级相同的\n伤害。$"
 
 BattleFrontier_Lounge7_Text_DreamEaterDesc::
-    .string "叫醒睡着的敌人\n给予的伤害的\n一半。$"
+    .string "给予睡着的敌人\n伤害并回复造成\n伤害一半的体力。$"
 
 BattleFrontier_Lounge7_Text_MegaPunchDesc::
     .string "给予对手\n强力的一拳\n的攻击。$"
@@ -353,7 +353,7 @@ BattleFrontier_Lounge7_Text_MegaKickDesc::
     .string "给予对手\n猛烈的一踢\n的攻击。$"
 
 BattleFrontier_Lounge7_Text_BodySlamDesc::
-    .string "用全身力气撞击，\n可以使对手\n麻痹。$"
+    .string "用整个身体压制，\n可以使对手\n麻痹。$"
 
 BattleFrontier_Lounge7_Text_RockSlideDesc::
     .string "投出巨大的石块，\n可以使对手\n恐惧。$"
@@ -386,7 +386,7 @@ BattleFrontier_Lounge7_Text_EndureDesc::
     .string "在1回合中\n抵挡住任何攻击，\n总是剩下1点体力。$"
 
 BattleFrontier_Lounge7_Text_PsychUpDesc::
-    .string "使自己\n获得对手的\n辅助效果。$"
+    .string "将对手的能力\n变化效果复制\n给自己。$"
 
 BattleFrontier_Lounge7_Text_IcePunchDesc::
     .string "能够使对手\n结冰的\n冰冷的拳。$"
