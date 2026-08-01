@@ -184,7 +184,7 @@ u16 ChooseMoveAndTargetInBattlePalace(enum BattlerId battler)
     {
         if (moveInfo->moves[i] == MOVE_NONE)
             break;
-        if (selectedGroup == GetBattlePalaceMoveGroup(battler, moveInfo->moves[i]) && moveInfo->currentPp[i] != 0)
+        if (selectedGroup == GetBattlePalaceMoveGroup(battler, moveInfo->moves[i]) && moveInfo->currentPP[i] != 0)
             selectedMoves |= 1u << i;
     }
 

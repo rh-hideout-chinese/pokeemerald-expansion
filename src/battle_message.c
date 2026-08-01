@@ -1462,7 +1462,7 @@ const u8 gText_SafariZoneMenu[] = _("精灵球{CLEAR_TO 56}宝可方块\n靠近{
 const u8 gText_SafariZoneMenuFrlg[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}BALL{CLEAR_TO 56}BAIT\nROCK{CLEAR_TO 56}RUN");
 const u8 gText_MoveInterfacePP[] = _("PP");
 const u8 gText_MoveInterfaceType[] = _("属性/");
-const u8 gText_MoveInterfacePpType[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}PP\n属性/");
+const u8 gText_MoveInterfacePPType[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}PP\n属性/");
 const u8 gText_MoveInterfaceDynamicColors[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}");
 const u8 gText_WhichMoveToForget4[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}要忘记\n哪个招式？");
 const u8 gText_BattleYesNoChoice[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}是\n否");
@@ -3894,15 +3894,15 @@ void BattlePutTextOnWindow(const u8 *text, u8 windowId)
     }
 }
 
-void SetPpNumbersPaletteInMoveSelection(enum BattlerId battler)
+void SetPPNumbersPaletteInMoveSelection(enum BattlerId battler)
 {
     struct ChooseMoveStruct *chooseMoveStruct = (struct ChooseMoveStruct *)(&gBattleResources->bufferA[battler][4]);
     const u16 *palPtr = gPPTextPalette;
     u8 var;
 
     if (!gBattleStruct->zmove.viewing)
-        var = GetCurrentPpToMaxPpState(chooseMoveStruct->currentPp[gMoveSelectionCursor[battler]],
-                         chooseMoveStruct->maxPp[gMoveSelectionCursor[battler]]);
+        var = GetCurrentPPToMaxPPState(chooseMoveStruct->currentPP[gMoveSelectionCursor[battler]],
+                         chooseMoveStruct->maxPP[gMoveSelectionCursor[battler]]);
     else
         var = 3;
 
@@ -3913,33 +3913,33 @@ void SetPpNumbersPaletteInMoveSelection(enum BattlerId battler)
     CpuCopy16(&gPlttBufferUnfaded[BG_PLTT_ID(5) + 11], &gPlttBufferFaded[BG_PLTT_ID(5) + 11], PLTT_SIZEOF(1));
 }
 
-u8 GetCurrentPpToMaxPpState(u8 currentPp, u8 maxPp)
+u8 GetCurrentPPToMaxPPState(u8 currentPP, u8 maxPP)
 {
-    if (maxPp == currentPp)
+    if (maxPP == currentPP)
     {
         return 3;
     }
-    else if (maxPp <= 2)
+    else if (maxPP <= 2)
     {
-        if (currentPp > 1)
+        if (currentPP > 1)
             return 3;
         else
-            return 2 - currentPp;
+            return 2 - currentPP;
     }
-    else if (maxPp <= 7)
+    else if (maxPP <= 7)
     {
-        if (currentPp > 2)
+        if (currentPP > 2)
             return 3;
         else
-            return 2 - currentPp;
+            return 2 - currentPP;
     }
     else
     {
-        if (currentPp == 0)
+        if (currentPP == 0)
             return 2;
-        if (currentPp <= maxPp / 4)
+        if (currentPP <= maxPP / 4)
             return 1;
-        if (currentPp > maxPp / 2)
+        if (currentPP > maxPP / 2)
             return 3;
     }
 

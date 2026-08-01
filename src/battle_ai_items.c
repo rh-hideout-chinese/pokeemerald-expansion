@@ -88,7 +88,7 @@ bool32 ShouldUseItem(enum BattlerId battler)
                 enum Stat stat = STAT_ATK;
                 u32 stage = 1;
 
-                if (B_X_ITEMS_BUFF >= GEN_7)
+                if (GetConfig(B_X_ITEMS_BUFF) >= GEN_7)
                     stage = 2;
 
                 stat = stat + itemEffects[1] - STAT_ATK;

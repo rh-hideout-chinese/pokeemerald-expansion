@@ -8128,19 +8128,19 @@ static void Cmd_copymovepermanently(void)
         }
         else // sketch worked
         {
-            struct MovePpInfo movePpData;
+            struct MovePPInfo movePPData;
 
             gBattleMons[gBattlerAttacker].moves[gCurrMovePos] = gLastPrintedMoves[gBattlerTarget];
             gBattleMons[gBattlerAttacker].pp[gCurrMovePos] = GetMovePP(gLastPrintedMoves[gBattlerTarget]);
 
             for (i = 0; i < MAX_MON_MOVES; i++)
             {
-                movePpData.moves[i] = gBattleMons[gBattlerAttacker].moves[i];
-                movePpData.pp[i] = gBattleMons[gBattlerAttacker].pp[i];
+                movePPData.moves[i] = gBattleMons[gBattlerAttacker].moves[i];
+                movePPData.pp[i] = gBattleMons[gBattlerAttacker].pp[i];
             }
-            movePpData.ppBonuses = gBattleMons[gBattlerAttacker].ppBonuses;
+            movePPData.ppBonuses = gBattleMons[gBattlerAttacker].ppBonuses;
 
-            BtlController_EmitSetMonData(gBattlerAttacker, B_COMM_TO_CONTROLLER, REQUEST_MOVES_PP_BATTLE, 0, sizeof(movePpData), &movePpData);
+            BtlController_EmitSetMonData(gBattlerAttacker, B_COMM_TO_CONTROLLER, REQUEST_MOVES_PP_BATTLE, 0, sizeof(movePPData), &movePPData);
             MarkBattlerForControllerExec(gBattlerAttacker);
 
             PREPARE_MOVE_BUFFER(gBattleTextBuff1, gLastPrintedMoves[gBattlerTarget])
@@ -9343,7 +9343,7 @@ static void Cmd_switchoutabilities(void)
 
         gBattleMons[battler].status1 = 0;
         BtlController_EmitSetMonData(battler, B_COMM_TO_CONTROLLER, REQUEST_STATUS_BATTLE,
-                                        1u << gBattleStruct->battlerPartyIndexes[battler],
+                                        1u << gBattlerPartyIndexes[battler],
                                         sizeof(gBattleMons[battler].status1),
                                         &gBattleMons[battler].status1);
         MarkBattlerForControllerExec(battler);
@@ -9355,7 +9355,7 @@ static void Cmd_switchoutabilities(void)
         if (regenerate > gBattleMons[battler].maxHP)
             regenerate = gBattleMons[battler].maxHP;
         BtlController_EmitSetMonData(battler, B_COMM_TO_CONTROLLER, REQUEST_HP_BATTLE,
-                                        1u << gBattleStruct->battlerPartyIndexes[battler],
+                                        1u << gBattlerPartyIndexes[battler],
                                         sizeof(regenerate),
                                         &regenerate);
         MarkBattlerForControllerExec(battler);
@@ -11339,7 +11339,7 @@ void BS_ItemIncreaseStat(void)
 
     if (GetItemBattleUsage(gLastUsedItem) == EFFECT_ITEM_INCREASE_STAT)
     {
-        if (B_X_ITEMS_BUFF >= GEN_7)
+        if (GetConfig(B_X_ITEMS_BUFF) >= GEN_7)
             SetStatChange(gBattlerAttacker, GetItemEffect(gLastUsedItem)[1], 2);
         else
             SetStatChange(gBattlerAttacker, GetItemEffect(gLastUsedItem)[1], 1);

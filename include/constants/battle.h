@@ -179,6 +179,7 @@ enum BattleSide
 // If a new STATUS1 is added here, it should also be added to
 // sCompressedStatuses in src/pokemon.c or else it will be lost outside
 // of battle.
+// Stored in gBattleMons[n].status1, which is u32
 #define STATUS1_NONE             0
 #define STATUS1_SLEEP            (1 << 0 | 1 << 1 | 1 << 2) // First 3 bits (Number of turns to sleep)
 #define STATUS1_SLEEP_TURN(num)  ((num) << 0) // Just for readability (or if rearranging statuses)
@@ -396,7 +397,8 @@ enum QueuedSwitch
 #define HITMARKER_UNUSED_27             (1 << 27)
 #define HITMARKER_FAINTED(battler)      (1u << (battler + 28)) // Also uses bits 29, 30 and 31
 
-// Per-side statuses that affect an entire party
+// Per-side statuses that affect an entire party.
+// These select from gSideStatuses[n], which is a u32.
 #define SIDE_STATUS_REFLECT                 (1 << 0)
 #define SIDE_STATUS_LIGHTSCREEN             (1 << 1)
 #define SIDE_STATUS_SAFEGUARD               (1 << 2)
@@ -470,6 +472,7 @@ enum TypeSideHazard
 #define MOVE_RESULT_AVOIDED_ATTACK         (MOVE_RESULT_MISSED | MOVE_RESULT_FAILED | MOVE_RESULT_PROTECTED)
 #define MOVE_RESULT_NO_EFFECT              (MOVE_RESULT_MISSED | MOVE_RESULT_FAILED | MOVE_RESULT_PROTECTED | MOVE_RESULT_DOESNT_AFFECT_FOE)
 
+// These select from gBattleWeather, which is a u16.
 enum BattleWeather
 {
     BATTLE_WEATHER_RAIN,
