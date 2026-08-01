@@ -1780,8 +1780,8 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     u8 pwr_desc[] = _("威力：");
     u8 acc_desc[] = _("命中：");
     u8 cat_start[] = _("{CLEAR_TO 0x00}");
-    u8 pwr_start[] = _("{CLEAR_TO 0x30}");
-    u8 acc_start[] = _("{CLEAR_TO 0x62}");
+    u8 pwr_start[] = _("{CLEAR_TO 0x2A}");
+    u8 acc_start[] = _("{CLEAR_TO 0x5C}");
     u8 font_small[] = _("{FONT_SMALL}");
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
