@@ -1077,6 +1077,14 @@ struct Pokemon *GetBattlerParty(enum BattlerId battler);
 struct Pokemon *GetTrainerParty(enum BattleTrainer trainer);
 struct Pokemon* GetBattlerMon(enum BattlerId battler);
 
+enum BattlerId GetBattlerAtPosition(enum BattlerPosition position);
+enum BattlerId GetPartnerBattler(enum BattlerId battler);
+enum BattlerId GetOppositeBattler(enum BattlerId battler);
+enum BattlerPosition GetPartnerPosition(enum BattlerPosition position);
+enum BattlerPosition GetOppositePosition(enum BattlerPosition position);
+enum BattlerId GetBattlerLeftFoe(enum BattlerId battler);
+enum BattlerId GetBattlerRightFoe(enum BattlerId battler);
+
 static inline bool32 IsBattlerAlive(enum BattlerId battler)
 {
     if (battler >= gBattlersCount)
@@ -1116,27 +1124,6 @@ static inline enum BattlerPosition GetBattlerPosition(enum BattlerId battler)
     return gBattlerPositions[battler];
 }
 
-static inline enum BattlerId GetBattlerAtPosition(enum BattlerPosition position)
-{
-    enum BattlerId battler;
-    for (battler = 0; battler < gBattlersCount; battler++)
-    {
-        if (GetBattlerPosition(battler) == position)
-            break;
-    }
-    return battler;
-}
-
-static inline enum BattlerId GetPartnerBattler(enum BattlerId battler)
-{
-    return GetBattlerAtPosition(BATTLE_PARTNER(GetBattlerPosition(battler)));
-}
-
-static inline enum BattlerId GetOppositeBattler(enum BattlerId battler)
-{
-    return GetBattlerAtPosition(BATTLE_OPPOSITE(GetBattlerPosition(battler)));
-}
-
 static inline enum BattleSide GetBattlerSide(enum BattlerId battler)
 {
     return GetBattlerPosition(battler) & BIT_SIDE;
@@ -1150,11 +1137,6 @@ static inline bool32 IsOnPlayerSide(enum BattlerId battler)
 static inline bool32 IsBattlerAlly(enum BattlerId battlerAtk, enum BattlerId battlerDef)
 {
     return GetBattlerSide(battlerAtk) == GetBattlerSide(battlerDef);
-}
-
-static inline enum BattlerId GetOpposingSideBattler(enum BattlerId battler)
-{
-    return GetBattlerAtPosition(BATTLE_OPPOSITE(GetBattlerSide(battler)));
 }
 
 static inline bool32 IsDoubleBattle(void)
