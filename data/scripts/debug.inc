@@ -175,10 +175,10 @@ Debug_EventScript_CheckEVs_End::
 	end
 
 Debug_EventScript_Text_OffensiveEVs:
-	.string "攻击努力值：{STR_VAR_1}，特攻努力值：{STR_VAR_2}，速度努力值：{STR_VAR_3}$"
+	.string "攻击努力值：{STR_VAR_1}，特攻努力值：{STR_VAR_2}，\n速度努力值：{STR_VAR_3}$"
 
 Debug_EventScript_Text_DefensiveEVs:
-	.string "HP努力值：{STR_VAR_1}，防御努力值：{STR_VAR_2}，特防努力值：{STR_VAR_3}$"
+	.string "HP努力值：{STR_VAR_1}，防御努力值：{STR_VAR_2}，\n特防努力值：{STR_VAR_3}$"
 
 Debug_EventScript_CheckIVs::
 	lockall
@@ -195,10 +195,10 @@ Debug_EventScript_CheckIVs_End::
 	end
 
 Debug_EventScript_Text_OffensiveIVs:
-	.string "攻击个体值：{STR_VAR_1}，特攻个体值：{STR_VAR_2}，速度个体值：{STR_VAR_3}$"
+	.string "攻击个体值：{STR_VAR_1}，特攻个体值：{STR_VAR_2}，\n速度个体值：{STR_VAR_3}$"
 
 Debug_EventScript_Text_DefensiveIVs:
-	.string "HP个体值：{STR_VAR_1}，防御个体值：{STR_VAR_2}，特防个体值：{STR_VAR_3}$"
+	.string "HP个体值：{STR_VAR_1}，防御个体值：{STR_VAR_2}，\n特防个体值：{STR_VAR_3}$"
 
 Debug_EventScript_Script_1::
 	release
