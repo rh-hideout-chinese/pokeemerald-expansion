@@ -5401,7 +5401,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_STORM_DRAIN, ABILITY_NONE, ABILITY_STORM_DRAIN },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_PINK,
         .speciesName = _("米立龙"),
     #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_TATSUGIRI_MEGA,
@@ -5458,7 +5458,7 @@ const struct SpeciesInfo gSpeciesInfoGen9[] =
         .growthRate = GROWTH_MEDIUM_SLOW,
         .eggGroups = MON_EGG_GROUPS(EGG_GROUP_WATER_2),
         .abilities = { ABILITY_STORM_DRAIN, ABILITY_NONE, ABILITY_STORM_DRAIN },
-        .bodyColor = BODY_COLOR_RED,
+        .bodyColor = BODY_COLOR_YELLOW,
         .speciesName = _("米立龙"),
     #if P_MODIFIED_MEGA_CRIES
         .cryId = CRY_TATSUGIRI_MEGA,
