@@ -558,7 +558,7 @@ bool32 MovesWithCategoryUnusable(u32 attacker, u32 target, enum DamageCategory c
         if (GetBattleMoveCategory(moves[moveIndex]) == category)
         {
             SetTypeBeforeUsingMove(moves[moveIndex], attacker);
-            ctx.move = ctx.chosenMove = moves[moveIndex];
+            ctx.move = ctx.chosenMove = ctx.baseMove = moves[moveIndex];
             ctx.moveType = GetBattleMoveType(moves[moveIndex]);
 
             if (CalcTypeEffectivenessMultiplier(&ctx))
@@ -892,6 +892,7 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
     bool32 toggledGimmickDef = FALSE;
     struct AiLogicData *aiData = gAiLogicData;
     gAiLogicData->aiCalcInProgress = TRUE;
+    enum Move baseMove = move;
 
     if (moveEffect == EFFECT_HIT_ENEMY_HEAL_ALLY
      && battlerDef == GetPartnerBattler(battlerAtk))
@@ -901,7 +902,10 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
     }
 
     if (moveEffect == EFFECT_NATURE_POWER)
-        move = GetNaturePowerMove();
+    {
+        move = baseMove = GetNaturePowerMove();
+        moveEffect = GetMoveEffect(move);
+    }
 
     // Temporarily enable gimmicks for damage calcs if planned
     if (gBattleStruct->gimmick.usableGimmick[battlerAtk] && GetActiveGimmick(battlerAtk) == GIMMICK_NONE
@@ -934,6 +938,7 @@ struct SimulatedDamage AI_CalcDamage(enum Move move, enum BattlerId battlerAtk, 
     ctx.battlerAtk = battlerAtk;
     ctx.battlerDef = battlerDef;
     ctx.move = ctx.chosenMove = move;
+    ctx.baseMove = baseMove;
     ctx.moveType = GetBattleMoveType(move);
     ctx.fieldStatuses = fieldStatuses;
     ctx.randomFactor = FALSE;
@@ -1381,7 +1386,7 @@ uq4_12_t AI_GetMoveEffectiveness(enum Move move, enum BattlerId battlerAtk, enum
     struct DamageContext ctx = {0};
     ctx.battlerAtk = battlerAtk;
     ctx.battlerDef = battlerDef;
-    ctx.move = ctx.chosenMove = move;
+    ctx.move = ctx.chosenMove = ctx.baseMove = move;
     ctx.moveType = GetBattleMoveType(move);
     ctx.updateFlags = FALSE;
     ctx.abilities[ctx.battlerAtk] = gAiLogicData->abilities[battlerAtk];
@@ -3434,7 +3439,7 @@ bool32 BattlerHasMaxHPProtection(enum BattlerId battler)
         return FALSE;
     if (gAiLogicData->holdEffects[battler] == HOLD_EFFECT_FOCUS_SASH)
         return TRUE;
-    if (B_STURDY >= GEN_5 && ability == ABILITY_STURDY)
+    if (GetConfig(B_STURDY) >= GEN_5 && ability == ABILITY_STURDY)
         return TRUE;
     if (ability == ABILITY_MULTISCALE || ability == ABILITY_SHADOW_SHIELD)
         return TRUE;
@@ -6362,9 +6367,17 @@ s32 GetSelfStatChangeScore(enum BattlerId battlerAtk, enum BattlerId battlerDef,
          && effect->moveEffect != STAT_CHANGE_EFFECT_MINUS)
             continue;
 
-        for (enum Stat stat = STAT_ATK; stat < NUM_STATS; stat++)
+        for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
         {
-            s32 stage = AI_GetAdjustedStatStage(battlerAtk, move, GetStatStage(stat, effect));
+            s32 stage = GetStatStage(stat, effect);
+
+            if (stage == 0)
+                continue;
+
+            if (effect->moveEffect == STAT_CHANGE_EFFECT_MINUS)
+                stage = -1 * stage;
+
+            stage = AI_GetAdjustedStatStage(battlerAtk, move, stage);
 
             if (stage > 0)
             {
@@ -6406,9 +6419,17 @@ s32 GetFoeStatChangeScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, 
     {
         const struct AdditionalEffect *effect = GetMoveAdditionalEffectById(move, effectIndex);
 
-        for (enum Stat stat = STAT_ATK; stat < NUM_STATS; stat++)
+        for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
         {
-            s32 stage = AI_GetAdjustedStatStage(battlerDef, move, GetStatStage(stat, effect));
+            s32 stage = GetStatStage(stat, effect);
+
+            if (stage == 0)
+                continue;
+
+            if (effect->moveEffect == STAT_CHANGE_EFFECT_MINUS)
+                stage = -1 * stage;
+
+            stage = AI_GetAdjustedStatStage(battlerDef, move, stage);
 
             if (stage > 0)
             {
@@ -6456,7 +6477,7 @@ s32 GetAllyStatChangeScore(u32 battlerAtk, u32 partner, u32 move)
     {
         const struct AdditionalEffect *effect = GetMoveAdditionalEffectById(move, effectIndex);
 
-        for (enum Stat stat = STAT_ATK; stat < NUM_STATS; stat++)
+        for (enum Stat stat = STAT_ATK; stat < NUM_BATTLE_STATS; stat++)
         {
             s32 stage = GetStatStage(stat, effect);
 
