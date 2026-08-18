@@ -90,7 +90,7 @@ static const u8 sMewtwoniteDesc[]     = _("让超梦携带后，\n"
     "在战斗时能超级进\n"
     "化的超级石。");
 
-static const u8 sRaichuniteDesc[]     = _("让雷秋携带后，\n"
+static const u8 sRaichuniteDesc[]     = _("让雷丘携带后，\n"
                                           "在战斗时能超级进\n"
                                           "化的超级石。");
 
