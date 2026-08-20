@@ -383,11 +383,11 @@ static const struct ListMenuItem sVolatileStatusListItems[] =
     {COMPOUND_STRING("封印"),           VOLATILE_IMPRISON},
     {COMPOUND_STRING("怨念"),             VOLATILE_GRUDGE},
     {COMPOUND_STRING("胃液"),        VOLATILE_GASTRO_ACID},
-    {COMPOUND_STRING("查封"),            VOLATILE_EMBARGO},
+    {COMPOUND_STRING("查封"),            VOLATILE_EMBARGO_TIMER},
     {COMPOUND_STRING("击落"),         VOLATILE_SMACK_DOWN},
     {COMPOUND_STRING("意念移物"),        VOLATILE_TELEKINESIS},
     {COMPOUND_STRING("奇迹之眼"),        VOLATILE_MIRACLE_EYE},
-    {COMPOUND_STRING("回复封锁"),         VOLATILE_HEAL_BLOCK},
+    {COMPOUND_STRING("回复封锁"),         VOLATILE_HEAL_BLOCK_TIMER},
     {COMPOUND_STRING("水流环"),          VOLATILE_AQUA_RING},
     {COMPOUND_STRING("力量戏法"),        VOLATILE_POWER_TRICK},
 };
