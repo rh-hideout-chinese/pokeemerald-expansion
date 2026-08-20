@@ -5524,8 +5524,9 @@ static void Cmd_handlelearnnewmove(void)
 
     if (B_LEVEL_UP_NOTIFICATION >= GEN_9 && gBattleResources->beforeLvlUp->learnMultipleMoves)
     {
-        while (gBattleResources->beforeLvlUp->level <= currLvl)
+        while (gBattleResources->beforeLvlUp->level < currLvl)
         {
+            gBattleResources->beforeLvlUp->level++;
             learnMove = MonTryLearningNewMoveAtLevel(&gParties[B_TRAINER_PLAYER][monId], cmd->isFirstMove, gBattleResources->beforeLvlUp->level);
 
             while (learnMove == MON_ALREADY_KNOWS_MOVE)
@@ -5533,8 +5534,6 @@ static void Cmd_handlelearnnewmove(void)
 
             if (learnMove != MOVE_NONE)
                 break;
-
-            gBattleResources->beforeLvlUp->level++;
         }
     }
     else
@@ -7855,6 +7854,7 @@ static void Cmd_setcalledmove(void)
 {
     CMD_ARGS();
     gCurrentMove = gBattleStruct->baseMove = gCalledMove;
+    ClearDamageCalcResults();
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
 
@@ -10688,14 +10688,14 @@ static void Cmd_tryconfusionafterskydrop(void)
 {
     CMD_ARGS(u8 battler);
     enum BattlerId faintBattler = GetBattlerForBattleScript(cmd->battler);
-    enum BattlerId skyDropTarget = gBattleMons[faintBattler].volatiles.skyDropTarget - 1;
+    enum BattlerId skyDropTarget = gBattleMons[faintBattler].volatiles.skyDropTarget;
     bool32 shouldConfuse = FALSE;
 
-    if (gBattleMons[faintBattler].volatiles.semiInvulnerable != STATE_SKY_DROP_ATTACKER)
+    if (gBattleMons[faintBattler].volatiles.semiInvulnerable != STATE_SKY_DROP_ATTACKER || !skyDropTarget)
     {
         gBattlescriptCurrInstr = cmd->nextInstr;
     }
-    else if (gBattleMons[skyDropTarget].volatiles.semiInvulnerable == STATE_SKY_DROP_TARGET)
+    else if (gBattleMons[--skyDropTarget].volatiles.semiInvulnerable == STATE_SKY_DROP_TARGET)
     {
         BtlController_EmitSpriteInvisibility(skyDropTarget, B_COMM_TO_CONTROLLER, FALSE);
         MarkBattlerForControllerExec(skyDropTarget);
@@ -13892,4 +13892,3 @@ void BS_RestoreStatChangeQueue(void)
     ClearOtherStatChangeValues(gBattlerAttacker);
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
-
