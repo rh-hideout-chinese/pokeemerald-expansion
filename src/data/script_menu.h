@@ -1074,8 +1074,8 @@ static const struct MenuAction sMultichoiceList_TrainerTowerMode[] = {
 
 static const struct MenuAction sMultichoiceList_TrainerCardIconTint[] = {
     {gText_Normal},
-    {gText_DexSearchColorBlack},
-    {gText_DexSearchColorPink},
+    {COMPOUND_STRING("黑色")},
+    {COMPOUND_STRING("粉色")},
     {COMPOUND_STRING("怀旧")}
 };
 

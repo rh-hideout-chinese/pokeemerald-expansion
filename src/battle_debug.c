@@ -370,7 +370,6 @@ static const struct ListMenuItem sVolatileStatusListItems[] =
     {COMPOUND_STRING("输电"),        VOLATILE_ELECTRIFIED},
     {COMPOUND_STRING("玩泥巴"),           VOLATILE_MUD_SPORT},
     {COMPOUND_STRING("玩水"),         VOLATILE_WATER_SPORT},
-    {COMPOUND_STRING("无限混乱"), VOLATILE_INFINITE_CONFUSION},
     {COMPOUND_STRING("盐腌"),          VOLATILE_SALT_CURE},
     {COMPOUND_STRING("满身糖"),         VOLATILE_SYRUP_BOMB},
     {COMPOUND_STRING("巨剑突击"),        VOLATILE_GLAIVE_RUSH},
@@ -384,14 +383,12 @@ static const struct ListMenuItem sVolatileStatusListItems[] =
     {COMPOUND_STRING("封印"),           VOLATILE_IMPRISON},
     {COMPOUND_STRING("怨念"),             VOLATILE_GRUDGE},
     {COMPOUND_STRING("胃液"),        VOLATILE_GASTRO_ACID},
-    {COMPOUND_STRING("查封"),            VOLATILE_EMBARGO},
+    {COMPOUND_STRING("查封"),            VOLATILE_EMBARGO_TIMER},
     {COMPOUND_STRING("击落"),         VOLATILE_SMACK_DOWN},
     {COMPOUND_STRING("意念移物"),        VOLATILE_TELEKINESIS},
     {COMPOUND_STRING("奇迹之眼"),        VOLATILE_MIRACLE_EYE},
-    {COMPOUND_STRING("电磁飘浮"),        VOLATILE_MAGNET_RISE},
-    {COMPOUND_STRING("回复封锁"),         VOLATILE_HEAL_BLOCK},
+    {COMPOUND_STRING("回复封锁"),         VOLATILE_HEAL_BLOCK_TIMER},
     {COMPOUND_STRING("水流环"),          VOLATILE_AQUA_RING},
-    {COMPOUND_STRING("磨砺"),        VOLATILE_LASER_FOCUS},
     {COMPOUND_STRING("力量戏法"),        VOLATILE_POWER_TRICK},
 };
 
@@ -773,7 +770,7 @@ static void PutMovesPointsText(struct BattleDebugMenu *data)
     if (gAiLogicData->shouldSwitch & (1u << data->aiBattlerId))
     {
         struct Pokemon *party = GetBattlerParty(data->aiBattlerId);
-        u32 switchMon = GetMonData(&party[gAiLogicData->mostSuitableMonId[data->aiBattlerId]], MON_DATA_SPECIES);
+        enum Species switchMon = GetMonData(&party[gAiLogicData->mostSuitableMonId[data->aiBattlerId]], MON_DATA_SPECIES);
         AddTextPrinterParameterized3(data->aiMovesWindowId, FONT_NORMAL, 74, 79, sTextColorTable[COLORID_RED], 0, COMPOUND_STRING("替换为"));
         AddTextPrinterParameterized3(data->aiMovesWindowId, FONT_NORMAL, 74 + 68, 79, sTextColorTable[COLORID_RED], 0, gSpeciesInfo[switchMon].speciesName);
     }
@@ -2170,11 +2167,7 @@ static const u8 *const sHoldEffectNames[HOLD_EFFECT_COUNT] =
     [HOLD_EFFECT_RESTORE_PP]       = COMPOUND_STRING("回复PP"),
     [HOLD_EFFECT_CURE_CONFUSION]   = COMPOUND_STRING("混乱解除"),
     [HOLD_EFFECT_CURE_STATUS]      = COMPOUND_STRING("异常状态解除"),
-    [HOLD_EFFECT_CONFUSE_SPICY]    = COMPOUND_STRING("因树果太辣混乱"),
-    [HOLD_EFFECT_CONFUSE_DRY]      = COMPOUND_STRING("因树果太涩混乱"),
-    [HOLD_EFFECT_CONFUSE_SWEET]    = COMPOUND_STRING("因树果太甜混乱"),
-    [HOLD_EFFECT_CONFUSE_BITTER]   = COMPOUND_STRING("因树果太苦混乱"),
-    [HOLD_EFFECT_CONFUSE_SOUR]     = COMPOUND_STRING("因树果太酸混乱"),
+    [HOLD_EFFECT_CONFUSE_FLAVOR]   = COMPOUND_STRING("因树果味道混乱"),
     [HOLD_EFFECT_ATTACK_UP]        = COMPOUND_STRING("攻击提升"),
     [HOLD_EFFECT_DEFENSE_UP]       = COMPOUND_STRING("防御提升"),
     [HOLD_EFFECT_SPEED_UP]         = COMPOUND_STRING("速度提升"),

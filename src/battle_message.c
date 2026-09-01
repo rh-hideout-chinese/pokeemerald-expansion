@@ -69,7 +69,7 @@ EWRAM_DATA struct BattleMsgData *gBattleMsgDataPtr = NULL;
 
 static const u8 sText_EmptyString4[] = _("");
 
-const u8 gText_PkmnShroudedInMist[] = _("{B_ATK_TEAM1}被\n白雾包围了！");
+const u8 gText_PkmnShroudedInMist[] = _("{B_ATK_NAME_WITH_PREFIX}被\n白雾包围了！");
 const u8 gText_PkmnGettingPumped[] = _("{B_DEF_NAME_WITH_PREFIX}\n现在干劲十足！");
 const u8 gText_PkmnsXPreventsSwitching[] = _("因{B_BUFF1}的{B_LAST_ABILITY}\n而无法进行替换！\p");
 const u8 gText_StatSharply[] = _("大幅");
@@ -111,6 +111,7 @@ static const u8 sText_GoTwoPkmn[] = _("上吧！{B_PLAYER_MON1_NAME}！\n{B_PLAY
 static const u8 sText_GoPkmn2[] = _("上吧！{B_BUFF1}！");
 static const u8 sText_DoItPkmn[] = _("交给你了！{B_BUFF1}！");
 static const u8 sText_GoForItPkmn[] = _("加油！{B_BUFF1}！");
+static const u8 sText_BeCarefulPkmn[] = _("注意了，\n{B_PLAYER_MON1_NAME}！");
 static const u8 sText_JustALittleMorePkmn[] = _("只差一点了！\n加油！{B_BUFF1}！"); //currently unused, will require code changes
 static const u8 sText_YourFoesWeakGetEmPkmn[] = _("对手变弱了！\n机会来了！{B_BUFF1}！");
 static const u8 sText_LinkPartnerSentOutPkmn1GoPkmn[] = _("{B_LINK_PARTNER_NAME}派出了{B_LINK_PLAYER_MON2_NAME}！\n上吧！{B_LINK_PLAYER_MON1_NAME}！");
@@ -211,7 +212,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PLAYERWHITEOUT2_TRAINER]              = COMPOUND_STRING("{B_PLAYER_NAME}支付了¥{B_BUFF1}\n作为奖金……"),
     [STRINGID_PLAYERWHITEOUT3]                      = COMPOUND_STRING("………………\n………………\p{B_PLAYER_NAME}的眼前变得一片漆黑！"),
     [STRINGID_PREVENTSESCAPE]                       = COMPOUND_STRING("因{B_SCR_NAME_WITH_PREFIX}的\n{B_SCR_ABILITY}而无法逃走！\p"),
-    [STRINGID_HITXTIMES]                            = COMPOUND_STRING("击中了{B_BUFF1}次！"), //SV has dynamic plural here
+    [STRINGID_HITXTIMES]                            = COMPOUND_STRING("击中了{B_BUFF1}次{B_BUFF2}！"), 
     [STRINGID_PKMNFELLASLEEP]                       = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}睡着了！"),
     [STRINGID_PKMNMADESLEEP]                        = COMPOUND_STRING("因{B_SCR_NAME_WITH_PREFIX2}的{B_BUFF1}，\n{B_EFF_NAME_WITH_PREFIX2}睡着了！"), //not in gen 5+, ability popup
     [STRINGID_PKMNALREADYASLEEP]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n已经睡着了！"),
@@ -221,7 +222,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNHURTBYPOISON]                     = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n受到了毒的伤害！"),
     [STRINGID_PKMNALREADYPOISONED]                  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n已经中毒了。"),
     [STRINGID_PKMNBADLYPOISONED]                    = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}中剧毒了！"),
-    [STRINGID_PKMNENERGYDRAINED]                    = COMPOUND_STRING("从{B_DEF_NAME_WITH_PREFIX}那里\n吸取了体力！"),
+    [STRINGID_PKMNENERGYDRAINED]                    = COMPOUND_STRING("从{B_SCR_NAME_WITH_PREFIX}那里\n吸取了体力！"),
     [STRINGID_PKMNWASBURNED]                        = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}被灼伤了！"),
     [STRINGID_PKMNBURNEDBY]                         = COMPOUND_STRING("因{B_SCR_NAME_WITH_PREFIX2}的{B_BUFF1}，\n{B_EFF_NAME_WITH_PREFIX2}被灼伤了！"), //not in gen 5+, ability popup
     [STRINGID_PKMNHURTBYBURN]                       = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n受到了灼伤的伤害！"),
@@ -278,7 +279,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNSEEDED]                           = COMPOUND_STRING("将种子种植在了\n{B_DEF_NAME_WITH_PREFIX}身上！"),
     [STRINGID_PKMNAVOIDEDATTACK]                    = COMPOUND_STRING("没有击中{B_DEF_NAME_WITH_PREFIX}！"),
     [STRINGID_BATTLERAVOIDEDATTACK]                 = COMPOUND_STRING("没有击中{B_SCR_NAME_WITH_PREFIX}！"),
-    [STRINGID_PKMNSAPPEDBYLEECHSEED]                = COMPOUND_STRING("寄生植物夺取了\n{B_ATK_NAME_WITH_PREFIX}的体力！"),
+    [STRINGID_PKMNSAPPEDBYLEECHSEED]                = COMPOUND_STRING("寄生植物夺取了\n{B_SCR_NAME_WITH_PREFIX}的体力！"),
     [STRINGID_PKMNFASTASLEEP]                       = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n正在呼呼大睡。"),
     [STRINGID_PKMNWOKEUP]                           = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n醒过来了！"),
     [STRINGID_PKMNWOKEUPINUPROAR]                   = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX2}\n被吵醒了！"),
@@ -312,7 +313,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNTRYINGTOTAKEFOE]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n想和对手同归于尽！"),
     [STRINGID_PKMNTOOKFOE]                          = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n和对手同归于尽了！"),
     [STRINGID_PKMNREDUCEDPP]                        = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n因{B_BUFF1}而减少了{B_BUFF2}点PP！"),
-    [STRINGID_PKMNSTOLEITEM]                        = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n从{B_EFF_NAME_WITH_PREFIX2}那里\l夺取了{B_LAST_ITEM}！"),
+    [STRINGID_PKMNSTOLEITEM]                        = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n从{B_BUFF2}那里\l夺取了{B_LAST_ITEM}！"),
     [STRINGID_TARGETCANTESCAPENOW]                  = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n无法逃走了！"),
     [STRINGID_PKMNFELLINTONIGHTMARE]                = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n开始做恶梦了！"),
     [STRINGID_PKMNLOCKEDINNIGHTMARE]                = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n正被恶梦缠身！"),
@@ -341,7 +342,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNHASNOMOVESLEFT]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n没有可用来施展的招式！\p"),
     [STRINGID_PKMNSUBJECTEDTOTORMENT]               = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n遭到了无理取闹！"),
     [STRINGID_PKMNCANTUSEMOVETORMENT]               = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}遭到了无理取闹，\n因此无法继续使出相同的招式！\p"),
-    [STRINGID_PKMNTIGHTENINGFOCUS]                  = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n聚精会神了起来！"),
+    [STRINGID_PKMNTIGHTENINGFOCUS]                  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n聚精会神了起来！"),
     [STRINGID_PKMNFELLFORTAUNT]                     = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n中了挑衅！"),
     [STRINGID_PKMNCANTUSEMOVETAUNT]                 = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX2}受到了挑衅，\n无法使出{B_CURRENT_MOVE}！\p"),
     [STRINGID_PKMNREADYTOHELP]                      = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}摆出了\n帮助{B_DEF_NAME_WITH_PREFIX2}的架势！"),
@@ -464,7 +465,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNSXPREVENTSYLOSS]                  = COMPOUND_STRING("因为{B_SCR_ABILITY}，{B_SCR_NAME_WITH_PREFIX}的\n{B_BUFF1}不会降低！"), //not in gen 5+, ability popup
     [STRINGID_PKMNSXINFATUATEDY]                    = COMPOUND_STRING("因{B_DEF_NAME_WITH_PREFIX}的{B_DEF_ABILITY}，\n{B_ATK_NAME_WITH_PREFIX2}着迷了！"), //not in gen 5+, ability popup
     [STRINGID_PKMNSXMADEYINEFFECTIVE]               = COMPOUND_STRING("因{B_SCR_NAME_WITH_PREFIX}的{B_SCR_ABILITY}，\n{B_CURRENT_MOVE}无效了！"), //not in gen 5+, ability popup
-    [STRINGID_ITSUCKEDLIQUIDOOZE]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n吸到了污泥浆！"),
+    [STRINGID_ITSUCKEDLIQUIDOOZE]                   = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}\n吸到了污泥浆！"),
     [STRINGID_PKMNTRANSFORMED]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}的\n样子发生了变化！"),
     [STRINGID_ELECTRICITYWEAKENED]                  = COMPOUND_STRING("电气的威力减弱了！"),
     [STRINGID_FIREWEAKENED]                         = COMPOUND_STRING("火焰的威力减弱了！"),
@@ -587,12 +588,12 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_SLOWSTARTENTERS]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n无法拿出平时的水平！"),
     [STRINGID_SLOWSTARTEND]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n恢复了平时的水平！"),
     [STRINGID_SOLARPOWERHPDROP]                     = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}因{B_ATK_ABILITY}\n削减了体力！"),  // Not in Gen 5+
-    [STRINGID_AFTERMATHDMG]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n受伤了！"),
+    [STRINGID_PKMNWASHURT]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n受伤了！"),
     [STRINGID_ANTICIPATIONACTIVATES]                = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n发抖了！"),
     [STRINGID_FOREWARNACTIVATES]                    = COMPOUND_STRING("因{B_SCR_ABILITY}，{B_SCR_NAME_WITH_PREFIX2}察觉到了\n{B_EFF_NAME_WITH_PREFIX2}的{B_BUFF1}！"),
     [STRINGID_ICEBODYHPGAIN]                        = COMPOUND_STRING("因为{B_ATK_ABILITY}，\n{B_ATK_NAME_WITH_PREFIX}回复了少许HP。"),  // Not in Gen 5+
     [STRINGID_SNOWWARNINGHAIL]                      = COMPOUND_STRING("开始下冰雹了！"),
-    [STRINGID_FRISKACTIVATES]                       = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}察觉到了\n{B_SCR_NAME_WITH_PREFIX2}的{B_LAST_ITEM}！"),
+    [STRINGID_FRISKACTIVATES]                       = COMPOUND_STRING("察觉到了{B_SCR_NAME_WITH_PREFIX}的\n{B_LAST_ITEM}！"),
     [STRINGID_UNNERVEENTERS]                        = COMPOUND_STRING("{B_EFF_TEAM1}因太紧张\n而无法食用树果！"),
     [STRINGID_HARVESTBERRY]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n收获了{B_LAST_ITEM}！"),
     [STRINGID_PROTEANTYPECHANGE]                    = COMPOUND_STRING("因为{B_ATK_ABILITY}，\n{B_ATK_NAME_WITH_PREFIX}变成了{B_BUFF1}属性！"),
@@ -657,7 +658,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNCANTUSEMOVETHROATCHOP]            = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX2}\n因深渊突刺的效果无法使出招式！\p"),
     [STRINGID_LASERFOCUS]                           = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n磨砺了精神！"),
     [STRINGID_GEMACTIVATES]                         = COMPOUND_STRING("{B_LAST_ITEM}加强了\n{B_ATK_NAME_WITH_PREFIX2}的威力！"),
-    [STRINGID_BERRYDMGREDUCES]                      = COMPOUND_STRING("{B_LAST_ITEM}减轻了\n对{B_SCR_NAME_WITH_PREFIX2}造成的伤害！"),
+    [STRINGID_BERRYDMGREDUCES]                      = COMPOUND_STRING("{B_LAST_ITEM}减轻了\n对{B_SCR_NAME_WITH_PREFIX}造成的伤害！"),
     [STRINGID_AIRBALLOONFLOAT]                      = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX2}\n靠着气球浮在了空中！"),
     [STRINGID_AIRBALLOONPOP]                        = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}的\n气球破了！"),
     [STRINGID_INCINERATEBURN]                       = COMPOUND_STRING("{B_EFF_NAME_WITH_PREFIX}的\n{B_LAST_ITEM}被烧没了！"),
@@ -733,7 +734,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PKMNTOOKTARGETHIGH]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n将{B_DEF_NAME_WITH_PREFIX2}带上了高空！"),
     [STRINGID_PKMNINSNAPTRAP]                       = COMPOUND_STRING("{B_DEF_NAME_WITH_PREFIX}\n被捕兽夹困住了！"),
     [STRINGID_METEORBEAMCHARGING]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}身上\n溢出了宇宙之力！"),
-    [STRINGID_HEATUPBEAK]                           = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n开始给鸟嘴加热了！"),
+    [STRINGID_HEATUPBEAK]                           = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n开始给鸟嘴加热了！"),
     [STRINGID_COURTCHANGE]                          = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n交换了双方的场地效果！"),
     [STRINGID_ZPOWERSURROUNDS]                      = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n让Z力量笼罩了全身！"),
     [STRINGID_ZMOVEUNLEASHED]                       = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}开始释放\n全力的Z招式！"),
@@ -762,7 +763,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_ABILITYWEAKENEDSURROUNDINGMONSSTAT]   = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}的{B_SCR_ABILITY}\n令周围的宝可梦的{B_BUFF1}减弱了！\p"),
     [STRINGID_ATTACKERGAINEDSTRENGTHFROMTHEFALLEN]  = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}从\n被打倒的同伴身上得到力量了！"),
     [STRINGID_PKMNSABILITYPREVENTSABILITY]          = COMPOUND_STRING("因{B_SCR_NAME_WITH_PREFIX}的\n{B_SCR_ABILITY}，\p{B_DEF_NAME_WITH_PREFIX2}的\n{B_DEF_ABILITY}变得无效了！"), //not in gen 5+, ability popup
-    [STRINGID_PREPARESHELLTRAP]                     = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}设置了陷阱甲壳！"),
+    [STRINGID_PREPARESHELLTRAP]                     = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}设置了陷阱甲壳！"),
     [STRINGID_SHELLTRAPDIDNTWORK]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}的\n陷阱甲壳没有被触发！"),
     [STRINGID_SPIKESDISAPPEAREDFROMTEAM]            = COMPOUND_STRING("{B_ATK_TEAM2}脚下的\n撒菱消失不见了！"),
     [STRINGID_TOXICSPIKESDISAPPEAREDFROMTEAM]       = COMPOUND_STRING("{B_ATK_TEAM2}脚下的\n毒菱消失不见了！"),
@@ -809,10 +810,10 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_MOVEBLOCKEDBYDYNAMAX]                 = COMPOUND_STRING("被极巨化之力弹开了！"),
     [STRINGID_ZEROTOHEROTRANSFORMATION]             = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}\n变身后归来了！"),
     [STRINGID_THETWOMOVESBECOMEONE]                 = COMPOUND_STRING("两个招式合二为一！\n这是合体招式！！{PAUSE 16}"),
-    [STRINGID_ARAINBOWAPPEAREDONSIDE]               = COMPOUND_STRING("彩虹出现在了{B_ATK_TEAM2}上空！"),
+    [STRINGID_ARAINBOWAPPEAREDONSIDE]               = COMPOUND_STRING("彩虹出现在了{B_EFF_TEAM2}上空！"),
     [STRINGID_THERAINBOWDISAPPEARED]                = COMPOUND_STRING("彩虹从{B_ATK_TEAM2}上空消失了！"),
     [STRINGID_WAITINGFORPARTNERSMOVE]               = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}正在等待\n{B_ATK_PARTNER_NAME}的技能……{PAUSE 16}"),
-    [STRINGID_SEAOFFIREENVELOPEDSIDE]               = COMPOUND_STRING("{B_DEF_TEAM2}周围被\n火海包围了！"),
+    [STRINGID_SEAOFFIREENVELOPEDSIDE]               = COMPOUND_STRING("{B_EFF_TEAM2}周围被\n火海包围了！"),
     [STRINGID_HURTBYTHESEAOFFIRE]                   = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}受到了火海的伤害！"),
     [STRINGID_THESEAOFFIREDISAPPEARED]              = COMPOUND_STRING("{B_ATK_TEAM2}周围的火海\n消失不见了！"),
     [STRINGID_SWAMPENVELOPEDSIDE]                   = COMPOUND_STRING("在{B_EFF_TEAM2}周围\n延伸出了湿地！"),
@@ -851,6 +852,7 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_BLOCKEDBYSLEEPCLAUSE]                 = COMPOUND_STRING("因为催眠条款，\n{B_DEF_NAME_WITH_PREFIX2}不会被催眠！"),
     [STRINGID_SUPEREFFECTIVETWOFOES]                = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}效果绝佳！"),
     [STRINGID_NOTVERYEFFECTIVETWOFOES]              = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}效果不好。"),
+    [STRINGID_ITDOESNTAFFECTTWOFOES]                = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}没有效果……"),
     [STRINGID_SENDCAUGHTMONPARTYORBOX]              = COMPOUND_STRING("要将{B_DEF_NAME}加入到同行宝可梦里吗？"),
     [STRINGID_PKMNSENTTOPCAFTERCATCH]               = gText_PkmnSentToPCAfterCatch,
     [STRINGID_PKMNDYNAMAXED]                        = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}极巨化了！\n变得巨大无比！"),//原作无对应文本，个人翻译
@@ -885,10 +887,23 @@ const u8 *const gBattleStringsTable[STRINGID_COUNT] =
     [STRINGID_PARTYCUREDFREEZE]                     = COMPOUND_STRING("{B_BUFF1}\n治愈了冰冻状态！"),
     [STRINGID_PARTYCUREDFROSTBITE]                  = COMPOUND_STRING("{B_BUFF1}\n治愈了冻伤！"),
     [STRINGID_PKMNATKNOTLOWERED]                    = COMPOUND_STRING("{B_SCR_NAME_WITH_PREFIX}的\n攻击不会降低！"),
+    [STRINGID_VICTORYCATCH]                         = COMPOUND_STRING("{B_DEF_NAME}变得虚弱了！\n现在是使用精灵球的好机会！"),
+    [STRINGID_CANTUSEMOVE]                          = COMPOUND_STRING("无法使出这个招式！\p"),
     [STRINGID_REFLECTWOREOFF]                       = COMPOUND_STRING("{B_DEF_TEAM1}的反射壁消失了！"),
     [STRINGID_LIGHTSCREENWOREOFF]                   = COMPOUND_STRING("{B_DEF_TEAM1}的光墙消失了！"),
     [STRINGID_AURORAVEILWOREOFF]                    = COMPOUND_STRING("{B_DEF_TEAM1}的极光幕消失了！"),
-    [STRINGID_STICKYWEBDISAPPEAREDFROMYOU]          = COMPOUND_STRING("脚下的黏黏网\n消失不见了！"),
+    [STRINGID_MOSTLYINEFFECTIVE]                    = COMPOUND_STRING("效果相当不好。"),
+    [STRINGID_EXTREMELYEFFECTIVE]                   = COMPOUND_STRING("效果无比绝佳！！"),
+    [STRINGID_NOTVERYEFFECTIVEONDEF]                = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}\n效果不好。"),
+    [STRINGID_SUPEREFFECTIVEONDEF]                  = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}\n效果绝佳！"),
+    [STRINGID_MOSTLYINEFFECTIVEONDEF]               = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}\n效果相当不好。"),
+    [STRINGID_EXTREMELYEFFECTIVEONDEF]              = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}\n效果无比绝佳！！"),
+    [STRINGID_EXTREMELYEFFECTIVETWOFOES]            = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}效果无比绝佳！"),
+    [STRINGID_MOSTLYINEFFECTIVETWOFOES]             = COMPOUND_STRING("对{B_DEF_NAME_WITH_PREFIX2}和\n{B_DEF_PARTNER_NAME}效果相当不好。"),
+    [STRINGID_CRITICALHITONDEF]                     = COMPOUND_STRING("击中了\n{B_DEF_NAME_WITH_PREFIX2}的要害！"),
+    [STRINGID_S]                                    = COMPOUND_STRING(""),
+    [STRINGID_LOSTSOMEOFITSHP]                      = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}的生命\n被少量削减了！"),
+    [STRINGID_BELCHCANTUSE]                         = COMPOUND_STRING("{B_ATK_NAME_WITH_PREFIX}\n因没有吃树果而无法使出招式！\p"),
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1066,8 +1081,8 @@ const u16 gProtectLikeUsedStringIds[] =
 
 const u16 gBrokeProtectionStringIds[] =
 {
-    [B_MSG_FEINT]           = STRINGID_FELLFORFEINT,
-    [B_MSG_HYPERSPACE_FURY] = STRINGID_BROKETHROUGHPROTECTION,
+    [B_MSG_FEINT]                 = STRINGID_FELLFORFEINT,
+    [B_MSG_BROKE_THROUGH_PROTECT] = STRINGID_BROKETHROUGHPROTECTION,
 };
 
 const u16 gReflectLightScreenSafeguardStringIds[] =
@@ -1438,7 +1453,7 @@ const u16 gPartyCureStatusStringIds[] =
 
 const u16 gHurtByStringIds[] =
 {
-    [B_MSG_HURT] = STRINGID_AFTERMATHDMG,
+    [B_MSG_HURT] = STRINGID_PKMNWASHURT,
     [B_MSG_HURT_BY_ITEM] = STRINGID_PKMNHURTSWITH,
 };
 
@@ -1465,6 +1480,7 @@ const u8 gText_MoveInterfaceType[] = _("属性/");
 const u8 gText_MoveInterfacePPType[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}PP\n属性/");
 const u8 gText_MoveInterfaceDynamicColors[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}");
 const u8 gText_WhichMoveToForget4[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}要忘记\n哪个招式？");
+const u8 gText_BattleCatchOrNot[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}捕捉\n不捕捉");
 const u8 gText_BattleYesNoChoice[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}是\n否");
 const u8 gText_BattleSwitchWhich[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}与哪个招式\n交换位置?");
 const u8 gText_BattleSwitchWhich2[] = _("{PALETTE 5}{BACKGROUND DYNAMIC_COLOR5}{TEXT_COLORS DYNAMIC_COLOR4 DYNAMIC_COLOR6 DYNAMIC_COLOR5}");
@@ -1830,6 +1846,17 @@ static const struct BattleWindowText sTextOnWindowsInfo_Normal[] =
         .color.background = TEXT_DYNAMIC_COLOR_5,
         .color.accent = TEXT_DYNAMIC_COLOR_5,
         .color.shadow = TEXT_DYNAMIC_COLOR_6,
+    },
+    [B_CATCH_OR_NOT] = {
+        .fillValue = PIXEL_FILL(0xE),
+        .fontId = FONT_NORMAL,
+        .x = 0,
+        .y = 1,
+        .speed = 0,
+        .color.foreground = 13,
+        .color.background = 14,
+        .color.accent = 14,
+        .color.shadow = 15,
     },
 };
 
@@ -2509,6 +2536,10 @@ void BufferStringBattle(enum StringID stringID, enum BattlerId battler)
                         stringPtr = sText_InGamePartnerSentOutZGoN; // Player is on left
                     else
                         stringPtr = sText_InGamePartnerSentOutNGoZ; // Partner on left
+                }
+                else if (gBattleTypeFlags & BATTLE_TYPE_RAID)
+                {
+                    stringPtr = sText_BeCarefulPkmn;
                 }
                 else
                 {
