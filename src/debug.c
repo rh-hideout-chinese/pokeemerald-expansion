@@ -480,10 +480,6 @@ static const u8 *const gFollowerNPCStringsTable[DEBUG_FNPC_COUNT] = {
     COMPOUND_STRING("叶子"),
 };
 
-// Flags/Vars Menu
-static const u8 sDebugText_FlagsVars_VariableHex[] =         _("{STR_VAR_1}{CLEAR_TO 90}\n0x{STR_VAR_2}{CLEAR_TO 90}");
-static const u8 sDebugText_FlagsVars_Variable[] =            _("变量：{STR_VAR_1}{CLEAR_TO 90}\nVal：{STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_2}");
-static const u8 sDebugText_FlagsVars_VariableValueSet[] =    _("变量：{STR_VAR_1}{CLEAR_TO 90}\nVal：{STR_VAR_3}{CLEAR_TO 90}\n{STR_VAR_2}");
 // Give Menu
 static const u8 sDebugText_PokemonShiny[] =             _("异色：{CLEAR_TO 90}\n   {STR_VAR_2}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{CLEAR_TO 90}");
 static const u8 sDebugText_IVs[] =                      _("个体值 {STR_VAR_1}：{CLEAR_TO 90}\n    {STR_VAR_3}{CLEAR_TO 90}\n{CLEAR_TO 90}\n{STR_VAR_2}{CLEAR_TO 90}");
@@ -591,20 +587,20 @@ static const struct DebugMenuOption sDebugMenu_Actions_FollowerNPCMenu[] =
 
 static const struct DebugMenuOption sDebugMenu_Actions_Utilities[] =
 {
-    { COMPOUND_STRING("飞往地图…"),                               DebugAction_Util_Fly },
-    { COMPOUND_STRING("瞬移到地图…"),                         DebugAction_Selection_Init, &sWarpSelection},
-    { COMPOUND_STRING("设定天气…"),                              DebugAction_Selection_Init, &sSetWeatherSelection },
-    { COMPOUND_STRING("字体测试…"),                                DebugAction_ExecuteScript, Debug_EventScript_FontTest },
-    { COMPOUND_STRING("时间功能…"),                           DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
-    { COMPOUND_STRING("观看通关动画…"),                            DebugAction_Util_WatchCredits },
-    { COMPOUND_STRING("开始作弊"),                               DebugAction_Util_CheatStart },
-    { COMPOUND_STRING("树果相关功能…"),                          DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
-    { COMPOUND_STRING("EWRAM计数…"),                           DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
-    { COMPOUND_STRING("NPC跟随…"),                             DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
-    { COMPOUND_STRING("测试宝可梦随机"),                        DebugAction_Selection_Init, &sSpeciesGeneratorSelection },
-    { COMPOUND_STRING("测试道具随机"),                          DebugAction_Selection_Init, &sItemGeneratorSelection },
-    { COMPOUND_STRING("满充教程"),                            DebugAction_ExecuteScript, Debug_EventScript_WallyTutorial },
-    { COMPOUND_STRING("大吾双打"),                              DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
+    { COMPOUND_STRING("飞往地图…"),               DebugAction_Util_Fly },
+    { COMPOUND_STRING("瞬移到地图…"),         DebugAction_Selection_Init, &sWarpSelection},
+    { COMPOUND_STRING("设定天气…"),              DebugAction_Selection_Init, &sSetWeatherSelection },
+    { COMPOUND_STRING("字体测试…"),                DebugAction_ExecuteScript, Debug_EventScript_FontTest },
+    { COMPOUND_STRING("时间功能…"),           DebugAction_OpenSubMenu, sDebugMenu_Actions_TimeMenu, },
+    { COMPOUND_STRING("观看通关动画…"),            DebugAction_Util_WatchCredits },
+    { COMPOUND_STRING("开始作弊"),               DebugAction_Util_CheatStart },
+    { COMPOUND_STRING("树果相关功能…"),          DebugAction_OpenSubMenu, sDebugMenu_Actions_BerryFunctions },
+    { COMPOUND_STRING("EWRAM计数…"),           DebugAction_ExecuteScript, Debug_EventScript_EWRAMCounters },
+    { COMPOUND_STRING("NPC跟随…"),             DebugAction_OpenSubMenu, sDebugMenu_Actions_FollowerNPCMenu },
+    { COMPOUND_STRING("测试宝可梦随机"),        DebugAction_Selection_Init, &sSpeciesGeneratorSelection },
+    { COMPOUND_STRING("测试道具随机"),         DebugAction_Selection_Init, &sItemGeneratorSelection },
+    { COMPOUND_STRING("满充教程"),            DebugAction_ExecuteScript, Debug_EventScript_WallyTutorial },
+    { COMPOUND_STRING("大吾双打"),              DebugAction_ExecuteScript, Debug_EventScript_Steven_Multi },
     { NULL }
 };
 
@@ -765,10 +761,10 @@ static const struct DebugMenuOption sDebugMenu_Actions_Flags[] =
 
 static const u8 *const sDebugMenu_Actions_BagUse_Options[] =
 {
-    COMPOUND_STRING("无法打开包包: {STR_VAR_1}未启用"),
-    COMPOUND_STRING("无法打开包包: {STR_VAR_1}仅对战时"),
-    COMPOUND_STRING("无法打开包包: {STR_VAR_1}启用"),
-    COMPOUND_STRING("无法打开包包: {STR_VAR_1}无效值"),
+    COMPOUND_STRING("禁止打开包包: {STR_VAR_1}未启用"),
+    COMPOUND_STRING("禁止打开包包: {STR_VAR_1}仅对战时"),
+    COMPOUND_STRING("禁止打开包包: {STR_VAR_1}启用"),
+    COMPOUND_STRING("禁止打开包包: {STR_VAR_1}无效值"),
 };
 
 static const struct DebugMenuOption sDebugMenu_Actions_Main[] =
@@ -780,7 +776,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Main[] =
     { COMPOUND_STRING("主人公…"),       DebugAction_OpenSubMenu, sDebugMenu_Actions_Player, },
     { COMPOUND_STRING("脚本…"),      DebugAction_OpenSubMenu, sDebugMenu_Actions_Scripts, },
     { COMPOUND_STRING("训练家…"),     DebugAction_OpenSubMenuTrainers, sDebugMenu_Actions_Trainers, },
-    { COMPOUND_STRING("遇敌"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_Encounters, },
+    { COMPOUND_STRING("遇敌…"),   DebugAction_OpenSubMenu, sDebugMenu_Actions_Encounters, },
     { COMPOUND_STRING("标志与变量…"), DebugAction_OpenSubMenuFlagsVars, sDebugMenu_Actions_Flags, },
     { COMPOUND_STRING("声音…"),        DebugAction_OpenSubMenu, sDebugMenu_Actions_Sound, },
     { COMPOUND_STRING("ROM信息…"),     DebugAction_OpenSubMenu, sDebugMenu_Actions_ROMInfo2, },
@@ -3156,14 +3152,14 @@ static void DebugSelectionStep_UpdateItem(u8 taskId, u8 digits, u32 min, u32 max
     }
     else if (CheckIfItemIsTMHMOrEvolutionStone(itemId) == ITEM_IS_TM_HM)
     {
-        end = StringCopy(end, COMPOUND_STRING("无"));
+        end = StringCopy(end, COMPOUND_STRING(" 无"));
     }
     WrapFontIdToFit(gStringVar2, end, DEBUG_MENU_FONT, WindowWidthPx(gTasks[taskId].tSubWindowId));
     StringCopy(gStringVar3, COMPOUND_STRING(""));
     DebugNativeStep_PrintWindowSelection(taskId);
 }
 
-UPDATE_GENERIC_INPUT(Quantity, Quantity)
+UPDATE_GENERIC_INPUT(Quantity, 数量)
 
 static bool32 DebugSelection_GiveItem_Complete(u8 taskId)
 {
@@ -3242,7 +3238,7 @@ static void DebugSelectionStep_GenderConfirm(u8 taskId)
 
 static void DebugSelectionStep_UpdateShinyness(u8 taskId, u8 digits, u32 min, u32 max)
 {
-    DebugSelectionStep_PrintGenericBooleanInput(taskId, COMPOUND_STRING("闪光:"));
+    DebugSelectionStep_PrintGenericBooleanInput(taskId, COMPOUND_STRING("异色:"));
 }
 
 static u32 DebugSelectionStep_GetMaxAbility(u8 taskId)
