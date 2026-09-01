@@ -5314,6 +5314,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         break;
     }
     case EFFECT_TERRAIN:
+    {
         enum BattleTerrain terrain = GetMoveTerrainType(move);
 
         if (ShouldSetTerrain(battlerAtk, terrain))
@@ -5327,6 +5328,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
                 ADJUST_SCORE(WEAK_EFFECT);
         }
         break;
+    }
     case EFFECT_STEEL_ROLLER:
         {
             u32 terrain = gFieldTimers.terrain;
