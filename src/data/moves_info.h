@@ -1339,7 +1339,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         #elif B_UPDATED_MOVE_DATA == GEN_4
             .accuracy = 80,
         #else
-            .accuracy = 55,
+            .accuracy = 55,s
         #endif
         .effect = EFFECT_DISABLE,
         .power = 0,
