@@ -2998,7 +2998,7 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
             ADJUST_SCORE(-10);
         break;
     case EFFECT_DARK_VOID:
-        if (B_DARK_VOID_FAIL >= GEN_7 && gBattleMons[battlerAtk].species != SPECIES_DARKRAI)
+        if (GetConfig(B_DARK_VOID_FAIL) >= GEN_7 && gBattleMons[battlerAtk].species != SPECIES_DARKRAI)
             ADJUST_SCORE(-10);
         break;
     case EFFECT_HYPERSPACE_FURY:
@@ -5426,6 +5426,10 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
         break;
     }
     case EFFECT_TERRAIN:
+    {
+        enum BattleTerrain terrain = GetMoveTerrainType(move);
+
+        if (ShouldSetTerrain(battlerAtk, terrain))
         {
             enum BattleTerrain terrain = GetMoveTerrainType(move);
 
@@ -5441,6 +5445,8 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             }
             break;
         }
+        break;
+    }
     case EFFECT_STEEL_ROLLER:
         {
             u32 terrain = gFieldTimers.terrain;
