@@ -2468,4 +2468,10 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .name = _("辣椒喷发"),
         .description = COMPOUND_STRING("受攻击时使对手灼伤"),
     },
+
+    [ABILITY_AURA_GUARD] =
+    {
+        .name = _("Aura Guard"),
+        .description = COMPOUND_STRING("Unimplemented."),
+    },
 };
