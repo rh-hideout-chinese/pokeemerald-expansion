@@ -1231,8 +1231,7 @@ static enum CancelerResult CancelerMoveFailure(struct BattleCalcValues *cv)
             battleScript = BattleScript_PokemonCantUseTheMove;
         break;
     case EFFECT_AURA_WHEEL:
-        if (gBattleMons[cv->battlerAtk].species != SPECIES_MORPEKO_FULL_BELLY
-         && gBattleMons[cv->battlerAtk].species != SPECIES_MORPEKO_HANGRY)
+        if (GetBaseSpecies(gBattleMons[cv->battlerAtk].species) != SPECIES_MORPEKO)
             battleScript = BattleScript_PokemonCantUseTheMove;
         break;
     case EFFECT_HYPERSPACE_FURY:
@@ -1786,46 +1785,6 @@ static enum CancelerResult CancelerProtean(struct BattleCalcValues *cv)
     return CANCELER_RESULT_SUCCESS;
 }
 
-static bool32 IsBattlerWeatherAffectedTemp(enum HoldEffect holdEffect, u32 weather, u32 weatherFlags)
-{
-    if (weather & (B_WEATHER_SUN | B_WEATHER_RAIN) && holdEffect == HOLD_EFFECT_UTILITY_UMBRELLA)
-        return FALSE;
-
-    if (weather == B_WEATHER_NONE || !(GetBattleWeather(gBattleWeather) & weatherFlags))
-        return FALSE;
-
-    return TRUE;
-}
-
-static bool32 CanTwoTurnMoveFireThisTurn(struct BattleCalcValues *cv, bool32 *showAbilityPopUp)
-{
-    if (cv->moveEffect == EFFECT_GEOMANCY || gBattleMoveEffects[cv->moveEffect].semiInvulnerableEffect)
-        return FALSE;
-
-    u32 weather = GetWeather();
-    u32 attackerWeather = GetAttackerWeather(cv->holdEffects[cv->battlerAtk], cv->abilities[cv->battlerAtk], weather);
-
-    if (attackerWeather == B_WEATHER_NONE)
-        return FALSE;
-
-    enum BattleWeather moveAffectedByWeather = GetTwoTurnMoveWeather(cv->move);
-    enum BattleWeather weatherType = gBattleWeatherInfo[GetBattleWeather(weather)].type;
-    enum BattleWeather attackerWeatherType = gBattleWeatherInfo[GetBattleWeather(attackerWeather)].type;
-
-    if (weatherType == moveAffectedByWeather && IsBattlerWeatherAffectedTemp(cv->holdEffects[cv->battlerAtk], weather, moveAffectedByWeather))
-    {
-        return TRUE;
-    }
-
-    if (attackerWeatherType == moveAffectedByWeather)
-    {
-        *showAbilityPopUp = TRUE;
-        return TRUE;
-    }
-
-    return FALSE;
-}
-
 static enum CancelerResult HandleSkyDropResult(struct BattleCalcValues *cv)
 {
     if (gBattleMons[cv->battlerAtk].volatiles.multipleTurns) // Second turn
@@ -1890,75 +1849,65 @@ static enum CancelerResult HandleSkyDropResult(struct BattleCalcValues *cv)
 
 static enum CancelerResult CancelerCharging(struct BattleCalcValues *cv)
 {
-    enum CancelerResult result = CANCELER_RESULT_SUCCESS;
-
     if (!gBattleMoveEffects[cv->moveEffect].twoTurnEffect)
-    {
-        result = CANCELER_RESULT_SUCCESS;
-    }
-    else if (cv->moveEffect == EFFECT_SKY_DROP)
-    {
-        result = HandleSkyDropResult(cv);
-    }
-    else if (gBattleMons[cv->battlerAtk].volatiles.multipleTurns) // Second turn
+        return CANCELER_RESULT_SUCCESS;
+
+    if (cv->moveEffect == EFFECT_SKY_DROP)
+        return HandleSkyDropResult(cv);
+
+    if (gBattleMons[cv->battlerAtk].volatiles.multipleTurns) // Second turn
     {
         gBattleScripting.animTurn = 1;
         gBattleScripting.animTargetsHit = 0;
         gBattleMons[cv->battlerAtk].volatiles.multipleTurns = FALSE;
         if (gBattleMoveEffects[cv->moveEffect].semiInvulnerableEffect)
             gBattleMons[cv->battlerAtk].volatiles.semiInvulnerable = STATE_NONE;
-        result = CANCELER_RESULT_SUCCESS;
+        return CANCELER_RESULT_SUCCESS;
     }
-    else if (!gProtectStructs[cv->battlerAtk].chargingTurn) // First turn charge
+
+    if (!gProtectStructs[cv->battlerAtk].chargingTurn) // First turn charge
     {
         gLockedMoves[cv->battlerAtk] = cv->move;
         gProtectStructs[cv->battlerAtk].chargingTurn = TRUE;
         if (gBattleMoveEffects[cv->moveEffect].semiInvulnerableEffect)
             gBattleMons[cv->battlerAtk].volatiles.semiInvulnerable = GetTwoTurnMoveSemiInvulnerability(cv->move);
         BattleScriptCall(BattleScript_TwoTurnMoveCharging);
-        result = CANCELER_RESULT_RUN_SCRIPT;
-    }
-    else // Try move this turn. Otherwise use next turn
-    {
-        bool32 showAbilityPopUp = FALSE;
-        if (CanTwoTurnMoveFireThisTurn(cv, &showAbilityPopUp))
-        {
-            gBattleScripting.animTurn = 1;
-            gBattleScripting.animTargetsHit = 0;
-            gBattleScripting.battler = cv->battlerAtk;
-            gProtectStructs[cv->battlerAtk].chargingTurn = FALSE;
-            if (gBattleMoveEffects[cv->moveEffect].semiInvulnerableEffect)
-                gBattleMons[cv->battlerAtk].volatiles.semiInvulnerable = STATE_NONE;
-            if (showAbilityPopUp)
-            {
-                BattleScriptCall(BattleScript_MegaSolActivatesTwoTurnMove);
-                result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
-            }
-            else
-            {
-                result = CANCELER_RESULT_SUCCESS;
-            }
-        }
-        else if (cv->holdEffects[cv->battlerAtk] == HOLD_EFFECT_POWER_HERB)
-        {
-            gBattleScripting.animTurn = 1;
-            gBattleScripting.animTargetsHit = 0;
-            gProtectStructs[cv->battlerAtk].chargingTurn = FALSE;
-            if (gBattleMoveEffects[cv->moveEffect].semiInvulnerableEffect)
-                gBattleMons[cv->battlerAtk].volatiles.semiInvulnerable = STATE_NONE;
-            gLastUsedItem = gBattleMons[cv->battlerAtk].item;
-            BattleScriptCall(BattleScript_PowerHerbActivation);
-            result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
-        }
-        else // Use move next turn
-        {
-            gBattleMons[cv->battlerAtk].volatiles.multipleTurns = TRUE;
-            gBattlescriptCurrInstr = BattleScript_MoveEnd;
-            result = CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
-        }
+        return CANCELER_RESULT_RUN_SCRIPT;
     }
 
-    return result;
+    enum TwoTurnMoveActivation twoTurnMoveActivation = GetTwoTurnMoveActivation(cv, GetWeather());
+
+    if (twoTurnMoveActivation == ACTIVATION_NEXT_TURN)
+    {
+        gBattleMons[cv->battlerAtk].volatiles.multipleTurns = TRUE;
+        gBattlescriptCurrInstr = BattleScript_MoveEnd;
+        gBattleStruct->eventState.atkCanceler = CANCELER_END;
+        return CANCELER_RESULT_END;
+    }
+
+    gBattleScripting.animTurn = 1;
+    gBattleScripting.animTargetsHit = 0;
+    gBattleScripting.battler = cv->battlerAtk;
+    gProtectStructs[cv->battlerAtk].chargingTurn = FALSE;
+    if (gBattleMoveEffects[cv->moveEffect].semiInvulnerableEffect)
+        gBattleMons[cv->battlerAtk].volatiles.semiInvulnerable = STATE_NONE;
+
+    switch (twoTurnMoveActivation)
+    {
+    case ACTIVATION_WEATHER:
+        return CANCELER_RESULT_SUCCESS;
+    case ACTIVATION_MEGA_SOL:
+        BattleScriptCall(BattleScript_MegaSolActivatesTwoTurnMove);
+        return CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
+    case ACTIVATION_POWER_HERB:
+        gLastUsedItem = gBattleMons[cv->battlerAtk].item;
+        BattleScriptCall(BattleScript_PowerHerbActivation);
+        return CANCELER_RESULT_RUN_SCRIPT_AND_INCREMENT;
+    case ACTIVATION_NEXT_TURN:
+        break;
+    }
+
+    return CANCELER_RESULT_SUCCESS;
 }
 
 static enum CancelerResult CancelerSnatch(struct BattleCalcValues *cv)
@@ -4934,7 +4883,7 @@ static enum MoveEndResult MoveEndMoveBlockRecoil(struct BattleCalcValues *cv)
 static enum MoveEndResult MoveEndSheerForce(struct BattleCalcValues *cv)
 {
     if (IsSheerForceAffected(cv->move, cv->abilities[cv->battlerAtk]))
-        gBattleScripting.moveendState = MOVEEND_ITEMS_EFFECTS_ALL;
+        gBattleScripting.moveendState = GetConfig(B_SHEER_FORCE_TIMING) >= GEN_CHAMPIONS ? MOVEEND_CARD_BUTTON : MOVEEND_ITEMS_EFFECTS_ALL;
     else
         gBattleScripting.moveendState++;
 
@@ -5432,7 +5381,8 @@ static enum MoveEndResult MoveEndFormChange(struct BattleCalcValues *cv)
     enum MoveEndResult result = MOVEEND_RESULT_CONTINUE;
 
     if (gBattleStruct->battlerState[cv->battlerAtk].originalBattlerPartyId == PARTY_SIZE
-     && TryBattleFormChange(cv->battlerAtk, FORM_CHANGE_BATTLE_AFTER_MOVE, cv->abilities[cv->battlerAtk]))
+     && TryBattleFormChange(cv->battlerAtk, FORM_CHANGE_BATTLE_AFTER_MOVE, cv->abilities[cv->battlerAtk])
+     && !IsSheerForceAffected(cv->move, cv->abilities[cv->battlerAtk]))
     {
         result = MOVEEND_RESULT_RUN_SCRIPT;
         BattleScriptCall(BattleScript_AttackerFormChangeMoveEffect);
@@ -5446,6 +5396,12 @@ static enum MoveEndResult MoveEndLifeOrbShellBell(struct BattleCalcValues *cv)
 {
     enum MoveEndResult result = MOVEEND_RESULT_CONTINUE;
 
+    if (GetConfig(B_SHEER_FORCE_TIMING) >= GEN_CHAMPIONS && IsSheerForceAffected(cv->move, cv->abilities[cv->battlerAtk]))
+    {
+        gBattleScripting.moveendState++;
+        return result;
+    }
+    
     if (ItemBattleEffects(cv->battlerAtk, 0, cv->holdEffects[cv->battlerAtk], IsLifeOrbShellBellActivation))
         result = MOVEEND_RESULT_RUN_SCRIPT;
 
@@ -5459,7 +5415,7 @@ static enum MoveEndResult MoveEndEmergencyExit(struct BattleCalcValues *cv)
     u32 numEmergencyExitBattlers = 0;
     u32 emergencyExitBattlers = 0;
 
-    if (HasAnyBattlerQueuedSwitch())
+    if (HasAnyBattlerQueuedSwitch() && GetConfig(B_EMERGENCY_EXIT) < GEN_CHAMPIONS)
     {
         gBattleScripting.moveendState++;
         return result;
@@ -5502,7 +5458,10 @@ static enum MoveEndResult MoveEndEmergencyExit(struct BattleCalcValues *cv)
         gSpecialStatuses[battler].queuedSwitch = QUEUED_SWITCH_OPEN_PARTY_SCREEN;
         BattleScriptCall(BattleScript_EmergencyExit);
         result = MOVEEND_RESULT_RUN_SCRIPT;
-        break; // Only the fastest Emergency Exit / Wimp Out activates
+        if (GetConfig(B_EMERGENCY_EXIT) < GEN_CHAMPIONS)
+            break; // Only the fastest Emergency Exit / Wimp Out activates
+        else
+            return result;
     }
 
     gBattleScripting.moveendState++;
@@ -5533,7 +5492,7 @@ static enum MoveEndResult MoveEndMoveSwitchUser(struct BattleCalcValues *cv)
     switch (GetMoveEffect(cv->move))
     {
     case EFFECT_HIT_ESCAPE:
-        if (!HasAnyBattlerQueuedSwitch()
+        if (!(HasAnyBattlerQueuedSwitch() && GetConfig(B_QUEUED_SWITCH_TIMINGS) < GEN_CHAMPIONS)
          && gBattleStruct->battlerState[cv->battlerAtk].originalBattlerPartyId == PARTY_SIZE
          && !gBattleStruct->unableToUseMove
          && IsAnyTargetTurnDamaged(cv->battlerAtk, INCLUDING_SUBSTITUTES)
