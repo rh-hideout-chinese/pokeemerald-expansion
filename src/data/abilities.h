@@ -270,7 +270,12 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
     [ABILITY_ILLUMINATE] =
     {
         .name = _("发光"),
-        .description = COMPOUND_STRING("命中率不会被降低"),
+        .description =
+        #if B_ILLUMINATE_EFFECT >= GEN_9
+            COMPOUND_STRING("命中率不会被降低"),
+        #else
+            COMPOUND_STRING("容易遇到野生宝可梦"),
+        #endif
         .aiRating = 0,
         .breakable = TRUE,
     },
@@ -2463,15 +2468,15 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
         .description = COMPOUND_STRING("无特殊效果。"),
     },
 
-    [ABILITY_AURA_GUARD] =
-    {
-        .name = _("Aura Guard"),
-        .description = COMPOUND_STRING("Halves damage from contact."),
-    },
-
     [ABILITY_SPICY_SPRAY] =
     {
         .name = _("辣椒喷发"),
         .description = COMPOUND_STRING("受攻击时使对手灼伤"),
+    },
+
+    [ABILITY_AURA_GUARD] =
+    {
+        .name = _("Aura Guard"),
+        .description = COMPOUND_STRING("Halves damage from contact."),
     },
 };

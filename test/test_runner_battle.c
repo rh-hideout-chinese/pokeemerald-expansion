@@ -2066,13 +2066,22 @@ static void TearDownBattle(void)
 {
     // Zero out the parties, data in them could potentially carry over
     for (enum BattleTrainer trainer = B_TRAINER_PLAYER; trainer < MAX_BATTLE_TRAINERS; trainer++)
+    {
         ZeroPartyMons(gParties[trainer]);
+        gPartiesCount[trainer] = 0;
+    }
     SetCurrentDifficultyLevel(DIFFICULTY_NORMAL);
 
     // Set Battle Controllers to BATTLE_CONTROLLER_NONE
     for (u32 i = 0; i < MAX_BATTLERS_COUNT; i++)
     {
         gBattlerBattleController[i] = BATTLE_CONTROLLER_NONE;
+    }
+
+    // Set battler party indexes to zero
+    for (u32 i = 0; i < MAX_BATTLERS_COUNT; i++)
+    {
+        gBattlerPartyIndexes[i] = 0; // make PARTY_SLOT_0 in upcoming
     }
 
     FreeMonSpritesGfx();
@@ -4069,6 +4078,7 @@ void AssumeMoveEffectStatChange_(u32 sourceLine, u32 moveId, struct StatChangeAs
                 ASSUME(asc.evasion == (-1 * effect->evasion));
 
             ASSUME(asc.self == effect->self);
+            ASSUME(asc.onSide == effect->onSide);
         }
         else if (effect->moveEffect == MOVE_EFFECT_STAT_PLUS)
         {
@@ -4092,6 +4102,7 @@ void AssumeMoveEffectStatChange_(u32 sourceLine, u32 moveId, struct StatChangeAs
                 ASSUME(asc.evasion == effect->evasion);
 
             ASSUME(asc.self == effect->self);
+            ASSUME(asc.onSide == effect->onSide);
         }
     }
 
