@@ -1890,9 +1890,9 @@ void BXPY_InitializeAndSaveCallback(u32 bringSize, u32 pickSize, u32 battleFlags
     SetMainCallback2(BXPY_SetupCallback);
 }
 
-static const u8 sText_RemoveMenu[] = _("Remove\nSummary\nCancel");
-static const u8 sText_AddMenu[] = _("Add\nSummary\nCancel");
-static const u8 sText_FullMenu[] = _("Summary\nCancel");
+static const u8 sText_RemoveMenu[] = _("取消选择\n查看能力\n返回");
+static const u8 sText_AddMenu[] = _("选择\n查看能力\n返回");
+static const u8 sText_FullMenu[] = _("查看能力\n返回");
 
 static bool8 BXPY_IsCursorOnSelectedMon(void)
 {

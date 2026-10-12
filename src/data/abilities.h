@@ -2476,7 +2476,7 @@ const struct AbilityInfo gAbilitiesInfo[ABILITIES_COUNT] =
 
     [ABILITY_AURA_GUARD] =
     {
-        .name = _("Aura Guard"),
+        .name = _("波导防护"),
         .description = COMPOUND_STRING("Halves damage from contact."),
     },
 };

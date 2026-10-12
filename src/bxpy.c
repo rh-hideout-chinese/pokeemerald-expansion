@@ -562,9 +562,9 @@ bool8 BXPY_SummaryScreen_ShouldShowFullItem(enum PokemonSummaryScreenMode mode)
 
 const u8 *BXPY_ReturnItemText(enum Item item)
 {
-    static const u8 sText_Unknown[] = _("Unknown");
-    static const u8 sText_Question[] = _("???");
-    static const u8 sText_None[] = _("NONE");
+    static const u8 sText_Unknown[] = _("未知");
+    static const u8 sText_Question[] = _("？？？");
+    static const u8 sText_None[] = _("无");
     bool32 hasItem = (item != ITEM_NONE);
 
     switch (BXPY_GetEnemyItemVisibilityLevel())
