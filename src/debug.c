@@ -15,6 +15,7 @@
 #include "event_object_movement.h"
 #include "event_scripts.h"
 #include "field_message_box.h"
+#include "field_move.h"
 #include "field_screen_effect.h"
 #include "field_weather.h"
 #include "follower_npc.h"
@@ -313,6 +314,7 @@ static void DebugAction_PCBag_ClearBoxes(u8 taskId);
 static void DebugAction_Party_HealParty(u8 taskId);
 static void DebugAction_Party_ClearPokerus(u8 taskId);
 static void DebugAction_Party_ClearParty(u8 taskId);
+static void DebugAction_Party_SetFieldMovesParty(u8 taskId);
 static void DebugAction_Party_SetParty(u8 taskId);
 static void DebugAction_Party_BattleSingle(u8 taskId);
 
@@ -651,6 +653,7 @@ static const struct DebugMenuOption sDebugMenu_Actions_Party[] =
     { COMPOUND_STRING("给予宝可梦病毒"),       DebugAction_ExecuteScript, Debug_EventScript_GivePokerus },
     { COMPOUND_STRING("清除宝可梦病毒"),      DebugAction_Party_ClearPokerus},
     { COMPOUND_STRING("清空同行宝可梦"),        DebugAction_Party_ClearParty },
+    { COMPOUND_STRING("设置秘传招式宝可梦"),   DebugAction_Party_SetFieldMovesParty },
     { COMPOUND_STRING("设置同行宝可梦"),          DebugAction_Party_SetParty },
     { COMPOUND_STRING("开始Debug对战"), DebugAction_Party_BattleSingle },
     { NULL }
@@ -4890,6 +4893,25 @@ const struct Trainer sDebugTrainers[DIFFICULTY_COUNT][DEBUG_TRAINERS_COUNT] =
 {
 #include "data/debug_trainers.h"
 };
+
+static void DebugAction_Party_SetFieldMovesParty(u8 taskId)
+{
+    ZeroPlayerPartyMons();
+    u32 max = FIELD_MOVES_COUNT;
+    assertf(FIELD_MOVES_COUNT <= PARTY_SIZE * MAX_MON_MOVES, "Can't load more than %d field moves in party", PARTY_SIZE * MAX_MON_MOVES)
+    {
+        max = PARTY_SIZE * MAX_MON_MOVES;
+    }
+    for (u32 i = 0; i < max; i++)
+    {
+        if (i % 4 == 0)
+            CreateRandomMon(&gParties[B_TRAINER_PLAYER][i / 4], SPECIES_SMEARGLE, 100);
+        enum Move move = FieldMove_GetMoveId(i);
+        SetMonData(&gParties[B_TRAINER_PLAYER][i / 4], MON_DATA_MOVE1 + (i % 4), &move);
+    }
+    ScriptContext_Enable();
+    Debug_DestroyMenu_Full(taskId);
+}
 
 const struct Trainer* GetDebugAiTrainer(void)
 {
