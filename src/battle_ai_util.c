@@ -1801,8 +1801,9 @@ enum Ability AI_DecideKnownAbilityForTurn(enum BattlerId battlerId)
     if (knownAbility == ABILITY_NONE)
         return knownAbility;
 
-    if (gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].ability != ABILITY_NONE)
-        return gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].ability;
+    enum Ability partyMonAbility = gAiPartyData->mons[GetBattlerSide(battlerId)][gBattlerPartyIndexes[battlerId]].ability;
+    if (partyMonAbility != ABILITY_NONE)
+        return partyMonAbility;
 
     // Abilities that prevent fleeing - treat as always known
     if (knownAbility == ABILITY_SHADOW_TAG || knownAbility == ABILITY_MAGNET_PULL || knownAbility == ABILITY_ARENA_TRAP)
@@ -6573,6 +6574,7 @@ static bool32 AI_CanStatChangeBePrevented(struct BattleCalcValues *cv)
     case TARGET_ALL_BATTLERS:
         if (cv->battlerAtk == cv->battlerDef)
             return FALSE;
+        [[fallthrough]];
     default:
         if (IsSubstituteProtected(cv->battlerAtk, cv->battlerDef, cv->abilities[cv->battlerAtk], cv->move)
          || cv->abilities[cv->battlerDef] == ABILITY_GOOD_AS_GOLD)

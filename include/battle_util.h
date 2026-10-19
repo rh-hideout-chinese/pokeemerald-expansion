@@ -194,7 +194,10 @@ enum DamageCategory GetCategoryBasedOnStats(enum BattlerId battler);
 void SetShellSideArmCategory(void);
 bool32 MoveIsAffectedBySheerForce(enum Move move);
 bool32 IsSheerForceAffected(enum Move move, enum Ability ability);
+void SetItemsToRestoreAfterBattle(enum BattleTrainer trainer, u32 partySlot);
 void TryRestoreHeldItems(void);
+void RestoreCaughtWildMonHeldItem(struct Pokemon *mon, enum BattlerId battler);
+struct LostItem *GetLostItemState(enum BattleTrainer trainer, u32 slot);
 bool32 CanStealItem(enum BattlerId battlerStealing, enum BattlerId battlerItem, enum Item item);
 void TrySaveExchangedItem(enum BattlerId battler, enum Item stolenItem);
 bool32 IsBattlerAffectedByHazards(enum BattlerId battler, enum HoldEffect holdEffect, bool32 toxicSpikes);
@@ -332,6 +335,7 @@ u32 GetWeatherFromOverworldWeather(u32 owWeather);
 enum BattleTerrain GetBattleTerrainFromOverworldWeather(u32 owWeather);
 bool32 IsCommanderActive(enum BattlerId battler);
 bool32 IsWholeSideAlive(enum BattlerId sideBattler);
+bool32 IsBattlerJawLocked(enum BattlerId battler);
 
 // Damage calc modifiers
 uq4_12_t GetBurnOrFrostBiteModifier(struct DamageContext *ctx);

@@ -918,7 +918,7 @@ static void Cmd_setchargingturn(void)
     {
         gBattleMons[gBattlerAttacker].volatiles.multipleTurns = TRUE;
         gLockedMoves[gBattlerAttacker] = gCurrentMove;
-        gProtectStructs[gBattlerAttacker].chargingTurn = TRUE;
+        gBattleMons[gBattlerAttacker].volatiles.chargeTurn = TRUE;
     }
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -1260,7 +1260,7 @@ u32 GetBattlerRawSpeedOrder(enum BattlerId battler)
 }
 
 // battlerStealer steals the item of itemBattler
-void StealTargetItem(enum BattlerId battlerStealer, enum BattlerId itemBattler, enum Item itemOverride)
+void StealTargetItem(enum BattlerId battlerStealer, enum BattlerId itemBattler, enum Item itemOverride, bool32 stealWildItem)
 {
     if (itemOverride)
     {
@@ -1272,14 +1272,7 @@ void StealTargetItem(enum BattlerId battlerStealer, enum BattlerId itemBattler, 
         gBattleMons[itemBattler].item = ITEM_NONE;
     }
 
-    if (GetConfig(B_STEAL_WILD_ITEMS) >= GEN_9
-     && !(gBattleTypeFlags & (BATTLE_TYPE_TRAINER | BATTLE_TYPE_PALACE))
-     && GetMoveEffect(gCurrentMove) == EFFECT_STEAL_ITEM
-     && battlerStealer == gBattlerAttacker) // ensure that Pickpocket isn't activating this
-    {
-        AddBagItem(gLastUsedItem, 1);
-    }
-    else
+    if (!stealWildItem)
     {
         RecordItemEffectBattle(battlerStealer, GetItemHoldEffect(gLastUsedItem));
         gBattleMons[battlerStealer].item = gLastUsedItem;
@@ -1425,7 +1418,7 @@ static void Cmd_setadditionaleffects(void)
              && !(additionalEffect->pledgeCombo && gBattleStruct->pledgeState != PLEDGE_COMBO_ATTACK)
              && !(additionalEffect->onlyIfTargetRaisedStats && !gProtectStructs[effectBattler].statRaised)
              && (effectBattler == gBattlerAttacker) == additionalEffect->self
-             && gProtectStructs[gBattlerAttacker].chargingTurn
+             && gBattleMons[gBattlerAttacker].volatiles.chargeTurn
              && additionalEffect->onChargeTurnOnly)
             {
                 percentChance = CalcSecondaryEffectChance(gBattlerAttacker, cv.abilities[cv.battlerAtk], additionalEffect, gCurrentMove);
@@ -1472,7 +1465,7 @@ static void Cmd_clearvolatile(void)
 
     SetMonVolatile(battler, cmd->_volatile, 0);
     if (cmd->_volatile == VOLATILE_MULTIPLETURNS)
-        gProtectStructs[battler].chargingTurn = FALSE;
+        gBattleMons[battler].volatiles.chargeTurn = FALSE;
 
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
@@ -1845,7 +1838,7 @@ static void Cmd_getexp(void)
             *expMonId = gBattleStruct->expGettersOrder[0];
             gBattleStruct->expSentInMons = sentInBits;
         }
-        // fall through
+        [[fallthrough]];
     case 2: // set exp value to the poke in expgetter_id and print message
         if (gBattleControllerExecFlags == 0)
         {
@@ -3209,7 +3202,7 @@ static void Cmd_switchhandleorder(void)
             RecordedBattle_SetBattlerAction(battler, gBattleResources->bufferB[battler][1]);
             gBattleStruct->recordedActionSet |= 1u << battler;
         }
-        // fall through
+        [[fallthrough]];
     case 3:
         gBattleCommunication[0] = gBattleResources->bufferB[battler][1];
         gBattleStruct->monToSwitchIntoId[battler] = (enum PartyMon)gBattleResources->bufferB[battler][1];
@@ -3834,18 +3827,15 @@ static void Cmd_statusanimation(void)
     }
 }
 
-#define DONE_TARGET_FAILURE (gBattleStruct->eventState.atkCanceler == CANCELER_END)
 static void Cmd_futuresighttargetfailure(void)
 {
     CMD_ARGS();
 
-    // Just do CancelerTargetFailure
-    if (!DONE_TARGET_FAILURE && DoAttackCanceler() != CANCELER_RESULT_SUCCESS)
+    if (DoAttackCanceler() != CANCELER_RESULT_SUCCESS)
         return;
 
     gBattlescriptCurrInstr = cmd->nextInstr;
 }
-#undef DONE_TARGET_FAILURE
 
 static void Cmd_yesnobox(void)
 {
@@ -4397,6 +4387,7 @@ bool32 CanUseLastResort(enum BattlerId battler)
 static void RemoveAllWeather(void)
 {
     gBattleStruct->weatherDuration = 0;
+    gBattleStruct->weatherDurationTotal = 0;
 
     if (gBattleWeather & B_WEATHER_RAIN_PRIMAL)
         gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_WEATHER_END_HEAVY_RAIN;
@@ -5602,6 +5593,7 @@ static void FinalizeCapture(void)
     gBattlescriptCurrInstr = BattleScript_SuccessBallThrow;
     struct Pokemon *caughtMon = GetBattlerMon(gBattlerTarget);
     SetMonData(caughtMon, MON_DATA_POKEBALL, &ballId);
+    RestoreCaughtWildMonHeldItem(caughtMon, gBattlerTarget);
 
     if (CalculatePlayerPartyCount() == PARTY_SIZE)
         gBattleCommunication[MULTISTRING_CHOOSER] = 0;
@@ -6122,36 +6114,20 @@ static void Cmd_givecaughtmon(void)
         }
         break;
     case GIVECAUGHTMON_HANDLE_CHOSEN_MON:
-        if (gSelectedMonPartyId != PARTY_MON_NONE)
+        if (gSelectedMonPartyId != PARTY_MON_CANCEL)
         {
-            if (gSelectedMonPartyId == PARTY_MON_CANCEL)
+            TryRevertPartyMonFormChange(gSelectedMonPartyId);
+            // Mon chosen, try to put it in the PC
+            if (CopyMonToPC(&gParties[B_TRAINER_PLAYER][gSelectedMonPartyId]) == MON_GIVEN_TO_PC)
             {
-                // Choosing Pokemon was cancelled
-                gSelectedMonPartyId = PARTY_MON_NONE;
-                gBattleCommunication[MULTIUSE_STATE] = GIVECAUGHTMON_GIVE_AND_SHOW_MSG;
-            }
-            else
-            {
-                //Before sending to PC, we revert battle form
-                TryRevertPartyMonFormChange(gSelectedMonPartyId);
-                // Mon chosen, try to put it in the PC
-                if (CopyMonToPC(&gParties[B_TRAINER_PLAYER][gSelectedMonPartyId]) == MON_GIVEN_TO_PC)
-                {
-                    GetMonNickname(&gParties[B_TRAINER_PLAYER][gSelectedMonPartyId], gStringVar2);
-                    StringCopy(gStringVar1, GetBoxNamePtr(GetPCBoxToSendMon()));
-                    ZeroMonData(&gParties[B_TRAINER_PLAYER][gSelectedMonPartyId]);
-                    gBattleStruct->itemLost[B_TRAINER_PLAYER][gSelectedMonPartyId].originalItem = ITEM_NONE;
-                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWAPPED_INTO_PARTY;
-                    gSelectedMonPartyId = PARTY_MON_NONE;
-                    gBattleCommunication[MULTIUSE_STATE] = GIVECAUGHTMON_GIVE_AND_SHOW_MSG;
-                }
-                else
-                {
-                    gSelectedMonPartyId = PARTY_MON_NONE;
-                    gBattleCommunication[MULTIUSE_STATE] = GIVECAUGHTMON_GIVE_AND_SHOW_MSG;
-                }
+                GetMonNickname(&gParties[B_TRAINER_PLAYER][gSelectedMonPartyId], gStringVar2);
+                StringCopy(gStringVar1, GetBoxNamePtr(GetPCBoxToSendMon()));
+                ZeroMonData(&gParties[B_TRAINER_PLAYER][gSelectedMonPartyId]);
+                gBattleStruct->itemLost[B_TRAINER_PLAYER][gSelectedMonPartyId].originalItem = ITEM_NONE;
+                gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWAPPED_INTO_PARTY;
             }
         }
+        gBattleCommunication[MULTIUSE_STATE] = GIVECAUGHTMON_GIVE_AND_SHOW_MSG;
         break;
     case GIVECAUGHTMON_GIVE_AND_SHOW_MSG:
     {
