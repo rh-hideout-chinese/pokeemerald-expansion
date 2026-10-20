@@ -15,7 +15,7 @@
 #include "malloc.h"
 #include "menu.h"
 #include "menu_helpers.h"
-#include "line_break.h"
+#include "chinese_text.h"
 #include "palette.h"
 #include "party_menu.h"
 #include "item.h"
@@ -241,7 +241,7 @@ static void Detail_RefreshEffectsScrollbar(void);
 static void Detail_DestroyIconSprite(void);
 static void Detail_UpdateScrollbarLane(bool32 hasScrollbar);
 static void Detail_SetDescriptionPlaceholder(enum BattleInfoLabels  label);
-static void Detail_ClampTextLines(u8 *text, u32 maxLines);
+static void Detail_WrapDescription(u8 *dest, const u8 *src, u32 capacity, u32 fontId, u32 maxWidth, u32 maxLines);
 static void Detail_ResetWithTransparentTextColor(u32 windowId);
 static const u8 *GetSideTrainerName(enum BattleSide side);
 static u32 GetOpponentTrainerCount(void);
@@ -2845,23 +2845,66 @@ static void Detail_SetDescriptionPlaceholder(enum BattleInfoLabels label)
     }
 }
 
-static void Detail_ClampTextLines(u8 *text, u32 maxLines)
+static void Detail_WrapDescription(u8 *dest, const u8 *src, u32 capacity, u32 fontId, u32 maxWidth, u32 maxLines)
 {
+    u32 length = 0;
+    u32 lineStart = 0;
     u32 line = 1;
 
-    while (*text != EOS)
+    if (capacity == 0)
+        return;
+
+    dest[0] = EOS;
+    if (maxWidth == 0 || maxLines == 0)
+        return;
+
+    while (*src != EOS)
     {
-        if (*text == CHAR_NEWLINE)
+        u32 charSize = 1;
+
+        if (*src == CHAR_NEWLINE || *src == CHAR_PROMPT_SCROLL || *src == CHAR_PROMPT_CLEAR)
         {
+            if (line == maxLines || length + 1 >= capacity)
+                break;
+
+            dest[length++] = CHAR_NEWLINE;
+            lineStart = length;
             line++;
-            if (line > maxLines)
-            {
-                *text = EOS;
-                return;
-            }
+            src++;
+            continue;
         }
-        text++;
+
+        // Consume whole Chinese characters, symbols, and control sequences.
+        if (*src == EXT_CTRL_CODE_BEGIN)
+            charSize = 1 + GetExtCtrlCodeLength(src[1]);
+        else if (*src == CHAR_KEYPAD_ICON || *src == CHAR_EXTRA_SYMBOL || IsChineseChar(src[0], src[1], fontId, FALSE))
+            charSize = 2;
+
+        if (length + charSize >= capacity)
+            break;
+
+        for (u32 i = 0; i < charSize; i++)
+            dest[length + i] = src[i];
+        dest[length + charSize] = EOS;
+
+        if (length > lineStart && GetStringWidth(fontId, dest, 0) > maxWidth)
+        {
+            if (line == maxLines || length + charSize + 1 >= capacity)
+                break;
+
+            // Insert a newline before the character that would overflow.
+            for (u32 i = charSize; i > 0; i--)
+                dest[length + i] = dest[length + i - 1];
+            dest[length++] = CHAR_NEWLINE;
+            lineStart = length;
+            line++;
+        }
+
+        length += charSize;
+        src += charSize;
     }
+
+    dest[length] = EOS;
 }
 
 static void Detail_RefreshDescriptionWindow(void)
@@ -2870,6 +2913,7 @@ static void Detail_RefreshDescriptionWindow(void)
     u32 descFont = FONT_SMALL_NARROWER;
 
     u8 descriptionBuffer[512] = {0};
+    u8 wrappedBuffer[sizeof(descriptionBuffer)];
     enum BattleInfoLabels label = sData->activeEffects[sData->effectsCursor].label;
     const u8 *desc = sBattleInfoEffects[label].description;
 
@@ -2885,28 +2929,24 @@ static void Detail_RefreshDescriptionWindow(void)
         StringExpandPlaceholders(descriptionBuffer, desc);
     }
 
-    u32 wrapWidth = WindowWidthPx(windowId) - (2 * 2) - 2;
-    wrapWidth = max(wrapWidth, 8);
+    u32 wrapWidth = min(B_INFO_DETAIL_DESC_TEXT_WIDTH, WindowWidthPx(windowId) - (2 * 2));
 
     u32 windowHeightPx = GetWindowAttribute(windowId, WINDOW_HEIGHT) * 8;
     u32 availableHeight = (windowHeightPx > 2 + 1) ? windowHeightPx - 2 - 1 : 1;
 
-    u32 lineHeight = GetFontAttribute(descFont, FONTATTR_MAX_LETTER_HEIGHT) + GetFontAttribute(descFont, FONTATTR_LINE_SPACING);
-    lineHeight = max(lineHeight, 1);
+    u32 fontHeight = GetFontAttribute(descFont, FONTATTR_MAX_LETTER_HEIGHT);
+    u32 lineHeight = max(B_INFO_DETAIL_DESC_LINE_HEIGHT, fontHeight);
+    u32 lineSpacing = lineHeight - fontHeight;
 
     u32 maxLines = availableHeight / lineHeight;
     maxLines = max(maxLines, 1);
 
-    BreakStringAutomatic(descriptionBuffer, wrapWidth, maxLines, descFont, HIDE_SCROLL_PROMPT);
+    Detail_WrapDescription(wrappedBuffer, descriptionBuffer, sizeof(wrappedBuffer), descFont, wrapWidth, maxLines);
 
-    u8 *end = descriptionBuffer + StringLength(descriptionBuffer);
-    WrapFontIdToFit(descriptionBuffer, end, descFont, wrapWidth);
-    Detail_ClampTextLines(descriptionBuffer, maxLines);
-
-    if (descriptionBuffer[0] != EOS)
+    if (wrappedBuffer[0] != EOS)
     {
-        AddTextPrinterParameterized4(windowId, descFont, 2, 2, 0, 0,
-                                     sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, descriptionBuffer);
+        AddTextPrinterParameterized4(windowId, descFont, 2, 2, 0, lineSpacing,
+                                     sTextColor_BattleInfo_Default, TEXT_SKIP_DRAW, wrappedBuffer);
     }
 
     PutWindowTilemap(windowId);
