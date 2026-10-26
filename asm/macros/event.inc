@@ -177,7 +177,7 @@
 
 	@ Copies the value of source into destination.
 	.macro copyvar destination:req, source:req, warn=TRUE
-	.if \warn && !((\source >= VARS_START && \source <= VARS_END) || (\source >= SPECIAL_VARS_START && \source <= SPECIAL_VARS_END))
+	.if \warn && (\source != 0) && !((\source >= VARS_START && \source <= VARS_END) || (\source >= SPECIAL_VARS_START && \source <= SPECIAL_VARS_END))
 	.warning "copyvar with a value that is not a VAR_ constant; did you mean setvar instead?"
 	.endif
 	.byte SCR_OP_COPYVAR
@@ -2997,6 +2997,29 @@
 	callnative ScrCmd_getmassoutbreakdata
 	.2byte \var
 	.byte \dataField
+	.endm
+
+@ Safaris
+
+	@ sets VAR_RESULT to the currently active safariId, returns 0/SAFARI_EVENT_NONE if there is no active safari
+	.macro getactivesafari
+	callnative ScrCmd_getactivesafari
+	.endm
+
+	.macro safari_enter safariId:req
+	callnative ScrCmd_safari_enter
+	.byte \safariId
+	.endm
+
+	.macro safari_exitnowarp
+	callnative ScrCmd_safari_exit
+	.byte FALSE
+	.endm
+
+	.macro safari_exit
+	callnative ScrCmd_safari_exit
+	.byte TRUE
+	waitstate
 	.endm
 
 @ FRLG

@@ -1052,8 +1052,8 @@ static void HandleSetEffectEerieSpell(struct BattleCalcValues *cv, struct SetEff
         if (gBattleMons[se->effectBattler].pp[i] == 0)
             CancelMultiTurnMoves(se->effectBattler);
 
-        PrepareStringBattleWithWait(STRINGID_PKMNREDUCEDPP, cv->battlerAtk);
-        BattleScriptPushAndSet(se->script, BattleScript_WaitMessage);
+        gBattleScripting.savedStringId = STRINGID_PKMNREDUCEDPP;
+        BattleScriptPushAndSet(se->script, BattleScript_PrintSavedMessage);
     }
 }
 
@@ -1063,69 +1063,50 @@ static void HandleSetEffectFling(struct BattleCalcValues *cv, struct SetEffect *
     {
         enum Item item = ITEM_NONE;
 
-        switch (gBattleStruct->flungItem)
-        {
-        case FLUNG_ITEM_NONE:
-            gBattleStruct->flungItem = FLUNG_ITEM_REMOVE;
-            item = gLastUsedItem = gBattleStruct->flingItem = gBattleMons[cv->battlerAtk].item;
-            break;
-        case FLUNG_ITEM_REMOVE:
-        case FLUNG_ITEM_REMOVED:
-            gBattleStruct->flungItem = FLUNG_ITEM_REMOVED;
-            item = gLastUsedItem = gBattleStruct->flingItem;
-            break;
-        }
+        item = gLastUsedItem = gBattleStruct->flingItem;
 
         enum HoldEffect holdEffect = GetItemHoldEffect(item);
 
         if (IsMoveEffectBlockedByTarget(cv->abilities[se->effectBattler]))
         {
-            BattleScriptPush(se->script);
-            gBattlescriptCurrInstr = BattleScript_FlingBlockedByShieldDust;
+            BattleScriptPushAndSet(se->script, BattleScript_FlingBlockedByShieldDust);
             return;
         }
 
         if (GetItemPocket(item) == POCKET_BERRIES)
         {
-            BattleScriptPush(se->script);
-            gBattlescriptCurrInstr = BattleScript_FlingConsumeBerry;
+            BattleScriptPushAndSet(se->script, BattleScript_FlingConsumeBerry);
             return;
         }
-
-        BattleScriptPush(se->script);
-        gBattlescriptCurrInstr = BattleScript_RemoveItem;
-
-        struct SetEffect flingEffect = {0};
-        flingEffect.script = gBattlescriptCurrInstr;
-        flingEffect.effectBattler = se->effectBattler;
 
         switch (holdEffect)
         {
         case HOLD_EFFECT_FLAME_ORB:
-            flingEffect.moveEffect = MOVE_EFFECT_BURN;
-            SetMoveEffect(cv, &flingEffect);
+            se->moveEffect = MOVE_EFFECT_BURN;
+            SetMoveEffect(cv, se);
             break;
         case HOLD_EFFECT_TOXIC_ORB:
-            flingEffect.moveEffect = MOVE_EFFECT_TOXIC;
-            SetMoveEffect(cv, &flingEffect);
+            se->moveEffect = MOVE_EFFECT_TOXIC;
+            SetMoveEffect(cv, se);
             break;
         case HOLD_EFFECT_LIGHT_BALL:
-            flingEffect.moveEffect = MOVE_EFFECT_PARALYSIS;
-            SetMoveEffect(cv, &flingEffect);
+            se->moveEffect = MOVE_EFFECT_PARALYSIS;
+            SetMoveEffect(cv, se);
             break;
         case HOLD_EFFECT_TYPE_POWER:
             if (GetItemSecondaryId(item) == TYPE_POISON)
             {
-                flingEffect.moveEffect = MOVE_EFFECT_POISON;
-                SetMoveEffect(cv, &flingEffect);
+                se->moveEffect = MOVE_EFFECT_POISON;
+                SetMoveEffect(cv, se);
             }
             break;
         case HOLD_EFFECT_FLINCH:
-            flingEffect.moveEffect = MOVE_EFFECT_FLINCH;
-            SetMoveEffect(cv, &flingEffect);
+            se->moveEffect = MOVE_EFFECT_FLINCH;
+            SetMoveEffect(cv, se);
             break;
         case HOLD_EFFECT_MENTAL_HERB:
         case HOLD_EFFECT_WHITE_HERB:
+            BattleScriptPush(se->script);
             ItemBattleEffects(se->effectBattler, 0, holdEffect, IsOnFlingActivation);
             break;
         default:
@@ -1600,8 +1581,8 @@ static void HandleSetEffectRecycle(struct BattleCalcValues *cv, struct SetEffect
             );
         MarkBattlerForControllerExec(se->effectBattler);
 
-        PrepareStringBattleWithWait(STRINGID_XFOUNDONEY, se->effectBattler);
-        BattleScriptPushAndSet(se->script, BattleScript_WaitMessage);
+        gBattleScripting.savedStringId = STRINGID_XFOUNDONEY;
+        BattleScriptPushAndSet(se->script, BattleScript_PrintSavedMessage);
     }
 }
 
@@ -1684,8 +1665,8 @@ static void HandleSetEffectSpite(struct BattleCalcValues *cv, struct SetEffect *
         if (gBattleMons[se->effectBattler].pp[moveSlot] == 0)
             CancelMultiTurnMoves(se->effectBattler);
 
-        PrepareStringBattleWithWait(STRINGID_PKMNREDUCEDPP, se->effectBattler);
-        BattleScriptPushAndSet(se->script, BattleScript_WaitMessage);
+        gBattleScripting.savedStringId = STRINGID_PKMNREDUCEDPP;
+        BattleScriptPushAndSet(se->script, BattleScript_PrintSavedMessage);
     }
 }
 
@@ -2645,9 +2626,8 @@ static void HandleSetEffectSketch(struct BattleCalcValues *cv, struct SetEffect 
         MarkBattlerForControllerExec(cv->battlerAtk);
 
         PREPARE_MOVE_BUFFER(gBattleTextBuff1, moveToSketch)
-
-        PrepareStringBattleWithWait(STRINGID_PKMNSKETCHEDMOVE, cv->battlerAtk);
-        BattleScriptPushAndSet(se->script, BattleScript_WaitMessage);
+        gBattleScripting.savedStringId = STRINGID_PKMNSKETCHEDMOVE;
+        BattleScriptPushAndSet(se->script, BattleScript_PrintSavedMessage);
     }
 }
 
@@ -3632,7 +3612,6 @@ static void HandleSetEffectBestow(struct BattleCalcValues *cv, struct SetEffect 
     else if (!cv->onlyChecking)
     {
         BestowItem(cv->battlerAtk, se->effectBattler);
-        PrepareStringBattleWithWait(STRINGID_BESTOWITEMGIVING, cv->battlerAtk);
         BattleScriptPushAndSet(se->script, BattleScript_Bestow);
     }
 }
@@ -3651,7 +3630,7 @@ static void HandleSetEffectStickyWeb(struct BattleCalcValues *cv, struct SetEffe
         gSideTimers[effectSide].stickyWebBattlerId = cv->battlerAtk; // For Mirror Armor
         gSideTimers[effectSide].stickyWebBattlerSide = GetBattlerSide(cv->battlerAtk); // For Court Change/Defiant - set this to the user's side
 
-        PrepareStringBattle(STRINGID_STICKYWEBUSED, se->effectBattler);
+        PrepareStringBattleWithWait(STRINGID_STICKYWEBUSED, se->effectBattler);
         BattleScriptPushAndSet(se->script, BattleScript_WaitMessage);
     }
 }
@@ -3733,7 +3712,7 @@ static void HandleSetEffectTopsyTurvy(struct BattleCalcValues *cv, struct SetEff
             gBattleMons[se->effectBattler].statStages[stat] = MAX_STAT_STAGE - gBattleMons[se->effectBattler].statStages[stat] + MIN_STAT_STAGE;
         }
 
-        PrepareStringBattle(STRINGID_TOPSYTURVYSWITCHEDSTATS, se->effectBattler);
+        PrepareStringBattleWithWait(STRINGID_TOPSYTURVYSWITCHEDSTATS, se->effectBattler);
         BattleScriptPushAndSet(se->script, BattleScript_WaitMessage);
     }
 }

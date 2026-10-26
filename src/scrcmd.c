@@ -47,6 +47,7 @@
 #include "overworld.h"
 #include "rotating_tile_puzzle.h"
 #include "rtc.h"
+#include "safari_zone.h"
 #include "script.h"
 #include "script_menu.h"
 #include "script_movement.h"
@@ -461,6 +462,7 @@ bool8 ScrCmd_setvar(struct ScriptContext *ctx)
 bool8 ScrCmd_copyvar(struct ScriptContext *ctx)
 {
     u32 varId = ScriptReadHalfword(ctx);
+    assertf(varId != 0, "variable %d set to 0", varId);
     u16 *ptr = GetVarPointer(varId);
 
     Script_RequestEffects(SCREFF_V1);
@@ -3377,6 +3379,29 @@ bool8 ScrCmd_getbraillestringwidth(struct ScriptContext * ctx)
         msg = (u8 *)ctx->data[0];
 
     gSpecialVar_0x8004 = GetStringWidth(FONT_BRAILLE, msg, -1);
+    return FALSE;
+}
+
+bool8 ScrCmd_safari_enter(struct ScriptContext * ctx)
+{
+    u8 value = ScriptReadByte(ctx);
+
+    Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
+    EnterSafariMode(value);
+    return FALSE;
+}
+
+bool8 ScrCmd_safari_exit(struct ScriptContext * ctx)
+{
+    u8 doWarp = ScriptReadByte(ctx);
+
+    ExitSafariMode();
+    if (doWarp)
+    {
+        DoWarp();
+        ResetInitialPlayerAvatarState();
+        return TRUE;
+    }
     return FALSE;
 }
 
