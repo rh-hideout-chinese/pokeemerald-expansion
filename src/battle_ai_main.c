@@ -209,12 +209,10 @@ void BattleAI_SetupItems(void)
         data[i] = 0;
 
     // Items are allowed to use in ONLY trainer battles.
-    if ((gBattleTypeFlags & BATTLE_TYPE_TRAINER)
-        && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_SAFARI | BATTLE_TYPE_BATTLE_TOWER
-                               | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_SECRET_BASE | BATTLE_TYPE_FRONTIER
-                               | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_RECORDED_LINK)
-            )
-       )
+    if (IsTrainerBattle()
+        && !HasAnyBattleFlags(BATTLE_TYPE_LINK | BATTLE_TYPE_SAFARI | BATTLE_TYPE_BATTLE_TOWER
+        | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_SECRET_BASE | BATTLE_TYPE_FRONTIER
+        | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_RECORDED_LINK))
     {
         for (u32 itemIndex = 0; itemIndex < MAX_TRAINER_ITEMS; itemIndex++)
         {
@@ -254,7 +252,7 @@ static bool32 IsSmartBattle(void)
     if (IsSpecialTrainer(TRAINER_BATTLE_PARAM.opponentA))
         return FALSE; // Don't set flags for link battle unless Battle Tower link multi mode
 
-    return gBattleTypeFlags & BATTLE_TYPE_HAS_AI || IsWildMonSmart();
+    return BattleTypeHasAi() || IsWildMonSmart();
 }
 
 u64 GetAiFlags(u16 trainerId, enum BattlerId battler)
@@ -271,17 +269,17 @@ u64 GetAiFlags(u16 trainerId, enum BattlerId battler)
     }
     else
     {
-        if (gBattleTypeFlags & BATTLE_TYPE_RECORDED)
+        if (HasAnyBattleFlags(BATTLE_TYPE_RECORDED))
             flags = GetAiScriptsInRecordedBattle(battler);
-        else if (gBattleTypeFlags & BATTLE_TYPE_SAFARI)
+        else if (HasAnyBattleFlags(BATTLE_TYPE_SAFARI))
             flags = AI_FLAG_SAFARI;
-        else if (gBattleTypeFlags & BATTLE_TYPE_ROAMER)
+        else if (HasAnyBattleFlags(BATTLE_TYPE_ROAMER))
             flags = AI_FLAG_ROAMING;
-        else if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
+        else if (HasAnyBattleFlags(BATTLE_TYPE_FIRST_BATTLE))
             flags = AI_FLAG_FIRST_BATTLE;
-        else if (gBattleTypeFlags & BATTLE_TYPE_FACTORY)
+        else if (HasAnyBattleFlags(BATTLE_TYPE_FACTORY))
             flags = GetAiScriptsInBattleFactory();
-        else if (gBattleTypeFlags & (BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_TRAINER_HILL | BATTLE_TYPE_SECRET_BASE))
+        else if (HasAnyBattleFlags(BATTLE_TYPE_FRONTIER | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_TRAINER_HILL | BATTLE_TYPE_SECRET_BASE))
             flags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT;
         else
             flags = GetTrainerAIFlagsFromId(trainerId);
@@ -320,7 +318,7 @@ void BattleAI_SetupFlags(void)
         return;
     }
 
-    if (IsWildMonSmart() && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER)))
+    if (IsWildMonSmart() && !HasAnyBattleFlags(BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER))
     {
         // smart wild AI
         gAiThinkingStruct->aiFlags[B_BATTLER_1] = GetAiFlags(0xFFFF, B_BATTLER_1);
@@ -346,7 +344,7 @@ void BattleAI_SetupFlags(void)
             gAiThinkingStruct->aiFlags[B_BATTLER_3] = gAiThinkingStruct->aiFlags[B_BATTLER_1];
     }
 
-    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
+    if (HasAnyBattleFlags(BATTLE_TYPE_INGAME_PARTNER))
     {
         gAiThinkingStruct->aiFlags[B_BATTLER_2] = GetAiFlags(gPartnerTrainerId, B_BATTLER_2);
     }
@@ -509,7 +507,7 @@ void AI_TrySwitchOrUseItem(enum BattlerId battler)
     s32 lastId = GetAILastPartyIndex(battler); // + 1
     party = GetBattlerParty(battler);
 
-    if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+    if (IsTrainerBattle())
     {
         if (gAiLogicData->shouldSwitch & (1u << battler) && IsSwitchinValid(battler))
         {
@@ -638,7 +636,7 @@ void Ai_InitPartyStruct(void)
         CopyBattlerDataToAIParty(B_POSITION_PLAYER_RIGHT, GetTrainerFromBattlePosition(B_POSITION_PLAYER_RIGHT));
 
     // If player's partner is AI, save opponent mons
-    if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER)
+    if (HasAnyBattleFlags(BATTLE_TYPE_INGAME_PARTNER))
     {
         CopyBattlerDataToAIParty(B_POSITION_OPPONENT_LEFT, GetTrainerFromBattlePosition(B_POSITION_OPPONENT_LEFT));
         CopyBattlerDataToAIParty(B_POSITION_OPPONENT_RIGHT, GetTrainerFromBattlePosition(B_POSITION_OPPONENT_RIGHT));
@@ -650,7 +648,7 @@ void Ai_InitPartyStruct(void)
         if (!TrainerHasParty(trainer))
             continue;
 
-        for (enum PartySlot monIndex = PARTY_SLOT_0; monIndex < PARTY_SLOT_NONE; monIndex++)
+        for (enum PartySlot monIndex = PARTY_SLOT_0; monIndex < PARTY_SIZE; monIndex++)
         {
             mon = &gParties[trainer][monIndex];
             if (GetMonData(mon, MON_DATA_SPECIES) != SPECIES_NONE)
@@ -922,7 +920,7 @@ static u32 PpStallReduction(enum Move move, enum BattlerId battlerAtk, enum Batt
     ctx.weather = GetWeather();
     ctx.terrain = gFieldTimers.terrain;
     memcpy(&backupBattleMon, &gBattleMons[tempBattleMonIndex], sizeof(struct BattlePokemon));
-    for (enum PartySlot partyIndex = PARTY_SLOT_0; partyIndex < PARTY_SLOT_NONE; partyIndex++)
+    for (enum PartySlot partyIndex = PARTY_SLOT_0; partyIndex < PARTY_SIZE; partyIndex++)
     {
         u32 currentStallValue = gAiBattleData->playerStallMons[partyIndex];
         if (currentStallValue == 0 || GetMonData(&party[partyIndex], MON_DATA_HP) == 0)
@@ -953,7 +951,7 @@ static void DoAIScoreProcessing(enum BattlerId battlerAtk, enum BattlerId battle
     gAiThinkingStruct->aiLogicId = 0;
     gAiThinkingStruct->movesetIndex = MOVESLOT_0;
 
-    if (gBattleTypeFlags & BATTLE_TYPE_PALACE)
+    if (HasAnyBattleFlags(BATTLE_TYPE_PALACE))
         BattleAI_SetupAIData(gBattleStruct->palaceFlags >> 4, battlerAtk);
     else
         BattleAI_SetupAIData(0xF, battlerAtk);
@@ -4796,7 +4794,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(BEST_EFFECT);
         break;
     case EFFECT_TELEPORT:
-        if (!(gBattleTypeFlags & BATTLE_TYPE_TRAINER))
+        if (!IsTrainerBattle())
             break;
         [[fallthrough]];
     case EFFECT_HIT_ESCAPE:
@@ -5756,7 +5754,7 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             if (B_TRAINERS_KNOCK_OFF_ITEMS == TRUE)
                 canSteal = TRUE;
 
-            if (gBattleTypeFlags & BATTLE_TYPE_FRONTIER || IsOnPlayerSide(battlerAtk))
+            if (HasAnyBattleFlags(BATTLE_TYPE_FRONTIER) || IsOnPlayerSide(battlerAtk))
                 canSteal = TRUE;
 
             if (canSteal && aiData->items[battlerAtk] == ITEM_NONE
@@ -6310,7 +6308,7 @@ static s32 AI_AttacksPartner(enum BattlerId battlerAtk, enum BattlerId battlerDe
 {
     if (battlerDef == GetPartnerBattler(battlerAtk)
        // natural enemies in wild battles try to kill each other
-       && ((IsNaturalEnemy(gBattleMons[battlerAtk].species, gBattleMons[battlerDef].species) && !(gBattleTypeFlags & (BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER)))
+       && ((IsNaturalEnemy(gBattleMons[battlerAtk].species, gBattleMons[battlerDef].species) && !HasAnyBattleFlags(BATTLE_TYPE_LINK | BATTLE_TYPE_TRAINER))
        || AI_FLAG_ATTACKS_PARTNER_FOCUSES_PARTNER))
     {
         enum MoveSlot movesetIndex = gAiThinkingStruct->movesetIndex;
@@ -6864,7 +6862,7 @@ static s32 AI_FirstBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef, 
 // Example - prefer attacking opposite foe in a tag battle
 s32 AI_TagBattlePreferFoe(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
 {
-    if (!(gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER))
+    if (!HasAnyBattleFlags(BATTLE_TYPE_INGAME_PARTNER))
     {
         /* not a partner battle */
         return score;

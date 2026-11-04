@@ -282,6 +282,7 @@ const u8 gText_Learned[] = _("已学会");
 const u8 gText_Have[] = _("已有");
 const u8 gText_DontHave[] = _("没有");
 const u8 gText_Fourth[] = _("4号");
+const u8 gText_Fifth[] = _("5号");
 const u8 gText_PkmnCantParticipate[] = _("这只宝可梦无法参加！{PAUSE_UNTIL_PRESS}");
 const u8 gText_CancelParticipation[] = _("要取消参加吗？");
 const u8 gText_CancelBattle[] = _("要取消战斗吗？");

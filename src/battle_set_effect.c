@@ -364,7 +364,7 @@ static void HandleSetEffectRemoveArgType(struct BattleCalcValues *cv, struct Set
 
 static void HandleSetEffectRecharge(struct BattleCalcValues *cv, struct SetEffect *se)
 {
-    if (B_SKIP_RECHARGE == GEN_1 && !IsBattlerAlive(cv->battlerDef))  // Skip recharge if gen 1 and foe is KO'd
+    if (GetConfig(B_SKIP_RECHARGE) == GEN_1 && !IsBattlerAlive(gBattlerTarget))  // Skip recharge if gen 1 and foe is KO'd
         return;
 
     gBattleMons[se->effectBattler].volatiles.rechargeTimer = 2;
@@ -2359,7 +2359,7 @@ static void HandleSetEffectSubstitute(struct BattleCalcValues *cv, struct SetEff
 
 static void HandleSetEffectShedTail(struct BattleCalcValues *cv, struct SetEffect *se)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_ARENA
+    if (HasAnyBattleFlags(BATTLE_TYPE_ARENA)
      || gBattleStruct->battlerState[se->effectBattler].commanderSpecies != SPECIES_NONE
      || gBattleMons[se->effectBattler].volatiles.semiInvulnerable == STATE_COMMANDER
      || !CanBattlerSwitch(se->effectBattler))
@@ -3256,11 +3256,11 @@ static void HandleSetEffectTrick(struct BattleCalcValues *cv, struct SetEffect *
     bool32 notRegularBattleType = (BATTLE_TYPE_LINK | BATTLE_TYPE_EREADER_TRAINER | BATTLE_TYPE_FRONTIER | BATTLE_TYPE_SECRET_BASE | BATTLE_TYPE_RECORDED_LINK);
     bool32 battleTypeTrainer = (B_TRAINERS_KNOCK_OFF_ITEMS == TRUE ? BATTLE_TYPE_TRAINER : 0);
 
-    bool32 opponentCantSwapItems = (gBattleTypeFlags & BATTLE_TYPE_TRAINER_HILL)
-                                || (!IsOnPlayerSide(cv->battlerAtk) && !(gBattleTypeFlags & (notRegularBattleType | battleTypeTrainer)));
+    bool32 opponentCantSwapItems = (HasAnyBattleFlags(BATTLE_TYPE_TRAINER_HILL))
+                                || (!IsOnPlayerSide(cv->battlerAtk) && !HasAnyBattleFlags(notRegularBattleType | battleTypeTrainer));
 
     bool32 isKnockedOff = (GetBattlerPartyState(cv->battlerAtk)->isKnockedOff || GetBattlerPartyState(se->effectBattler)->isKnockedOff);
-    bool32 cantSwapIfKnockedOff = !(gBattleTypeFlags & (notRegularBattleType | battleTypeTrainer)) && isKnockedOff;
+    bool32 cantSwapIfKnockedOff = !HasAnyBattleFlags(notRegularBattleType | battleTypeTrainer) && isKnockedOff;
 
     if (opponentCantSwapItems || cantSwapIfKnockedOff)
     {
@@ -3637,16 +3637,16 @@ static void HandleSetEffectStickyWeb(struct BattleCalcValues *cv, struct SetEffe
 
 static bool32 DoesRoarFail(enum BattlerId battlerAtk, enum BattlerId effectBattler)
 {
-    if (gBattleTypeFlags & BATTLE_TYPE_ARENA)
+    if (HasAnyBattleFlags(BATTLE_TYPE_ARENA))
         return TRUE;
 
-    if (WILD_DOUBLE_BATTLE
+    if (IsWildDoubleBattle()
      && IsOnPlayerSide(battlerAtk)
      && !IsOnPlayerSide(effectBattler)
      && IsWholeSideAlive(effectBattler))
         return TRUE;
 
-    if (WILD_DOUBLE_BATTLE
+    if (IsWildDoubleBattle()
      && !IsOnPlayerSide(battlerAtk)
      && !IsOnPlayerSide(effectBattler))
         return TRUE;

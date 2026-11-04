@@ -471,7 +471,7 @@ void AddSpriteTextPrinterParameterized6(u8 spriteId, u8 fontId, u8 left, u8 top,
     AddTextPrinter(&printer, speed, NULL);
 }
 
-bool32 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, void (*callback)(struct TextPrinterTemplate *, u16))
+bool32 AddTextPrinter(struct TextPrinterTemplate *printerTemplate, u8 speed, TextPrinterCallback callback)
 {
     if (!gFonts)
         return FALSE;
@@ -1354,7 +1354,7 @@ static u16 RenderText(struct TextPrinter *textPrinter)
             return RENDER_UPDATE;
         }
 
-        if (!(gBattleTypeFlags & BATTLE_TYPE_RECORDED) && gTextFlags.autoScroll)
+        if (!HasAnyBattleFlags(BATTLE_TYPE_RECORDED) && gTextFlags.autoScroll)
             textPrinter->delayCounter = 3;
         else
             textPrinter->delayCounter = textPrinter->textSpeed;
