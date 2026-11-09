@@ -3836,7 +3836,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_LEECH_LIFE] =
     {
-        .name = COMPOUND_STRING("吸血"),
+        .name = COMPOUND_STRING("汲取"),
         .description = COMPOUND_STRING(
 			"吸取血液攻击对手。\n"
 			"可以回复给予伤害的一半HP。"),
@@ -4773,7 +4773,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_CURSE] =
     {
-        .name = COMPOUND_STRING("诅咒"),
+        .name = COMPOUND_STRING("咒术"),
         .description = COMPOUND_STRING(
 			"自身属性是幽灵属性\n"
 			"或其他属性时效果会不同。"),
@@ -8006,7 +8006,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_SNATCH] =
     {
-        .name = COMPOUND_STRING("抢夺"),
+        .name = COMPOUND_STRING("化为己用"),
         .description = COMPOUND_STRING(
 			"将对手要使用的回复招式或\n"
 			"能力变化招式夺为己用。"),
@@ -13359,7 +13359,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
 
     [MOVE_FOUL_PLAY] =
     {
-        .name = COMPOUND_STRING("欺诈"),
+        .name = COMPOUND_STRING("移花接木"),
         .description = COMPOUND_STRING(
 			"利用对手的力量攻击。\n"
 			"对手攻击越高，伤害越大。"),
