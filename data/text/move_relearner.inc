@@ -44,7 +44,7 @@ MoveRelearner_Text_TutorMoveLWR::
 	.string "教授招式$"
 
 MoveRelearner_Text_MoveLWR::
-	.string "move$"
+	.string "招式$"
 
 MoveRelearner_Text_WhichXmoveShouldTeach:
     .string "要学习哪个{STR_VAR_3}？$"
