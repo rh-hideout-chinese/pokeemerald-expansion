@@ -96,6 +96,7 @@ enum {
     MSG_HOLDING_POKE,
     MSG_WHICH_ONE_WILL_TAKE,
     MSG_CANT_RELEASE_EGG,
+    MSG_CANT_RELEASE_FUSED_MON,
     MSG_CONTINUE_BOX,
     MSG_CAME_BACK,
     MSG_WORRIED,
@@ -1048,37 +1049,38 @@ static const u8 gText_PkmnIsSelected[] = _("要拿{DYNAMIC 0}怎么办？");
 
 static const struct StorageMessage sMessages[] =
 {
-    [MSG_EXIT_BOX]             = {COMPOUND_STRING("要停止对盒子的操作吗？"),         MSG_VAR_NONE},
-    [MSG_WHAT_YOU_DO]          = {COMPOUND_STRING("要对这个盒子做什么？"),    MSG_VAR_NONE},
-    [MSG_PICK_A_THEME]         = {COMPOUND_STRING("要选择哪一种壁纸主题？"),       MSG_VAR_NONE},
-    [MSG_PICK_A_WALLPAPER]     = {COMPOUND_STRING("要选择哪一种壁纸？"),        MSG_VAR_NONE},
-    [MSG_IS_SELECTED]          = {gText_PkmnIsSelected,                          MSG_VAR_MON_NAME_1},
-    [MSG_JUMP_TO_WHICH_BOX]    = {COMPOUND_STRING("要跳转到哪个盒子？"),         MSG_VAR_NONE},
-    [MSG_DEPOSIT_IN_WHICH_BOX] = {COMPOUND_STRING("要寄放到哪个盒子中？"),      MSG_VAR_NONE},
-    [MSG_WAS_DEPOSITED]        = {COMPOUND_STRING("寄放了{DYNAMIC 0}！"), MSG_VAR_MON_NAME_1},
-    [MSG_BOX_IS_FULL]          = {COMPOUND_STRING("这个盒子已经满了！"),           MSG_VAR_NONE},
-    [MSG_RELEASE_POKE]         = {COMPOUND_STRING("真的要放生吗？"),      MSG_VAR_NONE},
-    [MSG_WAS_RELEASED]         = {COMPOUND_STRING("已将{DYNAMIC 0}放生了！"),  MSG_VAR_RELEASE_MON_1},
-    [MSG_BYE_BYE]              = {COMPOUND_STRING("再见了！{DYNAMIC 0}！"),      MSG_VAR_RELEASE_MON_3},
-    [MSG_MARK_POKE]            = {COMPOUND_STRING("请选择标记。"),         MSG_VAR_NONE},
-    [MSG_LAST_POKE]            = {COMPOUND_STRING("这样就没有可战斗的宝可梦了！"),  MSG_VAR_NONE},
-    [MSG_PARTY_FULL]           = {gText_YourPartysFull,                          MSG_VAR_NONE},
-    [MSG_HOLDING_POKE]         = {COMPOUND_STRING("正在抓着宝可梦！"),  MSG_VAR_NONE},
-    [MSG_WHICH_ONE_WILL_TAKE]  = {COMPOUND_STRING("请选择要取出的宝可梦！"),   MSG_VAR_NONE},
-    [MSG_CANT_RELEASE_EGG]     = {COMPOUND_STRING("无法将蛋放生！"),  MSG_VAR_NONE},
-    [MSG_CONTINUE_BOX]         = {COMPOUND_STRING("要继续对盒子的操作吗？"),   MSG_VAR_NONE},
-    [MSG_CAME_BACK]            = {COMPOUND_STRING("{DYNAMIC 0}回来了！"),     MSG_VAR_MON_NAME_1},
-    [MSG_WORRIED]              = {COMPOUND_STRING("它是在担心你吗？"),  MSG_VAR_NONE},
-    [MSG_SURPRISE]             = {COMPOUND_STRING("…… …… ！"),                  MSG_VAR_NONE},
-    [MSG_PLEASE_REMOVE_MAIL]   = {COMPOUND_STRING("请取下携带的邮件！"),    MSG_VAR_NONE},
-    [MSG_IS_SELECTED2]         = {gText_PkmnIsSelected,                          MSG_VAR_ITEM_NAME},
-    [MSG_GIVE_TO_MON]          = {COMPOUND_STRING("要给宝可梦携带吗？"),         MSG_VAR_NONE},
-    [MSG_PLACED_IN_BAG]        = {COMPOUND_STRING("将{DYNAMIC 0}放入了包包。"),    MSG_VAR_ITEM_NAME},
-    [MSG_BAG_FULL]             = {COMPOUND_STRING("包包已经满了！"),           MSG_VAR_NONE},
-    [MSG_PUT_IN_BAG]           = {COMPOUND_STRING("要将道具放回包包吗？"),  MSG_VAR_NONE},
-    [MSG_ITEM_IS_HELD]         = {COMPOUND_STRING("让精灵携带了{DYNAMIC 0}。"),   MSG_VAR_ITEM_NAME},
-    [MSG_CHANGED_TO_ITEM]      = {COMPOUND_STRING("将{DYNAMIC 0}交换出来了！"),    MSG_VAR_ITEM_NAME},
-    [MSG_CANT_STORE_MAIL]      = {COMPOUND_STRING("不能寄放邮件！"),      MSG_VAR_NONE},
+    [MSG_EXIT_BOX]               = {COMPOUND_STRING("要停止对盒子的操作吗？"),         MSG_VAR_NONE},
+    [MSG_WHAT_YOU_DO]            = {COMPOUND_STRING("要对这个盒子做什么？"),    MSG_VAR_NONE},
+    [MSG_PICK_A_THEME]           = {COMPOUND_STRING("要选择哪一种壁纸主题？"),       MSG_VAR_NONE},
+    [MSG_PICK_A_WALLPAPER]       = {COMPOUND_STRING("要选择哪一种壁纸？"),        MSG_VAR_NONE},
+    [MSG_IS_SELECTED]            = {gText_PkmnIsSelected,                          MSG_VAR_MON_NAME_1},
+    [MSG_JUMP_TO_WHICH_BOX]      = {COMPOUND_STRING("要跳转到哪个盒子？"),         MSG_VAR_NONE},
+    [MSG_DEPOSIT_IN_WHICH_BOX]   = {COMPOUND_STRING("要寄放到哪个盒子中？"),      MSG_VAR_NONE},
+    [MSG_WAS_DEPOSITED]          = {COMPOUND_STRING("寄放了{DYNAMIC 0}！"), MSG_VAR_MON_NAME_1},
+    [MSG_BOX_IS_FULL]            = {COMPOUND_STRING("这个盒子已经满了！"),           MSG_VAR_NONE},
+    [MSG_RELEASE_POKE]           = {COMPOUND_STRING("真的要放生吗？"),      MSG_VAR_NONE},
+    [MSG_WAS_RELEASED]           = {COMPOUND_STRING("已将{DYNAMIC 0}放生了！"),  MSG_VAR_RELEASE_MON_1},
+    [MSG_BYE_BYE]                = {COMPOUND_STRING("再见了！{DYNAMIC 0}！"),      MSG_VAR_RELEASE_MON_3},
+    [MSG_MARK_POKE]              = {COMPOUND_STRING("请选择标记。"),         MSG_VAR_NONE},
+    [MSG_LAST_POKE]              = {COMPOUND_STRING("这样就没有可战斗的宝可梦了！"),  MSG_VAR_NONE},
+    [MSG_PARTY_FULL]             = {gText_YourPartysFull,                          MSG_VAR_NONE},
+    [MSG_HOLDING_POKE]           = {COMPOUND_STRING("正在抓着宝可梦！"),  MSG_VAR_NONE},
+    [MSG_WHICH_ONE_WILL_TAKE]    = {COMPOUND_STRING("请选择要取出的宝可梦！"),   MSG_VAR_NONE},
+    [MSG_CANT_RELEASE_EGG]       = {COMPOUND_STRING("无法将蛋放生！"),  MSG_VAR_NONE},
+    [MSG_CANT_RELEASE_FUSED_MON] = {COMPOUND_STRING("无法将合体后的宝可梦放生！"), MSG_VAR_NONE},
+    [MSG_CONTINUE_BOX]           = {COMPOUND_STRING("要继续对盒子的操作吗？"),   MSG_VAR_NONE},
+    [MSG_CAME_BACK]              = {COMPOUND_STRING("{DYNAMIC 0}回来了！"),     MSG_VAR_MON_NAME_1},
+    [MSG_WORRIED]                = {COMPOUND_STRING("它是在担心你吗？"),  MSG_VAR_NONE},
+    [MSG_SURPRISE]               = {COMPOUND_STRING("…… …… ！"),                  MSG_VAR_NONE},
+    [MSG_PLEASE_REMOVE_MAIL]     = {COMPOUND_STRING("请取下携带的邮件！"),    MSG_VAR_NONE},
+    [MSG_IS_SELECTED2]           = {gText_PkmnIsSelected,                          MSG_VAR_ITEM_NAME},
+    [MSG_GIVE_TO_MON]            = {COMPOUND_STRING("要给宝可梦携带吗？"),         MSG_VAR_NONE},
+    [MSG_PLACED_IN_BAG]          = {COMPOUND_STRING("将{DYNAMIC 0}放入了包包。"),    MSG_VAR_ITEM_NAME},
+    [MSG_BAG_FULL]               = {COMPOUND_STRING("包包已经满了！"),           MSG_VAR_NONE},
+    [MSG_PUT_IN_BAG]             = {COMPOUND_STRING("要将道具放回包包吗？"),  MSG_VAR_NONE},
+    [MSG_ITEM_IS_HELD]           = {COMPOUND_STRING("让精灵携带了{DYNAMIC 0}。"),   MSG_VAR_ITEM_NAME},
+    [MSG_CHANGED_TO_ITEM]        = {COMPOUND_STRING("将{DYNAMIC 0}交换出来了！"),    MSG_VAR_ITEM_NAME},
+    [MSG_CANT_STORE_MAIL]        = {COMPOUND_STRING("不能寄放邮件！"),      MSG_VAR_NONE},
 };
 
 static const struct WindowTemplate sYesNoWindowTemplate =
@@ -2647,6 +2649,10 @@ static void Task_OnSelectedMon(u8 taskId)
             {
                 sStorage->state = 4;
             }
+            else if (IsAFusedMon(sStorage->displayMonSpecies))
+            {
+                sStorage->state = 7;
+            }
             else
             {
                 PlaySE(SE_SELECT);
@@ -2726,6 +2732,11 @@ static void Task_OnSelectedMon(u8 taskId)
             ClearBottomWindow();
             SetPokeStorageTask(Task_PokeStorageMain);
         }
+        break;
+    case 7:
+        PlaySE(SE_FAILURE);
+        PrintMessage(MSG_CANT_RELEASE_FUSED_MON);
+        sStorage->state = 6;
         break;
     }
 }
