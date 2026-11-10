@@ -253,7 +253,7 @@ Route119_WeatherInstitute_2F_Text_NoRoomForPokemon:
     .string "嗯？你没有放下这只\n宝可梦的空间。$"
 
 Route119_WeatherInstitute_2F_Text_PlayerReceivedCastform:
-    .string "{PLAYER}得到了漂浮泡泡！$"
+    .string "{PLAYER}得到了飘浮泡泡！$"
 
 Route119_WeatherInstitute_2F_Text_PokemonChangesWithWeather:
     .string "这种宝可梦能根据\n天气状况改变形态。\p研究所里面还有不少，\n这只就给你了。$"
