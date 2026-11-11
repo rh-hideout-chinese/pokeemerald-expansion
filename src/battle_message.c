@@ -3556,9 +3556,9 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
                 if (HasAnyBattleFlags(BATTLE_TYPE_CATCH_TUTORIAL))
                 {
                     if (IS_FRLG)
-                        textStart = StringCopy(textStart, COMPOUND_STRING("The old man"));
+                        textStart = StringCopy(textStart, COMPOUND_STRING("老人"));
                     else
-                        textStart = StringCopy(textStart, COMPOUND_STRING("WALLY"));
+                        textStart = StringCopy(textStart, COMPOUND_STRING("满充"));
                 }
                 else if (GetBattlerPosition(gBattlerAttacker) == B_POSITION_PLAYER_LEFT)
                 {
