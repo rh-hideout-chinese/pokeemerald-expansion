@@ -2786,6 +2786,7 @@ static void BattleStartClearSetData(void)
         gBattleStruct->lastTakenMoveFrom[i][2] = MOVE_NONE;
         gBattleStruct->lastTakenMoveFrom[i][3] = MOVE_NONE;
         gBattleStruct->AI_monToSwitchIntoId[i] = PARTY_SIZE;
+        gBattleStruct->monToSwitchIntoId[i] = PARTY_SIZE;
     }
 
     gLastUsedMove = 0;
@@ -5814,11 +5815,7 @@ void ScriptSetTotemBoost(struct ScriptContext *ctx)
 
 bool32 IsWildMonSmart(void)
 {
-#if WE_SMART_WILD_AI_FLAG != 0
     return (FlagGet(WE_SMART_WILD_AI_FLAG));
-#else
-    return FALSE;
-#endif
 }
 
 s32 Factorial(s32 n)

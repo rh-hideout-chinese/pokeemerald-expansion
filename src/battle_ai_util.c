@@ -2417,6 +2417,7 @@ bool32 CanLowerStat(enum BattlerId battlerAtk, enum BattlerId battlerDef, struct
 enum AIScore IncreaseStatDownScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Stat stat)
 {
     enum AIScore tempScore = NO_INCREASE;
+    enum BattlerId partnerAtk = GetPartnerBattler(battlerAtk);
 
     // Don't increase score if target is already -3 stat stage
     if (stat != STAT_SPEED && gBattleMons[battlerDef].statStages[stat] <= DEFAULT_STAT_STAGE - 3)
@@ -2445,14 +2446,14 @@ enum AIScore IncreaseStatDownScore(enum BattlerId battlerAtk, enum BattlerId bat
         break;
     case STAT_DEF:
         if (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_PHYSICAL)
-         || HasMoveWithCategory(GetPartnerBattler(battlerAtk), DAMAGE_CATEGORY_PHYSICAL))
+         || (IsBattlerAlive(partnerAtk) && HasMoveWithCategory(partnerAtk, DAMAGE_CATEGORY_PHYSICAL)))
             tempScore += DECENT_EFFECT;
         break;
     case STAT_SPEED:
     {
         enum Move predictedMove = GetPredictedMove(battlerAtk, battlerDef, gAiLogicData);
         if (AI_IsSlower(battlerAtk, battlerDef, MOVE_NONE, predictedMove, DONT_CONSIDER_PRIORITY)
-        || AI_IsSlower(GetPartnerBattler(battlerAtk), battlerDef, MOVE_NONE, predictedMove, DONT_CONSIDER_PRIORITY))
+        || (IsBattlerAlive(partnerAtk) && AI_IsSlower(partnerAtk, battlerDef, MOVE_NONE, predictedMove, DONT_CONSIDER_PRIORITY)))
             tempScore += DECENT_EFFECT;
         break;
     }
@@ -2462,7 +2463,7 @@ enum AIScore IncreaseStatDownScore(enum BattlerId battlerAtk, enum BattlerId bat
         break;
     case STAT_SPDEF:
         if (HasMoveWithCategory(battlerAtk, DAMAGE_CATEGORY_SPECIAL)
-         || HasMoveWithCategory(GetPartnerBattler(battlerAtk), DAMAGE_CATEGORY_SPECIAL))
+         || (IsBattlerAlive(partnerAtk) && HasMoveWithCategory(partnerAtk, DAMAGE_CATEGORY_SPECIAL)))
             tempScore += DECENT_EFFECT;
         break;
     case STAT_ACC:
@@ -2774,6 +2775,49 @@ bool32 HasBattlerSideMoveWithEffect(enum BattlerId battler, enum BattleMoveEffec
     if (HasMoveWithEffect(battler, effect))
         return TRUE;
     if (HasPartnerIgnoreFlags(battler) && HasMoveWithEffect(GetPartnerBattler(battler), effect))
+        return TRUE;
+    return FALSE;
+}
+
+static bool32 HasDamagingMoveSuperEffectiveAgainstType(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Type newType)
+{
+    enum Move *moves = GetMovesArray(battlerAtk);
+    enum Type savedTypes[3];
+    u32 moveLimitations = gAiLogicData->moveLimitations[battlerAtk];
+    bool32 result = FALSE;
+
+    // Change target to the new type
+    AI_StoreBattlerTypes(battlerDef, savedTypes);
+    gBattleMons[battlerDef].types[0] = newType;
+    gBattleMons[battlerDef].types[1] = newType;
+    gBattleMons[battlerDef].types[2] = TYPE_MYSTERY;
+
+    for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+    {
+        enum Move move = moves[moveIndex];
+
+        if (IsMoveUnusable(moveIndex, move, moveLimitations) || IsBattleMoveStatus(move))
+            continue;
+        if (AI_GetMoveEffectiveness(move, battlerAtk, battlerDef) >= UQ_4_12(2.0))
+        {
+            result = TRUE;
+            break;
+        }
+    }
+
+    AI_RestoreBattlerTypes(battlerDef, savedTypes);
+
+    return result;
+}
+
+// Checks if the user or its partner has a damaging super-effective move against the given type
+bool32 HasBattlerSideMoveSuperEffectiveAgainstType(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Type newType)
+{
+    enum BattlerId partner = GetPartnerBattler(battlerAtk);
+
+    if (HasDamagingMoveSuperEffectiveAgainstType(battlerAtk, battlerDef, newType))
+        return TRUE;
+    if (IsBattlerAlive(partner) && HasDamagingMoveSuperEffectiveAgainstType(partner, battlerDef, newType))
         return TRUE;
     return FALSE;
 }
@@ -6261,14 +6305,16 @@ u32 GetActiveBattlerIds(enum BattlerId battler, enum BattlerId *battlerIn1, enum
     return opposingBattler;
 }
 
-bool32 IsPartyMonOnFieldOrChosenToSwitch(enum BattlerId battler, u32 partyIndex, enum BattlerId battlerIn1, enum BattlerId battlerIn2)
+bool32 IsPartyMonOnFieldOrChosenToSwitch(enum BattlerId battler, u32 slot, enum BattlerId battlerIn1, enum BattlerId battlerIn2)
 {
-    if ((partyIndex == gBattlerPartyIndexes[battlerIn1] && BattlersShareParty(battler, battlerIn1))
-            || (partyIndex == gBattlerPartyIndexes[battlerIn2] && BattlersShareParty(battler, battlerIn2)))
+    if ((slot == gBattlerPartyIndexes[battlerIn1] && BattlersShareParty(battler, battlerIn1))
+     || (slot == gBattlerPartyIndexes[battlerIn2] && BattlersShareParty(battler, battlerIn2)))
         return TRUE;
-    if ((partyIndex == gBattleStruct->monToSwitchIntoId[battlerIn1] && BattlersShareParty(battler, battlerIn1))
-            || (partyIndex == gBattleStruct->monToSwitchIntoId[battlerIn2] && BattlersShareParty(battler, battlerIn2)))
+
+    if ((slot == gBattleStruct->monToSwitchIntoId[battlerIn1] && BattlersShareParty(battler, battlerIn1))
+     || (slot == gBattleStruct->monToSwitchIntoId[battlerIn2] && BattlersShareParty(battler, battlerIn2)))
         return TRUE;
+
     return FALSE;
 }
 

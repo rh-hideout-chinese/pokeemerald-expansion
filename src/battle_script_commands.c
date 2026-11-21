@@ -1718,7 +1718,7 @@ void SetNonVolatileStatus(enum BattlerId battlerAtk, enum BattlerId effectBattle
         gBattlescriptCurrInstr = BattleScript_MoveEffectBurn;
         break;
     case MOVE_EFFECT_FREEZE:
-        GetBattlerPartyState(effectBattler)->freezeTurns = 2;
+        GetBattlerPartyState(effectBattler)->freezeTurns = 0;
         gBattleMons[effectBattler].status1 |= STATUS1_FREEZE;
         gBattlescriptCurrInstr = BattleScript_MoveEffectFreeze;
         break;
@@ -9974,6 +9974,7 @@ void BS_CheckPokeFlute(void)
         {
             gBattleMons[i].status1 &= ~STATUS1_SLEEP;
             gBattleMons[i].volatiles.nightmare = FALSE;
+            TryDeactivateSleepClause(i, gBattlerPartyIndexes[i]);
         }
     }
 
